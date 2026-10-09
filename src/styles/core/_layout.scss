@@ -1,4 +1,11 @@
 #hop-landing .lr-container {
-  width: min(100% - 2rem, var(--lr-container));
+  width: 88%;
+  max-width: 1280px;
   margin-inline: auto;
+}
+#hop-landing .lr-section {
+  padding-block: var(--lr-space-section);
+}
+#hop-landing .lr-section--compact {
+  padding-block: var(--lr-space-section-compact);
 }

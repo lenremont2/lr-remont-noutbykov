@@ -1,0 +1,23 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+const c = copy.reviews.fields;
+---
+
+<section id="lr-reviews" class="lr-section lr-section--compact">
+  <div class="lr-container lr-reviews">
+    <SectionHeading
+      title={c.H2}
+      eyebrow={c["Надзаголовок"]}
+      lead={c["Текст"]}
+    />
+    <div>
+      <a
+        class="lr-reviews__link"
+        href="https://www.lenremont.ru/testimonials.htm"
+        >{c.CTA}<span aria-hidden="true">↗</span>
+      </a>
+      <p class="lr-caption">{c["Подпись"]}</p>
+    </div>
+  </div>
+</section>

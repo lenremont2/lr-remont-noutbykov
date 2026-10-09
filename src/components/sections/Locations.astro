@@ -1,0 +1,91 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+const c = copy.locations;
+---
+
+<section id="lr-locations" class="lr-section lr-locations">
+  <div class="lr-container">
+    <SectionHeading title={c.fields.H2} lead={c.fields["Лид"]} />
+    <div class="lr-locations__blocks">
+      {
+        c.items.map((item, i) => (
+          <article
+            id={i ? "lr-map-pickup" : "lr-map-workshops"}
+            class="lr-location"
+            aria-labelledby={
+              i ? "lr-map-pickup-title" : "lr-map-workshops-title"
+            }
+          >
+            <div class="lr-location__header">
+              <div class="lr-location__copy">
+                <h3 id={i ? "lr-map-pickup-title" : "lr-map-workshops-title"}>
+                  {item.title}
+                </h3>
+                <p>{item.text}</p>
+              </div>
+              <div class="lr-location__actions">
+                {i ? (
+                  <LeadButton
+                    label={item.fields.CTA}
+                    source="locations"
+                    format="courier"
+                  />
+                ) : (
+                  <a
+                    class="lr-button lr-button--secondary"
+                    href="https://www.lenremont.ru/contact.htm"
+                  >
+                    {item.fields.CTA}
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                )}
+                <a class="lr-phone" href="tel:+78123444444">
+                  +7 (812) 344-44-44
+                </a>
+              </div>
+            </div>
+            {/* shortcut: static full-width map slot; replace only this element with the working shortcode in WordPress. */}
+            <div
+              class="lr-map-placeholder"
+              data-lr-map-placeholder={i ? "pickup" : "workshops"}
+            >
+              <svg
+                class="lr-map-placeholder__roads"
+                viewBox="0 0 1200 360"
+                preserveAspectRatio="none"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path d="M-20 70L1220 260M120-20L330 380M910-20L770 380M-20 300L1220 60M450-20L600 380" />
+              </svg>
+              <div class="lr-map-placeholder__content">
+                <svg
+                  class="lr-map-placeholder__pin"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M26 13c0 8-10 16-10 16S6 21 6 13a10 10 0 1 1 20 0Z" />
+                  <circle cx="16" cy="13" r="3.5" />
+                </svg>
+                <strong>
+                  {i ? "Адрес забора ноутбука" : "Карта мастерских"}
+                </strong>
+                <p>Интерактивная карта появится здесь</p>
+              </div>
+            </div>
+            <p class="lr-caption">
+              {i
+                ? "Пока адрес забора можно согласовать по телефону или через форму выше."
+                : "Список адресов уже доступен по кнопке «Посмотреть адреса мастерских»."}
+            </p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

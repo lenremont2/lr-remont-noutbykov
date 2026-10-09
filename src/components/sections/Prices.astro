@@ -1,0 +1,48 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+const c = copy.prices;
+const note = c.items[2].fields;
+---
+
+<section id="lr-prices" class="lr-section lr-prices">
+  <div class="lr-container">
+    <SectionHeading title={c.fields.H2} />
+    <table
+      class="lr-price-table"
+      aria-label="Цены на ремонт ноутбуков и MacBook"
+    >
+      <thead>
+        <tr>
+          <th scope="col">Работа</th>
+          <th scope="col">Стоимость работы</th>
+        </tr>
+      </thead>
+      {
+        [c.fields["Категория 1"], c.fields["Категория 2"]].map(
+          (category, i) => (
+            <tbody>
+              <tr class="lr-price-group">
+                <th scope="rowgroup" colspan="2">
+                  {category}
+                </th>
+              </tr>
+              {(i ? c.tables[2] : [...c.tables[0], ...c.tables[1]]).map(
+                ([work, price]) => (
+                  <tr>
+                    <th scope="row">{work}</th>
+                    <td>{price}</td>
+                  </tr>
+                ),
+              )}
+            </tbody>
+          ),
+        )
+      }
+    </table>
+    <p class="lr-caption lr-prices__note">
+      {note["Пояснение под таблицей"]}
+      {note["Строка диагностики"]}
+    </p>
+  </div>
+</section>

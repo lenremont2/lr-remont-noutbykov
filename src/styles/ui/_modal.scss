@@ -1,51 +1,55 @@
 #hop-landing .lr-modal {
-  width: min(calc(100% - 2rem), 34rem);
-  max-height: calc(100% - 2rem);
+  width: min(calc(100% - 32px), 560px);
+  max-height: calc(100dvh - 32px);
   margin: auto;
-  border: 0;
-  border-radius: var(--lr-radius);
   padding: 0;
+  border: 0;
+  border-radius: var(--lr-radius-large);
   background: var(--lr-color-surface);
   color: var(--lr-color-text);
   box-shadow: var(--lr-shadow-modal);
+  overscroll-behavior: contain;
+  z-index: 10000;
 }
-
 #hop-landing .lr-modal::backdrop {
   background: var(--lr-color-overlay);
 }
-
 #hop-landing .lr-modal__surface {
-  position: relative;
-  padding: var(--lr-space-6, 1.5rem);
+  padding: 24px;
 }
-
 #hop-landing .lr-modal__title {
-  margin: 0 var(--lr-space-8, 2rem) var(--lr-space-3, 0.75rem) 0;
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin: 0 36px 12px 0;
+  font-size: 28px;
+  line-height: 33px;
 }
-
 #hop-landing .lr-modal__close {
-  position: absolute;
-  top: var(--lr-space-3, 0.75rem);
-  right: var(--lr-space-3, 0.75rem);
+  position: sticky;
+  top: 8px;
+  float: right;
+  margin: -12px -12px 0 0;
   display: grid;
-  width: 2.5rem;
-  height: 2.5rem;
   place-items: center;
-  border: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--lr-color-border);
   border-radius: 50%;
-  background: transparent;
+  background: var(--lr-color-surface);
   color: var(--lr-color-text);
-  cursor: pointer;
-  font-size: 2rem;
-  line-height: 1;
+  font-size: 28px;
+  z-index: 1;
 }
-
-#hop-landing .lr-visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
+#hop-landing .lr-modal__intro {
+  margin-bottom: 24px;
+  color: var(--lr-color-muted);
+  font-size: 16px;
+  line-height: 24px;
+}
+#hop-landing:has(.lr-modal[open]) {
+  touch-action: pan-y;
+}
+@media (min-width: 768px) {
+  #hop-landing .lr-modal__surface {
+    padding: 32px;
+  }
 }

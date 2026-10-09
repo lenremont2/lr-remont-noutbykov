@@ -1,0 +1,27 @@
+---
+interface Props {
+  label: string;
+  source: string;
+  format?: string;
+  symptom?: string;
+  text?: boolean;
+}
+const {
+  label,
+  source,
+  format = "consultation",
+  symptom,
+  text = false,
+} = Astro.props;
+---
+
+<a
+  href="#lr-contact"
+  class={text ? "lr-text-action" : "lr-button"}
+  data-lr-lead-open
+  data-source={source}
+  data-format={format}
+  data-symptom={symptom}
+>
+  {label}<span aria-hidden="true">↗</span>
+</a>

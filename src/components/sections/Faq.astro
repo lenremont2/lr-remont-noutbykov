@@ -1,0 +1,28 @@
+---
+import copy from "../../data/laptop-service.json";
+const c = copy.faq;
+---
+
+<section id="lr-faq" class="lr-section">
+  <div class="lr-container lr-faq">
+    <h2>{c.fields.H2}</h2>
+    <div>
+      {
+        c.items.map((item) => (
+          <details class="lr-faq__item">
+            <summary>
+              {item.title}
+              <span aria-hidden="true">+</span>
+            </summary>
+            <p>{item.text}</p>
+          </details>
+        ))
+      }<div class="lr-faq__question">
+        <p>{c.items[7].fields["Текст после FAQ"]}</p>
+        <a class="lr-text-action" href="#lr-contact" data-lr-question
+          >{c.items[7].fields.CTA}<span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

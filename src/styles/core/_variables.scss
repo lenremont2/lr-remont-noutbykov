@@ -1,16 +1,72 @@
 #hop-landing {
-  --lr-color-bg: #0d1620;
-  --lr-color-surface: #142332;
-  --lr-color-text: #f7f9fb;
-  --lr-color-muted: #b8c4ce;
-  --lr-color-accent: #f4b942;
-  --lr-color-accent-contrast: #111820;
-  --lr-color-overlay: rgb(0 0 0 / 65%);
-  --lr-color-danger: #ffb4ab;
-  --lr-color-focus: #fff;
-  --lr-container: 72rem;
-  --lr-radius: 1rem;
-  --lr-radius-small: 0.75rem;
-  --lr-shadow-modal: 0 1.5rem 4rem rgb(0 0 0 / 45%);
-  --lr-font: Inter, Arial, sans-serif;
+  --lr-white: #fff;
+  --lr-ivory-50: #fafaf7;
+  --lr-stone-100: #f0f2ef;
+  --lr-stone-200: #dce1dc;
+  --lr-stone-500: #727d77;
+  --lr-stone-600: #536159;
+  --lr-graphite-800: #29382f;
+  --lr-graphite-900: #17241d;
+  --lr-amber-100: #fff0cd;
+  --lr-amber-400: #f4b942;
+  --lr-amber-500: #e5a72b;
+  --lr-amber-600: #d39722;
+  --lr-green-700: #1d6b48;
+  --lr-green-50: #edf7f0;
+  --lr-red-700: #b42318;
+  --lr-red-50: #fff1f0;
+  --lr-color-bg: var(--lr-ivory-50);
+  --lr-color-surface: var(--lr-white);
+  --lr-color-surface-alt: var(--lr-stone-100);
+  --lr-color-text: var(--lr-graphite-900);
+  --lr-color-muted: var(--lr-stone-600);
+  --lr-color-border: var(--lr-stone-200);
+  --lr-color-control-border: var(--lr-stone-500);
+  --lr-color-accent: var(--lr-amber-400);
+  --lr-color-accent-hover: var(--lr-amber-500);
+  --lr-color-accent-active: var(--lr-amber-600);
+  --lr-color-accent-contrast: var(--lr-graphite-900);
+  --lr-color-accent-soft: var(--lr-amber-100);
+  --lr-color-dark: var(--lr-graphite-900);
+  --lr-color-on-dark: var(--lr-white);
+  --lr-color-muted-on-dark: var(--lr-stone-200);
+  --lr-color-focus: var(--lr-graphite-900);
+  --lr-color-danger: var(--lr-red-700);
+  --lr-color-success: var(--lr-green-700);
+  --lr-color-overlay: rgb(23 36 29 / 64%);
+  --lr-button-bg: var(--lr-color-accent);
+  --lr-button-text: var(--lr-color-accent-contrast);
+  --lr-button-hover: var(--lr-color-accent-hover);
+  --lr-input-bg: var(--lr-color-surface);
+  --lr-input-border: var(--lr-color-control-border);
+  --lr-card-bg: var(--lr-color-surface);
+  --lr-card-border: var(--lr-color-border);
+  --lr-font: "Golos Text", Arial, sans-serif;
+  --lr-radius-small: 10px;
+  --lr-radius: 16px;
+  --lr-radius-large: 24px;
+  --lr-radius-pill: 999px;
+  --lr-shadow-card: 0 8px 24px rgb(23 36 29 / 6%);
+  --lr-shadow-modal: 0 24px 80px rgb(0 0 0 / 24%);
+  --lr-duration-fast: 160ms;
+  --lr-duration-normal: 240ms;
+  @each $space in 4, 8, 12, 16, 20, 24, 28, 32, 40, 48, 56, 64, 72, 96 {
+    --lr-space-#{$space}: #{$space}px;
+  }
+  --lr-space-section: 56px;
+  --lr-space-section-compact: 40px;
+  --lr-space-grid: 16px;
+}
+@media (min-width: 768px) {
+  #hop-landing {
+    --lr-space-section: 72px;
+    --lr-space-section-compact: 48px;
+    --lr-space-grid: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  #hop-landing {
+    --lr-space-section: 96px;
+    --lr-space-section-compact: 64px;
+  }
 }

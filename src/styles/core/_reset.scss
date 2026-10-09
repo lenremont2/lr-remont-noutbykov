@@ -4,20 +4,68 @@
 #hop-landing *::after {
   box-sizing: border-box;
 }
-
 #hop-landing {
+  width: 100%;
   margin: 0;
+  padding: 0;
+  background: var(--lr-color-bg);
+  -webkit-font-smoothing: antialiased;
 }
-
 #hop-landing img,
 #hop-landing video {
   display: block;
   max-width: 100%;
+  height: auto;
 }
-
 #hop-landing button,
 #hop-landing input,
 #hop-landing select,
 #hop-landing textarea {
   font: inherit;
+}
+#hop-landing [hidden] {
+  display: none !important;
+}
+#hop-landing a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
+#hop-landing button {
+  cursor: pointer;
+}
+#hop-landing :focus-visible {
+  outline: 3px solid var(--lr-color-focus);
+  outline-offset: 3px;
+}
+#hop-landing section {
+  scroll-margin-top: 88px;
+}
+#hop-landing figure {
+  margin: 0;
+}
+#hop-landing figcaption {
+  margin-top: 12px;
+  color: var(--lr-color-muted);
+  font-size: 14px;
+  line-height: 21px;
+}
+#hop-landing .lr-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+#hop-landing ::selection {
+  background: var(--lr-color-accent-soft);
+  color: var(--lr-color-text);
+}
+#hop-landing input,
+#hop-landing textarea {
+  caret-color: var(--lr-color-text);
 }

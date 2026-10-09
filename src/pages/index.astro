@@ -1,12 +1,37 @@
 ---
-import LeadCapture from "../components/sections/LeadCapture.astro";
-import SocialLinks from "../components/sections/SocialLinks.astro";
-import StarterScreen from "../components/sections/StarterScreen.astro";
 import LandingLayout from "../layouts/LandingLayout.astro";
+import ServiceNav from "../components/sections/ServiceNav.astro";
+import QuickContacts from "../components/sections/QuickContacts.astro";
+import Hero from "../components/sections/Hero.astro";
+import Symptoms from "../components/sections/Symptoms.astro";
+import Prices from "../components/sections/Prices.astro";
+import RepairFormats from "../components/sections/RepairFormats.astro";
+import MobileLab from "../components/sections/MobileLab.astro";
+import RepairProcess from "../components/sections/RepairProcess.astro";
+import Expertise from "../components/sections/Expertise.astro";
+import Guarantee from "../components/sections/Guarantee.astro";
+import Reviews from "../components/sections/Reviews.astro";
+import Locations from "../components/sections/Locations.astro";
+import Faq from "../components/sections/Faq.astro";
+import LeadCapture from "../components/sections/LeadCapture.astro";
 ---
 
-<LandingLayout title="Landing Kit — обязательные блоки">
-  <StarterScreen />
+<LandingLayout
+  title="Ремонт ноутбуков в Санкт-Петербурге — цены и гарантия | Ленремонт"
+  description="Ремонт ноутбуков в Санкт-Петербурге: мастерская на колёсах, сервисные центры и доставка курьером. Согласуем стоимость до ремонта. Гарантия 1 год."
+>
+  <ServiceNav />
+  <Hero />
+  <QuickContacts />
+  <RepairFormats />
+  <Symptoms />
+  <Prices />
+  <MobileLab />
+  <RepairProcess />
+  <Expertise />
+  <Guarantee />
+  <Reviews />
+  <Locations />
+  <Faq />
   <LeadCapture />
-  <SocialLinks />
 </LandingLayout>

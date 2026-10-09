@@ -1,0 +1,44 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+const c = copy.symptoms;
+const prices = copy.prices.tables.flat();
+---
+
+<section id="lr-symptoms" class="lr-section lr-symptoms">
+  <div class="lr-container">
+    <SectionHeading title={c.fields.H2} lead={c.fields["Лид"]} />
+    <div class="lr-symptoms__grid">
+      {
+        c.items.map((item) => (
+          <article class="lr-symptom">
+            <img
+              class="lr-symptom__image"
+              src={item.image}
+              alt={item.imageAlt}
+              width="768"
+              height="512"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="lr-symptom__body">
+              <h3>{item.title}</h3>
+              <p class="lr-symptom__price">
+                {prices.find(([work]) => work === item.priceWork)?.[1]}
+              </p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+    <div class="lr-section-note">
+      <p class="lr-caption">{c.fields["Пояснение цены"]}</p>
+      <LeadButton
+        label="Узнать стоимость ремонта"
+        source="symptoms-other"
+        text
+      />
+    </div>
+  </div>
+</section>

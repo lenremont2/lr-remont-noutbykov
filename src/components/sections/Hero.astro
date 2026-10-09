@@ -1,0 +1,59 @@
+---
+import copy from "../../data/laptop-service.json";
+import LeadButton from "../ui/LeadButton.astro";
+const c = copy.hero.fields;
+---
+
+<section
+  id="lr-hero"
+  class="lr-hero lr-section"
+  aria-labelledby="lr-hero-title"
+>
+  <div class="lr-container lr-hero__grid">
+    <div class="lr-hero__copy">
+      <p class="lr-eyebrow">
+        <span class="lr-status-dot" aria-hidden="true"> </span>{
+          c["Надзаголовок"]
+        }
+      </p>
+      <h2 class="lr-hero__title" id="lr-hero-title">{c["H2"]}</h2>
+      <div class="lr-actions" data-lr-hero-cta>
+        <LeadButton label={c["Основной CTA"]} source="hero" />
+        <a class="lr-text-action" href="#lr-map-workshops"
+          >{c["Второй CTA"]}<span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <p class="lr-caption">{c["Текст под действиями"]}</p>
+      <ul class="lr-hero__facts" aria-label="Преимущества ремонта в Ленремонте">
+        {
+          copy.hero.bullets.map((fact) => (
+            <li>
+              <span class="lr-fact-mark" aria-hidden="true" />
+              <div>
+                <h3>{fact.title}</h3>
+                <p>{fact.text}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <figure class="lr-hero__media">
+      <video
+        class="lr-hero__video"
+        loop
+        muted
+        data-lr-hero-video
+        playsinline
+        preload="none"
+        width="480"
+        height="640"
+        poster="/media/mobile-lab-exterior.webp"
+        aria-label="Мобильная мастерская Ленремонта — ремонт ноутбуков"
+      >
+        <source src="/media/notebook-auto.mp4" type="video/mp4" />
+        Мобильная мастерская Ленремонта — ремонт ноутбуков.
+      </video>
+    </figure>
+  </div>
+</section>

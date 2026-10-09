@@ -1,0 +1,30 @@
+---
+import copy from "../../data/laptop-service.json";
+const c = copy.guarantee;
+---
+
+<section id="lr-guarantee" class="lr-section lr-guarantee">
+  <div class="lr-container lr-guarantee__grid">
+    <div>
+      <p class="lr-eyebrow">{c.fields["Надзаголовок"]}</p>
+      <h2>{c.fields.H2}</h2>
+      <div class="lr-guarantee__fact">
+        <strong>{c.fields["Большой факт"]}</strong>
+        <p>{c.fields["Подпись факта"]}</p>
+      </div>
+      <p class="lr-lead">{c.fields["Лид"]}</p>
+    </div>
+    <div class="lr-editorial-list">
+      {
+        c.items.map((item) => (
+          <article>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </article>
+        ))
+      }<a class="lr-guarantee__phone" href="tel:+78123444444"
+        >{c.items[2].fields["Контактная строка"]}</a
+      >
+    </div>
+  </div>
+</section>

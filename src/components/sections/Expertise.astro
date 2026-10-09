@@ -1,0 +1,47 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+const c = copy.expertise;
+const f = c.items[2].fields;
+---
+
+<section id="lr-expertise" class="lr-section lr-expertise">
+  <div class="lr-container">
+    <div class="lr-expertise__grid">
+      <figure>
+        <img
+          src="/media/laptop-board-diagnostics.webp"
+          alt="Проверка платы ноутбука"
+          width="580"
+          height="384"
+          loading="lazy"
+        />
+        <figcaption>{f["Подпись к фото"]}</figcaption>
+      </figure>
+      <div>
+        <SectionHeading
+          title={c.fields.H2}
+          lead={c.fields["Лид"]}
+          eyebrow={c.fields["Надзаголовок"]}
+        />
+        <div class="lr-editorial-list">
+          {
+            c.items.map((item) => (
+              <article>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))
+          }
+        </div>
+        <LeadButton label={f.CTA!} source="expertise" text />
+      </div>
+    </div>
+    <div class="lr-brands">
+      <h3>{f["Подзаголовок брендов"]}</h3>
+      <p class="lr-brands__names">{f["Бренды"]}</p>
+      <p class="lr-caption">{f["Текст"]}</p>
+    </div>
+  </div>
+</section>

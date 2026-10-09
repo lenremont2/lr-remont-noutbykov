@@ -1,0 +1,71 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+const c = copy.formats;
+const images = [
+  {
+    src: "/media/mobile-lab-exterior.webp",
+    alt: "Мобильная мастерская Ленремонта",
+    width: 480,
+    height: 640,
+  },
+  {
+    src: "/media/laptop-engineer-hero.webp",
+    alt: "Мастерская по ремонту ноутбуков",
+    width: 580,
+    height: 384,
+  },
+  {
+    src: "/media/mobile-lab-interior.webp",
+    alt: "Закрытый ноутбук на рабочем столе",
+    width: 1080,
+    height: 1080,
+  },
+];
+---
+
+<section id="lr-formats" class="lr-section">
+  <div class="lr-container">
+    <SectionHeading title={c.fields.H2} lead={c.fields["Лид"]} />
+    <div class="lr-formats__grid">
+      {
+        c.items.map((item, i) => (
+          <article class="lr-format">
+            <img
+              src={images[i].src}
+              alt={images[i].alt}
+              width={images[i].width}
+              height={images[i].height}
+              loading="lazy"
+            />
+            <div class="lr-format__body">
+              <h3>{item.title}</h3>
+              {i === 1 ? (
+                <a class="lr-text-action" href="#lr-map-workshops">
+                  {item.fields.CTA}
+                  <span aria-hidden="true">↗</span>
+                </a>
+              ) : i === 2 ? (
+                <a class="lr-text-action" href="#lr-map-pickup">
+                  {item.fields.CTA}
+                  <span aria-hidden="true">↗</span>
+                </a>
+              ) : (
+                <LeadButton
+                  label={item.fields.CTA}
+                  source="formats"
+                  format="mobile-lab"
+                  text
+                />
+              )}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+    <p class="lr-caption lr-formats__note">
+      {c.items[2].fields["Пояснение после карточек"]}
+    </p>
+  </div>
+</section>

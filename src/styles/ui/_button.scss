@@ -2,26 +2,59 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.75rem;
-  padding-inline: 1.25rem;
-  border: 0;
-  border-radius: 999px;
-  background: var(--lr-color-accent);
-  color: var(--lr-color-accent-contrast);
-  cursor: pointer;
-  font-weight: 700;
+  gap: 16px;
+  min-height: 56px;
+  padding: 16px 24px;
+  border: 1px solid transparent;
+  border-radius: var(--lr-radius-small);
+  background: var(--lr-button-bg);
+  color: var(--lr-button-text);
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
   text-decoration: none;
+  text-align: center;
+  transition: background var(--lr-duration-fast);
 }
-
+#hop-landing .lr-button:hover {
+  background: var(--lr-button-hover);
+}
+#hop-landing .lr-button:active {
+  background: var(--lr-color-accent-active);
+}
+#hop-landing .lr-button:disabled {
+  cursor: default;
+  background: var(--lr-color-surface-alt);
+  color: var(--lr-color-muted);
+}
 #hop-landing .lr-button--secondary {
-  border: 1px solid var(--lr-color-border, var(--lr-color-muted));
+  border-color: var(--lr-color-control-border);
   background: transparent;
   color: var(--lr-color-text);
 }
-
-#hop-landing .lr-button:focus-visible,
-#hop-landing .lr-modal__close:focus-visible,
-#hop-landing input:focus-visible {
-  outline: 2px solid var(--lr-color-focus);
-  outline-offset: 3px;
+#hop-landing .lr-button--secondary:hover {
+  background: var(--lr-color-surface-alt);
+}
+#hop-landing .lr-text-action {
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--lr-color-text);
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+#hop-landing .lr-text-action:hover {
+  text-decoration-thickness: 2px;
+}
+#hop-landing .lr-button span[aria-hidden],
+#hop-landing .lr-text-action span[aria-hidden] {
+  flex: none;
+  font-size: 22px;
 }

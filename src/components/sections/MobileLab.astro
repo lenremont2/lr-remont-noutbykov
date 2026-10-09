@@ -1,0 +1,61 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+const c = copy.lab;
+const f = c.items[2].fields;
+---
+
+<section id="lr-lab" class="lr-section lr-lab">
+  <div class="lr-container">
+    <SectionHeading
+      title={c.fields.H2}
+      lead={c.fields["Лид"]}
+      eyebrow={c.fields["Надзаголовок"]}
+    />
+    <div class="lr-lab__media">
+      <figure class="lr-lab__exterior">
+        <img
+          src="/media/mobile-lab-exterior.webp"
+          alt="Мобильная мастерская Ленремонта"
+          width="480"
+          height="640"
+          loading="lazy"
+        />
+        <figcaption>{f["Подпись к внешнему кадру"]}</figcaption>
+      </figure><figure>
+        <video
+          class="lr-lab__video"
+          width="720"
+          height="720"
+          controls
+          playsinline
+          preload="none"
+          poster="/media/mobile-lab-interior.webp"
+          aria-label="Мастерская на колёсах: рабочее место инженера"
+        >
+          <source src="/media/mobile-lab-tour.mp4" type="video/mp4" />Ваш
+          браузер не поддерживает видео.</video
+        >
+        <figcaption>{f["Подпись к интерьеру"]}</figcaption>
+      </figure>
+    </div>
+    <div class="lr-lab__bottom">
+      <ol class="lr-lab__facts">
+        {
+          c.items.map((item, i) => (
+            <li>
+              <span class="lr-number">0{i + 1}</span>
+              <div>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+    <LeadButton label={f.CTA!} source="lab" format="mobile-lab" />
+    <p class="lr-caption lr-lab__note">{f["Текст под кнопкой"]}</p>
+  </div>
+</section>

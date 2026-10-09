@@ -1,0 +1,163 @@
+---
+import copy from "../../data/laptop-service.json";
+interface Props {
+  id: string;
+  source: string;
+  submitLabel: string;
+}
+const { id, source, submitLabel } = Astro.props;
+---
+
+<div data-lead-root>
+  <form
+    method="post"
+    class="lr-form"
+    data-hop-lead-form
+    data-lr-form
+    novalidate
+  >
+    <input type="hidden" name="contact_method" value="Телефон" />
+    <input type="hidden" name="quiz_service" value="Ремонт ноутбуков" />
+    <input type="hidden" name="source" value={source} />
+    <input type="hidden" name="service_format" value="consultation" />
+    <input type="hidden" name="device_category" value="" />
+    <input type="hidden" name="symptom" value="" />
+    <div class="lr-form__context" data-lr-context hidden>
+      <p data-lr-context-text></p>
+      <button type="button" class="lr-text-action" data-lr-context-change
+        >Изменить</button
+      >
+    </div>
+    <div class="lr-form__field" data-lr-symptom-picker hidden>
+      <label for={`${id}-symptom`}>Неисправность</label>
+      <select id={`${id}-symptom`} data-lr-symptom-select>
+        <option value="">Другая неисправность</option>{
+          copy.symptoms.items.map((item) => (
+            <option value={item.title}>{item.title}</option>
+          ))
+        }</select
+      >
+    </div>
+    <div class="lr-form__field">
+      <label for={`${id}-phone`}>Ваш телефон</label>
+      <input
+        id={`${id}-phone`}
+        name="phone"
+        type="tel"
+        autocomplete="tel"
+        inputmode="tel"
+        placeholder="+7 (___) ___-__-__"
+        required
+        aria-describedby={`${id}-phone-hint ${id}-phone-error`}
+        data-lr-phone
+      />
+      <span class="lr-caption" id={`${id}-phone-hint`}
+        >Перезвоним и уточним вашу задачу</span
+      >
+      <p class="lr-field-error" id={`${id}-phone-error`} data-lr-phone-error>
+      </p>
+    </div>
+    <div class="lr-dialpad" data-lr-dialpad hidden>
+      <div class="lr-dialpad__keys">
+        {
+          ["1", "2", "3", "4", "5", "6", "7", "8", "9", "+", "0", "⌫"].map(
+            (key) => (
+              <button
+                type="button"
+                data-lr-digit={key}
+                aria-label={key === "⌫" ? "Удалить последнюю цифру" : key}
+              >
+                {key}
+              </button>
+            ),
+          )
+        }
+      </div>
+      <div class="lr-dialpad__actions">
+        <button class="lr-text-action" type="button" data-lr-native-phone
+          >Ввести с клавиатуры</button
+        >
+        <button class="lr-text-action" type="button" data-lr-phone-done
+          >Готово</button
+        >
+      </div>
+    </div>
+    <details class="lr-form__details" data-lr-details>
+      <summary>
+        <span data-lr-details-label>Добавить подробности</span>
+        <span aria-hidden="true">+</span>
+      </summary>
+      <div class="lr-form__field">
+        <label for={`${id}-model`}>Марка и модель, если знаете</label>
+        <input
+          id={`${id}-model`}
+          name="model"
+          placeholder="Например, Lenovo IdeaPad"
+        />
+        <span class="lr-caption">Можно оставить пустым</span>
+      </div>
+      <div class="lr-form__field">
+        <label for={`${id}-problem`}>Что случилось с ноутбуком?</label>
+        <textarea
+          id={`${id}-problem`}
+          name="problem"
+          placeholder="Например, не включается после зарядки"
+        >
+        </textarea>
+      </div>
+    </details>
+    <div class="lr-form__field" data-lr-district hidden>
+      <label for={`${id}-district`}>Метро или район</label>
+      <input
+        id={`${id}-district`}
+        name="district"
+        placeholder="Например, Петроградская"
+        disabled
+      />
+    </div>
+    <label class="lr-form__consent" for={`${id}-consent`}>
+      <input
+        id={`${id}-consent`}
+        name="consent"
+        type="checkbox"
+        value="yes"
+        required
+        aria-describedby={`${id}-consent-error`}
+      />
+      <span
+        >Даю согласие на обработку персональных данных.
+        <a
+          href="https://www.lenremont.ru/politika-obrabotki-personalnyh-dannyh.htm"
+          target="_blank"
+          rel="noopener noreferrer">Политика обработки данных</a
+        >
+      </span>
+    </label>
+    <p class="lr-field-error" id={`${id}-consent-error`} data-lr-consent-error>
+    </p>
+    <button
+      class="lr-button lr-form__submit"
+      type="submit"
+      data-hop-lead-submit
+      disabled
+      >{submitLabel}<span aria-hidden="true">↗</span>
+    </button>
+    <p
+      class="lr-form__message"
+      role="status"
+      aria-live="polite"
+      data-lr-form-message
+    >
+    </p>
+    <p class="lr-caption lr-form__alternative">
+      Или позвоните: <a href="tel:+78123444444">+7 (812) 344-44-44</a>
+    </p>
+  </form>
+  <div class="lr-form__success" data-lead-success hidden role="status">
+    <h3>Спасибо, ваше обращение получили</h3>
+    <p>Свяжемся с вами, уточним детали и согласуем следующий шаг.</p>
+    <button type="button" class="lr-button" data-lr-modal-close
+      >Вернуться на страницу</button
+    >
+  </div>
+</div>

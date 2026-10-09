@@ -1,0 +1,31 @@
+---
+import copy from "../../data/laptop-service.json";
+const c = copy.nav.fields;
+const links = [
+  ["Цены", "prices"],
+  ["Способы ремонта", "formats"],
+  ["Гарантия", "guarantee"],
+  ["Мастерские", "map-workshops"],
+];
+---
+
+<a class="lr-skip" href="#lr-hero">{c["Ссылка пропуска навигации"]}</a>
+<nav
+  id="lr-service-nav"
+  class="lr-service-nav lr-container"
+  aria-label="Разделы услуги «Ремонт ноутбуков»"
+>
+  <a class="lr-service-nav__brand" href="#lr-hero">{c["Подпись"]}</a>
+  <details class="lr-service-nav__menu" data-lr-nav>
+    <summary
+      >{c["Мобильное раскрытие"]} <span aria-hidden="true">⌄</span>
+    </summary>
+    <div class="lr-service-nav__links">
+      {links.map(([label, id]) => <a href={`#lr-${id}`}>{label}</a>)}
+    </div>
+  </details>
+  <div class="lr-service-nav__phone">
+    <a href="tel:+78123444444">{c["Телефон"]}</a>
+    <span>{c["Подпись телефона"]}</span>
+  </div>
+</nav>

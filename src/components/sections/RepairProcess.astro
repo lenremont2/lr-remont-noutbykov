@@ -1,0 +1,22 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+const c = copy.process;
+---
+
+<section id="lr-process" class="lr-section">
+  <div class="lr-container">
+    <SectionHeading title={c.fields.H2} lead={c.fields["Лид"]} />
+    <ol class="lr-process">
+      {
+        c.items.map((item, i) => (
+          <li>
+            <span class="lr-process__number">0{i + 1}</span>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
