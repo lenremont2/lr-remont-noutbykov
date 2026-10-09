@@ -1,0 +1,27 @@
+#hop-landing .lr-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding-inline: 1.25rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--lr-color-accent);
+  color: var(--lr-color-accent-contrast);
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#hop-landing .lr-button--secondary {
+  border: 1px solid var(--lr-color-border, var(--lr-color-muted));
+  background: transparent;
+  color: var(--lr-color-text);
+}
+
+#hop-landing .lr-button:focus-visible,
+#hop-landing .lr-modal__close:focus-visible,
+#hop-landing input:focus-visible {
+  outline: 2px solid var(--lr-color-focus);
+  outline-offset: 3px;
+}

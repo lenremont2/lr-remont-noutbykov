@@ -1,0 +1,5 @@
+node_modules/
+.astro/
+dist/
+package-lock.json
+docs/MASTER_DEVELOPMENT_PROMPT.md

@@ -1,0 +1,32 @@
+---
+import "../styles/landing.scss";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Lenremont Landing",
+  description = "Astro landing prepared with Lenremont Landing Kit.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main id="hop-landing">
+      <slot />
+    </main>
+
+    <script>
+      import "../scripts/landing.js";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+#hop-landing .lr-modal {
+  width: min(calc(100% - 2rem), 34rem);
+  max-height: calc(100% - 2rem);
+  margin: auto;
+  border: 0;
+  border-radius: var(--lr-radius);
+  padding: 0;
+  background: var(--lr-color-surface);
+  color: var(--lr-color-text);
+  box-shadow: var(--lr-shadow-modal);
+}
+
+#hop-landing .lr-modal::backdrop {
+  background: var(--lr-color-overlay);
+}
+
+#hop-landing .lr-modal__surface {
+  position: relative;
+  padding: var(--lr-space-6, 1.5rem);
+}
+
+#hop-landing .lr-modal__title {
+  margin: 0 var(--lr-space-8, 2rem) var(--lr-space-3, 0.75rem) 0;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+#hop-landing .lr-modal__close {
+  position: absolute;
+  top: var(--lr-space-3, 0.75rem);
+  right: var(--lr-space-3, 0.75rem);
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--lr-color-text);
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+#hop-landing .lr-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

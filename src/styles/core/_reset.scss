@@ -1,0 +1,23 @@
+#hop-landing,
+#hop-landing *,
+#hop-landing *::before,
+#hop-landing *::after {
+  box-sizing: border-box;
+}
+
+#hop-landing {
+  margin: 0;
+}
+
+#hop-landing img,
+#hop-landing video {
+  display: block;
+  max-width: 100%;
+}
+
+#hop-landing button,
+#hop-landing input,
+#hop-landing select,
+#hop-landing textarea {
+  font: inherit;
+}

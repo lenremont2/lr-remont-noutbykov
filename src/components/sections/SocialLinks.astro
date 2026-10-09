@@ -1,0 +1,149 @@
+---
+interface SocialChannel {
+  color: string;
+  gradient?: string;
+  handle?: string;
+  href?: string;
+  iconPath: string;
+  id: "telegram" | "vk" | "max";
+  label: string;
+  qrAlt?: string;
+  qrSrc?: string;
+  viewBox: string;
+  fillRule?: "nonzero" | "evenodd";
+  clipRule?: "nonzero" | "evenodd";
+}
+
+interface Props {
+  channels?: SocialChannel[];
+  text?: string;
+  title?: string;
+}
+
+const {
+  title = "Мы в социальных сетях",
+  text = "Выберите удобный канал и отсканируйте QR-код с другого устройства.",
+  channels = [
+    {
+      id: "telegram",
+      label: "Telegram",
+      color: "#4BB3F7",
+      href: "https://telegram.me/lenremont_bot",
+      qrSrc: "/media/lr-qr-tg.webp",
+      qrAlt: "QR-код Telegram",
+      viewBox: "0 0 24 20",
+      iconPath:
+        "M21.9539 0.176566C21.9539 0.176566 24.1741 -0.689148 23.989 1.4133C23.9274 2.27903 23.3724 5.30902 22.9406 8.58639L21.4605 18.2948C21.4605 18.2948 21.3372 19.717 20.2271 19.9644C19.117 20.2117 17.4519 19.0987 17.1435 18.8513C16.8968 18.6658 12.5182 15.8831 10.9763 14.5227C10.5446 14.1517 10.0513 13.4096 11.038 12.5439L17.5136 6.36028C18.2536 5.61823 18.9937 3.8868 15.9101 5.98925L7.27606 11.8638C7.27606 11.8638 6.28932 12.4821 4.4392 11.9256L0.430526 10.6888C0.430526 10.6888 -1.04959 9.76131 1.47894 8.83371C7.64612 5.92737 15.2317 2.9592 21.9539 0.176566Z",
+    },
+    {
+      id: "vk",
+      label: "ВКонтакте",
+      color: "#0077FF",
+      href: "https://vk.com/lenremont",
+      qrSrc: "/media/lr-qr-vk.webp",
+      qrAlt: "QR-код VK",
+      viewBox: "0 0 67 42",
+      iconPath:
+        "M35.9736 41.625C13.4075 41.625 0.536337 26 0 0H11.3037C11.675 19.0833 20.0081 27.1666 26.6087 28.8333V0H37.2527V16.4582C43.7708 15.7499 50.6181 8.25 52.9284 0H63.5723C61.7983 10.1667 54.3726 17.6666 49.0921 20.7499C54.3726 23.2499 62.8301 29.7916 66.0479 41.625H54.3314C51.8149 33.7083 45.5448 27.5833 37.2527 26.7499V41.625H35.9736Z",
+    },
+    {
+      id: "max",
+      label: "MAX",
+      color: "#c63deb",
+      href: "https://max.ru/id471902475874_3_bot",
+      qrSrc: "/media/lr-qr-max.webp",
+      qrAlt: "QR-код MAX",
+      gradient:
+        "linear-gradient(135deg, #5b51d8, #7c4dff 20%, #8b5cf6 50%, #a855f7 70%, #d946ef)",
+      viewBox: "0 0 24 24",
+      fillRule: "evenodd",
+      clipRule: "evenodd",
+      iconPath:
+        "M12.2589 23.9315C9.90029 23.9315 8.80729 23.5862 6.90892 22.2049C5.70086 23.7588 1.89262 24.9733 1.73154 22.8955C1.73154 21.3358 1.38063 20.0177 0.995206 18.5789C0.52349 16.8062 0 14.832 0 11.9715C0 5.13969 5.58006 0 12.1956 0C18.8111 0 24 5.39869 24 12.0406C24 18.6825 18.65 23.9373 12.2589 23.9373M12.3567 5.91093C9.13519 5.74402 6.62129 7.98293 6.06903 11.4938C5.60882 14.4003 6.4257 17.94 7.12177 18.1242C7.44967 18.2048 8.28955 17.5256 8.80729 17.0019C9.65868 17.5601 10.6366 17.986 11.7239 18.0436C15.0259 18.2163 17.954 15.6263 18.1323 12.3053C18.1955 10.6964 17.6263 9.12671 16.5467 7.93255C15.4671 6.7384 13.963 6.01477 12.3567 5.91669",
+    },
+  ],
+} = Astro.props;
+---
+
+<section class="lr-social-links" aria-labelledby="lr-social-links-title">
+  <div class="lr-container lr-social-links__inner">
+    <header class="lr-social-links__header">
+      <h2 class="lr-social-links__title" id="lr-social-links-title">{title}</h2>
+      <p class="lr-social-links__text">{text}</p>
+    </header>
+    <ul class="lr-social-links__list" aria-label="Социальные сети">
+      {
+        channels.map((channel) => (
+          <li class="lr-social-links__item">
+            {channel.href ? (
+              <a
+                class="lr-social-links__button"
+                href={channel.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Открыть ${channel.label}`}
+                style={
+                  channel.gradient
+                    ? `--lr-social-gradient: ${channel.gradient};`
+                    : `--lr-social-color: ${channel.color};`
+                }
+              >
+                <svg viewBox={channel.viewBox} aria-hidden="true">
+                  <path
+                    d={channel.iconPath}
+                    fill-rule={channel.fillRule}
+                    clip-rule={channel.clipRule}
+                  />
+                </svg>
+                <span>{channel.label}</span>
+              </a>
+            ) : (
+              <span class="lr-social-links__button" aria-disabled="true">
+                <svg viewBox={channel.viewBox} aria-hidden="true">
+                  <path
+                    d={channel.iconPath}
+                    fill-rule={channel.fillRule}
+                    clip-rule={channel.clipRule}
+                  />
+                </svg>
+                <span>{channel.label}</span>
+              </span>
+            )}
+            {channel.qrSrc ? (
+              <a
+                class="lr-social-links__qr"
+                href={channel.href}
+                target={channel.href ? "_blank" : undefined}
+                rel={channel.href ? "noopener noreferrer" : undefined}
+                aria-label={
+                  channel.href
+                    ? `Открыть ${channel.label} по QR-коду`
+                    : channel.qrAlt || `QR-код ${channel.label}`
+                }
+              >
+                <img
+                  src={channel.qrSrc}
+                  alt={channel.qrAlt || `QR-код ${channel.label}`}
+                  width="256"
+                  height="256"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            ) : (
+              <span
+                class="lr-social-links__qr lr-social-links__qr--empty"
+                aria-label={`Добавьте QR-код ${channel.label}`}
+              >
+                Добавьте QR-код
+              </span>
+            )}
+            {channel.handle && (
+              <span class="lr-social-links__handle">{channel.handle}</span>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

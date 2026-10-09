@@ -1,0 +1,233 @@
+---
+import LeadModal from "../ui/LeadModal.astro";
+
+interface QuizOption {
+  label: string;
+  value: string;
+}
+
+interface ContactMethod {
+  backgroundColor: string;
+  color: string;
+  icon: string;
+  label: string;
+  value: string;
+}
+
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  text?: string;
+  quizButtonLabel?: string;
+  quizQuestion?: string;
+  quizOptions?: QuizOption[];
+  contactMethods?: ContactMethod[];
+  calculateLabel?: string;
+  formAction?: string;
+  formTitle?: string;
+  formText?: string;
+  submitLabel?: string;
+}
+
+const {
+  eyebrow = "Подбор решения",
+  title = "Узнайте, с чего начать",
+  text = "Ответьте на один вопрос, выберите удобный способ связи и получите расчёт в модальном окне.",
+  quizButtonLabel = "Рассчитать стоимость",
+  quizQuestion = "Вопрос номер 1?",
+  quizOptions = [
+    { value: "answer-1", label: "Ответ 1" },
+    { value: "answer-2", label: "Ответ 2" },
+    { value: "answer-3", label: "Ответ 3" },
+    { value: "answer-4", label: "Ответ 4" },
+  ],
+  contactMethods = [
+    {
+      value: "phone",
+      label: "По телефону",
+      color: "#10b981",
+      backgroundColor: "rgba(16, 185, 129, 0.12)",
+      icon: '<svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64c0 247.4 200.6 448 448 448 18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3l49.3-40.3c13.7-11.2 18.4-30 11.6-46.3l-40-96Z" /></svg>',
+    },
+    {
+      value: "telegram",
+      label: "Telegram",
+      color: "#0088cc",
+      backgroundColor: "rgba(0, 136, 204, 0.12)",
+      icon: '<svg viewBox="0 0 24 20" fill="currentColor" aria-hidden="true"><path d="M21.9539.176566s2.2202-.865714 2.0351 1.236734c-.0616.86573-.6166 3.89572-1.0484 7.17309l-1.4802 9.7084s-.1234 1.4222-1.2335 1.6696c-1.1101.2473-2.7751-.8654-3.0834-1.1128-.2468-.1855-4.6256-2.9683-6.1677-4.3287-.4315-.371-.9248-1.1128.0617-1.9781l6.475-6.1836c.7401-.7421 1.4802-2.4735-1.6039-.3702l-8.6348 5.8738s-.9867.6182-2.8368.0617L.4305 10.6888S-1.0496 9.7613 1.4789 8.8337C7.6461 5.9274 15.2317 2.9592 21.9539.1766Z" /></svg>',
+    },
+    {
+      value: "vk",
+      label: "ВКонтакте",
+      color: "#0077ff",
+      backgroundColor: "rgba(0, 119, 255, 0.12)",
+      icon: '<svg viewBox="0 0 67 42" fill="currentColor" aria-hidden="true"><path d="M35.9736 41.625C13.4075 41.625.5363 26 0 0h11.3037c.3713 19.0833 8.7043 27.1666 15.3049 28.8333V0h10.644v16.4582C43.7708 15.7499 50.6181 8.25 52.9284 0h10.6439c-1.7743 10.1667-9.2 17.6666-14.4803 20.7499 5.2803 2.4999 13.7387 9.0417 16.955 20.8751H54.3314c-2.5172-7.9169-8.7872-14.0417-17.0787-14.8751v14.8751h-1.2791Z" /></svg>',
+    },
+    {
+      value: "max",
+      label: "MAX",
+      color: "#a334fa",
+      backgroundColor: "rgba(239, 178, 72, 0.12)",
+      icon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.2589 23.9315c-2.3586 0-3.4516-.3453-5.35-1.7266-1.2081 1.5537-5.0163 2.7684-5.1774.6906 0-1.5597-.3509-2.8778-.7363-4.3166C.5235 16.8062 0 14.832 0 11.9715 0 5.1397 5.5801 0 12.1956 0S24 5.3987 24 12.0406c0 6.642-5.35 11.8967-11.7411 11.8967ZM12.3567 5.9109c-3.2215-.1669-5.7354 2.0712-6.2877 5.5829-.4603 2.9062.3567 6.44 1.0527 6.6302.3278.0806 1.1673-.5989 1.6851-1.1228.8513.5581 1.8292.9841 2.9163 1.0417 3.3021.173 6.2308-2.7787 6.4091-5.738.0632-1.6084-.5054-3.179-1.585-4.3731-1.0795-1.1942-2.5835-1.9178-4.1895-2.015Z" /></svg>',
+    },
+  ],
+  calculateLabel = "Рассчитать",
+  formAction,
+  formTitle = "Расчёт готов",
+  formText = "Оставьте контакты — отправим расчёт выбранным способом связи.",
+  submitLabel = "Получить расчёт",
+} = Astro.props;
+---
+
+<section class="lr-lead-capture" aria-labelledby="lr-lead-capture-title">
+  <div class="lr-container lr-lead-capture__inner">
+    <div>
+      <p class="lr-lead-capture__eyebrow">{eyebrow}</p>
+      <h2 class="lr-lead-capture__title" id="lr-lead-capture-title">{title}</h2>
+      <p class="lr-lead-capture__text">{text}</p>
+    </div>
+    <div class="lr-lead-capture__actions">
+      <button class="lr-button" type="button" data-lr-modal-open="quiz">
+        {quizButtonLabel}
+      </button>
+    </div>
+  </div>
+</section>
+
+<LeadModal id="quiz" title="Рассчитаем для вас">
+  <div class="lr-quiz" data-lr-quiz data-lead-root>
+    <fieldset class="lr-quiz__step" data-lr-quiz-step>
+      <legend class="lr-quiz__question">{quizQuestion}</legend>
+      <div class="lr-quiz__options">
+        {
+          quizOptions.map((option) => (
+            <label class="lr-quiz__option">
+              <input
+                type="radio"
+                name="quiz_answer"
+                value={option.value}
+                data-lr-quiz-answer
+              />
+              <span>{option.label}</span>
+            </label>
+          ))
+        }
+      </div>
+      <p class="lr-quiz__message" aria-live="polite" data-lr-quiz-message></p>
+      <button class="lr-button" type="button" data-lr-quiz-next>Далее</button>
+    </fieldset>
+
+    <fieldset class="lr-quiz__step" data-lr-quiz-step hidden>
+      <legend class="lr-quiz__question">Выберите способ связи</legend>
+      <div class="lr-quiz__options lr-quiz__options--contacts">
+        {
+          contactMethods.map((method) => (
+            <label class="lr-quiz__option lr-quiz__option--contact">
+              <input
+                type="radio"
+                name="contact_method"
+                value={method.value}
+                data-lr-quiz-answer
+              />
+              <span
+                class="lr-quiz__option-icon"
+                style={`color: ${method.color}; background-color: ${method.backgroundColor};`}
+                aria-hidden="true"
+                set:html={method.icon}
+              />
+              <span>{method.label}</span>
+            </label>
+          ))
+        }
+      </div>
+      <p class="lr-quiz__message" aria-live="polite" data-lr-quiz-message></p>
+      <button class="lr-button" type="button" data-lr-quiz-calculate>
+        {calculateLabel}
+      </button>
+    </fieldset>
+
+    <div
+      class="lr-quiz__loading"
+      data-lr-quiz-loading
+      hidden
+      role="status"
+      aria-live="polite"
+    >
+      <span class="lr-quiz__loader" aria-hidden="true"></span>
+      <p>Считаем ваш результат…</p>
+    </div>
+
+    <div class="lr-quiz__result" data-lr-quiz-ready hidden>
+      <p class="lr-quiz__ready-title">{formTitle}</p>
+      <p class="lr-form__text">{formText}</p>
+      <form
+        class="lr-form"
+        action={formAction || undefined}
+        method={formAction ? "post" : undefined}
+        data-lr-lead-form
+        data-hop-lead-form
+        data-lr-demo-form={formAction ? undefined : "true"}
+      >
+        <input name="quiz" type="hidden" value="" data-lr-quiz-result />
+        <label class="lr-form__field">
+          <span>Ваше имя</span>
+          <span class="lr-form__input-wrapper">
+            <input
+              name="name"
+              type="text"
+              autocomplete="name"
+              placeholder="Как к вам обращаться"
+              required
+            />
+            <svg
+              class="lr-form__input-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+        </label>
+        <label class="lr-form__field">
+          <span>Телефон</span>
+          <span class="lr-form__input-wrapper">
+            <input
+              name="phone"
+              type="tel"
+              autocomplete="tel"
+              inputmode="tel"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+            <svg
+              class="lr-form__input-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              ></path>
+            </svg>
+          </span>
+        </label>
+        <label class="lr-form__consent">
+          <input name="consent" type="checkbox" required />
+          <span>Согласен на обработку персональных данных</span>
+        </label>
+        <button class="lr-button" type="submit">{submitLabel}</button>
+        <p class="lr-form__message" aria-live="polite" data-lr-form-message></p>
+      </form>
+    </div>
+  </div>
+</LeadModal>
