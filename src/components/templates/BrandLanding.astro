@@ -1,0 +1,65 @@
+---
+import LandingLayout from "../../layouts/LandingLayout.astro";
+import ServiceNav from "../sections/ServiceNav.astro";
+import RepairFormats from "../sections/RepairFormats.astro";
+import Guarantee from "../sections/Guarantee.astro";
+import Locations from "../sections/Locations.astro";
+import LeadCapture from "../sections/LeadCapture.astro";
+import Breadcrumbs from "../ui/Breadcrumbs.astro";
+import Hero from "../sections/Hero.astro";
+import ServicePriceTable from "../ui/ServicePriceTable.astro";
+import ServiceFaq from "../ui/ServiceFaq.astro";
+import RelatedServices from "../ui/RelatedServices.astro";
+import {
+  getSeo,
+  pagePath,
+  standardPrices,
+  type BrandPage,
+} from "../../data/service-pages";
+interface Props {
+  page: BrandPage;
+}
+const { page } = Astro.props;
+---
+
+<LandingLayout {...getSeo(page)}>
+  <Breadcrumbs current={page.label} />
+  <Hero brand={page} />
+  <RepairFormats />
+  <section class="lr-section">
+    <div class="lr-container lr-child-editorial">
+      <div class="lr-child-editorial__intro">
+        <h2>{page.sectionTitle}</h2><p class="lr-lead">{page.intro}</p><h3>
+          Что подготовить к обращению
+        </h3><ul class="lr-child-list">
+          {page.prepare.map((text) => <li>{text}</li>)}
+        </ul>
+      </div>
+      <div class="lr-editorial-list">
+        {
+          page.checks.map((item) => (
+            <article>
+              <>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+  <ServicePriceTable
+    title={`Стоимость работ по ремонту ${page.label}`}
+    rows={standardPrices}
+  />
+  <Guarantee />
+  <Locations />
+  <ServiceFaq items={page.faq} />
+  <RelatedServices current={pagePath(page)} />
+  <LeadCapture
+    title={`Обсудим ремонт вашего ${page.label}`}
+    lead="Назовите модель и опишите неисправность. Сориентируем по стоимости и подберём удобный способ передачи ноутбука."
+    serviceName={`Ремонт ноутбуков ${page.label}`}
+  />
+</LandingLayout>

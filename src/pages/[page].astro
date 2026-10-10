@@ -1,0 +1,31 @@
+---
+import BrandLanding from "../components/templates/BrandLanding.astro";
+import ProblemLanding from "../components/templates/ProblemLanding.astro";
+import {
+  brands,
+  problems,
+  type BrandPage,
+  type ProblemPage,
+} from "../data/service-pages";
+
+export function getStaticPaths() {
+  return [
+    ...brands.map((brand) => ({
+      params: { page: brand.slug + ".htm" },
+      props: { brand },
+    })),
+    ...problems.map((problem) => ({
+      params: { page: problem.slug + ".htm" },
+      props: { problem },
+    })),
+  ];
+}
+interface Props {
+  brand?: BrandPage;
+  problem?: ProblemPage;
+}
+const { brand, problem } = Astro.props;
+---
+
+{brand && <BrandLanding page={brand} />}
+{problem && <ProblemLanding page={problem} />}

@@ -9,13 +9,16 @@ const note = c.items[2].fields;
   <div class="lr-container">
     <SectionHeading title={c.fields.H2} />
     <table
-      class="lr-price-table"
-      aria-label="Цены на ремонт ноутбуков и MacBook"
+      class="lr-price-table lr-price-table--with-time"
+      aria-label="Цены и ориентировочное время ремонта ноутбуков и MacBook"
     >
       <thead>
         <tr>
           <th scope="col">Работа</th>
-          <th scope="col">Стоимость работы</th>
+          <th scope="col" class="lr-price-table__duration col-left"
+            >Время работы</th
+          >
+          <th scope="col" class="col-left">Стоимость работы</th>
         </tr>
       </thead>
       {
@@ -23,14 +26,20 @@ const note = c.items[2].fields;
           (category, i) => (
             <tbody>
               <tr class="lr-price-group">
-                <th scope="rowgroup" colspan="2">
+                <th scope="rowgroup" colspan="3">
                   {category}
                 </th>
               </tr>
               {(i ? c.tables[2] : [...c.tables[0], ...c.tables[1]]).map(
-                ([work, price]) => (
+                ([work, price, duration]) => (
                   <tr>
-                    <th scope="row">{work}</th>
+                    <th scope="row">
+                      {work}
+                      <span class="lr-price-table__time-inline">
+                        Время: {duration}
+                      </span>
+                    </th>
+                    <td class="lr-price-table__duration">{duration}</td>
                     <td>{price}</td>
                   </tr>
                 ),
@@ -43,6 +52,13 @@ const note = c.items[2].fields;
     <p class="lr-caption lr-prices__note">
       {note["Пояснение под таблицей"]}
       {note["Строка диагностики"]}
+    </p>
+    <p class="lr-caption lr-prices__note">
+      Время указано ориентировочно по открытым данным сервисов Санкт-Петербурга.
+      Срок ремонта в Ленремонте согласуем после диагностики: он зависит от
+      модели, неисправности и наличия деталей. Время переноса системы и файлов
+      зависит от объёма данных и состояния накопителя. Диагностика, доставка и
+      ожидание запчастей согласуются отдельно.
     </p>
   </div>
 </section>

@@ -4,14 +4,24 @@ import LeadForm from "../ui/LeadForm.astro";
 import LeadModal from "../ui/LeadModal.astro";
 import SocialLinks from "./SocialLinks.astro";
 const c = copy.contact.fields;
+interface Props {
+  title?: string;
+  lead?: string;
+  serviceName?: string;
+}
+const {
+  title = c.H2,
+  lead = c["Лид"],
+  serviceName = "Ремонт ноутбуков",
+} = Astro.props;
 ---
 
 <section id="lr-contact" class="lr-section lr-contact">
   <div class="lr-container lr-contact__grid">
     <div class="lr-contact__copy">
       <p class="lr-eyebrow">{c["Надзаголовок"]}</p>
-      <h2>{c.H2}</h2>
-      <p class="lr-lead">{c["Лид"]}</p>
+      <h2>{title}</h2>
+      <p class="lr-lead">{lead}</p>
     </div>
     <div class="lr-contact__form">
       <h3>{c["Заголовок формы"]}</h3>
@@ -19,6 +29,7 @@ const c = copy.contact.fields;
       <LeadForm
         id="lr-contact-form"
         source="contact"
+        serviceName={serviceName}
         submitLabel="Узнать стоимость ремонта"
       />
     </div>
@@ -27,10 +38,6 @@ const c = copy.contact.fields;
       <a class="lr-contact__phone" href="tel:+78123444444">{c["Телефон"]}</a>
       <p class="lr-caption">{c["Подпись режима"]}</p>
       <SocialLinks />
-    </div>
-    <div class="lr-contact__footer">
-      <p>{c["Контактная строка внизу"]}</p>
-      <a href="tel:+78123444444">{c["Телефон"]}</a>
     </div>
   </div>
 </section>
@@ -46,6 +53,7 @@ const c = copy.contact.fields;
   <LeadForm
     id="lr-modal-form"
     source="hero"
+    serviceName={serviceName}
     submitLabel="Узнать стоимость ремонта"
   />
 </LeadModal>

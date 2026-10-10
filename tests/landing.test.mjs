@@ -76,6 +76,29 @@ assert.deepEqual(
 );
 for (const [, price] of data.prices.tables.flat())
   assert.ok(html.includes(price));
+assert.ok(
+  !html.includes('id="lr-repair-times"'),
+  "Standalone times section must be removed",
+);
+const priceSection = html.match(
+  /<section id="lr-prices"[\s\S]*?<\/section>/,
+)?.[0];
+assert.ok(priceSection);
+assert.equal(
+  (priceSection.match(/<td class="lr-price-table__duration">/g) || []).length,
+  18,
+);
+assert.equal(
+  (priceSection.match(/class="lr-price-table__time-inline"/g) || []).length,
+  18,
+);
+const priceRows = priceSection.match(/<tr>[\s\S]*?<\/tr>/g) || [];
+for (const [work, price, duration] of data.prices.tables.flat()) {
+  assert.ok(duration?.trim(), "Missing repair duration: " + work);
+  const row = priceRows.find((row) => row.includes(work));
+  assert.ok(row?.includes(price), work);
+  assert.ok(row?.includes(duration), work);
+}
 for (const [, path] of html.matchAll(/(?:src|poster)="(\/media\/[^"]+)"/g)) {
   assert.ok(existsSync(new URL(`../public${path}`, import.meta.url)), path);
 }
@@ -118,8 +141,7 @@ for (const benefit of data.hero.bullets) {
   assert.ok(html.includes(benefit.text), benefit.title);
 }
 
-const symptomCards =
-  html.match(/<article class="lr-symptom">[\s\S]*?<\/article>/g) || [];
+const symptomCards = html.match(/<a class="lr-symptom"[\s\S]*?<\/a>/g) || [];
 assert.equal(symptomCards.length, 6);
 data.symptoms.items.forEach((item, i) => {
   const price = data.prices.tables
@@ -131,7 +153,8 @@ data.symptoms.items.forEach((item, i) => {
   assert.ok(symptomCards[i].includes(item.title), item.title);
   assert.ok(!symptomCards[i].includes(item.text), item.title);
   assert.ok(!symptomCards[i].includes(item.priceWork), item.title);
-  assert.ok(!/<a[ >]|<button[ >]/.test(symptomCards[i]), item.title);
+  assert.match(symptomCards[i], /href="\/[a-z-]+\.htm"/);
+  assert.ok(!/<button[ >]/.test(symptomCards[i]), item.title);
 });
 for (const slot of ["workshops", "pickup"]) {
   assert.equal(

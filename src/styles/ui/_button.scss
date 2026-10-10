@@ -14,7 +14,9 @@
   font-weight: 600;
   text-decoration: none;
   text-align: center;
-  transition: background var(--lr-duration-fast);
+  transition:
+    background var(--lr-duration-fast),
+    border-color var(--lr-duration-fast);
 }
 #hop-landing .lr-button:hover {
   background: var(--lr-button-hover);
@@ -28,11 +30,12 @@
   color: var(--lr-color-muted);
 }
 #hop-landing .lr-button--secondary {
-  border-color: var(--lr-color-control-border);
+  border-color: var(--lr-color-border);
   background: transparent;
   color: var(--lr-color-text);
 }
 #hop-landing .lr-button--secondary:hover {
+  border-color: var(--lr-color-control-border);
   background: var(--lr-color-surface-alt);
 }
 #hop-landing .lr-text-action {

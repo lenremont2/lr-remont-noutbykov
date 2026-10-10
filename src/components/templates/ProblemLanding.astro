@@ -1,0 +1,134 @@
+---
+import LandingLayout from "../../layouts/LandingLayout.astro";
+import ServiceNav from "../sections/ServiceNav.astro";
+import RepairFormats from "../sections/RepairFormats.astro";
+import Guarantee from "../sections/Guarantee.astro";
+import Locations from "../sections/Locations.astro";
+import LeadCapture from "../sections/LeadCapture.astro";
+import Breadcrumbs from "../ui/Breadcrumbs.astro";
+import ChildHero from "../ui/ChildHero.astro";
+import LeadButton from "../ui/LeadButton.astro";
+import ServicePriceTable from "../ui/ServicePriceTable.astro";
+import ServiceFaq from "../ui/ServiceFaq.astro";
+import RelatedServices from "../ui/RelatedServices.astro";
+import copy from "../../data/laptop-service.json";
+import {
+  getSeo,
+  pagePath,
+  standardPrices,
+  type ProblemPage,
+} from "../../data/service-pages";
+interface Props {
+  page: ProblemPage;
+}
+const { page } = Astro.props;
+const symptom = copy.symptoms.items.find(
+  (item) => item.image === `/media/symptom-${page.imageKey}.webp`,
+)!;
+const rows = standardPrices.filter(([work]) => page.priceWorks.includes(work));
+---
+
+<LandingLayout {...getSeo(page)}>
+  <div class="lr-problem-page">
+    <ChildHero
+      title={page.h1}
+      lead={page.lead}
+      source={`problem:${page.imageKey}`}
+      image={page.heroImage}
+      alt={page.heroAlt}
+      width={1152}
+      height={768}
+      symptom={symptom.title}
+      warning={page.warning}
+    />
+    <section
+      id="lr-first-aid"
+      class="lr-section lr-problem-guidance"
+      aria-labelledby="lr-first-aid-title"
+    >
+      <div class="lr-container lr-child-guidance__grid">
+        <h2 id="lr-first-aid-title">{page.immediateTitle}</h2><ol
+          class="lr-problem-checks"
+        >
+          {page.immediate.map((text) => <li>{text}</li>)}
+        </ol>
+      </div>
+    </section>
+    <section class="lr-section lr-problem-next" aria-labelledby="lr-next-title">
+      <div class="lr-container">
+        <div class="lr-child-editorial">
+          <div>
+            <h2 id="lr-next-title">Какой следующий шаг выбрать</h2>
+            <p class="lr-lead lr-child-section-lead">
+              Сопоставьте признаки с вашей ситуацией. Это ориентир для действий,
+              а причину и необходимые работы определим при проверке ноутбука.
+            </p>
+          </div>
+          <dl class="lr-problem-decisions">
+            {
+              page.decisions.map((item) => (
+                <div>
+                  <>
+                    <dt>{item.title}</dt>
+                    <dd>{item.text}</dd>
+                  </>
+                </div>
+              ))
+            }
+          </dl>
+        </div>
+        <div class="lr-problem-recommendation">
+          <div>
+            <h3>{page.recommendation.title}</h3>
+            <p>{page.recommendation.text}</p>
+          </div>
+          <div class="lr-problem-recommendation__actions">
+            <LeadButton
+              label="Обсудить симптомы с мастером"
+              source={`problem:${page.imageKey}:recommendation`}
+              symptom={symptom.title}
+            />
+            <a class="lr-text-action" href="tel:+78123444444"
+              >Позвонить: {copy.contact.fields["Телефон"]}</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="lr-section">
+      <div class="lr-container lr-child-editorial">
+        <div>
+          <h2>{page.causesTitle}</h2>
+          <div class="lr-problem-prepare">
+            <h3>Что сообщить мастеру</h3>
+            <ul class="lr-child-list">
+              {page.prepare.map((text) => <li>{text}</li>)}
+            </ul>
+          </div>
+        </div><div class="lr-editorial-list">
+          {
+            page.causes.map((item) => (
+              <article>
+                <>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+    <ServicePriceTable title="Какие работы могут понадобиться" rows={rows} />
+    <RepairFormats />
+    <Guarantee />
+    <Locations />
+    <ServiceFaq items={page.faq} />
+    <RelatedServices current={pagePath(page)} />
+    <LeadCapture
+      title={page.contactTitle}
+      lead={page.contactLead}
+      serviceName={`Ремонт ноутбука: ${page.label}`}
+    />
+  </div>
+</LandingLayout>

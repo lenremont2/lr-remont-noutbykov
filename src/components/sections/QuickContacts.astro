@@ -3,13 +3,13 @@ import SocialLinks from "./SocialLinks.astro";
 import copy from "../../data/laptop-service.json";
 ---
 
-<section
+<div
   id="lr-quick-contacts"
-  class="lr-quick-contacts lr-section lr-section--compact"
+  class="lr-quick-contacts"
   aria-labelledby="lr-quick-contacts-title"
 >
-  <div class="lr-container lr-quick-contacts__inner">
-    <h2 id="lr-quick-contacts-title">Позвоните для бесплатной консультации</h2>
+  <div class="lr-quick-contacts__inner">
+    <h3 id="lr-quick-contacts-title">Позвоните для бесплатной консультации</h3>
     <a class="lr-quick-contacts__phone" href="tel:+78123444444">
       <svg
         viewBox="0 0 24 24"
@@ -27,4 +27,4 @@ import copy from "../../data/laptop-service.json";
     </a>
     <SocialLinks title="Или напишите нам в мессенджере" text="" />
   </div>
-</section>
+</div>

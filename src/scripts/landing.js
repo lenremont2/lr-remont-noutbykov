@@ -157,7 +157,9 @@ function initializeLanding() {
   });
   mobile.addEventListener("change", () => {
     root.querySelectorAll("[data-lr-form]").forEach(updatePhoneMode);
-    root.querySelector("[data-lr-nav]").open = !mobile.matches;
+    root.querySelectorAll("[data-lr-nav]").forEach((nav) => {
+      nav.open = !mobile.matches;
+    });
     updateBar();
   });
   root.addEventListener("click", (event) => {

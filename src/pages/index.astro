@@ -1,7 +1,6 @@
 ---
 import LandingLayout from "../layouts/LandingLayout.astro";
 import ServiceNav from "../components/sections/ServiceNav.astro";
-import QuickContacts from "../components/sections/QuickContacts.astro";
 import Hero from "../components/sections/Hero.astro";
 import Symptoms from "../components/sections/Symptoms.astro";
 import Prices from "../components/sections/Prices.astro";
@@ -17,12 +16,11 @@ import LeadCapture from "../components/sections/LeadCapture.astro";
 ---
 
 <LandingLayout
+  canonical="https://www.lenremont.ru/remont-noutbukov-spb.htm"
   title="Ремонт ноутбуков в Санкт-Петербурге — цены и гарантия | Ленремонт"
   description="Ремонт ноутбуков в Санкт-Петербурге: мастерская на колёсах, сервисные центры и доставка курьером. Согласуем стоимость до ремонта. Гарантия 1 год."
 >
-  <ServiceNav />
   <Hero />
-  <QuickContacts />
   <RepairFormats />
   <Symptoms />
   <Prices />

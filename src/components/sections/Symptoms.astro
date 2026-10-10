@@ -2,6 +2,7 @@
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
 import LeadButton from "../ui/LeadButton.astro";
+import { problems, pagePath } from "../../data/service-pages";
 const c = copy.symptoms;
 const prices = copy.prices.tables.flat();
 ---
@@ -11,8 +12,8 @@ const prices = copy.prices.tables.flat();
     <SectionHeading title={c.fields.H2} lead={c.fields["Лид"]} />
     <div class="lr-symptoms__grid">
       {
-        c.items.map((item) => (
-          <article class="lr-symptom">
+        c.items.map((item, i) => (
+          <a class="lr-symptom" href={pagePath(problems[i])}>
             <img
               class="lr-symptom__image"
               src={item.image}
@@ -28,7 +29,7 @@ const prices = copy.prices.tables.flat();
                 {prices.find(([work]) => work === item.priceWork)?.[1]}
               </p>
             </div>
-          </article>
+          </a>
         ))
       }
     </div>

@@ -1,0 +1,193 @@
+#hop-landing .lr-mac-page {
+  --lr-button-bg: var(--lr-graphite-900);
+  --lr-button-text: var(--lr-white);
+  --lr-button-hover: var(--lr-graphite-800);
+  --lr-color-accent-active: var(--lr-graphite-800);
+
+  .lr-mac-hero {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .lr-mac-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+  .lr-mac-hero__copy {
+    max-width: 960px;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .lr-mac-hero h1 {
+    max-width: 22ch;
+    margin-inline: auto;
+    font-size: clamp(38px, 6vw, 84px);
+    line-height: 1.08;
+    font-weight: 400;
+    letter-spacing: -0.035em;
+  }
+  .lr-mac-hero .lr-lead {
+    max-width: 64ch;
+    margin: 24px auto 0;
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .lr-mac-hero .lr-actions {
+    justify-content: center;
+    gap: 16px 32px;
+    margin-top: 32px;
+  }
+  .lr-mac-hero__note {
+    margin-top: 20px;
+  }
+  .lr-mac-hero__media img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center 58%;
+    border-radius: var(--lr-radius);
+  }
+  .lr-mac-hero__media figcaption {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .lr-mac-route {
+    display: grid;
+    gap: 24px;
+    padding: 32px 0;
+    margin: 32px 0 0;
+    border-block: 1px solid var(--lr-color-border);
+    list-style: none;
+    counter-reset: lr-mac-step;
+  }
+  .lr-mac-route li {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    counter-increment: lr-mac-step;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .lr-mac-route li::before {
+    content: counter(lr-mac-step, decimal-leading-zero);
+    flex: none;
+    color: var(--lr-color-muted);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+  }
+  .lr-mac-editorial .lr-child-editorial,
+  .lr-mac-data .lr-child-editorial {
+    gap: 40px;
+  }
+  .lr-mac-editorial .lr-lead,
+  .lr-mac-data .lr-lead {
+    max-width: 46ch;
+    color: var(--lr-color-muted);
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .lr-mac-editorial .lr-editorial-list article:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+  .lr-mac-editorial .lr-editorial-list article {
+    padding-block: 28px;
+  }
+  .lr-mac-editorial .lr-editorial-list p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .lr-mac-data {
+    background: var(--lr-color-surface-alt);
+    color: var(--lr-color-text);
+    border-block: 1px solid var(--lr-color-border);
+  }
+  .lr-mac-data .lr-child-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+  }
+  .lr-mac-data .lr-child-list li {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--lr-color-border);
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .lr-mac-data .lr-child-list li:first-child {
+    padding-top: 0;
+  }
+  .lr-mac-data .lr-child-list li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .lr-prices {
+    background: var(--lr-color-bg);
+    border-block: 1px solid var(--lr-color-border);
+  }
+  .lr-price-table {
+    background: transparent;
+  }
+  .lr-price-table th,
+  .lr-price-table td {
+    padding-block: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #hop-landing .lr-mac-page {
+    .lr-mac-hero {
+      padding-top: 56px;
+    }
+    .lr-mac-hero__grid {
+      gap: 48px;
+    }
+    .lr-mac-hero .lr-lead {
+      font-size: 20px;
+      line-height: 32px;
+    }
+    .lr-mac-hero__media img {
+      aspect-ratio: 16 / 7;
+    }
+    .lr-mac-route {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+      padding-block: 40px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  #hop-landing .lr-mac-page {
+    .lr-mac-editorial .lr-child-editorial,
+    .lr-mac-data .lr-child-editorial {
+      grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+      gap: 112px;
+    }
+    .lr-mac-editorial h2,
+    .lr-mac-data h2 {
+      font-size: 40px;
+      line-height: 48px;
+    }
+    .lr-prices .lr-container {
+      display: grid;
+      grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+      grid-template-rows: min-content 1fr;
+      gap: 32px 80px;
+      align-items: start;
+    }
+    .lr-prices .lr-section-heading {
+      margin-bottom: 0;
+    }
+    .lr-price-table {
+      grid-column: 2;
+      grid-row: 1 / 3;
+    }
+    .lr-prices__note {
+      grid-column: 1;
+      margin-top: 0;
+      max-width: 40ch;
+    }
+  }
+}

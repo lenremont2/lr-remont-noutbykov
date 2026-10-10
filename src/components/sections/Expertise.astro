@@ -2,6 +2,7 @@
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
 import LeadButton from "../ui/LeadButton.astro";
+import { brands, macbook, pagePath } from "../../data/service-pages";
 const c = copy.expertise;
 const f = c.items[2].fields;
 ---
@@ -40,7 +41,15 @@ const f = c.items[2].fields;
     </div>
     <div class="lr-brands">
       <h3>{f["Подзаголовок брендов"]}</h3>
-      <p class="lr-brands__names">{f["Бренды"]}</p>
+      <ul class="lr-brand-links">
+        {
+          [...brands, macbook].map((page) => (
+            <li>
+              <a href={pagePath(page)}>{page.label}</a>
+            </li>
+          ))
+        }
+      </ul>
       <p class="lr-caption">{f["Текст"]}</p>
     </div>
   </div>

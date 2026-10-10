@@ -1,0 +1,52 @@
+---
+import LeadButton from "./LeadButton.astro";
+interface Props {
+  title: string;
+  lead: string;
+  source: string;
+  image: string;
+  alt: string;
+  width: number;
+  height: number;
+  symptom?: string;
+  warning?: string;
+}
+const { title, lead, source, image, alt, width, height, symptom, warning } =
+  Astro.props;
+---
+
+<section
+  id="lr-hero"
+  class="lr-section lr-child-hero"
+  aria-labelledby="lr-child-title"
+>
+  <div class="lr-container lr-child-hero__grid">
+    <div>
+      <h1 id="lr-child-title">{title}</h1>
+      <p class="lr-lead">{lead}</p>
+      {warning && <p class="lr-child-alert">{warning}</p>}
+      <div class="lr-actions" data-lr-hero-cta>
+        <LeadButton
+          label="Узнать стоимость ремонта"
+          source={source}
+          symptom={symptom}
+        />
+        <a class="lr-text-action" href="#lr-first-aid">Что сделать сейчас</a>
+      </div>
+      <ul class="lr-child-facts">
+        <li>Диагностика бесплатно</li>
+        <li>Гарантия на ремонт 1 год</li>
+        <li>Сумма согласуется до ремонта</li>
+      </ul>
+    </div>
+    <img
+      class="lr-child-hero__photo"
+      src={image}
+      alt={alt}
+      width={width}
+      height={height}
+      fetchpriority="high"
+      decoding="async"
+    />
+  </div>
+</section>

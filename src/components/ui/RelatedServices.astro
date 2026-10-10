@@ -1,0 +1,38 @@
+---
+import { brands, problems, macbook, pagePath } from "../../data/service-pages";
+interface Props {
+  current: string;
+}
+const { current } = Astro.props;
+---
+
+<section class="lr-section lr-related">
+  <div class="lr-container lr-related__grid">
+    <div>
+      <h2>По неисправности</h2><ul class="lr-directory">
+        {
+          problems
+            .filter((page) => pagePath(page) !== current)
+            .map((page) => (
+              <li>
+                <a href={pagePath(page)}>{page.label}</a>
+              </li>
+            ))
+        }
+      </ul>
+    </div>
+    <div>
+      <h2>По производителю</h2><ul class="lr-brand-links">
+        {
+          [...brands, macbook]
+            .filter((page) => pagePath(page) !== current)
+            .map((page) => (
+              <li>
+                <a href={pagePath(page)}>{page.label}</a>
+              </li>
+            ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>

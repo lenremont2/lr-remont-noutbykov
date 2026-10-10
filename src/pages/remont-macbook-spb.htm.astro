@@ -1,0 +1,178 @@
+---
+import LandingLayout from "../layouts/LandingLayout.astro";
+import ServiceNav from "../components/sections/ServiceNav.astro";
+import RepairFormats from "../components/sections/RepairFormats.astro";
+import Locations from "../components/sections/Locations.astro";
+import Guarantee from "../components/sections/Guarantee.astro";
+import LeadCapture from "../components/sections/LeadCapture.astro";
+import LeadButton from "../components/ui/LeadButton.astro";
+import Breadcrumbs from "../components/ui/Breadcrumbs.astro";
+import ServicePriceTable from "../components/ui/ServicePriceTable.astro";
+import ServiceFaq from "../components/ui/ServiceFaq.astro";
+import RelatedServices from "../components/ui/RelatedServices.astro";
+import {
+  macbook,
+  macbookPrices,
+  pagePath,
+  getSeo,
+} from "../data/service-pages";
+---
+
+<LandingLayout {...getSeo(macbook)}>
+  <div class="lr-mac-page">
+    <section
+      id="lr-hero"
+      class="lr-section lr-mac-hero"
+      aria-labelledby="lr-mac-title"
+    >
+      <div class="lr-container">
+        <div class="lr-mac-hero__grid">
+          <div class="lr-mac-hero__copy">
+            <h1 id="lr-mac-title">
+              {macbook.h1.replace("в Санкт", "в\u00a0Санкт")}
+            </h1><p class="lr-lead">
+              {macbook.lead}
+            </p><div class="lr-actions" data-lr-hero-cta>
+              <LeadButton
+                label="Обсудить ремонт MacBook"
+                source="macbook-hero"
+              /><a class="lr-text-action" href="#lr-prices"
+                >Посмотреть цены работ</a
+              >
+            </div><p class="lr-caption lr-mac-hero__note">
+              Диагностика бесплатно · Гарантия Ленремонта 1 год
+            </p>
+          </div>
+          <figure class="lr-mac-hero__media">
+            <img
+              src="/media/mobile-lab-interior.webp"
+              alt="Закрытый MacBook на рабочем столе мобильной мастерской Ленремонта"
+              width="1080"
+              height="1080"
+              fetchpriority="high"
+              decoding="async"
+            /><figcaption>
+              Рабочее место мобильной мастерской Ленремонта
+            </figcaption>
+          </figure>
+        </div>
+        <ol class="lr-mac-route" aria-label="Порядок ремонта">
+          <li>Сначала модель.</li>
+          <li>Затем причина.</li>
+          <li>После — согласованный ремонт.</li>
+        </ol>
+      </div>
+    </section>
+    <section class="lr-section lr-mac-editorial">
+      <div class="lr-container lr-child-editorial">
+        <div>
+          <h2>Один MacBook. Разные причины сбоя.</h2><p
+            class="lr-lead lr-child-section-lead"
+          >
+            Зарядка, батарея, клавиатура, плата и macOS требуют разных проверок.
+            Название неисправности не заменяет диагностику, а название Air или
+            Pro — точную модель.
+          </p>
+        </div>
+        <div class="lr-editorial-list">
+          <article>
+            <h3>Нет питания или зарядки</h3><p>
+              Проверим используемый адаптер, разъём и цепи питания. Возьмите
+              зарядное устройство: важно воспроизвести проблему именно с вашим
+              комплектом. Если MacBook включается, но не загружает систему,
+              проверка пойдёт по другому сценарию.
+            </p>
+          </article>
+          <article>
+            <h3>Батарея, клавиатура, корпус</h3><p>
+              Оценим неисправный узел и совместимость нужных компонентов.
+              Возможность замены, состав разборки и стоимость зависят от
+              конкретного MacBook. Наличие детали и срок обсуждаем после
+              подбора, до начала работ.
+            </p>
+          </article>
+          <article>
+            <h3>Ошибка запуска macOS</h3><p>
+              Уточним, на каком этапе останавливается запуск, и проверим систему
+              и накопитель. Восстановление macOS, перенос данных и аппаратный
+              ремонт — отдельные задачи. Выберем необходимые действия после
+              проверки устройства.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="lr-section lr-mac-data">
+      <div class="lr-container lr-child-editorial">
+        <div>
+          <h2>Важные файлы обсуждаем до действий с накопителем</h2><p
+            class="lr-lead lr-child-section-lead"
+          >
+            Рабочие проекты, документы и фотографии могут быть важнее скорости
+            ремонта. Сообщите об этом при обращении — сначала разберёмся с
+            данными и вашим приоритетом.
+          </p>
+        </div>
+        <ul class="lr-child-list">
+          <li>
+            Уточним, есть ли актуальная резервная копия и доступ к ней.
+          </li><li>
+            Оценим состояние накопителя; до проверки не обещаем восстановить
+            любой файл.
+          </li><li>
+            Согласуем переустановку, перенос или восстановление отдельно.
+            Возможность сохранения данных зависит от состояния устройства.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="lr-section lr-mac-editorial">
+      <div class="lr-container lr-child-editorial">
+        <div>
+          <h2>Назовите модель — подготовим следующий шаг</h2><p
+            class="lr-lead lr-child-section-lead"
+          >
+            Air, Pro, год выпуска и точное обозначение помогут обсуждать
+            конструкцию и необходимые компоненты. Если данных о модели нет,
+            поможем уточнить её при диагностике.
+          </p>
+        </div>
+        <div class="lr-editorial-list">
+          <article>
+            <h3>Если MacBook включается</h3><p>
+              Откройте меню Apple и пункт «Об этом Mac». Запишите название
+              модели и год. Не публикуйте личные сведения из окна системы; для
+              начала обращения достаточно обозначения устройства.
+            </p>
+          </article><article>
+            <h3>Если MacBook не включается</h3><p>
+              Посмотрите маркировку на корпусе или упаковке. Расскажите, как
+              реагируют экран и питание, и возьмите зарядку. Если была жидкость,
+              не включайте устройство для дополнительной проверки.
+            </p>
+          </article><a
+            class="lr-text-action"
+            href="https://support.apple.com/ru-ru/102767"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Как определить модель — инструкция Apple</a
+          >
+        </div>
+      </div>
+    </section>
+    <ServicePriceTable
+      title="Стоимость работ для MacBook"
+      rows={macbookPrices}
+    />
+    <RepairFormats />
+    <Guarantee />
+    <Locations />
+    <ServiceFaq items={macbook.faq} />
+    <RelatedServices current={pagePath(macbook)} />
+    <LeadCapture
+      title="Расскажите, что случилось с MacBook"
+      lead="Назовите модель, опишите проблему и сообщите о важных файлах. Сориентируем по цене и подберём удобный способ передачи устройства."
+      serviceName="Ремонт MacBook"
+    />
+  </div>
+</LandingLayout>

@@ -1,0 +1,38 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+interface Props {
+  title: string;
+  rows: string[][];
+}
+const { title, rows } = Astro.props;
+---
+
+<section id="lr-prices" class="lr-section lr-prices">
+  <div class="lr-container">
+    <SectionHeading title={title} />
+    <table class="lr-price-table" aria-label={title}>
+      <thead
+        ><tr
+          ><th scope="col">Работа</th><th scope="col">Стоимость работы</th></tr
+        ></thead
+      >
+      <tbody
+        >{
+          rows.map(([work, price]) => (
+            <tr>
+              <>
+                <th scope="row">{work}</th>
+                <td>{price}</td>
+              </>
+            </tr>
+          ))
+        }</tbody
+      >
+    </table>
+    <p class="lr-caption lr-prices__note">
+      Цены «от» относятся к работе. Запчасти оплачиваются отдельно; полную сумму
+      согласуем после диагностики, до ремонта. Обычная диагностика бесплатна,
+      срочная — 500 ₽.
+    </p>
+  </div>
+</section>

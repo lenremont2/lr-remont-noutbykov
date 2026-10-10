@@ -4,8 +4,14 @@ interface Props {
   id: string;
   source: string;
   submitLabel: string;
+  serviceName?: string;
 }
-const { id, source, submitLabel } = Astro.props;
+const {
+  id,
+  source,
+  submitLabel,
+  serviceName = "Ремонт ноутбуков",
+} = Astro.props;
 ---
 
 <div data-lead-root>
@@ -17,7 +23,7 @@ const { id, source, submitLabel } = Astro.props;
     novalidate
   >
     <input type="hidden" name="contact_method" value="Телефон" />
-    <input type="hidden" name="quiz_service" value="Ремонт ноутбуков" />
+    <input type="hidden" name="quiz_service" value={serviceName} />
     <input type="hidden" name="source" value={source} />
     <input type="hidden" name="service_format" value="consultation" />
     <input type="hidden" name="device_category" value="" />

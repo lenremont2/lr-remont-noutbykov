@@ -1,0 +1,15 @@
+---
+import { homePath } from "../../data/service-pages";
+interface Props {
+  current: string;
+}
+const { current } = Astro.props;
+---
+
+<nav class="lr-container lr-breadcrumbs" aria-label="Хлебные крошки">
+  <ol>
+    <li><a href="https://www.lenremont.ru/">Ленремонт</a></li>
+    <li><a href={homePath}>Ремонт ноутбуков</a></li>
+    <li><span aria-current="page">{current}</span></li>
+  </ol>
+</nav>

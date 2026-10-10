@@ -1,6 +1,13 @@
 ---
 import copy from "../../data/laptop-service.json";
 import LeadButton from "../ui/LeadButton.astro";
+import QuickContacts from "./QuickContacts.astro";
+import type { BrandPage } from "../../data/service-pages";
+interface Props {
+  brand?: BrandPage;
+}
+const { brand } = Astro.props;
+const Heading = brand ? "h1" : "h2";
 const c = copy.hero.fields;
 ---
 
@@ -16,9 +23,15 @@ const c = copy.hero.fields;
           c["Надзаголовок"]
         }
       </p>
-      <h2 class="lr-hero__title" id="lr-hero-title">{c["H2"]}</h2>
+      <Heading class="lr-hero__title" id="lr-hero-title">
+        {brand?.h1 ?? c["H2"]}
+      </Heading>
+      {brand && <p class="lr-lead lr-hero__lead">{brand.lead}</p>}
       <div class="lr-actions" data-lr-hero-cta>
-        <LeadButton label={c["Основной CTA"]} source="hero" />
+        <LeadButton
+          label={c["Основной CTA"]}
+          source={brand ? `brand:${brand.label}` : "hero"}
+        />
         <a class="lr-text-action" href="#lr-map-workshops"
           >{c["Второй CTA"]}<span aria-hidden="true">↗</span>
         </a>
@@ -39,21 +52,36 @@ const c = copy.hero.fields;
       </ul>
     </div>
     <figure class="lr-hero__media">
-      <video
-        class="lr-hero__video"
-        loop
-        muted
-        data-lr-hero-video
-        playsinline
-        preload="none"
-        width="480"
-        height="640"
-        poster="/media/mobile-lab-exterior.webp"
-        aria-label="Мобильная мастерская Ленремонта — ремонт ноутбуков"
-      >
-        <source src="/media/notebook-auto.mp4" type="video/mp4" />
-        Мобильная мастерская Ленремонта — ремонт ноутбуков.
-      </video>
+      {
+        brand ? (
+          <img
+            class="lr-hero__photo"
+            src={brand.heroImage}
+            alt={`Ноутбук ${brand.label} на рабочем столе для диагностики`}
+            width="768"
+            height="1024"
+            fetchpriority="high"
+            decoding="async"
+          />
+        ) : (
+          <video
+            class="lr-hero__video"
+            loop
+            muted
+            data-lr-hero-video
+            playsinline
+            preload="none"
+            width="480"
+            height="640"
+            poster="/media/mobile-lab-exterior.webp"
+            aria-label="Мобильная мастерская Ленремонта — ремонт ноутбуков"
+          >
+            <source src="/media/notebook-auto.mp4" type="video/mp4" />
+            Мобильная мастерская Ленремонта — ремонт ноутбуков.
+          </video>
+        )
+      }
     </figure>
+    <QuickContacts />
   </div>
 </section>
