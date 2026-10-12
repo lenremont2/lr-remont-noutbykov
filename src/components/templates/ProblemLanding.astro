@@ -1,9 +1,8 @@
 ---
 import LandingLayout from "../../layouts/LandingLayout.astro";
-import ServiceNav from "../sections/ServiceNav.astro";
 import RepairFormats from "../sections/RepairFormats.astro";
 import Guarantee from "../sections/Guarantee.astro";
-import Locations from "../sections/Locations.astro";
+import Reviews from "../sections/Reviews.astro";
 import LeadCapture from "../sections/LeadCapture.astro";
 import Breadcrumbs from "../ui/Breadcrumbs.astro";
 import ChildHero from "../ui/ChildHero.astro";
@@ -23,112 +22,128 @@ interface Props {
 }
 const { page } = Astro.props;
 const symptom = copy.symptoms.items.find(
-  (item) => item.image === `/media/symptom-${page.imageKey}.webp`,
+  (item) => item.image === "/media/symptom-" + page.imageKey + ".webp",
 )!;
 const rows = standardPrices.filter(([work]) => page.priceWorks.includes(work));
 ---
 
 <LandingLayout {...getSeo(page)}>
-  <div class="lr-problem-page">
+  <div class="lr-problem-page lr-child-page">
+    <Breadcrumbs current={page.label} />
     <ChildHero
       title={page.h1}
       lead={page.lead}
-      source={`problem:${page.imageKey}`}
+      source={"problem:" + page.imageKey}
       image={page.heroImage}
       alt={page.heroAlt}
       width={1152}
       height={768}
       symptom={symptom.title}
-      warning={page.warning}
     />
     <section
-      id="lr-first-aid"
-      class="lr-section lr-problem-guidance"
-      aria-labelledby="lr-first-aid-title"
+      id="lr-problem-guide"
+      class="lr-section lr-child-guide"
+      aria-labelledby="lr-causes-title"
     >
-      <div class="lr-container lr-child-guidance__grid">
-        <h2 id="lr-first-aid-title">{page.immediateTitle}</h2><ol
-          class="lr-problem-checks"
-        >
-          {page.immediate.map((text) => <li>{text}</li>)}
-        </ol>
-      </div>
-    </section>
-    <section class="lr-section lr-problem-next" aria-labelledby="lr-next-title">
-      <div class="lr-container">
-        <div class="lr-child-editorial">
-          <div>
-            <h2 id="lr-next-title">Какой следующий шаг выбрать</h2>
-            <p class="lr-lead lr-child-section-lead">
-              Сопоставьте признаки с вашей ситуацией. Это ориентир для действий,
-              а причину и необходимые работы определим при проверке ноутбука.
-            </p>
-          </div>
-          <dl class="lr-problem-decisions">
+      <div class="lr-container lr-child-guide__layout">
+        <nav class="lr-child-contents" aria-label="Содержание статьи">
+          <p>В этой статье</p>
+          <a href="#lr-causes">Причины неисправности</a>
+          <a href="#lr-first-aid">Что сделать сейчас</a>
+          <a href="#lr-next">Какой следующий шаг выбрать</a>
+          <a href="#lr-prepare">Что сообщить мастеру</a>
+        </nav>
+        <article class="lr-child-article">
+          <header id="lr-causes">
+            <p class="lr-eyebrow">Причины и рекомендации</p>
+            <h2 id="lr-causes-title">{page.causesTitle}</h2>
+          </header>
+          <aside class="lr-problem-warning" aria-label="Важная рекомендация">
+            <strong>Важно</strong>
+            <p>{page.warning}</p>
+          </aside>
+          <div class="lr-child-topics">
             {
-              page.decisions.map((item) => (
+              page.causes.map((item) => (
                 <div>
                   <>
-                    <dt>{item.title}</dt>
-                    <dd>{item.text}</dd>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
                   </>
                 </div>
               ))
             }
-          </dl>
-        </div>
-        <div class="lr-problem-recommendation">
-          <div>
-            <h3>{page.recommendation.title}</h3>
-            <p>{page.recommendation.text}</p>
           </div>
-          <div class="lr-problem-recommendation__actions">
-            <LeadButton
-              label="Обсудить симптомы с мастером"
-              source={`problem:${page.imageKey}:recommendation`}
-              symptom={symptom.title}
-            />
-            <a class="lr-text-action" href="tel:+78123444444"
-              >Позвонить: {copy.contact.fields["Телефон"]}</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="lr-section">
-      <div class="lr-container lr-child-editorial">
-        <div>
-          <h2>{page.causesTitle}</h2>
-          <div class="lr-problem-prepare">
-            <h3>Что сообщить мастеру</h3>
+          <section
+            id="lr-first-aid"
+            class="lr-child-chapter"
+            aria-labelledby="lr-first-aid-title"
+          >
+            <h2 id="lr-first-aid-title">{page.immediateTitle}</h2>
+            <ol class="lr-problem-checks">
+              {page.immediate.map((text) => <li>{text}</li>)}
+            </ol>
+          </section>
+          <section
+            id="lr-next"
+            class="lr-child-chapter"
+            aria-labelledby="lr-next-title"
+          >
+            <h2 id="lr-next-title">Какой следующий шаг выбрать</h2>
+            <p class="lr-child-intro">
+              Сопоставьте признаки с вашей ситуацией. Это ориентир для действий,
+              а причину и необходимые работы определим при проверке ноутбука.
+            </p>
+            <dl class="lr-problem-decisions">
+              {
+                page.decisions.map((item) => (
+                  <div>
+                    <>
+                      <dt>{item.title}</dt>
+                      <dd>{item.text}</dd>
+                    </>
+                  </div>
+                ))
+              }
+            </dl>
+          </section>
+          <section
+            id="lr-prepare"
+            class="lr-child-chapter"
+            aria-labelledby="lr-prepare-title"
+          >
+            <h2 id="lr-prepare-title">Что сообщить мастеру</h2>
             <ul class="lr-child-list">
               {page.prepare.map((text) => <li>{text}</li>)}
             </ul>
+          </section>
+          <div class="lr-child-recommendation">
+            <h3>{page.recommendation.title}</h3>
+            <p>{page.recommendation.text}</p>
+            <div class="lr-child-recommendation__actions">
+              <LeadButton
+                label="Обсудить симптомы с мастером"
+                source={"problem:" + page.imageKey + ":recommendation"}
+                symptom={symptom.title}
+              />
+              <a class="lr-text-action" href="tel:+78123444444"
+                >Позвонить: {copy.contact.fields["Телефон"]}</a
+              >
+            </div>
           </div>
-        </div><div class="lr-editorial-list">
-          {
-            page.causes.map((item) => (
-              <article>
-                <>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </>
-              </article>
-            ))
-          }
-        </div>
+        </article>
       </div>
     </section>
+    <RepairFormats linkToLocations={false} />
     <ServicePriceTable title="Какие работы могут понадобиться" rows={rows} />
-    <RepairFormats />
     <Guarantee />
-    <Locations />
+    <Reviews />
     <ServiceFaq items={page.faq} />
     <RelatedServices current={pagePath(page)} />
     <LeadCapture
       title={page.contactTitle}
       lead={page.contactLead}
-      serviceName={`Ремонт ноутбука: ${page.label}`}
+      serviceName={"Ремонт ноутбука: " + page.label}
     />
   </div>
 </LandingLayout>

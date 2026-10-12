@@ -1,0 +1,37 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+
+const s = copy.security;
+---
+
+<section id="lr-security" class="lr-section lr-security">
+  <div class="lr-container">
+    <SectionHeading
+      eyebrow={s.fields["Надзаголовок"]}
+      title={s.fields.H2}
+      lead={s.fields["Лид"]}
+    />
+    <div class="lr-security__grid">
+      {
+        s.items.map((item, index) => (
+          <article class="lr-security-card">
+            <div class="lr-security-card__top">
+              <span class="lr-security-card__num" aria-hidden="true">
+                0{index + 1}
+              </span>
+              <span class="lr-security-card__tag">{item.fields["Акцент"]}</span>
+            </div>
+            <h3 class="lr-security-card__title">{item.title}</h3>
+            <p class="lr-security-card__text">{item.text}</p>
+          </article>
+        ))
+      }
+    </div>
+    <div class="lr-security__footer">
+      <p class="lr-security__note">{s.fields["Сноска"]}</p>
+      <LeadButton label={s.fields.CTA} source="security-rules" />
+    </div>
+  </div>
+</section>

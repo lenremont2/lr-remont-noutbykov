@@ -1,0 +1,60 @@
+---
+import cases from "../../data/repair-cases.json";
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+const prices = copy.prices.tables.flat();
+---
+
+<section id="lr-repair-cases" class="lr-section lr-repair-cases">
+  <div class="lr-container">
+    <SectionHeading
+      title="Стоимость ремонта в частых случаях"
+      lead="Узнайте начальную стоимость и какие работы могут понадобиться вашему ноутбуку."
+    />
+    <div class="lr-repair-cases__grid">
+      {
+        cases.map((item) => (
+          <article class="lr-repair-case">
+            <div class="lr-repair-case__body">
+              <h3>{item.title}</h3>
+              <p class="lr-repair-case__price">
+                {prices.find(([work]) => work === item.priceWork)?.[1]}
+              </p>
+              <ul>
+                {item.works.map((work) => (
+                  <li>{work}</li>
+                ))}
+              </ul>
+              <LeadButton
+                label="Уточнить стоимость"
+                source={`repair-case-${item.id}`}
+                symptom={item.symptom}
+                text
+              />
+            </div>
+            <img
+              class="lr-repair-case__image"
+              src={item.image}
+              alt=""
+              width="768"
+              height="512"
+              loading="lazy"
+              decoding="async"
+            />
+          </article>
+        ))
+      }
+    </div>
+    <div class="lr-section-note">
+      <p class="lr-caption">
+        Цена «от» — за работу для обычного ноутбука, запчасти оплачиваются
+        отдельно. В карточках перечислены возможные работы, а не состав пакета.
+        Точный объём и полную стоимость согласуем после диагностики, до ремонта.
+      </p>
+      <a class="lr-text-action" href="#lr-prices">
+        Смотреть полный прайс<span aria-hidden="true">↓</span>
+      </a>
+    </div>
+  </div>
+</section>

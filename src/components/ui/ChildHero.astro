@@ -10,9 +10,22 @@ interface Props {
   height: number;
   symptom?: string;
   warning?: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
 }
-const { title, lead, source, image, alt, width, height, symptom, warning } =
-  Astro.props;
+const {
+  title,
+  lead,
+  source,
+  image,
+  alt,
+  width,
+  height,
+  symptom,
+  warning,
+  secondaryHref = "#lr-first-aid",
+  secondaryLabel = "Что сделать сейчас",
+} = Astro.props;
 ---
 
 <section
@@ -31,7 +44,7 @@ const { title, lead, source, image, alt, width, height, symptom, warning } =
           source={source}
           symptom={symptom}
         />
-        <a class="lr-text-action" href="#lr-first-aid">Что сделать сейчас</a>
+        <a class="lr-text-action" href={secondaryHref}>{secondaryLabel}</a>
       </div>
       <ul class="lr-child-facts">
         <li>Диагностика бесплатно</li>

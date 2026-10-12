@@ -5,9 +5,14 @@
 @use "ui/button";
 @use "ui/modal";
 @use "sections/laptop-service";
+@use "sections/repair-cases";
+@use "sections/quiz";
+@use "sections/home-hero";
+@use "sections/benefits";
+@use "sections/formats";
+@use "sections/security";
+@use "sections/timeline";
 
 @use "sections/service-pages";
 
-@use "sections/macbook";
-
-@use "sections/problem-pages";
+@use "sections/child-pages";

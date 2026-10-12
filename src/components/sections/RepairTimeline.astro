@@ -1,0 +1,58 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+
+const t = copy.timeline;
+---
+
+<section id="lr-timeline" class="lr-section lr-timeline">
+  <div class="lr-container">
+    <SectionHeading
+      eyebrow={t.fields["Надзаголовок"]}
+      title={t.fields.H2}
+      lead={t.fields["Лид"]}
+    />
+
+    <div class="lr-scenarios-mosaic">
+      {
+        t.items.map((item, index) => (
+          <article
+            class={`lr-scenario-poster ${index === 0 ? "lr-scenario-poster--featured" : ""}`}
+          >
+            <img
+              class="lr-scenario-poster__bg"
+              src={item.image}
+              alt={item.imageAlt}
+              width={index === 0 ? "640" : "580"}
+              height={index === 0 ? "540" : "260"}
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="lr-scenario-poster__overlay" aria-hidden="true" />
+
+            <div class="lr-scenario-poster__content">
+              <div class="lr-scenario-poster__top">
+                <span class="lr-scenario-poster__badge">{item.tag}</span>
+              </div>
+
+              <div class="lr-scenario-poster__bottom">
+                <span class="lr-scenario-poster__time">{item.time}</span>
+                <h3 class="lr-scenario-poster__title">{item.title}</h3>
+                <p class="lr-scenario-poster__desc">{item.desc}</p>
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="lr-timeline__footer">
+      <div class="lr-timeline__footer-copy">
+        <strong class="lr-timeline__footer-title">Срочный ремонт?</strong>
+        <p class="lr-timeline__footer-note">{t.fields["Сноска"]}</p>
+      </div>
+      <LeadButton label={t.fields.CTA} source="repair-timeline" />
+    </div>
+  </div>
+</section>

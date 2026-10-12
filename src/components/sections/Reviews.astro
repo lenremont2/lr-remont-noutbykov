@@ -1,23 +1,98 @@
 ---
 import copy from "../../data/laptop-service.json";
+import reviews from "../../data/reviews.json";
+import ReviewCard from "../ui/ReviewCard.astro";
 import SectionHeading from "../ui/SectionHeading.astro";
 const c = copy.reviews.fields;
 ---
 
-<section id="lr-reviews" class="lr-section lr-section--compact">
+<section
+  id="lr-reviews"
+  class="lr-section lr-section--compact"
+  data-lr-review-slider
+>
   <div class="lr-container lr-reviews">
-    <SectionHeading
-      title={c.H2}
-      eyebrow={c["Надзаголовок"]}
-      lead={c["Текст"]}
-    />
-    <div>
-      <a
-        class="lr-reviews__link"
-        href="https://www.lenremont.ru/testimonials.htm"
-        >{c.CTA}<span aria-hidden="true">↗</span>
-      </a>
-      <p class="lr-caption">{c["Подпись"]}</p>
+    <div class="lr-reviews__header">
+      <SectionHeading title={c.H2} />
+      <div class="lr-reviews__controls" data-lr-review-controls hidden>
+        <span
+          class="lr-reviews__position"
+          data-lr-review-position
+          aria-live="polite"
+          aria-atomic="true">{reviews.items.length} отзыва</span
+        >
+        <button
+          class="lr-reviews__arrow"
+          type="button"
+          data-lr-review-prev
+          aria-label="Предыдущие отзывы"
+          aria-controls="lr-review-track"
+          disabled
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+            ><path
+              d="m14 6-6 6 6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path></svg
+          >
+        </button>
+        <button
+          class="lr-reviews__arrow"
+          type="button"
+          data-lr-review-next
+          aria-label="Следующие отзывы"
+          aria-controls="lr-review-track"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+            ><path
+              d="m10 6 6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path></svg
+          >
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="lr-reviews__stage">
+    <div
+      class="lr-container lr-reviews__frame"
+      data-lr-review-frame
+      aria-hidden="true"
+    >
+    </div>
+    <div
+      id="lr-review-track"
+      class="lr-reviews__track"
+      data-lr-review-track
+      role="region"
+      aria-label="Отзывы о ремонте ноутбуков, листайте влево и вправо"
+      aria-roledescription="карусель"
+      tabindex="0"
+    >
+      {
+        reviews.items.map((review) => (
+          <ReviewCard
+            review={review}
+            source={
+              reviews.sources[review.source as keyof typeof reviews.sources]
+            }
+          />
+        ))
+      }
     </div>
   </div>
 </section>

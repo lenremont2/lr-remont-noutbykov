@@ -71,17 +71,35 @@ for (const page of pages) {
   assert.ok(html.includes(page.h1), page.slug);
   if (content.brands.includes(page)) {
     const hero = html.match(/<section id="lr-hero"[\s\S]*?<\/section>/)?.[0];
-    assert.ok(hero?.includes('class="lr-hero lr-section"'), page.slug);
+    assert.ok(hero?.includes('class="lr-section lr-child-hero"'), page.slug);
     assert.ok(
-      hero.includes('<h1 class="lr-hero__title" id="lr-hero-title">'),
+      hero.includes('<h1 id="lr-child-title">' + page.h1 + "</h1>"),
       page.slug,
     );
     assert.ok(hero.includes(page.lead), page.slug);
-    assert.ok(hero.includes(`src="${page.heroImage}"`), page.slug);
+    assert.ok(hero.includes('src="' + page.heroImage + '"'), page.slug);
     assert.ok(hero.includes('width="768" height="1024"'), page.slug);
-    assert.ok(!hero.includes("<video"), page.slug);
-    for (const fact of source.hero.bullets)
-      assert.ok(hero.includes(fact.title), page.slug);
+    assert.ok(
+      hero.includes('data-source="brand:' + page.label + '"'),
+      page.slug,
+    );
+    assert.ok(hero.includes('href="#lr-brand-guide"'), page.slug);
+    assert.ok(
+      !hero.includes("<video") &&
+        !hero.includes("lr-hero__facts") &&
+        !hero.includes("lr-quick-contacts"),
+      page.slug,
+    );
+    assert.ok(
+      html.includes(page.sectionTitle) && html.includes(page.intro),
+      page.slug,
+    );
+    for (const item of page.checks)
+      assert.ok(
+        html.includes(item.title) && html.includes(item.text),
+        page.slug,
+      );
+    for (const text of page.prepare) assert.ok(html.includes(text), page.slug);
   }
   if (content.problems.includes(page)) {
     assert.ok(html.includes(`src="${page.heroImage}"`), page.slug);
@@ -101,11 +119,61 @@ for (const page of pages) {
         html.includes(item.title) && html.includes(item.text),
         page.slug,
       );
+    for (const cause of page.causes) {
+      assert.ok(
+        html.includes(cause.title) && html.includes(cause.text),
+        page.slug,
+      );
+    }
     const firstAid = html.indexOf('id="lr-first-aid"');
     const nextStep = html.indexOf('class="lr-problem-decisions"');
     assert.ok(
       firstAid < nextStep && nextStep < html.indexOf('id="lr-prices"'),
       page.slug,
+    );
+  }
+  const guideId = content.problems.includes(page)
+    ? "lr-problem-guide"
+    : "lr-brand-guide";
+  const sections = [
+    "lr-hero",
+    guideId,
+    "lr-formats",
+    "lr-prices",
+    "lr-guarantee",
+    "lr-reviews",
+    "lr-faq",
+  ];
+  const positions = sections.map((id) => html.indexOf('id="' + id + '"'));
+  assert.ok(
+    positions.every(
+      (position, i) => position >= 0 && (!i || position > positions[i - 1]),
+    ),
+    "Service section order: " + page.slug,
+  );
+  assert.ok(
+    html.indexOf('class="lr-section lr-related"') > positions.at(-1),
+    page.slug,
+  );
+  assert.ok(!html.includes('id="lr-locations"'), page.slug);
+  for (const format of ["mobile-lab", "workshop", "courier"])
+    assert.ok(
+      html.includes('data-source="formats" data-format="' + format + '"'),
+      page.slug,
+    );
+  for (const item of page.faq)
+    assert.ok(
+      html.includes(item.question) && html.includes(item.answer),
+      page.slug,
+    );
+  if (page === content.macbook) {
+    for (const id of ["lr-mac-checks", "lr-mac-data", "lr-mac-model"])
+      assert.ok(html.includes('id="' + id + '"'), page.slug);
+    assert.ok(html.includes("https://support.apple.com/ru-ru/102767"));
+    assert.ok(
+      html.includes(
+        "Возможность сохранения данных зависит от состояния устройства.",
+      ),
     );
   }
   assert.equal(html.match(/<title>([^<]+)<\/title>/)?.[1], page.title);

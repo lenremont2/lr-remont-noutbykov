@@ -1,0 +1,108 @@
+#hop-landing .lr-security {
+  background: var(--lr-color-surface);
+  border-top: 1px solid var(--lr-color-border);
+}
+
+#hop-landing .lr-security__grid {
+  display: grid;
+  gap: 24px;
+}
+
+#hop-landing .lr-security-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 28px 24px;
+  background: var(--lr-ivory-50);
+  border: 1px solid var(--lr-color-border);
+  border-radius: var(--lr-radius);
+  transition: border-color var(--lr-duration-fast) ease;
+}
+
+#hop-landing .lr-security-card:hover {
+  border-color: var(--lr-stone-500);
+}
+
+#hop-landing .lr-security-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+#hop-landing .lr-security-card__num {
+  font-size: 14px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--lr-stone-500);
+  letter-spacing: -0.01em;
+}
+
+#hop-landing .lr-security-card__tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--lr-blue-700);
+  background: var(--lr-blue-50);
+  padding: 4px 10px;
+  border-radius: var(--lr-radius-pill);
+  border: 1px solid rgb(37 99 166 / 16%);
+}
+
+#hop-landing .lr-security-card__title {
+  margin: 0 0 12px;
+  font-size: clamp(20px, 1.6vw, 24px);
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--lr-graphite-900);
+  letter-spacing: -0.02em;
+  text-wrap: pretty;
+}
+
+#hop-landing .lr-security-card__text {
+  margin: 0;
+  color: var(--lr-color-muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#hop-landing .lr-security__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 36px;
+  padding: 20px 24px;
+  background: var(--lr-stone-100);
+  border-radius: var(--lr-radius);
+  border: 1px solid var(--lr-color-border);
+}
+
+#hop-landing .lr-security__note {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--lr-graphite-900);
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  #hop-landing .lr-security__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hop-landing .lr-security__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+  }
+
+  #hop-landing .lr-security-card {
+    padding: 32px 28px;
+  }
+}

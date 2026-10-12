@@ -5,6 +5,7 @@ interface Props {
   format?: string;
   symptom?: string;
   text?: boolean;
+  class?: string;
 }
 const {
   label,
@@ -12,12 +13,13 @@ const {
   format = "consultation",
   symptom,
   text = false,
+  class: className,
 } = Astro.props;
 ---
 
 <a
   href="#lr-contact"
-  class={text ? "lr-text-action" : "lr-button"}
+  class:list={[text ? "lr-text-action" : "lr-button", className]}
   data-lr-lead-open
   data-source={source}
   data-format={format}

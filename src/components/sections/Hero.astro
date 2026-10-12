@@ -13,7 +13,7 @@ const c = copy.hero.fields;
 
 <section
   id="lr-hero"
-  class="lr-hero lr-section"
+  class:list={["lr-hero lr-section", { "lr-hero--home": !brand }]}
   aria-labelledby="lr-hero-title"
 >
   <div class="lr-container lr-hero__grid">
@@ -24,9 +24,14 @@ const c = copy.hero.fields;
         }
       </p>
       <Heading class="lr-hero__title" id="lr-hero-title">
-        {brand?.h1 ?? c["H2"]}
+        {brand ? brand.h1 : <span class="lr-hero__title-intro">{c["H2"]}</span>}
+        {
+          !brand && (
+            <span class="lr-hero__title-accent">{c["Акцент заголовка"]}</span>
+          )
+        }
       </Heading>
-      {brand && <p class="lr-lead lr-hero__lead">{brand.lead}</p>}
+      <p class="lr-lead lr-hero__lead">{brand?.lead ?? c["Лид"]}</p>
       <div class="lr-actions" data-lr-hero-cta>
         <LeadButton
           label={c["Основной CTA"]}
@@ -36,7 +41,6 @@ const c = copy.hero.fields;
           >{c["Второй CTA"]}<span aria-hidden="true">↗</span>
         </a>
       </div>
-      <p class="lr-caption">{c["Текст под действиями"]}</p>
       <ul class="lr-hero__facts" aria-label="Преимущества ремонта в Ленремонте">
         {
           copy.hero.bullets.map((fact) => (
@@ -52,6 +56,11 @@ const c = copy.hero.fields;
       </ul>
     </div>
     <figure class="lr-hero__media">
+      {
+        !brand && (
+          <span class="lr-hero__media-label">Мастерская на колёсах</span>
+        )
+      }
       {
         brand ? (
           <img
@@ -79,6 +88,13 @@ const c = copy.hero.fields;
             <source src="/media/notebook-auto.mp4" type="video/mp4" />
             Мобильная мастерская Ленремонта — ремонт ноутбуков.
           </video>
+        )
+      }
+      {
+        !brand && (
+          <figcaption class="lr-hero__badge">
+            <strong>{c["Срок ремонта"]}</strong>
+          </figcaption>
         )
       }
     </figure>

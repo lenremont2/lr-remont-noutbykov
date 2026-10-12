@@ -2,67 +2,249 @@
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
 import LeadButton from "../ui/LeadButton.astro";
+
+interface Props {
+  linkToLocations?: boolean;
+}
+
+const { linkToLocations = true } = Astro.props;
 const c = copy.formats;
+
 const images = [
   {
     src: "/media/mobile-lab-exterior.webp",
-    alt: "Мобильная мастерская Ленремонта",
+    alt: "Мобильная мастерская Ленремонта у дома клиента",
     width: 480,
     height: 640,
   },
   {
     src: "/media/laptop-engineer-hero.webp",
-    alt: "Мастерская по ремонту ноутбуков",
+    alt: "Сервисный центр Ленремонта: инженер за работой",
     width: 580,
     height: 384,
   },
   {
-    src: "/media/mobile-lab-interior.webp",
-    alt: "Закрытый ноутбук на рабочем столе",
-    width: 1080,
-    height: 1080,
+    src: "/media/laptop-courier.webp",
+    alt: "Курьерская доставка ноутбука в сервисный центр",
+    width: 580,
+    height: 384,
+  },
+];
+
+const formatMeta = [
+  {
+    badge: "У дома или работы",
+    tag: "Хит",
+    eyebrow: "Фирменный выездной формат",
+    features: [
+      "Диагностика и ремонт на месте — приедем по СПб и области",
+      "Оборудованный микроавтобус со всеми приборами и запчастями",
+      "Ремонт в вашем присутствии: вы видите весь процесс",
+    ],
+  },
+  {
+    badge: "Привезите сами",
+    tag: "Удобно",
+    eyebrow: "Сеть мастерских по СПб",
+    features: [
+      "Мастерские рядом с метро по всему Санкт-Петербургу",
+      "Бесплатная диагностика даже при отказе от ремонта",
+      "Сложный компонентный ремонт на стационарных станциях",
+    ],
+  },
+  {
+    badge: "Заберём и привезём",
+    tag: "Без поездок",
+    eyebrow: "Доставка от двери до двери",
+    features: [
+      "Курьер приедет по вашему адресу в согласованный интервал",
+      "Официальный акт приёма-передачи с фиксацией состояния",
+      "Бережная доставка в сервисный центр и возврат с гарантией",
+    ],
   },
 ];
 ---
 
-<section id="lr-formats" class="lr-section">
+<section id="lr-formats" class="lr-section lr-formats">
   <div class="lr-container">
-    <SectionHeading title={c.fields.H2} lead={c.fields["Лид"]} />
+    <SectionHeading
+      eyebrow="Форматы обслуживания"
+      title={c.fields.H2}
+      lead={c.fields["Лид"]}
+    />
     <div class="lr-formats__grid">
       {
-        c.items.map((item, i) => (
-          <article class="lr-format">
-            <img
-              src={images[i].src}
-              alt={images[i].alt}
-              width={images[i].width}
-              height={images[i].height}
-              loading="lazy"
-            />
-            <div class="lr-format__body">
-              <h3>{item.title}</h3>
-              {i === 1 ? (
-                <a class="lr-text-action" href="#lr-map-workshops">
-                  {item.fields.CTA}
-                  <span aria-hidden="true">↗</span>
-                </a>
-              ) : i === 2 ? (
-                <a class="lr-text-action" href="#lr-map-pickup">
-                  {item.fields.CTA}
-                  <span aria-hidden="true">↗</span>
-                </a>
-              ) : (
-                <LeadButton
-                  label={item.fields.CTA}
-                  source="formats"
-                  format="mobile-lab"
-                  text
+        c.items.map((item, i) => {
+          const meta = formatMeta[i];
+          const isFeatured = i === 0;
+          return (
+            <article
+              class:list={["lr-format", isFeatured && "lr-format--featured"]}
+            >
+              <div class="lr-format__media">
+                <img
+                  src={images[i].src}
+                  alt={images[i].alt}
+                  width={images[i].width}
+                  height={images[i].height}
+                  loading="lazy"
+                  decoding="async"
                 />
-              )}
-            </div>
-          </article>
-        ))
+                <div class="lr-format__badge-row">
+                  <span class="lr-format__badge">{meta.badge}</span>
+                  {isFeatured && <span class="lr-format__badge-tag">Хит</span>}
+                </div>
+              </div>
+
+              <div class="lr-format__body">
+                <div class="lr-format__header">
+                  <span class="lr-format__eyebrow">{meta.eyebrow}</span>
+                  <h3 class="lr-format__title">{item.title}</h3>
+                  <p class="lr-format__text">{item.text}</p>
+                </div>
+
+                <ul class="lr-format__features" role="list">
+                  {meta.features.map((feature) => (
+                    <li class="lr-format__feature">
+                      <svg
+                        class="lr-format__feature-icon"
+                        viewBox="0 0 16 16"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                        fill="none"
+                      >
+                        <circle
+                          cx="8"
+                          cy="8"
+                          r="8"
+                          fill="currentColor"
+                          fill-opacity="0.12"
+                        />
+                        <path
+                          d="M4.5 8.2L6.8 10.5L11.5 5.5"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div class="lr-format__footer">
+                  {linkToLocations && i === 1 ? (
+                    <a
+                      class="lr-button lr-button--secondary lr-format__btn"
+                      href="#lr-map-workshops"
+                    >
+                      <span>{item.fields.CTA}</span>
+                      <span aria-hidden="true">→</span>
+                    </a>
+                  ) : linkToLocations && i === 2 ? (
+                    <a
+                      class="lr-button lr-button--secondary lr-format__btn"
+                      href="#lr-map-pickup"
+                    >
+                      <span>{item.fields.CTA}</span>
+                      <span aria-hidden="true">→</span>
+                    </a>
+                  ) : (
+                    <LeadButton
+                      label={item.fields.CTA}
+                      source="formats"
+                      format={["mobile-lab", "workshop", "courier"][i]}
+                      class:list={[
+                        "lr-format__btn",
+                        !isFeatured && "lr-button--secondary",
+                      ]}
+                    />
+                  )}
+                </div>
+              </div>
+            </article>
+          );
+        })
       }
+    </div>
+
+    <div class="lr-formats__trust">
+      <div class="lr-formats__trust-item">
+        <svg
+          class="lr-formats__trust-icon"
+          viewBox="0 0 20 20"
+          width="20"
+          height="20"
+          aria-hidden="true"
+          fill="none"
+        >
+          <path
+            d="M10 2L3 5V9.5C3 13.9 6 17.5 10 18.5C14 17.5 17 13.9 17 9.5V5L10 2Z"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M7 9.5L9 11.5L13 7.5"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        <span>
+          <strong>Бесплатная диагностика 0 ₽</strong> — даже при отказе от ремонта
+        </span>
+      </div>
+      <div class="lr-formats__trust-item">
+        <svg
+          class="lr-formats__trust-icon"
+          viewBox="0 0 20 20"
+          width="20"
+          height="20"
+          aria-hidden="true"
+          fill="none"
+        >
+          <rect
+            x="3"
+            y="4"
+            width="14"
+            height="12"
+            rx="2"
+            stroke="currentColor"
+            stroke-width="1.8"></rect>
+          <path
+            d="M7 8H13M7 12H10"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"></path>
+        </svg>
+        <span>
+          <strong>Гарантия 1 год</strong> — фиксируем все работы в документах
+        </span>
+      </div>
+      <div class="lr-formats__trust-item">
+        <svg
+          class="lr-formats__trust-icon"
+          viewBox="0 0 20 20"
+          width="20"
+          height="20"
+          aria-hidden="true"
+          fill="none"
+        >
+          <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.8"
+          ></circle>
+          <path
+            d="M10 6V10L12.5 12.5"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"></path>
+        </svg>
+        <span>
+          <strong>Круглосуточный приём</strong> — консультируем без выходных 24/7
+        </span>
+      </div>
     </div>
   </div>
 </section>

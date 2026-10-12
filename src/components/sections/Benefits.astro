@@ -1,0 +1,30 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+const c = copy.benefits.fields;
+---
+
+<section id="lr-benefits" class="lr-section lr-benefits">
+  <div class="lr-container">
+    <SectionHeading eyebrow={c["Надзаголовок"]} title={c.H2} lead={c["Лид"]} />
+    <div class="lr-benefits__grid">
+      {
+        copy.benefits.items.map((benefit) => (
+          <article class="lr-benefit">
+            <div class="lr-benefit__top">
+              <h3>{benefit.title}</h3>
+            </div>
+            <p class="lr-benefit__detail">{benefit.text}</p>
+          </article>
+        ))
+      }
+    </div>
+    <div class="lr-benefits__footer">
+      <p>
+        Назовите модель и опишите проблему — обсудим ремонт и условия оплаты.
+      </p>
+      <LeadButton label={c.CTA} source="benefits" />
+    </div>
+  </div>
+</section>

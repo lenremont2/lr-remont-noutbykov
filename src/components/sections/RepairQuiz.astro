@@ -1,0 +1,140 @@
+---
+import copy from "../../data/laptop-service.json";
+import LeadForm from "../ui/LeadForm.astro";
+const questions = [
+  {
+    name: "device_category",
+    title: "Какой у вас ноутбук?",
+    options: [
+      {
+        value: "standard",
+        label: "Обычный ноутбук",
+        detail: "ASUS, Acer, Lenovo, HP и другие",
+      },
+      {
+        value: "premium",
+        label: "MacBook или премиальный ультрабук",
+        detail: "Apple и модели с тонким корпусом",
+      },
+    ],
+  },
+  {
+    name: "symptom",
+    title: "Что случилось с ноутбуком?",
+    options: [
+      ...copy.symptoms.items.map(({ title }) => ({
+        value: title,
+        label: title,
+        detail: "",
+      })),
+      {
+        value: "Другая неисправность",
+        label: "Другая проблема или не знаю причину",
+        detail: "Расскажете подробнее при звонке",
+      },
+    ],
+  },
+  {
+    name: "service_format",
+    title: "Как вам удобнее передать ноутбук?",
+    options: [
+      {
+        value: "mobile-lab",
+        label: "Мастерская на колёсах",
+        detail: "К дому или работе",
+      },
+      {
+        value: "workshop",
+        label: "Привезу в сервисный центр",
+        detail: "Поможем выбрать мастерскую",
+      },
+      {
+        value: "courier",
+        label: "Передам курьеру",
+        detail: "Согласуем адрес и доставку",
+      },
+      {
+        value: "consultation",
+        label: "Пока не решил",
+        detail: "Подберём удобный вариант",
+      },
+    ],
+  },
+];
+---
+
+<section id="lr-quiz" class="lr-section lr-quiz">
+  <div class="lr-container lr-quiz__layout">
+    <div class="lr-quiz__intro">
+      <p class="lr-eyebrow">Начнём с вашей ситуации</p>
+      <h2>Расскажите о ноутбуке — поможем с ремонтом</h2>
+      <p class="lr-lead">
+        Ответьте на три вопроса. При звонке уточним детали, сориентируем по
+        стоимости и способу ремонта.
+      </p>
+      <p class="lr-caption">
+        Полную сумму согласуем после диагностики, до начала работ.
+      </p>
+    </div>
+    <div class="lr-quiz__panel" data-lr-quiz>
+      <p
+        class="lr-quiz__progress"
+        data-lr-quiz-progress
+        role="status"
+        aria-live="polite"
+      >
+        Три вопроса и контактный шаг
+      </p>
+      <form data-lr-quiz-questions data-hop-lead-ignore novalidate>
+        {
+          questions.map((question) => (
+            <fieldset class="lr-quiz__step" data-lr-quiz-step>
+              <legend class="lr-quiz__question" tabindex="-1">
+                {question.title}
+              </legend>
+              <div class="lr-quiz__options">
+                {question.options.map((option) => (
+                  <label class="lr-quiz__option">
+                    <input
+                      type="radio"
+                      name={question.name}
+                      value={option.value}
+                      required
+                    />
+                    <span>
+                      <strong>{option.label}</strong>
+                      {option.detail && (
+                        <span class="lr-quiz__option-detail">
+                          {option.detail}
+                        </span>
+                      )}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+          ))
+        }
+      </form>
+      <div class="lr-quiz__step" data-lr-quiz-step>
+        <h3 class="lr-quiz__question" tabindex="-1">Куда вам перезвонить?</h3>
+        <p class="lr-caption">
+          Уточним неисправность и обсудим стоимость ремонта. Марку и модель
+          можно добавить ниже.
+        </p>
+        <LeadForm
+          id="lr-quiz-form"
+          source="quiz"
+          submitLabel="Получить консультацию"
+        />
+      </div>
+      <p class="lr-quiz__error" data-lr-quiz-error role="alert"></p>
+      <div class="lr-quiz__navigation" data-lr-quiz-navigation hidden>
+        <button type="button" class="lr-text-action" data-lr-quiz-prev
+          >Назад</button
+        >
+        <button type="button" class="lr-button" data-lr-quiz-next>Далее</button>
+      </div>
+    </div>
+  </div>
+</section>

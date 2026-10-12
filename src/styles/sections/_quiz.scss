@@ -1,0 +1,129 @@
+#hop-landing {
+  .lr-quiz {
+    border-bottom: 1px solid var(--lr-color-border);
+  }
+
+  .lr-quiz__layout {
+    display: grid;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .lr-quiz__intro .lr-eyebrow {
+    margin-bottom: 16px;
+    color: var(--lr-blue-700);
+  }
+
+  .lr-quiz__intro .lr-lead {
+    margin-block: 24px;
+  }
+
+  .lr-quiz__panel {
+    min-width: 0;
+    padding: 24px;
+    border: 1px solid var(--lr-blue-200);
+    border-radius: var(--lr-radius);
+    background: var(--lr-blue-50);
+  }
+
+  .lr-quiz__progress {
+    margin-bottom: 24px;
+    color: var(--lr-blue-700);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .lr-quiz__step {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .lr-quiz__question {
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+  .lr-quiz__options {
+    display: grid;
+    gap: 12px;
+  }
+
+  .lr-quiz__option {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid var(--lr-blue-200);
+    border-radius: var(--lr-radius-small);
+    background: var(--lr-color-surface);
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  .lr-quiz__option:hover,
+  .lr-quiz__option:has(input:checked) {
+    border-color: var(--lr-blue-700);
+    background: var(--lr-blue-100);
+  }
+
+  .lr-quiz__option input {
+    flex: none;
+    width: 18px;
+    height: 18px;
+    margin: 3px 0 0;
+    accent-color: var(--lr-blue-700);
+  }
+
+  .lr-quiz__option strong {
+    font-weight: 500;
+  }
+
+  .lr-quiz__option-detail {
+    display: block;
+    margin-top: 4px;
+    color: var(--lr-color-muted);
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .lr-quiz__error {
+    min-height: 24px;
+    margin-top: 12px;
+    color: var(--lr-color-danger);
+    font-size: 14px;
+  }
+
+  .lr-quiz__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 12px;
+  }
+
+  .lr-quiz__navigation .lr-button {
+    margin-left: auto;
+  }
+
+  .lr-quiz__step .lr-form {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hop-landing .lr-quiz__layout {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 64px;
+  }
+
+  #hop-landing .lr-quiz__panel {
+    padding: 32px;
+  }
+}

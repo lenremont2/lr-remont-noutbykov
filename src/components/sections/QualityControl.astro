@@ -1,0 +1,71 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+
+const q = copy.quality;
+---
+
+<section id="lr-quality" class="lr-section lr-quality">
+  <div class="lr-container">
+    <SectionHeading
+      eyebrow={q.fields["Надзаголовок"]}
+      title={q.fields.H2}
+      lead={q.fields["Лид"]}
+    />
+
+    <div class="lr-qc__grid">
+      <div class="lr-qc__media">
+        <figure class="lr-qc__figure">
+          <div class="lr-qc__image-wrap">
+            <img
+              src="/media/quality-control-test.jpg"
+              alt={q.fields["Подпись к фото"]}
+              width="580"
+              height="435"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="lr-qc__badge">{q.fields["Бейдж фото"]}</span>
+          </div>
+          <figcaption class="lr-caption">
+            {q.fields["Подпись к фото"]}
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="lr-qc__checklist" role="list" aria-label="Чек-лист проверки">
+        {
+          q.items.map((item) => (
+            <article class="lr-qc-item" role="listitem">
+              <div class="lr-qc-item__header">
+                <span class="lr-qc-item__check" aria-hidden="true">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <h3 class="lr-qc-item__title">{item.title}</h3>
+                <span class="lr-qc-item__tag">{item.tag}</span>
+              </div>
+              <p class="lr-qc-item__text">{item.text}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="lr-qc__footer">
+      <p class="lr-qc__footer-note">{q.fields["Сноска"]}</p>
+      <LeadButton label={q.fields.CTA} source="quality-control" />
+    </div>
+  </div>
+</section>

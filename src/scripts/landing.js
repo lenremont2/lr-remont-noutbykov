@@ -27,10 +27,214 @@ export function validatePhone(value) {
   return { value: "+" + digits, error };
 }
 
+export function initializeReviewSlider(slider) {
+  const track = slider.querySelector("[data-lr-review-track]");
+  const frame = slider.querySelector("[data-lr-review-frame]");
+  const cards = Array.from(track.children);
+  if (!cards.length) return;
+  const previous = slider.querySelector("[data-lr-review-prev]");
+  const next = slider.querySelector("[data-lr-review-next]");
+  const position = slider.querySelector("[data-lr-review-position]");
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  let animation;
+  let destination = null;
+  const metrics = () => {
+    const step =
+      cards.length > 1
+        ? cards[1].offsetLeft - cards[0].offsetLeft
+        : cards[0].offsetWidth;
+    const visible = Math.max(1, Math.round((frame.clientWidth - 32) / step));
+    const start = Math.min(
+      cards.length - visible,
+      Math.round(track.scrollLeft / step),
+    );
+    return { step, visible, start, end: track.scrollWidth - track.clientWidth };
+  };
+  const update = () => {
+    const { start, visible, end } = metrics();
+    previous.disabled = track.scrollLeft < 2;
+    next.disabled = track.scrollLeft >= end - 2;
+    position.textContent = `${start + 1}–${Math.min(cards.length, start + visible)} / ${cards.length}`;
+    cards.forEach((card, index) => {
+      const active = index >= start && index < start + visible;
+      if (card.dataset.lrReviewActive !== String(active)) {
+        card.dataset.lrReviewActive = String(active);
+        card.inert = !active;
+      }
+    });
+  };
+  const stop = () => {
+    cancelAnimationFrame(animation);
+    animation = undefined;
+    destination = null;
+    delete track.dataset.lrAnimating;
+  };
+  const goTo = (left) => {
+    stop();
+    const from = track.scrollLeft;
+    const to = Math.min(metrics().end, Math.max(0, left));
+    if (reducedMotion.matches) {
+      track.scrollTo({ left: to, behavior: "instant" });
+      return;
+    }
+    destination = to;
+    track.dataset.lrAnimating = "true";
+    const began = performance.now();
+    const tick = (now) => {
+      const progress = Math.min(1, (now - began) / 520);
+      const eased = 1 - Math.pow(1 - progress, 4);
+      track.scrollTo({ left: from + (to - from) * eased, behavior: "instant" });
+      if (progress < 1) animation = requestAnimationFrame(tick);
+      else {
+        destination = null;
+        animation = undefined;
+        delete track.dataset.lrAnimating;
+      }
+    };
+    animation = requestAnimationFrame(tick);
+  };
+  const move = (direction) => {
+    const { visible, step } = metrics();
+    const start = Math.round((destination ?? track.scrollLeft) / step);
+    goTo((start + direction * visible) * step);
+  };
+  previous.addEventListener("click", () => move(-1));
+  next.addEventListener("click", () => move(1));
+  track.addEventListener("scroll", update, { passive: true });
+  let drag;
+  track.addEventListener("pointerdown", (event) => {
+    stop();
+    if (
+      event.pointerType !== "mouse" ||
+      event.button !== 0 ||
+      event.target.closest("a, button, input, textarea, select")
+    )
+      return;
+    event.preventDefault();
+    drag = {
+      id: event.pointerId,
+      x: event.clientX,
+      left: track.scrollLeft,
+      moved: false,
+    };
+    track.dataset.lrDragging = "true";
+    track.setPointerCapture(event.pointerId);
+  });
+  const finishDrag = (event) => {
+    if (!drag || event.pointerId !== drag.id) return;
+    const { id, moved } = drag;
+    drag = undefined;
+    delete track.dataset.lrDragging;
+    if (track.hasPointerCapture(id)) track.releasePointerCapture(id);
+    if (moved) {
+      const { step } = metrics();
+      goTo(Math.round(track.scrollLeft / step) * step);
+    }
+  };
+  track.addEventListener("pointermove", (event) => {
+    if (!drag || event.pointerId !== drag.id) return;
+    if (!(event.buttons & 1)) {
+      finishDrag(event);
+      return;
+    }
+    const distance = event.clientX - drag.x;
+    drag.moved ||= Math.abs(distance) > 5;
+    event.preventDefault();
+    track.scrollTo({ left: drag.left - distance, behavior: "instant" });
+  });
+  track.addEventListener("pointerup", finishDrag);
+  track.addEventListener("pointercancel", finishDrag);
+  track.addEventListener("lostpointercapture", finishDrag);
+  track.addEventListener("wheel", stop, { passive: true });
+  reducedMotion.addEventListener("change", () => {
+    if (destination !== null) {
+      const left = destination;
+      stop();
+      track.scrollTo({ left, behavior: "instant" });
+    }
+  });
+  track.addEventListener("keydown", (event) => {
+    if (event.target !== track) return;
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      event.preventDefault();
+      move(event.key === "ArrowLeft" ? -1 : 1);
+    } else if (event.key === "Home" || event.key === "End") {
+      event.preventDefault();
+      goTo(event.key === "Home" ? 0 : track.scrollWidth);
+    }
+  });
+  if (typeof ResizeObserver !== "undefined")
+    new ResizeObserver(() => {
+      stop();
+      update();
+    }).observe(frame);
+  slider.querySelector("[data-lr-review-controls]").hidden = false;
+  update();
+}
+
+export function initializeRepairQuiz(quiz, updateContext) {
+  const steps = Array.from(quiz.querySelectorAll("[data-lr-quiz-step]"));
+  const questions = quiz.querySelector("[data-lr-quiz-questions]");
+  const form = quiz.querySelector("[data-lr-form]");
+  const previous = quiz.querySelector("[data-lr-quiz-prev]");
+  const next = quiz.querySelector("[data-lr-quiz-next]");
+  const progress = quiz.querySelector("[data-lr-quiz-progress]");
+  const error = quiz.querySelector("[data-lr-quiz-error]");
+  let current = 0;
+  const show = (focus = true) => {
+    steps.forEach((step, index) => {
+      step.hidden = index !== current;
+    });
+    previous.hidden = current === 0;
+    next.hidden = current === steps.length - 1;
+    next.textContent =
+      current === steps.length - 2 ? "Перейти к контактам" : "Далее";
+    progress.textContent = `Шаг ${current + 1} из ${steps.length}`;
+    error.textContent = "";
+    if (focus) steps[current].querySelector("legend, h3").focus();
+  };
+  const forward = () => {
+    if (current === steps.length - 1) return;
+    if (!steps[current].querySelector("input:checked")) {
+      error.textContent = "Выберите один из вариантов, чтобы продолжить.";
+      steps[current].querySelector("input").focus();
+      return;
+    }
+    current += 1;
+    if (current === steps.length - 1) {
+      for (const name of ["device_category", "symptom", "service_format"]) {
+        form.elements[name].value = questions.querySelector(
+          `input[name="${name}"]:checked`,
+        ).value;
+      }
+      updateContext(form);
+    }
+    show();
+  };
+  next.addEventListener("click", forward);
+  previous.addEventListener("click", () => {
+    if (current === 0) return;
+    current -= 1;
+    show();
+  });
+  questions.addEventListener("submit", (event) => {
+    event.preventDefault();
+    forward();
+  });
+  questions.addEventListener("change", () => {
+    error.textContent = "";
+  });
+  quiz.querySelector("[data-lr-quiz-navigation]").hidden = false;
+  show(false);
+}
+
 function initializeLanding() {
   const root = document.querySelector("#hop-landing");
   if (!root || root.dataset.lrInitialized === "true") return;
   root.dataset.lrInitialized = "true";
+  root
+    .querySelectorAll("[data-lr-review-slider]")
+    .forEach(initializeReviewSlider);
   const compactSocial = matchMedia("(max-width: 599px)");
   const updateQr = () => {
     root.querySelectorAll("[data-lr-qr-disclosure]").forEach((details) => {
@@ -106,7 +310,8 @@ function initializeLanding() {
     form.querySelector("[data-lr-context]").hidden = labels.length === 0;
     form.querySelector("[data-lr-context-text]").textContent =
       labels.join(" · ");
-    form.querySelector("[data-lr-context-change]").hidden = !symptom;
+    form.querySelector("[data-lr-context-change]").hidden =
+      !symptom || Boolean(form.closest("[data-lr-quiz]"));
     form.querySelector("[data-lr-symptom-select]").value = symptom;
   };
   const updatePhoneMode = (form) => {
@@ -155,6 +360,9 @@ function initializeLanding() {
   root.querySelectorAll("[data-lr-nav]").forEach((nav) => {
     nav.open = !mobile.matches;
   });
+  root
+    .querySelectorAll("[data-lr-quiz]")
+    .forEach((quiz) => initializeRepairQuiz(quiz, updateContext));
   mobile.addEventListener("change", () => {
     root.querySelectorAll("[data-lr-form]").forEach(updatePhoneMode);
     root.querySelectorAll("[data-lr-nav]").forEach((nav) => {
@@ -194,7 +402,9 @@ function initializeLanding() {
     } else if (target.matches("[data-lr-modal-close]")) {
       modal.close();
     } else if (target.matches("[data-lr-context-change]")) {
-      const picker = modalForm.querySelector("[data-lr-symptom-picker]");
+      const picker = target
+        .closest("form")
+        .querySelector("[data-lr-symptom-picker]");
       picker.hidden = !picker.hidden;
       if (!picker.hidden) picker.querySelector("select").focus();
     } else if (target.matches("[data-lr-digit]")) {

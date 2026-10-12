@@ -1,0 +1,191 @@
+#hop-landing .lr-timeline {
+  background: var(--lr-color-surface);
+  border-top: 1px solid var(--lr-color-border);
+}
+
+#hop-landing .lr-scenarios-mosaic {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 900px) {
+  #hop-landing .lr-scenarios-mosaic {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(260px, auto) minmax(260px, auto);
+    gap: 24px;
+  }
+}
+
+#hop-landing .lr-scenario-poster {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  border-radius: var(--lr-radius);
+  overflow: hidden;
+  background: var(--lr-graphite-900);
+  border: 1px solid var(--lr-color-border);
+  box-shadow: 0 4px 16px rgb(23 36 29 / 6%);
+  transition:
+    transform var(--lr-duration-fast) ease,
+    border-color var(--lr-duration-fast) ease,
+    box-shadow var(--lr-duration-fast) ease;
+}
+
+@media (min-width: 900px) {
+  #hop-landing .lr-scenario-poster--featured {
+    grid-row: 1 / 3;
+    min-height: 544px;
+  }
+}
+
+#hop-landing .lr-scenario-poster:hover {
+  transform: translateY(-2px);
+  border-color: var(--lr-stone-500);
+  box-shadow: 0 16px 36px rgb(23 36 29 / 14%);
+}
+
+#hop-landing .lr-scenario-poster__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--lr-duration-normal) ease;
+  z-index: 1;
+}
+
+#hop-landing .lr-scenario-poster:hover .lr-scenario-poster__bg {
+  transform: scale(1.03);
+}
+
+#hop-landing .lr-scenario-poster__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(23, 25, 36, 0.35) 0%,
+    rgba(23, 25, 36, 0.65) 50%,
+    rgba(23, 26, 36, 0.94) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+#hop-landing .lr-scenario-poster__content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px;
+  color: var(--lr-white) !important;
+}
+
+@media (min-width: 900px) {
+  #hop-landing .lr-scenario-poster--featured .lr-scenario-poster__content {
+    padding: 32px;
+  }
+}
+
+#hop-landing .lr-scenario-poster__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#hop-landing .lr-scenario-poster__badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 6px 12px;
+  border-radius: var(--lr-radius-pill);
+  background: rgb(255 255 255 / 16%);
+  color: #fff !important;
+  border: 1px solid rgb(255 255 255 / 24%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+#hop-landing .lr-scenario-poster--featured .lr-scenario-poster__badge {
+  background: rgba(29, 43, 107, 0.45);
+  color: #fff !important;
+  border-color: rgba(125, 157, 226, 0.35);
+}
+
+#hop-landing .lr-scenario-poster__bottom {
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+#hop-landing .lr-scenario-poster__time {
+  display: inline-block;
+  font-size: clamp(24px, 2vw, 30px);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--lr-amber-400) !important;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 6px;
+}
+
+#hop-landing .lr-scenario-poster--featured .lr-scenario-poster__time {
+  font-size: clamp(32px, 2.8vw, 42px);
+  margin-bottom: 10px;
+}
+
+#hop-landing .lr-scenario-poster__title {
+  margin: 0 0 8px;
+  font-size: clamp(19px, 1.4vw, 22px);
+  line-height: 1.25;
+  font-weight: 600;
+  color: #fff !important;
+  letter-spacing: -0.02em;
+}
+
+#hop-landing .lr-scenario-poster--featured .lr-scenario-poster__title {
+  font-size: clamp(22px, 1.8vw, 28px);
+  margin-bottom: 12px;
+}
+
+#hop-landing .lr-scenario-poster__desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgb(255 255 255 / 85%) !important;
+  max-width: 50ch;
+}
+
+#hop-landing .lr-scenario-poster--featured .lr-scenario-poster__desc {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#hop-landing .lr-timeline__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 36px;
+  padding: 20px 24px;
+  background: var(--lr-stone-100);
+  border-radius: var(--lr-radius);
+  border: 1px solid var(--lr-color-border);
+}
+
+#hop-landing .lr-timeline__footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--lr-graphite-900);
+}
+
+#hop-landing .lr-timeline__footer-note {
+  margin: 2px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--lr-color-muted);
+}

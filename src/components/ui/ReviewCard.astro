@@ -1,0 +1,77 @@
+---
+interface Props {
+  review: { name: string; rating: number; date: string; text: string };
+  source: { name: string; url: string; branch: string };
+}
+const { review, source } = Astro.props;
+---
+
+<article class="lr-review">
+  <header class="lr-review__header">
+    <span class="lr-review__avatar" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.7"
+        ></circle>
+        <path
+          d="M4 21v-2a8 8 0 0 1 16 0v2"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"></path>
+      </svg>
+    </span>
+    <div class="lr-review__author">
+      <h3 class="lr-review__name">{review.name}</h3>
+      <div
+        class="lr-review__rating"
+        role="img"
+        aria-label={`Оценка ${review.rating} из 5`}
+      >
+        <span class="lr-review__stars" aria-hidden="true">
+          {
+            Array.from({ length: 5 }, (_, index) => (
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill={index < review.rating ? "currentColor" : "none"}
+              >
+                <path
+                  d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            ))
+          }
+        </span>
+        <span aria-hidden="true">{review.rating}/5</span>
+      </div>
+    </div>
+  </header>
+  <p class="lr-review__text">{review.text}</p>
+  <footer class="lr-review__footer">
+    <a
+      class="lr-review__source"
+      href={source.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Отзывы: ${review.name}, ${source.name}, ${source.branch}`}
+    >
+      {source.name}<svg
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+        ><path
+          d="M6 18 18 6M7 6h11v11"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path></svg
+      >
+    </a>
+    <span class="lr-review__date">{review.date}</span>
+  </footer>
+</article>

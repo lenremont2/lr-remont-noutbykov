@@ -38,17 +38,51 @@ assert.equal((html.match(/id="hop-landing"/g) || []).length, 1);
 assert.equal((html.match(/<h1[ >]/g) || []).length, 0);
 assert.match(html, /<h2[^>]+id="lr-hero-title"/);
 assert.ok(html.includes(data.hero.fields.H2));
+const homeHero = html.match(/<section id="lr-hero"[\s\S]*?<\/section>/)?.[0];
+assert.ok(homeHero?.includes("lr-hero--home"));
+assert.ok(homeHero.includes(data.hero.fields["Акцент заголовка"]));
+assert.ok(homeHero.includes(data.hero.fields["Лид"]));
+assert.equal((homeHero.match(/data-lr-hero-video/g) || []).length, 1);
+assert.equal((homeHero.match(/class="lr-hero__badge"/g) || []).length, 1);
+const repairBadge = homeHero.match(
+  /<figcaption class="lr-hero__badge">[\s\S]*?<\/figcaption>/,
+)?.[0];
+assert.ok(repairBadge.includes(data.hero.fields["Срок ремонта"]));
+assert.ok(!repairBadge.includes("гарантии на ремонт"));
+assert.ok(homeHero.includes('data-source="hero"'));
+assert.ok(homeHero.includes('href="#lr-map-workshops"'));
+const benefitsSection = html.match(
+  /<section id="lr-benefits"[\s\S]*?<\/section>/,
+)?.[0];
+assert.ok(benefitsSection, "Detailed benefits section must exist");
+assert.equal((benefitsSection.match(/class="lr-benefit"/g) || []).length, 6);
+for (const benefit of data.benefits.items) {
+  assert.ok(benefit.text.trim(), benefit.title);
+  assert.ok(
+    benefitsSection.includes(`<h3>${benefit.title}</h3>`),
+    benefit.title,
+  );
+  assert.ok(benefitsSection.includes(benefit.text), benefit.title);
+}
+assert.ok(benefitsSection.includes('data-source="benefits"'));
+const casesEnabled = !readFileSync(
+  new URL("../src/pages/index.astro", import.meta.url),
+  "utf8",
+).includes("<!-- <RepairCases /> -->");
 const ids = [
   "hero",
   "quick-contacts",
-  "formats",
   "symptoms",
-  "prices",
+  ...(casesEnabled ? ["repair-cases"] : []),
+  "quiz",
+  "benefits",
+  "formats",
   "lab",
   "process",
   "expertise",
   "guarantee",
   "reviews",
+  "prices",
   "locations",
   "faq",
   "contact",
@@ -84,6 +118,35 @@ const priceSection = html.match(
   /<section id="lr-prices"[\s\S]*?<\/section>/,
 )?.[0];
 assert.ok(priceSection);
+const repairCases = JSON.parse(
+  readFileSync(
+    new URL("../src/data/repair-cases.json", import.meta.url),
+    "utf8",
+  ),
+);
+const casesSection = html.match(
+  /<section id="lr-repair-cases"[\s\S]*?<\/section>/,
+)?.[0];
+assert.equal(Boolean(casesSection), casesEnabled);
+if (casesSection) {
+  const caseCards =
+    casesSection.match(/<article class="lr-repair-case"[\s\S]*?<\/article>/g) ||
+    [];
+  assert.equal(caseCards.length, 4);
+  repairCases.forEach((item, i) => {
+    const price = data.prices.tables
+      .flat()
+      .find(([work]) => work === item.priceWork)?.[1];
+    assert.ok(price, item.priceWork);
+    assert.ok(data.symptoms.items.some(({ title }) => title === item.symptom));
+    for (const text of [item.title, price, item.image, ...item.works]) {
+      assert.ok(caseCards[i].includes(text), text);
+    }
+    assert.ok(caseCards[i].includes(`data-symptom="${item.symptom}"`));
+    assert.ok(caseCards[i].includes(`data-source="repair-case-${item.id}"`));
+  });
+  assert.ok(casesSection.includes('href="#lr-prices"'));
+}
 assert.equal(
   (priceSection.match(/<td class="lr-price-table__duration">/g) || []).length,
   18,
@@ -129,11 +192,11 @@ for (const file of readdirSync(
       assert.ok(selector.startsWith("#hop-landing"), selector);
   });
 }
-assert.equal((html.match(/data-hop-lead-form/g) || []).length, 2);
-assert.equal((html.match(/data-hop-lead-submit/g) || []).length, 2);
-assert.equal((html.match(/data-lead-root/g) || []).length, 2);
-assert.equal((html.match(/data-lead-success/g) || []).length, 2);
-assert.equal((html.match(/method="post"/g) || []).length, 2);
+assert.equal((html.match(/data-hop-lead-form/g) || []).length, 3);
+assert.equal((html.match(/data-hop-lead-submit/g) || []).length, 3);
+assert.equal((html.match(/data-lead-root/g) || []).length, 3);
+assert.equal((html.match(/data-lead-success/g) || []).length, 3);
+assert.equal((html.match(/method="post"/g) || []).length, 3);
 console.log("CSS isolation and Lead Capture attributes: passed.");
 
 for (const benefit of data.hero.bullets) {
@@ -181,7 +244,7 @@ assert.equal(
       /href="https:\/\/www.lenremont.ru\/politika-obrabotki-personalnyh-dannyh.htm"/g,
     ) || []
   ).length,
-  2,
+  3,
 );
 assert.ok(html.includes(data.symptoms.fields["Пояснение цены"]));
 assert.ok(html.includes('href="#lr-map-workshops"'));
