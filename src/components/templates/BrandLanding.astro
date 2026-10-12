@@ -1,12 +1,16 @@
 ---
 import LandingLayout from "../../layouts/LandingLayout.astro";
+import Hero from "../sections/Hero.astro";
+import Symptoms from "../sections/Symptoms.astro";
+import RepairTimeline from "../sections/RepairTimeline.astro";
+import Benefits from "../sections/Benefits.astro";
 import RepairFormats from "../sections/RepairFormats.astro";
+import RepairProcess from "../sections/RepairProcess.astro";
+import SecurityRules from "../sections/SecurityRules.astro";
 import Guarantee from "../sections/Guarantee.astro";
 import Reviews from "../sections/Reviews.astro";
 import LeadCapture from "../sections/LeadCapture.astro";
 import Breadcrumbs from "../ui/Breadcrumbs.astro";
-import ChildHero from "../ui/ChildHero.astro";
-import LeadButton from "../ui/LeadButton.astro";
 import ServicePriceTable from "../ui/ServicePriceTable.astro";
 import ServiceFaq from "../ui/ServiceFaq.astro";
 import RelatedServices from "../ui/RelatedServices.astro";
@@ -23,83 +27,50 @@ const { page } = Astro.props;
 ---
 
 <LandingLayout {...getSeo(page)}>
-  <div class="lr-brand-page lr-child-page">
+  <div class="lr-brand-page">
     <Breadcrumbs current={page.label} />
-    <ChildHero
-      title={page.h1}
-      lead={page.lead}
-      source={"brand:" + page.label}
-      image={page.heroImage}
-      alt={"Ноутбук " + page.label + " на рабочем столе для диагностики"}
-      width={768}
-      height={1024}
-      secondaryHref="#lr-brand-guide"
-      secondaryLabel={"О ремонте " + page.label}
-    />
-    <section
-      id="lr-brand-guide"
-      class="lr-section lr-child-guide"
-      aria-labelledby="lr-brand-guide-title"
-    >
-      <div class="lr-container lr-child-guide__layout">
-        <nav class="lr-child-contents" aria-label="Содержание статьи">
-          <p>В этой статье</p>
-          <a href="#lr-brand-details">Что проверим у {page.label}</a>
-          <a href="#lr-brand-prepare">Что подготовить к обращению</a>
-          <a href="#lr-prices">Стоимость работ</a>
-        </nav>
-        <article class="lr-child-article">
-          <header id="lr-brand-details">
-            <p class="lr-eyebrow">Модель, симптомы и диагностика</p>
-            <h2 id="lr-brand-guide-title">{page.sectionTitle}</h2>
-            <p class="lr-child-intro">{page.intro}</p>
-          </header>
-          <div class="lr-child-topics">
-            {
-              page.checks.map((item) => (
-                <div>
-                  <>
-                    <h3>{item.title}</h3>
-                    <p>{item.text}</p>
-                  </>
-                </div>
-              ))
-            }
-          </div>
-          <section
-            id="lr-brand-prepare"
-            class="lr-child-chapter"
-            aria-labelledby="lr-brand-prepare-title"
-          >
-            <h2 id="lr-brand-prepare-title">Что подготовить к обращению</h2>
-            <ul class="lr-child-list">
-              {page.prepare.map((text) => <li>{text}</li>)}
-            </ul>
-          </section>
-          <div class="lr-child-recommendation">
-            <h3>Обсудим ремонт вашего {page.label}</h3>
-            <p>
-              Назовите модель, опишите симптомы и сообщите, какие файлы нужно
-              сохранить. Обсудим необходимые проверки и удобный способ передачи
-              ноутбука.
-            </p>
-            <div class="lr-child-recommendation__actions">
-              <LeadButton
-                label={"Обсудить ремонт " + page.label}
-                source={"brand:" + page.label + ":article"}
-              />
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
+    <Hero brand={page} />
+    <Symptoms />
+    <RepairTimeline />
+    <Benefits />
     <RepairFormats linkToLocations={false} />
+    <RepairProcess />
+    <SecurityRules />
+    <Guarantee />
+    <Reviews />
     <ServicePriceTable
       title={"Стоимость работ по ремонту " + page.label}
       rows={standardPrices}
     />
-    <Guarantee />
-    <Reviews />
+    <section
+      id="lr-brand-guide"
+      class="lr-section lr-brand-guide"
+      aria-labelledby="lr-brand-guide-title"
+    >
+      <div class="lr-container">
+        <div class="lr-section-heading">
+          <p class="lr-eyebrow">О ремонте {page.label}</p>
+          <h2 id="lr-brand-guide-title">{page.sectionTitle}</h2>
+          <p class="lr-lead">{page.intro}</p>
+        </div>
+        <div class="lr-brand-guide__checks">
+          {
+            page.checks.map((item) => (
+              <article>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))
+          }
+        </div>
+        <details class="lr-brand-guide__prepare">
+          <summary>Что подготовить к обращению</summary>
+          <ul class="lr-child-list">
+            {page.prepare.map((text) => <li>{text}</li>)}
+          </ul>
+        </details>
+      </div>
+    </section>
     <ServiceFaq items={page.faq} />
     <RelatedServices current={pagePath(page)} />
     <LeadCapture

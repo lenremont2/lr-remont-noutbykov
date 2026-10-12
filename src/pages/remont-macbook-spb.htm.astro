@@ -5,7 +5,12 @@ import Guarantee from "../components/sections/Guarantee.astro";
 import Reviews from "../components/sections/Reviews.astro";
 import LeadCapture from "../components/sections/LeadCapture.astro";
 import LeadButton from "../components/ui/LeadButton.astro";
-import ChildHero from "../components/ui/ChildHero.astro";
+import Hero from "../components/sections/Hero.astro";
+import Symptoms from "../components/sections/Symptoms.astro";
+import RepairTimeline from "../components/sections/RepairTimeline.astro";
+import Benefits from "../components/sections/Benefits.astro";
+import RepairProcess from "../components/sections/RepairProcess.astro";
+import SecurityRules from "../components/sections/SecurityRules.astro";
 import Breadcrumbs from "../components/ui/Breadcrumbs.astro";
 import ServicePriceTable from "../components/ui/ServicePriceTable.astro";
 import ServiceFaq from "../components/ui/ServiceFaq.astro";
@@ -19,18 +24,24 @@ import {
 ---
 
 <LandingLayout {...getSeo(macbook)}>
-  <div class="lr-mac-page lr-child-page">
+  <div class="lr-mac-page lr-child-page lr-brand-page">
     <Breadcrumbs current={macbook.label} />
-    <ChildHero
-      title={macbook.h1}
-      lead={macbook.lead}
-      source="macbook-hero"
-      image="/media/mobile-lab-interior.webp"
-      alt="Закрытый MacBook на рабочем столе мобильной мастерской Ленремонта"
-      width={1080}
-      height={1080}
-      secondaryHref="#lr-brand-guide"
-      secondaryLabel="О ремонте MacBook"
+    <Hero
+      brand={{ ...macbook, heroImage: "/media/mobile-lab-interior.webp" }}
+      imageWidth={1080}
+      imageHeight={1080}
+    />
+    <Symptoms />
+    <RepairTimeline />
+    <Benefits />
+    <RepairFormats linkToLocations={false} />
+    <RepairProcess />
+    <SecurityRules />
+    <Guarantee />
+    <Reviews />
+    <ServicePriceTable
+      title="Стоимость работ для MacBook"
+      rows={macbookPrices}
     />
     <section
       id="lr-brand-guide"
@@ -164,13 +175,6 @@ import {
         </article>
       </div>
     </section>
-    <RepairFormats linkToLocations={false} />
-    <ServicePriceTable
-      title="Стоимость работ для MacBook"
-      rows={macbookPrices}
-    />
-    <Guarantee />
-    <Reviews />
     <ServiceFaq items={macbook.faq} />
     <RelatedServices current={pagePath(macbook)} />
     <LeadCapture

@@ -4,9 +4,11 @@ import LeadButton from "../ui/LeadButton.astro";
 import QuickContacts from "./QuickContacts.astro";
 import type { BrandPage } from "../../data/service-pages";
 interface Props {
-  brand?: BrandPage;
+  imageWidth?: number;
+  imageHeight?: number;
+  brand?: Pick<BrandPage, "h1" | "lead" | "label" | "heroImage">;
 }
-const { brand } = Astro.props;
+const { brand, imageWidth = 768, imageHeight = 1024 } = Astro.props;
 const Heading = brand ? "h1" : "h2";
 const c = copy.hero.fields;
 const [repairLabel, repairDuration] = c["Срок ремонта"].split(" всего за ");
@@ -14,7 +16,10 @@ const [repairLabel, repairDuration] = c["Срок ремонта"].split(" вс�
 
 <section
   id="lr-hero"
-  class:list={["lr-hero lr-section", { "lr-hero--home": !brand }]}
+  class:list={[
+    "lr-hero lr-section",
+    { "lr-hero--home": !brand, "lr-hero--brand": !!brand },
+  ]}
   aria-labelledby="lr-hero-title"
 >
   <div class="lr-container lr-hero__grid">
@@ -45,7 +50,9 @@ const [repairLabel, repairDuration] = c["Срок ремонта"].split(" вс�
           label={c["Основной CTA"]}
           source={brand ? `brand:${brand.label}` : "hero"}
         />
-        <a class="lr-text-action" href="#lr-map-workshops"
+        <a
+          class="lr-text-action"
+          href={brand ? "#lr-formats" : "#lr-map-workshops"}
           >{c["Второй CTA"]}<span aria-hidden="true">↗</span>
         </a>
       </div>
@@ -70,8 +77,8 @@ const [repairLabel, repairDuration] = c["Срок ремонта"].split(" вс�
             class="lr-hero__photo"
             src={brand.heroImage}
             alt={`Ноутбук ${brand.label} на рабочем столе для диагностики`}
-            width="768"
-            height="1024"
+            width={imageWidth}
+            height={imageHeight}
             fetchpriority="high"
             decoding="async"
           />
@@ -91,6 +98,14 @@ const [repairLabel, repairDuration] = c["Срок ремонта"].split(" вс�
             <source src="/media/notebook-auto.mp4" type="video/mp4" />
             Мобильная мастерская Ленремонта — ремонт ноутбуков.
           </video>
+        )
+      }
+      {
+        brand && (
+          <figcaption class="lr-hero__brand-time">
+            <span>{repairLabel} всего за</span>
+            <strong>{repairDuration}</strong>
+          </figcaption>
         )
       }
     </figure>

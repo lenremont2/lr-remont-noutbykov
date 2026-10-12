@@ -71,23 +71,37 @@ for (const page of pages) {
   assert.ok(html.includes(page.h1), page.slug);
   if (content.brands.includes(page)) {
     const hero = html.match(/<section id="lr-hero"[\s\S]*?<\/section>/)?.[0];
-    assert.ok(hero?.includes('class="lr-section lr-child-hero"'), page.slug);
+    assert.ok(hero?.includes("lr-hero--brand"), page.slug);
     assert.ok(
-      hero.includes('<h1 id="lr-child-title">' + page.h1 + "</h1>"),
+      hero.includes('id="lr-hero-title">' + page.h1 + "</h1>"),
       page.slug,
     );
     assert.ok(hero.includes(page.lead), page.slug);
+    assert.ok(hero.includes("lr-hero__brand-time"), page.slug);
+    assert.ok(
+      hero.includes(source.hero.fields["Срок ремонта"].split(" всего за ")[1]),
+      page.slug,
+    );
+    for (const fact of source.hero.bullets) {
+      assert.ok(
+        hero.includes(fact.title) && hero.includes(fact.text),
+        page.slug,
+      );
+    }
+    for (const channel of ["ВКонтакте", "Telegram", "MAX"]) {
+      assert.ok(hero.includes(channel), page.slug);
+    }
     assert.ok(hero.includes('src="' + page.heroImage + '"'), page.slug);
     assert.ok(hero.includes('width="768" height="1024"'), page.slug);
     assert.ok(
       hero.includes('data-source="brand:' + page.label + '"'),
       page.slug,
     );
-    assert.ok(hero.includes('href="#lr-brand-guide"'), page.slug);
+    assert.ok(hero.includes('href="#lr-formats"'), page.slug);
     assert.ok(
       !hero.includes("<video") &&
-        !hero.includes("lr-hero__facts") &&
-        !hero.includes("lr-quick-contacts"),
+        hero.includes("lr-hero__facts") &&
+        hero.includes("lr-quick-contacts"),
       page.slug,
     );
     assert.ok(
@@ -135,15 +149,30 @@ for (const page of pages) {
   const guideId = content.problems.includes(page)
     ? "lr-problem-guide"
     : "lr-brand-guide";
-  const sections = [
-    "lr-hero",
-    guideId,
-    "lr-formats",
-    "lr-prices",
-    "lr-guarantee",
-    "lr-reviews",
-    "lr-faq",
-  ];
+  const sections = !content.problems.includes(page)
+    ? [
+        "lr-hero",
+        "lr-symptoms",
+        "lr-timeline",
+        "lr-benefits",
+        "lr-formats",
+        "lr-process",
+        "lr-security",
+        "lr-guarantee",
+        "lr-reviews",
+        "lr-prices",
+        guideId,
+        "lr-faq",
+      ]
+    : [
+        "lr-hero",
+        guideId,
+        "lr-formats",
+        "lr-prices",
+        "lr-guarantee",
+        "lr-reviews",
+        "lr-faq",
+      ];
   const positions = sections.map((id) => html.indexOf('id="' + id + '"'));
   assert.ok(
     positions.every(
