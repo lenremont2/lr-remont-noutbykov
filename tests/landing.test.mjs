@@ -40,15 +40,18 @@ assert.match(html, /<h2[^>]+id="lr-hero-title"/);
 assert.ok(html.includes(data.hero.fields.H2));
 const homeHero = html.match(/<section id="lr-hero"[\s\S]*?<\/section>/)?.[0];
 assert.ok(homeHero?.includes("lr-hero--home"));
-assert.ok(homeHero.includes(data.hero.fields["Акцент заголовка"]));
 assert.ok(homeHero.includes(data.hero.fields["Лид"]));
 assert.equal((homeHero.match(/data-lr-hero-video/g) || []).length, 1);
-assert.equal((homeHero.match(/class="lr-hero__badge"/g) || []).length, 1);
-const repairBadge = homeHero.match(
-  /<figcaption class="lr-hero__badge">[\s\S]*?<\/figcaption>/,
+const heroHeading = homeHero.match(
+  /<h2[^>]*id="lr-hero-title"[^>]*>[\s\S]*?<\/h2>/,
 )?.[0];
-assert.ok(repairBadge.includes(data.hero.fields["Срок ремонта"]));
-assert.ok(!repairBadge.includes("гарантии на ремонт"));
+const heroHeadingText = heroHeading
+  .replace(/<[^>]+>/g, " ")
+  .replace(/\s+/g, " ")
+  .trim();
+assert.ok(heroHeadingText.includes(data.hero.fields["Срок ремонта"]));
+assert.ok(!homeHero.includes('class="lr-hero__badge"'));
+assert.ok(!homeHero.includes('class="lr-hero__media-label"'));
 assert.ok(homeHero.includes('data-source="hero"'));
 assert.ok(homeHero.includes('href="#lr-map-workshops"'));
 const benefitsSection = html.match(

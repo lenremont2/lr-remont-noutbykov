@@ -7,24 +7,20 @@ const c = copy.benefits.fields;
 
 <section id="lr-benefits" class="lr-section lr-benefits">
   <div class="lr-container">
-    <SectionHeading eyebrow={c["Надзаголовок"]} title={c.H2} lead={c["Лид"]} />
+    <SectionHeading title={c.H2} />
     <div class="lr-benefits__grid">
       {
         copy.benefits.items.map((benefit) => (
           <article class="lr-benefit">
-            <div class="lr-benefit__top">
-              <h3>{benefit.title}</h3>
-            </div>
+            <h3>{benefit.title}</h3>
             <p class="lr-benefit__detail">{benefit.text}</p>
           </article>
         ))
       }
     </div>
     <div class="lr-benefits__footer">
-      <p>
-        Назовите модель и опишите проблему — обсудим ремонт и условия оплаты.
-      </p>
-      <LeadButton label={c.CTA} source="benefits" />
+      <p>Назовите модель — подскажем стоимость ремонта.</p>
+      <LeadButton label={c.CTA} source="benefits" text />
     </div>
   </div>
 </section>

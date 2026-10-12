@@ -24,10 +24,10 @@
 
 #hop-landing .lr-hero--home .lr-hero__title {
   margin: 4px 0 0;
-  font-size: clamp(40px, 6vw, 76px);
-  line-height: 1.04;
+  font-size: clamp(36px, 4.5vw, 64px);
+  line-height: 1.1;
   font-weight: 600;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.03em;
 }
 
 #hop-landing .lr-hero__title-intro {
@@ -39,10 +39,14 @@
   color: var(--lr-white);
 }
 
-#hop-landing .lr-hero__title-accent {
+#hop-landing .lr-hero__title-message {
   display: block;
-  max-width: 12ch;
+  text-wrap: balance;
+}
+
+#hop-landing .lr-hero__title-accent {
   color: var(--lr-color-accent);
+  white-space: nowrap;
 }
 
 #hop-landing .lr-hero--home .lr-hero__lead {
@@ -71,43 +75,6 @@
   border-radius: 20px;
 }
 
-#hop-landing .lr-hero__media-label {
-  position: absolute;
-  z-index: 1;
-  max-width: calc(100% - 48px);
-  top: 24px;
-  left: 24px;
-  padding: 8px 12px;
-  border-radius: 8px;
-  background: var(--lr-graphite-900);
-  color: var(--lr-white);
-  font-size: 13px;
-  line-height: 20px;
-}
-
-#hop-landing .lr-hero--home .lr-hero__badge {
-  position: absolute;
-  z-index: 1;
-  bottom: 24px;
-  left: 24px;
-  right: 24px;
-  max-width: 420px;
-  margin: 0;
-  padding: 20px 24px;
-  border-radius: 12px;
-  background: var(--lr-color-accent);
-  color: var(--lr-graphite-900);
-  box-shadow: 0 12px 32px rgb(0 0 0 / 18%);
-}
-
-#hop-landing .lr-hero__badge strong {
-  display: block;
-  font-size: clamp(22px, 2.4vw, 30px);
-  line-height: 1.2;
-  font-weight: 700;
-  letter-spacing: -0.025em;
-  text-wrap: balance;
-}
 #hop-landing .lr-hero--home .lr-hero__facts {
   gap: 24px;
   margin: 16px 0 0;

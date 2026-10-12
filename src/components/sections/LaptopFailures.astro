@@ -1,0 +1,59 @@
+---
+import failures from "../../data/laptop-failures.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+---
+
+<section id="lr-laptop-failures" class="lr-section lr-laptop-failures">
+  <div class="lr-container">
+    <SectionHeading title="Неисправности и причины поломок ноутбуков" />
+    <div class="lr-laptop-failures__list">
+      {
+        failures.map((item) => (
+          <article class="lr-laptop-failure">
+            {item.image && (
+              <img
+                class="lr-laptop-failure__image"
+                src={item.image}
+                alt=""
+                width="294"
+                height="294"
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <div class="lr-laptop-failure__copy">
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+              {item.warning && (
+                <p class="lr-laptop-failure__warning">{item.warning}</p>
+              )}
+            </div>
+          </article>
+        ))
+      }
+      <article class="lr-laptop-failure">
+        <img
+          class="lr-laptop-failure__image"
+          src="/media/lr-notebook-9.png"
+          alt=""
+          width="294"
+          height="294"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="lr-laptop-failure__copy">
+          <h3>Обратитесь в компанию по ремонту ноутбуков вовремя</h3>
+          <p>
+            И вы сохраните своему ноутбуку жизнь на долгие годы, кроме того,
+            меньше заплатите за ремонт ноутбука. Почему же, вы спросите, из
+            всего многообразия ремонтных контор следует выбрать именно
+            Ленремонт? Ответ на этот вопрос содержится в таблице <a
+              href="https://www.lenremont.ru/moshenniki-notebook.htm"
+              >на этой странице</a
+            >.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

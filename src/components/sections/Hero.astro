@@ -9,6 +9,7 @@ interface Props {
 const { brand } = Astro.props;
 const Heading = brand ? "h1" : "h2";
 const c = copy.hero.fields;
+const [repairLabel, repairDuration] = c["Срок ремонта"].split(" всего за ");
 ---
 
 <section
@@ -24,10 +25,17 @@ const c = copy.hero.fields;
         }
       </p>
       <Heading class="lr-hero__title" id="lr-hero-title">
-        {brand ? brand.h1 : <span class="lr-hero__title-intro">{c["H2"]}</span>}
         {
-          !brand && (
-            <span class="lr-hero__title-accent">{c["Акцент заголовка"]}</span>
+          brand ? (
+            brand.h1
+          ) : (
+            <>
+              <span class="lr-hero__title-intro">{c["H2"]}</span>
+              <span class="lr-hero__title-message">
+                {repairLabel} всего за{" "}
+                <span class="lr-hero__title-accent">{repairDuration}</span>
+              </span>
+            </>
           )
         }
       </Heading>
@@ -57,11 +65,6 @@ const c = copy.hero.fields;
     </div>
     <figure class="lr-hero__media">
       {
-        !brand && (
-          <span class="lr-hero__media-label">Мастерская на колёсах</span>
-        )
-      }
-      {
         brand ? (
           <img
             class="lr-hero__photo"
@@ -88,13 +91,6 @@ const c = copy.hero.fields;
             <source src="/media/notebook-auto.mp4" type="video/mp4" />
             Мобильная мастерская Ленремонта — ремонт ноутбуков.
           </video>
-        )
-      }
-      {
-        !brand && (
-          <figcaption class="lr-hero__badge">
-            <strong>{c["Срок ремонта"]}</strong>
-          </figcaption>
         )
       }
     </figure>
