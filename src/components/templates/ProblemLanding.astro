@@ -1,6 +1,8 @@
 ---
 import LandingLayout from "../../layouts/LandingLayout.astro";
 import RepairFormats from "../sections/RepairFormats.astro";
+import RepairProcess from "../sections/RepairProcess.astro";
+import SecurityRules from "../sections/SecurityRules.astro";
 import Guarantee from "../sections/Guarantee.astro";
 import Reviews from "../sections/Reviews.astro";
 import LeadCapture from "../sections/LeadCapture.astro";
@@ -21,9 +23,7 @@ interface Props {
   page: ProblemPage;
 }
 const { page } = Astro.props;
-const symptom = copy.symptoms.items.find(
-  (item) => item.image === "/media/symptom-" + page.imageKey + ".webp",
-)!;
+const symptom = copy.symptoms.items.find((item) => item.slug === page.slug)!;
 const rows = standardPrices.filter(([work]) => page.priceWorks.includes(work));
 ---
 
@@ -135,7 +135,27 @@ const rows = standardPrices.filter(([work]) => page.priceWorks.includes(work));
       </div>
     </section>
     <RepairFormats linkToLocations={false} />
-    <ServicePriceTable title="Какие работы могут понадобиться" rows={rows} />
+    {
+      rows.length ? (
+        <ServicePriceTable
+          title="Какие работы могут понадобиться"
+          rows={rows}
+        />
+      ) : (
+        <section id="lr-prices" class="lr-section lr-prices">
+          <div class="lr-container">
+            <h2>Стоимость ремонта привода</h2>
+            <p class="lr-lead">
+              Стоимость согласуем после диагностики, до ремонта. Запчасти
+              рассчитываем отдельно. Обычная диагностика бесплатна даже при
+              отказе от ремонта.
+            </p>
+          </div>
+        </section>
+      )
+    }
+    <RepairProcess />
+    <SecurityRules />
     <Guarantee />
     <Reviews />
     <ServiceFaq items={page.faq} />

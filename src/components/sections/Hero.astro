@@ -23,6 +23,45 @@ const [repairLabel, repairDuration] = c["Срок ремонта"].split(" вс�
   aria-labelledby="lr-hero-title"
 >
   <div class="lr-container lr-hero__grid">
+    <figure class="lr-hero__media">
+      {
+        brand ? (
+          <img
+            class="lr-hero__photo"
+            src={brand.heroImage}
+            alt={`Ноутбук ${brand.label} на рабочем столе для диагностики`}
+            width={imageWidth}
+            height={imageHeight}
+            fetchpriority="high"
+            decoding="async"
+          />
+        ) : (
+          <video
+            class="lr-hero__video"
+            loop
+            muted
+            data-lr-hero-video
+            playsinline
+            preload="none"
+            width="480"
+            height="640"
+            poster="/media/mobile-lab-exterior.webp"
+            aria-label="Мобильная мастерская Ленремонта — ремонт ноутбуков"
+          >
+            <source src="/media/notebook-auto.mp4" type="video/mp4" />
+            Мобильная мастерская Ленремонта — ремонт ноутбуков.
+          </video>
+        )
+      }
+      {
+        brand && (
+          <figcaption class="lr-hero__brand-time">
+            <span>{repairLabel} всего за</span>
+            <strong>{repairDuration}</strong>
+          </figcaption>
+        )
+      }
+    </figure>
     <div class="lr-hero__copy">
       <p class="lr-eyebrow">
         <span class="lr-status-dot" aria-hidden="true"> </span>{
@@ -63,52 +102,13 @@ const [repairLabel, repairDuration] = c["Срок ремонта"].split(" вс�
               <span class="lr-fact-mark" aria-hidden="true" />
               <div>
                 <h3>{fact.title}</h3>
-                <p>{fact.text}</p>
+                {fact.text ? <p>{fact.text}</p> : null}
               </div>
             </li>
           ))
         }
       </ul>
     </div>
-    <figure class="lr-hero__media">
-      {
-        brand ? (
-          <img
-            class="lr-hero__photo"
-            src={brand.heroImage}
-            alt={`Ноутбук ${brand.label} на рабочем столе для диагностики`}
-            width={imageWidth}
-            height={imageHeight}
-            fetchpriority="high"
-            decoding="async"
-          />
-        ) : (
-          <video
-            class="lr-hero__video"
-            loop
-            muted
-            data-lr-hero-video
-            playsinline
-            preload="none"
-            width="480"
-            height="640"
-            poster="/media/mobile-lab-exterior.webp"
-            aria-label="Мобильная мастерская Ленремонта — ремонт ноутбуков"
-          >
-            <source src="/media/notebook-auto.mp4" type="video/mp4" />
-            Мобильная мастерская Ленремонта — ремонт ноутбуков.
-          </video>
-        )
-      }
-      {
-        brand && (
-          <figcaption class="lr-hero__brand-time">
-            <span>{repairLabel} всего за</span>
-            <strong>{repairDuration}</strong>
-          </figcaption>
-        )
-      }
-    </figure>
     <QuickContacts />
   </div>
 </section>

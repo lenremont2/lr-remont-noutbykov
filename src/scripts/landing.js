@@ -277,7 +277,7 @@ function initializeLanding() {
     courier: [
       "Передайте ноутбук курьеру",
       "Согласуем адрес, время и стоимость доставки.",
-      "Заказать курьера",
+      "Вызвать курьера",
     ],
     workshop: [
       "Найдём удобную мастерскую",
@@ -323,12 +323,6 @@ function initializeLanding() {
   root.querySelectorAll("[data-lr-form]").forEach((form) => {
     form.querySelector("[data-hop-lead-submit]").disabled = false;
     updatePhoneMode(form);
-    form
-      .querySelector("[data-lr-details]")
-      .addEventListener("toggle", (event) => {
-        event.target.querySelector("[data-lr-details-label]").textContent =
-          event.target.open ? "Скрыть подробности" : "Добавить подробности";
-      });
     form.addEventListener(
       "submit",
       (event) => {
@@ -389,12 +383,7 @@ function initializeLanding() {
       const workshop = format === "workshop";
       modalForm.querySelector("[data-lr-district]").hidden = !workshop;
       modalForm.elements.district.disabled = !workshop;
-      modalForm.querySelector("[data-lr-details]").hidden = workshop;
-      modalForm.elements.model.disabled = workshop;
-      modalForm.elements.problem.disabled = workshop;
       modalForm.querySelector("[data-lr-symptom-picker]").hidden = true;
-      if (target.dataset.source === "symptoms-other")
-        modalForm.querySelector("[data-lr-details]").open = true;
       updateContext(modalForm);
       modal.showModal();
       modalForm.elements.phone.focus();
@@ -430,8 +419,7 @@ function initializeLanding() {
       form.elements.consent.focus();
     } else if (target.matches("[data-lr-question]")) {
       const form = root.querySelector("#lr-contact [data-lr-form]");
-      form.querySelector("[data-lr-details]").open = true;
-      form.elements.problem.focus({ preventScroll: true });
+      form.elements.phone.focus({ preventScroll: true });
     }
     if (target.closest("[data-lr-nav]"))
       root.querySelector("[data-lr-nav]").open = !mobile.matches;

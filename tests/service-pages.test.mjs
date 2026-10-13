@@ -18,9 +18,9 @@ const source = JSON.parse(
 const pages = [...content.brands, ...content.problems, content.macbook];
 assert.equal(content.brands.length, 9);
 assert.equal(new Set(content.brands.map((page) => page.heroImage)).size, 9);
-assert.equal(content.problems.length, 6);
-assert.equal(new Set(content.problems.map((page) => page.heroImage)).size, 6);
-assert.equal(pages.length, 16);
+assert.equal(content.problems.length, 9);
+assert.equal(new Set(content.problems.map((page) => page.heroImage)).size, 9);
+assert.equal(pages.length, 19);
 for (const field of ["slug", "title", "description", "h1"]) {
   assert.equal(
     new Set(pages.map((page) => page[field])).size,
@@ -42,9 +42,7 @@ for (const problem of content.problems) {
     problem.slug,
   );
   assert.ok(
-    source.symptoms.items.some(
-      (item) => item.image === `/media/symptom-${problem.imageKey}.webp`,
-    ),
+    source.symptoms.items.some((item) => item.slug === problem.slug),
     problem.slug,
   );
 }
@@ -69,6 +67,10 @@ for (const page of pages) {
   assert.equal((html.match(/id="hop-landing"/g) || []).length, 1);
   assert.equal((html.match(/<h1[ >]/g) || []).length, 1, page.slug);
   assert.ok(html.includes(page.h1), page.slug);
+  assert.ok(
+    html.includes('href="whatsapp://send?phone=78127023333"'),
+    page.slug,
+  );
   if (content.brands.includes(page)) {
     const hero = html.match(/<section id="lr-hero"[\s\S]*?<\/section>/)?.[0];
     assert.ok(hero?.includes("lr-hero--brand"), page.slug);
@@ -88,7 +90,7 @@ for (const page of pages) {
         page.slug,
       );
     }
-    for (const channel of ["ВКонтакте", "Telegram", "MAX"]) {
+    for (const channel of ["ВКонтакте", "Telegram", "MAX", "WhatsApp"]) {
       assert.ok(hero.includes(channel), page.slug);
     }
     assert.ok(hero.includes('src="' + page.heroImage + '"'), page.slug);
@@ -260,6 +262,13 @@ for (const page of pages) {
   const priceSection = html.match(
     /<section id="lr-prices"[\s\S]*?<\/section>/,
   )?.[0];
+  if (content.problems.includes(page) && page.priceWorks.length === 0) {
+    assert.ok(!priceSection.includes("<table"), page.slug);
+    assert.ok(
+      priceSection.includes("Стоимость согласуем после диагностики"),
+      page.slug,
+    );
+  }
   assert.ok(
     priceSection &&
       !priceSection.includes("<input") &&
@@ -287,5 +296,5 @@ assert.ok(
   !macSource.includes("BrandLanding") && !macSource.includes("ProblemLanding"),
 );
 console.log(
-  "16 pages: unique SEO fields, one H1/root, JSON-LD, links, prices, media, forms and CSS isolation passed.",
+  "19 pages: unique SEO fields, one H1/root, JSON-LD, links, prices, media, forms and CSS isolation passed.",
 );

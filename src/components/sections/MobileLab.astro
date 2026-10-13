@@ -8,11 +8,6 @@ const f = c.items[2].fields;
 
 <section id="lr-lab" class="lr-section lr-lab">
   <div class="lr-container">
-    <SectionHeading
-      title={c.fields.H2}
-      lead={c.fields["Лид"]}
-      eyebrow={c.fields["Надзаголовок"]}
-    />
     <div class="lr-lab__media">
       <figure class="lr-lab__exterior">
         <img
@@ -40,6 +35,11 @@ const f = c.items[2].fields;
         <figcaption>{f["Подпись к интерьеру"]}</figcaption>
       </figure>
     </div>
+    <SectionHeading
+      title={c.fields.H2}
+      lead={c.fields["Лид"]}
+      eyebrow={c.fields["Надзаголовок"]}
+    />
     <div class="lr-lab__bottom">
       <ol class="lr-lab__facts">
         {

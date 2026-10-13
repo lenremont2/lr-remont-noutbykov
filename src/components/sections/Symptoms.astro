@@ -2,7 +2,7 @@
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
 import LeadButton from "../ui/LeadButton.astro";
-import { problems, pagePath } from "../../data/service-pages";
+import { pagePath } from "../../data/service-pages";
 const c = copy.symptoms;
 const prices = copy.prices.tables.flat();
 ---
@@ -12,8 +12,8 @@ const prices = copy.prices.tables.flat();
     <SectionHeading title={c.fields.H2} lead={c.fields["Лид"]} />
     <div class="lr-symptoms__grid">
       {
-        c.items.map((item, i) => (
-          <a class="lr-symptom" href={pagePath(problems[i])}>
+        c.items.map((item) => (
+          <a class="lr-symptom" href={pagePath(item)}>
             <img
               class="lr-symptom__image"
               src={item.image}
@@ -26,7 +26,8 @@ const prices = copy.prices.tables.flat();
             <div class="lr-symptom__body">
               <h3>{item.title}</h3>
               <p class="lr-symptom__price">
-                {prices.find(([work]) => work === item.priceWork)?.[1]}
+                {prices.find(([work]) => work === item.priceWork)?.[1] ??
+                  "Бесплатная диагностика"}
               </p>
             </div>
           </a>
@@ -34,12 +35,13 @@ const prices = copy.prices.tables.flat();
       }
     </div>
     <div class="lr-section-note">
-      <p class="lr-caption">{c.fields["Пояснение цены"]}</p>
-      <LeadButton
-        label="Узнать стоимость ремонта"
-        source="symptoms-other"
-        text
-      />
+      <p>
+        В рекламе часто обещают «выезд 0 ₽, ремонт от 200 ₽», а после разборки
+        требуют 15 000–25 000 ₽ за сборку. В Ленремонте вы защищены официальным
+        договором: точная смета фиксируется ДО начала работ, оплата — строго
+        после вашей проверки, а все заменённые детали возвращаются вам.
+      </p>
+      <LeadButton label="Узнать стоимость ремонта" source="symptoms-other" />
     </div>
   </div>
 </section>

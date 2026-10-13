@@ -189,3 +189,19 @@
   line-height: 1.5;
   color: var(--lr-color-muted);
 }
+
+@media (max-width: 767px) {
+  #hop-landing .lr-scenario-poster__bg {
+    position: static;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  #hop-landing .lr-scenario-poster__overlay {
+    display: none;
+  }
+
+  #hop-landing .lr-scenario-poster__content {
+    height: auto;
+  }
+}

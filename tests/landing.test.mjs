@@ -28,6 +28,14 @@ const html = readFileSync(
   new URL("../dist/index.html", import.meta.url),
   "utf8",
 );
+const leadForms = html.match(/<form\b[^>]*data-lr-form[\s\S]*?<\/form>/g) || [];
+assert.equal(leadForms.length, 3);
+for (const form of leadForms) {
+  assert.ok(!form.includes("lr-form__details"));
+  assert.ok(!/name="(?:model|problem)"/.test(form));
+  assert.ok(form.includes('name="phone"'));
+  assert.ok(form.includes('name="consent"'));
+}
 const data = JSON.parse(
   readFileSync(
     new URL("../src/data/laptop-service.json", import.meta.url),
@@ -208,17 +216,27 @@ for (const benefit of data.hero.bullets) {
 }
 
 const symptomCards = html.match(/<a class="lr-symptom"[\s\S]*?<\/a>/g) || [];
-assert.equal(symptomCards.length, 6);
+assert.equal(symptomCards.length, 9);
+assert.ok(!html.includes('id="lr-laptop-failures"'));
+assert.equal(new Set(data.symptoms.items.map((item) => item.slug)).size, 9);
 data.symptoms.items.forEach((item, i) => {
   const price = data.prices.tables
     .flat()
     .find(([work]) => work === item.priceWork)?.[1];
-  assert.ok(price, item.priceWork);
+  assert.ok(price || item.priceWork === null, item.title);
   assert.ok(symptomCards[i].includes(item.image), item.title);
-  assert.ok(symptomCards[i].includes(price), item.title);
+  assert.ok(
+    symptomCards[i].includes(price ?? "Бесплатная диагностика"),
+    item.title,
+  );
   assert.ok(symptomCards[i].includes(item.title), item.title);
   assert.ok(!symptomCards[i].includes(item.text), item.title);
-  assert.ok(!symptomCards[i].includes(item.priceWork), item.title);
+  if (item.priceWork)
+    assert.ok(!symptomCards[i].includes(item.priceWork), item.title);
+  assert.ok(
+    symptomCards[i].includes('href="/' + item.slug + '.htm"'),
+    item.slug,
+  );
   assert.match(symptomCards[i], /href="\/[a-z-]+\.htm"/);
   assert.ok(!/<button[ >]/.test(symptomCards[i]), item.title);
 });
@@ -234,13 +252,39 @@ for (const slot of ["workshops", "pickup"]) {
 }
 assert.ok(html.includes('href="#lr-map-pickup"'));
 console.log(
-  "Six illustrated symptoms with source prices and two map placeholders: passed.",
+  "Nine illustrated symptoms with source prices and two map placeholders: passed.",
 );
 
 for (const [, anchor] of html.matchAll(/href="#([^" ]+)"/g)) {
   assert.ok(html.includes('id="' + anchor + '"'), anchor);
 }
-assert.equal((html.match(/data-lr-qr-disclosure/g) || []).length, 6);
+assert.equal((html.match(/data-lr-qr-disclosure/g) || []).length, 8);
+for (const channel of ["vk", "tg", "max", "whatsapp"]) {
+  const path = "/media/lr-qr-" + channel + ".svg";
+  assert.equal(html.split('src="' + path + '"').length - 1, 2, channel);
+  const svg = readFileSync(
+    new URL("../public" + path, import.meta.url),
+    "utf8",
+  );
+  assert.ok(svg.includes('fill="#000"'), channel);
+  assert.ok(
+    svg.includes('<rect width="300" height="300" fill="#fff"'),
+    channel,
+  );
+  assert.ok(!html.includes("/media/lr-qr-" + channel + ".webp"), channel);
+}
+assert.equal(
+  (html.match(/src="\/media\/lr-qr-whatsapp.svg"/g) || []).length,
+  2,
+);
+assert.ok(
+  existsSync(new URL("../public/media/lr-qr-whatsapp.svg", import.meta.url)),
+);
+assert.equal(
+  (html.match(/href="whatsapp:\/\/send\?phone=78127023333"/g) || []).length,
+  4,
+);
+assert.equal((html.match(/aria-label="Написать в WhatsApp"/g) || []).length, 2);
 assert.equal(
   (
     html.match(

@@ -88,30 +88,6 @@ const {
         >
       </div>
     </div>
-    <details class="lr-form__details" data-lr-details>
-      <summary>
-        <span data-lr-details-label>Добавить подробности</span>
-        <span aria-hidden="true">+</span>
-      </summary>
-      <div class="lr-form__field">
-        <label for={`${id}-model`}>Марка и модель, если знаете</label>
-        <input
-          id={`${id}-model`}
-          name="model"
-          placeholder="Например, Lenovo IdeaPad"
-        />
-        <span class="lr-caption">Можно оставить пустым</span>
-      </div>
-      <div class="lr-form__field">
-        <label for={`${id}-problem`}>Что случилось с ноутбуком?</label>
-        <textarea
-          id={`${id}-problem`}
-          name="problem"
-          placeholder="Например, не включается после зарядки"
-        >
-        </textarea>
-      </div>
-    </details>
     <div class="lr-form__field" data-lr-district hidden>
       <label for={`${id}-district`}>Метро или район</label>
       <input

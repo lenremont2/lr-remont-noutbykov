@@ -24,7 +24,6 @@ const {
   symptom,
   warning,
   secondaryHref = "#lr-first-aid",
-  secondaryLabel = "Что сделать сейчас",
 } = Astro.props;
 ---
 
@@ -34,6 +33,15 @@ const {
   aria-labelledby="lr-child-title"
 >
   <div class="lr-container lr-child-hero__grid">
+    <img
+      class="lr-child-hero__photo"
+      src={image}
+      alt={alt}
+      width={width}
+      height={height}
+      fetchpriority="high"
+      decoding="async"
+    />
     <div>
       <h1 id="lr-child-title">{title}</h1>
       <p class="lr-lead">{lead}</p>
@@ -44,7 +52,6 @@ const {
           source={source}
           symptom={symptom}
         />
-        <a class="lr-text-action" href={secondaryHref}>{secondaryLabel}</a>
       </div>
       <ul class="lr-child-facts">
         <li>Диагностика бесплатно</li>
@@ -52,14 +59,5 @@ const {
         <li>Сумма согласуется до ремонта</li>
       </ul>
     </div>
-    <img
-      class="lr-child-hero__photo"
-      src={image}
-      alt={alt}
-      width={width}
-      height={height}
-      fetchpriority="high"
-      decoding="async"
-    />
   </div>
 </section>

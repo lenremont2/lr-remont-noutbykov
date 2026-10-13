@@ -94,11 +94,12 @@ Alt уточнять по фактическому кадру: нельзя пр
 
 ### Существующие файлы
 
-- public/media/lr-qr-tg.webp
-- public/media/lr-qr-max.webp
-- public/media/lr-qr-vk.webp
+- public/media/lr-qr-tg.svg
+- public/media/lr-qr-max.svg
+- public/media/lr-qr-vk.svg
+- public/media/lr-qr-whatsapp.svg
 
-Они используются существующим SocialLinks.astro. Новые QR-коды без изменения контактов не генерировать.
+Они используются общим SocialLinks.astro. SVG содержат чёрный QR на белой подложке и цветной значок канала. В присланных SVG Telegram, VK и MAX рисунок QR был одинаковым, поэтому 13 октября 2026 года коды сформированы отдельно для действующих ссылок каналов с высоким уровнем коррекции и проверены декодированием. Контакты сохранены.
 
 ### Технические требования к фото
 
