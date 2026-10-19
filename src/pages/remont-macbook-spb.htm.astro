@@ -1,72 +1,997 @@
 ---
 import LandingLayout from "../layouts/LandingLayout.astro";
-import RepairFormats from "../components/sections/RepairFormats.astro";
-import Guarantee from "../components/sections/Guarantee.astro";
 import Reviews from "../components/sections/Reviews.astro";
+import QuickContacts from "../components/sections/QuickContacts.astro";
 import LeadCapture from "../components/sections/LeadCapture.astro";
 import LeadButton from "../components/ui/LeadButton.astro";
-import Hero from "../components/sections/Hero.astro";
-import Symptoms from "../components/sections/Symptoms.astro";
-import RepairTimeline from "../components/sections/RepairTimeline.astro";
-import Benefits from "../components/sections/Benefits.astro";
-import RepairProcess from "../components/sections/RepairProcess.astro";
-import SecurityRules from "../components/sections/SecurityRules.astro";
 import Breadcrumbs from "../components/ui/Breadcrumbs.astro";
-import ServicePriceTable from "../components/ui/ServicePriceTable.astro";
 import ServiceFaq from "../components/ui/ServiceFaq.astro";
 import RelatedServices from "../components/ui/RelatedServices.astro";
 import {
   macbook,
   macbookPrices,
+  standardPrices,
   pagePath,
   getSeo,
 } from "../data/service-pages";
+
+const allPrices = [...macbookPrices, ...standardPrices];
+const priceOf = (work: string) =>
+  allPrices.find(([name]) => name === work)?.[1] ?? "По диагностике";
+
+const macSymptoms = [
+  {
+    title: "Не включается и не реагирует на кнопку",
+    price: priceOf("Ремонт платы или цепей питания"),
+    time: "1–3 дня",
+    image: "/media/mac-symptom-no-power.webp",
+    imageAlt: "MacBook с тёмным экраном на диагностике цепей питания",
+    href: "/noutbuk-ne-vklyuchaetsya.htm",
+  },
+  {
+    title: "Залит водой, кофе или вином",
+    price: priceOf("Ремонт после попадания жидкости"),
+    time: "1–2 дня",
+    image: "/media/mac-symptom-liquid.webp",
+    imageAlt: "Пролитый кофе на клавиатуре и трекпаде MacBook",
+    href: "/remont-noutbuka-posle-zalitiya.htm",
+  },
+  {
+    title: "Разбит экран Retina или погасла подсветка",
+    price: priceOf("Установка новой матрицы экрана"),
+    time: "от 1 часа",
+    image: "/media/mac-symptom-screen.webp",
+    imageAlt: "Повреждённый экран Retina с полосами и неравномерной подсветкой",
+    href: "/remont-ekrana-noutbuka.htm",
+  },
+  {
+    title: "Вздулась батарея или быстро садится",
+    price: priceOf("Замена приклеенного аккумулятора"),
+    time: "1–2 дня",
+    image: "/media/mac-symptom-battery.webp",
+    imageAlt: "Вздувшийся аккумулятор MacBook, приподнявший стеклянный трекпад",
+    href: "/noutbuk-ne-zaryazhaetsya.htm",
+  },
+  {
+    title: "Не заряжается по USB-C или MagSafe",
+    price: priceOf("Восстановление разъёма USB-C или MagSafe"),
+    time: "1–2 дня",
+    image: "/media/mac-symptom-charging.webp",
+    imageAlt: "Подгоревшие контакты разъёма USB-C и MagSafe на корпусе MacBook",
+    href: "/remont-razemov-noutbuka.htm",
+  },
+  {
+    title: "Сильно греется и шумит вентиляторами",
+    price: priceOf("Обслуживание охлаждения с полной разборкой"),
+    time: "2–4 часа",
+    image: "/media/mac-symptom-overheating.webp",
+    imageAlt: "Забитые пылью вентиляторы охлаждения внутри открытого MacBook",
+    href: "/noutbuk-peregrevaetsya.htm",
+  },
+  {
+    title: "Залипают клавиши или не работает трекпад",
+    price: priceOf("Замена клавиатуры или верхней панели"),
+    time: "от 3 часов",
+    image: "/media/mac-symptom-keyboard.webp",
+    imageAlt: "Ремонт механизма клавиш на клавиатуре MacBook",
+    href: "/remont-klaviatury-noutbuka.htm",
+  },
+  {
+    title: "Зависает на яблоке или тормозит macOS",
+    price: priceOf("Восстановление macOS с переносом данных"),
+    time: "1–3 часа",
+    image: "/media/mac-symptom-macos.webp",
+    imageAlt:
+      "Зависшая полоса загрузки macOS на экране MacBook с внешним накопителем",
+    href: "/noutbuk-tormozit-ne-zagruzhaetsya.htm",
+  },
+];
+
+const macTimeline = [
+  {
+    time: "40–90 мин",
+    stage: "В день обращения",
+    title: "Экспресс-диагностика, чистка охлаждения и macOS",
+    desc: "При вас проверяем потребление тока по USB-C, отключаем аккумулятор при свежем залитии, очищаем радиаторы от плотного войлока и восстанавливаем загрузку macOS.",
+    points: [
+      "Замер линий питания без риска для данных",
+      "Чистка кулеров с заменой термоинтерфейса",
+      "Устранение сбоев macOS и циклической перезагрузки",
+    ],
+    image: "/media/repair-modular.jpg",
+    imageAlt: "Инженер выполняет обслуживание и диагностику ноутбука",
+  },
+  {
+    time: "1–2 дня",
+    stage: "Модульный ремонт",
+    title: "Замена аккумулятора, клавиатуры, трекпада и портов",
+    desc: "Бережно демонтируем приклеенные секции батареи специальным составом без риска для шлейфа трекпада, меняем клавиатуру отдельно от топкейса и ставим новые разъёмы.",
+    points: [
+      "Оригинальные батареи с контролем циклов заряда",
+      "Замена клавиатуры с сохранением родного корпуса",
+      "Замена портов USB-C / Thunderbolt и MagSafe",
+    ],
+    image: "/media/repair-power.jpg",
+    imageAlt: "Проверка цепей питания и разъёмов на стенде",
+  },
+  {
+    time: "2–4 дня",
+    stage: "Пайка под микроскопом",
+    title: "Компонентный ремонт Logic Board и шлейфов экрана",
+    desc: "Отмываем плату в ультразвуковой ванне после залития, перепаиваем сгоревшие контроллеры питания и восстанавливаем перетёртые шлейфы подсветки с проверкой под нагрузкой.",
+    points: [
+      "Пайка контроллеров CD3215 / CD3217 / ISL9240",
+      "Восстановление шлейфа подсветки (Flexgate)",
+      "Многочасовой стресс-тест стабильности после пайки",
+    ],
+    image: "/media/repair-bga.jpg",
+    imageAlt: "Компонентная пайка платы на паяльной станции",
+  },
+];
+
+const macBenefits = [
+  {
+    num: "01",
+    title: "Сохраняем родную плату и серийный номер",
+    text: "Точечная перепайка микросхем питания CD3215/CD3217, чарджеров ISL9240 и обвязки SMC обходится в 3–4 раза дешевле замены материнской платы в сборе.",
+  },
+  {
+    num: "02",
+    title: "Работают Touch ID, True Tone и датчик сна",
+    text: "Датчики MacBook криптографически привязаны к плате. Сохраняя вашу родную Logic Board и перенося прошивку матриц, мы сберегаем 100% заводских функций.",
+  },
+  {
+    num: "03",
+    title: "Микропайка элементов 01005 под микроскопом",
+    text: "Работаем на инфракрасных и термовоздушных станциях с контролем термопрофиля — без вздутия текстолита и перегрева соседних чипов под компаундом.",
+  },
+  {
+    num: "04",
+    title: "Эталонная сборка корпусов Unibody",
+    text: "Калиброванные отвёртки Pentalobe и Torx, антистатические коврики и раскладка винтов по магнитной схеме. Никаких перепутанных винтов и бугорков на топкейсе.",
+  },
+  {
+    num: "05",
+    title: "Диагностика 0 ₽ без обязательств",
+    text: "Вы узнаёте точную причину поломки и полную стоимость до начала работ. Если решите отложить ремонт — забираете собранный MacBook бесплатно.",
+  },
+  {
+    num: "06",
+    title: "Репутация Ленремонта с 1989 года",
+    text: "Официальный договор с юридическим лицом, кассовый чек, возврат всех заменённых деталей и 12 месяцев прямой гарантии по наряд-заказу.",
+  },
+];
+
+const macFormats = [
+  {
+    format: "mobile-lab",
+    featured: true,
+    badge: "Выезд от 45 минут",
+    code: "Популярный выбор · СПб и ЛО",
+    title: "Мобильная лаборатория у дома или офиса",
+    text: "Оборудованный автомобиль с приборами диагностики и фирменным инструментом для техники Apple приедет по вашему адресу. Проведём проверку и модульный ремонт прямо при вас.",
+    specs: [
+      "Аккуратная разборка и проверка питания в вашем присутствии",
+      "Экстренное отключение аккумулятора при залитии без потери времени",
+      "Цены полностью совпадают с прайсом наших стационарных мастерских",
+    ],
+    cta: "Вызвать мобильную лабораторию",
+    image: "/media/mobile-lab-exterior.webp",
+    imageAlt: "Мобильная лаборатория Ленремонта у дома клиента",
+    width: 480,
+    height: 640,
+  },
+  {
+    format: "workshop",
+    featured: false,
+    badge: "Сложная пайка плат",
+    code: "Стационарный сервис",
+    title: "В специализированной мастерской Ленремонта",
+    text: "Оптимальный выбор для глубокого восстановления материнской платы, чистки в ультразвуковой ванне после пролитой жидкости и тонкой пайки под микроскопом.",
+    specs: [
+      "Инфракрасные паяльные станции, тепловизоры и стереомикроскопы",
+      "Прямой приём мастером с фиксацией серийных номеров в договоре",
+      "Бесплатная диагностика даже в случае отказа от ремонта",
+    ],
+    cta: "Подобрать удобную мастерскую",
+    image: "/media/laptop-engineer-hero.webp",
+    imageAlt: "Инженер Ленремонта в стационарной мастерской",
+    width: 580,
+    height: 384,
+  },
+  {
+    format: "courier",
+    featured: false,
+    badge: "По описи и договору",
+    code: "Бережная логистика",
+    title: "Доставка штатным курьером туда и обратно",
+    text: "Если нет времени ехать в сервис — курьер примет MacBook по акту в защитный кофр, доставит в лабораторию и вернёт полностью исправным с гарантийным талоном.",
+    specs: [
+      "Официальный акт приёма-передачи с описанием внешнего вида ноутбука",
+      "Согласование точной цены по телефону до начала любых работ",
+      "Оплата только после вашей личной проверки MacBook при получении",
+    ],
+    cta: "Вызвать курьера за MacBook",
+    image: "/media/laptop-courier.webp",
+    imageAlt: "Бережная передача ноутбука курьеру по акту",
+    width: 580,
+    height: 384,
+  },
+];
+
+const macProcess = [
+  {
+    step: "01",
+    duration: "За 2 минуты",
+    title: "Сверка A-модели и симптомов",
+    text: "Назовите пятизначный номер с нижней крышки (например, A2338) и опишите проблему. Сразу сориентируем по вилке цен и вероятному узлу сбоя.",
+  },
+  {
+    step: "02",
+    duration: "0 ₽ · 40 минут",
+    title: "Аппаратная диагностика на стенде",
+    text: "В лаборатории или на выезде проверяем линии питания, тестируем контроллеры USB-C и осматриваем плату под микроскопом без какой-либо оплаты.",
+  },
+  {
+    step: "03",
+    duration: "До начала пайки",
+    title: "Фиксация твёрдой сметы в договоре",
+    text: "До начала работ согласуем с вами итоговую сумму работы и комплектующих. Если цена не устроит — вы вправе отказаться, заплатив 0 ₽.",
+  },
+  {
+    step: "04",
+    duration: "При выдаче",
+    title: "Проверка по чек-листу и гарантия 1 год",
+    text: "Вместе проверяем зарядку, экран, звук, клавиатуру, Touch ID и температуру под нагрузкой. Выдаём чек, гарантийный талон и старые детали.",
+  },
+];
+
+const macModels = [
+  {
+    family: "MacBook Air (Apple Silicon)",
+    era: "2020–2024 · M1 / M2 / M3",
+    codes: ["A2337", "A2681", "A2941", "A3113", "A3114"],
+    focus:
+      "Ремонт цепей питания и контроллеров USB-C, замена экранов Liquid Retina, спасение после залития с сохранением данных.",
+  },
+  {
+    family: "MacBook Pro 14″ / 16″ (M-Series)",
+    era: "2021–2024 · M1 / M2 / M3 Pro & Max",
+    codes: ["A2442", "A2485", "A2779", "A2780", "A2918", "A2991", "A2992"],
+    focus:
+      "Восстановление многослойных материнских плат, ремонт разъёмов MagSafe 3 и Thunderbolt, замена дисплеев и батарей.",
+  },
+  {
+    family: "MacBook Pro 13″ / 15″ / 16″ (Intel)",
+    era: "2016–2020 · Touch Bar & Т2",
+    codes: [
+      "A2338",
+      "A2289",
+      "A2251",
+      "A2141",
+      "A2159",
+      "A1989",
+      "A1990",
+      "A1706",
+      "A1708",
+    ],
+    focus:
+      "Восстановление шлейфа подсветки (Flexgate) без замены крышки, ремонт питания USB-C CD3215, замена клавиатур и батарей.",
+  },
+  {
+    family: "MacBook Air 13″ (Intel Retina & Unibody)",
+    era: "2013–2020 · MagSafe 2 & USB-C",
+    codes: ["A2179", "A1932", "A1466", "A1465"],
+    focus:
+      "Ремонт цепей зарядки и контроллеров SMC, чистка системы охлаждения с заменой термопасты, установка новых аккумуляторов.",
+  },
+];
 ---
 
 <LandingLayout {...getSeo(macbook)}>
-  <div class="lr-mac-page lr-child-page lr-brand-page">
-    <Breadcrumbs current={macbook.label} />
-    <Hero
-      brand={{ ...macbook, heroImage: "/media/mobile-lab-interior.webp" }}
-      imageWidth={1080}
-      imageHeight={1080}
-    />
-    <Symptoms />
-    <RepairTimeline />
-    <Benefits />
-    <RepairFormats linkToLocations={false} />
-    <RepairProcess />
-    <SecurityRules />
-    <Guarantee />
+  <div class="lr-mac-page">
+    <div class="lr-mac-topbar">
+      <Breadcrumbs current={macbook.label} />
+      <div
+        class="lr-container lr-mac-subnav"
+        aria-label="Навигация по разделу MacBook"
+      >
+        <div class="lr-mac-subnav__brand">
+          <span class="lr-mac-subnav__dot" aria-hidden="true"></span>
+          <span class="lr-mac-subnav__tag">Apple Mac Studio · СПб</span>
+        </div>
+        <div class="lr-mac-subnav__links">
+          <a href="#lr-symptoms">Неисправности</a>
+          <a href="#lr-timeline">Сроки</a>
+          <a href="#lr-benefits">Инженерия vs Замена</a>
+          <a href="#lr-formats">Форматы приёма</a>
+          <a href="#lr-prices">Прайс-лист</a>
+          <a href="#lr-brand-guide">Инженерное досье</a>
+          <a href="#lr-faq">FAQ</a>
+        </div>
+      </div>
+    </div>
+
+    <section
+      id="lr-hero"
+      class="lr-section lr-mac-hero"
+      aria-labelledby="lr-hero-title"
+    >
+      <div class="lr-container">
+        <div class="lr-mac-hero__eyebrow-bar">
+          <span class="lr-mac-hero__status">
+            <span class="lr-mac-hero__pulse" aria-hidden="true"></span>
+            Специализированная лаборатория MacBook в Санкт-Петербурге
+          </span>
+          <div class="lr-mac-hero__chips" aria-label="Поддерживаемые платформы">
+            <span>MacBook Air</span>
+            <span>MacBook Pro</span>
+            <span>Intel · T2 · M1 · M2 · M3</span>
+          </div>
+        </div>
+
+        <div class="lr-mac-hero__grid">
+          <div class="lr-mac-hero__main">
+            <h1 id="lr-hero-title" class="lr-mac-hero__title">
+              {macbook.h1}
+            </h1>
+            <p class="lr-mac-hero__lead">{macbook.lead}</p>
+
+            <div class="lr-mac-hero__actions" data-lr-hero-cta>
+              <LeadButton
+                label="Рассчитать стоимость ремонта"
+                source="brand:MacBook"
+              />
+              <a class="lr-mac-hero__secondary" href="#lr-prices">
+                Прайс-лист по узлам
+                <span aria-hidden="true">↓</span>
+              </a>
+            </div>
+
+            <dl
+              class="lr-mac-hero__metrics"
+              aria-label="Ключевые стандарты сервиса"
+            >
+              <div class="lr-mac-hero__metric">
+                <dt>0 ₽</dt>
+                <dd>
+                  Бесплатная диагностика даже если вы решите отложить ремонт
+                </dd>
+              </div>
+              <div class="lr-mac-hero__metric">
+                <dt>До 70%</dt>
+                <dd>
+                  Экономия на компонентной пайке родной платы вместо замены в
+                  сборе
+                </dd>
+              </div>
+              <div class="lr-mac-hero__metric">
+                <dt>ДО работ</dt>
+                <dd>
+                  Фиксируем точную стоимость в официальном договоре до начала
+                  ремонта
+                </dd>
+              </div>
+              <div class="lr-mac-hero__metric">
+                <dt>1 год</dt>
+                <dd>
+                  Прямая гарантия Ленремонта на выполненную пайку и запчасти
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <figure class="lr-mac-hero__showcase">
+            <div class="lr-mac-hero__stage">
+              <div class="lr-mac-hero__stage-bar" aria-hidden="true">
+                <span class="lr-mac-hero__stage-dots">
+                  <i></i><i></i><i></i>
+                </span>
+                <span class="lr-mac-hero__stage-label"
+                  >Стенд компонентной диагностики Logic Board</span
+                >
+              </div>
+              <img
+                class="lr-mac-hero__photo"
+                src="/media/mac-hero-studio.webp"
+                alt="Диагностика и компонентный ремонт MacBook на антистатическом стенде Ленремонта"
+                width="1080"
+                height="720"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+
+            <figcaption class="lr-mac-hero__telemetry">
+              <div>
+                <span>Чистка и модули</span>
+                <strong>40–90 минут</strong>
+              </div>
+              <div>
+                <span>Пайка Logic Board</span>
+                <strong>1–3 дня</strong>
+              </div>
+              <div>
+                <span>Touch ID и True Tone</span>
+                <strong>100% сохранение</strong>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <QuickContacts />
+      </div>
+    </section>
+
+    <section
+      id="lr-symptoms"
+      class="lr-section lr-mac-symptoms"
+      aria-labelledby="lr-symptoms-title"
+    >
+      <div class="lr-container">
+        <div class="lr-mac-header">
+          <span class="lr-mac-eyebrow">Диагностическая матрица MacBook</span>
+          <h2 id="lr-symptoms-title">
+            Что случилось с вашим MacBook? Меняем только неисправную деталь, а
+            не всю плату целиком
+          </h2>
+          <p class="lr-mac-header__lead">
+            Выберите симптом вашей поломки. На бесплатной диагностике инженер
+            найдёт точную причину сбоя и зафиксирует стоимость до начала работ.
+          </p>
+        </div>
+
+        <div class="lr-mac-matrix">
+          {
+            macSymptoms.map((item) => (
+              <a class="lr-mac-matrix__cell" href={item.href}>
+                <img
+                  class="lr-mac-matrix__image"
+                  src={item.image}
+                  alt={item.imageAlt}
+                  width="768"
+                  height="512"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="lr-mac-matrix__body">
+                  <div class="lr-mac-matrix__top">
+                    <span class="lr-mac-matrix__time">{item.time}</span>
+                  </div>
+                  <div class="lr-mac-matrix__bottom">
+                    <h3 class="lr-mac-matrix__title">{item.title}</h3>
+                    <div class="lr-mac-matrix__meta">
+                      <span class="lr-mac-matrix__price">{item.price}</span>
+                      <span class="lr-mac-matrix__arrow" aria-hidden="true">
+                        ↗
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            ))
+          }
+        </div>
+
+        <div class="lr-mac-shield">
+          <div class="lr-mac-shield__badge" aria-hidden="true">0 ₽</div>
+          <div class="lr-mac-shield__copy">
+            <h3>
+              Щит от «выездных шантажистов»: никаких сказок про ремонт MacBook
+              за 300 ₽
+            </h3>
+            <p>
+              Типичная схема обмана на рынке: в рекламе обещают «ремонт Mac за
+              350 ₽», забирают ноутбук или разбирают его на столе, а затем
+              требуют 25 000–40 000 ₽ за «сложную прошивку», угрожая вернуть
+              разобранный корпус. В Ленремонте вы защищены законом: диагностика
+              стоит 0 ₽, точная смета фиксируется в договоре ДО начала работ, а
+              оплата происходит только после вашей личной проверки MacBook.
+            </p>
+          </div>
+          <div class="lr-mac-shield__action">
+            <LeadButton
+              label="Узнать честную смету по симптомам"
+              source="symptoms-other"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="lr-timeline"
+      class="lr-section lr-mac-chrono"
+      aria-labelledby="lr-timeline-title"
+    >
+      <div class="lr-container">
+        <div class="lr-mac-header">
+          <span class="lr-mac-eyebrow">Регламент времени</span>
+          <h2 id="lr-timeline-title">
+            Реальные сроки ремонта MacBook по технологическому циклу
+          </h2>
+          <p class="lr-mac-header__lead">
+            Мы не обещаем перепаять многослойную плату за 15 минут «на коленке»,
+            но и не держим ноутбук неделями. Каждый этап строго регламентирован.
+          </p>
+        </div>
+
+        <div class="lr-mac-chrono__grid">
+          {
+            macTimeline.map((item, index) => (
+              <article
+                class:list={[
+                  "lr-mac-chrono__card",
+                  { "lr-mac-chrono__card--featured": index === 0 },
+                ]}
+              >
+                <figure class="lr-mac-chrono__media">
+                  <img
+                    src={item.image}
+                    alt={item.imageAlt}
+                    width="580"
+                    height="360"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption class="lr-mac-chrono__stage">
+                    Этап 0{index + 1} · {item.stage}
+                  </figcaption>
+                </figure>
+                <div class="lr-mac-chrono__body">
+                  <strong class="lr-mac-chrono__time">{item.time}</strong>
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                  <ul class="lr-mac-chrono__points">
+                    {item.points.map((pt) => (
+                      <li>{pt}</li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+
+        <div class="lr-mac-chrono__bar">
+          <div class="lr-mac-chrono__bar-copy">
+            <strong>Горят рабочие дедлайны?</strong>
+            <p>
+              Согласуем приоритетную экспресс-диагностику на стенде (500 ₽) и
+              примем ваш MacBook в работу вне очереди.
+            </p>
+          </div>
+          <LeadButton
+            label="Уточнить срок готовности"
+            source="repair-timeline"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="lr-benefits"
+      class="lr-section lr-mac-econ"
+      aria-labelledby="lr-benefits-title"
+    >
+      <div class="lr-container lr-mac-econ__layout">
+        <div class="lr-mac-econ__manifesto">
+          <span class="lr-mac-eyebrow">Инженерия против замены блоками</span>
+          <h2 id="lr-benefits-title">
+            Почему к нам привозят MacBook после приговора официалов
+          </h2>
+          <p class="lr-mac-econ__lead">
+            Авторизованные сервисы не паяют платы по регламенту Apple: из-за
+            одного пробитого конденсатора вам предложат заменить весь Topcase
+            или Logic Board за 60–120 тысяч рублей. Мы восстанавливаем именно
+            повреждённый участок цепи.
+          </p>
+
+          <div
+            class="lr-mac-econ__compare"
+            aria-label="Сравнение подходов к ремонту"
+          >
+            <div class="lr-mac-econ__compare-row lr-mac-econ__compare-row--bad">
+              <span>Блочная замена у официалов</span>
+              <strong>65 000 – 120 000 ₽</strong>
+              <small>Замена всей платы целиком · ожидание 2–4 недели</small>
+            </div>
+            <div
+              class="lr-mac-econ__compare-row lr-mac-econ__compare-row--good"
+            >
+              <span>Компонентный ремонт в Ленремонте</span>
+              <strong>от 4 990 ₽</strong>
+              <small
+                >Пайка неисправного узла за 1–3 дня · сохранение родной платы и
+                данных</small
+              >
+            </div>
+          </div>
+
+          <div class="lr-mac-econ__admission">
+            <strong>Честное признание инженеров Ленремонта</strong>
+            <p>
+              Скажем прямо: мы не самый дешёвый сервис в городе и не ставим
+              безымянные копии без защиты по току. А если сквозной прогар 20V
+              физически уничтожил сам кристалл процессора M1/M2/M3 — мы не
+              станем выдумывать бесполезные работы, прямо скажем о
+              нерентабельности и возьмём за диагностику 0 ₽.
+            </p>
+          </div>
+        </div>
+
+        <div class="lr-mac-econ__grid">
+          {
+            macBenefits.map((item) => (
+              <article class="lr-mac-econ__card">
+                <span class="lr-mac-econ__num">{item.num}</span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="lr-formats"
+      class="lr-section lr-mac-formats"
+      aria-labelledby="lr-formats-title"
+    >
+      <div class="lr-container">
+        <div class="lr-mac-header">
+          <span class="lr-mac-eyebrow">Три сценария обслуживания</span>
+          <h2 id="lr-formats-title">
+            Как вам удобнее передать MacBook на диагностику и ремонт?
+          </h2>
+          <p class="lr-mac-header__lead">
+            Выберите удобный формат: выезд мобильной лаборатории по адресу,
+            визит в стационарный сервисный центр или бережная курьерская
+            доставка по акту.
+          </p>
+        </div>
+
+        <div class="lr-mac-formats__grid">
+          {
+            macFormats.map((item) => (
+              <article
+                class:list={[
+                  "lr-mac-format-card",
+                  { "lr-mac-format-card--featured": item.featured },
+                ]}
+              >
+                <figure class="lr-mac-format-card__media">
+                  <img
+                    src={item.image}
+                    alt={item.imageAlt}
+                    width={item.width}
+                    height={item.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="lr-mac-format-card__badge">{item.badge}</span>
+                </figure>
+                <div class="lr-mac-format-card__body">
+                  <span class="lr-mac-format-card__code">{item.code}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                  <ul class="lr-mac-format-card__list">
+                    {item.specs.map((spec) => (
+                      <li>{spec}</li>
+                    ))}
+                  </ul>
+                  <div class="lr-mac-format-card__action">
+                    <LeadButton
+                      label={item.cta}
+                      source="formats"
+                      format={item.format}
+                    />
+                  </div>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="lr-process"
+      class="lr-section lr-mac-process"
+      aria-labelledby="lr-process-title"
+    >
+      <div class="lr-container">
+        <div class="lr-mac-header">
+          <span class="lr-mac-eyebrow">Порядок работы</span>
+          <h2 id="lr-process-title">
+            Прозрачный регламент: 4 шага от обращения до выдачи с гарантией
+          </h2>
+          <p class="lr-mac-header__lead">
+            Вы полностью контролируете ход работ и бюджет на каждом этапе —
+            никаких сюрпризов в чеке после ремонта.
+          </p>
+        </div>
+
+        <ol class="lr-mac-process__grid">
+          {
+            macProcess.map((item) => (
+              <li class="lr-mac-process__card">
+                <div class="lr-mac-process__top">
+                  <span class="lr-mac-process__step">{item.step}</span>
+                  <span class="lr-mac-process__duration">{item.duration}</span>
+                </div>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </li>
+            ))
+          }
+        </ol>
+      </div>
+    </section>
+
+    <section
+      id="lr-security"
+      class="lr-section lr-mac-security"
+      aria-labelledby="lr-security-title"
+    >
+      <div class="lr-container">
+        <div class="lr-mac-security__head">
+          <div class="lr-mac-header">
+            <span class="lr-mac-eyebrow">Протокол безопасности Data Vault</span>
+            <h2 id="lr-security-title">
+              Защита данных на чипах T2 / Apple Silicon и сохранность
+              оригинальных деталей
+            </h2>
+            <p class="lr-mac-header__lead">
+              В отличие от обычных ноутбуков, на современных MacBook чипы памяти
+              NAND распаяны на материнской плате. Мы работаем по строгому
+              регламенту сохранения ваших файлов и комплектующих.
+            </p>
+          </div>
+          <div
+            class="lr-mac-security__chips"
+            aria-label="Технологии защиты данных"
+          >
+            <span>Apple T2 Security</span>
+            <span>M1 / M2 / M3 Secure Enclave</span>
+            <span>Акт описи серийных номеров</span>
+          </div>
+        </div>
+
+        <div class="lr-mac-security__grid">
+          <article class="lr-mac-security__card">
+            <div class="lr-mac-security__card-top">
+              <span class="lr-mac-security__num">01</span>
+              <span class="lr-mac-security__tag">Юридическая фиксация</span>
+            </div>
+            <h3>Серийные номера в акте приёма</h3>
+            <p>
+              При оформлении фиксируем серийный номер корпуса, A-модель и
+              комплектацию в официальном наряд-заказе. Ваши родные оригинальные
+              модули Apple находятся под полной материальной ответственностью
+              Ленремонта.
+            </p>
+          </article>
+          <article class="lr-mac-security__card">
+            <div class="lr-mac-security__card-top">
+              <span class="lr-mac-security__num">02</span>
+              <span class="lr-mac-security__tag">Защита памяти NAND</span>
+            </div>
+            <h3>Никакого сброса DFU без сохранения данных</h3>
+            <p>
+              Не перепрошиваем чип T2 и не греем зону вокруг распаянных
+              накопителей NAND без теплоотводящих экранов. При малейшем риске
+              сначала поднимаем дежурные линии для выгрузки резервной копии
+              ваших файлов.
+            </p>
+          </article>
+          <article class="lr-mac-security__card">
+            <div class="lr-mac-security__card-top">
+              <span class="lr-mac-security__num">03</span>
+              <span class="lr-mac-security__tag">Прозрачный отчёт</span>
+            </div>
+            <h3>Смета до пайки и возврат старых узлов</h3>
+            <p>
+              При обнаружении скрытых следов коррозии инженер пришлёт макрофото
+              участка под микроскопом и согласует решение. После ремонта все
+              выпаянные чипы, шлейфы или старый аккумулятор возвращаются вам.
+            </p>
+          </article>
+        </div>
+
+        <div class="lr-mac-security__footer">
+          <p>
+            Оформляем официальный договор и акт приёма-передачи с первой минуты
+            обращения.
+          </p>
+          <LeadButton
+            label="Проконсультироваться с инженером по Mac"
+            source="security-rules"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="lr-guarantee"
+      class="lr-section lr-mac-guarantee"
+      aria-labelledby="lr-guarantee-title"
+    >
+      <div class="lr-container lr-mac-guarantee__grid">
+        <div class="lr-mac-guarantee__seal">
+          <span class="lr-mac-eyebrow">Официальная ответственность</span>
+          <h2 id="lr-guarantee-title">
+            Тройная гарантия Ленремонта на компонентный и модульный ремонт
+            MacBook
+          </h2>
+          <div class="lr-mac-guarantee__badge">
+            <strong>1 год</strong>
+            <span>
+              прямой гарантии по официальному наряд-заказу и кассовому чеку на
+              пайку и комплектующие
+            </span>
+          </div>
+          <p class="lr-mac-guarantee__lead">
+            Мы берём 100% технического и финансового риска на себя: от
+            соблюдения согласованной сметы до приоритетного гарантийного
+            обслуживания.
+          </p>
+          <a class="lr-mac-guarantee__phone" href="tel:+78123444444">
+            Служба контроля качества и гарантии: +7 (812) 344-44-44
+          </a>
+        </div>
+
+        <div class="lr-mac-guarantee__pillars">
+          <article class="lr-mac-guarantee__pillar">
+            <span class="lr-mac-guarantee__num">Гарантия 01</span>
+            <h3>12 месяцев на пайку платы и запчасти</h3>
+            <p>
+              Если восстановленный узел питания, заменённый контроллер Type-C
+              или установленный аккумулятор проявит дефект в течение года —
+              устраним неисправность бесплатно в приоритетном порядке.
+            </p>
+          </article>
+          <article class="lr-mac-guarantee__pillar">
+            <span class="lr-mac-guarantee__num">Гарантия 02</span>
+            <h3>Твёрдая смета: ни рублём больше</h3>
+            <p>
+              Сумма утверждается до начала ремонта. Если в процессе работы
+              потребовалось больше расходников или времени инженера — разницу
+              полностью покрывает компания.
+            </p>
+          </article>
+          <article class="lr-mac-guarantee__pillar">
+            <span class="lr-mac-guarantee__num">Гарантия 03</span>
+            <h3>Личный контроль руководства компании</h3>
+            <p>
+              В каждом гарантийном талоне указан прямой контакт службы контроля
+              качества директора. Любой спорный вопрос решается в пользу клиента
+              без бюрократии.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <Reviews />
-    <ServicePriceTable
-      title="Стоимость работ для MacBook"
-      rows={macbookPrices}
-    />
+
+    <section
+      id="lr-prices"
+      class="lr-section lr-mac-prices"
+      aria-labelledby="lr-prices-title"
+    >
+      <div class="lr-container">
+        <div class="lr-mac-header">
+          <span class="lr-mac-eyebrow">Прайс-лист инженерного центра</span>
+          <h2 id="lr-prices-title">Стоимость работ для MacBook</h2>
+          <p class="lr-mac-header__lead">
+            Прозрачный прайс-лист на работу инженера по ключевым узлам MacBook
+            Air и MacBook Pro. Финальная смета с учётом деталей фиксируется до
+            начала ремонта.
+          </p>
+        </div>
+
+        <div class="lr-mac-prices__card">
+          <table
+            class="lr-price-table lr-mac-price-table"
+            aria-label="Стоимость работ для MacBook"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Инженерная операция для MacBook</th>
+                <th scope="col" class="lr-mac-price-table__time-col"
+                  >Ориентир по срокам</th
+                >
+                <th scope="col">Стоимость работы</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                macbookPrices.map(([work, price, duration]) => (
+                  <tr>
+                    <th scope="row">
+                      <span class="lr-mac-price-table__work">{work}</span>
+                      <span class="lr-mac-price-table__mobile-time">
+                        {duration}
+                      </span>
+                    </th>
+                    <td class="lr-mac-price-table__duration">{duration}</td>
+                    <td class="lr-mac-price-table__val">{price}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+
+          <div class="lr-mac-prices__notes">
+            <div class="lr-mac-prices__note-item">
+              <strong>Диагностика — 0 ₽</strong>
+              <p>
+                Обычная аппаратная диагностика бесплатна даже при отказе от
+                ремонта. Срочная диагностика вне очереди — 500 ₽.
+              </p>
+            </div>
+            <div class="lr-mac-prices__note-item">
+              <strong>Как считаются комплектующие</strong>
+              <p>
+                Цены «от» относятся к работе инженера. Запчасти (чипы,
+                аккумуляторы, матрицы, топкейсы) подбираются по A-номеру модели
+                и согласуются до ремонта.
+              </p>
+            </div>
+            <div class="lr-mac-prices__cta">
+              <LeadButton
+                label="Рассчитать смету для вашей модели"
+                source="macbook-prices"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section
       id="lr-brand-guide"
-      class="lr-section lr-child-guide"
+      class="lr-section lr-mac-dossier"
       aria-labelledby="lr-brand-guide-title"
     >
-      <div class="lr-container lr-child-guide__layout">
-        <nav class="lr-child-contents" aria-label="Содержание статьи">
-          <p>В этой статье</p>
-          <a href="#lr-mac-checks">Причины сбоя и диагностика</a>
-          <a href="#lr-mac-data">Что важно для ваших файлов</a>
-          <a href="#lr-mac-model">Как определить модель</a>
-          <a href="#lr-prices">Стоимость работ</a>
-        </nav>
-        <article class="lr-child-article">
-          <header id="lr-mac-checks">
-            <p class="lr-eyebrow">Анатомия поломок Apple Logic Board</p>
+      <div class="lr-container lr-mac-dossier__layout">
+        <aside class="lr-mac-dossier__sidebar">
+          <nav
+            class="lr-mac-dossier__nav"
+            aria-label="Содержание инженерного разбора"
+          >
+            <p class="lr-mac-dossier__nav-title">Инженерное досье MacBook</p>
+            <a href="#lr-mac-checks">01 · Пайка Logic Board и типовые узлы</a>
+            <a href="#lr-mac-data">02 · Спасение данных на T2 и M1/M2/M3</a>
+            <a href="#lr-mac-model">03 · Как определить A-номер модели</a>
+            <a href="#lr-prices">04 · Таблица стоимости работ</a>
+          </nav>
+
+          <div class="lr-mac-dossier__aside-card">
+            <strong>Симптом не означает замену платы</strong>
+            <p>
+              В 9 из 10 обращений MacBook с диагнозом «сгорела материнская
+              плата» возвращается в строй заменой 1–2 микросхем питания или
+              восстановлением дорожек под микроскопом.
+            </p>
+          </div>
+        </aside>
+
+        <article class="lr-mac-dossier__article">
+          <header id="lr-mac-checks" class="lr-mac-dossier__chapter">
+            <span class="lr-mac-eyebrow"
+              >Разбор архитектуры Apple Logic Board</span
+            >
             <h2 id="lr-brand-guide-title">
               Пайка Logic Board без переплат: почему не нужно менять всю плату
               целиком
             </h2>
-            <p class="lr-child-intro">
+            <p class="lr-mac-dossier__intro">
               Политика официальных сервисов Apple проста: при сбое одного
               копеечного конденсатора они приговаривают к замене всю плату в
-              сборе, выставляя счет до 80% стоимости нового MacBook. В
+              сборе, выставляя счёт до 80% стоимости нового MacBook. В
               Ленремонте иной подход: мы находим конкретную микросхему или
               сгоревший фильтр шины питания и меняем только его. Честное
               признание: если на MacBook M1/M2/M3 выгорел сам кристалл
@@ -77,128 +1002,188 @@ import {
               обрыв подсветки Flexgate — мы возвращаем Mac к жизни в 3–4 раза
               дешевле блочной замены за 1–2 дня.
             </p>
+
+            <div class="lr-mac-dossier__cards">
+              <div class="lr-mac-dossier__card">
+                <span class="lr-mac-dossier__code"
+                  >Дефект шлейфа дисплея · A1706 / A1708 / A1989 / A2159</span
+                >
+                <h3>Перетирание шлейфа подсветки (Flexgate)</h3>
+                <p>
+                  В тонких MacBook Pro шлейф подсветки натянут вокруг шарнира.
+                  При открытии крышки шире 45° экран тухнет или снизу появляются
+                  пучки света («эффект сцены»). Официалы требуют менять всю
+                  крышку в сборе за 35 000–55 000 ₽. Мы восстанавливаем
+                  заводской шлейф микропайкой под стереомикроскопом с
+                  сохранением вашей оригинальной Retina-матрицы и True Tone в
+                  разы дешевле.
+                </p>
+              </div>
+
+              <div class="lr-mac-dossier__card">
+                <span class="lr-mac-dossier__code"
+                  >Цепи USB-C Power Delivery · CD3215 / CD3217 / ISL9240</span
+                >
+                <h3>Выгорание контроллеров Type-C и зависание на 5V</h3>
+                <p>
+                  Неоригинальные зарядки, дешёвые USB-C хабы или скачок
+                  напряжения пробивают контроллеры портов: Mac потребляет 5V, но
+                  не переходит в рабочий режим 20V. Мы выпаиваем пробитый
+                  BGA-чип на инфракрасной станции, устанавливаем новый
+                  оригинальный контроллер нужной ревизии и восстанавливаем
+                  силовую шину PPBUS_G3H.
+                </p>
+              </div>
+
+              <div class="lr-mac-dossier__card">
+                <span class="lr-mac-dossier__code"
+                  >Химическая и ультразвуковая реанимация</span
+                >
+                <h3>Залитие и коррозия под чипами SMC / T2 / Apple Silicon</h3>
+                <p>
+                  Влага мгновенно затягивается под BGA-компоненты поверхностным
+                  натяжением, а линия подсветки 45V соседствует с сигнальными
+                  шинами процессора. Мы не «сушим» плату феном: отмываем Logic
+                  Board в ультразвуковой ванне со спецсоставом, перекатываем
+                  окислившиеся микросхемы на новые шары припоя и дублируем
+                  съеденные дорожки текстолита.
+                </p>
+              </div>
+            </div>
           </header>
-          <div class="lr-child-topics">
-            <div>
-              <h3>Перетирание шлейфа подсветки (Flexgate)</h3><p>
-                В MacBook Pro поколений A1706, A1708, A1989 шлейф подсветки
-                натянут вокруг шарнира. При открытии крышки шире 45° экран
-                тухнет («эффект сцены»). Официалы требуют менять всю крышку за
-                35 000+ руб. Мы восстанавливаем заводской шлейф микропайкой под
-                стереомикроскопом с сохранением оригинальной Retina-матрицы в
-                разы дешевле.
-              </p>
-            </div>
-            <div>
-              <h3>Выгорание контроллеров Type-C (CD3215 / CD3217)</h3><p>
-                Неоригинальные зарядки или дешевые USB-C концентраторы пробивают
-                контроллеры питания: Mac циклично зависает на 5V и не переходит
-                в режим 20V (нет заряда). Мы меняем сгоревший чип на
-                оригинальный и восстанавливаем силовую шину PPBUS_G3H за пару
-                часов.
-              </p>
-            </div>
-            <div>
-              <h3>Залитие и коррозия под чипами SMC / T2 / Apple Silicon</h3><p>
-                Влага мгновенно затягивается под BGA-компоненты поверхностным
-                натяжением. Мы не «сушим» плату феном: отмываем Logic Board в
-                ультразвуковой ванне со специальным составом, перекатываем
-                окислившиеся микросхемы на новые BGA-шары и восстанавливаем
-                съеденные дорожки текстолита.
-              </p>
-            </div>
-          </div>
+
           <section
             id="lr-mac-data"
-            class="lr-child-chapter"
+            class="lr-mac-dossier__chapter"
             aria-labelledby="lr-mac-data-title"
           >
             <h2 id="lr-mac-data-title">
               Данные на чипах T2 и Apple Silicon: спасаем файлы ДО любых
               манипуляций с платой
             </h2>
-            <p class="lr-child-intro">
+            <p class="lr-mac-dossier__intro">
               На современных Mac накопитель распаян на плате и аппаратно
-              привязан к процессору. Если прошить BIOS наугад или перегреть
+              привязан к процессору. Если прошить систему наугад или перегреть
               плату — данные будут потеряны навсегда. Мы работаем по строгому
-              протоколу сохранения информации.
+              протоколу сохранения информации:
             </p>
-            <ul class="lr-child-list">
+            <ul class="lr-mac-dossier__list">
               <li>
-                Сначала проводим замеры сопротивлений и поднимаем дежурные линии
-                питания без риска задеть контроллер NAND.
+                <strong>Безопасный запуск дежурных шин:</strong> сначала проводим
+                замеры сопротивлений и поднимаем линии питания 3.3V / 1.8V / PPBUS_G3H
+                без риска подать повышенное напряжение на контроллер NAND.
               </li>
               <li>
-                Если накопитель физически цел, снимаем полный образ системы в
-                режиме DFU / Apple Configurator до глубокой пайки.
+                <strong>Резервирование до глубокой пайки:</strong> как только плата
+                даёт старт, снимаем посекторную копию или переносим важные проекты
+                в режиме Target Disk / DFU до проведения длительных паяльных работ.
               </li>
               <li>
-                Честно предупреждаем: если пробит сам чип памяти NAND, никакие
-                программы не вернут зашифрованные файлы — поэтому диагностика
-                всегда бесплатна. Возможность сохранения данных зависит от
-                состояния устройства.
+                <strong>Отсутствие ложных обещаний:</strong> если электрический пробой
+                физически разрушил сам чип памяти NAND, никакие программы не расшифруют
+                ключи Secure Enclave — поэтому первичная диагностика всегда бесплатна.
+                Возможность сохранения данных зависит от состояния устройства.
               </li>
             </ul>
           </section>
+
           <section
             id="lr-mac-model"
-            class="lr-child-chapter"
+            class="lr-mac-dossier__chapter"
             aria-labelledby="lr-mac-model-title"
           >
             <h2 id="lr-mac-model-title">
-              Определите модель — назовем точную стоимость за 2 минуты
+              Определите модель — назовём точную стоимость за 2 минуты
             </h2>
-            <p class="lr-child-intro">
-              Для точного подбора запчастей нужен A-номер с нижней крышки
-              MacBook. Это сразу исключит ошибки в ревизиях шлейфов и
-              контроллеров.
+            <p class="lr-mac-dossier__intro">
+              Для безошибочного подбора контроллеров, аккумулятора, матрицы или
+              клавиатуры нужен пятизначный A-номер с нижней крышки MacBook.
             </p>
-            <div class="lr-child-topics">
-              <div>
-                <h3>Если MacBook включается</h3><p>
-                  Откройте меню  → «Об этом Mac». Запишите точную модель
-                  (например: MacBook Pro 14" M1 Pro 2021) и версию macOS для
-                  быстрой сверки.
+
+            <div class="lr-mac-dossier__howto">
+              <div class="lr-mac-dossier__howto-card">
+                <span class="lr-mac-dossier__howto-tag"
+                  >Способ 01 · В macOS</span
+                >
+                <h3>Если MacBook включается</h3>
+                <p>
+                  Нажмите на значок  в левом верхнем углу экрана → «Об этом
+                  Mac». В открывшемся окне указана диагональ, год выпуска и тип
+                  чипа (например: MacBook Pro 14″, M1 Pro, 2021).
                 </p>
               </div>
-              <div>
-                <h3>Если MacBook не включается</h3><p>
-                  Переверните ноутбук: на алюминиевом дне выгравирован номер
-                  модели из 5 знаков (например: Model A2338 или A2141). Если
-                  было залитие — ни в коем случае не подключайте зарядку!
+              <div class="lr-mac-dossier__howto-card">
+                <span class="lr-mac-dossier__howto-tag"
+                  >Способ 02 · На корпусе</span
+                >
+                <h3>Если MacBook не включается</h3>
+                <p>
+                  Переверните закрытый ноутбук: в первой строке мелкого
+                  лазерного шрифта на алюминиевом дне выгравирован код формата <strong
+                    >Model A2338</strong
+                  > или <strong>A2141</strong>. При залитии не подключайте
+                  кабель зарядки!
                 </p>
               </div>
+            </div>
+
+            <div
+              class="lr-mac-models"
+              aria-label="Справочник популярных моделей MacBook"
+            >
+              {
+                macModels.map((group) => (
+                  <div class="lr-mac-models__item">
+                    <div class="lr-mac-models__head">
+                      <strong>{group.family}</strong>
+                      <span class="lr-mac-models__era">{group.era}</span>
+                    </div>
+                    <div class="lr-mac-models__pills">
+                      {group.codes.map((code) => (
+                        <span>{code}</span>
+                      ))}
+                    </div>
+                    <p>{group.focus}</p>
+                  </div>
+                ))
+              }
+            </div>
+            <p class="lr-mac-dossier__apple-link">
+              Полная таблица серийных номеров и A-кодов доступна в{" "}
               <a
-                class="lr-text-action"
                 href="https://support.apple.com/ru-ru/102767"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Как определить модель — инструкция Apple</a
               >
-            </div>
-          </section>
-          <div class="lr-child-recommendation">
-            <h3>Узнайте точную смету компонентного ремонта MacBook</h3>
-            <p>
-              Назовите модель и симптомы. Инженер согласует стоимость ДО
-              вскрытия: если цена вас не устроит — забираете ноутбук без единой
-              копейки оплаты.
+                официальной справке Apple по определению модели MacBook
+              </a>
+              .
             </p>
-            <div class="lr-child-recommendation__actions">
-              <LeadButton
-                label="Обсудить ремонт MacBook"
-                source="macbook-article"
-              />
+          </section>
+
+          <div class="lr-mac-dossier__cta">
+            <div>
+              <h3>Назовите A-модель и симптом — рассчитаем честную смету</h3>
+              <p>
+                Инженер сориентирует по стоимости компонентного ремонта и
+                зафиксирует цену до вскрытия: если условия не подойдут —
+                забираете MacBook без единой копейки оплаты.
+              </p>
             </div>
+            <LeadButton
+              label="Обсудить ремонт MacBook"
+              source="macbook-article"
+            />
           </div>
         </article>
       </div>
     </section>
+
     <ServiceFaq items={macbook.faq} />
     <RelatedServices current={pagePath(macbook)} />
     <LeadCapture
-      title="Спасём ваш MacBook от дорогостоящей блочной замены"
-      lead="Назовите модель и симптомы. Инженер сориентирует по стоимости компонентного ремонта и зафиксирует цену до начала работ."
+      title="Спасём ваш MacBook от разорительной замены платы целиком"
+      lead="Оставьте номер телефона — дежурный инженер по технике Apple перезвонит за 60 секунд, сориентирует по цене компонентного ремонта и зафиксирует бесплатную диагностику."
       serviceName="Ремонт MacBook"
     />
   </div>

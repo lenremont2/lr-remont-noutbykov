@@ -160,12 +160,12 @@
     margin: 28px 0 0;
   }
 
-  .lr-problem-decisions>div {
+  .lr-problem-decisions > div {
     padding-block: 20px;
     border-top: 1px solid var(--lr-blue-200);
   }
 
-  .lr-problem-decisions>div:last-child {
+  .lr-problem-decisions > div:last-child {
     padding-bottom: 0;
   }
 
@@ -283,7 +283,7 @@
 @media (min-width: 1024px) {
   #hop-landing .lr-child-page {
     .lr-child-hero__grid {
-      grid-template-columns: minmax(0, 1fr) minmax(360px, .8fr);
+      grid-template-columns: minmax(0, 1fr) minmax(360px, 0.8fr);
       gap: 48px;
     }
 
