@@ -13,6 +13,7 @@ const section = html.match(/<section id="lr-reviews"[\s\S]*?<\/section>/)?.[0];
 assert.ok(section, "Reviews section must be built");
 assert.equal(reviews.items.length, 24);
 assert.equal(new Set(reviews.items.map((review) => review.name)).size, 24);
+assert.equal(new Set(reviews.items.map((review) => review.avatar)).size, 24);
 assert.equal((section.match(/<article class="lr-review">/g) || []).length, 24);
 assert.equal((section.match(/Оценка 4 из 5/g) || []).length, 1);
 assert.equal((section.match(/Оценка 5 из 5/g) || []).length, 23);
@@ -26,12 +27,17 @@ for (const review of reviews.items) {
     Number.isInteger(review.rating) && review.rating >= 4 && review.rating <= 5,
     review.name,
   );
-  assert.ok(review.text.trim() && review.date.trim(), review.name);
+  assert.ok(
+    review.text.trim() && review.date.trim() && review.avatar.trim(),
+    review.name,
+  );
   const source = reviews.sources[review.source];
   assert.ok(source, `Missing source for ${review.name}`);
   assert.equal(new URL(source.url).protocol, "https:");
   assert.ok(
-    section.includes(review.name) && section.includes(review.text),
+    section.includes(review.name) &&
+      section.includes(review.text) &&
+      section.includes(review.avatar),
     review.name,
   );
 }

@@ -27,6 +27,41 @@ export function validatePhone(value) {
   return { value: "+" + digits, error };
 }
 
+export function initializePhoneMask(root) {
+  root.addEventListener("beforeinput", (event) => {
+    const phone = event.target;
+    if (!phone.matches("[data-lr-phone]") || phone.readOnly) return;
+    const { selectionStart: start, selectionEnd: end } = phone;
+    if (start === null || start !== end) return;
+    // Delete the adjacent digit together with mask separators.
+    if (event.inputType === "deleteContentBackward") {
+      const match = phone.value.slice(0, start).match(/\d\D*$/);
+      if (match) phone.setSelectionRange(start - match[0].length, start);
+    } else if (event.inputType === "deleteContentForward") {
+      const match = phone.value.slice(start).match(/^\D*\d/);
+      if (match) phone.setSelectionRange(start, start + match[0].length);
+    }
+  });
+  root.addEventListener("input", (event) => {
+    const phone = event.target;
+    if (!phone.matches("[data-lr-phone]")) return;
+    const trailingDigits = phone.value
+      .slice(phone.selectionStart ?? phone.value.length)
+      .replace(/\D/g, "").length;
+    phone.value =
+      event.inputType?.startsWith("delete") && phone.value === "+"
+        ? ""
+        : formatPhone(phone.value);
+    let cursor = phone.value.length;
+    let remaining = trailingDigits;
+    while (cursor > 0 && remaining > 0) {
+      cursor -= 1;
+      if (/\d/.test(phone.value[cursor])) remaining -= 1;
+    }
+    phone.setSelectionRange(cursor, cursor);
+  });
+}
+
 export function initializeReviewSlider(slider) {
   const track = slider.querySelector("[data-lr-review-track]");
   const frame = slider.querySelector("[data-lr-review-frame]");
@@ -44,16 +79,18 @@ export function initializeReviewSlider(slider) {
         ? cards[1].offsetLeft - cards[0].offsetLeft
         : cards[0].offsetWidth;
     const visible = Math.max(1, Math.round((frame.clientWidth - 32) / step));
-    const start = Math.min(
-      cards.length - visible,
-      Math.round(track.scrollLeft / step),
+    const currentLeft = destination ?? track.scrollLeft;
+    const start = Math.max(
+      0,
+      Math.min(cards.length - visible, Math.round(currentLeft / step)),
     );
     return { step, visible, start, end: track.scrollWidth - track.clientWidth };
   };
   const update = () => {
     const { start, visible, end } = metrics();
-    previous.disabled = track.scrollLeft < 2;
-    next.disabled = track.scrollLeft >= end - 2;
+    const currentLeft = destination ?? track.scrollLeft;
+    previous.disabled = currentLeft < 2;
+    next.disabled = currentLeft >= end - 2;
     position.textContent = `${start + 1}–${Math.min(cards.length, start + visible)} / ${cards.length}`;
     cards.forEach((card, index) => {
       const active = index >= start && index < start + visible;
@@ -73,22 +110,24 @@ export function initializeReviewSlider(slider) {
     stop();
     const from = track.scrollLeft;
     const to = Math.min(metrics().end, Math.max(0, left));
-    if (reducedMotion.matches) {
+    if (reducedMotion.matches || Math.abs(to - from) < 1) {
       track.scrollTo({ left: to, behavior: "instant" });
       return;
     }
     destination = to;
     track.dataset.lrAnimating = "true";
+    update();
     const began = performance.now();
     const tick = (now) => {
-      const progress = Math.min(1, (now - began) / 520);
-      const eased = 1 - Math.pow(1 - progress, 4);
+      const progress = Math.min(1, (now - began) / 600);
+      const eased = 0.5 - Math.cos(progress * Math.PI) / 2;
       track.scrollTo({ left: from + (to - from) * eased, behavior: "instant" });
       if (progress < 1) animation = requestAnimationFrame(tick);
       else {
         destination = null;
         animation = undefined;
         delete track.dataset.lrAnimating;
+        update();
       }
     };
     animation = requestAnimationFrame(tick);
@@ -122,13 +161,19 @@ export function initializeReviewSlider(slider) {
   });
   const finishDrag = (event) => {
     if (!drag || event.pointerId !== drag.id) return;
-    const { id, moved } = drag;
+    const { id, left: startLeft, moved } = drag;
     drag = undefined;
     delete track.dataset.lrDragging;
     if (track.hasPointerCapture(id)) track.releasePointerCapture(id);
     if (moved) {
       const { step } = metrics();
-      goTo(Math.round(track.scrollLeft / step) * step);
+      const delta = track.scrollLeft - startLeft;
+      const fromIndex = Math.round(startLeft / step);
+      let targetIndex = Math.round(track.scrollLeft / step);
+      if (targetIndex === fromIndex && Math.abs(delta) >= 36) {
+        targetIndex = fromIndex + Math.sign(delta);
+      }
+      goTo(targetIndex * step);
     }
   };
   track.addEventListener("pointermove", (event) => {
@@ -232,6 +277,7 @@ function initializeLanding() {
   const root = document.querySelector("#hop-landing");
   if (!root || root.dataset.lrInitialized === "true") return;
   root.dataset.lrInitialized = "true";
+  initializePhoneMask(root);
   root
     .querySelectorAll("[data-lr-review-slider]")
     .forEach(initializeReviewSlider);
@@ -430,21 +476,6 @@ function initializeLanding() {
       form.elements.symptom.value = event.target.value;
       updateContext(form);
     }
-  });
-  root.addEventListener("input", (event) => {
-    const phone = event.target;
-    if (!phone.matches("[data-lr-phone]")) return;
-    const trailingDigits = phone.value
-      .slice(phone.selectionStart ?? phone.value.length)
-      .replace(/\D/g, "").length;
-    phone.value = formatPhone(phone.value);
-    let cursor = phone.value.length;
-    let remaining = trailingDigits;
-    while (cursor > 0 && remaining > 0) {
-      cursor -= 1;
-      if (/\d/.test(phone.value[cursor])) remaining -= 1;
-    }
-    phone.setSelectionRange(cursor, cursor);
   });
   root.addEventListener("focusin", (event) => {
     formFocused = Boolean(event.target.closest("[data-lr-form]"));
