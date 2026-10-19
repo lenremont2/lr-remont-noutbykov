@@ -933,6 +933,11 @@
     gap: 32px;
   }
 
+  .lr-contact__grid > .lr-social-links {
+    grid-column: 1 / -1;
+    margin-top: 0;
+  }
+
   .lr-contact__copy h2 {
     margin-block: 16px;
   }

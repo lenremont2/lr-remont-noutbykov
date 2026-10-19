@@ -154,11 +154,9 @@
 
   /* 2. Hero: Cupertino Studio Showcase */
   .lr-mac-hero {
-    background: linear-gradient(
-      180deg,
-      var(--lr-mac-silver) 0%,
-      var(--lr-mac-white) 100%
-    );
+    background: linear-gradient(180deg,
+        var(--lr-mac-silver) 0%,
+        var(--lr-mac-white) 100%);
     color: var(--lr-mac-ink);
     padding-block: 28px 56px;
     border-bottom: 1px solid var(--lr-mac-line);
@@ -352,6 +350,7 @@
     display: block;
     width: 100%;
     aspect-ratio: 3 / 2;
+    border-radius: 0;
     object-fit: cover;
   }
 
@@ -362,7 +361,7 @@
     font-variant-numeric: tabular-nums;
   }
 
-  .lr-mac-hero__telemetry > div {
+  .lr-mac-hero__telemetry>div {
     display: grid;
     gap: 4px;
     padding: 14px 16px;
@@ -434,13 +433,11 @@
     inset: 0;
     z-index: 1;
     pointer-events: none;
-    background: linear-gradient(
-      180deg,
-      rgb(10 15 24 / 22%) 0%,
-      rgb(10 15 24 / 18%) 38%,
-      rgb(10 15 24 / 72%) 72%,
-      rgb(10 15 24 / 92%) 100%
-    );
+    background: linear-gradient(180deg,
+        rgb(10 15 24 / 22%) 0%,
+        rgb(10 15 24 / 18%) 38%,
+        rgb(10 15 24 / 72%) 72%,
+        rgb(10 15 24 / 92%) 100%);
   }
 
   .lr-mac-matrix__image,
