@@ -1,0 +1,224 @@
+---
+import service from "../data/laptop-service.json";
+import "../styles/sections/_design-service-next.scss";
+const prices = service.prices.tables[0];
+---
+
+<div class="lr-service-next">
+  <section
+    id="concept-detail"
+    class="lr-service-next__mobile lr-concept__frame"
+    aria-labelledby="lr-next-mobile-title"
+  >
+    <div class="lr-service-next__section-head">
+      <h2 id="lr-next-mobile-title" data-lr-concept-reveal>
+        Мастерская.<br />У вашего дома.
+      </h2>
+      <p data-lr-concept-reveal>
+        Не только мастер с инструментами.<br />Оборудованное рабочее место —
+        внутри автомобиля.
+      </p>
+    </div>
+    <div class="lr-service-next__mobile-stage">
+      <figure class="lr-service-next__film" data-lr-concept-reveal>
+        <video
+          controls
+          playsinline
+          preload="none"
+          poster="/media/workshop-mobile-engineer-720.webp"
+          width="720"
+          height="720"
+          aria-label="Видеообзор мобильной мастерской Ленремонта"
+        >
+          <source src="/media/mobile-lab-tour.mp4" type="video/mp4" />
+          <a href="/media/mobile-lab-tour.mp4">Открыть видео мастерской</a>
+        </video>
+      </figure>
+      <div class="lr-service-next__mobile-copy">
+        <h3 data-lr-concept-reveal>Всё для работы.<br />Прямо на месте.</h3>
+        <p data-lr-concept-reveal>
+          Инженер, микроскоп и оборудование для диагностики. Посмотрите, как
+          устроена мастерская, которая приезжает к вам.
+        </p>
+        <figure class="lr-service-next__equipment" data-lr-concept-reveal>
+          <img
+            src="/media/workshop-mobile-microscope-720.webp"
+            width="720"
+            height="720"
+            alt="Микроскоп и оборудование внутри автомобиля"
+            loading="lazy"
+          /><img
+            src="/media/mobile-lab-exterior.webp"
+            width="480"
+            height="640"
+            alt="Фирменная мобильная мастерская Ленремонта"
+            loading="lazy"
+          /><figcaption>Рабочее место приезжает к вам.</figcaption>
+        </figure>
+        <p class="lr-service-next__note" data-lr-concept-reveal>
+          Возможность ремонта на месте зависит от модели и неисправности.
+          Уточним её при обращении.
+        </p>
+        <a class="lr-concept__button" href="/#lr-contact" data-lr-concept-reveal
+          >Обсудить выезд <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="concept-prices"
+    class="lr-service-next__pricing lr-concept__frame"
+    aria-labelledby="lr-next-price-title"
+  >
+    <div class="lr-service-next__section-head">
+      <h2 id="lr-next-price-title" data-lr-concept-reveal>
+        Сначала сумма.<br />Потом работа.
+      </h2>
+      <p data-lr-concept-reveal>
+        Выберите, что случилось с ноутбуком.<br />Покажем ориентир из нашего
+        прайса.
+      </p>
+    </div>
+    <div class="lr-service-next__estimate">
+      <div class="lr-service-next__symptoms" data-lr-concept-reveal>
+        <fieldset>
+          <legend>Что случилось?</legend>
+          <label
+            class="lr-service-next__option lr-service-next__option--cooling"
+            ><input
+              type="radio"
+              name="lr-next-symptom"
+              value="cooling"
+              checked
+            /><span>Греется и шумит</span><span aria-hidden="true">↗</span
+            ></label
+          >
+          <label class="lr-service-next__option lr-service-next__option--screen"
+            ><input type="radio" name="lr-next-symptom" value="screen" /><span
+              >Повреждён экран</span
+            ><span aria-hidden="true">↗</span></label
+          >
+          <label class="lr-service-next__option lr-service-next__option--board"
+            ><input type="radio" name="lr-next-symptom" value="board" /><span
+              >Проблема с платой</span
+            ><span aria-hidden="true">↗</span></label
+          >
+        </fieldset>
+        <p class="lr-service-next__note">
+          Симптом помогает сориентироваться. Точную причину и итоговую стоимость
+          определим после диагностики.
+        </p>
+      </div>
+      <div class="lr-service-next__quote-window" data-lr-concept-reveal>
+        <div class="lr-service-next__quote lr-service-next__quote--cooling">
+          <h3>Очистка охлаждения</h3><p class="lr-service-next__price">
+            {prices[0][1]}
+          </p><p class="lr-service-next__term">
+            Ориентир по времени: {prices[0][2]}
+          </p><p class="lr-service-next__work-name">
+            С обновлением термоинтерфейсов.
+          </p>
+        </div>
+        <div class="lr-service-next__quote lr-service-next__quote--screen">
+          <h3>{prices[4][0]}</h3><p class="lr-service-next__price">
+            {prices[4][1]}
+          </p><p class="lr-service-next__term">
+            Ориентир по времени: {prices[4][2]}
+          </p>
+        </div>
+        <div class="lr-service-next__quote lr-service-next__quote--board">
+          <h3>{prices[5][0]}</h3><p class="lr-service-next__price">
+            {prices[5][1]}
+          </p><p class="lr-service-next__term">
+            Ориентир по времени: {prices[5][2]}
+          </p>
+        </div>
+        <p class="lr-service-next__note">
+          Стоимость работ. Запчасти оплачиваются отдельно.<br />Финальную смету
+          согласуем до начала ремонта.
+        </p>
+        <a class="lr-concept__button" href="/#lr-contact"
+          >Уточнить стоимость <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </div>
+    <div class="lr-service-next__diagnostics" data-lr-concept-reveal>
+      <strong>0 ₽</strong><p>
+        Обычная диагностика в мастерской.<br />Даже если вы откажетесь от
+        ремонта.
+      </p><span>Срочная диагностика — отдельная услуга за 500 ₽.</span>
+    </div>
+  </section>
+
+  <section
+    id="lr-next-process"
+    class="lr-service-next__process lr-concept__frame"
+    aria-labelledby="lr-next-process-title"
+  >
+    <div class="lr-service-next__section-head">
+      <h2 id="lr-next-process-title" data-lr-concept-reveal>
+        Каждый этап.<br />По договорённости.
+      </h2><p data-lr-concept-reveal>
+        Ремонт начинается с разговора.<br />Решение о работах принимаете вы.
+      </p>
+    </div>
+    <div class="lr-service-next__process-grid">
+      <div class="lr-service-next__stages">
+        <details name="lr-next-process" open data-lr-concept-reveal>
+          <summary
+            >Расскажите о проблеме <span aria-hidden="true">+</span></summary
+          ><p>
+            Уточним модель, симптомы и удобный формат: мастерская в автомобиле,
+            визит на дом, сервисный центр или курьер.
+          </p>
+        </details>
+        <details name="lr-next-process" data-lr-concept-reveal>
+          <summary
+            >Передайте на диагностику <span aria-hidden="true">+</span></summary
+          ><p>
+            Проверим ноутбук и определим причину неисправности. Возможность
+            ремонта на месте уточним заранее.
+          </p>
+        </details>
+        <details name="lr-next-process" data-lr-concept-reveal>
+          <summary
+            >Согласуйте стоимость <span aria-hidden="true">+</span></summary
+          ><p>
+            До начала работ обсудим объём ремонта, запчасти и полную смету. Если
+            она не подходит, вы можете отказаться; обычная диагностика в
+            мастерской остаётся бесплатной.
+          </p>
+        </details>
+        <details name="lr-next-process" data-lr-concept-reveal>
+          <summary
+            >Проверьте результат <span aria-hidden="true">+</span></summary
+          ><p>
+            При получении проверите работу ноутбука вместе с инженером.
+            Выполненные работы и условия гарантии зафиксируем в документах о
+            ремонте.
+          </p>
+        </details>
+      </div>
+      <figure class="lr-service-next__handover" data-lr-concept-reveal>
+        <img
+          src="/media/workshop-prosveshcheniya-engineer-640.webp"
+          width="640"
+          height="360"
+          alt="Инженер за рабочим столом стационарной мастерской"
+          loading="lazy"
+        /><figcaption>
+          <strong>Ноутбук — в работе.<br />Решение — за вами.</strong><span
+            >Работы, стоимость и доступ к данным согласуем заранее.</span
+          >
+        </figcaption>
+      </figure>
+    </div>
+    <div class="lr-service-next__close" data-lr-concept-reveal>
+      <p>Начнём с вашего ноутбука?</p><a
+        class="lr-concept__button"
+        href="/#lr-contact">Обсудить ремонт <span aria-hidden="true">↗</span></a
+      >
+    </div>
+  </section>
+</div>

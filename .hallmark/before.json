@@ -1,0 +1,29 @@
+{
+  "v": 1,
+  "at": "2026-10-30T13:53:40.068Z",
+  "scope": "component",
+  "summary": {
+    "fails": 0,
+    "reflex": 0,
+    "warns": 0
+  },
+  "files": {
+    "src\\components\\sections\\HomeExpertise.astro": {
+      "handlers": [],
+      "links": [],
+      "fields": [],
+      "hooks": [],
+      "ids": ["lr-expertise"],
+      "scripts": []
+    }
+  },
+  "wiring": {
+    "handlers": [],
+    "links": [],
+    "fields": [],
+    "hooks": [],
+    "ids": ["lr-expertise"]
+  },
+  "scripts": {},
+  "pages": {}
+}

@@ -24,6 +24,7 @@ const {
   symptom,
   warning,
   secondaryHref = "#lr-first-aid",
+  secondaryLabel = "Что сделать сейчас",
 } = Astro.props;
 ---
 
@@ -33,6 +34,35 @@ const {
   aria-labelledby="lr-child-title"
 >
   <div class="lr-container lr-child-hero__grid">
+    <div class="lr-child-hero__copy">
+      <h1 id="lr-child-title">{title}</h1>
+      <p class="lr-lead">{lead}</p>
+      {
+        warning && (
+          <aside class="lr-child-alert" aria-label="Важная рекомендация">
+            <>
+              <strong>Важно</strong>
+              <p>{warning}</p>
+            </>
+          </aside>
+        )
+      }
+      <div class="lr-actions" data-lr-hero-cta>
+        <LeadButton
+          label="Узнать стоимость ремонта"
+          source={source}
+          symptom={symptom}
+        />
+        <a class="lr-text-action" href={secondaryHref}>{secondaryLabel}</a>
+      </div>
+      <ul class="lr-child-facts">
+        <li>
+          Обычная диагностика в мастерской — 0 ₽ даже при отказе от ремонта
+        </li>
+        <li>Гарантия на ремонт 1 год</li>
+        <li>Сумма согласуется до ремонта</li>
+      </ul>
+    </div>
     <img
       class="lr-child-hero__photo"
       src={image}
@@ -42,22 +72,5 @@ const {
       fetchpriority="high"
       decoding="async"
     />
-    <div>
-      <h1 id="lr-child-title">{title}</h1>
-      <p class="lr-lead">{lead}</p>
-      {warning && <p class="lr-child-alert">{warning}</p>}
-      <div class="lr-actions" data-lr-hero-cta>
-        <LeadButton
-          label="Узнать стоимость ремонта"
-          source={source}
-          symptom={symptom}
-        />
-      </div>
-      <ul class="lr-child-facts">
-        <li>Диагностика бесплатно</li>
-        <li>Гарантия на ремонт 1 год</li>
-        <li>Сумма согласуется до ремонта</li>
-      </ul>
-    </div>
   </div>
 </section>

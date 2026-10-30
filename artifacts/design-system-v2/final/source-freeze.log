@@ -1,0 +1,15 @@
+Command: read-only SHA-256 comparison of all current src files and local fonts/OFL against the final measured snapshot; git diff --exit-code -- package.json package-lock.json.
+Dependency manifest and lockfile: unchanged, exit 0.
+
+{
+  "checkedAt": "2026-10-29T13:28:11.859Z",
+  "sourceSnapshot": "source-files-sha256.log",
+  "expectedSourceFiles": 102,
+  "actualSourceFiles": 102,
+  "added": [],
+  "missing": [],
+  "changed": [],
+  "fontDiff": [],
+  "licenseUnchanged": true,
+  "productionSourcesFrozen": true
+}

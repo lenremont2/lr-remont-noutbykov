@@ -4,14 +4,16 @@ interface Props {
   source: string;
   format?: string;
   symptom?: string;
+  deviceCategory?: "standard" | "premium";
   text?: boolean;
   class?: string;
 }
 const {
   label,
   source,
-  format = "consultation",
+  format,
   symptom,
+  deviceCategory,
   text = false,
   class: className,
 } = Astro.props;
@@ -24,6 +26,7 @@ const {
   data-source={source}
   data-format={format}
   data-symptom={symptom}
+  data-device-category={deviceCategory}
 >
   {label}
 </a>

@@ -1,0 +1,2353 @@
+{
+  "url": "http://127.0.0.1:4324/design-directions/service/",
+  "at": "2026-10-29T10:00:08.919Z",
+  "allow": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "load": "load",
+      "screens": 5,
+      "filled": [0.85, 1, 0.72, 0.88, 0.91],
+      "motion": {
+        "elements": 28,
+        "css": 28,
+        "transitions": 0,
+        "scripted": 0,
+        "videos": 1,
+        "playingVideos": 0
+      },
+      "metrics": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "page": {
+          "height": 3919,
+          "screens": 4.4,
+          "words": 293,
+          "img": 6,
+          "video": 1,
+          "canvas": 0,
+          "svg": 0,
+          "sections": 4,
+          "horizontalOverflow": 0,
+          "overflowCulprits": [],
+          "uiFragments": 0,
+          "uiAbuse": false,
+          "realPictures": 3,
+          "videoCount": 1,
+          "uiPictures": 0,
+          "pictureSamples": [
+            "workshop-mobile-engineer-720.webp",
+            "workshop-prosveshcheniya-engineer-640.webp"
+          ],
+          "blendText": 0,
+          "sideScrollers": 0,
+          "brokenImages": [],
+          "emoji": [],
+          "videosNoPoster": 0
+        },
+        "hero": {
+          "text": "Ремонт. В вашем ритме.",
+          "words": 4,
+          "chars": 22,
+          "lines": 2,
+          "size": 67,
+          "vw": 4.7,
+          "font": "Golos Text",
+          "weight": 600,
+          "tracking": -0.055,
+          "leading": 1.02,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "left",
+          "widthRatio": 0.5,
+          "top": 124,
+          "tag": "h1",
+          "kind": "heading"
+        },
+        "h1": {
+          "text": "Ремонт. В вашем ритме.",
+          "words": 4,
+          "lines": 2,
+          "size": 67,
+          "font": "Golos Text"
+        },
+        "headings": [
+          {
+            "text": "Ремонт. В вашем ритме.",
+            "words": 4,
+            "chars": 22,
+            "lines": 2,
+            "size": 67,
+            "vw": 4.7,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.5,
+            "top": 124,
+            "tag": "h1",
+            "kind": "heading"
+          },
+          {
+            "text": "Как вам удобно?",
+            "words": 3,
+            "chars": 15,
+            "lines": 1,
+            "size": 34,
+            "vw": 2.4,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.32,
+            "top": 180,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Мастерская. У вашего дома.",
+            "words": 4,
+            "chars": 26,
+            "lines": 2,
+            "size": 60.5,
+            "vw": 4.2,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.29,
+            "top": 921,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Всё для работы. Прямо на месте.",
+            "words": 6,
+            "chars": 31,
+            "lines": 2,
+            "size": 36,
+            "vw": 2.5,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.1,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.36,
+            "top": 1148,
+            "tag": "h3",
+            "kind": "heading"
+          },
+          {
+            "text": "Сначала сумма. Потом работа.",
+            "words": 4,
+            "chars": 28,
+            "lines": 2,
+            "size": 60.5,
+            "vw": 4.2,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.3,
+            "top": 1825,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "от 2 390 ₽",
+            "words": 4,
+            "chars": 10,
+            "lines": 1,
+            "size": 72,
+            "vw": 5,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.06,
+            "leading": 1.15,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.42,
+            "top": 2128,
+            "tag": "p",
+            "kind": "statement"
+          },
+          {
+            "text": "0 ₽",
+            "words": 2,
+            "chars": 3,
+            "lines": 1,
+            "size": 54,
+            "vw": 3.8,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.06,
+            "leading": 1.1,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.05,
+            "top": 2508,
+            "tag": "strong",
+            "kind": "heading"
+          },
+          {
+            "text": "Каждый этап. По договорённости.",
+            "words": 4,
+            "chars": 31,
+            "lines": 2,
+            "size": 60.5,
+            "vw": 4.2,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.38,
+            "top": 2739,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Расскажите о проблеме +",
+            "words": 4,
+            "chars": 23,
+            "lines": 1,
+            "size": 28,
+            "vw": 1.9,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.034,
+            "leading": 1.3,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.4,
+            "top": 2903,
+            "tag": "summary",
+            "kind": "heading"
+          },
+          {
+            "text": "Передайте на диагностику +",
+            "words": 4,
+            "chars": 26,
+            "lines": 1,
+            "size": 28,
+            "vw": 1.9,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.034,
+            "leading": 1.3,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.4,
+            "top": 3102,
+            "tag": "summary",
+            "kind": "heading"
+          },
+          {
+            "text": "Согласуйте стоимость +",
+            "words": 3,
+            "chars": 22,
+            "lines": 1,
+            "size": 28,
+            "vw": 1.9,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.034,
+            "leading": 1.3,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.4,
+            "top": 3198,
+            "tag": "summary",
+            "kind": "heading"
+          },
+          {
+            "text": "Ноутбук — в работе. Решение — за вами.",
+            "words": 8,
+            "chars": 38,
+            "lines": 2,
+            "size": 30,
+            "vw": 2.1,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.04,
+            "leading": 1.2,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.4,
+            "top": 3211,
+            "tag": "strong",
+            "kind": "statement"
+          },
+          {
+            "text": "Проверьте результат +",
+            "words": 3,
+            "chars": 21,
+            "lines": 1,
+            "size": 28,
+            "vw": 1.9,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.034,
+            "leading": 1.3,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.4,
+            "top": 3295,
+            "tag": "summary",
+            "kind": "heading"
+          },
+          {
+            "text": "Начнём с вашего ноутбука?",
+            "words": 4,
+            "chars": 25,
+            "lines": 1,
+            "size": 30,
+            "vw": 2.1,
+            "font": "Golos Text",
+            "weight": 400,
+            "tracking": -0.04,
+            "leading": 1.2,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.26,
+            "top": 3446,
+            "tag": "p",
+            "kind": "statement"
+          },
+          {
+            "text": "Ленремонт.",
+            "words": 1,
+            "chars": 10,
+            "lines": 1,
+            "size": 201.6,
+            "vw": 14,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.065,
+            "leading": 1.05,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.91,
+            "top": 3672,
+            "tag": "span",
+            "kind": "heading"
+          }
+        ],
+        "headingSummary": {
+          "count": 15,
+          "maxLines": 2,
+          "over2Lines": 0,
+          "statements": 3,
+          "centered": 0,
+          "medianWords": 4,
+          "mixedFontHeadings": 0
+        },
+        "type": {
+          "families": [
+            {
+              "family": "Golos Text",
+              "share": 1,
+              "mono": false
+            }
+          ],
+          "familyCount": 1,
+          "sizes": [
+            14, 16, 17, 20, 24, 26, 28, 30, 34, 36, 54, 61, 67, 72, 202
+          ],
+          "sizeCount": 15,
+          "notLoaded": [],
+          "body": {
+            "font": "Golos Text",
+            "size": 16,
+            "leading": 1.6,
+            "weight": 400,
+            "tracking": -0.025,
+            "contrast": 12.6
+          },
+          "measureChars": 57,
+          "max": {
+            "size": 201.6,
+            "vw": 14,
+            "font": "Golos Text",
+            "text": "Ленремонт."
+          },
+          "monoShare": 0,
+          "monoProseShare": 0,
+          "monoFamilies": [],
+          "monoSamples": [],
+          "microLabels": 0,
+          "microLabelShare": 0,
+          "microSamples": [],
+          "upperShare": 0,
+          "centerShare": 0,
+          "smallText": 0
+        },
+        "eyebrows": [],
+        "numbered": [],
+        "color": {
+          "bodyBg": "#ffffff",
+          "bodyBgHsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          },
+          "dark": false,
+          "sectionBgs": [
+            {
+              "color": "#e7f0f8",
+              "top": 0,
+              "hsl": {
+                "h": 208,
+                "s": 0.55,
+                "l": 0.94
+              }
+            },
+            {
+              "color": "#101d2c",
+              "top": 1084,
+              "hsl": {
+                "h": 212,
+                "s": 0.47,
+                "l": 0.12
+              }
+            },
+            {
+              "color": "#ffffff",
+              "top": 1988,
+              "hsl": {
+                "h": 0,
+                "s": 0,
+                "l": 1
+              }
+            }
+          ],
+          "textColors": [
+            {
+              "color": "#172a40",
+              "share": 0.67
+            },
+            {
+              "color": "#ffffff",
+              "share": 0.12
+            },
+            {
+              "color": "#506175",
+              "share": 0.12
+            },
+            {
+              "color": "#deded5",
+              "share": 0.05
+            },
+            {
+              "color": "#101d2c",
+              "share": 0.04
+            }
+          ],
+          "button": {
+            "bg": "#e9b956",
+            "hsl": {
+              "h": 40,
+              "s": 0.77,
+              "l": 0.63
+            },
+            "fg": "#101d2c"
+          },
+          "lowContrast": []
+        },
+        "buttons": {
+          "count": 4,
+          "inHero": 1,
+          "radius": "pill",
+          "height": 58,
+          "withShadow": 0,
+          "withGradient": 0,
+          "mono": 0,
+          "upper": 0,
+          "heroLabels": ["Обсудить ремонт ↗"]
+        },
+        "surfaces": {
+          "shadowStatic": 0,
+          "shadowOverlay": 0,
+          "shadowSamples": [],
+          "gradients": 0,
+          "scrims": 0,
+          "gradientSamples": [],
+          "gradientText": 0,
+          "hairlines": 0,
+          "hairlineSamples": [],
+          "outlinedBoxes": 0,
+          "dashed": 0,
+          "blurred": 0,
+          "roundedBoxes": 7,
+          "boxRadius": 28,
+          "squareMedia": 0,
+          "roundedMedia": 3,
+          "mediaRadius": 28,
+          "textShadow": 0,
+          "cardRows": []
+        },
+        "heroMedia": [
+          {
+            "type": "img",
+            "ratio": 0.18
+          }
+        ],
+        "nav": {
+          "links": 5,
+          "fixed": false,
+          "height": 94,
+          "floatingPill": false,
+          "blur": false
+        },
+        "fontsLoaded": ["golos text"]
+      },
+      "layout": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "pageH": 3919,
+        "margins": {
+          "left": 65,
+          "right": 65
+        },
+        "sections": [
+          {
+            "sel": "section.lr-concept__service-hero.lr-concept__frame",
+            "tag": "section",
+            "top": 94,
+            "height": 683,
+            "words": 56,
+            "media": 1,
+            "middle": 96,
+            "heading": {
+              "text": "Ремонт.",
+              "size": 67,
+              "tag": "h1"
+            },
+            "left": 65,
+            "right": 113,
+            "textLeft": 65,
+            "textRight": 113,
+            "fullBleed": false,
+            "footer": false,
+            "hero": true,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "section#concept-detail.lr-service-next__mobile.lr-concept__f",
+            "tag": "section",
+            "top": 921,
+            "height": 760,
+            "words": 62,
+            "media": 1,
+            "middle": 48,
+            "heading": {
+              "text": "У вашего дома.",
+              "size": 60,
+              "tag": "h2"
+            },
+            "left": 65,
+            "right": 65,
+            "textLeft": 65,
+            "textRight": 65,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": true,
+            "pinned": false
+          },
+          {
+            "sel": "section#concept-prices.lr-service-next__pricing.lr-concept__",
+            "tag": "section",
+            "top": 1681,
+            "height": 914,
+            "words": 86,
+            "media": 0,
+            "middle": 196,
+            "heading": {
+              "text": "от 2 390 ₽",
+              "size": 72,
+              "tag": "p"
+            },
+            "left": 65,
+            "right": 65,
+            "textLeft": 65,
+            "textRight": 65,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": true,
+            "pinned": false
+          },
+          {
+            "sel": "section#lr-next-process.lr-service-next__process.lr-concept_",
+            "tag": "section",
+            "top": 2595,
+            "height": 1008,
+            "words": 127,
+            "media": 1,
+            "middle": 126,
+            "heading": {
+              "text": "Каждый этап.",
+              "size": 60,
+              "tag": "h2"
+            },
+            "left": 65,
+            "right": 65,
+            "textLeft": 65,
+            "textRight": 65,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": true,
+            "pinned": false
+          },
+          {
+            "sel": "footer.lr-concept__footer.lr-concept__frame",
+            "tag": "footer",
+            "top": 3603,
+            "height": 316,
+            "words": 12,
+            "media": 0,
+            "middle": 75,
+            "heading": {
+              "text": "Ленремонт.",
+              "size": 202,
+              "tag": "span"
+            },
+            "left": 65,
+            "right": 65,
+            "textLeft": 65,
+            "textRight": 65,
+            "fullBleed": false,
+            "footer": true,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          }
+        ],
+        "gaps": [],
+        "h1s": [
+          {
+            "text": "Ремонт. В вашем ритме.",
+            "size": 67,
+            "top": 124,
+            "firstScreen": true
+          }
+        ],
+        "edgeText": [],
+        "edges": [
+          {
+            "x": 65,
+            "n": 8
+          },
+          {
+            "x": 93,
+            "n": 4
+          },
+          {
+            "x": 799,
+            "n": 4
+          },
+          {
+            "x": 880,
+            "n": 2
+          },
+          {
+            "x": 125,
+            "n": 1
+          },
+          {
+            "x": 706,
+            "n": 1
+          }
+        ],
+        "leftBlocks": 20,
+        "bodySize": 16,
+        "stage": false,
+        "explains": false,
+        "slivers": [],
+        "voidShare": 0.13,
+        "voidBox": {
+          "x": 0,
+          "y": 780,
+          "w": 1440,
+          "h": 120
+        }
+      },
+      "app": null,
+      "consoleErrors": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "load": "load",
+      "screens": 4,
+      "filled": [0.91, 0.96, 0.84, 0.91],
+      "motion": {
+        "elements": 28,
+        "css": 28,
+        "transitions": 0,
+        "scripted": 0,
+        "videos": 1,
+        "playingVideos": 0
+      },
+      "metrics": {
+        "viewport": {
+          "w": 768,
+          "h": 1024
+        },
+        "page": {
+          "height": 3657,
+          "screens": 3.6,
+          "words": 293,
+          "img": 6,
+          "video": 1,
+          "canvas": 0,
+          "svg": 0,
+          "sections": 4,
+          "horizontalOverflow": 0,
+          "overflowCulprits": [],
+          "uiFragments": 0,
+          "uiAbuse": false,
+          "realPictures": 3,
+          "videoCount": 1,
+          "uiPictures": 0,
+          "pictureSamples": [
+            "workshop-mobile-engineer-720.webp",
+            "workshop-prosveshcheniya-engineer-640.webp"
+          ],
+          "blendText": 0,
+          "sideScrollers": 0,
+          "brokenImages": [],
+          "emoji": [],
+          "videosNoPoster": 0
+        },
+        "hero": {
+          "text": "Ремонт. В вашем ритме.",
+          "words": 4,
+          "chars": 22,
+          "lines": 2,
+          "size": 42,
+          "vw": 5.5,
+          "font": "Golos Text",
+          "weight": 600,
+          "tracking": -0.055,
+          "leading": 1.02,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "left",
+          "widthRatio": 0.44,
+          "top": 124,
+          "tag": "h1",
+          "kind": "heading"
+        },
+        "h1": {
+          "text": "Ремонт. В вашем ритме.",
+          "words": 4,
+          "lines": 2,
+          "size": 42,
+          "font": "Golos Text"
+        },
+        "headings": [
+          {
+            "text": "Ленремонт.",
+            "words": 1,
+            "chars": 10,
+            "lines": 1,
+            "size": 26,
+            "vw": 3.4,
+            "font": "Golos Text",
+            "weight": 700,
+            "tracking": -0.055,
+            "leading": 1.5,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.18,
+            "top": 28,
+            "tag": "a",
+            "kind": "heading"
+          },
+          {
+            "text": "Ремонт. В вашем ритме.",
+            "words": 4,
+            "chars": 22,
+            "lines": 2,
+            "size": 42,
+            "vw": 5.5,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.44,
+            "top": 124,
+            "tag": "h1",
+            "kind": "heading"
+          },
+          {
+            "text": "Как вам удобно?",
+            "words": 3,
+            "chars": 15,
+            "lines": 1,
+            "size": 29,
+            "vw": 3.8,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.37,
+            "top": 149,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Мастерская. У вашего дома.",
+            "words": 4,
+            "chars": 26,
+            "lines": 2,
+            "size": 34,
+            "vw": 4.4,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.3,
+            "top": 896,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Всё для работы. Прямо на месте.",
+            "words": 6,
+            "chars": 31,
+            "lines": 2,
+            "size": 28,
+            "vw": 3.6,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.1,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.4,
+            "top": 1057,
+            "tag": "h3",
+            "kind": "heading"
+          },
+          {
+            "text": "Сначала сумма. Потом работа.",
+            "words": 4,
+            "chars": 28,
+            "lines": 2,
+            "size": 34,
+            "vw": 4.4,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.32,
+            "top": 1714,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "от 2 390 ₽",
+            "words": 4,
+            "chars": 10,
+            "lines": 1,
+            "size": 44,
+            "vw": 5.7,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.06,
+            "leading": 1.15,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.36,
+            "top": 1961,
+            "tag": "p",
+            "kind": "statement"
+          },
+          {
+            "text": "0 ₽",
+            "words": 2,
+            "chars": 3,
+            "lines": 1,
+            "size": 54,
+            "vw": 7,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.06,
+            "leading": 1.1,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.09,
+            "top": 2333,
+            "tag": "strong",
+            "kind": "heading"
+          },
+          {
+            "text": "Каждый этап. По договорённости.",
+            "words": 4,
+            "chars": 31,
+            "lines": 2,
+            "size": 34,
+            "vw": 4.4,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.4,
+            "top": 2605,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "+",
+            "words": 1,
+            "chars": 1,
+            "lines": 1,
+            "size": 28,
+            "vw": 3.6,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.029,
+            "leading": 1.3,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.05,
+            "top": 2739,
+            "tag": "span",
+            "kind": "heading"
+          },
+          {
+            "text": "+",
+            "words": 1,
+            "chars": 1,
+            "lines": 1,
+            "size": 28,
+            "vw": 3.6,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.029,
+            "leading": 1.3,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.02,
+            "top": 2963,
+            "tag": "span",
+            "kind": "heading"
+          },
+          {
+            "text": "Ноутбук — в работе. Решение — за вами.",
+            "words": 8,
+            "chars": 38,
+            "lines": 2,
+            "size": 26,
+            "vw": 3.4,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.04,
+            "leading": 1.2,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.36,
+            "top": 3023,
+            "tag": "strong",
+            "kind": "statement"
+          },
+          {
+            "text": "+",
+            "words": 1,
+            "chars": 1,
+            "lines": 1,
+            "size": 28,
+            "vw": 3.6,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.029,
+            "leading": 1.3,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.02,
+            "top": 3060,
+            "tag": "span",
+            "kind": "heading"
+          },
+          {
+            "text": "+",
+            "words": 1,
+            "chars": 1,
+            "lines": 1,
+            "size": 28,
+            "vw": 3.6,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.029,
+            "leading": 1.3,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.02,
+            "top": 3156,
+            "tag": "span",
+            "kind": "heading"
+          },
+          {
+            "text": "Начнём с вашего ноутбука?",
+            "words": 4,
+            "chars": 25,
+            "lines": 1,
+            "size": 30,
+            "vw": 3.9,
+            "font": "Golos Text",
+            "weight": 400,
+            "tracking": -0.04,
+            "leading": 1.2,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.5,
+            "top": 3284,
+            "tag": "p",
+            "kind": "statement"
+          },
+          {
+            "text": "Ленремонт.",
+            "words": 1,
+            "chars": 10,
+            "lines": 1,
+            "size": 107.5,
+            "vw": 14,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.065,
+            "leading": 1.05,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.91,
+            "top": 3510,
+            "tag": "span",
+            "kind": "heading"
+          }
+        ],
+        "headingSummary": {
+          "count": 16,
+          "maxLines": 2,
+          "over2Lines": 0,
+          "statements": 3,
+          "centered": 0,
+          "medianWords": 3,
+          "mixedFontHeadings": 0
+        },
+        "type": {
+          "families": [
+            {
+              "family": "Golos Text",
+              "share": 1,
+              "mono": false
+            }
+          ],
+          "familyCount": 1,
+          "sizes": [14, 16, 20, 24, 26, 28, 29, 30, 34, 42, 44, 54, 108],
+          "sizeCount": 13,
+          "notLoaded": [],
+          "body": {
+            "font": "Golos Text",
+            "size": 16,
+            "leading": 1.6,
+            "weight": 400,
+            "tracking": -0.025,
+            "contrast": 12.6
+          },
+          "measureChars": 38,
+          "max": {
+            "size": 107.5,
+            "vw": 14,
+            "font": "Golos Text",
+            "text": "Ленремонт."
+          },
+          "monoShare": 0,
+          "monoProseShare": 0,
+          "monoFamilies": [],
+          "monoSamples": [],
+          "microLabels": 0,
+          "microLabelShare": 0,
+          "microSamples": [],
+          "upperShare": 0,
+          "centerShare": 0,
+          "smallText": 0
+        },
+        "eyebrows": [],
+        "numbered": [],
+        "color": {
+          "bodyBg": "#ffffff",
+          "bodyBgHsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          },
+          "dark": false,
+          "sectionBgs": [
+            {
+              "color": "#e7f0f8",
+              "top": 0,
+              "hsl": {
+                "h": 208,
+                "s": 0.55,
+                "l": 0.94
+              }
+            },
+            {
+              "color": "#101d2c",
+              "top": 1012,
+              "hsl": {
+                "h": 212,
+                "s": 0.47,
+                "l": 0.12
+              }
+            },
+            {
+              "color": "#ffffff",
+              "top": 1824,
+              "hsl": {
+                "h": 0,
+                "s": 0,
+                "l": 1
+              }
+            }
+          ],
+          "textColors": [
+            {
+              "color": "#172a40",
+              "share": 0.67
+            },
+            {
+              "color": "#ffffff",
+              "share": 0.12
+            },
+            {
+              "color": "#506175",
+              "share": 0.12
+            },
+            {
+              "color": "#deded5",
+              "share": 0.05
+            },
+            {
+              "color": "#101d2c",
+              "share": 0.04
+            }
+          ],
+          "button": {
+            "bg": "#e9b956",
+            "hsl": {
+              "h": 40,
+              "s": 0.77,
+              "l": 0.63
+            },
+            "fg": "#101d2c"
+          },
+          "lowContrast": []
+        },
+        "buttons": {
+          "count": 4,
+          "inHero": 1,
+          "radius": "pill",
+          "height": 58,
+          "withShadow": 0,
+          "withGradient": 0,
+          "mono": 0,
+          "upper": 0,
+          "heroLabels": ["Обсудить ремонт ↗"]
+        },
+        "surfaces": {
+          "shadowStatic": 0,
+          "shadowOverlay": 0,
+          "shadowSamples": [],
+          "gradients": 0,
+          "scrims": 0,
+          "gradientSamples": [],
+          "gradientText": 0,
+          "hairlines": 0,
+          "hairlineSamples": [],
+          "outlinedBoxes": 0,
+          "dashed": 0,
+          "blurred": 0,
+          "roundedBoxes": 7,
+          "boxRadius": 28,
+          "squareMedia": 0,
+          "roundedMedia": 3,
+          "mediaRadius": 28,
+          "textShadow": 0,
+          "cardRows": []
+        },
+        "heroMedia": [
+          {
+            "type": "img",
+            "ratio": 0.14
+          }
+        ],
+        "nav": {
+          "links": 5,
+          "fixed": false,
+          "height": 94,
+          "floatingPill": false,
+          "blur": false
+        },
+        "fontsLoaded": ["golos text"]
+      },
+      "layout": {
+        "viewport": {
+          "w": 768,
+          "h": 1024
+        },
+        "pageH": 3657,
+        "margins": {
+          "left": 35,
+          "right": 35
+        },
+        "sections": [
+          {
+            "sel": "section.lr-concept__service-hero.lr-concept__frame",
+            "tag": "section",
+            "top": 94,
+            "height": 658,
+            "words": 56,
+            "media": 1,
+            "middle": 55,
+            "heading": {
+              "text": "Ремонт.",
+              "size": 42,
+              "tag": "h1"
+            },
+            "left": 35,
+            "right": 94,
+            "textLeft": 35,
+            "textRight": 94,
+            "fullBleed": false,
+            "footer": false,
+            "hero": true,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "section#concept-detail.lr-service-next__mobile.lr-concept__f",
+            "tag": "section",
+            "top": 896,
+            "height": 675,
+            "words": 62,
+            "media": 1,
+            "middle": 28,
+            "heading": {
+              "text": "У вашего дома.",
+              "size": 34,
+              "tag": "h2"
+            },
+            "left": 35,
+            "right": 42,
+            "textLeft": 35,
+            "textRight": 42,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": true,
+            "pinned": false
+          },
+          {
+            "sel": "section#concept-prices.lr-service-next__pricing.lr-concept__",
+            "tag": "section",
+            "top": 1570,
+            "height": 891,
+            "words": 86,
+            "media": 0,
+            "middle": 0,
+            "heading": {
+              "text": "от 2 390 ₽",
+              "size": 44,
+              "tag": "p"
+            },
+            "left": 35,
+            "right": 35,
+            "textLeft": 35,
+            "textRight": 35,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": true,
+            "pinned": false
+          },
+          {
+            "sel": "section#lr-next-process.lr-service-next__process.lr-concept_",
+            "tag": "section",
+            "top": 2461,
+            "height": 979,
+            "words": 127,
+            "media": 1,
+            "middle": 0,
+            "heading": {
+              "text": "Каждый этап.",
+              "size": 34,
+              "tag": "h2"
+            },
+            "left": 35,
+            "right": 35,
+            "textLeft": 35,
+            "textRight": 35,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": true,
+            "pinned": false
+          },
+          {
+            "sel": "footer.lr-concept__footer.lr-concept__frame",
+            "tag": "footer",
+            "top": 3441,
+            "height": 217,
+            "words": 12,
+            "media": 0,
+            "middle": 0,
+            "heading": {
+              "text": "Ленремонт.",
+              "size": 108,
+              "tag": "span"
+            },
+            "left": 35,
+            "right": 35,
+            "textLeft": 35,
+            "textRight": 35,
+            "fullBleed": false,
+            "footer": true,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          }
+        ],
+        "gaps": [],
+        "h1s": [
+          {
+            "text": "Ремонт. В вашем ритме.",
+            "size": 42,
+            "top": 124,
+            "firstScreen": true
+          }
+        ],
+        "edgeText": [],
+        "edges": [
+          {
+            "x": 35,
+            "n": 8
+          },
+          {
+            "x": 53,
+            "n": 4
+          },
+          {
+            "x": 398,
+            "n": 4
+          },
+          {
+            "x": 417,
+            "n": 3
+          },
+          {
+            "x": 73,
+            "n": 1
+          }
+        ],
+        "leftBlocks": 20,
+        "bodySize": 16,
+        "stage": false,
+        "explains": false,
+        "slivers": [],
+        "voidShare": 0,
+        "voidBox": null
+      },
+      "app": null,
+      "consoleErrors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "load": "load",
+      "screens": 7,
+      "filled": [0.74, 0.91, 1, 0.8, 0.85, 0.94, 1],
+      "motion": {
+        "elements": 28,
+        "css": 28,
+        "transitions": 0,
+        "scripted": 0,
+        "videos": 1,
+        "playingVideos": 0
+      },
+      "metrics": {
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "page": {
+          "height": 5313,
+          "screens": 6.3,
+          "words": 287,
+          "img": 6,
+          "video": 1,
+          "canvas": 0,
+          "svg": 0,
+          "sections": 4,
+          "horizontalOverflow": 0,
+          "overflowCulprits": [],
+          "uiFragments": 0,
+          "uiAbuse": false,
+          "realPictures": 3,
+          "videoCount": 1,
+          "uiPictures": 0,
+          "pictureSamples": [
+            "workshop-mobile-engineer-720.webp",
+            "workshop-prosveshcheniya-engineer-640.webp"
+          ],
+          "blendText": 0,
+          "sideScrollers": 0,
+          "brokenImages": [],
+          "emoji": [],
+          "videosNoPoster": 0
+        },
+        "hero": {
+          "text": "Ремонт. В вашем ритме.",
+          "words": 4,
+          "chars": 22,
+          "lines": 2,
+          "size": 31.8,
+          "vw": 8.2,
+          "font": "Golos Text",
+          "weight": 600,
+          "tracking": -0.055,
+          "leading": 1.02,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "center",
+          "widthRatio": 0.9,
+          "top": 98,
+          "tag": "h1",
+          "kind": "heading"
+        },
+        "h1": {
+          "text": "Ремонт. В вашем ритме.",
+          "words": 4,
+          "lines": 2,
+          "size": 31.8,
+          "font": "Golos Text"
+        },
+        "headings": [
+          {
+            "text": "Ленремонт.",
+            "words": 1,
+            "chars": 10,
+            "lines": 1,
+            "size": 24,
+            "vw": 6.2,
+            "font": "Golos Text",
+            "weight": 700,
+            "tracking": -0.055,
+            "leading": 1.5,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.33,
+            "top": 21,
+            "tag": "a",
+            "kind": "heading"
+          },
+          {
+            "text": "Ремонт. В вашем ритме.",
+            "words": 4,
+            "chars": 22,
+            "lines": 2,
+            "size": 31.8,
+            "vw": 8.2,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.9,
+            "top": 98,
+            "tag": "h1",
+            "kind": "heading"
+          },
+          {
+            "text": "Ноутбуки и MacBook. Выберите удобный формат.",
+            "words": 6,
+            "chars": 44,
+            "lines": 2,
+            "size": 24,
+            "vw": 6.2,
+            "font": "Golos Text",
+            "weight": 400,
+            "tracking": -0.025,
+            "leading": 1.35,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.9,
+            "top": 185,
+            "tag": "p",
+            "kind": "statement"
+          },
+          {
+            "text": "Как вам удобно?",
+            "words": 3,
+            "chars": 15,
+            "lines": 1,
+            "size": 30,
+            "vw": 7.7,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.79,
+            "top": 366,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Мастерская. У вашего дома.",
+            "words": 4,
+            "chars": 26,
+            "lines": 2,
+            "size": 34,
+            "vw": 8.7,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.9,
+            "top": 1316,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Всё для работы. Прямо на месте.",
+            "words": 6,
+            "chars": 31,
+            "lines": 2,
+            "size": 30,
+            "vw": 7.7,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.1,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.77,
+            "top": 1914,
+            "tag": "h3",
+            "kind": "heading"
+          },
+          {
+            "text": "Сначала сумма. Потом работа.",
+            "words": 4,
+            "chars": 28,
+            "lines": 2,
+            "size": 34,
+            "vw": 8.7,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.9,
+            "top": 2519,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "от 2 390 ₽",
+            "words": 4,
+            "chars": 10,
+            "lines": 1,
+            "size": 48,
+            "vw": 12.3,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.06,
+            "leading": 1.15,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.71,
+            "top": 3181,
+            "tag": "p",
+            "kind": "statement"
+          },
+          {
+            "text": "0 ₽",
+            "words": 2,
+            "chars": 3,
+            "lines": 1,
+            "size": 44,
+            "vw": 11.3,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.06,
+            "leading": 1.1,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.15,
+            "top": 3571,
+            "tag": "strong",
+            "kind": "heading"
+          },
+          {
+            "text": "Каждый этап. По договорённости.",
+            "words": 4,
+            "chars": 31,
+            "lines": 2,
+            "size": 34,
+            "vw": 8.7,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.9,
+            "top": 3808,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "+",
+            "words": 1,
+            "chars": 1,
+            "lines": 1,
+            "size": 28,
+            "vw": 7.2,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.029,
+            "leading": 1.3,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.09,
+            "top": 4002,
+            "tag": "span",
+            "kind": "heading"
+          },
+          {
+            "text": "+",
+            "words": 1,
+            "chars": 1,
+            "lines": 1,
+            "size": 28,
+            "vw": 7.2,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.029,
+            "leading": 1.3,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.04,
+            "top": 4223,
+            "tag": "span",
+            "kind": "heading"
+          },
+          {
+            "text": "+",
+            "words": 1,
+            "chars": 1,
+            "lines": 1,
+            "size": 28,
+            "vw": 7.2,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.029,
+            "leading": 1.3,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.04,
+            "top": 4315,
+            "tag": "span",
+            "kind": "heading"
+          },
+          {
+            "text": "+",
+            "words": 1,
+            "chars": 1,
+            "lines": 1,
+            "size": 28,
+            "vw": 7.2,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.029,
+            "leading": 1.3,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.04,
+            "top": 4408,
+            "tag": "span",
+            "kind": "heading"
+          },
+          {
+            "text": "Ноутбук — в работе. Решение — за вами.",
+            "words": 8,
+            "chars": 38,
+            "lines": 2,
+            "size": 26,
+            "vw": 6.7,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.04,
+            "leading": 1.2,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.76,
+            "top": 4752,
+            "tag": "strong",
+            "kind": "statement"
+          },
+          {
+            "text": "Начнём с вашего ноутбука?",
+            "words": 4,
+            "chars": 25,
+            "lines": 1,
+            "size": 26,
+            "vw": 6.7,
+            "font": "Golos Text",
+            "weight": 400,
+            "tracking": -0.04,
+            "leading": 1.2,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.9,
+            "top": 4946,
+            "tag": "p",
+            "kind": "statement"
+          },
+          {
+            "text": "Ленремонт.",
+            "words": 1,
+            "chars": 10,
+            "lines": 1,
+            "size": 54.6,
+            "vw": 14,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.065,
+            "leading": 1.05,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.9,
+            "top": 5221,
+            "tag": "span",
+            "kind": "heading"
+          }
+        ],
+        "headingSummary": {
+          "count": 17,
+          "maxLines": 2,
+          "over2Lines": 0,
+          "statements": 4,
+          "centered": 0,
+          "medianWords": 4,
+          "mixedFontHeadings": 0
+        },
+        "type": {
+          "families": [
+            {
+              "family": "Golos Text",
+              "share": 1,
+              "mono": false
+            }
+          ],
+          "familyCount": 1,
+          "sizes": [13, 14, 16, 20, 24, 26, 28, 30, 32, 34, 44, 48, 55],
+          "sizeCount": 13,
+          "notLoaded": [],
+          "body": {
+            "font": "Golos Text",
+            "size": 16,
+            "leading": 1.6,
+            "weight": 400,
+            "tracking": -0.025,
+            "contrast": 12.6
+          },
+          "measureChars": 39,
+          "max": {
+            "size": 54.6,
+            "vw": 14,
+            "font": "Golos Text",
+            "text": "Ленремонт."
+          },
+          "monoShare": 0,
+          "monoProseShare": 0,
+          "monoFamilies": [],
+          "monoSamples": [],
+          "microLabels": 0,
+          "microLabelShare": 0,
+          "microSamples": [],
+          "upperShare": 0,
+          "centerShare": 0,
+          "smallText": 0
+        },
+        "eyebrows": [
+          {
+            "text": "Внутри мобильной мастерской Ленремонта",
+            "above": "Всё для работы. Прямо на месте.",
+            "upper": false,
+            "tracked": false,
+            "mono": false,
+            "pill": false,
+            "size": 13,
+            "top": 1861
+          }
+        ],
+        "numbered": [],
+        "color": {
+          "bodyBg": "#ffffff",
+          "bodyBgHsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          },
+          "dark": false,
+          "sectionBgs": [
+            {
+              "color": "#e7f0f8",
+              "top": 0,
+              "hsl": {
+                "h": 208,
+                "s": 0.55,
+                "l": 0.94
+              }
+            },
+            {
+              "color": "#ffffff",
+              "top": 341,
+              "hsl": {
+                "h": 0,
+                "s": 0,
+                "l": 1
+              }
+            },
+            {
+              "color": "#101d2c",
+              "top": 1515,
+              "hsl": {
+                "h": 212,
+                "s": 0.47,
+                "l": 0.12
+              }
+            }
+          ],
+          "textColors": [
+            {
+              "color": "#172a40",
+              "share": 0.66
+            },
+            {
+              "color": "#ffffff",
+              "share": 0.13
+            },
+            {
+              "color": "#506175",
+              "share": 0.12
+            },
+            {
+              "color": "#deded5",
+              "share": 0.06
+            },
+            {
+              "color": "#101d2c",
+              "share": 0.04
+            }
+          ],
+          "button": {
+            "bg": "#e9b956",
+            "hsl": {
+              "h": 40,
+              "s": 0.77,
+              "l": 0.63
+            },
+            "fg": "#101d2c"
+          },
+          "lowContrast": []
+        },
+        "buttons": {
+          "count": 4,
+          "inHero": 1,
+          "radius": "pill",
+          "height": 58,
+          "withShadow": 0,
+          "withGradient": 0,
+          "mono": 0,
+          "upper": 0,
+          "heroLabels": ["Обсудить ремонт ↗"]
+        },
+        "surfaces": {
+          "shadowStatic": 0,
+          "shadowOverlay": 0,
+          "shadowSamples": [],
+          "gradients": 0,
+          "scrims": 0,
+          "gradientSamples": [],
+          "gradientText": 0,
+          "hairlines": 0,
+          "hairlineSamples": [],
+          "outlinedBoxes": 0,
+          "dashed": 0,
+          "blurred": 0,
+          "roundedBoxes": 7,
+          "boxRadius": 28,
+          "squareMedia": 0,
+          "roundedMedia": 3,
+          "mediaRadius": 28,
+          "textShadow": 0,
+          "cardRows": []
+        },
+        "heroMedia": [],
+        "nav": {
+          "links": 2,
+          "fixed": false,
+          "height": 78,
+          "floatingPill": false,
+          "blur": false
+        },
+        "fontsLoaded": ["golos text"]
+      },
+      "layout": {
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "pageH": 5313,
+        "margins": {
+          "left": 20,
+          "right": 20
+        },
+        "sections": [
+          {
+            "sel": "section.lr-concept__service-hero.lr-concept__frame",
+            "tag": "section",
+            "top": 78,
+            "height": 1150,
+            "words": 56,
+            "media": 1,
+            "middle": 0,
+            "heading": {
+              "text": "Ремонт.",
+              "size": 32,
+              "tag": "h1"
+            },
+            "left": 20,
+            "right": 20,
+            "textLeft": 20,
+            "textRight": 39,
+            "fullBleed": false,
+            "footer": false,
+            "hero": true,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "section#concept-detail.lr-service-next__mobile.lr-concept__f",
+            "tag": "section",
+            "top": 1316,
+            "height": 1115,
+            "words": 62,
+            "media": 1,
+            "middle": 0,
+            "heading": {
+              "text": "У вашего дома.",
+              "size": 34,
+              "tag": "h2"
+            },
+            "left": 20,
+            "right": 36,
+            "textLeft": 20,
+            "textRight": 47,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": true,
+            "pinned": false
+          },
+          {
+            "sel": "section#concept-prices.lr-service-next__pricing.lr-concept__",
+            "tag": "section",
+            "top": 2431,
+            "height": 1288,
+            "words": 86,
+            "media": 0,
+            "middle": 0,
+            "heading": {
+              "text": "Сначала сумма.",
+              "size": 34,
+              "tag": "h2"
+            },
+            "left": 20,
+            "right": 60,
+            "textLeft": 20,
+            "textRight": 60,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": true,
+            "pinned": false
+          },
+          {
+            "sel": "div.lr-service-next__section-head",
+            "tag": "div",
+            "top": 3808,
+            "height": 145,
+            "words": 11,
+            "media": 0,
+            "middle": 0,
+            "heading": {
+              "text": "По договорённости.",
+              "size": 34,
+              "tag": "h2"
+            },
+            "left": 20,
+            "right": 61,
+            "textLeft": 20,
+            "textRight": 61,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": true,
+            "pinned": false
+          },
+          {
+            "sel": "div.lr-service-next__process-grid",
+            "tag": "div",
+            "top": 3980,
+            "height": 930,
+            "words": 108,
+            "media": 1,
+            "middle": 0,
+            "heading": null,
+            "left": 20,
+            "right": 20,
+            "textLeft": 40,
+            "textRight": 43,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": true,
+            "pinned": false
+          },
+          {
+            "sel": "div.lr-service-next__close",
+            "tag": "div",
+            "top": 4910,
+            "height": 219,
+            "words": 6,
+            "media": 0,
+            "middle": 0,
+            "heading": {
+              "text": "Начнём с вашего ноутбука?",
+              "size": 26,
+              "tag": "p"
+            },
+            "left": 20,
+            "right": 40,
+            "textLeft": 20,
+            "textRight": 40,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": true,
+            "pinned": false
+          },
+          {
+            "sel": "footer.lr-concept__footer.lr-concept__frame",
+            "tag": "footer",
+            "top": 5129,
+            "height": 184,
+            "words": 12,
+            "media": 0,
+            "middle": 0,
+            "heading": {
+              "text": "Ленремонт.",
+              "size": 55,
+              "tag": "span"
+            },
+            "left": 20,
+            "right": 46,
+            "textLeft": 20,
+            "textRight": 46,
+            "fullBleed": false,
+            "footer": true,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          }
+        ],
+        "gaps": [],
+        "h1s": [
+          {
+            "text": "Ремонт. В вашем ритме.",
+            "size": 32,
+            "top": 98,
+            "firstScreen": true
+          }
+        ],
+        "edgeText": [],
+        "edges": [
+          {
+            "x": 40,
+            "n": 11
+          },
+          {
+            "x": 20,
+            "n": 8
+          },
+          {
+            "x": 56,
+            "n": 1
+          }
+        ],
+        "leftBlocks": 20,
+        "bodySize": 16,
+        "stage": false,
+        "explains": false,
+        "slivers": [],
+        "voidShare": 0,
+        "voidBox": null
+      },
+      "app": null,
+      "consoleErrors": []
+    }
+  ],
+  "findings": [
+    {
+      "level": "WARN",
+      "id": "size-count",
+      "width": 1440,
+      "message": "15 different font sizes (14, 16, 17, 20, 24, 26, 28, 30, 34, 36, 54, 61, 67, 72, 202).",
+      "fix": "A page needs about five: display, heading, lead, body, small.",
+      "alsoAt": [768, 390]
+    },
+    {
+      "level": "FAIL",
+      "id": "few-pictures",
+      "width": 1440,
+      "message": "Only 3 picture(s) on the page (3 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+      "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+    },
+    {
+      "level": "FAIL",
+      "id": "eyebrow",
+      "width": 390,
+      "message": "1 eyebrow/kicker label(s) above headings: \"Внутри мобильной мастерской Ленремонта\" above \"Всё для работы. Прямо на месте.\"",
+      "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence."
+    }
+  ],
+  "images": [
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "fold": "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\service-next\\review\\desktop-fold.jpg",
+      "pages": [
+        "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\service-next\\review\\desktop-page-01.jpg",
+        "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\service-next\\review\\desktop-page-02.jpg"
+      ],
+      "film": []
+    },
+    {
+      "viewport": "tablet",
+      "width": 768,
+      "fold": "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\service-next\\review\\tablet-fold.jpg",
+      "pages": [
+        "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\service-next\\review\\tablet-page-01.jpg"
+      ],
+      "film": []
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "fold": "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\service-next\\review\\mobile-fold.jpg",
+      "pages": [
+        "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\service-next\\review\\mobile-page-01.jpg"
+      ],
+      "film": []
+    }
+  ]
+}

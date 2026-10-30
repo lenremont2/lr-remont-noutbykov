@@ -1,0 +1,133 @@
+{
+  "checkedAt": "2026-10-29",
+  "source": "https://www.lenremont.ru/remont-noutbukov-spb.htm#price",
+  "comparison": [
+    {
+      "local": "Очистка охлаждения с обновлением термоинтерфейсов",
+      "official": "Чистка системы охлаждения и замена термоинтерфейсов",
+      "price": "от 2 390 ₽",
+      "officialPrice": "2 390 ₽",
+      "match": true
+    },
+    {
+      "local": "Установка новой клавиатуры",
+      "official": "Замена клавиатуры",
+      "price": "от 3 290 ₽",
+      "officialPrice": "3 290 ₽",
+      "match": true
+    },
+    {
+      "local": "Замена повреждённого разъёма зарядки",
+      "official": "Замена разъема питания",
+      "price": "от 3 290 ₽",
+      "officialPrice": "3 290 ₽",
+      "match": true
+    },
+    {
+      "local": "Установка нового аккумулятора",
+      "official": "Замена аккумулятора",
+      "price": "от 2 890 ₽",
+      "officialPrice": "2 890 ₽",
+      "match": true
+    },
+    {
+      "local": "Установка новой матрицы экрана",
+      "official": "Замена матрицы",
+      "price": "от 3 190 ₽",
+      "officialPrice": "3 190 ₽",
+      "match": true
+    },
+    {
+      "local": "Восстановление системной платы",
+      "official": "Ремонт материнской платы",
+      "price": "от 4 990 ₽",
+      "officialPrice": "4 990 ₽",
+      "match": true
+    },
+    {
+      "local": "Ремонт после попадания жидкости",
+      "official": "Восстановление после залития",
+      "price": "от 5 090 ₽",
+      "officialPrice": "5 090 ₽",
+      "match": true
+    },
+    {
+      "local": "Переустановка Windows и драйверов",
+      "official": "Установка / переустановка Windows с драйверами",
+      "price": "от 1 990 ₽",
+      "officialPrice": "1 990 ₽",
+      "match": true
+    },
+    {
+      "local": "Установка SSD или HDD, перенос системы",
+      "official": "Замена SSD / HDD / перенос системы",
+      "price": "от 2 390 ₽",
+      "officialPrice": "2 390 ₽",
+      "match": true
+    },
+    {
+      "local": "Увеличение или замена оперативной памяти",
+      "official": "Замена / установка оперативной памяти",
+      "price": "от 1 890 ₽",
+      "officialPrice": "1 890 ₽",
+      "match": true
+    },
+    {
+      "local": "Восстановление прошивки BIOS",
+      "official": "Прошивка / восстановление BIOS",
+      "price": "от 2 890 ₽",
+      "officialPrice": "2 890 ₽",
+      "match": true
+    },
+    {
+      "local": "Восстановление файлов или перенос данных",
+      "official": "Восстановление данных / перенос данных",
+      "price": "от 2 890 ₽",
+      "officialPrice": "2 890 ₽",
+      "match": true
+    },
+    {
+      "local": "Обслуживание охлаждения с полной разборкой",
+      "official": "Чистка системы охлаждения с полной разборкой",
+      "price": "от 2 890 ₽",
+      "officialPrice": "2 890 ₽",
+      "match": true
+    },
+    {
+      "local": "Замена приклеенного аккумулятора",
+      "official": "Замена аккумулятора с отклейкой",
+      "price": "от 3 590 ₽",
+      "officialPrice": "3 590 ₽",
+      "match": true
+    },
+    {
+      "local": "Замена клавиатуры или верхней панели",
+      "official": "Замена клавиатуры / topcase",
+      "price": "от 4 390 ₽",
+      "officialPrice": "4 390 ₽",
+      "match": true
+    },
+    {
+      "local": "Восстановление разъёма USB-C или MagSafe",
+      "official": "Замена USB-C / MagSafe разъема",
+      "price": "от 3 990 ₽",
+      "officialPrice": "3 990 ₽",
+      "match": true
+    },
+    {
+      "local": "Ремонт платы или цепей питания",
+      "official": "Ремонт цепей питания / платы",
+      "price": "от 4 990 ₽",
+      "officialPrice": "4 990 ₽",
+      "match": true
+    },
+    {
+      "local": "Восстановление macOS с переносом данных",
+      "official": "Установка / восстановление macOS и перенос данных",
+      "price": "от 2 490 ₽",
+      "officialPrice": "2 490 ₽",
+      "match": true
+    }
+  ],
+  "urgent": [["Срочная диагностика техники", "500"]]
+}

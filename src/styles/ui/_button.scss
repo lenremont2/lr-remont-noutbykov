@@ -2,41 +2,57 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 12px;
   min-height: 56px;
   padding: 16px 24px;
   border: 1px solid transparent;
-  border-radius: var(--lr-radius-small);
+  border-radius: var(--lr-radius-pill);
   background: var(--lr-button-bg);
   color: var(--lr-button-text);
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   font-weight: 600;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
   transition:
     background var(--lr-duration-fast),
-    border-color var(--lr-duration-fast);
+    border-color var(--lr-duration-fast),
+    color var(--lr-duration-fast),
+    transform var(--lr-duration-fast);
 }
-#hop-landing .lr-button:hover {
+#hop-landing .lr-button:hover:not(:disabled) {
   background: var(--lr-button-hover);
 }
-#hop-landing .lr-button:active {
+#hop-landing .lr-button:active:not(:disabled) {
   background: var(--lr-color-accent-active);
+  transform: scale(0.99);
 }
 #hop-landing .lr-button:disabled {
-  cursor: default;
+  cursor: not-allowed;
   background: var(--lr-color-surface-alt);
   color: var(--lr-color-muted);
 }
 #hop-landing .lr-button--secondary {
-  border-color: var(--lr-color-border);
-  background: transparent;
+  background: var(--lr-color-dark);
+  color: var(--lr-color-on-dark);
+}
+#hop-landing .lr-button--secondary:hover:not(:disabled) {
+  background: var(--lr-graphite-800);
+}
+#hop-landing .lr-button--secondary:active:not(:disabled) {
+  background: var(--lr-graphite-900);
+  transform: scale(0.99);
+}
+#hop-landing .lr-section--dark .lr-button--secondary {
+  background: var(--lr-color-surface);
   color: var(--lr-color-text);
 }
-#hop-landing .lr-button--secondary:hover {
-  border-color: var(--lr-color-control-border);
+#hop-landing .lr-section--dark .lr-button--secondary:hover:not(:disabled) {
   background: var(--lr-color-surface-alt);
+}
+#hop-landing .lr-section--dark .lr-button--secondary:active:not(:disabled) {
+  transform: scale(0.99);
 }
 #hop-landing .lr-text-action {
   display: inline-flex;
@@ -52,12 +68,27 @@
   font-weight: 500;
   text-decoration: underline;
   text-underline-offset: 5px;
+  cursor: pointer;
 }
 #hop-landing .lr-text-action:hover {
   text-decoration-thickness: 2px;
+}
+#hop-landing .lr-section--dark .lr-text-action {
+  color: var(--lr-color-on-dark);
 }
 #hop-landing .lr-button span[aria-hidden],
 #hop-landing .lr-text-action span[aria-hidden] {
   flex: none;
   font-size: 22px;
+}
+@media (prefers-reduced-motion: reduce) {
+  #hop-landing .lr-button {
+    transition: none;
+    transform: none;
+  }
+  #hop-landing .lr-button:active:not(:disabled),
+  #hop-landing .lr-button--secondary:active:not(:disabled),
+  #hop-landing .lr-section--dark .lr-button--secondary:active:not(:disabled) {
+    transform: none;
+  }
 }

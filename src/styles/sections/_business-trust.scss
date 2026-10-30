@@ -1,0 +1,118 @@
+#hop-landing .lr-business-trust {
+  background: var(--lr-color-surface);
+}
+
+#hop-landing .lr-business-trust .lr-section-heading {
+  max-width: 850px;
+}
+
+#hop-landing .lr-business-trust__grid {
+  display: grid;
+  gap: var(--lr-space-24);
+}
+
+#hop-landing .lr-business-trust__grid article {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: var(--lr-space-20);
+  min-width: 0;
+  padding: var(--lr-space-24);
+  border: 1px solid var(--lr-color-border);
+  border-radius: var(--lr-radius-large);
+  background: var(--lr-color-bg);
+}
+
+#hop-landing .lr-business-trust__grid h3 {
+  margin: 0;
+  font-size: clamp(24px, 2.5vw, 32px);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+#hop-landing .lr-business-trust__grid article > p {
+  color: var(--lr-color-muted);
+}
+
+#hop-landing .lr-business-trust__grid .lr-business-trust__business {
+  background: var(--lr-color-dark);
+  border-color: var(--lr-color-dark);
+  color: var(--lr-color-on-dark);
+}
+
+#hop-landing .lr-business-trust__business h3,
+#hop-landing .lr-business-trust__business a {
+  color: var(--lr-color-on-dark);
+}
+
+#hop-landing .lr-business-trust__grid .lr-business-trust__business > p,
+#hop-landing .lr-business-trust__business .lr-caption {
+  color: var(--lr-color-muted-on-dark);
+}
+
+#hop-landing
+  .lr-business-trust__business
+  .lr-business-trust__contacts
+  a[href^="tel:"] {
+  color: var(--lr-color-accent);
+}
+
+#hop-landing .lr-business-trust__business :focus-visible {
+  outline-color: var(--lr-color-focus-on-dark);
+}
+
+#hop-landing .lr-business-trust__contacts {
+  display: grid;
+  gap: var(--lr-space-8);
+  width: 100%;
+  padding-top: var(--lr-space-20);
+  border-top: 0;
+}
+
+#hop-landing .lr-business-trust__contacts a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-weight: 500;
+}
+
+#hop-landing .lr-business-trust__contacts a[href^="tel:"] {
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.3;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+}
+
+#hop-landing .lr-business-trust__parts ul {
+  display: grid;
+  gap: var(--lr-space-16);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--lr-color-muted);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#hop-landing .lr-business-trust__parts li strong {
+  color: var(--lr-color-text);
+}
+
+#hop-landing .lr-business-trust__parts .lr-button {
+  max-width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #hop-landing .lr-business-trust__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--lr-space-32);
+  }
+
+  #hop-landing .lr-business-trust__grid article {
+    padding: var(--lr-space-32);
+  }
+}

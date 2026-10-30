@@ -1,0 +1,107 @@
+Command: read-only Node SHA-256 baseline comparison and Sass/PostCSS audit of final CSS after local fonts and Benefits/RepairTimeline cleanup.
+Font-face declarations are at-rules with the isolated family LR Golos Text, not unscoped element selectors. Their four entries are listed explicitly.
+
+{
+  "timestamp": "2026-10-29T13:21:12.695Z",
+  "hashes": [
+    {
+      "path": "src/data/laptop-service.json",
+      "unchanged": false,
+      "onlyApprovedChanges": true
+    },
+    {
+      "path": "src/data/service-pages.json",
+      "unchanged": true,
+      "onlyApprovedChanges": true
+    },
+    {
+      "path": "src/data/reviews.json",
+      "unchanged": true,
+      "onlyApprovedChanges": true
+    },
+    {
+      "path": "src/data/workshops.json",
+      "unchanged": true,
+      "onlyApprovedChanges": true
+    },
+    {
+      "path": "src/data/service-pages.ts",
+      "unchanged": true,
+      "onlyApprovedChanges": true
+    }
+  ],
+  "unscoped": [],
+  "nestedVariables": [],
+  "fontFaceCount": 4,
+  "fontFaces": [
+    {
+      "font-family": "\"LR Golos Text\"",
+      "font-style": "normal",
+      "font-weight": "400 700",
+      "font-display": "swap",
+      "src": "url(\"/media/fonts/golos-text-v7-cyrillic-ext.woff2\") format(\"woff2\")",
+      "unicode-range": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
+    },
+    {
+      "font-family": "\"LR Golos Text\"",
+      "font-style": "normal",
+      "font-weight": "400 700",
+      "font-display": "swap",
+      "src": "url(\"/media/fonts/golos-text-v7-cyrillic.woff2\") format(\"woff2\")",
+      "unicode-range": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+    },
+    {
+      "font-family": "\"LR Golos Text\"",
+      "font-style": "normal",
+      "font-weight": "400 700",
+      "font-display": "swap",
+      "src": "url(\"/media/fonts/golos-text-v7-latin-ext.woff2\") format(\"woff2\")",
+      "unicode-range": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF"
+    },
+    {
+      "font-family": "\"LR Golos Text\"",
+      "font-style": "normal",
+      "font-weight": "400 700",
+      "font-display": "swap",
+      "src": "url(\"/media/fonts/golos-text-v7-latin.woff2\") format(\"woff2\")",
+      "unicode-range": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+    }
+  ],
+  "fontAssets": [
+    {
+      "path": "public/media/fonts/golos-text-v7-cyrillic-ext.woff2",
+      "bytes": 17532,
+      "sha256": "10aa879203c4b62f61841bdeee64a2ca5d97f1cf21e717f45c96914ce7629710"
+    },
+    {
+      "path": "public/media/fonts/golos-text-v7-cyrillic.woff2",
+      "bytes": 22028,
+      "sha256": "2f175b8fc40ed4e826742879f92ec903256fc2612d8d95c7c287232fd7138e4b"
+    },
+    {
+      "path": "public/media/fonts/golos-text-v7-latin-ext.woff2",
+      "bytes": 19204,
+      "sha256": "90256a7b8eb3b6b7b1c8f8aeb0e80eed7980a411d8c49faf7958fef6951ba863"
+    },
+    {
+      "path": "public/media/fonts/golos-text-v7-latin.woff2",
+      "bytes": 38084,
+      "sha256": "f8d71091110f0113ba8bd16bee2ac68b51dd6491c5b9404e9fbb82b20ae632f1"
+    }
+  ],
+  "fontTotalBytes": 96848,
+  "fontLicense": {
+    "path": "public/media/fonts/OFL-Golos-Text.txt",
+    "present": true,
+    "sha256": "ff532f9e8789f09a9fdffc3c0954eedfb0a48be77b2e2eb90f5f82e4f347f50c"
+  },
+  "changesSinceAfterFonts": {
+    "compared": 102,
+    "changed": [
+      "src/styles/sections/_benefits.scss",
+      "src/styles/sections/_timeline.scss"
+    ],
+    "fontDiff": [],
+    "licenseUnchanged": true
+  }
+}

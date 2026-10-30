@@ -1,0 +1,43 @@
+---
+import service from "../data/laptop-service.json";
+const prices = service.prices.tables[0];
+---
+
+<section
+  id="concept-prices"
+  class="lr-concept__pricing lr-concept__frame"
+  aria-labelledby="concept-price-title"
+>
+  <div>
+    <h2 id="concept-price-title" data-lr-concept-reveal>
+      Сначала ясно.<br />Потом ремонт.
+    </h2><p data-lr-concept-reveal>
+      Обычная диагностика в мастерской — 0 ₽<br />даже при отказе. Срочная — 500
+      ₽.
+    </p><img
+      class="lr-concept__price-photo"
+      src="/media/workshop-prosveshcheniya-engineer-640.webp"
+      width="640"
+      height="360"
+      alt="Инженер проверяет технику в сервисном центре"
+      loading="lazy"
+      data-lr-concept-reveal
+    />
+  </div>
+  <div>
+    <dl>
+      <div data-lr-concept-reveal>
+        <dt>{prices[0][0]}</dt><dd>{prices[0][1]}</dd>
+      </div><div data-lr-concept-reveal>
+        <dt>{prices[4][0]}</dt><dd>{prices[4][1]}</dd>
+      </div><div data-lr-concept-reveal>
+        <dt>{prices[5][0]}</dt><dd>{prices[5][1]}</dd>
+      </div>
+    </dl><p class="lr-concept__note" data-lr-concept-reveal>
+      Цены на работы. Запчасти оплачиваются отдельно. Итог зависит от модели и
+      диагностики.
+    </p><a class="lr-concept__button" href="/#lr-contact" data-lr-concept-reveal
+      >Узнать стоимость <span aria-hidden="true">↗</span></a
+    >
+  </div>
+</section>

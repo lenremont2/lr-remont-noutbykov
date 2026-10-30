@@ -1,5 +1,5 @@
 #hop-landing .lr-container {
-  width: 88%;
+  width: calc(100% - 40px);
   max-width: 1280px;
   margin-inline: auto;
 }
@@ -8,4 +8,14 @@
 }
 #hop-landing .lr-section--compact {
   padding-block: var(--lr-space-section-compact);
+}
+@media (min-width: 768px) {
+  #hop-landing .lr-container {
+    width: calc(100% - 64px);
+  }
+}
+@media (min-width: 1024px) {
+  #hop-landing .lr-container {
+    width: 88%;
+  }
 }

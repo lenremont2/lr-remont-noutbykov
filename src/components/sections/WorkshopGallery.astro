@@ -1,0 +1,63 @@
+---
+import SectionHeading from "../ui/SectionHeading.astro";
+const frames = [
+  {
+    key: "diagnostics",
+    alt: "Иллюстрация: аккуратное рабочее место для диагностики ноутбуков",
+    caption: "Диагностика ноутбуков",
+  },
+  {
+    key: "soldering",
+    alt: "Иллюстрация: микроскоп и паяльное оборудование на чистом рабочем столе",
+    caption: "Компонентный ремонт и пайка",
+  },
+  {
+    key: "cooling",
+    alt: "Иллюстрация: зона обслуживания системы охлаждения ноутбука",
+    caption: "Обслуживание охлаждения",
+  },
+  {
+    key: "reception",
+    alt: "Иллюстрация: светлая стойка приёма и защищённое хранение техники",
+    caption: "Приём и выдача техники",
+  },
+  {
+    key: "testing",
+    alt: "Иллюстрация: рабочий стол для проверки ноутбуков после ремонта",
+    caption: "Проверка после ремонта",
+  },
+  {
+    key: "parts",
+    alt: "Иллюстрация: подготовка запчастей и хранение компонентов в антистатической упаковке",
+    caption: "Запчасти и компоненты",
+  },
+];
+---
+
+<section id="lr-workshop-gallery" class="lr-section lr-workshop-gallery">
+  <div class="lr-container">
+    <SectionHeading title="Рабочие зоны мастерской" />
+    <div class="lr-workshop-gallery__grid">
+      {
+        frames.map((frame) => (
+          <figure class="lr-workshop-gallery__item">
+            <img
+              class="lr-workshop-gallery__image"
+              src={`/media/workshop-v3-${frame.key}-1280.webp`}
+              srcset={`/media/workshop-v3-${frame.key}-640.webp 640w, /media/workshop-v3-${frame.key}-1280.webp 1280w`}
+              sizes="(min-width: 1024px) 30vw, (min-width: 768px) 44vw, 90vw"
+              width="1280"
+              height="720"
+              alt={frame.alt}
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="lr-caption lr-workshop-gallery__caption">
+              {frame.caption}
+            </figcaption>
+          </figure>
+        ))
+      }
+    </div>
+  </div>
+</section>

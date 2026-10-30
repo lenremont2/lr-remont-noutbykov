@@ -1,4 +1,5 @@
 @use "core/variables";
+@use "core/fonts";
 @use "core/reset";
 @use "core/typography";
 @use "core/layout";
@@ -10,11 +11,20 @@
 @use "sections/home-hero";
 @use "sections/benefits";
 @use "sections/formats";
+@use "sections/locations";
 @use "sections/security";
 @use "sections/timeline";
+@use "sections/home-service";
+@use "sections/home-content";
+@use "sections/home-expertise";
+@use "sections/service-experience";
 
 @use "sections/service-pages";
 
 @use "sections/child-pages";
 @use "sections/brand-pages";
 @use "sections/macbook-page";
+@use "sections/style-review";
+@use "sections/business-trust";
+@use "sections/comment-refinements";
+@use "sections/photo-symptoms";

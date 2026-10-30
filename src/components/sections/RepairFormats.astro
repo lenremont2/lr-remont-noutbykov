@@ -6,156 +6,170 @@ import LeadButton from "../ui/LeadButton.astro";
 interface Props {
   linkToLocations?: boolean;
 }
-
 const { linkToLocations = true } = Astro.props;
+const compact = linkToLocations;
 const c = copy.formats;
-
-const images = [
-  {
-    src: "/media/mobile-lab-exterior.webp",
-    alt: "Мобильная мастерская Ленремонта у дома клиента",
-    width: 480,
-    height: 640,
-  },
-  {
-    src: "/media/laptop-engineer-hero.webp",
-    alt: "Сервисный центр Ленремонта: инженер за работой",
+const compactImages = {
+  "at-home": "/media/format-home-v2.webp",
+  "mobile-lab": "/media/format-mobile-v2.webp",
+  workshop: "/media/format-workshop-v2.webp",
+  courier: "/media/format-courier-v2.webp",
+};
+const formatMeta = {
+  "at-home": {
+    image: "/media/laptop-board-diagnostics.webp",
+    alt: "Диагностика ноутбука инженером",
     width: 580,
     height: 384,
+    features: [
+      "Место и время согласуем до выезда",
+      "Возможность работ зависит от модели и неисправности",
+      "Если нужен сервис, обсудим передачу устройства",
+    ],
   },
-  {
-    src: "/media/laptop-courier.webp",
+  "mobile-lab": {
+    image: "/media/mobile-lab-exterior.webp",
+    alt: "Мобильная мастерская Ленремонта",
+    width: 480,
+    height: 640,
+    features: [
+      "Оборудованное место внутри автомобиля",
+      "Подъезд к дому или работе согласуем заранее",
+      "Состав и стоимость работ подтвердим до ремонта",
+    ],
+  },
+  workshop: {
+    image: "/media/laptop-engineer-hero.webp",
+    alt: "Инженер за работой в сервисном центре",
+    width: 580,
+    height: 384,
+    features: [
+      "Выберите адрес и проверьте режим работы",
+      "Диагностика 0 ₽ даже при отказе от ремонта",
+      "Диагностика и ремонт на стационарном оборудовании",
+    ],
+  },
+  courier: {
+    image: "/media/laptop-courier.webp",
     alt: "Курьерская доставка ноутбука в сервисный центр",
     width: 580,
     height: 384,
-  },
-];
-
-const formatMeta = [
-  {
-    badge: "У дома или работы",
-    tag: "Хит",
-    eyebrow: "Фирменный выездной формат",
     features: [
-      "Выезд по СПб и ЛО в день обращения",
-      "Чистка и модульный ремонт за 40–90 минут при вас",
-      "Цены как в стационарной мастерской",
-    ],
-  },
-  {
-    badge: "Привезите сами",
-    tag: "Удобно",
-    eyebrow: "Сеть мастерских по СПб",
-    features: [
-      "Мастерские у метро во всех районах СПб",
-      "Диагностика 0 ₽ даже при отказе от ремонта",
-      "Пайка плат и BGA-чипов на инфракрасных станциях",
-    ],
-  },
-  {
-    badge: "Заберём и привезём",
-    tag: "Без поездок",
-    eyebrow: "Доставка от двери до двери",
-    features: [
-      "Приезд курьера в удобный часовой интервал",
-      "Официальный акт приёма-передачи на месте",
+      "Согласованный интервал приезда курьера",
+      "Документ при передаче устройства",
       "Оплата после проверки готового ноутбука",
     ],
   },
-];
+};
+const compactFeatures = {
+  "at-home": ["Выезд в удобное время", "Возможность ремонта уточним по модели"],
+  "mobile-lab": [
+    "Рабочее место — в автомобиле",
+    "Подъезд и работы согласуем заранее",
+  ],
+  workshop: ["Диагностика — 0 ₽, даже при отказе", "Стационарное оборудование"],
+  courier: [
+    "Заберём ноутбук по документу",
+    "Время и условия доставки согласуем",
+  ],
+};
 ---
 
-<section id="lr-formats" class="lr-section lr-formats">
+<section
+  id="lr-formats"
+  class:list={["lr-section lr-formats", { "lr-formats--compact": compact }]}
+>
   <div class="lr-container">
-    <SectionHeading title={c.fields.H2} lead={c.fields["Лид"]} />
+    <SectionHeading
+      title={compact ? "Способы ремонта" : c.fields.H2}
+      lead={compact
+        ? "Выберите удобный способ ремонта. Детали и стоимость согласуем заранее."
+        : c.fields["Лид"]}
+    />
     <div class="lr-formats__grid">
       {
-        c.items.map((item, i) => {
-          const meta = formatMeta[i];
-          const isFeatured = i === 0;
+        c.items.map((item) => {
+          const meta = formatMeta[item.format as keyof typeof formatMeta];
+          const isFeatured = item.format === "mobile-lab";
           return (
             <article
               class:list={["lr-format", isFeatured && "lr-format--featured"]}
             >
-              <div class="lr-format__media">
+              <figure class="lr-format__media">
                 <img
-                  src={images[i].src}
-                  alt={images[i].alt}
-                  width={images[i].width}
-                  height={images[i].height}
+                  src={
+                    compact
+                      ? compactImages[item.format as keyof typeof compactImages]
+                      : meta.image
+                  }
+                  alt={
+                    compact
+                      ? `Иллюстрация: ${meta.alt.toLocaleLowerCase("ru-RU")}`
+                      : meta.alt
+                  }
+                  width={compact ? 1280 : meta.width}
+                  height={compact ? 720 : meta.height}
                   loading="lazy"
                   decoding="async"
                 />
-                <div class="lr-format__badge-row">
-                  <span class="lr-format__badge">{meta.badge}</span>
-                  {isFeatured && <span class="lr-format__badge-tag">Хит</span>}
-                </div>
-              </div>
-
+                {!compact && <figcaption>{item.fields["Акцент"]}</figcaption>}
+              </figure>
               <div class="lr-format__body">
-                <div class="lr-format__header">
-                  <span class="lr-format__eyebrow">{meta.eyebrow}</span>
-                  <h3 class="lr-format__title">{item.title}</h3>
-                  <p class="lr-format__text">{item.text}</p>
-                </div>
-
-                <ul class="lr-format__features" role="list">
-                  {meta.features.map((feature) => (
-                    <li class="lr-format__feature">
-                      <svg
-                        class="lr-format__feature-icon"
-                        viewBox="0 0 16 16"
-                        width="16"
-                        height="16"
-                        aria-hidden="true"
-                        fill="none"
-                      >
-                        <circle
-                          cx="8"
-                          cy="8"
-                          r="8"
-                          fill="currentColor"
-                          fill-opacity="0.12"
-                        />
-                        <path
-                          d="M4.5 8.2L6.8 10.5L11.5 5.5"
-                          stroke="currentColor"
-                          stroke-width="1.8"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
+                <h3 class="lr-format__title">{item.title}</h3>
+                {!compact && <p class="lr-format__text">{item.text}</p>}
+                <ul class="lr-format__features">
+                  {(compact
+                    ? compactFeatures[
+                        item.format as keyof typeof compactFeatures
+                      ]
+                    : meta.features
+                  ).map((feature) => (
+                    <li>
+                      {compact && (
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="m3 8 3 3 7-7"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      )}
                       <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
-
                 <div class="lr-format__footer">
-                  {linkToLocations && i === 1 ? (
+                  {linkToLocations && item.format === "workshop" ? (
                     <a
-                      class="lr-button lr-button--secondary lr-format__btn"
+                      class="lr-text-action lr-format__btn"
                       href="#lr-map-workshops"
                     >
-                      <span>{item.fields.CTA}</span>
+                      {item.fields.CTA}
                       <span aria-hidden="true">→</span>
                     </a>
-                  ) : linkToLocations && i === 2 ? (
-                    <a
-                      class="lr-button lr-button--secondary lr-format__btn"
-                      href="#lr-map-pickup"
-                    >
-                      <span>{item.fields.CTA}</span>
-                      <span aria-hidden="true">→</span>
-                    </a>
+                  ) : linkToLocations && item.format === "courier" ? (
+                    <LeadButton
+                      label={item.fields.CTA}
+                      source="formats:courier"
+                      format="courier"
+                      text
+                      class="lr-format__btn"
+                    />
                   ) : (
                     <LeadButton
                       label={item.fields.CTA}
                       source="formats"
-                      format={["mobile-lab", "workshop", "courier"][i]}
-                      class:list={[
-                        "lr-format__btn",
-                        !isFeatured && "lr-button--secondary",
-                      ]}
+                      format={item.format}
+                      text={compact || !isFeatured}
+                      class="lr-format__btn"
                     />
                   )}
                 </div>
@@ -165,82 +179,22 @@ const formatMeta = [
         })
       }
     </div>
-
-    <div class="lr-formats__trust">
-      <div class="lr-formats__trust-item">
-        <svg
-          class="lr-formats__trust-icon"
-          viewBox="0 0 20 20"
-          width="20"
-          height="20"
-          aria-hidden="true"
-          fill="none"
-        >
-          <path
-            d="M10 2L3 5V9.5C3 13.9 6 17.5 10 18.5C14 17.5 17 13.9 17 9.5V5L10 2Z"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"
-            stroke-linejoin="round"></path>
-          <path
-            d="M7 9.5L9 11.5L13 7.5"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"
-            stroke-linejoin="round"></path>
-        </svg>
-        <span>
-          <strong>Бесплатная диагностика 0 ₽</strong> — даже при отказе от ремонта
-        </span>
-      </div>
-      <div class="lr-formats__trust-item">
-        <svg
-          class="lr-formats__trust-icon"
-          viewBox="0 0 20 20"
-          width="20"
-          height="20"
-          aria-hidden="true"
-          fill="none"
-        >
-          <rect
-            x="3"
-            y="4"
-            width="14"
-            height="12"
-            rx="2"
-            stroke="currentColor"
-            stroke-width="1.8"></rect>
-          <path
-            d="M7 8H13M7 12H10"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"></path>
-        </svg>
-        <span>
-          <strong>Гарантия 1 год</strong> — фиксируем все работы в документах
-        </span>
-      </div>
-      <div class="lr-formats__trust-item">
-        <svg
-          class="lr-formats__trust-icon"
-          viewBox="0 0 20 20"
-          width="20"
-          height="20"
-          aria-hidden="true"
-          fill="none"
-        >
-          <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.8"
-          ></circle>
-          <path
-            d="M10 6V10L12.5 12.5"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"></path>
-        </svg>
-        <span>
-          <strong>Круглосуточный приём</strong> — консультируем без выходных 24/7
-        </span>
-      </div>
-    </div>
+    {
+      !compact && (
+        <div class="lr-formats__trust">
+          <p>
+            <strong>Диагностика в мастерской — 0 ₽.</strong> Даже при отказе от
+            ремонта.
+          </p>
+          <p>
+            <strong>Гарантия 1 год.</strong> Фиксируем все работы в документах.
+          </p>
+          <p>
+            <strong>Круглосуточный приём.</strong> Консультируем без выходных
+            24/7.
+          </p>
+        </div>
+      )
+    }
   </div>
 </section>

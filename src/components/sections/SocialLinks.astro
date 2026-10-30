@@ -1,7 +1,5 @@
 ---
 interface SocialChannel {
-  color: string;
-  gradient?: string;
   handle?: string;
   href?: string;
   iconPath: string;
@@ -28,7 +26,6 @@ const {
     {
       id: "vk",
       label: "ВКонтакте",
-      color: "#0077FF",
       href: "https://vk.com/lenremont",
       qrSrc: "/media/lr-qr-vk.svg",
       qrAlt: "QR-код VK",
@@ -39,7 +36,6 @@ const {
     {
       id: "telegram",
       label: "Telegram",
-      color: "#4BB3F7",
       href: "https://telegram.me/lenremont_bot",
       qrSrc: "/media/lr-qr-tg.svg",
       qrAlt: "QR-код Telegram",
@@ -50,11 +46,9 @@ const {
     {
       id: "max",
       label: "MAX",
-      color: "linear-gradient(135deg, #3568d4, #8736d1)",
       href: "https://max.ru/id471902475874_3_bot",
       qrSrc: "/media/lr-qr-max.svg",
       qrAlt: "QR-код MAX",
-      gradient: "linear-gradient(135deg, #3568d4, #8736d1)",
       viewBox: "0 0 24 24",
       fillRule: "evenodd",
       clipRule: "evenodd",
@@ -64,11 +58,9 @@ const {
     {
       id: "whatsapp",
       label: "WhatsApp",
-      color: "linear-gradient(135deg, #57D163, #23B33A)",
       href: "whatsapp://send?phone=78127023333",
       qrSrc: "/media/lr-qr-whatsapp.svg",
       qrAlt: "QR-код WhatsApp",
-      gradient: "linear-gradient(135deg, #57D163, #23B33A)",
       viewBox: "0 0 156 156",
       strokeWidth: 2,
       iconPath:
@@ -92,11 +84,7 @@ const {
             rel="noopener noreferrer"
             aria-label={`Написать ${channel.id === "vk" ? "во" : "в"} ${channel.label}`}
           >
-            <span
-              class="lr-social-links__icon"
-              style={`--lr-social-color: ${channel.color};`}
-              aria-hidden="true"
-            >
+            <span class="lr-social-links__icon" aria-hidden="true">
               <svg viewBox={channel.viewBox}>
                 <path
                   d={channel.iconPath}
@@ -110,30 +98,21 @@ const {
             <span>{channel.label}</span>
           </a>
           {channel.qrSrc && (
-            <details
-              class="lr-social-links__qr-disclosure"
-              data-lr-qr-disclosure
-              open
+            <a
+              class={"lr-social-links__qr lr-social-links__qr--" + channel.id}
+              href={channel.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Открыть ${channel.label} Ленремонта`}
             >
-              <summary>
-                QR-код <span aria-hidden="true">+</span>
-              </summary>
-              <a
-                class={"lr-social-links__qr lr-social-links__qr--" + channel.id}
-                href={channel.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Открыть ${channel.label} Ленремонта`}
-              >
-                <img
-                  src={channel.qrSrc}
-                  alt={`QR-код ${channel.label} Ленремонта`}
-                  width="256"
-                  height="256"
-                  loading="lazy"
-                />
-              </a>
-            </details>
+              <img
+                src={channel.qrSrc}
+                alt={`QR-код ${channel.label} Ленремонта`}
+                width="256"
+                height="256"
+                loading="lazy"
+              />
+            </a>
           )}
         </li>
       ))

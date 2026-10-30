@@ -1,0 +1,247 @@
+#hop-landing .lr-location-maps {
+  display: grid;
+  gap: var(--lr-space-40);
+}
+
+#hop-landing .lr-location-maps h3 {
+  margin-bottom: var(--lr-space-20);
+}
+
+#hop-landing .lr-location-map {
+  width: 100%;
+  height: 360px;
+  min-width: 0;
+  border: 1px solid var(--lr-color-border);
+  border-radius: var(--lr-radius);
+  background: var(--lr-color-surface);
+  scroll-margin-top: var(--lr-space-32);
+}
+
+#hop-landing .lr-location-map--pending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--lr-space-8);
+  height: 220px;
+  padding: var(--lr-space-24);
+  border-style: dashed;
+  text-align: center;
+}
+
+#hop-landing .lr-location-directory__verified {
+  max-width: 82ch;
+}
+
+#hop-landing .lr-workshop-grid {
+  display: grid;
+  gap: var(--lr-space-16) var(--lr-space-24);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#hop-landing .lr-workshop-card {
+  min-width: 0;
+  padding: var(--lr-space-20) var(--lr-space-24);
+  border: 1px solid var(--lr-color-border);
+  border-radius: var(--lr-radius);
+  background: var(--lr-color-surface);
+}
+
+#hop-landing .lr-workshop-card:has(.lr-workshop-card__media) {
+  display: grid;
+  gap: var(--lr-space-24);
+}
+
+#hop-landing .lr-workshop-card__body {
+  display: grid;
+  gap: var(--lr-space-8);
+  min-width: 0;
+}
+
+#hop-landing .lr-workshop-card__media {
+  margin: 0;
+}
+
+#hop-landing .lr-workshop-card__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--lr-radius);
+}
+
+#hop-landing .lr-workshop-card__media figcaption {
+  margin: 0;
+  padding-top: var(--lr-space-12);
+  color: var(--lr-color-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#hop-landing .lr-workshop-card__metro {
+  display: inline-block;
+  justify-self: start;
+  padding: 4px 10px;
+  border-radius: var(--lr-radius-pill);
+  background: var(--lr-color-bg);
+  border: 1px solid var(--lr-color-border);
+  color: var(--lr-color-text);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+#hop-landing .lr-workshop-card h4 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 28px;
+  overflow-wrap: anywhere;
+}
+
+#hop-landing .lr-workshop-card address {
+  color: var(--lr-color-muted);
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+}
+
+#hop-landing .lr-workshop-card__note,
+#hop-landing .lr-workshop-card__hours {
+  color: var(--lr-color-muted);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#hop-landing .lr-workshop-card__hours p {
+  margin-bottom: 4px;
+  color: var(--lr-color-text);
+  font-weight: 600;
+}
+
+#hop-landing .lr-workshop-card__hours ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#hop-landing .lr-workshop-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--lr-space-20);
+  padding-top: var(--lr-space-8);
+}
+
+#hop-landing .lr-workshop-card__links a,
+#hop-landing .lr-workshop-card__phone {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 14px;
+  line-height: 22px;
+  overflow-wrap: anywhere;
+  text-underline-offset: 4px;
+}
+
+#hop-landing .lr-workshop-directory-more {
+  margin-top: var(--lr-space-24);
+}
+
+#hop-landing .lr-workshop-directory-more summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+  padding: var(--lr-space-16) var(--lr-space-24);
+  border: 1px solid var(--lr-color-control-border);
+  border-radius: var(--lr-radius);
+  background: var(--lr-color-surface);
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  transition: border-color var(--lr-duration-fast);
+}
+
+#hop-landing .lr-workshop-directory-more summary::-webkit-details-marker {
+  display: none;
+}
+
+#hop-landing .lr-workshop-directory-more summary:focus-visible {
+  outline: 3px solid var(--lr-color-focus);
+  outline-offset: 2px;
+}
+
+#hop-landing .lr-workshop-directory-more summary::after {
+  content: "+";
+  font-size: 24px;
+  line-height: 1;
+}
+
+#hop-landing .lr-workshop-directory-more[open] summary::after {
+  content: "−";
+}
+
+#hop-landing .lr-workshop-directory-more .lr-workshop-grid {
+  margin-top: var(--lr-space-16);
+}
+
+#hop-landing .lr-location-offers {
+  display: grid;
+  gap: var(--lr-space-24);
+  padding: var(--lr-space-24);
+  border: 1px solid var(--lr-color-border);
+  border-radius: var(--lr-radius-large);
+  background: var(--lr-color-surface);
+}
+
+#hop-landing .lr-location-offers h3 {
+  margin-block: var(--lr-space-8) var(--lr-space-16);
+}
+
+#hop-landing .lr-location-offers p + p {
+  margin-top: var(--lr-space-16);
+}
+
+#hop-landing .lr-location-offers__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--lr-space-16) var(--lr-space-24);
+}
+
+#hop-landing .lr-location-pickup__steps {
+  display: grid;
+  gap: var(--lr-space-16);
+  margin: 0;
+  padding-left: var(--lr-space-24);
+  color: var(--lr-color-muted);
+}
+
+@media (min-width: 768px) {
+  #hop-landing .lr-workshop-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #hop-landing .lr-workshop-card:has(.lr-workshop-card__media) {
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    align-items: start;
+    gap: var(--lr-space-48);
+  }
+
+  #hop-landing .lr-location-offers {
+    padding: var(--lr-space-32);
+  }
+}
+
+@media (min-width: 1024px) {
+  #hop-landing .lr-locations--compact .lr-workshop-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #hop-landing .lr-locations--compact .lr-location-pickup .lr-location__header {
+    align-items: center;
+  }
+}

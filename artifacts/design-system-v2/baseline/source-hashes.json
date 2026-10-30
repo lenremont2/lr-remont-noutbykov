@@ -1,0 +1,32 @@
+{
+  "capturedAt": "2026-10-29T11:09:38.957Z",
+  "purpose": "Design-system migration baseline; content and route data must not change for visual migration.",
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "src/data/laptop-service.json",
+      "bytes": 48713,
+      "sha256": "3cb56f0706a6b96f11b13982944e154dfe0a5f8c36c04aed183c2e0edc4fafd3"
+    },
+    {
+      "path": "src/data/service-pages.json",
+      "bytes": 280529,
+      "sha256": "535721d1681a28d91339b476db0903814b85cd8f65ab74df83ca59fb64b7abe5"
+    },
+    {
+      "path": "src/data/reviews.json",
+      "bytes": 14857,
+      "sha256": "14bf1e1fadecb3cca03a340d02e5a84cc6a3abda479e12cfd55c3525973b4222"
+    },
+    {
+      "path": "src/data/workshops.json",
+      "bytes": 8985,
+      "sha256": "6af41aa91a77cb133fdb7a91769e3624daab172f90b242df695ba80bd6f3b33b"
+    },
+    {
+      "path": "src/data/service-pages.ts",
+      "bytes": 2619,
+      "sha256": "fe0ce646c63a5cca2cec11c93b3b919788c05d3a85602091d6dd819337e81e7d"
+    }
+  ]
+}

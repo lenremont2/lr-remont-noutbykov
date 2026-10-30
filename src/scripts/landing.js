@@ -91,7 +91,8 @@ export function initializeReviewSlider(slider) {
     const currentLeft = destination ?? track.scrollLeft;
     previous.disabled = currentLeft < 2;
     next.disabled = currentLeft >= end - 2;
-    position.textContent = `${start + 1}–${Math.min(cards.length, start + visible)} / ${cards.length}`;
+    if (position)
+      position.textContent = `${start + 1}–${Math.min(cards.length, start + visible)} / ${cards.length}`;
     cards.forEach((card, index) => {
       const active = index >= start && index < start + visible;
       if (card.dataset.lrReviewActive !== String(active)) {
@@ -273,35 +274,239 @@ export function initializeRepairQuiz(quiz, updateContext) {
   show(false);
 }
 
-function initializeLanding() {
+export function initializeQuizModal(root, onToggle = () => {}) {
+  const dialog = root.querySelector("[data-lr-quiz-modal]");
+  const home = root.querySelector("[data-lr-quiz-home]");
+  const quiz = home?.querySelector("[data-lr-quiz]");
+  if (!dialog || !quiz || typeof dialog.showModal !== "function") return;
+  const slot = dialog.querySelector("[data-lr-quiz-slot]");
+  let opener;
+  let originalMinHeight;
+  const outside = (event) => {
+    const box = dialog.getBoundingClientRect();
+    return (
+      event.clientX < box.left ||
+      event.clientX > box.right ||
+      event.clientY < box.top ||
+      event.clientY > box.bottom
+    );
+  };
+  root.addEventListener("click", (event) => {
+    const trigger = event.target.closest?.("[data-lr-quiz-open]");
+    if (!trigger || dialog.open) return;
+    event.preventDefault();
+    opener = trigger;
+    originalMinHeight = home.style.minHeight;
+    home.style.minHeight = `${home.getBoundingClientRect().height}px`;
+    slot.append(quiz);
+    dialog.showModal();
+    dialog.scrollTop = 0;
+    quiz
+      .querySelector(
+        "[data-lr-quiz-step]:not([hidden]) legend, [data-lr-quiz-step]:not([hidden]) h3",
+      )
+      ?.focus({ preventScroll: true });
+    onToggle();
+  });
+  dialog.querySelector("[data-lr-quiz-close]").addEventListener("click", () => {
+    dialog.close();
+  });
+  dialog.addEventListener("cancel", (event) => {
+    event.preventDefault();
+    dialog.close();
+  });
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog && outside(event)) dialog.close();
+  });
+  dialog.addEventListener("close", () => {
+    home.append(quiz);
+    home.style.minHeight = originalMinHeight;
+    opener?.focus({ preventScroll: true });
+    onToggle();
+  });
+  root.addEventListener(
+    "wheel",
+    (event) => {
+      if (dialog.open && outside(event)) event.preventDefault();
+    },
+    { passive: false },
+  );
+  root.addEventListener(
+    "touchmove",
+    (event) => {
+      if (dialog.open && event.target === dialog) event.preventDefault();
+    },
+    { passive: false },
+  );
+}
+
+export function normalizeServiceFormat(value) {
+  const aliases = { mobile: "mobile-lab", home: "at-home", center: "workshop" };
+  const format = aliases[value] || value;
+  return [
+    "mobile-lab",
+    "at-home",
+    "workshop",
+    "courier",
+    "consultation",
+  ].includes(format)
+    ? format
+    : "consultation";
+}
+
+// Only supplied context fields change; phone and visit preferences remain intact.
+export function applyLeadContext(form, context) {
+  for (const name of [
+    "service_format",
+    "symptom",
+    "device_category",
+    "source",
+  ]) {
+    if (context[name] === undefined) continue;
+    form.elements[name].value =
+      name === "service_format"
+        ? normalizeServiceFormat(context[name])
+        : context[name];
+  }
+}
+
+export function leadDeviceCategory(element) {
+  const category = element?.closest("[data-device-category]")?.dataset
+    .deviceCategory;
+  return ["standard", "premium"].includes(category) ? category : undefined;
+}
+
+export function updateVisitFields(form) {
+  const active = ["mobile-lab", "at-home"].includes(
+    form.elements.service_format.value,
+  );
+  form.querySelector("[data-lr-visit-fields]").hidden = !active;
+  for (const name of ["visit_address", "requested_repair_place"]) {
+    const field = form.elements[name];
+    field.disabled = !active;
+    field.required = active;
+    if (!active) field.removeAttribute("aria-invalid");
+  }
+  if (!active) {
+    form.querySelector("[data-lr-visit-address-error]").textContent = "";
+    form.querySelector("[data-lr-repair-place-error]").textContent = "";
+  }
+  if (active && !form.elements.requested_repair_place.value) {
+    form.elements.requested_repair_place.value =
+      form.elements.service_format.value === "at-home" ? "home" : "mobile-lab";
+  }
+}
+
+export function validateVisitFields(form, editedField = null) {
+  const address = form.elements.visit_address;
+  const place = form.elements.requested_repair_place;
+  const addressError =
+    !address.disabled && !address.value.trim()
+      ? "Укажите населённый пункт, улицу и дом для выезда."
+      : "";
+  const placeError =
+    !place.disabled &&
+    !["home", "work", "mobile-lab", "consultation"].includes(place.value)
+      ? "Выберите место ремонта или уточнение при звонке."
+      : "";
+  let invalid = null;
+  for (const [field, selector, error] of [
+    [address, "[data-lr-visit-address-error]", addressError],
+    [place, "[data-lr-repair-place-error]", placeError],
+  ]) {
+    if (
+      editedField &&
+      (field !== editedField || field.getAttribute("aria-invalid") !== "true")
+    )
+      continue;
+    form.querySelector(selector).textContent = error;
+    field.setAttribute("aria-invalid", String(Boolean(error)));
+    if (error && !invalid) invalid = field;
+  }
+  return invalid;
+}
+
+export function initializeHeroVideo(video) {
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  video.controls = false;
+  video.muted = true;
+  video.loop = true;
+  video.playsInline = true;
+  const updateVideo = () => {
+    video.autoplay = !reducedMotion.matches;
+    if (reducedMotion.matches) video.pause();
+    else video.play().catch(() => {});
+  };
+  updateVideo();
+  reducedMotion.addEventListener("change", updateVideo);
+}
+
+export function initializeVideoPlayer(player) {
+  const video = player.querySelector("[data-lr-player-video]");
+  const play = player.querySelector("[data-lr-player-play]");
+  if (!video || !play) return;
+  const showPreview = () => {
+    video.controls = false;
+    play.hidden = false;
+    play.disabled = false;
+  };
+  const showNativeControls = () => {
+    video.controls = true;
+    play.hidden = true;
+    play.disabled = false;
+  };
+  video.addEventListener("playing", showNativeControls);
+  video.addEventListener("ended", showPreview);
+  video.addEventListener("error", showNativeControls);
+  play.addEventListener("click", async () => {
+    play.disabled = true;
+    try {
+      await video.play();
+    } catch {
+      // Native controls remain available if playback cannot start.
+    }
+    showNativeControls();
+    video.focus();
+  });
+  showPreview();
+}
+
+export function initializeSignature(signature) {
+  if (
+    matchMedia("(prefers-reduced-motion: reduce)").matches ||
+    typeof IntersectionObserver === "undefined"
+  )
+    return;
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return;
+      signature.dataset.lrSignatureRevealed = "true";
+      observer.disconnect();
+    },
+    { threshold: 0.4 },
+  );
+  observer.observe(signature);
+}
+
+export function initializeLanding() {
   const root = document.querySelector("#hop-landing");
   if (!root || root.dataset.lrInitialized === "true") return;
   root.dataset.lrInitialized = "true";
+  initializeDesignConcept(root);
   initializePhoneMask(root);
   root
     .querySelectorAll("[data-lr-review-slider]")
     .forEach(initializeReviewSlider);
-  const compactSocial = matchMedia("(max-width: 599px)");
-  const updateQr = () => {
-    root.querySelectorAll("[data-lr-qr-disclosure]").forEach((details) => {
-      details.open = !compactSocial.matches;
-    });
-  };
-  updateQr();
-  compactSocial.addEventListener("change", updateQr);
   const heroVideo = root.querySelector("[data-lr-hero-video]");
-  if (heroVideo) {
-    const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
-    const updateVideo = () => {
-      heroVideo.autoplay = !reducedMotion.matches;
-      if (reducedMotion.matches) heroVideo.pause();
-      // If the browser blocks autoplay, the poster remains visible.
-      else heroVideo.play().catch(() => {});
-    };
-    updateVideo();
-    reducedMotion.addEventListener("change", updateVideo);
-  }
+  if (heroVideo) initializeHeroVideo(heroVideo);
+  root
+    .querySelectorAll("[data-lr-video-player]")
+    .forEach(initializeVideoPlayer);
+  root.querySelectorAll("[data-lr-signature]").forEach(initializeSignature);
   const modal = root.querySelector("[data-lr-modal=lead]");
+  // Editorial previews share this layout without the lead-form interface.
+  if (!modal) return;
+  const quizModal = root.querySelector("[data-lr-quiz-modal]");
   const modalForm = modal.querySelector("[data-lr-form]");
   const mobile = matchMedia("(max-width: 1023px)");
   const bar = root.querySelector("[data-lr-mobile-bar]");
@@ -309,6 +514,12 @@ function initializeLanding() {
   let heroGone = false;
   let contactVisible = false;
   let formFocused = false;
+  let leadContext = {
+    service_format: "consultation",
+    symptom: "",
+    device_category:
+      leadDeviceCategory(root.querySelector("[data-lr-page-context]")) || "",
+  };
   const modes = {
     consultation: [
       "Узнайте стоимость ремонта",
@@ -319,6 +530,11 @@ function initializeLanding() {
       "Вызовите мастерскую к дому или работе",
       "Уточним задачу и согласуем адрес и время приезда.",
       "Вызвать мастерскую",
+    ],
+    "at-home": [
+      "Вызовите мастера домой или в офис",
+      "Укажите адрес и пожелания. Согласуем возможность работ на месте и время приезда.",
+      "Вызвать мастера",
     ],
     courier: [
       "Передайте ноутбук курьеру",
@@ -337,12 +553,14 @@ function initializeLanding() {
       !heroGone ||
       contactVisible ||
       modal.open ||
+      quizModal?.open ||
       formFocused;
   };
   const updateContext = (form) => {
     const symptom = form.elements.symptom.value;
     const category = form.elements.device_category.value;
     const format = form.elements.service_format.value;
+    updateVisitFields(form);
     const labels = [];
     if (symptom) labels.push(`Неисправность: ${symptom}`);
     if (category)
@@ -351,14 +569,40 @@ function initializeLanding() {
       );
     if (format !== "consultation")
       labels.push(
-        `Способ ремонта: ${{ "mobile-lab": "Мастерская на колёсах", courier: "С доставкой курьером", workshop: "В сервисном центре" }[format]}`,
+        `Способ ремонта: ${{ "mobile-lab": "Мастерская на колёсах", "at-home": "Мастер дома или в офисе", courier: "С доставкой курьером", workshop: "В сервисном центре" }[format]}`,
       );
     form.querySelector("[data-lr-context]").hidden = labels.length === 0;
     form.querySelector("[data-lr-context-text]").textContent =
       labels.join(" · ");
-    form.querySelector("[data-lr-context-change]").hidden =
-      !symptom || Boolean(form.closest("[data-lr-quiz]"));
+    form.querySelector("[data-lr-context-change]").hidden = Boolean(
+      form.closest("[data-lr-quiz]"),
+    );
+    const symptomSelect = form.querySelector("[data-lr-symptom-select]");
+    if (
+      symptom &&
+      !Array.from(symptomSelect.options).some(
+        (option) => option.value === symptom,
+      )
+    ) {
+      symptomSelect.add(new Option(symptom, symptom));
+    }
     form.querySelector("[data-lr-symptom-select]").value = symptom;
+    form.querySelector("[data-lr-format-select]").value = format;
+    const workshop = format === "workshop";
+    form.querySelector("[data-lr-district]").hidden = !workshop;
+    form.elements.district.disabled = !workshop;
+  };
+  const shareContext = (context) => {
+    leadContext = { ...leadContext, ...context };
+    root.querySelectorAll("[data-lr-form]").forEach((form) => {
+      if (form.closest("[data-lr-quiz]")) return;
+      applyLeadContext(form, leadContext);
+      updateContext(form);
+    });
+    const [title, intro, submit] = modes[leadContext.service_format];
+    modal.querySelector("[data-lr-modal-title]").textContent = title;
+    modal.querySelector("[data-lr-modal-intro]").textContent = intro;
+    modalForm.querySelector("[data-hop-lead-submit]").textContent = submit;
   };
   const updatePhoneMode = (form) => {
     const phone = form.elements.phone;
@@ -369,12 +613,20 @@ function initializeLanding() {
   root.querySelectorAll("[data-lr-form]").forEach((form) => {
     form.querySelector("[data-hop-lead-submit]").disabled = false;
     updatePhoneMode(form);
+    updateVisitFields(form);
+    const recheckVisitField = (event) => {
+      if (event.target.matches("[data-lr-visit-field]"))
+        validateVisitFields(form, event.target);
+    };
+    form.addEventListener("input", recheckVisitField);
+    form.addEventListener("change", recheckVisitField);
     form.addEventListener(
       "submit",
       (event) => {
         const phone = form.elements.phone;
         const consent = form.elements.consent;
         const { value, error: phoneError } = validatePhone(phone.value);
+        const visitInvalid = validateVisitFields(form);
         const consentError = consent.checked
           ? ""
           : "Подтвердите согласие на обработку персональных данных.";
@@ -385,24 +637,29 @@ function initializeLanding() {
         consent.setAttribute("aria-invalid", String(Boolean(consentError)));
         const message = form.querySelector("[data-lr-form-message]");
         message.textContent = "";
-        if (phoneError || consentError) {
+        if (phoneError || visitInvalid || consentError) {
           event.preventDefault();
           event.stopImmediatePropagation();
-          (phoneError ? phone : consent).focus();
+          (phoneError ? phone : visitInvalid || consent).focus();
           return;
         }
         phone.value = formatPhone(value);
+        if (!form.elements.visit_address.disabled)
+          form.elements.visit_address.value =
+            form.elements.visit_address.value.trim();
         // The site's Lead Capture bridge owns submission and confirmed success.
       },
       { capture: true },
     );
   });
+  if (leadContext.device_category) shareContext({});
   root.querySelectorAll("[data-lr-nav]").forEach((nav) => {
     nav.open = !mobile.matches;
   });
   root
     .querySelectorAll("[data-lr-quiz]")
     .forEach((quiz) => initializeRepairQuiz(quiz, updateContext));
+  initializeQuizModal(root, updateBar);
   mobile.addEventListener("change", () => {
     root.querySelectorAll("[data-lr-form]").forEach(updatePhoneMode);
     root.querySelectorAll("[data-lr-nav]").forEach((nav) => {
@@ -417,30 +674,37 @@ function initializeLanding() {
     if (target.matches("[data-lr-lead-open]")) {
       event.preventDefault();
       opener = target;
-      const format = target.dataset.format || "consultation";
-      const [title, intro, submit] = modes[format];
-      modal.querySelector("[data-lr-modal-title]").textContent = title;
-      modal.querySelector("[data-lr-modal-intro]").textContent = intro;
-      modalForm.querySelector("[data-hop-lead-submit]").textContent = submit;
-      modalForm.elements.source.value = target.dataset.source;
-      modalForm.elements.service_format.value = format;
-      modalForm.elements.symptom.value = target.dataset.symptom || "";
-      modalForm.elements.device_category.value = "";
-      const workshop = format === "workshop";
-      modalForm.querySelector("[data-lr-district]").hidden = !workshop;
-      modalForm.elements.district.disabled = !workshop;
-      modalForm.querySelector("[data-lr-symptom-picker]").hidden = true;
+      const context = {};
+      const category = leadDeviceCategory(target);
+      if (category) context.device_category = category;
+      if (target.matches("[data-lr-selected-format]")) {
+        const selected = root.querySelector("[data-lr-service-format]:checked");
+        context.service_format = normalizeServiceFormat(selected?.value);
+      } else if (target.dataset.format !== undefined) {
+        context.service_format = normalizeServiceFormat(target.dataset.format);
+      }
+      if (target.dataset.symptom !== undefined)
+        context.symptom = target.dataset.symptom;
+      shareContext(context);
+      applyLeadContext(modalForm, {
+        source: target.dataset.source || "contact",
+      });
+      modalForm.querySelector("[data-lr-context-picker]").hidden = true;
+      modalForm
+        .querySelector("[data-lr-context-change]")
+        .setAttribute("aria-expanded", "false");
       updateContext(modalForm);
       modal.showModal();
       modalForm.elements.phone.focus();
       updateBar();
     } else if (target.matches("[data-lr-modal-close]")) {
-      modal.close();
+      (target.closest("[data-lr-quiz-modal]") || modal).close();
     } else if (target.matches("[data-lr-context-change]")) {
       const picker = target
         .closest("form")
-        .querySelector("[data-lr-symptom-picker]");
+        .querySelector("[data-lr-context-picker]");
       picker.hidden = !picker.hidden;
+      target.setAttribute("aria-expanded", String(!picker.hidden));
       if (!picker.hidden) picker.querySelector("select").focus();
     } else if (target.matches("[data-lr-digit]")) {
       const form = target.closest("form");
@@ -471,10 +735,24 @@ function initializeLanding() {
       root.querySelector("[data-lr-nav]").open = !mobile.matches;
   });
   root.addEventListener("change", (event) => {
+    if (event.target.matches("[data-lr-service-format]")) {
+      const value = event.target.value;
+      shareContext({ service_format: normalizeServiceFormat(value) });
+    }
+    if (event.target.matches("[data-lr-format-select]")) {
+      const form = event.target.closest("form");
+      const format = normalizeServiceFormat(event.target.value);
+      if (form.closest("[data-lr-quiz]")) {
+        applyLeadContext(form, { service_format: format });
+        updateContext(form);
+      } else shareContext({ service_format: format });
+    }
     if (event.target.matches("[data-lr-symptom-select]")) {
       const form = event.target.closest("form");
-      form.elements.symptom.value = event.target.value;
-      updateContext(form);
+      if (form.closest("[data-lr-quiz]")) {
+        applyLeadContext(form, { symptom: event.target.value });
+        updateContext(form);
+      } else shareContext({ symptom: event.target.value });
     }
   });
   root.addEventListener("focusin", (event) => {
@@ -565,4 +843,36 @@ if (typeof document !== "undefined") {
       once: true,
     });
   else initializeLanding();
+}
+
+export function initializeDesignConcept(root) {
+  const concept = root.querySelector("[data-lr-concept]");
+  if (!concept) return;
+  concept.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-lr-concept-view-button]");
+    if (!button) return;
+    const selected = button.dataset.lrConceptViewButton;
+    concept.querySelectorAll("[data-lr-concept-view]").forEach((view) => {
+      view.hidden = view.dataset.lrConceptView !== selected;
+    });
+    concept
+      .querySelectorAll("[data-lr-concept-view-button]")
+      .forEach((item) => {
+        item.setAttribute("aria-pressed", String(item === button));
+      });
+  });
+  concept.addEventListener("change", (event) => {
+    const radio = event.target.closest("[data-lr-concept-format]");
+    if (!radio) return;
+    concept
+      .querySelectorAll("[data-lr-concept-format-view]")
+      .forEach((view) => {
+        view.hidden = view.dataset.lrConceptFormatView !== radio.value;
+      });
+    concept
+      .querySelectorAll("[data-lr-concept-format-description]")
+      .forEach((text) => {
+        text.hidden = text.dataset.lrConceptFormatDescription !== radio.value;
+      });
+  });
 }

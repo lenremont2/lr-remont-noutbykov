@@ -3,45 +3,254 @@ import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
 import LeadButton from "../ui/LeadButton.astro";
 import { pagePath } from "../../data/service-pages";
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
 const c = copy.symptoms;
 const prices = copy.prices.tables.flat();
+const priceByWork = (
+  work: string | null,
+  fallback = "Бесплатная диагностика",
+) => (work && prices.find(([name]) => name === work)?.[1]) || fallback;
+const secondarySymptom = c.items.find(
+  (item) => item.slug === "remont-cd-dvd-privoda-noutbuka",
+);
+const primarySymptoms = c.items.filter((item) => item !== secondarySymptom);
+const serviceGroups = [
+  {
+    title: "Поломка",
+    image: "/media/failure-no-power.webp",
+    detail: "Не включается, залит или повреждён",
+    href: "/noutbuk-ne-vklyuchaetsya.htm",
+  },
+  {
+    title: "Программы и настройка",
+    image: "/media/failure-software.webp",
+    detail: "Ошибки системы, зависания, вирусы",
+    href: "/noutbuk-tormozit-ne-zagruzhaetsya.htm",
+  },
+  {
+    title: "Ускорение и апгрейд",
+    image: "/media/laptop-board-diagnostics.webp",
+    detail: "SSD, память и перенос системы",
+    href: "/noutbuk-tormozit-ne-zagruzhaetsya.htm#lr-next",
+  },
+  {
+    title: "Чистка и перегрев",
+    image: "/media/failure-overheating.webp",
+    detail: "Шум, нагрев и выключения под нагрузкой",
+    href: "/noutbuk-peregrevaetsya.htm",
+  },
+];
+const modernFaults = [
+  {
+    category: "Питание и порты",
+    title: "Не заряжается по USB Type-C / Power Delivery",
+    detail:
+      "Ноутбук не видит кабель Type-C, не выводит изображение на внешний монитор через док-станцию или расшатано гнездо. Проверяем контроллеры PD и меняем разъём с заводской пайкой.",
+    priceWork: "Замена повреждённого разъёма зарядки",
+    href: "/remont-razemov-noutbuka.htm",
+  },
+  {
+    category: "Батарея и автономность",
+    title: "Вздулся аккумулятор или приподнялся тачпад",
+    detail:
+      "Выпирает нижняя крышка, трекпад перестал нажиматься, ноутбук отключается на 20–40% заряда или работает только от розетки. Безопасно снимем вздутую батарею и проверим контроллер заряда.",
+    priceWork: "Установка нового аккумулятора",
+    href: "/noutbuk-ne-zaryazhaetsya.htm",
+  },
+  {
+    category: "Корпус и шарниры",
+    title: "Вырваны петли, туго открывается или хрустит крышка",
+    detail:
+      "При открытии крышки расходится пластик корпуса, перекашивается рамка матрицы или заклинило шарнир. Восстанавливаем посадочные бонки, регулируем усилие петель и защищаем шлейф экрана.",
+    priceWork: null,
+    href: "/remont-ekrana-noutbuka.htm",
+  },
+  {
+    category: "Охлаждение и термоинтерфейс",
+    title: "Троттлинг, перегрев и смещение жидкого металла",
+    detail:
+      "Кулеры гудят на максимуме, падает частота процессора в играх и рендере, корпус обжигает руки. Очищаем радиаторы, меняем высохшую пасту, фазовый переход или термопрокладки VRM.",
+    priceWork: "Очистка охлаждения с обновлением термоинтерфейсов",
+    href: "/noutbuk-peregrevaetsya.htm",
+  },
+  {
+    category: "Прошивка и загрузка",
+    title: "Чёрный экран после автообновления BIOS / UEFI",
+    detail:
+      "После перезагрузки горят индикаторы и подсветка клавиатуры, вентиляторы крутятся, но экран тёмный или ноутбук уходит в циклическую перезагрузку. Восстанавливаем дамп BIOS на программаторе.",
+    priceWork: "Восстановление прошивки BIOS",
+    href: "/noutbuk-ne-vklyuchaetsya.htm",
+  },
+  {
+    category: "Графика и видеопамять",
+    title: "Артефакты на экране, полосы и сбой видеочипа (GPU)",
+    detail:
+      "Появляется «шахматка», код ошибки 43 в диспетчере устройств, гаснет экран под 3D-нагрузкой или изображение видно только с фонариком. Диагностируем видеоядро, банки памяти и подсветку.",
+    priceWork: "Восстановление системной платы",
+    href: "/remont-ekrana-noutbuka.htm",
+  },
+  {
+    category: "Цепи питания платы",
+    title: "Короткое замыкание на плате и прогар контроллеров",
+    detail:
+      "Ноутбук не реагирует на кнопку включения, гаснет индикатор на блоке питания при подключении штекера. Локализуем пробитые мосфеты, ШИМ-контроллеры и восстанавливаем линии питания.",
+    priceWork: "Восстановление системной платы",
+    href: "/noutbuk-ne-vklyuchaetsya.htm",
+  },
+  {
+    category: "Экстренная помощь",
+    title: "Залитие клавиатуры и коррозия материнской платы",
+    detail:
+      "Пролили воду, чай или кофе? Даже если ноутбук включился, под микросхемами начинается электрохимическое окисление дорожек. Отключаем питание и промываем плату в ультразвуковой ванне.",
+    priceWork: "Ремонт после попадания жидкости",
+    href: "/remont-noutbuka-posle-zalitiya.htm",
+  },
+  {
+    category: "Накопители и данные",
+    title: "Не видит SSD NVMe, ошибка загрузки или BitLocker",
+    detail:
+      "Открывается окно BIOS вместо системы, синий экран (BSOD) или недоступен раздел с рабочими файлами. Проверяем здоровье накопителя и бережно переносим пользовательские данные.",
+    priceWork: "Восстановление файлов или перенос данных",
+    href: "/noutbuk-tormozit-ne-zagruzhaetsya.htm",
+  },
+  {
+    category: "Модернизация",
+    title: "Не хватает памяти и скорости: апгрейд SSD M.2 и ОЗУ",
+    detail:
+      "Долго открываются браузер, 1С и рабочие программы, заполнен системный диск. Установим быстрый NVMe-накопитель, добавим оперативную память DDR4/DDR5 и перенесём систему без потери данных.",
+    priceWork: "Увеличение или замена оперативной памяти",
+    href: "/noutbuk-tormozit-ne-zagruzhaetsya.htm#lr-next",
+  },
+  {
+    category: "Устройства ввода",
+    title: "Залипают клавиши в топкейсе или не работает тачпад",
+    detail:
+      "Не печатает часть клавиш, хрустит механизм или курсор двигается рывками. Меняем как съёмные клавиатуры, так и впаянные в верхнюю панель (топкейс) модули современных ультрабуков.",
+    priceWork: "Установка новой клавиатуры",
+    href: "/remont-klaviatury-noutbuka.htm",
+  },
+  {
+    category: "Связь и периферия",
+    title: "Пропадает Wi-Fi, Bluetooth, звук или веб-камера",
+    detail:
+      "Отключается беспроводная сеть, хрипят динамики, не работает микрофон или камера на созвонах. Проверяем модуль связи, антенные коаксиальные кабели в крышке экрана, аудиокодек и драйверы.",
+    priceWork: "Переустановка Windows и драйверов",
+    href: "/noutbuk-tormozit-ne-zagruzhaetsya.htm",
+  },
+];
 ---
 
-<section id="lr-symptoms" class="lr-section lr-symptoms">
+<section
+  id="lr-symptoms"
+  class:list={["lr-section lr-symptoms", { "lr-symptoms--compact": compact }]}
+>
   <div class="lr-container">
     <SectionHeading title={c.fields.H2} lead={c.fields["Лид"]} />
-    <div class="lr-symptoms__grid">
-      {
-        c.items.map((item) => (
-          <a class="lr-symptom" href={pagePath(item)}>
-            <img
-              class="lr-symptom__image"
-              src={item.image}
-              alt={item.imageAlt}
-              width="768"
-              height="512"
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="lr-symptom__body">
-              <h3>{item.title}</h3>
-              <p class="lr-symptom__price">
-                {prices.find(([work]) => work === item.priceWork)?.[1] ??
-                  "Бесплатная диагностика"}
-              </p>
-            </div>
-          </a>
-        ))
-      }
+    <div class="lr-symptoms__catalog">
+      <nav
+        class="lr-symptoms__groups"
+        aria-label="Направления помощи с ноутбуком"
+      >
+        {
+          serviceGroups.map((group) => (
+            <a class="lr-symptoms__group" href={group.href}>
+              {compact && (
+                <img
+                  src={group.image}
+                  alt=""
+                  width="768"
+                  height="512"
+                  loading="lazy"
+                  decoding="async"
+                />
+              )}
+              <strong>{group.title}</strong>
+              {!compact && <span>{group.detail}</span>}
+            </a>
+          ))
+        }
+      </nav>
+      <div class="lr-symptoms__grid">
+        {
+          primarySymptoms.map((item) => (
+            <a class="lr-symptom" href={pagePath(item)}>
+              <img
+                class="lr-symptom__image"
+                src={item.image}
+                alt={item.imageAlt}
+                width="768"
+                height="512"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="lr-symptom__body">
+                <h3>{item.title}</h3>
+                {!compact && (
+                  <p class="lr-symptom__price">{priceByWork(item.priceWork)}</p>
+                )}
+              </div>
+            </a>
+          ))
+        }
+      </div>
     </div>
-    <div class="lr-section-note">
-      <p>
-        В рекламе часто обещают «выезд 0 ₽, ремонт от 200 ₽», а после разборки
-        требуют 15 000–25 000 ₽ за сборку. В Ленремонте вы защищены официальным
-        договором: точная смета фиксируется ДО начала работ, оплата — строго
-        после вашей проверки, а все заменённые детали возвращаются вам.
-      </p>
-      <LeadButton label="Узнать стоимость ремонта" source="symptoms-other" />
-    </div>
+    {
+      !compact && (
+        <div class="lr-symptoms__modern">
+          <div class="lr-symptoms__modern-header">
+            <h3>Актуальные неисправности современных ноутбуков</h3>
+            <p>
+              Тонкие ультрабуки, игровые модели, рабочие станции и MacBook чаще
+              всего требуют ремонта из-за перегрева плотной компоновки, пробоя
+              цепей быстрой зарядки USB Type-C и износа корпусных шарниров.
+              Выберите симптом, чтобы посмотреть порядок диагностики и ориентир
+              по стоимости работ.
+            </p>
+          </div>
+          <div class="lr-symptoms__modern-grid">
+            {modernFaults.map((fault) => (
+              <a class="lr-symptoms__modern-card" href={fault.href}>
+                <div class="lr-symptoms__modern-top">
+                  <span class="lr-symptoms__modern-tag">{fault.category}</span>
+                  <h4>{fault.title}</h4>
+                  <p>{fault.detail}</p>
+                </div>
+                <div class="lr-symptoms__modern-footer">
+                  <span class="lr-symptoms__modern-price">
+                    {priceByWork(
+                      fault.priceWork,
+                      "Диагностика в мастерской — 0 ₽",
+                    )}
+                  </span>
+                  <span class="lr-symptoms__modern-link">Подробнее →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )
+    }
+    {
+      secondarySymptom && (
+        <p class="lr-symptoms__secondary">
+          Для ноутбуков с дисководом:{" "}
+          <a href={pagePath(secondarySymptom)}>ремонт CD/DVD-привода</a>.
+        </p>
+      )
+    }
+    {
+      !compact && (
+        <div class="lr-section-note">
+          <p>{c.fields["Пояснение цены"]}</p>
+          <LeadButton
+            label="Узнать стоимость ремонта"
+            source="symptoms-other"
+          />
+        </div>
+      )
+    }
   </div>
 </section>

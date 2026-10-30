@@ -3,6 +3,7 @@
   max-height: calc(100dvh - 32px);
   margin: auto;
   padding: 0;
+  overflow-y: auto;
   border: 0;
   border-radius: var(--lr-radius-large);
   background: var(--lr-color-surface);
@@ -37,7 +38,15 @@
   background: var(--lr-color-surface);
   color: var(--lr-color-text);
   font-size: 28px;
+  cursor: pointer;
   z-index: 1;
+  transition:
+    background-color var(--lr-duration-fast),
+    border-color var(--lr-duration-fast);
+}
+#hop-landing .lr-modal__close:hover {
+  background: var(--lr-color-surface-alt);
+  border-color: var(--lr-color-control-border);
 }
 #hop-landing .lr-modal__intro {
   margin-bottom: 24px;

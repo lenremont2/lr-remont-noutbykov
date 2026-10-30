@@ -4,6 +4,26 @@ import reviews from "../../data/reviews.json";
 import ReviewCard from "../ui/ReviewCard.astro";
 import SectionHeading from "../ui/SectionHeading.astro";
 const c = copy.reviews.fields;
+interface Aggregator {
+  name: string;
+  url: string;
+  rating: number;
+  ratingCount: number;
+}
+const { aggregators = [] } = reviews as typeof reviews & {
+  aggregators?: Aggregator[];
+};
+const ratingValue = (rating: number) =>
+  rating.toLocaleString("ru-RU", {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 1,
+  });
+const countLabel = (count: number) => {
+  const last = count % 10;
+  const lastTwo = count % 100;
+  if (lastTwo >= 11 && lastTwo <= 14) return "оценок";
+  return last === 1 ? "оценка" : last >= 2 && last <= 4 ? "оценки" : "оценок";
+};
 ---
 
 <section
@@ -15,12 +35,6 @@ const c = copy.reviews.fields;
     <div class="lr-reviews__header">
       <SectionHeading title={c.H2} />
       <div class="lr-reviews__controls" data-lr-review-controls hidden>
-        <span
-          class="lr-reviews__position"
-          data-lr-review-position
-          aria-live="polite"
-          aria-atomic="true">{reviews.items.length} отзыва</span
-        >
         <button
           class="lr-reviews__arrow"
           type="button"
@@ -66,6 +80,52 @@ const c = copy.reviews.fields;
         </button>
       </div>
     </div>
+    {
+      aggregators.length > 0 && (
+        <ul class="lr-reviews__ratings" aria-label="Рейтинги на площадках">
+          {aggregators.map((item) => (
+            <li>
+              <div class="lr-reviews__rating-card">
+                <strong class="lr-reviews__rating-value">
+                  <span class="lr-visually-hidden">Рейтинг </span>
+                  {ratingValue(item.rating)}
+                  <span class="lr-visually-hidden"> из 5</span>
+                </strong>
+                <span class="lr-reviews__rating-stars" aria-hidden="true">
+                  {Array.from({ length: 5 }, () => (
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3Z" />
+                    </svg>
+                  ))}
+                </span>
+                <span class="lr-reviews__rating-source">
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    {item.name}
+                  </a>
+                  <span aria-hidden="true"> · </span>
+                  <span class="lr-reviews__rating-count">
+                    {item.ratingCount.toLocaleString("ru-RU")}{" "}
+                    {countLabel(item.ratingCount)}
+                  </span>
+                </span>
+              </div>
+            </li>
+          ))}
+          <li>
+            <div class="lr-reviews__rating-card lr-reviews__award">
+              <strong class="lr-reviews__rating-value">2026</strong>
+              <span class="lr-reviews__award-title">Рейтинг брендов</span>
+              <span class="lr-reviews__rating-source">Деловой Петербург</span>
+            </div>
+          </li>
+        </ul>
+      )
+    }
   </div>
   <div class="lr-reviews__stage">
     <div
@@ -79,7 +139,7 @@ const c = copy.reviews.fields;
       class="lr-reviews__track"
       data-lr-review-track
       role="region"
-      aria-label="Отзывы о ремонте ноутбуков, листайте влево и вправо"
+      aria-label="Отзывы клиентов Ленремонта, листайте влево и вправо"
       aria-roledescription="карусель"
       tabindex="0"
     >

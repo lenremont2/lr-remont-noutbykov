@@ -1,0 +1,62 @@
+[
+  {
+    "director": 265,
+    "overflow": false,
+    "prices": [
+      {
+        "scroll": 239,
+        "width": 239
+      },
+      {
+        "scroll": 239,
+        "width": 239
+      }
+    ],
+    "width": 320
+  },
+  {
+    "director": 335,
+    "overflow": false,
+    "prices": [
+      {
+        "scroll": 309,
+        "width": 309
+      },
+      {
+        "scroll": 309,
+        "width": 309
+      }
+    ],
+    "width": 390
+  },
+  {
+    "director": 689,
+    "overflow": false,
+    "prices": [
+      {
+        "scroll": 639,
+        "width": 639
+      },
+      {
+        "scroll": 639,
+        "width": 639
+      }
+    ],
+    "width": 768
+  },
+  {
+    "director": 1254,
+    "overflow": false,
+    "prices": [
+      {
+        "scroll": 1204,
+        "width": 1204
+      },
+      {
+        "scroll": 1204,
+        "width": 1204
+      }
+    ],
+    "width": 1440
+  }
+]

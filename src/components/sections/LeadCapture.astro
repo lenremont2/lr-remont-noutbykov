@@ -8,18 +8,19 @@ interface Props {
   title?: string;
   lead?: string;
   serviceName?: string;
+  compactChannels?: boolean;
 }
 const {
   title = c.H2,
   lead = c["Лид"],
   serviceName = "Ремонт ноутбуков",
+  compactChannels = false,
 } = Astro.props;
 ---
 
 <section id="lr-contact" class="lr-section lr-contact">
   <div class="lr-container lr-contact__grid">
     <div class="lr-contact__copy">
-      <p class="lr-eyebrow">{c["Надзаголовок"]}</p>
       <h2>{title}</h2>
       <p class="lr-lead">{lead}</p>
     </div>
@@ -33,11 +34,19 @@ const {
       />
     </div>
     <div class="lr-contact__channels">
-      <p class="lr-caption">{c["Подпись телефона"]}</p>
+      <p class="lr-caption">
+        {compactChannels ? "Позвоните нам по телефону" : c["Подпись телефона"]}
+      </p>
       <a class="lr-contact__phone" href="tel:+78123444444">{c["Телефон"]}</a>
-      <p class="lr-caption">{c["Подпись режима"]}</p>
+      {!compactChannels && <p class="lr-caption">{c["Подпись режима"]}</p>}
     </div>
-    <SocialLinks />
+    {
+      compactChannels ? (
+        <SocialLinks title="Или напишите нам в мессенджере" text="" />
+      ) : (
+        <SocialLinks />
+      )
+    }
   </div>
 </section>
 <LeadModal

@@ -1,0 +1,29 @@
+Concluding production acceptance — final CSS with local fonts and cleaned Benefits/RepairTimeline, 2026-10-29.
+
+Command: npm run quality
+Result: exit 0; Astro check 74 files, 0 errors / 0 warnings / 0 hints; Prettier PASS; static build 56 pages completed at 16:21:47 Europe/Moscow.
+Raw output: quality.log
+
+Command: node --test tests/*.test.mjs
+Result: exit 0; 14 tests / 14 pass / 0 fail / 0 skipped after the final build.
+Raw output: tests.log
+
+Source audit: 0 unscoped production selectors, 0 nested production custom properties, 4 isolated LR Golos Text font-face at-rules. Local WOFF2 total: 96848 bytes; OFL present and unchanged.
+Baseline data: 4 original files unchanged. laptop-service.json differs only in process.items[0].text, process.items[2].text and faq.items[0].text; reversing these three approved copy strings restores the complete original SHA-256.
+Raw output: source-audit.log
+Source snapshot and freeze: source-files-sha256.log, source-freeze.log; 102 src files, local fonts and OFL verified unchanged throughout the final measurements. Dependency manifest and lockfile unchanged.
+
+Independent generated-output audit: 51 production routes; 49 distinct detail H1/Service JSON-LD records; one H1/root per route; matching canonicals; 104 forms with 11 named fields each; 2712 local media references; 51 local Cyrillic font preloads; 0 external Google font references; 5 noindex previews; 3 CSS bundles / 1423 scoped rules plus 4 font-face at-rules; 0 failures.
+Raw output: dist-audit.log
+
+Final performance-only Lighthouse 13.5.0 / Chrome 156 lab series:
+- Same baseline configuration, fresh temporary headless profile for each run; 3 mobile and 3 desktop runs; simulated throttling. No IAB or user profile used.
+- Mobile: LCP median 2182ms, range 2114–2197ms; CLS 0; TBT median 212ms.
+- Desktop: LCP median 495ms, range 492–496ms; CLS 0; TBT 0.
+- Internal LCP<=2500ms and CLS<=0.1 targets hold in all six final runs. All six have no run warnings or runtime errors.
+- Baseline mobile LCP median 2942ms; final median 2182ms. TBT increases from 27.5 to 212ms and remains explicitly reported; it is not field INP.
+- Observed trace LCP stays separate from reported simulated LCP. No claim that every diagnostic metric improved.
+Reports: performance-final.json, performance-final-comparison.json, lighthouse-final-{mobile,desktop}-{1,2,3}.json.
+Historical baseline and intermediate after-font reports remain unchanged.
+
+Technical acceptance made no production source edits. Browser visual/keyboard/reflow verification belongs to root. Real request delivery, full screen-reader/WCAG certification and field LCP/INP/CLS remain outside these local technical measurements.

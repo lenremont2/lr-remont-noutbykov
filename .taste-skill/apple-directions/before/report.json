@@ -1,0 +1,998 @@
+{
+  "url": "http://127.0.0.1:4322/style-review/",
+  "at": "2026-10-29T09:29:03.308Z",
+  "allow": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "load": "load",
+      "screens": 4,
+      "filled": [0.32, 0.33, 0.24, 0.19],
+      "motion": {
+        "elements": 0,
+        "css": 0,
+        "transitions": 0,
+        "scripted": 0,
+        "videos": 0,
+        "playingVideos": 0
+      },
+      "metrics": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "page": {
+          "height": 2806,
+          "screens": 3.1,
+          "words": 264,
+          "img": 1,
+          "video": 0,
+          "canvas": 0,
+          "svg": 0,
+          "sections": 3,
+          "horizontalOverflow": 0,
+          "overflowCulprits": [],
+          "uiFragments": 0,
+          "uiAbuse": false,
+          "realPictures": 1,
+          "videoCount": 0,
+          "uiPictures": 0,
+          "pictureSamples": ["workshop-mobile-engineer-720.webp"],
+          "blendText": 0,
+          "sideScrollers": 0,
+          "brokenImages": [],
+          "emoji": [],
+          "videosNoPoster": 0
+        },
+        "hero": {
+          "text": "Ремонт ноутбуков",
+          "words": 2,
+          "chars": 16,
+          "lines": 1,
+          "size": 76,
+          "vw": 5.3,
+          "font": "Golos Text",
+          "weight": 500,
+          "tracking": -0.04,
+          "leading": 1.1,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "center",
+          "position": "center",
+          "widthRatio": 0.88,
+          "top": 148,
+          "tag": "h1",
+          "kind": "heading"
+        },
+        "h1": {
+          "text": "Ремонт ноутбуков",
+          "words": 2,
+          "lines": 1,
+          "size": 76,
+          "font": "Golos Text"
+        },
+        "headings": [
+          {
+            "text": "Ремонт ноутбуков",
+            "words": 2,
+            "chars": 16,
+            "lines": 1,
+            "size": 76,
+            "vw": 5.3,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.04,
+            "leading": 1.1,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "center",
+            "position": "center",
+            "widthRatio": 0.88,
+            "top": 148,
+            "tag": "h1",
+            "kind": "heading"
+          },
+          {
+            "text": "Мастерская приезжает к вам",
+            "words": 4,
+            "chars": 26,
+            "lines": 2,
+            "size": 28,
+            "vw": 1.9,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.025,
+            "leading": 1.15,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.22,
+            "top": 510,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Опыт клиентов",
+            "words": 2,
+            "chars": 13,
+            "lines": 1,
+            "size": 40,
+            "vw": 2.8,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.025,
+            "leading": 1.15,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.44,
+            "top": 1052,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "4,4 / 5",
+            "words": 3,
+            "chars": 7,
+            "lines": 1,
+            "size": 32,
+            "vw": 2.2,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": 0,
+            "leading": 0.88,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.05,
+            "top": 1247,
+            "tag": "strong",
+            "kind": "heading"
+          },
+          {
+            "text": "4,5 / 5",
+            "words": 3,
+            "chars": 7,
+            "lines": 1,
+            "size": 32,
+            "vw": 2.2,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": 0,
+            "leading": 0.88,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.05,
+            "top": 1364,
+            "tag": "strong",
+            "kind": "heading"
+          },
+          {
+            "text": "Понятно до начала работ",
+            "words": 4,
+            "chars": 23,
+            "lines": 1,
+            "size": 40,
+            "vw": 2.8,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.025,
+            "leading": 1.15,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.44,
+            "top": 1869,
+            "tag": "h2",
+            "kind": "heading"
+          }
+        ],
+        "headingSummary": {
+          "count": 6,
+          "maxLines": 2,
+          "over2Lines": 0,
+          "statements": 0,
+          "centered": 1,
+          "medianWords": 3,
+          "mixedFontHeadings": 0
+        },
+        "type": {
+          "families": [
+            {
+              "family": "Golos Text",
+              "share": 1,
+              "mono": false
+            }
+          ],
+          "familyCount": 1,
+          "sizes": [14, 16, 18, 20, 24, 28, 32, 40, 76],
+          "sizeCount": 9,
+          "notLoaded": [],
+          "body": {
+            "font": "Golos Text",
+            "size": 18,
+            "leading": 1.6,
+            "weight": 400,
+            "tracking": 0,
+            "contrast": 14.6
+          },
+          "measureChars": 45,
+          "max": {
+            "size": 76,
+            "vw": 5.3,
+            "font": "Golos Text",
+            "text": "Ремонт ноутбуков"
+          },
+          "monoShare": 0,
+          "monoProseShare": 0,
+          "monoFamilies": [],
+          "monoSamples": [],
+          "microLabels": 0,
+          "microLabelShare": 0,
+          "microSamples": [],
+          "upperShare": 0,
+          "centerShare": 0.08,
+          "smallText": 0
+        },
+        "eyebrows": [],
+        "numbered": [],
+        "color": {
+          "bodyBg": "#ffffff",
+          "bodyBgHsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          },
+          "dark": false,
+          "sectionBgs": [
+            {
+              "color": "#fdfcf9",
+              "top": 0,
+              "hsl": {
+                "h": 45,
+                "s": 0.5,
+                "l": 0.98
+              }
+            },
+            {
+              "color": "#ffffff",
+              "top": 0,
+              "hsl": {
+                "h": 0,
+                "s": 0,
+                "l": 1
+              }
+            }
+          ],
+          "textColors": [
+            {
+              "color": "#172a40",
+              "share": 0.84
+            },
+            {
+              "color": "#526274",
+              "share": 0.16
+            },
+            {
+              "color": "#cb9834",
+              "share": 0
+            }
+          ],
+          "button": {
+            "bg": "#e9b956",
+            "hsl": {
+              "h": 40,
+              "s": 0.77,
+              "l": 0.63
+            },
+            "fg": "#172a40"
+          },
+          "lowContrast": []
+        },
+        "buttons": {
+          "count": 2,
+          "inHero": 1,
+          "radius": 8,
+          "height": 60,
+          "withShadow": 0,
+          "withGradient": 0,
+          "mono": 0,
+          "upper": 0,
+          "heroLabels": ["Узнать стоимость ремонта"]
+        },
+        "surfaces": {
+          "shadowStatic": 0,
+          "shadowOverlay": 0,
+          "shadowSamples": [],
+          "gradients": 0,
+          "scrims": 0,
+          "gradientSamples": [],
+          "gradientText": 0,
+          "hairlines": 0,
+          "hairlineSamples": [],
+          "outlinedBoxes": 0,
+          "dashed": 0,
+          "blurred": 0,
+          "roundedBoxes": 2,
+          "boxRadius": 8,
+          "squareMedia": 0,
+          "roundedMedia": 1,
+          "mediaRadius": 8,
+          "textShadow": 0,
+          "cardRows": []
+        },
+        "heroMedia": [
+          {
+            "type": "img",
+            "ratio": 0.16
+          }
+        ],
+        "nav": {
+          "links": 1,
+          "fixed": false,
+          "height": 84,
+          "floatingPill": false,
+          "blur": false
+        },
+        "fontsLoaded": ["golos text"]
+      },
+      "layout": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "pageH": 2806,
+        "margins": {
+          "left": 296,
+          "right": 296
+        },
+        "sections": [
+          {
+            "sel": "section.lr-container.lr-style-review__hero",
+            "tag": "section",
+            "top": 84,
+            "height": 856,
+            "words": 59,
+            "media": 1,
+            "middle": 0,
+            "heading": {
+              "text": "Ремонт ноутбуков",
+              "size": 76,
+              "tag": "h1"
+            },
+            "left": 296,
+            "right": 315,
+            "textLeft": 399,
+            "textRight": 315,
+            "fullBleed": false,
+            "footer": false,
+            "hero": true,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "footer.lr-container.lr-style-review__footer",
+            "tag": "footer",
+            "top": 2658,
+            "height": 148,
+            "words": 5,
+            "media": 0,
+            "middle": 0,
+            "heading": null,
+            "left": 514,
+            "right": 514,
+            "textLeft": 514,
+            "textRight": 514,
+            "fullBleed": false,
+            "footer": true,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          }
+        ],
+        "gaps": [],
+        "h1s": [
+          {
+            "text": "Ремонт ноутбуков",
+            "size": 76,
+            "top": 148,
+            "firstScreen": true
+          }
+        ],
+        "edgeText": [],
+        "edges": [
+          {
+            "x": 296,
+            "n": 9
+          },
+          {
+            "x": 740,
+            "n": 2
+          }
+        ],
+        "leftBlocks": 11,
+        "bodySize": 18,
+        "stage": false,
+        "explains": true,
+        "slivers": [],
+        "voidShare": 0.18,
+        "voidBox": {
+          "x": 1140,
+          "y": 120,
+          "w": 300,
+          "h": 780
+        }
+      },
+      "app": null,
+      "consoleErrors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "load": "load",
+      "screens": 5,
+      "filled": [0.58, 0.62, 0.66, 0.49, 0.53],
+      "motion": {
+        "elements": 0,
+        "css": 0,
+        "transitions": 0,
+        "scripted": 0,
+        "videos": 0,
+        "playingVideos": 0
+      },
+      "metrics": {
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "page": {
+          "height": 3542,
+          "screens": 4.2,
+          "words": 264,
+          "img": 1,
+          "video": 0,
+          "canvas": 0,
+          "svg": 0,
+          "sections": 3,
+          "horizontalOverflow": 0,
+          "overflowCulprits": [],
+          "uiFragments": 0,
+          "uiAbuse": false,
+          "realPictures": 1,
+          "videoCount": 0,
+          "uiPictures": 0,
+          "pictureSamples": ["workshop-mobile-engineer-360.webp"],
+          "blendText": 0,
+          "sideScrollers": 0,
+          "brokenImages": [],
+          "emoji": [],
+          "videosNoPoster": 0
+        },
+        "hero": {
+          "text": "Ремонт ноутбуков",
+          "words": 2,
+          "chars": 16,
+          "lines": 1,
+          "size": 36,
+          "vw": 9.2,
+          "font": "Golos Text",
+          "weight": 500,
+          "tracking": -0.04,
+          "leading": 1.1,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "center",
+          "position": "center",
+          "widthRatio": 0.88,
+          "top": 138,
+          "tag": "h1",
+          "kind": "heading"
+        },
+        "h1": {
+          "text": "Ремонт ноутбуков",
+          "words": 2,
+          "lines": 1,
+          "size": 36,
+          "font": "Golos Text"
+        },
+        "headings": [
+          {
+            "text": "Ленремонт.",
+            "words": 1,
+            "chars": 10,
+            "lines": 1,
+            "size": 24,
+            "vw": 6.2,
+            "font": "Golos Text",
+            "weight": 700,
+            "tracking": 0,
+            "leading": 1,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.36,
+            "top": 28,
+            "tag": "a",
+            "kind": "heading"
+          },
+          {
+            "text": "Ремонт ноутбуков",
+            "words": 2,
+            "chars": 16,
+            "lines": 1,
+            "size": 36,
+            "vw": 9.2,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.04,
+            "leading": 1.1,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "center",
+            "position": "center",
+            "widthRatio": 0.88,
+            "top": 138,
+            "tag": "h1",
+            "kind": "heading"
+          },
+          {
+            "text": "Мастерская приезжает к вам",
+            "words": 4,
+            "chars": 26,
+            "lines": 2,
+            "size": 28,
+            "vw": 7.2,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.025,
+            "leading": 1.15,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.88,
+            "top": 842,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Опыт клиентов",
+            "words": 2,
+            "chars": 13,
+            "lines": 1,
+            "size": 28,
+            "vw": 7.2,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.025,
+            "leading": 1.15,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.88,
+            "top": 1268,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "4,4 / 5",
+            "words": 3,
+            "chars": 7,
+            "lines": 1,
+            "size": 32,
+            "vw": 8.2,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": 0,
+            "leading": 0.75,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.2,
+            "top": 1474,
+            "tag": "strong",
+            "kind": "heading"
+          },
+          {
+            "text": "4,5 / 5",
+            "words": 3,
+            "chars": 7,
+            "lines": 1,
+            "size": 32,
+            "vw": 8.2,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": 0,
+            "leading": 0.75,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "right",
+            "widthRatio": 0.2,
+            "top": 1619,
+            "tag": "strong",
+            "kind": "heading"
+          },
+          {
+            "text": "Понятно до начала работ",
+            "words": 4,
+            "chars": 23,
+            "lines": 1,
+            "size": 28,
+            "vw": 7.2,
+            "font": "Golos Text",
+            "weight": 500,
+            "tracking": -0.025,
+            "leading": 1.15,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.88,
+            "top": 2369,
+            "tag": "h2",
+            "kind": "heading"
+          }
+        ],
+        "headingSummary": {
+          "count": 7,
+          "maxLines": 2,
+          "over2Lines": 0,
+          "statements": 0,
+          "centered": 1,
+          "medianWords": 3,
+          "mixedFontHeadings": 0
+        },
+        "type": {
+          "families": [
+            {
+              "family": "Golos Text",
+              "share": 1,
+              "mono": false
+            }
+          ],
+          "familyCount": 1,
+          "sizes": [14, 16, 18, 20, 24, 28, 32, 36],
+          "sizeCount": 8,
+          "notLoaded": [],
+          "body": {
+            "font": "Golos Text",
+            "size": 16,
+            "leading": 1.5,
+            "weight": 400,
+            "tracking": 0,
+            "contrast": 14.6
+          },
+          "measureChars": 43,
+          "max": {
+            "size": 36,
+            "vw": 9.2,
+            "font": "Golos Text",
+            "text": "Ремонт ноутбуков"
+          },
+          "monoShare": 0,
+          "monoProseShare": 0,
+          "monoFamilies": [],
+          "monoSamples": [],
+          "microLabels": 0,
+          "microLabelShare": 0,
+          "microSamples": [],
+          "upperShare": 0,
+          "centerShare": 0.08,
+          "smallText": 0
+        },
+        "eyebrows": [],
+        "numbered": [],
+        "color": {
+          "bodyBg": "#ffffff",
+          "bodyBgHsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          },
+          "dark": false,
+          "sectionBgs": [
+            {
+              "color": "#fdfcf9",
+              "top": 0,
+              "hsl": {
+                "h": 45,
+                "s": 0.5,
+                "l": 0.98
+              }
+            },
+            {
+              "color": "#ffffff",
+              "top": 0,
+              "hsl": {
+                "h": 0,
+                "s": 0,
+                "l": 1
+              }
+            }
+          ],
+          "textColors": [
+            {
+              "color": "#172a40",
+              "share": 0.84
+            },
+            {
+              "color": "#526274",
+              "share": 0.16
+            },
+            {
+              "color": "#cb9834",
+              "share": 0
+            }
+          ],
+          "button": {
+            "bg": "#e9b956",
+            "hsl": {
+              "h": 40,
+              "s": 0.77,
+              "l": 0.63
+            },
+            "fg": "#172a40"
+          },
+          "lowContrast": []
+        },
+        "buttons": {
+          "count": 2,
+          "inHero": 1,
+          "radius": 8,
+          "height": 56,
+          "withShadow": 0,
+          "withGradient": 0,
+          "mono": 0,
+          "upper": 0,
+          "heroLabels": ["Узнать стоимость ремонта"]
+        },
+        "surfaces": {
+          "shadowStatic": 0,
+          "shadowOverlay": 0,
+          "shadowSamples": [],
+          "gradients": 0,
+          "scrims": 0,
+          "gradientSamples": [],
+          "gradientText": 0,
+          "hairlines": 0,
+          "hairlineSamples": [],
+          "outlinedBoxes": 0,
+          "dashed": 0,
+          "blurred": 0,
+          "roundedBoxes": 3,
+          "boxRadius": 8,
+          "squareMedia": 0,
+          "roundedMedia": 1,
+          "mediaRadius": 8,
+          "textShadow": 0,
+          "cardRows": []
+        },
+        "heroMedia": [
+          {
+            "type": "img",
+            "ratio": 0.36
+          }
+        ],
+        "nav": {
+          "links": 1,
+          "fixed": false,
+          "height": 98,
+          "floatingPill": false,
+          "blur": false
+        },
+        "fontsLoaded": ["golos text"]
+      },
+      "layout": {
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "pageH": 3542,
+        "margins": {
+          "left": 23,
+          "right": 23
+        },
+        "sections": [
+          {
+            "sel": "section.lr-container.lr-style-review__hero",
+            "tag": "section",
+            "top": 98,
+            "height": 1098,
+            "words": 59,
+            "media": 1,
+            "middle": 0,
+            "heading": {
+              "text": "Ремонт ноутбуков",
+              "size": 36,
+              "tag": "h1"
+            },
+            "left": 23,
+            "right": 23,
+            "textLeft": 23,
+            "textRight": 27,
+            "fullBleed": false,
+            "footer": false,
+            "hero": true,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "section.lr-container.lr-style-review__section",
+            "tag": "section",
+            "top": 1196,
+            "height": 1101,
+            "words": 120,
+            "media": 0,
+            "middle": 0,
+            "heading": {
+              "text": "4,4",
+              "size": 32,
+              "tag": "strong"
+            },
+            "left": 23,
+            "right": 35,
+            "textLeft": 23,
+            "textRight": 35,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "section#style-prices.lr-container.lr-style-review__section",
+            "tag": "section",
+            "top": 2297,
+            "height": 1077,
+            "words": 115,
+            "media": 0,
+            "middle": 0,
+            "heading": {
+              "text": "Понятно до начала работ",
+              "size": 28,
+              "tag": "h2"
+            },
+            "left": 23,
+            "right": 23,
+            "textLeft": 23,
+            "textRight": 23,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "footer.lr-container.lr-style-review__footer",
+            "tag": "footer",
+            "top": 3374,
+            "height": 168,
+            "words": 5,
+            "media": 0,
+            "middle": 0,
+            "heading": null,
+            "left": 62,
+            "right": 62,
+            "textLeft": 62,
+            "textRight": 62,
+            "fullBleed": false,
+            "footer": true,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          }
+        ],
+        "gaps": [],
+        "h1s": [
+          {
+            "text": "Ремонт ноутбуков",
+            "size": 36,
+            "top": 138,
+            "firstScreen": true
+          }
+        ],
+        "edgeText": [],
+        "edges": [
+          {
+            "x": 23,
+            "n": 11
+          }
+        ],
+        "leftBlocks": 11,
+        "bodySize": 16,
+        "stage": false,
+        "explains": true,
+        "slivers": [],
+        "voidShare": 0,
+        "voidBox": null
+      },
+      "app": null,
+      "consoleErrors": []
+    }
+  ],
+  "findings": [
+    {
+      "level": "WARN",
+      "id": "palette-cream",
+      "width": 1440,
+      "message": "Yellow-cream background (section #fdfcf9).",
+      "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+      "alsoAt": [390]
+    },
+    {
+      "level": "FAIL",
+      "id": "few-pictures",
+      "width": 1440,
+      "message": "Only 1 picture(s) on the page (1 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+      "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+    },
+    {
+      "level": "WARN",
+      "id": "no-footage",
+      "width": 1440,
+      "message": "No video anywhere on the page.",
+      "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+    },
+    {
+      "level": "WARN",
+      "id": "dev-server",
+      "width": 1440,
+      "message": "This page is served by a development server (Vite, webpack or Next in dev mode).",
+      "fix": "Run the last gate on the production build too (vite build && vite preview, next build && next start, or the built index.html): minifiers and bundlers change the CSS a visitor receives.",
+      "alsoAt": [390]
+    },
+    {
+      "level": "FAIL",
+      "id": "still-page",
+      "width": 1440,
+      "message": "Only 0 element(s) moved while the page loaded and scrolled.",
+      "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+    }
+  ],
+  "images": [
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "fold": "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\apple-directions\\before\\desktop-fold.jpg",
+      "pages": [
+        "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\apple-directions\\before\\desktop-page-01.jpg"
+      ],
+      "film": []
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "fold": "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\apple-directions\\before\\mobile-fold.jpg",
+      "pages": [
+        "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\apple-directions\\before\\mobile-page-01.jpg"
+      ],
+      "film": []
+    }
+  ]
+}

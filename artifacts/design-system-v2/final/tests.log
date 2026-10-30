@@ -1,0 +1,37 @@
+✔ lab selection shows one frame and synchronizes pressed states (1.8168ms)
+✔ each format keeps its image and description synchronized (0.4296ms)
+✔ unrelated interactions and pages without a concept are left alone (0.343ms)
+Hero video: muted autoplay, native fallback and reduced motion passed.
+✔ tests\hero-video.test.mjs (109.2206ms)
+Phone validation, complete content, section order and local media: passed.
+Phone mask: passed.
+CSS isolation and Lead Capture attributes: passed.
+Eight primary symptoms, four help groups, 24 real addresses and courier navigation: passed.
+Anchors, price caveat, privacy links and responsive QR disclosure: passed.
+✔ tests\landing.test.mjs (313.3419ms)
+✔ The four preview formats map to the existing lead contract (1.0231ms)
+✔ MacBook category comes from explicit markup and survives format changes (0.3226ms)
+✔ Price and generic CTA updates preserve the selected format and entered contact (0.4925ms)
+✔ Changing format preserves the symptom; clearing a symptom is explicit (0.2015ms)
+Phone deletion, selection, retyping, paste and dialpad: passed.
+✔ tests\phone.test.mjs (121.6618ms)
+Quiz: required answers, back navigation, Enter, context transfer and preserved contact passed.
+Quiz modal: same form and step preserved, button/Escape/backdrop close, focus restored and unsupported-dialog fallback passed.
+✔ tests\quiz.test.mjs (163.2481ms)
+24 laptop reviews and one explicitly labelled iMac photo review: passed.
+Review slider: paging, endpoints, mobile, tablet and keyboard passed.
+Review motion: interrupted and repeated transitions, active cards and reduced motion passed.
+Review drag: held mouse, snapping, cancellation, native touch and source links passed.
+✔ tests\reviews.test.mjs (133.4617ms)
+49 pages: unique SEO fields, one H1/root, JSON-LD, links, prices, media, forms and CSS isolation passed.
+✔ tests\service-pages.test.mjs (458.3315ms)
+Visit fields: conditional validation, disabled state and preserved values passed.
+✔ tests\visit.test.mjs (197.3552ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 584.8545

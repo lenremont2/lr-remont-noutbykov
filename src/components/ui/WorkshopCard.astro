@@ -1,0 +1,77 @@
+---
+interface Props {
+  workshop: {
+    id: string;
+    metro: string;
+    city: string;
+    address: string;
+    note?: string;
+    directionsUrl: string;
+    image?: {
+      src: string;
+      smallSrc?: string;
+      smallWidth?: number;
+      alt: string;
+      caption: string;
+      width: number;
+      height: number;
+    };
+  };
+  hours: string[];
+  phone: string;
+  phoneLabel: string;
+}
+
+const { workshop, hours, phone, phoneLabel } = Astro.props;
+const mapUrl = `https://yandex.ru/maps/?text=${encodeURIComponent(`${workshop.city}, ${workshop.address}, Ленремонт`)}`;
+---
+
+<li class="lr-workshop-card" id={`lr-workshop-${workshop.id}`}>
+  {
+    workshop.image && (
+      <figure class="lr-workshop-card__media">
+        <img
+          class="lr-workshop-card__image"
+          src={workshop.image.src}
+          srcset={
+            workshop.image.smallSrc
+              ? `${workshop.image.smallSrc} ${workshop.image.smallWidth ?? 480}w, ${workshop.image.src} ${workshop.image.width}w`
+              : undefined
+          }
+          sizes="(min-width: 1200px) 400px, (min-width: 768px) 44vw, 88vw"
+          alt={workshop.image.alt}
+          width={workshop.image.width}
+          height={workshop.image.height}
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>{workshop.image.caption}</figcaption>
+      </figure>
+    )
+  }
+  <div class="lr-workshop-card__body">
+    <p class="lr-workshop-card__metro">{workshop.metro}</p>
+    <h4>{workshop.address}</h4>
+    <address>{workshop.city}</address>
+    {workshop.note && <p class="lr-workshop-card__note">{workshop.note}</p>}
+    <div class="lr-workshop-card__hours">
+      <p>Режим работы</p>
+      <ul aria-label={`Режим работы: ${workshop.address}`}>
+        {hours.map((line) => <li>{line}</li>)}
+      </ul>
+    </div>
+    <div class="lr-workshop-card__links">
+      <a href={mapUrl} target="_blank" rel="noopener noreferrer">На карте</a>
+      <a
+        href={workshop.directionsUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Как добраться
+      </a>
+    </div>
+    <a class="lr-workshop-card__phone" href={`tel:${phone}`}>
+      Уточнить приём: {phoneLabel}
+    </a>
+  </div>
+</li>

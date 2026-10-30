@@ -1,0 +1,53 @@
+---
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+import DirectorSignature from "../ui/DirectorSignature.astro";
+---
+
+<section
+  id="lr-director"
+  class="lr-section lr-director"
+  aria-labelledby="lr-director-title"
+>
+  <div class="lr-container lr-director__grid">
+    <div class="lr-director__identity">
+      <figure class="lr-director__photo">
+        <img
+          src="/media/director-sorokin-640.webp"
+          srcset="/media/director-sorokin-320.webp 320w, /media/director-sorokin-640.webp 640w"
+          sizes="(min-width: 1024px) 320px, (min-width: 768px) 30vw, 88vw"
+          width="640"
+          height="820"
+          alt="Денис Сорокин, директор Ленремонта"
+          loading="lazy"
+          decoding="async"
+        />
+      </figure>
+      <p class="lr-director__name">Денис Сорокин</p>
+      <p class="lr-caption">Директор Ленремонта</p>
+      <DirectorSignature />
+    </div>
+    <div class="lr-director__copy">
+      <SectionHeading id="lr-director-title" title="Ремонт без сюрпризов" />
+      <blockquote class="lr-director__message">
+        <p>
+          Вы должны понимать, за что платите. Поэтому сначала мы проверяем
+          ноутбук, объясняем причину поломки и согласуем стоимость работ и
+          деталей. К ремонту приступаем с вашего согласия.
+        </p>
+        <p>
+          Привезите ноутбук в мастерскую или обсудите выезд и доставку курьером.
+          После ремонта проверьте результат вместе со специалистом. Вы получите
+          документы и гарантию на выполненные работы.
+        </p>
+        <p>
+          Расскажите, что случилось с ноутбуком, — поможем выбрать подходящий
+          способ ремонта и сориентируем по стоимости.
+        </p>
+      </blockquote>
+      <div class="lr-director__action">
+        <LeadButton label="Обсудить ремонт ноутбука" source="director" />
+      </div>
+    </div>
+  </div>
+</section>

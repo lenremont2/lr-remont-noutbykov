@@ -1,22 +1,81 @@
 ---
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
 const c = copy.process;
+interface Props {
+  layout?: "steps" | "accordion";
+}
+const { layout = "accordion" } = Astro.props;
 ---
 
-<section id="lr-process" class="lr-section">
+<section
+  id="lr-process"
+  class:list={[
+    "lr-section lr-process-section",
+    { "lr-process-section--steps": layout === "steps" },
+  ]}
+>
   <div class="lr-container">
     <SectionHeading title={c.fields.H2} lead={c.fields["Лид"]} />
-    <ol class="lr-process">
-      {
-        c.items.map((item, i) => (
-          <li>
-            <span class="lr-process__number">0{i + 1}</span>
-            <h3>{item.title}</h3>
-            <p>{item.text}</p>
-          </li>
-        ))
-      }
-    </ol>
+    <div class="lr-process-section__layout">
+      <ol
+        class:list={["lr-process", { "lr-process--steps": layout === "steps" }]}
+        role="list"
+      >
+        {
+          c.items.map((item, i) => (
+            <li>
+              {layout === "steps" ? (
+                <>
+                  <span class="lr-process__number" aria-hidden="true">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                  </div>
+                </>
+              ) : (
+                <details name="lr-repair-process" open={i === 0}>
+                  <summary>
+                    <span>{item.title}</span>
+                    <span class="lr-process__indicator" aria-hidden="true">
+                      +
+                    </span>
+                  </summary>
+                  <p>{item.text}</p>
+                </details>
+              )}
+            </li>
+          ))
+        }
+      </ol>
+      <figure class="lr-process-section__media">
+        <img
+          src="/media/workshop-v3-process-1280.webp"
+          srcset="/media/workshop-v3-process-640.webp 640w, /media/workshop-v3-process-1280.webp 1280w"
+          sizes="(min-width: 1024px) 40vw, 90vw"
+          width="1280"
+          height="720"
+          alt="Иллюстрация: инженер ремонтирует ноутбук в аккуратной оборудованной мастерской"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>
+          <strong
+            >Ремонт — по согласованной смете.<br />Проверка — вместе с вами.</strong
+          >
+        </figcaption>
+      </figure>
+    </div>
+    {
+      layout !== "steps" && (
+        <div class="lr-process-section__contact">
+          <p>Начнём с вашего ноутбука?</p>
+          <LeadButton label="Обсудить ремонт" source="process" />
+        </div>
+      )
+    }
   </div>
 </section>

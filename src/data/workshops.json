@@ -1,0 +1,220 @@
+{
+  "checkedAt": "2026-10-29",
+  "sourceUrl": "https://www.lenremont.ru/contact.htm",
+  "phone": "+78123444444",
+  "phoneLabel": "+7 (812) 344-44-44",
+  "hours": {
+    "standard": ["Пн–Пт 09:30–20:00", "Сб 11:00–19:00", "Вс 11:00–18:00"],
+    "elizarova": ["Пн–Пт 10:00–18:30", "Сб 11:00–18:00", "Вс — выходной"],
+    "mineralnaya": ["Ежедневно 09:30–20:00"],
+    "moskovskiy": ["Пн–Пт 10:00–18:00", "Сб–Вс — выходной"],
+    "reshetnikova": ["Пн–Пт 10:00–18:30", "Сб–Вс — выходной"],
+    "myaglovo": ["Пн–Пт 10:00–18:30", "Сб 10:00–17:00", "Вс — выходной"]
+  },
+  "workshops": [
+    {
+      "id": "prosveshcheniya",
+      "metro": "Проспект Просвещения",
+      "city": "Санкт-Петербург",
+      "address": "пр. Просвещения, д. 20",
+      "image": {
+        "src": "/media/workshop-prosveshcheniya-reception-640.webp",
+        "smallSrc": "/media/workshop-prosveshcheniya-reception-360.webp",
+        "smallWidth": 360,
+        "alt": "Приёмная мастерской на проспекте Просвещения, 20: сотрудница и проход в помещение",
+        "caption": "Мастерская на проспекте Просвещения, 20 — архивный кадр официального видеообзора, 2020 год",
+        "width": 640,
+        "height": 360
+      },
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-prosvescheniya.htm"
+    },
+    {
+      "id": "aviakonstruktorov",
+      "metro": "Комендантский проспект",
+      "city": "Санкт-Петербург",
+      "address": "пр. Авиаконструкторов, д. 4",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-aviakonstruktorov.htm"
+    },
+    {
+      "id": "bolshevikov",
+      "metro": "Улица Дыбенко",
+      "city": "Санкт-Петербург",
+      "address": "пр. Большевиков, д. 25",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-dybenko.htm"
+    },
+    {
+      "id": "korablestroiteley",
+      "metro": "Приморская",
+      "city": "Санкт-Петербург",
+      "address": "ул. Кораблестроителей, д. 30",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-primorskoj.htm"
+    },
+    {
+      "id": "veteranov",
+      "metro": "Проспект Ветеранов",
+      "city": "Санкт-Петербург",
+      "address": "пр. Ветеранов, д. 9",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-veteranov.htm"
+    },
+    {
+      "id": "frunze",
+      "metro": "Парк Победы / Московская",
+      "city": "Санкт-Петербург",
+      "address": "ул. Фрунзе, д. 3",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-moskovskoy.htm"
+    },
+    {
+      "id": "engelsa",
+      "metro": "Удельная",
+      "city": "Санкт-Петербург",
+      "address": "пр. Энгельса, д. 19",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-engelsa.htm"
+    },
+    {
+      "id": "pyatiletok",
+      "metro": "Проспект Большевиков",
+      "city": "Санкт-Петербург",
+      "address": "пр. Пятилеток, д. 14, к. 1",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-pyatiltetok.htm"
+    },
+    {
+      "id": "zvezdnaya",
+      "metro": "Звёздная",
+      "city": "Санкт-Петербург",
+      "address": "ул. Звёздная, д. 5, к. 1",
+      "note": "Вход с улицы.",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-zvezdnoj.htm"
+    },
+    {
+      "id": "kosygina",
+      "metro": "Ладожская",
+      "city": "Санкт-Петербург",
+      "address": "пр. Косыгина, д. 28, к. 1",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-kosygina.htm"
+    },
+    {
+      "id": "lunacharskogo",
+      "metro": "Озерки / Проспект Просвещения",
+      "city": "Санкт-Петербург",
+      "address": "пр. Луначарского, д. 56, к. 1",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-lunacharskogo.htm"
+    },
+    {
+      "id": "nauki",
+      "metro": "Академическая",
+      "city": "Санкт-Петербург",
+      "address": "пр. Науки, д. 8, к. 1",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-akademicheskoj.htm"
+    },
+    {
+      "id": "zhukova",
+      "metro": "Автово",
+      "city": "Санкт-Петербург",
+      "address": "пр. Маршала Жукова, д. 35, к. 3",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-metro-avtovo.htm"
+    },
+    {
+      "id": "ispytateley",
+      "metro": "Пионерская",
+      "city": "Санкт-Петербург",
+      "address": "пр. Испытателей, д. 11, к. 1",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-pionerskoj.htm"
+    },
+    {
+      "id": "ushinskogo",
+      "metro": "Гражданский проспект",
+      "city": "Санкт-Петербург",
+      "address": "ул. Ушинского, д. 25, к. 1",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-ushinskogo.htm"
+    },
+    {
+      "id": "kievskaya",
+      "metro": "Фрунзенская",
+      "city": "Санкт-Петербург",
+      "address": "ул. Киевская, д. 32В",
+      "note": "Мастерская также принимает цифровую технику. Уточните нужные работы до поездки.",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-frunzenskoy.htm"
+    },
+    {
+      "id": "gasheka",
+      "metro": "Купчино",
+      "city": "Санкт-Петербург",
+      "address": "ул. Ярослава Гашека, д. 4, к. 1",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-yaroslava-gasheka.htm"
+    },
+    {
+      "id": "kolpino",
+      "metro": "Железнодорожная станция Колпино",
+      "city": "Санкт-Петербург, Колпино",
+      "address": "ул. Тверская, д. 1/13",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-tverskoj.htm"
+    },
+    {
+      "id": "elizarova",
+      "metro": "Елизаровская",
+      "city": "Санкт-Петербург",
+      "address": "пр. Елизарова, д. 36",
+      "hours": "elizarova",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-elizarovskoj.htm"
+    },
+    {
+      "id": "mineralnaya",
+      "metro": "Выборгская",
+      "city": "Санкт-Петербург",
+      "address": "ул. Минеральная, д. 13Ц",
+      "hours": "mineralnaya",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-vyborgskoj.htm"
+    },
+    {
+      "id": "gagarina",
+      "metro": "Парк Победы",
+      "city": "Санкт-Петербург",
+      "address": "пр. Юрия Гагарина, д. 15",
+      "hours": "standard",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-prospekte-yuriya-gagarina.htm"
+    },
+    {
+      "id": "moskovskiy",
+      "metro": "Московская",
+      "city": "Санкт-Петербург",
+      "address": "Московский пр., д. 212, Дом Советов",
+      "note": "1 этаж, кабинет 1130, вход у кафе «Авантаж». Пункт приёма бытовой и цифровой техники.",
+      "hours": "moskovskiy",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-prospekt-moskovskij-212-dom-sovetov.htm"
+    },
+    {
+      "id": "reshetnikova",
+      "metro": "Электросила",
+      "city": "Санкт-Петербург",
+      "address": "ул. Решетникова, д. 3",
+      "hours": "reshetnikova",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-na-reshetnikova.htm"
+    },
+    {
+      "id": "myaglovo",
+      "metro": "Всеволожский район, Ленинградская область",
+      "city": "Промзона Мягловская",
+      "address": "ул. Круговая, д. 47",
+      "hours": "myaglovo",
+      "directionsUrl": "https://www.lenremont.ru/lenremont-promzona-myaglovskaya-vsevolozhskij-municipalnyj-rajon.htm"
+    }
+  ]
+}

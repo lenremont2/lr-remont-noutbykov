@@ -1,21 +1,53 @@
 ---
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
-import LeadButton from "../ui/LeadButton.astro";
+
 const c = copy.benefits.fields;
 ---
 
-<section id="lr-benefits" class="lr-section lr-benefits">
+<section
+  id="lr-benefits"
+  class="lr-section lr-benefits lr-benefits--canvas"
+  aria-labelledby="lr-benefits-title"
+>
   <div class="lr-container">
-    <SectionHeading title={c.H2} />
-    <div class="lr-benefits__grid">
+    <div class="lr-benefits__heading">
+      <SectionHeading id="lr-benefits-title" title={c.H2} lead={c["Лид"]} />
+    </div>
+
+    <div class="lr-benefit-canvas">
       {
-        copy.benefits.items.map((benefit) => (
-          <article class="lr-benefit">
-            <h3>{benefit.title}</h3>
-            <p class="lr-benefit__detail">{benefit.text}</p>
-          </article>
-        ))
+        copy.benefits.items.map((benefit, index) => {
+          const rowNumber = String(index + 1).padStart(2, "0");
+          const isReverse = index % 2 === 1;
+          return (
+            <article
+              class:list={[
+                "lr-benefit-canvas-row",
+                { "lr-benefit-canvas-row--reverse": isReverse },
+              ]}
+              data-benefit-row={rowNumber}
+            >
+              <div class="lr-benefit-canvas-row__media-col">
+                <div class="lr-benefit-canvas-row__media-frame">
+                  <img
+                    src={benefit.image}
+                    alt={benefit.imageAlt || benefit.title}
+                    class="lr-benefit-canvas-row__poster"
+                    loading="lazy"
+                    decoding="async"
+                    width="720"
+                    height="405"
+                  />
+                </div>
+              </div>
+              <div class="lr-benefit-canvas-row__content-col">
+                <h3 class="lr-benefit-canvas-row__title">{benefit.title}</h3>
+                <p class="lr-benefit-canvas-row__text">{benefit.text}</p>
+              </div>
+            </article>
+          );
+        })
       }
     </div>
   </div>

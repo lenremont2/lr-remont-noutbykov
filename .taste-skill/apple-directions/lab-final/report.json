@@ -1,0 +1,1461 @@
+{
+  "url": "http://127.0.0.1:4324/design-directions/lab/",
+  "at": "2026-10-29T09:48:27.056Z",
+  "allow": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "load": "load",
+      "screens": 3,
+      "filled": [1, 1, 1],
+      "motion": {
+        "elements": 20,
+        "css": 20,
+        "transitions": 0,
+        "scripted": 0,
+        "videos": 0,
+        "playingVideos": 0
+      },
+      "metrics": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "page": {
+          "height": 2455,
+          "screens": 2.7,
+          "words": 134,
+          "img": 7,
+          "video": 0,
+          "canvas": 0,
+          "svg": 0,
+          "sections": 3,
+          "horizontalOverflow": 0,
+          "overflowCulprits": [],
+          "uiFragments": 0,
+          "uiAbuse": false,
+          "realPictures": 5,
+          "videoCount": 0,
+          "uiPictures": 0,
+          "pictureSamples": [
+            "workshop-mobile-board-720.webp",
+            "workshop-mobile-engineer-720.webp",
+            "workshop-mobile-microscope-720.webp",
+            "workshop-prosveshcheniya-board-640.webp",
+            "workshop-prosveshcheniya-engineer-640.webp"
+          ],
+          "blendText": 0,
+          "sideScrollers": 0,
+          "brokenImages": [],
+          "emoji": [],
+          "videosNoPoster": 0
+        },
+        "hero": {
+          "text": "Ремонт изнутри.",
+          "words": 2,
+          "chars": 15,
+          "lines": 2,
+          "size": 105.1,
+          "vw": 7.3,
+          "font": "Golos Text",
+          "weight": 600,
+          "tracking": -0.055,
+          "leading": 1.02,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "left",
+          "widthRatio": 0.39,
+          "top": 207,
+          "tag": "h1",
+          "kind": "heading"
+        },
+        "h1": {
+          "text": "Ремонт изнутри.",
+          "words": 2,
+          "lines": 2,
+          "size": 105.1,
+          "font": "Golos Text"
+        },
+        "headings": [
+          {
+            "text": "Ремонт изнутри.",
+            "words": 2,
+            "chars": 15,
+            "lines": 2,
+            "size": 105.1,
+            "vw": 7.3,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.39,
+            "top": 207,
+            "tag": "h1",
+            "kind": "heading"
+          },
+          {
+            "text": "Инженерия в деталях.",
+            "words": 3,
+            "chars": 20,
+            "lines": 2,
+            "size": 60.5,
+            "vw": 4.2,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.22,
+            "top": 947,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Сначала ясно. Потом ремонт.",
+            "words": 4,
+            "chars": 27,
+            "lines": 2,
+            "size": 60.5,
+            "vw": 4.2,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.43,
+            "top": 1593,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Ленремонт.",
+            "words": 1,
+            "chars": 10,
+            "lines": 1,
+            "size": 201.6,
+            "vw": 14,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.065,
+            "leading": 1.05,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.91,
+            "top": 2208,
+            "tag": "span",
+            "kind": "heading"
+          }
+        ],
+        "headingSummary": {
+          "count": 4,
+          "maxLines": 2,
+          "over2Lines": 0,
+          "statements": 0,
+          "centered": 0,
+          "medianWords": 3,
+          "mixedFontHeadings": 0
+        },
+        "type": {
+          "families": [
+            {
+              "family": "Golos Text",
+              "share": 1,
+              "mono": false
+            }
+          ],
+          "familyCount": 1,
+          "sizes": [14, 16, 17, 20, 23, 26, 61, 105, 202],
+          "sizeCount": 9,
+          "notLoaded": [],
+          "body": {
+            "font": "Golos Text",
+            "size": 17,
+            "leading": 1.6,
+            "weight": 400,
+            "tracking": 0,
+            "contrast": 15.8
+          },
+          "measureChars": 88,
+          "max": {
+            "size": 201.6,
+            "vw": 14,
+            "font": "Golos Text",
+            "text": "Ленремонт."
+          },
+          "monoShare": 0,
+          "monoProseShare": 0,
+          "monoFamilies": [],
+          "monoSamples": [],
+          "microLabels": 0,
+          "microLabelShare": 0,
+          "microSamples": [],
+          "upperShare": 0,
+          "centerShare": 0.03,
+          "smallText": 0
+        },
+        "eyebrows": [],
+        "numbered": [],
+        "color": {
+          "bodyBg": "#ffffff",
+          "bodyBgHsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          },
+          "dark": false,
+          "sectionBgs": [
+            {
+              "color": "#101d2c",
+              "top": 0,
+              "hsl": {
+                "h": 212,
+                "s": 0.47,
+                "l": 0.12
+              }
+            },
+            {
+              "color": "#192b40",
+              "top": 132,
+              "hsl": {
+                "h": 212,
+                "s": 0.44,
+                "l": 0.17
+              }
+            }
+          ],
+          "textColors": [
+            {
+              "color": "#f5f7f9",
+              "share": 0.78
+            },
+            {
+              "color": "#c0ccda",
+              "share": 0.17
+            },
+            {
+              "color": "#101d2c",
+              "share": 0.05
+            },
+            {
+              "color": "#e9b956",
+              "share": 0
+            }
+          ],
+          "button": {
+            "bg": "#e9b956",
+            "hsl": {
+              "h": 40,
+              "s": 0.77,
+              "l": 0.63
+            },
+            "fg": "#101d2c"
+          },
+          "lowContrast": []
+        },
+        "buttons": {
+          "count": 5,
+          "inHero": 4,
+          "radius": "pill",
+          "height": 45,
+          "withShadow": 0,
+          "withGradient": 0,
+          "mono": 0,
+          "upper": 0,
+          "heroLabels": [
+            "Обсудить неисправность ↗",
+            "Плата",
+            "Оборудование",
+            "Инженер"
+          ]
+        },
+        "surfaces": {
+          "shadowStatic": 0,
+          "shadowOverlay": 0,
+          "shadowSamples": [],
+          "gradients": 0,
+          "scrims": 0,
+          "gradientSamples": [],
+          "gradientText": 0,
+          "hairlines": 0,
+          "hairlineSamples": [],
+          "outlinedBoxes": 0,
+          "dashed": 0,
+          "blurred": 0,
+          "roundedBoxes": 3,
+          "boxRadius": 20,
+          "squareMedia": 0,
+          "roundedMedia": 5,
+          "mediaRadius": 28,
+          "textShadow": 0,
+          "cardRows": []
+        },
+        "heroMedia": [
+          {
+            "type": "img",
+            "ratio": 0.26
+          }
+        ],
+        "nav": {
+          "links": 5,
+          "fixed": false,
+          "height": 94,
+          "floatingPill": false,
+          "blur": false
+        },
+        "fontsLoaded": ["golos text"]
+      },
+      "layout": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "pageH": 2455,
+        "margins": {
+          "left": 65,
+          "right": 65
+        },
+        "sections": [
+          {
+            "sel": "section.lr-concept__lab-hero.lr-concept__frame",
+            "tag": "section",
+            "top": 94,
+            "height": 763,
+            "words": 36,
+            "media": 1,
+            "middle": 190,
+            "heading": {
+              "text": "Ремонт",
+              "size": 105,
+              "tag": "h1"
+            },
+            "left": 65,
+            "right": 65,
+            "textLeft": 65,
+            "textRight": 98,
+            "fullBleed": false,
+            "footer": false,
+            "hero": true,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "section#concept-detail.lr-concept__lab-story.lr-concept__fra",
+            "tag": "section",
+            "top": 857,
+            "height": 586,
+            "words": 21,
+            "media": 3,
+            "middle": 18,
+            "heading": {
+              "text": "Инженерия",
+              "size": 60,
+              "tag": "h2"
+            },
+            "left": 65,
+            "right": 65,
+            "textLeft": 65,
+            "textRight": 65,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "section#concept-prices.lr-concept__pricing.lr-concept__frame",
+            "tag": "section",
+            "top": 1443,
+            "height": 696,
+            "words": 57,
+            "media": 1,
+            "middle": 294,
+            "heading": {
+              "text": "Сначала ясно.",
+              "size": 60,
+              "tag": "h2"
+            },
+            "left": 65,
+            "right": 89,
+            "textLeft": 65,
+            "textRight": 89,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "footer.lr-concept__footer.lr-concept__frame",
+            "tag": "footer",
+            "top": 2139,
+            "height": 316,
+            "words": 12,
+            "media": 0,
+            "middle": 75,
+            "heading": {
+              "text": "Ленремонт.",
+              "size": 202,
+              "tag": "span"
+            },
+            "left": 65,
+            "right": 65,
+            "textLeft": 65,
+            "textRight": 65,
+            "fullBleed": false,
+            "footer": true,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          }
+        ],
+        "gaps": [],
+        "h1s": [
+          {
+            "text": "Ремонт изнутри.",
+            "size": 105,
+            "top": 207,
+            "firstScreen": true
+          }
+        ],
+        "edgeText": [],
+        "edges": [
+          {
+            "x": 65,
+            "n": 6
+          },
+          {
+            "x": 760,
+            "n": 1
+          }
+        ],
+        "leftBlocks": 7,
+        "bodySize": 16,
+        "stage": false,
+        "explains": false,
+        "slivers": [],
+        "voidShare": 0.13,
+        "voidBox": {
+          "x": 0,
+          "y": 780,
+          "w": 1440,
+          "h": 120
+        }
+      },
+      "app": null,
+      "consoleErrors": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "load": "load",
+      "screens": 3,
+      "filled": [1, 1, 1],
+      "motion": {
+        "elements": 20,
+        "css": 20,
+        "transitions": 0,
+        "scripted": 0,
+        "videos": 0,
+        "playingVideos": 0
+      },
+      "metrics": {
+        "viewport": {
+          "w": 768,
+          "h": 1024
+        },
+        "page": {
+          "height": 2386,
+          "screens": 2.3,
+          "words": 134,
+          "img": 7,
+          "video": 0,
+          "canvas": 0,
+          "svg": 0,
+          "sections": 3,
+          "horizontalOverflow": 0,
+          "overflowCulprits": [],
+          "uiFragments": 0,
+          "uiAbuse": false,
+          "realPictures": 5,
+          "videoCount": 0,
+          "uiPictures": 0,
+          "pictureSamples": [
+            "workshop-mobile-board-720.webp",
+            "workshop-mobile-engineer-720.webp",
+            "workshop-mobile-microscope-720.webp",
+            "workshop-prosveshcheniya-board-640.webp",
+            "workshop-prosveshcheniya-engineer-640.webp"
+          ],
+          "blendText": 0,
+          "sideScrollers": 0,
+          "brokenImages": [],
+          "emoji": [],
+          "videosNoPoster": 0
+        },
+        "hero": {
+          "text": "Ремонт изнутри.",
+          "words": 2,
+          "chars": 15,
+          "lines": 2,
+          "size": 56.1,
+          "vw": 7.3,
+          "font": "Golos Text",
+          "weight": 600,
+          "tracking": -0.055,
+          "leading": 1.02,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "left",
+          "widthRatio": 0.39,
+          "top": 201,
+          "tag": "h1",
+          "kind": "heading"
+        },
+        "h1": {
+          "text": "Ремонт изнутри.",
+          "words": 2,
+          "lines": 2,
+          "size": 56.1,
+          "font": "Golos Text"
+        },
+        "headings": [
+          {
+            "text": "Ленремонт.",
+            "words": 1,
+            "chars": 10,
+            "lines": 1,
+            "size": 26,
+            "vw": 3.4,
+            "font": "Golos Text",
+            "weight": 700,
+            "tracking": -0.055,
+            "leading": 1.5,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.18,
+            "top": 28,
+            "tag": "a",
+            "kind": "heading"
+          },
+          {
+            "text": "Ремонт изнутри.",
+            "words": 2,
+            "chars": 15,
+            "lines": 2,
+            "size": 56.1,
+            "vw": 7.3,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.39,
+            "top": 201,
+            "tag": "h1",
+            "kind": "heading"
+          },
+          {
+            "text": "Инженерия в деталях.",
+            "words": 3,
+            "chars": 20,
+            "lines": 2,
+            "size": 34,
+            "vw": 4.4,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.23,
+            "top": 869,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Сначала ясно. Потом ремонт.",
+            "words": 4,
+            "chars": 27,
+            "lines": 2,
+            "size": 34,
+            "vw": 4.4,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.43,
+            "top": 1482,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Ленремонт.",
+            "words": 1,
+            "chars": 10,
+            "lines": 1,
+            "size": 107.5,
+            "vw": 14,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.065,
+            "leading": 1.05,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.91,
+            "top": 2238,
+            "tag": "span",
+            "kind": "heading"
+          }
+        ],
+        "headingSummary": {
+          "count": 5,
+          "maxLines": 2,
+          "over2Lines": 0,
+          "statements": 0,
+          "centered": 0,
+          "medianWords": 3,
+          "mixedFontHeadings": 0
+        },
+        "type": {
+          "families": [
+            {
+              "family": "Golos Text",
+              "share": 1,
+              "mono": false
+            }
+          ],
+          "familyCount": 1,
+          "sizes": [14, 16, 17, 20, 23, 26, 34, 56, 108],
+          "sizeCount": 9,
+          "notLoaded": [],
+          "body": {
+            "font": "Golos Text",
+            "size": 17,
+            "leading": 1.6,
+            "weight": 400,
+            "tracking": 0,
+            "contrast": 15.8
+          },
+          "measureChars": 47,
+          "max": {
+            "size": 107.5,
+            "vw": 14,
+            "font": "Golos Text",
+            "text": "Ленремонт."
+          },
+          "monoShare": 0,
+          "monoProseShare": 0,
+          "monoFamilies": [],
+          "monoSamples": [],
+          "microLabels": 0,
+          "microLabelShare": 0,
+          "microSamples": [],
+          "upperShare": 0,
+          "centerShare": 0.03,
+          "smallText": 0
+        },
+        "eyebrows": [],
+        "numbered": [],
+        "color": {
+          "bodyBg": "#ffffff",
+          "bodyBgHsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          },
+          "dark": false,
+          "sectionBgs": [
+            {
+              "color": "#101d2c",
+              "top": 0,
+              "hsl": {
+                "h": 212,
+                "s": 0.47,
+                "l": 0.12
+              }
+            }
+          ],
+          "textColors": [
+            {
+              "color": "#f5f7f9",
+              "share": 0.78
+            },
+            {
+              "color": "#c0ccda",
+              "share": 0.17
+            },
+            {
+              "color": "#101d2c",
+              "share": 0.05
+            },
+            {
+              "color": "#e9b956",
+              "share": 0
+            }
+          ],
+          "button": {
+            "bg": "#e9b956",
+            "hsl": {
+              "h": 40,
+              "s": 0.77,
+              "l": 0.63
+            },
+            "fg": "#101d2c"
+          },
+          "lowContrast": []
+        },
+        "buttons": {
+          "count": 5,
+          "inHero": 4,
+          "radius": "pill",
+          "height": 45,
+          "withShadow": 0,
+          "withGradient": 0,
+          "mono": 0,
+          "upper": 0,
+          "heroLabels": [
+            "Обсудить неисправность ↗",
+            "Плата",
+            "Оборудование",
+            "Инженер"
+          ]
+        },
+        "surfaces": {
+          "shadowStatic": 0,
+          "shadowOverlay": 0,
+          "shadowSamples": [],
+          "gradients": 0,
+          "scrims": 0,
+          "gradientSamples": [],
+          "gradientText": 0,
+          "hairlines": 0,
+          "hairlineSamples": [],
+          "outlinedBoxes": 0,
+          "dashed": 0,
+          "blurred": 0,
+          "roundedBoxes": 4,
+          "boxRadius": 20,
+          "squareMedia": 0,
+          "roundedMedia": 3,
+          "mediaRadius": 28,
+          "textShadow": 0,
+          "cardRows": [
+            {
+              "count": 3,
+              "iconTopped": false,
+              "rounded": true,
+              "top": 1482
+            }
+          ]
+        },
+        "heroMedia": [
+          {
+            "type": "img",
+            "ratio": 0.19
+          }
+        ],
+        "nav": {
+          "links": 5,
+          "fixed": false,
+          "height": 94,
+          "floatingPill": false,
+          "blur": false
+        },
+        "fontsLoaded": ["golos text"]
+      },
+      "layout": {
+        "viewport": {
+          "w": 768,
+          "h": 1024
+        },
+        "pageH": 2386,
+        "margins": {
+          "left": 35,
+          "right": 35
+        },
+        "sections": [
+          {
+            "sel": "section.lr-concept__lab-hero.lr-concept__frame",
+            "tag": "section",
+            "top": 94,
+            "height": 685,
+            "words": 36,
+            "media": 1,
+            "middle": 60,
+            "heading": {
+              "text": "Ремонт",
+              "size": 56,
+              "tag": "h1"
+            },
+            "left": 35,
+            "right": 35,
+            "textLeft": 35,
+            "textRight": 77,
+            "fullBleed": false,
+            "footer": false,
+            "hero": true,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "section#concept-detail.lr-concept__lab-story.lr-concept__fra",
+            "tag": "section",
+            "top": 779,
+            "height": 553,
+            "words": 21,
+            "media": 3,
+            "middle": 18,
+            "heading": {
+              "text": "Инженерия",
+              "size": 34,
+              "tag": "h2"
+            },
+            "left": 35,
+            "right": 35,
+            "textLeft": 35,
+            "textRight": 35,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "section#concept-prices.lr-concept__pricing.lr-concept__frame",
+            "tag": "section",
+            "top": 1332,
+            "height": 837,
+            "words": 57,
+            "media": 1,
+            "middle": 52,
+            "heading": {
+              "text": "Сначала ясно.",
+              "size": 34,
+              "tag": "h2"
+            },
+            "left": 35,
+            "right": 74,
+            "textLeft": 35,
+            "textRight": 74,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "footer.lr-concept__footer.lr-concept__frame",
+            "tag": "footer",
+            "top": 2169,
+            "height": 217,
+            "words": 12,
+            "media": 0,
+            "middle": 0,
+            "heading": {
+              "text": "Ленремонт.",
+              "size": 108,
+              "tag": "span"
+            },
+            "left": 35,
+            "right": 35,
+            "textLeft": 35,
+            "textRight": 35,
+            "fullBleed": false,
+            "footer": true,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          }
+        ],
+        "gaps": [],
+        "h1s": [
+          {
+            "text": "Ремонт изнутри.",
+            "size": 56,
+            "top": 201,
+            "firstScreen": true
+          }
+        ],
+        "edgeText": [],
+        "edges": [
+          {
+            "x": 35,
+            "n": 6
+          },
+          {
+            "x": 404,
+            "n": 1
+          }
+        ],
+        "leftBlocks": 7,
+        "bodySize": 16,
+        "stage": false,
+        "explains": false,
+        "slivers": [],
+        "voidShare": 0,
+        "voidBox": null
+      },
+      "app": null,
+      "consoleErrors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "load": "load",
+      "screens": 4,
+      "filled": [1, 1, 1, 1],
+      "motion": {
+        "elements": 20,
+        "css": 20,
+        "transitions": 0,
+        "scripted": 0,
+        "videos": 0,
+        "playingVideos": 0
+      },
+      "metrics": {
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "page": {
+          "height": 3248,
+          "screens": 3.8,
+          "words": 128,
+          "img": 7,
+          "video": 0,
+          "canvas": 0,
+          "svg": 0,
+          "sections": 3,
+          "horizontalOverflow": 0,
+          "overflowCulprits": [],
+          "uiFragments": 0,
+          "uiAbuse": false,
+          "realPictures": 5,
+          "videoCount": 0,
+          "uiPictures": 0,
+          "pictureSamples": [
+            "workshop-mobile-board-720.webp",
+            "workshop-mobile-engineer-720.webp",
+            "workshop-mobile-microscope-720.webp",
+            "workshop-prosveshcheniya-board-640.webp",
+            "workshop-prosveshcheniya-engineer-640.webp"
+          ],
+          "blendText": 0,
+          "sideScrollers": 0,
+          "brokenImages": [],
+          "emoji": [],
+          "videosNoPoster": 0
+        },
+        "hero": {
+          "text": "Ремонт изнутри.",
+          "words": 2,
+          "chars": 15,
+          "lines": 2,
+          "size": 56,
+          "vw": 14.4,
+          "font": "Golos Text",
+          "weight": 600,
+          "tracking": -0.055,
+          "leading": 1.02,
+          "upper": false,
+          "italic": false,
+          "mono": false,
+          "align": "left",
+          "position": "center",
+          "widthRatio": 0.9,
+          "top": 102,
+          "tag": "h1",
+          "kind": "heading"
+        },
+        "h1": {
+          "text": "Ремонт изнутри.",
+          "words": 2,
+          "lines": 2,
+          "size": 56,
+          "font": "Golos Text"
+        },
+        "headings": [
+          {
+            "text": "Ленремонт.",
+            "words": 1,
+            "chars": 10,
+            "lines": 1,
+            "size": 24,
+            "vw": 6.2,
+            "font": "Golos Text",
+            "weight": 700,
+            "tracking": -0.055,
+            "leading": 1.5,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "left",
+            "widthRatio": 0.33,
+            "top": 21,
+            "tag": "a",
+            "kind": "heading"
+          },
+          {
+            "text": "Ремонт изнутри.",
+            "words": 2,
+            "chars": 15,
+            "lines": 2,
+            "size": 56,
+            "vw": 14.4,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.9,
+            "top": 102,
+            "tag": "h1",
+            "kind": "heading"
+          },
+          {
+            "text": "Инженерия в деталях.",
+            "words": 3,
+            "chars": 20,
+            "lines": 2,
+            "size": 34,
+            "vw": 8.7,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.9,
+            "top": 1168,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Сначала ясно. Потом ремонт.",
+            "words": 4,
+            "chars": 27,
+            "lines": 2,
+            "size": 34,
+            "vw": 8.7,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.055,
+            "leading": 1.02,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.9,
+            "top": 2049,
+            "tag": "h2",
+            "kind": "heading"
+          },
+          {
+            "text": "Ленремонт.",
+            "words": 1,
+            "chars": 10,
+            "lines": 1,
+            "size": 54.6,
+            "vw": 14,
+            "font": "Golos Text",
+            "weight": 600,
+            "tracking": -0.065,
+            "leading": 1.05,
+            "upper": false,
+            "italic": false,
+            "mono": false,
+            "align": "left",
+            "position": "center",
+            "widthRatio": 0.9,
+            "top": 3156,
+            "tag": "span",
+            "kind": "heading"
+          }
+        ],
+        "headingSummary": {
+          "count": 5,
+          "maxLines": 2,
+          "over2Lines": 0,
+          "statements": 0,
+          "centered": 0,
+          "medianWords": 3,
+          "mixedFontHeadings": 0
+        },
+        "type": {
+          "families": [
+            {
+              "family": "Golos Text",
+              "share": 1,
+              "mono": false
+            }
+          ],
+          "familyCount": 1,
+          "sizes": [13, 14, 16, 17, 20, 24, 34, 55, 56],
+          "sizeCount": 9,
+          "notLoaded": [],
+          "body": {
+            "font": "Golos Text",
+            "size": 16,
+            "leading": 1.6,
+            "weight": 400,
+            "tracking": 0,
+            "contrast": 15.8
+          },
+          "measureChars": 50,
+          "max": {
+            "size": 56,
+            "vw": 14.4,
+            "font": "Golos Text",
+            "text": "Ремонтизнутри."
+          },
+          "monoShare": 0,
+          "monoProseShare": 0,
+          "monoFamilies": [],
+          "monoSamples": [],
+          "microLabels": 0,
+          "microLabelShare": 0,
+          "microSamples": [],
+          "upperShare": 0,
+          "centerShare": 0.03,
+          "smallText": 0
+        },
+        "eyebrows": [],
+        "numbered": [],
+        "color": {
+          "bodyBg": "#ffffff",
+          "bodyBgHsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          },
+          "dark": false,
+          "sectionBgs": [
+            {
+              "color": "#101d2c",
+              "top": 0,
+              "hsl": {
+                "h": 212,
+                "s": 0.47,
+                "l": 0.12
+              }
+            },
+            {
+              "color": "#192b40",
+              "top": 562,
+              "hsl": {
+                "h": 212,
+                "s": 0.44,
+                "l": 0.17
+              }
+            }
+          ],
+          "textColors": [
+            {
+              "color": "#f5f7f9",
+              "share": 0.77
+            },
+            {
+              "color": "#c0ccda",
+              "share": 0.17
+            },
+            {
+              "color": "#101d2c",
+              "share": 0.05
+            },
+            {
+              "color": "#e9b956",
+              "share": 0
+            }
+          ],
+          "button": {
+            "bg": "#e9b956",
+            "hsl": {
+              "h": 40,
+              "s": 0.77,
+              "l": 0.63
+            },
+            "fg": "#101d2c"
+          },
+          "lowContrast": []
+        },
+        "buttons": {
+          "count": 4,
+          "inHero": 1,
+          "radius": "pill",
+          "height": 58,
+          "withShadow": 0,
+          "withGradient": 0,
+          "mono": 0,
+          "upper": 0,
+          "heroLabels": ["Обсудить неисправность ↗"]
+        },
+        "surfaces": {
+          "shadowStatic": 0,
+          "shadowOverlay": 0,
+          "shadowSamples": [],
+          "gradients": 0,
+          "scrims": 0,
+          "gradientSamples": [],
+          "gradientText": 0,
+          "hairlines": 0,
+          "hairlineSamples": [],
+          "outlinedBoxes": 0,
+          "dashed": 0,
+          "blurred": 0,
+          "roundedBoxes": 4,
+          "boxRadius": 20,
+          "squareMedia": 0,
+          "roundedMedia": 3,
+          "mediaRadius": 28,
+          "textShadow": 0,
+          "cardRows": [
+            {
+              "count": 3,
+              "iconTopped": false,
+              "rounded": true,
+              "top": 2445
+            }
+          ]
+        },
+        "heroMedia": [
+          {
+            "type": "img",
+            "ratio": 0.3
+          }
+        ],
+        "nav": {
+          "links": 2,
+          "fixed": false,
+          "height": 78,
+          "floatingPill": false,
+          "blur": false
+        },
+        "fontsLoaded": ["golos text"]
+      },
+      "layout": {
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "pageH": 3248,
+        "margins": {
+          "left": 20,
+          "right": 20
+        },
+        "sections": [
+          {
+            "sel": "section.lr-concept__lab-hero.lr-concept__frame",
+            "tag": "section",
+            "top": 78,
+            "height": 1000,
+            "words": 36,
+            "media": 1,
+            "middle": 0,
+            "heading": {
+              "text": "Ремонт",
+              "size": 56,
+              "tag": "h1"
+            },
+            "left": 20,
+            "right": 20,
+            "textLeft": 20,
+            "textRight": 74,
+            "fullBleed": false,
+            "footer": false,
+            "hero": true,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "section#concept-detail.lr-concept__lab-story.lr-concept__fra",
+            "tag": "section",
+            "top": 1078,
+            "height": 886,
+            "words": 21,
+            "media": 3,
+            "middle": 0,
+            "heading": {
+              "text": "Инженерия",
+              "size": 34,
+              "tag": "h2"
+            },
+            "left": 20,
+            "right": 20,
+            "textLeft": 20,
+            "textRight": 30,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "section#concept-prices.lr-concept__pricing.lr-concept__frame",
+            "tag": "section",
+            "top": 1964,
+            "height": 1102,
+            "words": 57,
+            "media": 1,
+            "middle": 0,
+            "heading": {
+              "text": "Сначала ясно.",
+              "size": 34,
+              "tag": "h2"
+            },
+            "left": 20,
+            "right": 20,
+            "textLeft": 20,
+            "textRight": 27,
+            "fullBleed": false,
+            "footer": false,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          },
+          {
+            "sel": "footer.lr-concept__footer.lr-concept__frame",
+            "tag": "footer",
+            "top": 3067,
+            "height": 181,
+            "words": 12,
+            "media": 0,
+            "middle": 0,
+            "heading": {
+              "text": "Ленремонт.",
+              "size": 55,
+              "tag": "span"
+            },
+            "left": 20,
+            "right": 70,
+            "textLeft": 20,
+            "textRight": 70,
+            "fullBleed": false,
+            "footer": true,
+            "hero": false,
+            "continues": false,
+            "pinned": false
+          }
+        ],
+        "gaps": [],
+        "h1s": [
+          {
+            "text": "Ремонт изнутри.",
+            "size": 56,
+            "top": 102,
+            "firstScreen": true
+          }
+        ],
+        "edgeText": [],
+        "edges": [
+          {
+            "x": 20,
+            "n": 7
+          }
+        ],
+        "leftBlocks": 7,
+        "bodySize": 16,
+        "stage": false,
+        "explains": false,
+        "slivers": [],
+        "voidShare": 0,
+        "voidBox": null
+      },
+      "app": null,
+      "consoleErrors": []
+    }
+  ],
+  "findings": [
+    {
+      "level": "WARN",
+      "id": "no-footage",
+      "width": 1440,
+      "message": "No video anywhere on the page.",
+      "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+    },
+    {
+      "level": "WARN",
+      "id": "name-only-title",
+      "width": 1440,
+      "message": "The h1 is a bare name (\"Ремонт изнутри.\") and nothing else on the first screen says what this is.",
+      "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points.",
+      "alsoAt": [768, 390]
+    }
+  ],
+  "images": [
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "fold": "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\apple-directions\\lab-final\\desktop-fold.jpg",
+      "pages": [
+        "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\apple-directions\\lab-final\\desktop-page-01.jpg"
+      ],
+      "film": []
+    },
+    {
+      "viewport": "tablet",
+      "width": 768,
+      "fold": "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\apple-directions\\lab-final\\tablet-fold.jpg",
+      "pages": [
+        "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\apple-directions\\lab-final\\tablet-page-01.jpg"
+      ],
+      "film": []
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "fold": "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\apple-directions\\lab-final\\mobile-fold.jpg",
+      "pages": [
+        "D:\\works\\projects\\lr-remont-noutbykov\\.taste-skill\\apple-directions\\lab-final\\mobile-page-01.jpg"
+      ],
+      "film": []
+    }
+  ]
+}

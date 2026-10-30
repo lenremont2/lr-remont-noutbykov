@@ -1,0 +1,533 @@
+{
+  "kind": "Post-design lab baseline before local-font optimization; not field data",
+  "url": "http://127.0.0.1:4324/",
+  "lighthouseVersion": "13.5.0",
+  "chromeBinaryVersion": "156.0.8078.73",
+  "launch": "Separate headless Chrome; Lighthouse/chrome-launcher temporary clean profile per run; no IAB/user profile",
+  "categories": ["performance"],
+  "errorReporting": false,
+  "samplesPerProfile": 3,
+  "cache": "Cold browser profile/storage; OS/DNS/CDN caches are not controlled",
+  "commands": {
+    "base": "npm exec --offline --yes --package=lighthouse@13.5.0 -- lighthouse http://127.0.0.1:4324/ --only-categories=performance --output=json --chrome-flags=\"--headless=new --no-first-run --disable-extensions\" --throttling-method=simulate --disable-full-page-screenshot --no-enable-error-reporting --quiet",
+    "desktopAdditional": "--preset=desktop",
+    "output": "--output-path=artifacts/design-system-v2/final/lighthouse-{profile}-{run}.json",
+    "chromePath": "C:/Program Files/Google/Chrome/Application/chrome.exe"
+  },
+  "profiles": {
+    "mobile": {
+      "conditions": {
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "disableStorageReset": false,
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      },
+      "summary": {
+        "LCP": {
+          "median": 2942.32895,
+          "min": 1832.1038500000002,
+          "max": 3012.7845,
+          "unit": "ms"
+        },
+        "CLS": {
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "unit": "unitless"
+        },
+        "FCP": {
+          "median": 2867.1065,
+          "min": 1705.757,
+          "max": 3012.7845,
+          "unit": "ms"
+        },
+        "TBT": {
+          "median": 27.5,
+          "min": 0,
+          "max": 100.94489999999996,
+          "unit": "ms"
+        },
+        "SpeedIndex": {
+          "median": 3628.2499744796964,
+          "min": 2213.289362648126,
+          "max": 5708.0813180196155,
+          "unit": "ms"
+        }
+      },
+      "runs": [
+        {
+          "run": 1,
+          "report": "lighthouse-mobile-1.json",
+          "fetchTime": "2026-10-29T12:39:24.457Z",
+          "score": 0.88,
+          "metrics": {
+            "LCP": 2942.32895,
+            "CLS": 0,
+            "FCP": 2867.1065,
+            "TBT": 100.94489999999996,
+            "SpeedIndex": 3628.2499744796964
+          },
+          "observedLCP_ms": 1727,
+          "warnings": [],
+          "runtimeError": null,
+          "renderBlocking": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+              "totalBytes": 1037,
+              "wastedMs": 921
+            },
+            {
+              "url": "http://127.0.0.1:4324/_astro/LandingLayout.CeIjOjN9.css",
+              "totalBytes": 18393,
+              "wastedMs": 575
+            }
+          ],
+          "fontRequests": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+              "status": 200,
+              "startMs": 406.54399996995926,
+              "endMs": 1063.9909999668598,
+              "transferBytes": 1037
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hK5SAMo.woff2",
+              "status": 200,
+              "startMs": 1673.533999979496,
+              "endMs": 1942.151999950409,
+              "transferBytes": 38634
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hK5SAMqbpw.woff2",
+              "status": 200,
+              "startMs": 1673.6439999938011,
+              "endMs": 2012.4019999802113,
+              "transferBytes": 22155
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2",
+              "status": 200,
+              "startMs": 1673.716999977827,
+              "endMs": 2072.330999970436,
+              "transferBytes": 19330
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "report": "lighthouse-mobile-2.json",
+          "fetchTime": "2026-10-29T12:40:51.118Z",
+          "score": 0.99,
+          "metrics": {
+            "LCP": 1832.1038500000002,
+            "CLS": 0,
+            "FCP": 1705.757,
+            "TBT": 27.5,
+            "SpeedIndex": 2213.289362648126
+          },
+          "observedLCP_ms": 1075,
+          "warnings": [],
+          "runtimeError": null,
+          "renderBlocking": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+              "totalBytes": 1037,
+              "wastedMs": 952
+            },
+            {
+              "url": "http://127.0.0.1:4324/_astro/LandingLayout.CeIjOjN9.css",
+              "totalBytes": 18393,
+              "wastedMs": 304
+            }
+          ],
+          "fontRequests": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+              "status": 200,
+              "startMs": 31.69699999690056,
+              "endMs": 738.636999964714,
+              "transferBytes": 1037
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hK5SAMo.woff2",
+              "status": 200,
+              "startMs": 1048.0139999985695,
+              "endMs": 1234.3140000104904,
+              "transferBytes": 38219
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hK5SAMqbpw.woff2",
+              "status": 200,
+              "startMs": 1048.1240000128746,
+              "endMs": 1187.1200000047684,
+              "transferBytes": 22570
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2",
+              "status": 200,
+              "startMs": 1048.2209999859333,
+              "endMs": 1235.4280000030994,
+              "transferBytes": 19330
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "report": "lighthouse-mobile-3.json",
+          "fetchTime": "2026-10-29T12:41:06.727Z",
+          "score": 0.85,
+          "metrics": {
+            "LCP": 3012.7845,
+            "CLS": 0,
+            "FCP": 3012.7845,
+            "TBT": 0,
+            "SpeedIndex": 5708.0813180196155
+          },
+          "observedLCP_ms": 3213,
+          "warnings": [],
+          "runtimeError": null,
+          "renderBlocking": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+              "totalBytes": 1037,
+              "wastedMs": 932
+            },
+            {
+              "url": "http://127.0.0.1:4324/_astro/LandingLayout.CeIjOjN9.css",
+              "totalBytes": 18393,
+              "wastedMs": 304
+            }
+          ],
+          "fontRequests": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+              "status": 200,
+              "startMs": 45.02700001001358,
+              "endMs": 1182.7549999952316,
+              "transferBytes": 1037
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hK5SAMo.woff2",
+              "status": 200,
+              "startMs": 1481.7459999918938,
+              "endMs": 1610.3349999785423,
+              "transferBytes": 38634
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hK5SAMqbpw.woff2",
+              "status": 200,
+              "startMs": 1481.8629999756813,
+              "endMs": 1764.3199999928474,
+              "transferBytes": 22155
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2",
+              "status": 200,
+              "startMs": 1481.9399999976158,
+              "endMs": 1796.8840000033379,
+              "transferBytes": 19330
+            }
+          ]
+        }
+      ]
+    },
+    "desktop": {
+      "conditions": {
+        "formFactor": "desktop",
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "disableStorageReset": false,
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      },
+      "summary": {
+        "LCP": {
+          "median": 588.1339999999999,
+          "min": 586.4058311528247,
+          "max": 939.2073999999998,
+          "unit": "ms"
+        },
+        "CLS": {
+          "median": 0.0001498198970149374,
+          "min": 0.0001498198970149374,
+          "max": 0.0001498198970149374,
+          "unit": "unitless"
+        },
+        "FCP": {
+          "median": 588.1339999999999,
+          "min": 586.4058311528247,
+          "max": 939.2073999999998,
+          "unit": "ms"
+        },
+        "TBT": {
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "unit": "ms"
+        },
+        "SpeedIndex": {
+          "median": 1288.5873328322996,
+          "min": 942.3290088067539,
+          "max": 1953.9231546578435,
+          "unit": "ms"
+        }
+      },
+      "runs": [
+        {
+          "run": 1,
+          "report": "lighthouse-desktop-1.json",
+          "fetchTime": "2026-10-29T12:41:23.879Z",
+          "score": 0.99,
+          "metrics": {
+            "LCP": 588.1339999999999,
+            "CLS": 0.0001498198970149374,
+            "FCP": 588.1339999999999,
+            "TBT": 0,
+            "SpeedIndex": 1288.5873328322996
+          },
+          "observedLCP_ms": 1672,
+          "warnings": [],
+          "runtimeError": null,
+          "renderBlocking": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+              "totalBytes": 1037,
+              "wastedMs": 382
+            },
+            {
+              "url": "http://127.0.0.1:4324/_astro/LandingLayout.CeIjOjN9.css",
+              "totalBytes": 18393,
+              "wastedMs": 86
+            }
+          ],
+          "fontRequests": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+              "status": 200,
+              "startMs": 14.718999981880188,
+              "endMs": 1326.7879999876022,
+              "transferBytes": 1037
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hK5SAMo.woff2",
+              "status": 200,
+              "startMs": 1635.9900000095367,
+              "endMs": 2073.6180000007153,
+              "transferBytes": 38634
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hK5SAMqbpw.woff2",
+              "status": 200,
+              "startMs": 1636.1930000185966,
+              "endMs": 2310.958999991417,
+              "transferBytes": 22155
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2",
+              "status": 200,
+              "startMs": 1636.317000001669,
+              "endMs": 2426.152999997139,
+              "transferBytes": 19330
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "report": "lighthouse-desktop-2.json",
+          "fetchTime": "2026-10-29T12:43:57.200Z",
+          "score": 0.94,
+          "metrics": {
+            "LCP": 939.2073999999998,
+            "CLS": 0.0001498198970149374,
+            "FCP": 939.2073999999998,
+            "TBT": 0,
+            "SpeedIndex": 1953.9231546578435
+          },
+          "observedLCP_ms": 2576,
+          "warnings": [],
+          "runtimeError": null,
+          "renderBlocking": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+              "totalBytes": 1037,
+              "wastedMs": 733
+            },
+            {
+              "url": "http://127.0.0.1:4324/_astro/LandingLayout.CeIjOjN9.css",
+              "totalBytes": 18393
+            }
+          ],
+          "fontRequests": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+              "status": 200,
+              "startMs": 15.851999998092651,
+              "endMs": 2201.75799998641,
+              "transferBytes": 1037
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hK5SAMo.woff2",
+              "status": 200,
+              "startMs": 2523.4259999990463,
+              "endMs": 2850.847000002861,
+              "transferBytes": 38220
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hK5SAMqbpw.woff2",
+              "status": 200,
+              "startMs": 2523.5379999876022,
+              "endMs": 2803.052999973297,
+              "transferBytes": 22155
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2",
+              "status": 200,
+              "startMs": 2523.6599999964237,
+              "endMs": 2735.5750000178814,
+              "transferBytes": 19746
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "report": "lighthouse-desktop-3.json",
+          "fetchTime": "2026-10-29T12:42:04.158Z",
+          "score": 1,
+          "metrics": {
+            "LCP": 586.4058311528247,
+            "CLS": 0.0001498198970149374,
+            "FCP": 586.4058311528247,
+            "TBT": 0,
+            "SpeedIndex": 942.3290088067539
+          },
+          "observedLCP_ms": 1127,
+          "warnings": [],
+          "runtimeError": null,
+          "renderBlocking": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+              "totalBytes": 1037,
+              "wastedMs": 381
+            },
+            {
+              "url": "http://127.0.0.1:4324/_astro/LandingLayout.CeIjOjN9.css",
+              "totalBytes": 18393,
+              "wastedMs": 85
+            }
+          ],
+          "fontRequests": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+              "status": 200,
+              "startMs": 43.24199998378754,
+              "endMs": 729.5149999856949,
+              "transferBytes": 1037
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hK5SAMo.woff2",
+              "status": 200,
+              "startMs": 1076.7690000236034,
+              "endMs": 1239.1180000007153,
+              "transferBytes": 38634
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hK5SAMqbpw.woff2",
+              "status": 200,
+              "startMs": 1076.8910000026226,
+              "endMs": 1300.621000021696,
+              "transferBytes": 22155
+            },
+            {
+              "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2",
+              "status": 200,
+              "startMs": 1076.9839999973774,
+              "endMs": 1299.7899999916553,
+              "transferBytes": 19330
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "excludedAttempt": {
+    "report": "lighthouse-desktop-2-initial-warning.json",
+    "reason": "Storage-clear warning; retained for transparency and replaced once with identical settings",
+    "warnings": [
+      "Clearing the origin data timed out. Try auditing this page again and file a bug if the issue persists."
+    ],
+    "LCP_ms": 585.2061714808236
+  },
+  "traceEvidence": {
+    "report": "lighthouse-mobile-1.json",
+    "lcpNode": "div.lr-container > div.lr-home-hero__sheet > div.lr-home-hero__description > p",
+    "lcpBreakdown": [
+      {
+        "subpart": "timeToFirstByte",
+        "label": "Time to first byte",
+        "duration": 396.027
+      },
+      {
+        "subpart": "elementRenderDelay",
+        "label": "Element render delay",
+        "duration": 1330.62
+      }
+    ],
+    "renderBlocking": [
+      {
+        "url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap",
+        "totalBytes": 1037,
+        "wastedMs": 921
+      },
+      {
+        "url": "http://127.0.0.1:4324/_astro/LandingLayout.CeIjOjN9.css",
+        "totalBytes": 18393,
+        "wastedMs": 575
+      }
+    ],
+    "interpretation": "External Google Fonts CSS is a measured render-blocking request and creates a font discovery chain. Local font loading is the next controlled hypothesis; improvement must be remeasured rather than assumed."
+  },
+  "internalTargets": {
+    "LCP_ms": 2500,
+    "CLS": 0.1
+  },
+  "targetAssessment": {
+    "mobileLCP": "above target: median 2942ms",
+    "desktopLCP": "within target",
+    "CLS": "within target in all retained runs",
+    "INP": "not measured; TBT is not field INP"
+  },
+  "notes": [
+    "Reported LCP is Lighthouse simulated LCP; observed trace LCP is separate.",
+    "No pre-design baseline exists; this is the before point only for the forthcoming font change.",
+    "No production source changes made during these baseline measurements.",
+    "All six retained runs have no runtime errors or run warnings."
+  ]
+}

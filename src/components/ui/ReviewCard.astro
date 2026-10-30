@@ -2,28 +2,51 @@
 interface Props {
   review: {
     name: string;
-    avatar: string;
+    avatar?: string;
     rating: number;
     date: string;
     text: string;
+    subject?: string;
+    reviewUrl?: string;
+    photos?: {
+      src: string;
+      alt: string;
+      width: number;
+      height: number;
+    }[];
   };
   source: { name: string; url: string; branch: string };
 }
 const { review, source } = Astro.props;
+const nameParts = review.name.trim().split(/\s+/);
+const initials = (
+  nameParts.length > 1
+    ? nameParts
+        .slice(0, 2)
+        .map((part) => part[0])
+        .join("")
+    : review.name.trim().slice(0, 2)
+).toLocaleUpperCase("ru-RU");
 ---
 
 <article class="lr-review">
   <header class="lr-review__header">
     <span class="lr-review__avatar" aria-hidden="true">
-      <img
-        class="lr-review__avatar-image"
-        src={review.avatar}
-        alt=""
-        width="44"
-        height="44"
-        loading="lazy"
-        decoding="async"
-      />
+      {
+        review.avatar ? (
+          <img
+            class="lr-review__avatar-image"
+            src={review.avatar}
+            alt=""
+            width="44"
+            height="44"
+            loading="lazy"
+            decoding="async"
+          />
+        ) : (
+          initials
+        )
+      }
     </span>
     <div class="lr-review__author">
       <h3 class="lr-review__name">{review.name}</h3>
@@ -55,11 +78,45 @@ const { review, source } = Astro.props;
       </div>
     </div>
   </header>
+  {
+    review.subject && (
+      <p class="lr-caption lr-review__subject">{review.subject}</p>
+    )
+  }
   <p class="lr-review__text">{review.text}</p>
+  {
+    review.photos?.length ? (
+      <div
+        class="lr-review__photos"
+        role="group"
+        aria-label={`Фотографии к отзыву ${review.name}`}
+      >
+        {review.photos.map((photo) => (
+          <a
+            class="lr-review__photo"
+            href={photo.src}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Открыть фото к отзыву ${review.name}: ${photo.alt}`}
+          >
+            <img
+              class="lr-review__photo-image"
+              src={photo.src}
+              alt={photo.alt}
+              width={photo.width}
+              height={photo.height}
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+        ))}
+      </div>
+    ) : null
+  }
   <footer class="lr-review__footer">
     <a
       class="lr-review__source"
-      href={source.url}
+      href={review.reviewUrl ?? source.url}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Отзывы: ${review.name}, ${source.name}, ${source.branch}`}

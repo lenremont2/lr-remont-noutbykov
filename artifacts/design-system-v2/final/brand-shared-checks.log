@@ -1,0 +1,102 @@
+[
+  {
+    "cards": [
+      {
+        "shadow": "none",
+        "transform": "none"
+      },
+      {
+        "shadow": "none",
+        "transform": "none"
+      },
+      {
+        "shadow": "none",
+        "transform": "none"
+      }
+    ],
+    "client": 1425,
+    "columns": "402px 402px 402px",
+    "glass": [
+      "none",
+      "none",
+      "none"
+    ],
+    "scroll": 1425,
+    "width": 1440
+  },
+  {
+    "cards": [
+      {
+        "shadow": "none",
+        "transform": "none"
+      },
+      {
+        "shadow": "none",
+        "transform": "none"
+      },
+      {
+        "shadow": "none",
+        "transform": "none"
+      }
+    ],
+    "client": 753,
+    "columns": "332.5px 332.5px",
+    "glass": [
+      "none",
+      "none",
+      "none"
+    ],
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "cards": [
+      {
+        "shadow": "none",
+        "transform": "none"
+      },
+      {
+        "shadow": "none",
+        "transform": "none"
+      },
+      {
+        "shadow": "none",
+        "transform": "none"
+      }
+    ],
+    "client": 375,
+    "columns": "335px",
+    "glass": [
+      "none",
+      "none",
+      "none"
+    ],
+    "scroll": 375,
+    "width": 390
+  },
+  {
+    "cards": [
+      {
+        "shadow": "none",
+        "transform": "none"
+      },
+      {
+        "shadow": "none",
+        "transform": "none"
+      },
+      {
+        "shadow": "none",
+        "transform": "none"
+      }
+    ],
+    "client": 305,
+    "columns": "265px",
+    "glass": [
+      "none",
+      "none",
+      "none"
+    ],
+    "scroll": 305,
+    "width": 320
+  }
+]

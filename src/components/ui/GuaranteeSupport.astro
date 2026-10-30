@@ -1,0 +1,49 @@
+---
+import copy from "../../data/laptop-service.json";
+---
+
+<div class="lr-guarantee__support" aria-labelledby="lr-guarantee-support-title">
+  <div class="lr-guarantee__support-heading">
+    <h3 id="lr-guarantee-support-title">Если неисправность появилась снова</h3>
+    <p>Порядок обращения по гарантии</p>
+  </div>
+  <ol class="lr-guarantee__steps">
+    <li>
+      <div>
+        <h4>Опишите, что повторилось</h4>
+        <p>
+          Расскажите, когда снова появилась неисправность и как она проявляется.
+        </p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h4>Свяжитесь с Ленремонтом</h4>
+        <p>
+          Если документы под рукой, подготовьте наряд-заказ и гарантийный талон
+          — по ним проще найти ваш ремонт.
+        </p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h4>Согласуйте следующий шаг</h4>
+        <p>
+          Специалист уточнит обращение и согласует проверку ноутбука. Условия
+          повторного ремонта определяются гарантийными документами.
+        </p>
+      </div>
+    </li>
+  </ol>
+  <div class="lr-guarantee__support-contact">
+    <p>По вопросам ремонта и гарантии</p>
+    <a
+      class="lr-button"
+      href="tel:+78123444444"
+      data-source="guarantee"
+      aria-label={`Позвонить по вопросам ремонта и гарантии: ${copy.contact.fields["Телефон"]}`}
+    >
+      {copy.contact.fields["Телефон"]}
+    </a>
+  </div>
+</div>

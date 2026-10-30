@@ -1,0 +1,339 @@
+{
+  "version": 1,
+  "at": "2026-10-29T09:28:11.252Z",
+  "seed": 867979634,
+  "redraws": 0,
+  "input": {
+    "brief": "Lenremont laptop repair Saint Petersburg, real mobile workshop, Apple-like product clarity, three visual concept prototypes",
+    "sector": "physical-product",
+    "tone": "technical",
+    "have": ["photography", "product-photo", "video"],
+    "keep": ["palette", "type"],
+    "avoid": [],
+    "sections": ["showcase", "pricing", "cta"],
+    "direction": "page-is-the-object"
+  },
+  "imagery": "own",
+  "allow": [],
+  "direction": {
+    "id": "page-is-the-object",
+    "name": "The page is the object",
+    "sectors": [
+      "restaurant",
+      "event",
+      "hospitality",
+      "culture",
+      "music",
+      "physical-product",
+      "ecommerce",
+      "nonprofit",
+      "education",
+      "personal-portfolio",
+      "consumer-app",
+      "other"
+    ],
+    "tones": ["warm", "playful", "editorial"],
+    "needs": [],
+    "idea": "Find the printed or physical artefact that already exists in the subject's world and build the page as that thing. A wedding site is the invitation card. A restaurant is its menu. A conference is the ticket; a record is its sleeve; a shop is the receipt or the swing tag; an archive is a stack of tabbed folders; a course is the syllabus sheet. The artefact supplies everything a template would otherwise invent: its proportions, its typographic manners, its way of grouping information. Visitors recognise the object instantly, which is why these pages feel specific.",
+    "composition": "The first screen shows the artefact as a single filled panel (paper colour on a contrasting ground) centred or offset, with believable proportions: a card at 5:7, a ticket at about 2.2:1 with a notch cut by `clip-path`, a menu as a tall sheet. All primary content lives on it, set the way that object is set: centred and symmetrical for an invitation, in tidy aligned columns for a menu or ticket. The ground behind is a flat colour or one full-bleed photograph. As the page continues, each section is another piece of the same stationery: a second card, a tear-off stub, a folded panel, always filled shapes with real edges (straight, notched, scalloped, perforated by a dotted `border` of round dots at 4px or more), never outlined boxes. The footer is the back of the object.",
+    "typography": "Take the manners of the artefact: a bookish serif with small caps avoided, or a blunt condensed face for tickets and posters. Sizes stay within what print would use relative to the panel; the name is large on the panel, details are small and exact.",
+    "typeClasses": [
+      "serif-text",
+      "serif-display",
+      "slab",
+      "condensed-heavy",
+      "grotesk-tight"
+    ],
+    "colour": "Paper and ink plus the ground the paper sits on. Two or three flat colours in total, like a two-colour print job.",
+    "paletteTags": ["two-tone", "earth", "light-neutral"],
+    "imagery": "Optional. One photograph behind the object, or small photographs placed on it like tipped-in plates. The object itself is the image.",
+    "sectionTags": ["object-led", "type-led", "colour-field"],
+    "motion": "curtain-footer",
+    "richness": "Recognition. The shaped edges, the print-like alignment and the limited inks make a familiar object out of plain HTML.",
+    "pitfalls": "Choose an artefact that truly belongs to the subject, or it becomes costume. Shape the edges with fills and `clip-path`; an outlined rectangle with a thin border is not an object. Keep text sizes readable on a phone, where the object becomes full width with its shaped edge kept at top and bottom.",
+    "seenIn": [
+      "opl-sarah-matt-wedding",
+      "aww-mosbys-files",
+      "opl-the-deep-end",
+      "opl-weeksync",
+      "opl-le-petit-bleu",
+      "opl-archiv"
+    ],
+    "allow": []
+  },
+  "hero": {
+    "id": "card-over-dim-room",
+    "name": "Card over a dim room",
+    "archetype": "artefact",
+    "directions": ["page-is-the-object", "pinned-poster", "dark-room"],
+    "needs": [],
+    "blueprint": "A full-bleed, low-key photograph of the room fills the viewport, darkened with `filter: brightness(0.7)` so it reads as atmosphere. Centred over it is one square-cornered panel in a flat warm tone taken from the photograph: columns 4–10, about 55% of the width and 62% of the height, a filled programme card with 32px padding. Along its top edge the three words of the title are spread to the left, centre and right in bold condensed capitals at clamp(28px, 2.5vw, 38px); that line is the headline. Under it sit two left-aligned blocks in the same face and size, line-height 1.0: the facts (date, time, place) as three short lines, then one supporting sentence held to 30ch. Along the card's bottom edge: a credit at left in 14px, the single action as a solid rectangular button in the centre, one text link at right. There is no navigation outside the card. The card is `position: sticky`: as the page scrolls it shrinks with `transform: scale` toward the bottom-left corner and stays there as a ticket-sized stub while photographs of differing sizes pass on a flat ground.",
+    "mobile": "The photograph fills 100svh and the card sits centred at full width minus 16px margins, 70svh tall. The title words stack as a two-line heading at 9vw at the card's top-left. The facts and the supporting sentence follow at 5.2vw in the condensed face. The action button spans the card's bottom edge. On scroll the card shrinks to a 120px stub pinned bottom-left.",
+    "headline": "The event or venue name, three words at most and up to about 8 characters each, spread across the card's top edge; two lines on a phone.",
+    "motion": "pinned-story",
+    "seenIn": ["opl-the-deep-end"]
+  },
+  "type": null,
+  "palette": null,
+  "photos": {
+    "set": "hands-and-making",
+    "title": "Hands and making",
+    "note": "hands at work, craft and making",
+    "treatment": null,
+    "others": ["object-still", "interior-and-table", "mountain", "forest"],
+    "photos": [
+      {
+        "id": 491,
+        "alt": "Axe, hammer, pliers and leather gloves laid out on dark wood",
+        "tone": "dark",
+        "colours": ["dark brown", "tan", "steel grey"],
+        "mono": false,
+        "calm": "none",
+        "quality": 4,
+        "ratio": 1.23,
+        "by": "Todd Quackenbush",
+        "page": "https://unsplash.com/photos/IClZBVw5W5A"
+      },
+      {
+        "id": 1060,
+        "alt": "Kettle pouring water over a pour-over coffee dripper on a dark counter",
+        "tone": "dark",
+        "colours": ["dark teal", "black", "warm brown"],
+        "mono": false,
+        "calm": "none",
+        "quality": 4,
+        "ratio": 1.5,
+        "by": "Karl Fredrickson",
+        "page": "https://unsplash.com/photos/TYIzeCiZ_60"
+      },
+      {
+        "id": 674,
+        "alt": "Cupped hands holding a heap of dark blue grapes",
+        "tone": "mid",
+        "colours": ["pale blue", "dark purple", "tan"],
+        "mono": false,
+        "calm": "none",
+        "quality": 4,
+        "ratio": 1.5,
+        "by": "Maja Petric",
+        "page": "https://unsplash.com/photos/vGQ49l9I4EE"
+      },
+      {
+        "id": 785,
+        "alt": "Two cupped hands holding a pile of green spruce tips",
+        "tone": "mid",
+        "colours": ["fresh green", "dark green", "warm skin"],
+        "mono": false,
+        "calm": "none",
+        "quality": 4,
+        "ratio": 1.5,
+        "by": "Jean Lakosnyk",
+        "page": "https://unsplash.com/photos/N9yFjkDc0vA"
+      },
+      {
+        "id": 319,
+        "alt": "Hands holding a vintage rangefinder camera against a denim jacket",
+        "tone": "mid",
+        "colours": ["denim blue", "mustard", "silver"],
+        "mono": false,
+        "calm": "none",
+        "quality": 4,
+        "ratio": 1.97,
+        "by": "Kristian Karlsson",
+        "page": "https://unsplash.com/photos/3V6ZTpZS-ag"
+      },
+      {
+        "id": 304,
+        "alt": "Hand adjusting faders on an audio mixing console",
+        "tone": "mid",
+        "colours": ["warm white", "navy", "amber"],
+        "mono": false,
+        "calm": "none",
+        "quality": 4,
+        "ratio": 1.5,
+        "by": "Drew Patrick Miller",
+        "page": "https://unsplash.com/photos/_o6AAx9dl_Y"
+      },
+      {
+        "id": 407,
+        "alt": "Hands lighting a sparkler that throws bright sparks in the dark",
+        "tone": "dark",
+        "colours": ["charcoal", "warm white", "amber"],
+        "mono": false,
+        "calm": "right",
+        "quality": 4,
+        "ratio": 1.5,
+        "by": "Kelley Bozarth",
+        "page": "https://unsplash.com/photos/n6vS3xlnsCc"
+      }
+    ]
+  },
+  "motion": {
+    "id": "pinned-story",
+    "name": "Pinned story",
+    "description": "One element holds its place with `position: sticky` (a title, a frame, a product fragment) while the items that belong to it scroll past or swap inside it. The page's ordinary scrolling does the work; nothing is hijacked. Hold it for about one screen per step and three screens at most, two held stages per page at most, with a line of text on every held screen. Recipe: 'Pinned story' in references/motion.md."
+  },
+  "sections": [
+    {
+      "id": "showcase-output-slips-along-the-edge",
+      "role": "showcase",
+      "name": "Output slips along the edge",
+      "shape": "full-bleed",
+      "tags": ["photo-led", "object-led"],
+      "directions": [
+        "page-is-the-object",
+        "borrowed-category",
+        "place-carries-it",
+        "loud-flat-poster"
+      ],
+      "needs": [],
+      "blueprint": "For subjects whose result is a piece of text or paper: a receipt, a note, a ticket, a written line. A full-bleed photograph, 100vw by 96svh, sets the scene. In the upper centre, left-aligned in a column starting at 18% of the width, two short paragraphs in paper colour at 28–32px, the first opening with the heading's two to four words; a neutral scrim sits behind that column only. Along the bottom, six paper-coloured slips stand side by side across the full width with 12px gaps, each a filled rectangle of a different height (between 26 and 44svh), their lower ends cut off by the section's bottom edge. Two or three of the slips, not all, are tilted by 1–2 degrees. Each slip carries a sample of real output in the text face at 15px: a bold first line, a divider made of typed characters, then four to eight lines.",
+      "mobile": "The photograph is 100svh. The paragraphs sit in the top third at 22px. Only three slips show, each 30vw wide, standing along the bottom at different heights, and the row scrolls sideways to reveal the rest. Slip text stays at 14px; do not scale it down.",
+      "seenIn": ["opl-poetry-camera"]
+    },
+    {
+      "id": "pricing-ticket-with-stub",
+      "role": "pricing",
+      "name": "The ticket",
+      "shape": "strip",
+      "tags": ["object-led", "colour-field"],
+      "directions": [
+        "page-is-the-object",
+        "borrowed-category",
+        "loud-flat-poster",
+        "pinned-poster",
+        "colour-chapters"
+      ],
+      "needs": [],
+      "blueprint": "The price is printed on a ticket. On a flat contrasting ground, one filled panel about 64vw wide with 2.3:1 proportions sits centred and straight, built as a two-part grid (7fr 3fr). A half-round notch 28px across is bitten out of the top and bottom edges where the two parts meet (two absolutely positioned circles in the ground colour), and a column of round dots 6px across in the ground colour runs between the notches as the perforation. The main part holds, top-left with 40px padding, what is being bought in two to four words at about 4vw, and along its bottom three or four short lines at 17px (dates, what is included, terms) in two tidy columns. The stub holds the price at about 6vw, centred, and under it the action as a solid bar the full width of the stub, 56px tall.",
+      "mobile": "The ticket turns upright: full width less 20px margins, main part on top, stub beneath, the notches now on the left and right edges and the dot perforation running across. Title at 9vw, price at 16vw, the action bar full width inside the stub.",
+      "seenIn": []
+    },
+    {
+      "id": "cta-reply-card",
+      "role": "cta",
+      "name": "The reply card",
+      "shape": "split",
+      "tags": ["object-led"],
+      "directions": [
+        "page-is-the-object",
+        "borrowed-category",
+        "dark-room",
+        "specimen-catalogue",
+        "place-carries-it"
+      ],
+      "needs": [],
+      "blueprint": "The invitation to act is a printed card lying on the page. On a dark or strongly coloured flat field about 80svh tall, a paper-coloured panel 44vw wide with 7:5 proportions sits in columns 6–12, rotated two degrees, with its lower edge hanging 60px past the section's bottom so the section crops it. On the card, with 48px padding, everything is centred the way stationery is: a heading of two to four words at 32px, one or two lines at 17px, then the action as a solid bar across the card's full inner width, 56px tall, in the ink colour with paper-coloured text. Columns 1–4 hold only a short paragraph at 20–24px in the field's light ink, bottom-aligned 64px above the edge. The card is a plain filled rectangle with square corners and no outline; its rotation and crop make it an object.",
+      "mobile": "The paragraph comes first at 20px. The card follows at 90% width, tilted one degree, centred, its bottom edge still cropped by the section. Heading at 24px, lines at 16px, and the action bar 52px tall across the full inner width of the card.",
+      "seenIn": ["opl-hebbia", "opl-monte", "opl-specia1ne"]
+    }
+  ],
+  "references": [
+    {
+      "id": "opl-le-petit-bleu",
+      "name": "Le Petit Bleu",
+      "url": "https://www.lepetitbleucafe.com/",
+      "source": "One Page Love",
+      "kind": "restaurant",
+      "score": 7.8,
+      "idea": "The cafe's teal-and-white stripes become the whole system: one teal ink on cream, everything boxed in thin double outlines like printed menu cards, beside a permanently visible photo of the room.",
+      "mood": ["cheerful", "charming", "retro", "tidy", "sunny"],
+      "archetype": "split-text-media",
+      "hero": "Viewport split 50/50 with 12px gaps. Left: a cream panel with a thin pale-teal outline and rounded corners. Inside, a second outlined box is the nav bar: two-line hamburger left, teal brush-script logo about 300px wide centred, a caps order link right. Below, a two-line light serif headline at about 3.5vw, centred, in teal, then two centred stacks, each a bold caps label, a serif line and a solid teal button wrapped in a second thin outline. Right: a full-height rounded photo of a striped booth, with an outlined hours bar across its top, three slide dots bottom-left and a white address card bottom-right.",
+      "type": "Self Modern, a light bookish serif, for headline and 15px body; Matter SQ bold caps for labels and buttons; Archive Mono Pro typewriter caps for menu rows; a brush-script logo. Section titles are tall condensed serif caps sized so four to seven letters fill the column.",
+      "colour": "#fcfbf7 #13a7b2 #058599 #cfe5e7 #e9b81f — Cream paper and a single teal used for every word, rule, outline and button; no black anywhere. Yellow, floral reds and marble enter only through the interior photographs.",
+      "imagery": "Bright, saturated interior and food photographs; the right-hand panel is a full-height slideshow with rounded corners. Small food shots sit in a horizontal strip, and a fine line drawing of the shopfront with one teal awning fills a card.",
+      "layout": "The left half scrolls as a stack of outlined cream cards (full-width or two-up) with 12px gaps while the right half stays fixed. Card contents are centred. A sticky nav card rides over the stack. On mobile the photo becomes the hero card's background.",
+      "sections": [
+        {
+          "role": "list",
+          "description": "A card containing only the section word in tall condensed serif caps, teal, sized so its four letters fill the column edge to edge. Below it, a stack of full-width outlined rows about 36px high, each with a category name in typewriter mono caps at left and a thin plus sign at right, separated by 6px gaps. Above the title: a ticker row of tiny caps and a strip of four small food photos with rounded corners."
+        },
+        {
+          "role": "about",
+          "description": "The same giant condensed title treatment, then centred serif paragraphs in teal with underlined links in a narrow measure of about 280px. Further down, a landscape photo of the two proprietors with a centred two-line caption in tiny sans, followed by more centred paragraphs. All of it lives in the left half while the right photo panel has advanced to a shelf-wall image."
+        },
+        {
+          "role": "gallery",
+          "description": "A header row with a tiny bold caps label at left and a script follow-us link with arrow at right, then three portrait images (about 3:5) with 12px rounded corners in a row, the third cropped by the column edge to imply a carousel. Directly below, the next giant section title begins and is cropped by the viewport."
+        }
+      ],
+      "steal": [
+        "Print everything in one brand ink on cream, including body text, rules and buttons, and let photographs supply the other colours.",
+        "Wrap buttons and panels in a second thin outline offset by a few pixels to get a printed-ticket feel.",
+        "Keep a tall photo panel fixed on one half and scroll a stack of cards on the other, swapping the photo as sections change."
+      ]
+    },
+    {
+      "id": "aww-mosbys-files",
+      "name": "Mosby’s Files",
+      "url": "https://www.mosbyfiles.com/",
+      "source": "Awwwards Site of the Day",
+      "kind": "culture",
+      "score": 8,
+      "idea": "An archive of architects presented as a physical stack of coloured index-tab file folders that you flip through.",
+      "mood": ["bold", "archival", "graphic", "playful", "scholarly"],
+      "archetype": "type-poster",
+      "hero": "Charcoal background. A slim top bar over a hairline holds the condensed wordmark dead centre and one mono link far right. The headline is one centred line of heavy condensed uppercase at 10vw, about 71% of the width, in the upper quarter. Beneath it, a three-line centred serif paragraph in mid-grey, about 42% wide. From 51% down sits a stack of file folders 86% of the viewport wide: each is a flat colour band with one to three trapezoid tabs rising from its top-left edge, each tab a different colour holding a serif name. Mono category labels sit right-aligned. The front red folder is open, running off the bottom.",
+      "type": "Founders Grotesk bold condensed uppercase at 144px for the title and wordmark; Signifier serif at about 22px for the intro and 28px for tab names; IBM Plex Mono 12px for labels and body. Three unrelated faces, each with one job, and a twelve-to-one size jump.",
+      "colour": "#191919 #d71e1e #1e4bd7 #0c7866 #581e70 #ffe927 — Charcoal ground with five flat poster primaries assigned to folders and tabs; each tab deliberately differs from the folder behind it. No tints, gradients or photos; white type except black on yellow.",
+      "imagery": "No photographs on the index. The folder shapes are the imagery, plus a row of seven small white line-drawn north-arrow and compass symbols and a drawing scale bar borrowed from architectural plans.",
+      "layout": "Centred title block over an 86%-wide folder stack with equal dark margins. Folders overlap at a fixed 60px step so only the tab rows show; the open folder expands into a tall single-colour panel with mono text top-left and plan symbols near the bottom. Under two screens.",
+      "sections": [
+        {
+          "role": "work",
+          "description": "Four full-width colour bands stacked with a 60px reveal, each with trapezoid tabs growing from its top-left edge. Tabs are about 44px tall with S-curved shoulders, sit side by side with small gaps, and each takes a contrasting flat colour: yellow and black tabs on a green folder, red and blue on purple. Names are white serif at 28px inside the tabs. A mono category label with a small chevron is right-aligned in each band's visible strip."
+        },
+        {
+          "role": "other",
+          "description": "The front folder opens into a solid red panel nearly two viewports tall. Top-right: its mono category label with a down chevron. Top-left, inset about 60px: a four-line mono paragraph in white, at most half the panel wide. The middle is left empty. Near the bottom, a centred row of seven small white plan symbols evenly spaced; beneath, a baseline row with a drawing scale bar left, year centre, credit and round logo right."
+        }
+      ],
+      "steal": [
+        "Build navigation as stacked full-width colour bands with trapezoid tabs, each tab coloured to clash with the folder behind it.",
+        "Pair a heavy condensed grotesk title with a bookish serif for names and a mono for metadata, giving each face exactly one role.",
+        "Borrow notation from the subject's own documents (scale bars, north arrows) as footer ornament instead of generic icons."
+      ],
+      "media": "The hero has no picture: its visual weight is a CSS stack of overlapping flat colour folders with sloped tabs covering the lower half of the fold (about 42% of the area), which doubles as the index; an open folder expands to 80vh as the content panel. The only drawings are seven small white plan symbols and a scale bar; no photographs or video on the index.",
+      "motion": "A short entrance: readable at about 1.2s, with 17 title letter spans already in place, and settled by 2.5s as the stack rises about 13px into place and the subline fades up. Lenis on a page only 1.6 screens tall; the header slides away on scroll, and folders and tabs move on one house curve, cubic-bezier(.33,1,.68,1), at 0.65s, with the quicker moves at exactly half that, 0.325s."
+    },
+    {
+      "id": "aww-zeroz-brand-site",
+      "name": "/zeroz Brand Site",
+      "url": "https://otsuka-air.jp/",
+      "source": "Awwwards Site of the Day",
+      "kind": "physical-product",
+      "score": 7.2,
+      "idea": "A single supplement pouch floats in a green-lit 3D room, and bursts of white light act as the scene changes between short statements.",
+      "mood": ["luminous", "clinical", "energetic", "minimal"],
+      "archetype": "product-object-centre",
+      "hero": "The captured first viewport is a white light bloom mid-transition; the settled hero appears one frame later. A dark green 3D room with a hexagonal ceiling lamp fills the screen. A green pouch, about 35% of viewport height, floats tilted at dead centre with a white tablet beside it. The headline is split around it: two centred lines above and two below at 5.6vw in regular Helvetica Now, partly overlapping the pouch. Large thin parentheses bracket the product, and tiny three-line labels sit far left and far right at the same height. Wordmark top-left, four links top-centre, a small white store tab pinned top-right, a Japanese tagline bottom-centre.",
+      "type": "HelveticaNowDisplay Regular for Latin headlines at 80px, centred, no tracking; Tazugane Gothic Regular and Medium for Japanese at about 18px with wide letter-spacing. Regular weights only, so scale and white-on-green contrast do the work. The footer wordmark is custom slashed lettering spanning the full width.",
+      "colour": "#1f3a26 #00a852 #ffffff #455a48 #111312 — Everything is one green: dark and smoky in the 3D room, saturated flat green in the footer and store tab. White appears as light itself, blooming to fill the screen between scenes.",
+      "imagery": "Real-time 3D pouch and tablet in a fogged green room with a hexagonal spotlight and floor glow; full-bleed canvas, no photographs visible, soft volumetric light and heavy lens bloom.",
+      "layout": "A pinned full-screen canvas driven by nearly fifty screens of scroll; text arrives as short centred statements inside discs of white light. Slim fixed nav. Only the footer becomes a flat layout, with a logo left, a link column near centre and a giant wordmark.",
+      "sections": [
+        {
+          "role": "intro",
+          "description": "The room stays in place while a soft-edged white disc, about 45% of viewport width with a wide feathered falloff, opens at centre where the product hung. Inside it sits a three-line centred statement in dark grey: wide-tracked Japanese on lines one and three, a quoted Latin phrase in light grotesk on line two, all around 18 to 20px. The green floor glow and ceiling lamp remain visible around the disc."
+        },
+        {
+          "role": "showcase",
+          "description": "Between scenes the pouch dissolves into a ball of light at centre: thin radial streak lines fly outward, the hexagonal lamp flares overhead, and the tablet remains as the only solid object, drifting to the lower right of the glow. The nav wordmark and store tab switch from white to green as the background brightens."
+        },
+        {
+          "role": "footer",
+          "description": "Flat saturated green block one viewport tall. Parent-company logo top-left in white, a five-item link column starting just right of centre, an underlined store link top-right. The bottom half is the wordmark with its leading slash, in white, scaled to run from the left edge to the right edge at about 28% of viewport height. A single line of legal links sits beneath it at 10px."
+        }
+      ],
+      "steal": [
+        "Split a four-line headline into two lines above and two below a centred product, letting the object interrupt the sentence.",
+        "Use a feathered disc of white light as the text container instead of a card.",
+        "End the page on a flat field of the brand colour with the wordmark scaled edge to edge."
+      ],
+      "media": "One fixed WebGL canvas covers the fold and renders the whole story: a dark green room in one-point perspective with a glowing ceiling panel, a tilted pouch and tablet at about 23% of the width bracketed by the split headline, a light disc that becomes the text page, a burst of the logo and photographs, and about 20 lifestyle photos as skewed cards on a 3D ribbon round a chapter title. DOM video appears only in the closing link index, eight short loops stacked on portrait pictures.",
+      "motion": "A light burst comes first (the page took 19.5s to load), then the product with its headline by 2.5s and the nav by 4.5s, and Lenis then drives the fixed canvas through long sticky runways (10,152px for the opening): the camera dollies into the ceiling light, the manifesto advances one line at a time in a reading spotlight, and the photo ribbon arcs over the top as the ground goes from dark green to white to mint. The house ease is cubic-bezier(.3,.26,.38,1), 67 uses, mostly at 0.3-0.5s, and staggered rises step by 40ms per index."
+    }
+  ],
+  "scenes": []
+}

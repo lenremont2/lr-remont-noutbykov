@@ -30,19 +30,40 @@ const {
     <input type="hidden" name="symptom" value="" />
     <div class="lr-form__context" data-lr-context hidden>
       <p data-lr-context-text></p>
-      <button type="button" class="lr-text-action" data-lr-context-change
-        >Изменить</button
+      <button
+        type="button"
+        class="lr-text-action"
+        data-lr-context-change
+        aria-expanded="false"
+        aria-controls={`${id}-context-picker`}>Изменить</button
       >
     </div>
-    <div class="lr-form__field" data-lr-symptom-picker hidden>
-      <label for={`${id}-symptom`}>Неисправность</label>
-      <select id={`${id}-symptom`} data-lr-symptom-select>
-        <option value="">Другая неисправность</option>{
-          copy.symptoms.items.map((item) => (
-            <option value={item.title}>{item.title}</option>
-          ))
-        }</select
-      >
+    <div
+      class="lr-form__context-picker"
+      id={`${id}-context-picker`}
+      data-lr-context-picker
+      hidden
+    >
+      <div class="lr-form__field">
+        <label for={`${id}-format`}>Формат обслуживания</label>
+        <select id={`${id}-format`} data-lr-format-select>
+          <option value="consultation">Помогите выбрать формат</option>
+          <option value="mobile-lab">Мастерская в автомобиле у дома</option>
+          <option value="at-home">Инженер в вашем помещении</option>
+          <option value="workshop">В сервисном центре</option>
+          <option value="courier">С доставкой курьером</option>
+        </select>
+      </div>
+      <div class="lr-form__field" data-lr-symptom-picker>
+        <label for={`${id}-symptom`}>Неисправность</label>
+        <select id={`${id}-symptom`} data-lr-symptom-select>
+          <option value="">Другая неисправность</option>{
+            copy.symptoms.items.map((item) => (
+              <option value={item.title}>{item.title}</option>
+            ))
+          }</select
+        >
+      </div>
     </div>
     <div class="lr-form__field">
       <label for={`${id}-phone`}>Ваш телефон</label>
@@ -96,6 +117,62 @@ const {
         placeholder="Например, Петроградская"
         disabled
       />
+    </div>
+    <div class="lr-form__visit" data-lr-visit-fields hidden>
+      <div class="lr-form__field">
+        <label for={`${id}-visit-address`}
+          >Куда приехать — к дому или работе</label
+        >
+        <input
+          id={`${id}-visit-address`}
+          name="visit_address"
+          type="text"
+          autocomplete="street-address"
+          placeholder="Населённый пункт, улица и дом"
+          maxlength="240"
+          aria-describedby={`${id}-visit-address-hint ${id}-visit-address-error`}
+          data-lr-visit-field
+          disabled
+        />
+        <span class="lr-caption" id={`${id}-visit-address-hint`}>
+          Точный адрес и время согласуем до приезда. Квартиру и код домофона
+          можно сообщить при звонке.
+        </span>
+        <p
+          class="lr-field-error"
+          id={`${id}-visit-address-error`}
+          data-lr-visit-address-error
+        >
+        </p>
+      </div>
+      <div class="lr-form__field">
+        <label for={`${id}-repair-place`}
+          >Где вам удобнее провести ремонт?</label
+        >
+        <select
+          id={`${id}-repair-place`}
+          name="requested_repair_place"
+          aria-describedby={`${id}-repair-place-hint ${id}-repair-place-error`}
+          data-lr-visit-field
+          disabled
+        >
+          <option value="">Выберите место</option>
+          <option value="home">Дома</option>
+          <option value="work">На работе</option>
+          <option value="mobile-lab">В мастерской на колёсах</option>
+          <option value="consultation">Уточнить при звонке</option>
+        </select>
+        <span class="lr-caption" id={`${id}-repair-place-hint`}>
+          Это ваше пожелание. Возможность ремонта в выбранном месте согласуем с
+          учётом неисправности и необходимого оборудования.
+        </span>
+        <p
+          class="lr-field-error"
+          id={`${id}-repair-place-error`}
+          data-lr-repair-place-error
+        >
+        </p>
+      </div>
     </div>
     <label class="lr-form__consent" for={`${id}-consent`}>
       <input

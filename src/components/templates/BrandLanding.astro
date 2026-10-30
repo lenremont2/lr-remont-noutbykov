@@ -30,6 +30,7 @@ const { page } = Astro.props;
   <div class="lr-brand-page">
     <Breadcrumbs current={page.label} />
     <Hero brand={page} />
+    <Reviews />
     <Symptoms />
     <RepairTimeline />
     <Benefits />
@@ -37,7 +38,6 @@ const { page } = Astro.props;
     <RepairProcess />
     <SecurityRules />
     <Guarantee />
-    <Reviews />
     <ServicePriceTable
       title={"Стоимость работ по ремонту " + page.label}
       rows={standardPrices}
@@ -49,7 +49,6 @@ const { page } = Astro.props;
     >
       <div class="lr-container">
         <div class="lr-section-heading">
-          <p class="lr-eyebrow">О ремонте {page.label}</p>
           <h2 id="lr-brand-guide-title">{page.sectionTitle}</h2>
           <p class="lr-lead">{page.intro}</p>
         </div>
@@ -74,9 +73,11 @@ const { page } = Astro.props;
     <ServiceFaq items={page.faq} />
     <RelatedServices current={pagePath(page)} />
     <LeadCapture
-      title={"Зафиксируйте бесплатную экспресс-диагностику и скидку 15% на ремонт " +
-        page.label}
-      lead="Назовите модель и симптомы поломки. Инженер согласует смету ДО начала работ. Если цена вас не устроит — отказ без каких-либо оплат."
+      title={page.contactTitle ??
+        "Зафиксируйте бесплатную экспресс-диагностику и скидку 15% на ремонт " +
+          page.label}
+      lead={page.contactLead ??
+        "Назовите модель и симптомы поломки. Инженер согласует смету ДО начала работ. Если цена вас не устроит — отказ без каких-либо оплат."}
       serviceName={"Ремонт ноутбуков " + page.label}
     />
   </div>

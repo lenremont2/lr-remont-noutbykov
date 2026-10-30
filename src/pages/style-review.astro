@@ -1,0 +1,197 @@
+---
+import LandingLayout from "../layouts/LandingLayout.astro";
+import PriceVerification from "../components/ui/PriceVerification.astro";
+import service from "../data/laptop-service.json";
+import reviews from "../data/reviews.json";
+
+const prices = service.prices.tables[0].filter((_, index) =>
+  [0, 2, 4, 7].includes(index),
+);
+const selectedReviews = reviews.items.filter((item) =>
+  ["Андрей Старомодин", "Егор Костин"].includes(item.name),
+);
+const sources = reviews.sources as Record<
+  string,
+  { name: string; branch: string; url: string }
+>;
+---
+
+<LandingLayout
+  title="Ленремонт: вариант подачи для оценки"
+  description="Композиционная проба: ремонт ноутбуков, отзывы и цены Ленремонта."
+  noindex
+>
+  <div class="lr-style-review">
+    <header class="lr-container lr-style-review__header">
+      <a class="lr-style-review__brand" href="/"
+        >Ленремонт<span aria-hidden="true">.</span></a
+      >
+      <p class="lr-style-review__notice">Вариант подачи для оценки</p>
+    </header>
+
+    <section
+      class="lr-container lr-style-review__hero"
+      aria-labelledby="style-title"
+    >
+      <h1 id="style-title">Ремонт ноутбуков</h1>
+      <p class="lr-style-review__lead">
+        На дому или в сервисном центре<br />в Санкт-Петербурге и Ленинградской
+        области.
+      </p>
+      <div class="lr-style-review__actions">
+        <a class="lr-style-review__button" href="/#lr-contact"
+          >Узнать стоимость ремонта</a
+        >
+        <a href="#style-prices">Посмотреть цены</a>
+      </div>
+      <figure class="lr-style-review__workshop">
+        <img
+          src="/media/workshop-mobile-engineer-720.webp"
+          srcset="/media/workshop-mobile-engineer-360.webp 360w, /media/workshop-mobile-engineer-720.webp 720w"
+          sizes="(min-width: 768px) 480px, 88vw"
+          width="720"
+          height="720"
+          alt="Инженер за рабочим столом мобильной мастерской Ленремонта"
+          fetchpriority="high"
+        />
+        <figcaption>
+          <h2>Мастерская приезжает к вам</h2>
+          <p>
+            Оборудованное рабочее место находится внутри автомобиля. Возможность
+            ремонта у дома или работы уточним по модели и неисправности.
+          </p>
+          <p>Работы и финальную смету согласуем до начала ремонта.</p>
+          <a href="#style-format">Выбрать удобный формат</a>
+          <small>Кадр из видео мобильной мастерской Ленремонта.</small>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section
+      class="lr-container lr-style-review__section"
+      aria-labelledby="style-proof"
+    >
+      <div class="lr-style-review__intro">
+        <h2 id="style-proof">Опыт клиентов</h2>
+        <p>
+          Отзывы и оценки конкретных филиалов. Можно перейти на площадку и
+          прочитать подробнее.
+        </p>
+      </div>
+      <div class="lr-style-review__ratings">
+        {
+          reviews.ratings.map((rating) => {
+            const source = sources[rating.source];
+            return (
+              <a
+                class="lr-style-review__rating"
+                href={source.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  {source.name}
+                  <small>{source.branch}</small>
+                </span>
+                <strong>
+                  {String(rating.rating).replace(".", ",")} <span>/ 5</span>
+                </strong>
+                <span>{rating.ratingCount} оценок</span>
+              </a>
+            );
+          })
+        }
+      </div>
+      <p class="lr-style-review__caption">
+        Оценки сверены 29.10.2026. Они относятся к филиалам и всем их услугам.
+      </p>
+      <div class="lr-style-review__reviews">
+        {
+          selectedReviews.map((review) => (
+            <article>
+              <h3>{review.name}</h3>
+              <p>{review.text}</p>
+              <a
+                href={sources[review.source].url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {sources[review.source].name} · {review.date}
+              </a>
+            </article>
+          ))
+        }
+      </div>
+      <p class="lr-style-review__caption">
+        Содержание отзывов передано кратко. Полные тексты доступны на площадках.
+      </p>
+    </section>
+
+    <section
+      id="style-prices"
+      class="lr-container lr-style-review__section lr-style-review__prices"
+      aria-labelledby="style-price-title"
+    >
+      <div class="lr-style-review__intro">
+        <h2 id="style-price-title">Понятно до начала работ</h2>
+        <p>
+          Обычная диагностика в мастерской — 0 ₽ даже при отказе от ремонта.
+          Срочная диагностика — отдельная услуга за 500 ₽.
+        </p>
+      </div>
+      <dl class="lr-style-review__price-list">
+        {
+          prices.map(([name, price]) => (
+            <div>
+              <>
+                <dt>{name}</dt>
+                <dd>{price}</dd>
+              </>
+            </div>
+          ))
+        }
+      </dl>
+      <p>
+        Это стоимость работ. Запчасти оплачиваются отдельно; итог зависит от
+        модели и результатов диагностики.
+      </p>
+      <PriceVerification />
+      <details id="style-format" class="lr-style-review__formats">
+        <summary>Где удобнее передать ноутбук?</summary>
+        <dl>
+          <div>
+            <dt>В мобильной мастерской</dt><dd>
+              Автомобиль с оборудованием приедет к дому или работе. Возможность
+              ремонта на месте уточнит специалист.
+            </dd>
+          </div>
+          <div>
+            <dt>У вас дома</dt><dd>
+              Мастер работает в вашем помещении. Подходит ли такой формат вашей
+              задаче, уточним при обращении.
+            </dd>
+          </div>
+          <div>
+            <dt>В сервисном центре</dt><dd>
+              Можно самостоятельно привезти ноутбук в мастерскую.
+            </dd>
+          </div>
+          <div>
+            <dt>С передачей курьеру</dt><dd>
+              Согласуем адрес, время и условия доставки в сервис.
+            </dd>
+          </div>
+        </dl>
+      </details>
+      <div class="lr-style-review__actions">
+        <a class="lr-style-review__button" href="/#lr-contact"
+          >Обсудить ремонт</a
+        >
+        <a href="tel:+78123444444">+7 (812) 344-44-44</a>
+      </div>
+    </section>
+    <footer class="lr-container lr-style-review__footer">
+      <a href="/">Вернуться на основную страницу Ленремонта</a>
+    </footer>
+  </div>
+</LandingLayout>

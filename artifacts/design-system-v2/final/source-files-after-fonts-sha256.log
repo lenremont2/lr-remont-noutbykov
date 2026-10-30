@@ -1,0 +1,546 @@
+Immutable source snapshot for the measured after-fonts slice, before Benefits/RepairTimeline compliance cleanup. Captured while source was held stable for all six Lighthouse runs.
+
+{
+  "capturedAt": "2026-10-29T12:56:50.630Z",
+  "algorithm": "SHA-256",
+  "fileCount": 102,
+  "files": [
+    {
+      "path": "src/components/DesignConcept.astro",
+      "bytes": 1404,
+      "sha256": "76d9ef514302895b2ec37adc0233f6d4c5e2ea1fb7b6e54ffd359745cb2fd775"
+    },
+    {
+      "path": "src/components/DesignFocus.astro",
+      "bytes": 3024,
+      "sha256": "b99fb6dd7ce99436d992dc02d57bd8b297a0574dd51356997f23fc1a56373483"
+    },
+    {
+      "path": "src/components/DesignLab.astro",
+      "bytes": 4568,
+      "sha256": "5f7129c8ed30d67f650b5a8183576a80881c94c076acecbb9788598a87eaab28"
+    },
+    {
+      "path": "src/components/DesignPricing.astro",
+      "bytes": 1570,
+      "sha256": "010705fab88ecf042970fd9e7a15ba89fb291781fe61db12f3fd0651cf1d0f9d"
+    },
+    {
+      "path": "src/components/DesignService.astro",
+      "bytes": 4832,
+      "sha256": "94f62b1cb9c511e089d1b0be8e81b1318cbbae6ee9bb24c7713ebad05e5f6d8e"
+    },
+    {
+      "path": "src/components/DesignServiceNext.astro",
+      "bytes": 10345,
+      "sha256": "ea60bfe23ddb0ded01aa93f7449678997c2bf3e008a816022f7efcd55f7787f2"
+    },
+    {
+      "path": "src/components/sections/Benefits.astro",
+      "bytes": 1717,
+      "sha256": "9b859792c019359b671d981c6f96ebad715b518b755a7f8abe046fca83422a6a"
+    },
+    {
+      "path": "src/components/sections/BusinessTrust.astro",
+      "bytes": 3156,
+      "sha256": "4e17e13611f20467642bc2702aac758d2f45749cf92f3d01bfe64d0292d985a4"
+    },
+    {
+      "path": "src/components/sections/DirectorMessage.astro",
+      "bytes": 2864,
+      "sha256": "34aff7c690223bbab1a06a878c603801b4c45117840b01f87264252890d61e7e"
+    },
+    {
+      "path": "src/components/sections/Expertise.astro",
+      "bytes": 1619,
+      "sha256": "e29e275c2877ff566802418d90a971fcb3b2852350a36d9dfe2c809dcbb1f680"
+    },
+    {
+      "path": "src/components/sections/Faq.astro",
+      "bytes": 722,
+      "sha256": "96a20be3fe37b09f25574a615cee4cdcf25afd2a3aef40c9873b57eb8abc6bc5"
+    },
+    {
+      "path": "src/components/sections/Guarantee.astro",
+      "bytes": 1689,
+      "sha256": "6d8a9e5a338a1df454ce7cfd23f5d80d9b40251a3c711dacf525c010e798aa1d"
+    },
+    {
+      "path": "src/components/sections/Hero.astro",
+      "bytes": 8606,
+      "sha256": "3f84d904906b9f84c003f7023fc423ed37d38b16cb91f700c218200f912a7d50"
+    },
+    {
+      "path": "src/components/sections/HomeExpertise.astro",
+      "bytes": 2141,
+      "sha256": "7a9522300a9ac44d82bf71859417b183fc4a4cc1d20a60acb87a07ee8af8b6ed"
+    },
+    {
+      "path": "src/components/sections/HomePricing.astro",
+      "bytes": 8874,
+      "sha256": "8f0caad1b92d113ee37c6f7e1f3a52a68a45d5153bddd8344ca2ae95645f025b"
+    },
+    {
+      "path": "src/components/sections/HomeProtection.astro",
+      "bytes": 3007,
+      "sha256": "e223b651aba0bfa93581cf2d9b313c8f53d32c6d12e1f2a676c0ad07ad13f2d9"
+    },
+    {
+      "path": "src/components/sections/HomeSeo.astro",
+      "bytes": 8901,
+      "sha256": "48d21977215b3d15c9b12fe14f7258128abd8b686903f7be91fa41ab458bbeb2"
+    },
+    {
+      "path": "src/components/sections/LeadCapture.astro",
+      "bytes": 2217,
+      "sha256": "10cb7f1a9bc11a0d9d2de0a387410a15b310e2b773a74d20f9de16f8d7a9884f"
+    },
+    {
+      "path": "src/components/sections/Locations.astro",
+      "bytes": 6895,
+      "sha256": "ec0f9eec80f6229f10c37c1bb54147dbda341e65d49bc35ed4b5d376ff6592d4"
+    },
+    {
+      "path": "src/components/sections/ManufacturerLinks.astro",
+      "bytes": 2124,
+      "sha256": "d9a903e4ac84e33ddaba83fe3cd4b87721adf6ba27f8078faf9e23b6352bceda"
+    },
+    {
+      "path": "src/components/sections/MobileLab.astro",
+      "bytes": 3072,
+      "sha256": "fe002d52be7f4a1a3183e6ec37dc44a5928af73cd66ad0adb34ff64c9920ebbf"
+    },
+    {
+      "path": "src/components/sections/Prices.astro",
+      "bytes": 2580,
+      "sha256": "316d7f4017d05778a697fd90c64fbae45f4f2cf58f9fbe400734fd9cff178ffe"
+    },
+    {
+      "path": "src/components/sections/QualityControl.astro",
+      "bytes": 2299,
+      "sha256": "7e491b2977ac350f60304be3f8e0905b0cdae6a4c01f75f3a19cfc1e563cfda0"
+    },
+    {
+      "path": "src/components/sections/QuickContacts.astro",
+      "bytes": 1139,
+      "sha256": "11f70760308f25c5870d0fe823301a63bb83adf695d581c35f34892005435cab"
+    },
+    {
+      "path": "src/components/sections/QuizCallout.astro",
+      "bytes": 759,
+      "sha256": "6d39cd39cbb6c4b680367d9ab0309ce4312cdd0f71ba14ea0d71a9cb90779d8c"
+    },
+    {
+      "path": "src/components/sections/QuizModal.astro",
+      "bytes": 566,
+      "sha256": "f230f34105786c5a71f666e787d6cb1dd9a81740282d0d35c870675cbcfb4e9e"
+    },
+    {
+      "path": "src/components/sections/RepairCases.astro",
+      "bytes": 2238,
+      "sha256": "b96e5c7acd3e502348084bbb7236a21029df8ea5d81668c48186d83ba2db8dbb"
+    },
+    {
+      "path": "src/components/sections/RepairFormats.astro",
+      "bytes": 5063,
+      "sha256": "a4e98789beb9da67c3ec49d5e3250ba3388b1c29f7cb94c8e5082c619a0c090c"
+    },
+    {
+      "path": "src/components/sections/RepairProcess.astro",
+      "bytes": 2041,
+      "sha256": "be293588b71f51b34a645837f0421494f6b78628961b8c359340ac4b2fdf09e0"
+    },
+    {
+      "path": "src/components/sections/RepairQuiz.astro",
+      "bytes": 7564,
+      "sha256": "4285e827ce7f2a044e53d8a64cef40dfd4ce1b5e55164ab750b74b7e2bf59277"
+    },
+    {
+      "path": "src/components/sections/RepairTimeline.astro",
+      "bytes": 1927,
+      "sha256": "918288c693b4a1dc055a61cbb2d70837760dbb3184e2a083eda0e3e526709e08"
+    },
+    {
+      "path": "src/components/sections/Reviews.astro",
+      "bytes": 4851,
+      "sha256": "ce37201fbc29774066773d4f05891211578a3d0163569486363c287508b8e4a6"
+    },
+    {
+      "path": "src/components/sections/SecurityRules.astro",
+      "bytes": 1200,
+      "sha256": "277e44d5643e06a33fe36927d2705a8c3c3409862f4b040102331453be1fe2d0"
+    },
+    {
+      "path": "src/components/sections/SocialLinks.astro",
+      "bytes": 7752,
+      "sha256": "26d3df00df8fee5a400ba8201c40d74cafe992892d8d5379f4e2bc00f659d64d"
+    },
+    {
+      "path": "src/components/sections/StarterScreen.astro",
+      "bytes": 634,
+      "sha256": "4853706f2b702d59bcf706a48e362fb48b145876665a85e4aa54ac0ab556f9b2"
+    },
+    {
+      "path": "src/components/sections/Symptoms.astro",
+      "bytes": 2941,
+      "sha256": "6d7798652fdf3216946f4e6258edbe0ae5d143222b2800558108ba91aa530011"
+    },
+    {
+      "path": "src/components/sections/WorkshopGallery.astro",
+      "bytes": 3938,
+      "sha256": "c79a7a93a63ed1467c1785d90f1cecbf90d19415139a7b88f15dc315a3163f2c"
+    },
+    {
+      "path": "src/components/templates/BrandLanding.astro",
+      "bytes": 3024,
+      "sha256": "c516d22cdd71acf2901908cbc1f7f2bba7fddba6ce0337d4648853485ca117e6"
+    },
+    {
+      "path": "src/components/templates/ProblemLanding.astro",
+      "bytes": 6434,
+      "sha256": "093f534cde6a8086878cd559814bba21b9ca59a212ea6e2cbbf2568c2936d02c"
+    },
+    {
+      "path": "src/components/ui/.gitkeep",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "src/components/ui/Breadcrumbs.astro",
+      "bytes": 435,
+      "sha256": "1e1f5241b42320220bb4a0d307ea90c8e96f1555d93238edc390e5d48db61ec3"
+    },
+    {
+      "path": "src/components/ui/ChildHero.astro",
+      "bytes": 1841,
+      "sha256": "20bb43ae4480822a274344dcf106d5ffdb9e4a8d833e5b4769e6a9dee70b445d"
+    },
+    {
+      "path": "src/components/ui/GuaranteeSupport.astro",
+      "bytes": 1840,
+      "sha256": "bb90b911ac3649639c7cd383e01d18c8e6cd76fa134b7ccf7f00e37b63995d57"
+    },
+    {
+      "path": "src/components/ui/LeadButton.astro",
+      "bytes": 539,
+      "sha256": "a1f55440101be90ad69dc68f0aaa8d71cde1f88742794e2a060bcc8cc652504a"
+    },
+    {
+      "path": "src/components/ui/LeadForm.astro",
+      "bytes": 7737,
+      "sha256": "0139af4fcf89de8967ae49b572ff4db1d548cc44f65b1d8e7d09aba9a28d8f2b"
+    },
+    {
+      "path": "src/components/ui/LeadModal.astro",
+      "bytes": 601,
+      "sha256": "32046acd04fc4afa92e45c410e54840ed95dbfca581c42259b9337de2c9d1f96"
+    },
+    {
+      "path": "src/components/ui/PriceVerification.astro",
+      "bytes": 360,
+      "sha256": "18cfecc9e5193c9a88a9fa80dd81b6971ba041e353967da93119563c285e7658"
+    },
+    {
+      "path": "src/components/ui/RelatedServices.astro",
+      "bytes": 967,
+      "sha256": "ffb60d17abd3b07e02517bf6442bd554ac962ec67cdde84c7ef26e5d87536fbc"
+    },
+    {
+      "path": "src/components/ui/ReviewCard.astro",
+      "bytes": 3683,
+      "sha256": "68fb3ce0e18ee0e885dd87363d38eaa6b247dfd35b5ee5aecc4429938ba6cc73"
+    },
+    {
+      "path": "src/components/ui/SectionHeading.astro",
+      "bytes": 308,
+      "sha256": "325d4bed71d7a3f1b4df11e69bb93d994cbd8a4f148576296a27fa9aab468a07"
+    },
+    {
+      "path": "src/components/ui/ServiceFaq.astro",
+      "bytes": 599,
+      "sha256": "2c1e5aa3a38f692c87af282508ffcca53c33f0608605fcdade53d089c6e29b2b"
+    },
+    {
+      "path": "src/components/ui/ServicePriceTable.astro",
+      "bytes": 1606,
+      "sha256": "5527263caa223aa7b5597059f22d7880ceb5f1daf3f9fb127ae8255ca531c25d"
+    },
+    {
+      "path": "src/components/ui/WorkshopCard.astro",
+      "bytes": 2280,
+      "sha256": "7900993b7d46e2c05e03d4c62072e9050597e3bfdf51213d4b9c406cccacf7ef"
+    },
+    {
+      "path": "src/data/.gitkeep",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "src/data/laptop-service.json",
+      "bytes": 48812,
+      "sha256": "ec51de9ccbf5ed9e890bf36c96295fb5f232a422ed125351c9c5a4c2e4f89b31"
+    },
+    {
+      "path": "src/data/repair-cases.json",
+      "bytes": 2036,
+      "sha256": "9aefebdd72a9c8e69fc14a7048a223ac283db9157cc8aede3c1192db534c5e73"
+    },
+    {
+      "path": "src/data/reviews.json",
+      "bytes": 14857,
+      "sha256": "14bf1e1fadecb3cca03a340d02e5a84cc6a3abda479e12cfd55c3525973b4222"
+    },
+    {
+      "path": "src/data/service-pages.json",
+      "bytes": 280529,
+      "sha256": "535721d1681a28d91339b476db0903814b85cd8f65ab74df83ca59fb64b7abe5"
+    },
+    {
+      "path": "src/data/service-pages.ts",
+      "bytes": 2619,
+      "sha256": "fe0ce646c63a5cca2cec11c93b3b919788c05d3a85602091d6dd819337e81e7d"
+    },
+    {
+      "path": "src/data/workshops.json",
+      "bytes": 8985,
+      "sha256": "6af41aa91a77cb133fdb7a91769e3624daab172f90b242df695ba80bd6f3b33b"
+    },
+    {
+      "path": "src/layouts/LandingLayout.astro",
+      "bytes": 1582,
+      "sha256": "4578acb95bc76d2a526c06eda6343aaa73d8692899d705d4c2d62863af368a02"
+    },
+    {
+      "path": "src/pages/design-directions/index.astro",
+      "bytes": 4298,
+      "sha256": "f9c633027c5115e3635eba1d79c4f2cced1352102783533e93f2615dcc982c5f"
+    },
+    {
+      "path": "src/pages/design-directions/[concept].astro",
+      "bytes": 832,
+      "sha256": "d19a59f46baf579db0aa37926d8ad147aad3697f6a9ea070b58c8cbcd222aa60"
+    },
+    {
+      "path": "src/pages/index.astro",
+      "bytes": 2303,
+      "sha256": "f6068f3a9843c87663be8d4b99660d844fa2c9415ff36a296bbfa83ae38428ec"
+    },
+    {
+      "path": "src/pages/remont-macbook-spb.htm.astro",
+      "bytes": 52688,
+      "sha256": "6ac2d157b48bf604ff8426862b317dcfb425e7937c68818a30b19987339107b6"
+    },
+    {
+      "path": "src/pages/remont-noutbukov-spb.htm.astro",
+      "bytes": 52,
+      "sha256": "b31b324c92e1ecfc81a3ee62397db8983bc98f2588bd63bc2dda6c10a56c5236"
+    },
+    {
+      "path": "src/pages/style-review.astro",
+      "bytes": 7880,
+      "sha256": "7d39a17e30c01387a498f8b341b1a3c05003d934399042ac07e31032ee4ca1cd"
+    },
+    {
+      "path": "src/pages/[page].astro",
+      "bytes": 732,
+      "sha256": "e0a95fb8037f8d35e1f8075394124d7270052a9ec162291082dccb840bc77e1c"
+    },
+    {
+      "path": "src/scripts/components/.gitkeep",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "src/scripts/landing.js",
+      "bytes": 31866,
+      "sha256": "0d9f742102e7d9ee5e5e016242621e6068a0584bd555a594fc5e175a59ae4fb6"
+    },
+    {
+      "path": "src/styles/core/_fonts.scss",
+      "bytes": 1455,
+      "sha256": "3b8f146c9e86bcd9eb795530f9f83d97591546c9c3858c8d3a1f367a040b54ba"
+    },
+    {
+      "path": "src/styles/core/_layout.scss",
+      "bytes": 439,
+      "sha256": "803e63db87380d68ee310a593452628baa2dcbec2e87cbfe7059f8df4b1b7a53"
+    },
+    {
+      "path": "src/styles/core/_reset.scss",
+      "bytes": 1418,
+      "sha256": "7f0754e9bcb898db16de9b4f330e8afb12a074f87bdf59c0e05230c0ee28f32c"
+    },
+    {
+      "path": "src/styles/core/_typography.scss",
+      "bytes": 1585,
+      "sha256": "8e53c2b2f41bae95879c11d7f2a41ca08d7420d5734661dfd93cf9ceb88a6837"
+    },
+    {
+      "path": "src/styles/core/_variables.scss",
+      "bytes": 4073,
+      "sha256": "e3ed2202baa3910dd4d49768d714e4ecbb0467090ee9a969ed45b2c8aa514d50"
+    },
+    {
+      "path": "src/styles/landing.scss",
+      "bytes": 660,
+      "sha256": "ef5470a04b7000d58f17487b78baf8767db0a98926b987390614a64994eff2bb"
+    },
+    {
+      "path": "src/styles/sections/_benefits.scss",
+      "bytes": 3086,
+      "sha256": "d889b3c2f6df384cd44d538f81516ce064aaefcb5dd9a5d7ee2826ee5a1cbbab"
+    },
+    {
+      "path": "src/styles/sections/_brand-pages.scss",
+      "bytes": 2938,
+      "sha256": "9b4bdbce65fed4a79ee7317a0fef092dc4179f2cb0ed78df6a5b8ced277a0170"
+    },
+    {
+      "path": "src/styles/sections/_business-trust.scss",
+      "bytes": 1863,
+      "sha256": "c34d81f1e8193ac62c1c77c27dce7ff6228db2b3c4d621a101ead683dbe6c7e1"
+    },
+    {
+      "path": "src/styles/sections/_child-pages.scss",
+      "bytes": 4812,
+      "sha256": "86f460d11659867b1e463b429c10746ba1f298b91a05142d9c1754baa12938eb"
+    },
+    {
+      "path": "src/styles/sections/_design-directions.scss",
+      "bytes": 22535,
+      "sha256": "b83acd0a94907228a43604fc8391e7896c60673dc4f66fb254a5045e613f5ec0"
+    },
+    {
+      "path": "src/styles/sections/_design-service-next.scss",
+      "bytes": 12668,
+      "sha256": "4a84c3a36858e59a043d5b51d65384cf13e2a6427d46ab7cc458f9b8ec2e0abf"
+    },
+    {
+      "path": "src/styles/sections/_formats.scss",
+      "bytes": 1883,
+      "sha256": "27ddd23710b5c1fea95075df8e4d5e1326245e53b61941416ce7834bd4dd590b"
+    },
+    {
+      "path": "src/styles/sections/_home-content.scss",
+      "bytes": 6374,
+      "sha256": "8a30ff0d6540a6ee4c08d50c69871001eb807d5167904f446686074661454830"
+    },
+    {
+      "path": "src/styles/sections/_home-hero.scss",
+      "bytes": 6234,
+      "sha256": "dd91bc607a9d817936fdc097248918f3f6e9572341339301ed9a88362156b95e"
+    },
+    {
+      "path": "src/styles/sections/_home-service.scss",
+      "bytes": 10612,
+      "sha256": "aaa854607e85263485366a455abfd651498a65e64d7434ed39b99d977c64cc4c"
+    },
+    {
+      "path": "src/styles/sections/_laptop-service.scss",
+      "bytes": 32695,
+      "sha256": "5262ccb92c8f7e2908dff2497fa2642fbef8cb6d19c441dcaec192a5a5fe5326"
+    },
+    {
+      "path": "src/styles/sections/_lead-capture.scss",
+      "bytes": 4279,
+      "sha256": "c49739477b6e240d7d287d93df5d7f0a6402f3a85664a7292ec99c109497a869"
+    },
+    {
+      "path": "src/styles/sections/_locations.scss",
+      "bytes": 3615,
+      "sha256": "0df90aca2109e8b1fc596941f317552ecc53d7a26653df49f8b54d4c1a72ed03"
+    },
+    {
+      "path": "src/styles/sections/_macbook-page.scss",
+      "bytes": 31307,
+      "sha256": "274129ed7e63f678fa352598831dc3d37901e05e17dd740a8929ec10a032d700"
+    },
+    {
+      "path": "src/styles/sections/_quality.scss",
+      "bytes": 3001,
+      "sha256": "7f6ef5f23b79a938e103e65dad5ce714198d57cd6bb4a886f3c1f962915d8040"
+    },
+    {
+      "path": "src/styles/sections/_quiz.scss",
+      "bytes": 5155,
+      "sha256": "66809e90fa1b523a9a06c81d995a11a27bc84e6d1d9af926d107438d52fdddc3"
+    },
+    {
+      "path": "src/styles/sections/_repair-cases.scss",
+      "bytes": 1751,
+      "sha256": "4fa23d04c859041f76985232e022c40214136d2467c3e0ae2ee9a08ca6b97723"
+    },
+    {
+      "path": "src/styles/sections/_security.scss",
+      "bytes": 2303,
+      "sha256": "a3df6a7c871ead5612e075014d84bf4330012bf9339cfa3e3fd4e0d56f98bff8"
+    },
+    {
+      "path": "src/styles/sections/_service-experience.scss",
+      "bytes": 6258,
+      "sha256": "662cde89350e26ea16b41c2a2910249ccc37aae0e783402cee6364ea6649b8cc"
+    },
+    {
+      "path": "src/styles/sections/_service-pages.scss",
+      "bytes": 5624,
+      "sha256": "58c2597e20fd2e08af8c366bbcadd4f990e40de75a91c4bc4042b220daadf25e"
+    },
+    {
+      "path": "src/styles/sections/_social-links.scss",
+      "bytes": 3080,
+      "sha256": "97cf2cbec89a038dcff054112a7cb37250436bb33dc2f6840c309b43ebab2363"
+    },
+    {
+      "path": "src/styles/sections/_starter-screen.scss",
+      "bytes": 980,
+      "sha256": "b20a003eeb7c36261787b1c30fd7d2d45ab34cfb4fd95144f066a6721b87a472"
+    },
+    {
+      "path": "src/styles/sections/_style-review.scss",
+      "bytes": 6352,
+      "sha256": "6e19370bfef4339d5e90057aab3a8c400ab9999e6c7b697ba3ef7626caa3324e"
+    },
+    {
+      "path": "src/styles/sections/_timeline.scss",
+      "bytes": 4661,
+      "sha256": "1ded78689958ec30b5642c635681488678c57c617168881e474d0294200faeaa"
+    },
+    {
+      "path": "src/styles/ui/_button.scss",
+      "bytes": 2107,
+      "sha256": "71aafcb34ac85f07ab7e97fba003f555e4844fa1ffb5e91866b0ccf91b797d5c"
+    },
+    {
+      "path": "src/styles/ui/_modal.scss",
+      "bytes": 1214,
+      "sha256": "ee166cb78c651cf9db723422655b90498f993f29ca2af04ee873cba4c7875b4f"
+    }
+  ],
+  "fontAssets": [
+    {
+      "path": "public/media/fonts/golos-text-v7-cyrillic-ext.woff2",
+      "bytes": 17532,
+      "sha256": "10aa879203c4b62f61841bdeee64a2ca5d97f1cf21e717f45c96914ce7629710"
+    },
+    {
+      "path": "public/media/fonts/golos-text-v7-cyrillic.woff2",
+      "bytes": 22028,
+      "sha256": "2f175b8fc40ed4e826742879f92ec903256fc2612d8d95c7c287232fd7138e4b"
+    },
+    {
+      "path": "public/media/fonts/golos-text-v7-latin-ext.woff2",
+      "bytes": 19204,
+      "sha256": "90256a7b8eb3b6b7b1c8f8aeb0e80eed7980a411d8c49faf7958fef6951ba863"
+    },
+    {
+      "path": "public/media/fonts/golos-text-v7-latin.woff2",
+      "bytes": 38084,
+      "sha256": "f8d71091110f0113ba8bd16bee2ac68b51dd6491c5b9404e9fbb82b20ae632f1"
+    }
+  ],
+  "fontLicense": {
+    "path": "public/media/fonts/OFL-Golos-Text.txt",
+    "present": true,
+    "sha256": "ff532f9e8789f09a9fdffc3c0954eedfb0a48be77b2e2eb90f5f82e4f347f50c"
+  }
+}

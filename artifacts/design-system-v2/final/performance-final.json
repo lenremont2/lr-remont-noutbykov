@@ -1,0 +1,391 @@
+{
+  "kind": "Final CSS lab result after local fonts and Benefits/RepairTimeline cleanup",
+  "url": "http://127.0.0.1:4324/",
+  "sourceSnapshot": "source-files-sha256.log",
+  "buildCompleted": "2026-10-29 16:21:47 Europe/Moscow",
+  "lighthouseVersion": "13.5.0",
+  "chromeBinaryVersion": "156.0.8078.73",
+  "launch": "Separate headless Chrome; Lighthouse/chrome-launcher temporary clean profile per run; no IAB/user profile",
+  "cache": "Cold browser profile/storage; OS/DNS/CDN caches are not controlled",
+  "categories": ["performance"],
+  "errorReporting": false,
+  "samplesPerProfile": 3,
+  "commands": {
+    "base": "npm exec --offline --yes --package=lighthouse@13.5.0 -- lighthouse http://127.0.0.1:4324/ --only-categories=performance --output=json --chrome-flags=\"--headless=new --no-first-run --disable-extensions\" --throttling-method=simulate --disable-full-page-screenshot --no-enable-error-reporting --quiet",
+    "desktopAdditional": "--preset=desktop",
+    "output": "--output-path=artifacts/design-system-v2/final/lighthouse-final-{profile}-{run}.json",
+    "chromePath": "C:/Program Files/Google/Chrome/Application/chrome.exe"
+  },
+  "profiles": {
+    "mobile": {
+      "conditions": {
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "disableStorageReset": false,
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      },
+      "equivalentToBaseline": true,
+      "summary": {
+        "LCP": {
+          "median": 2182.0863,
+          "min": 2113.8121499999997,
+          "max": 2197.2168,
+          "unit": "ms"
+        },
+        "CLS": {
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "unit": "unitless"
+        },
+        "FCP": {
+          "median": 1665.8112,
+          "min": 1612.7242,
+          "max": 1817.2081000000003,
+          "unit": "ms"
+        },
+        "TBT": {
+          "median": 212,
+          "min": 209.6040499999998,
+          "max": 213,
+          "unit": "ms"
+        },
+        "SpeedIndex": {
+          "median": 3756.730189595386,
+          "min": 1817.2081000000003,
+          "max": 3857.988905371385,
+          "unit": "ms"
+        }
+      },
+      "runs": [
+        {
+          "run": 1,
+          "report": "lighthouse-final-mobile-1.json",
+          "fetchTime": "2026-10-29T13:23:03.791Z",
+          "score": 0.93,
+          "metrics": {
+            "LCP": 2197.2168,
+            "CLS": 0,
+            "FCP": 1665.8112,
+            "TBT": 212,
+            "SpeedIndex": 3857.988905371385
+          },
+          "observedLCP_ms": 2226,
+          "runtimeError": null,
+          "warnings": [],
+          "fontRequests": [
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-cyrillic.woff2",
+              "status": 200,
+              "transferBytes": 22348,
+              "startMs": 19.37900000810623,
+              "endMs": 32.20600000023842
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin.woff2",
+              "status": 200,
+              "transferBytes": 38404,
+              "startMs": 322.0730000138283,
+              "endMs": 328.46100002527237
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin-ext.woff2",
+              "status": 200,
+              "transferBytes": 19524,
+              "startMs": 322.1960000395775,
+              "endMs": 328.58400002121925
+            }
+          ],
+          "externalGoogleRequests": 0
+        },
+        {
+          "run": 2,
+          "report": "lighthouse-final-mobile-2.json",
+          "fetchTime": "2026-10-29T13:23:43.233Z",
+          "score": 0.95,
+          "metrics": {
+            "LCP": 2113.8121499999997,
+            "CLS": 0,
+            "FCP": 1817.2081000000003,
+            "TBT": 209.6040499999998,
+            "SpeedIndex": 1817.2081000000003
+          },
+          "observedLCP_ms": 454,
+          "runtimeError": null,
+          "warnings": [],
+          "fontRequests": [
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-cyrillic.woff2",
+              "status": 200,
+              "transferBytes": 22348,
+              "startMs": 32.60999998450279,
+              "endMs": 43.61300000548363
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin.woff2",
+              "status": 200,
+              "transferBytes": 38404,
+              "startMs": 388.42899999022484,
+              "endMs": 395.0819999873638
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin-ext.woff2",
+              "status": 200,
+              "transferBytes": 19524,
+              "startMs": 388.5989999771118,
+              "endMs": 396.38400000333786
+            }
+          ],
+          "externalGoogleRequests": 0
+        },
+        {
+          "run": 3,
+          "report": "lighthouse-final-mobile-3.json",
+          "fetchTime": "2026-10-29T13:24:08.725Z",
+          "score": 0.93,
+          "metrics": {
+            "LCP": 2182.0863,
+            "CLS": 0,
+            "FCP": 1612.7242,
+            "TBT": 213,
+            "SpeedIndex": 3756.730189595386
+          },
+          "observedLCP_ms": 2166,
+          "runtimeError": null,
+          "warnings": [],
+          "fontRequests": [
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-cyrillic.woff2",
+              "status": 200,
+              "transferBytes": 22348,
+              "startMs": 21.162000000476837,
+              "endMs": 32.43400001525879
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin.woff2",
+              "status": 200,
+              "transferBytes": 38404,
+              "startMs": 304.0570000112057,
+              "endMs": 306.6689999997616
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin-ext.woff2",
+              "status": 200,
+              "transferBytes": 19524,
+              "startMs": 304.24100002646446,
+              "endMs": 307.71000000834465
+            }
+          ],
+          "externalGoogleRequests": 0
+        }
+      ]
+    },
+    "desktop": {
+      "conditions": {
+        "formFactor": "desktop",
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "disableStorageReset": false,
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      },
+      "equivalentToBaseline": true,
+      "summary": {
+        "LCP": {
+          "median": 495.38415,
+          "min": 492.0313,
+          "max": 496.336,
+          "unit": "ms"
+        },
+        "CLS": {
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "unit": "unitless"
+        },
+        "FCP": {
+          "median": 472.0313,
+          "min": 430.25609999999995,
+          "max": 476.336,
+          "unit": "ms"
+        },
+        "TBT": {
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "unit": "ms"
+        },
+        "SpeedIndex": {
+          "median": 534.5083424097422,
+          "min": 504.7811989176862,
+          "max": 738.3868046232592,
+          "unit": "ms"
+        }
+      },
+      "runs": [
+        {
+          "run": 1,
+          "report": "lighthouse-final-desktop-1.json",
+          "fetchTime": "2026-10-29T13:24:23.529Z",
+          "score": 1,
+          "metrics": {
+            "LCP": 492.0313,
+            "CLS": 0,
+            "FCP": 472.0313,
+            "TBT": 0,
+            "SpeedIndex": 504.7811989176862
+          },
+          "observedLCP_ms": 447,
+          "runtimeError": null,
+          "warnings": [],
+          "fontRequests": [
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-cyrillic.woff2",
+              "status": 200,
+              "transferBytes": 22348,
+              "startMs": 16.71000000834465,
+              "endMs": 23.480000019073486
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin.woff2",
+              "status": 200,
+              "transferBytes": 38404,
+              "startMs": 292.99000003933907,
+              "endMs": 296.835000038147
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin-ext.woff2",
+              "status": 200,
+              "transferBytes": 19524,
+              "startMs": 293.11200001835823,
+              "endMs": 305.1540000140667
+            }
+          ],
+          "externalGoogleRequests": 0
+        },
+        {
+          "run": 2,
+          "report": "lighthouse-final-desktop-2.json",
+          "fetchTime": "2026-10-29T13:24:36.100Z",
+          "score": 1,
+          "metrics": {
+            "LCP": 495.38415,
+            "CLS": 0,
+            "FCP": 430.25609999999995,
+            "TBT": 0,
+            "SpeedIndex": 738.3868046232592
+          },
+          "observedLCP_ms": 874,
+          "runtimeError": null,
+          "warnings": [],
+          "fontRequests": [
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-cyrillic.woff2",
+              "status": 200,
+              "transferBytes": 22348,
+              "startMs": 15.905000030994415,
+              "endMs": 250.82400000095367
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin.woff2",
+              "status": 200,
+              "transferBytes": 38404,
+              "startMs": 811.363999992609,
+              "endMs": 859.3659999966621
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin-ext.woff2",
+              "status": 200,
+              "transferBytes": 19524,
+              "startMs": 811.4849999845028,
+              "endMs": 862.2409999966621
+            }
+          ],
+          "externalGoogleRequests": 0
+        },
+        {
+          "run": 3,
+          "report": "lighthouse-final-desktop-3.json",
+          "fetchTime": "2026-10-29T13:24:51.196Z",
+          "score": 1,
+          "metrics": {
+            "LCP": 496.336,
+            "CLS": 0,
+            "FCP": 476.336,
+            "TBT": 0,
+            "SpeedIndex": 534.5083424097422
+          },
+          "observedLCP_ms": 475,
+          "runtimeError": null,
+          "warnings": [],
+          "fontRequests": [
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-cyrillic.woff2",
+              "status": 200,
+              "transferBytes": 22348,
+              "startMs": 13.514999985694885,
+              "endMs": 60.113999992609024
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin.woff2",
+              "status": 200,
+              "transferBytes": 38404,
+              "startMs": 336.0799999833107,
+              "endMs": 434.6439999938011
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin-ext.woff2",
+              "status": 200,
+              "transferBytes": 19524,
+              "startMs": 336.2099999785423,
+              "endMs": 561.175999969244
+            }
+          ],
+          "externalGoogleRequests": 0
+        }
+      ]
+    }
+  },
+  "internalTargets": {
+    "LCP_ms": 2500,
+    "CLS": 0.1
+  },
+  "assessment": {
+    "LCP": "Within the internal target in all six final runs",
+    "CLS": "Within the internal target in all six final runs",
+    "INP": "Not measured; TBT does not establish field INP"
+  },
+  "notes": [
+    "This is a local lab result for the main URL, not field Core Web Vitals.",
+    "All six final runs completed without runtime errors or run warnings.",
+    "Baseline and intermediate after-font reports remain unchanged."
+  ]
+}

@@ -16,11 +16,14 @@ const source = JSON.parse(
   ),
 );
 const pages = [...content.brands, ...content.problems, content.macbook];
-assert.equal(content.brands.length, 9);
-assert.equal(new Set(content.brands.map((page) => page.heroImage)).size, 9);
+assert.equal(content.brands.length, 39);
+const originalBrands = content.brands.slice(0, 9);
+assert.equal(new Set(originalBrands.map((page) => page.heroImage)).size, 9);
+for (const page of content.brands.slice(9))
+  assert.equal(page.heroImage, "/media/laptop-engineer-hero.webp", page.slug);
 assert.equal(content.problems.length, 9);
 assert.equal(new Set(content.problems.map((page) => page.heroImage)).size, 9);
-assert.equal(pages.length, 19);
+assert.equal(pages.length, 49);
 for (const field of ["slug", "title", "description", "h1"]) {
   assert.equal(
     new Set(pages.map((page) => page[field])).size,
@@ -50,8 +53,50 @@ const rootHtml = readFileSync(
   new URL("../dist/index.html", import.meta.url),
   "utf8",
 );
+assert.ok(
+  !rootHtml.includes('name="robots" content="noindex'),
+  "Main page must remain indexable",
+);
+assert.ok(
+  rootHtml.includes(
+    'rel="canonical" href="https://www.lenremont.ru/remont-noutbukov-spb.htm"',
+  ),
+);
+const styleReview = readFileSync(
+  new URL("../dist/style-review/index.html", import.meta.url),
+  "utf8",
+);
+assert.equal(
+  (styleReview.match(/<h1[ >]/g) || []).length,
+  1,
+  "Style preview must have one H1",
+);
+assert.equal((styleReview.match(/id="hop-landing"/g) || []).length, 1);
+assert.ok(styleReview.includes('name="robots" content="noindex, nofollow"'));
+assert.ok(
+  !styleReview.includes('rel="canonical"'),
+  "Preview must not claim the live service canonical",
+);
+assert.ok(
+  !rootHtml.includes('href="/style-review/"'),
+  "Unselected style preview stays outside main navigation",
+);
+assert.match(styleReview, /<details\b[^>]*id="style-format"/);
+assert.ok(styleReview.includes('href="/#lr-contact"'));
+assert.ok(styleReview.includes('href="tel:+78123444444"'));
+const previewIds = [...styleReview.matchAll(/\bid="([^"]+)"/g)].map(
+  ([, id]) => id,
+);
+assert.equal(new Set(previewIds).size, previewIds.length);
+for (const [, anchor] of styleReview.matchAll(/href="#([^" ]+)"/g))
+  assert.ok(previewIds.includes(anchor), `Preview anchor: ${anchor}`);
 const allPages = new Map(pages.map((page) => [`/${page.slug}.htm`, page]));
 allPages.set("/remont-noutbukov-spb.htm", null);
+const problemDiscovery = readFileSync(
+  new URL(`../dist/${content.brands[0].slug}.htm/index.html`, import.meta.url),
+  "utf8",
+);
+assert.ok(rootHtml.includes(`href="/${content.brands[0].slug}.htm"`));
 for (const page of pages) {
   assert.match(page.slug, /^[a-z0-9-]+$/);
   const html = readFileSync(
@@ -59,14 +104,27 @@ for (const page of pages) {
     "utf8",
   );
   assert.ok(
-    rootHtml.includes(`href="/${page.slug}.htm"`),
+    (content.problems.includes(page) ? problemDiscovery : rootHtml).includes(
+      `href="/${page.slug}.htm"`,
+    ),
     `Discovery link: ${page.slug}`,
   );
   assert.match(html, /<!doctype html>/i);
   assert.match(html, /<html lang="ru"/);
+  assert.ok(!html.includes('name="robots" content="noindex'), page.slug);
   assert.equal((html.match(/id="hop-landing"/g) || []).length, 1);
   assert.equal((html.match(/<h1[ >]/g) || []).length, 1, page.slug);
   assert.ok(html.includes(page.h1), page.slug);
+  const serviceHero = html.match(
+    /<section id="lr-hero"[\s\S]*?<\/section>/,
+  )?.[0];
+  assert.ok(serviceHero, page.slug);
+  const serviceHeroText = serviceHero
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ");
+  assert.match(serviceHeroText, /диагностика в мастерской/i, page.slug);
+  assert.match(serviceHeroText, /0 ₽/, page.slug);
+  assert.match(serviceHeroText, /даже при отказе от ремонта/i, page.slug);
   assert.ok(
     html.includes('href="whatsapp://send?phone=78127023333"'),
     page.slug,
@@ -74,14 +132,26 @@ for (const page of pages) {
   if (content.brands.includes(page)) {
     const hero = html.match(/<section id="lr-hero"[\s\S]*?<\/section>/)?.[0];
     assert.ok(hero?.includes("lr-hero--brand"), page.slug);
-    assert.ok(
-      hero.includes('id="lr-hero-title">' + page.h1 + "</h1>"),
+    assert.equal(
+      hero
+        .match(/<h1\b[^>]*id="lr-hero-title"[^>]*>([\s\S]*?)<\/h1>/)?.[1]
+        .replace(/<[^>]+>/g, "")
+        .replace(/\s+/g, " ")
+        .trim(),
+      page.h1,
       page.slug,
+    );
+    assert.ok(
+      hero.indexOf("data-lr-hero-cta") < hero.indexOf('class="lr-hero__photo"'),
+      `The service action must precede the photograph in reading order: ${page.slug}`,
     );
     assert.ok(hero.includes(page.lead), page.slug);
     assert.ok(hero.includes("lr-hero__brand-time"), page.slug);
     assert.ok(
-      hero.includes(source.hero.fields["Срок ремонта"].split(" всего за ")[1]),
+      hero.includes(
+        page.repairTimeNote ??
+          source.hero.fields["Срок ремонта"].split(" всего за ")[1],
+      ),
       page.slug,
     );
     for (const fact of source.hero.bullets) {
@@ -94,7 +164,14 @@ for (const page of pages) {
       assert.ok(hero.includes(channel), page.slug);
     }
     assert.ok(hero.includes('src="' + page.heroImage + '"'), page.slug);
-    assert.ok(hero.includes('width="768" height="1024"'), page.slug);
+    assert.ok(
+      hero.includes(
+        originalBrands.includes(page)
+          ? 'width="768" height="1024"'
+          : 'width="580" height="384"',
+      ),
+      page.slug,
+    );
     assert.ok(
       hero.includes('data-source="brand:' + page.label + '"'),
       page.slug,
@@ -118,6 +195,19 @@ for (const page of pages) {
     for (const text of page.prepare) assert.ok(html.includes(text), page.slug);
   }
   if (content.problems.includes(page)) {
+    assert.ok(
+      serviceHero.includes(page.warning),
+      `Warning must be visible in the first screen: ${page.slug}`,
+    );
+    assert.equal(
+      html.split(page.warning).length - 1,
+      1,
+      `Warning must not be duplicated: ${page.slug}`,
+    );
+    assert.ok(
+      serviceHero.includes('href="#lr-first-aid"'),
+      `First actions must be reachable from the hero: ${page.slug}`,
+    );
     assert.ok(html.includes(`src="${page.heroImage}"`), page.slug);
     assert.ok(html.includes('href="#lr-first-aid"'), page.slug);
     assert.ok(html.includes('id="lr-first-aid"'), page.slug);
@@ -154,6 +244,7 @@ for (const page of pages) {
   const sections = !content.problems.includes(page)
     ? [
         "lr-hero",
+        "lr-reviews",
         "lr-symptoms",
         "lr-timeline",
         "lr-benefits",
@@ -161,18 +252,17 @@ for (const page of pages) {
         "lr-process",
         "lr-security",
         "lr-guarantee",
-        "lr-reviews",
         "lr-prices",
         guideId,
         "lr-faq",
       ]
     : [
         "lr-hero",
+        "lr-reviews",
         guideId,
         "lr-formats",
         "lr-prices",
         "lr-guarantee",
-        "lr-reviews",
         "lr-faq",
       ];
   const positions = sections.map((id) => html.indexOf('id="' + id + '"'));
@@ -198,13 +288,25 @@ for (const page of pages) {
       page.slug,
     );
   if (page === content.macbook) {
+    assert.match(
+      html,
+      /data-lr-page-context[^>]*data-device-category="premium"/,
+    );
+    const video = serviceHero.match(/<video\b[^>]*>/)?.[0];
+    assert.match(video, /\bcontrols\b/);
+    assert.ok(
+      !/\bautoplay\b|data-lr-hero-video/.test(video),
+      "MacBook video must remain user initiated",
+    );
     for (const id of ["lr-mac-checks", "lr-mac-data", "lr-mac-model"])
       assert.ok(html.includes('id="' + id + '"'), page.slug);
     assert.ok(html.includes("https://support.apple.com/ru-ru/102767"));
     assert.ok(
-      html.includes(
-        "Возможность сохранения данных зависит от состояния устройства.",
-      ),
+      html
+        .replace(/\s+/g, " ")
+        .includes(
+          "Возможность сохранения данных зависит от состояния устройства.",
+        ),
     );
   }
   assert.equal(html.match(/<title>([^<]+)<\/title>/)?.[1], page.title);
@@ -262,10 +364,30 @@ for (const page of pages) {
   const priceSection = html.match(
     /<section id="lr-prices"[\s\S]*?<\/section>/,
   )?.[0];
+  assert.ok(priceSection, page.slug);
   if (content.problems.includes(page) && page.priceWorks.length === 0) {
     assert.ok(!priceSection.includes("<table"), page.slug);
     assert.ok(
       priceSection.includes("Стоимость согласуем после диагностики"),
+      page.slug,
+    );
+    assert.ok(
+      priceSection.includes("Обычная диагностика в мастерской — 0 ₽"),
+      page.slug,
+    );
+    assert.ok(
+      priceSection.includes("Бесплатно даже при отказе от ремонта"),
+      page.slug,
+    );
+  } else {
+    const firstPriceRow = priceSection.match(
+      /<tbody\b[^>]*>\s*(<tr\b[\s\S]*?<\/tr>)/,
+    )?.[1];
+    assert.ok(firstPriceRow?.includes("Обычная диагностика"), page.slug);
+    assert.ok(firstPriceRow.includes("в мастерской"), page.slug);
+    assert.ok(firstPriceRow.includes("0 ₽"), page.slug);
+    assert.ok(
+      firstPriceRow.includes("Бесплатно даже при отказе от ремонта"),
       page.slug,
     );
   }
@@ -282,11 +404,18 @@ for (const file of readdirSync(
     new URL(`../dist/_astro/${file}`, import.meta.url),
     "utf8",
   );
-  parse(css).walkRules((rule) =>
+  parse(css).walkRules((rule) => {
+    if (
+      rule.parent.type === "atrule" &&
+      rule.parent.name.endsWith("keyframes")
+    ) {
+      assert.ok(rule.parent.params.startsWith("lr-"), rule.parent.params);
+      return;
+    }
     rule.selectors.forEach((selector) =>
       assert.ok(selector.startsWith("#hop-landing"), selector),
-    ),
-  );
+    );
+  });
 }
 const macSource = readFileSync(
   new URL("../src/pages/remont-macbook-spb.htm.astro", import.meta.url),
@@ -296,5 +425,5 @@ assert.ok(
   !macSource.includes("BrandLanding") && !macSource.includes("ProblemLanding"),
 );
 console.log(
-  "19 pages: unique SEO fields, one H1/root, JSON-LD, links, prices, media, forms and CSS isolation passed.",
+  "49 pages: unique SEO fields, one H1/root, JSON-LD, links, prices, media, forms and CSS isolation passed.",
 );

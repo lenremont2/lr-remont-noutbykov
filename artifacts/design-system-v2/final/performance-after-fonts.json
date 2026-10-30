@@ -1,0 +1,364 @@
+{
+  "kind": "Intermediate post-font lab slice; before below-fold Benefits/RepairTimeline cleanup",
+  "url": "http://127.0.0.1:4324/",
+  "lighthouseVersion": "13.5.0",
+  "chromeBinaryVersion": "156.0.8078.73",
+  "sourceSnapshot": "source-files-after-fonts-sha256.log",
+  "profiles": {
+    "mobile": {
+      "conditions": {
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "disableStorageReset": false,
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      },
+      "equivalentToBaseline": true,
+      "summary": {
+        "LCP": {
+          "median": 2185.0693499999998,
+          "min": 2184.8787,
+          "max": 2190.3864,
+          "unit": "ms"
+        },
+        "CLS": {
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "unit": "unitless"
+        },
+        "FCP": {
+          "median": 1646.2576,
+          "min": 1618.7129,
+          "max": 1692.5858000000003,
+          "unit": "ms"
+        },
+        "TBT": {
+          "median": 216.99999999999955,
+          "min": 211,
+          "max": 219,
+          "unit": "ms"
+        },
+        "SpeedIndex": {
+          "median": 3776.7579293525664,
+          "min": 3717.565227831541,
+          "max": 3811.499562210839,
+          "unit": "ms"
+        }
+      },
+      "runs": [
+        {
+          "run": 1,
+          "report": "lighthouse-after-fonts-mobile-1.json",
+          "fetchTime": "2026-10-29T12:56:11.376Z",
+          "score": 0.93,
+          "metrics": {
+            "LCP": 2184.8787,
+            "CLS": 0,
+            "FCP": 1692.5858000000003,
+            "TBT": 216.99999999999955,
+            "SpeedIndex": 3811.499562210839
+          },
+          "observedLCP_ms": 2182,
+          "warnings": [],
+          "runtimeError": null,
+          "fontRequests": [
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-cyrillic.woff2",
+              "status": 200,
+              "transferBytes": 22348,
+              "startMs": 21.866999983787537,
+              "endMs": 29.823000013828278
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin.woff2",
+              "status": 200,
+              "transferBytes": 38404,
+              "startMs": 341.36599999666214,
+              "endMs": 345.09999999403954
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin-ext.woff2",
+              "status": 200,
+              "transferBytes": 19524,
+              "startMs": 341.5810000002384,
+              "endMs": 346.4379999935627
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "report": "lighthouse-after-fonts-mobile-2.json",
+          "fetchTime": "2026-10-29T12:56:26.220Z",
+          "score": 0.93,
+          "metrics": {
+            "LCP": 2190.3864,
+            "CLS": 0,
+            "FCP": 1646.2576,
+            "TBT": 211,
+            "SpeedIndex": 3776.7579293525664
+          },
+          "observedLCP_ms": 2172,
+          "warnings": [],
+          "runtimeError": null,
+          "fontRequests": [
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-cyrillic.woff2",
+              "status": 200,
+              "transferBytes": 22348,
+              "startMs": 19.941000014543533,
+              "endMs": 33.57200002670288
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin.woff2",
+              "status": 200,
+              "transferBytes": 38404,
+              "startMs": 311.1260000169277,
+              "endMs": 314.1420000195503
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin-ext.woff2",
+              "status": 200,
+              "transferBytes": 19524,
+              "startMs": 311.2470000088215,
+              "endMs": 315.42300003767014
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "report": "lighthouse-after-fonts-mobile-3.json",
+          "fetchTime": "2026-10-29T12:56:40.814Z",
+          "score": 0.93,
+          "metrics": {
+            "LCP": 2185.0693499999998,
+            "CLS": 0,
+            "FCP": 1618.7129,
+            "TBT": 219,
+            "SpeedIndex": 3717.565227831541
+          },
+          "observedLCP_ms": 2136,
+          "warnings": [],
+          "runtimeError": null,
+          "fontRequests": [
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-cyrillic.woff2",
+              "status": 200,
+              "transferBytes": 22348,
+              "startMs": 20.064000010490417,
+              "endMs": 30.377000004053116
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin.woff2",
+              "status": 200,
+              "transferBytes": 38404,
+              "startMs": 304.05399999022484,
+              "endMs": 306.1299999952316
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin-ext.woff2",
+              "status": 200,
+              "transferBytes": 19524,
+              "startMs": 304.17700001597404,
+              "endMs": 306.9530000090599
+            }
+          ]
+        }
+      ]
+    },
+    "desktop": {
+      "conditions": {
+        "formFactor": "desktop",
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "disableStorageReset": false,
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      },
+      "equivalentToBaseline": true,
+      "summary": {
+        "LCP": {
+          "median": 502.2262999999999,
+          "min": 487.1574,
+          "max": 502.48030000000006,
+          "unit": "ms"
+        },
+        "CLS": {
+          "median": 0,
+          "min": 0,
+          "max": 0.0001498198970149374,
+          "unit": "unitless"
+        },
+        "FCP": {
+          "median": 482.2263,
+          "min": 467.15739999999994,
+          "max": 482.48030000000006,
+          "unit": "ms"
+        },
+        "TBT": {
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "unit": "ms"
+        },
+        "SpeedIndex": {
+          "median": 522.913518997897,
+          "min": 511.4150915196889,
+          "max": 523.0072621296742,
+          "unit": "ms"
+        }
+      },
+      "runs": [
+        {
+          "run": 1,
+          "report": "lighthouse-after-fonts-desktop-1.json",
+          "fetchTime": "2026-10-29T12:56:55.398Z",
+          "score": 1,
+          "metrics": {
+            "LCP": 487.1574,
+            "CLS": 0.0001498198970149374,
+            "FCP": 467.15739999999994,
+            "TBT": 0,
+            "SpeedIndex": 511.4150915196889
+          },
+          "observedLCP_ms": 442,
+          "warnings": [],
+          "runtimeError": null,
+          "fontRequests": [
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-cyrillic.woff2",
+              "status": 200,
+              "transferBytes": 22348,
+              "startMs": 18.091999977827072,
+              "endMs": 23.691999971866608
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin.woff2",
+              "status": 200,
+              "transferBytes": 38404,
+              "startMs": 370.4599999785423,
+              "endMs": 375.4510000050068
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin-ext.woff2",
+              "status": 200,
+              "transferBytes": 19524,
+              "startMs": 370.6850000023842,
+              "endMs": 378.27399998903275
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "report": "lighthouse-after-fonts-desktop-2.json",
+          "fetchTime": "2026-10-29T12:57:09.945Z",
+          "score": 1,
+          "metrics": {
+            "LCP": 502.48030000000006,
+            "CLS": 0,
+            "FCP": 482.48030000000006,
+            "TBT": 0,
+            "SpeedIndex": 522.913518997897
+          },
+          "observedLCP_ms": 471,
+          "warnings": [],
+          "runtimeError": null,
+          "fontRequests": [
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-cyrillic.woff2",
+              "status": 200,
+              "transferBytes": 22348,
+              "startMs": 15.96299996972084,
+              "endMs": 24.130999982357025
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin.woff2",
+              "status": 200,
+              "transferBytes": 38404,
+              "startMs": 309.64699998497963,
+              "endMs": 312.55499997735023
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin-ext.woff2",
+              "status": 200,
+              "transferBytes": 19524,
+              "startMs": 309.8009999990463,
+              "endMs": 313.68199998140335
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "report": "lighthouse-after-fonts-desktop-3.json",
+          "fetchTime": "2026-10-29T12:57:22.650Z",
+          "score": 1,
+          "metrics": {
+            "LCP": 502.2262999999999,
+            "CLS": 0,
+            "FCP": 482.2263,
+            "TBT": 0,
+            "SpeedIndex": 523.0072621296742
+          },
+          "observedLCP_ms": 476,
+          "warnings": [],
+          "runtimeError": null,
+          "fontRequests": [
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-cyrillic.woff2",
+              "status": 200,
+              "transferBytes": 22348,
+              "startMs": 19.723999977111816,
+              "endMs": 30.726000010967255
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin.woff2",
+              "status": 200,
+              "transferBytes": 38404,
+              "startMs": 312.3329999744892,
+              "endMs": 315.158999979496
+            },
+            {
+              "url": "http://127.0.0.1:4324/media/fonts/golos-text-v7-latin-ext.woff2",
+              "status": 200,
+              "transferBytes": 19524,
+              "startMs": 312.47699999809265,
+              "endMs": 315.35599997639656
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "INP": "not measured; TBT is not field INP",
+  "notes": [
+    "All six retained runs completed without runtime errors or run warnings.",
+    "Do not label this intermediate slice as the final CSS result after subsequent source changes."
+  ]
+}

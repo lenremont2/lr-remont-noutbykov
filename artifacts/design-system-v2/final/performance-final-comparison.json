@@ -1,0 +1,260 @@
+{
+  "kind": "Final report comparison with preserved historical slices",
+  "baseline": "performance-baseline.json",
+  "afterFonts": "performance-after-fonts.json",
+  "final": "performance-final.json",
+  "finalSourceSnapshot": "source-files-sha256.log",
+  "profiles": {
+    "mobile": {
+      "equivalentConfiguration": true,
+      "metrics": {
+        "LCP": {
+          "before": {
+            "median": 2942.32895,
+            "min": 1832.1038500000002,
+            "max": 3012.7845,
+            "unit": "ms"
+          },
+          "afterFonts": {
+            "median": 2185.0693499999998,
+            "min": 2184.8787,
+            "max": 2190.3864,
+            "unit": "ms"
+          },
+          "final": {
+            "median": 2182.0863,
+            "min": 2113.8121499999997,
+            "max": 2197.2168,
+            "unit": "ms"
+          },
+          "medianDeltaFromBaseline": -760.2426500000001,
+          "relativeChangePercent": -25.838125611346076
+        },
+        "CLS": {
+          "before": {
+            "median": 0,
+            "min": 0,
+            "max": 0,
+            "unit": "unitless"
+          },
+          "afterFonts": {
+            "median": 0,
+            "min": 0,
+            "max": 0,
+            "unit": "unitless"
+          },
+          "final": {
+            "median": 0,
+            "min": 0,
+            "max": 0,
+            "unit": "unitless"
+          },
+          "medianDeltaFromBaseline": 0,
+          "relativeChangePercent": null
+        },
+        "FCP": {
+          "before": {
+            "median": 2867.1065,
+            "min": 1705.757,
+            "max": 3012.7845,
+            "unit": "ms"
+          },
+          "afterFonts": {
+            "median": 1646.2576,
+            "min": 1618.7129,
+            "max": 1692.5858000000003,
+            "unit": "ms"
+          },
+          "final": {
+            "median": 1665.8112,
+            "min": 1612.7242,
+            "max": 1817.2081000000003,
+            "unit": "ms"
+          },
+          "medianDeltaFromBaseline": -1201.2952999999998,
+          "relativeChangePercent": -41.8992213927177
+        },
+        "TBT": {
+          "before": {
+            "median": 27.5,
+            "min": 0,
+            "max": 100.94489999999996,
+            "unit": "ms"
+          },
+          "afterFonts": {
+            "median": 216.99999999999955,
+            "min": 211,
+            "max": 219,
+            "unit": "ms"
+          },
+          "final": {
+            "median": 212,
+            "min": 209.6040499999998,
+            "max": 213,
+            "unit": "ms"
+          },
+          "medianDeltaFromBaseline": 184.5,
+          "relativeChangePercent": 670.9090909090909
+        },
+        "SpeedIndex": {
+          "before": {
+            "median": 3628.2499744796964,
+            "min": 2213.289362648126,
+            "max": 5708.0813180196155,
+            "unit": "ms"
+          },
+          "afterFonts": {
+            "median": 3776.7579293525664,
+            "min": 3717.565227831541,
+            "max": 3811.499562210839,
+            "unit": "ms"
+          },
+          "final": {
+            "median": 3756.730189595386,
+            "min": 1817.2081000000003,
+            "max": 3857.988905371385,
+            "unit": "ms"
+          },
+          "medianDeltaFromBaseline": 128.4802151156896,
+          "relativeChangePercent": 3.541107035606445
+        }
+      }
+    },
+    "desktop": {
+      "equivalentConfiguration": true,
+      "metrics": {
+        "LCP": {
+          "before": {
+            "median": 588.1339999999999,
+            "min": 586.4058311528247,
+            "max": 939.2073999999998,
+            "unit": "ms"
+          },
+          "afterFonts": {
+            "median": 502.2262999999999,
+            "min": 487.1574,
+            "max": 502.48030000000006,
+            "unit": "ms"
+          },
+          "final": {
+            "median": 495.38415,
+            "min": 492.0313,
+            "max": 496.336,
+            "unit": "ms"
+          },
+          "medianDeltaFromBaseline": -92.74984999999992,
+          "relativeChangePercent": -15.770190126739816
+        },
+        "CLS": {
+          "before": {
+            "median": 0.0001498198970149374,
+            "min": 0.0001498198970149374,
+            "max": 0.0001498198970149374,
+            "unit": "unitless"
+          },
+          "afterFonts": {
+            "median": 0,
+            "min": 0,
+            "max": 0.0001498198970149374,
+            "unit": "unitless"
+          },
+          "final": {
+            "median": 0,
+            "min": 0,
+            "max": 0,
+            "unit": "unitless"
+          },
+          "medianDeltaFromBaseline": -0.0001498198970149374,
+          "relativeChangePercent": -100
+        },
+        "FCP": {
+          "before": {
+            "median": 588.1339999999999,
+            "min": 586.4058311528247,
+            "max": 939.2073999999998,
+            "unit": "ms"
+          },
+          "afterFonts": {
+            "median": 482.2263,
+            "min": 467.15739999999994,
+            "max": 482.48030000000006,
+            "unit": "ms"
+          },
+          "final": {
+            "median": 472.0313,
+            "min": 430.25609999999995,
+            "max": 476.336,
+            "unit": "ms"
+          },
+          "medianDeltaFromBaseline": -116.10269999999991,
+          "relativeChangePercent": -19.740858375812305
+        },
+        "TBT": {
+          "before": {
+            "median": 0,
+            "min": 0,
+            "max": 0,
+            "unit": "ms"
+          },
+          "afterFonts": {
+            "median": 0,
+            "min": 0,
+            "max": 0,
+            "unit": "ms"
+          },
+          "final": {
+            "median": 0,
+            "min": 0,
+            "max": 0,
+            "unit": "ms"
+          },
+          "medianDeltaFromBaseline": 0,
+          "relativeChangePercent": null
+        },
+        "SpeedIndex": {
+          "before": {
+            "median": 1288.5873328322996,
+            "min": 942.3290088067539,
+            "max": 1953.9231546578435,
+            "unit": "ms"
+          },
+          "afterFonts": {
+            "median": 522.913518997897,
+            "min": 511.4150915196889,
+            "max": 523.0072621296742,
+            "unit": "ms"
+          },
+          "final": {
+            "median": 534.5083424097422,
+            "min": 504.7811989176862,
+            "max": 738.3868046232592,
+            "unit": "ms"
+          },
+          "medianDeltaFromBaseline": -754.0789904225574,
+          "relativeChangePercent": -58.519820210020285
+        }
+      }
+    }
+  },
+  "TBTInterpretation": {
+    "fact": "Mobile final TBT median is higher than baseline; desktop remains zero. This diagnostic result is retained explicitly and is not converted into INP.",
+    "representativeReports": [
+      "lighthouse-mobile-1.json",
+      "lighthouse-final-mobile-1.json"
+    ],
+    "styleLayout_ms": {
+      "before": 3302.9199999999996,
+      "final": 1419.6999999999987
+    },
+    "longestTask_ms": {
+      "before": 1216.9999999999998,
+      "final": 563
+    },
+    "interpretation": "Earlier FCP changes the TBT counting window, while JavaScript source stayed unchanged. The representative long tasks shrink. These observations suggest timing-window effects but do not prove field responsiveness or improvement in every metric."
+  },
+  "limits": [
+    "Same Lighthouse/browser/viewport/throttling configuration; uncontrolled OS/DNS/CDN caches and host-load variation remain.",
+    "No pre-design lab baseline exists. The comparison isolates the subsequent measured loading work and final CSS cleanup, not the whole redesign.",
+    "No field INP or p75 Core Web Vitals data are available for localhost."
+  ]
+}

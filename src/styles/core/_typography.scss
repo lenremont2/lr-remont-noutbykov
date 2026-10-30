@@ -1,8 +1,9 @@
 #hop-landing {
   color: var(--lr-color-text);
   font-family: var(--lr-font) !important;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--lr-font-size-body);
+  line-height: 1.5;
+  font-synthesis: none;
 }
 #hop-landing h1,
 #hop-landing h2,
@@ -15,45 +16,46 @@
 #hop-landing h3 {
   color: var(--lr-color-text);
   font-family: var(--lr-font);
-  font-weight: 500;
+  font-weight: 600;
   text-wrap: balance;
 }
 #hop-landing h1,
 #hop-landing .lr-hero__title {
-  font-size: 38px;
-  line-height: 42px;
+  font-size: var(--lr-font-size-h1);
+  line-height: 1.1;
   letter-spacing: -0.03em;
 }
 #hop-landing h2 {
-  font-size: 30px;
-  line-height: 35px;
-  letter-spacing: -0.025em;
+  font-size: var(--lr-font-size-h2);
+  line-height: 1.1;
+  letter-spacing: -0.035em;
 }
 #hop-landing h3 {
-  font-size: 21px;
-  line-height: 28px;
+  font-size: var(--lr-font-size-h3);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 #hop-landing .lr-lead {
-  font-size: 18px;
-  line-height: 27px;
+  font-size: var(--lr-font-size-lead);
+  line-height: 1.4;
   color: var(--lr-color-muted);
 }
 #hop-landing .lr-caption {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: var(--lr-font-size-caption);
+  line-height: 1.5;
   color: var(--lr-color-muted);
 }
 #hop-landing .lr-eyebrow {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: var(--lr-font-size-caption);
+  line-height: 1.4;
   font-weight: 600;
   color: var(--lr-color-muted);
 }
 #hop-landing .lr-section-heading {
-  max-width: 840px;
+  max-width: 960px;
   margin-bottom: 32px;
 }
 #hop-landing .lr-section-heading h2 {
@@ -64,55 +66,9 @@
 }
 #hop-landing .lr-section-heading .lr-lead {
   margin-top: 20px;
-  max-width: 65ch;
-}
-@media (min-width: 768px) {
-  #hop-landing {
-    font-size: 17px;
-    line-height: 26px;
-  }
-  #hop-landing h1,
-  #hop-landing .lr-hero__title {
-    font-size: 52px;
-    line-height: 56px;
-  }
-  #hop-landing h2 {
-    font-size: 36px;
-    line-height: 42px;
-  }
-  #hop-landing h3 {
-    font-size: 24px;
-    line-height: 30px;
-  }
-  #hop-landing .lr-lead {
-    line-height: 28px;
-  }
-  #hop-landing .lr-eyebrow {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  #hop-landing .lr-section-heading {
-    margin-bottom: 48px;
-  }
+  max-width: 60ch;
 }
 @media (min-width: 1024px) {
-  #hop-landing {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  #hop-landing h1,
-  #hop-landing .lr-hero__title {
-    font-size: 68px;
-    line-height: 72px;
-  }
-  #hop-landing h2 {
-    font-size: 46px;
-    line-height: 52px;
-  }
-  #hop-landing .lr-lead {
-    font-size: 20px;
-    line-height: 30px;
-  }
   #hop-landing .lr-section-heading {
     margin-bottom: 40px;
   }

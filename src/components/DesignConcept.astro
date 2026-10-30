@@ -1,0 +1,34 @@
+---
+import Focus from "./DesignFocus.astro";
+import Lab from "./DesignLab.astro";
+import Service from "./DesignService.astro";
+import DesignPricing from "./DesignPricing.astro";
+import DesignServiceNext from "./DesignServiceNext.astro";
+interface Props {
+  concept: "focus" | "lab" | "service";
+}
+const { concept } = Astro.props;
+const Continuation = concept === "service" ? DesignServiceNext : DesignPricing;
+const Concept = { focus: Focus, lab: Lab, service: Service }[concept];
+---
+
+<div class:list={["lr-concept", `lr-concept--${concept}`]} data-lr-concept>
+  <header class="lr-concept__nav lr-concept__frame">
+    <a class="lr-concept__brand" href="/"
+      >Ленремонт<span aria-hidden="true">.</span></a
+    >
+    <nav aria-label="Навигация макета">
+      <a href="#concept-detail">О сервисе</a>
+      <a href="#concept-prices">Стоимость</a>
+      <a href="/design-directions/">Все концепции ↗</a>
+    </nav>
+    <a class="lr-concept__phone" href="tel:+78123444444">344-44-44</a>
+  </header>
+  <Concept />
+  <Continuation />
+  <footer class="lr-concept__footer lr-concept__frame">
+    <p>Макет для выбора направления · октябрь 2026</p><a
+      href="/design-directions/">Сравнить три концепции ↗</a
+    ><span class="lr-concept__footer-word">Ленремонт.</span>
+  </footer>
+</div>

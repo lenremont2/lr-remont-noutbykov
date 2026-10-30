@@ -1,0 +1,473 @@
+- banner:
+  - link "Сервисный Центр «А‑Айсберг»":
+    - /url: /
+    - img "Сервисный Центр «А‑Айсберг»"
+  - button "Раскрыть меню":
+    - generic: 
+    - generic: Все услуги
+  - button "Показать города":
+    - generic: 
+    - generic: Санкт-Петербург
+  - generic: 
+  - text: 07–23
+  - link "Вызвать мастера":
+    - /url: tel:+78123222280
+    - text: 
+    - generic: 8 (812) 322-22-80
+  - button "Вызвать мастера":
+    - generic: Вызвать мастера
+- img "Ремонт ноутбуков в Санкт-Петербурге"
+- heading "Ремонт ноутбуков в Санкт-Петербурге" [level=1]
+- list:
+  - listitem: Срочно, на дому, в удобное время!
+  - listitem: Запчасти всегда в наличии!
+  - listitem: Письменная гарантия!
+  - listitem: Квалифицированные мастера!
+  - listitem: По всему городу и области!
+- text: "Цена:"
+- generic: от 450 ₽
+- generic: 
+- text: "Прием заявок:"
+- generic: 24/7 без выходных
+- text: 
+- button "Сделать заявку":
+  - generic: Сделать заявку
+- link "Связаться через Telegram":
+  - /url: https://telegram.me/icebergservicebot?start=ZmlsaWFsPXNwYg
+  - generic: 
+  - generic: Связаться через Telegram
+- text: 
+- heading "Контроль работы мастеров" [level=2]
+- generic: 
+- generic: Образование
+- text: Все мастера проходят специальные курсы до начала работы
+- generic: 
+- generic: Контроль
+- text: Специалисты предоставляют подробный отчет о каждой выполненной работе
+- generic: 
+- generic: Внимательность
+- text: Мы подробно разбираем все вопросы и предложения по каждой заявке
+- heading "Цены на ремонт ноутбуков в Санкт-Петербурге" [level=2]
+- button "Вызвать мастера":
+  - generic: Вызвать мастера
+- generic "Замена разъема питания":
+  - generic: Замена разъема питания
+  - generic: от 400 ₽
+- generic "Замена аккумулятора":
+  - generic: Замена аккумулятора
+  - generic: от 700 ₽
+- generic "Деинсталляция программы":
+  - generic: Деинсталляция программы
+  - generic: от 1350 ₽
+- generic "Удаление программы из системного реестра и автозагрузки":
+  - generic: Удаление программы из системного реестра и автозагрузки
+  - generic: от 1350 ₽
+- generic "Установка модуля оперативной памяти":
+  - generic: Установка модуля оперативной памяти
+  - generic: от 1350 ₽
+- generic "Замена батарейки BIOS (без учета стоимости детали)":
+  - generic: Замена батарейки BIOS (без учета стоимости детали)
+  - generic: от 1450 ₽
+- generic "Установка привода":
+  - generic: Установка привода
+  - generic: от 1500 ₽
+- generic "Настройка BIOS":
+  - generic: Настройка BIOS
+  - generic: от 1600 ₽
+- generic "Замена матрицы ноутбука":
+  - generic: Замена матрицы ноутбука
+  - generic: от 1600 ₽
+- generic "Оптимизация настроек программного обеспечения":
+  - generic: Оптимизация настроек программного обеспечения
+  - generic: от 1700 ₽
+- generic "Установка обновлений безопасности интернет обозревателя":
+  - generic: Установка обновлений безопасности интернет обозревателя
+  - generic: от 1750 ₽
+- generic "Замена SSD":
+  - generic: Замена SSD
+  - generic: от 1800 ₽
+- generic "Установка дополнительно системы охлаждения":
+  - generic: Установка дополнительно системы охлаждения
+  - generic: от 1800 ₽
+- generic "Установка Microsoft Office любой версии":
+  - generic: Установка Microsoft Office любой версии
+  - generic: от 1900 ₽
+- generic "Настройка подключения к VPN":
+  - generic: Настройка подключения к VPN
+  - generic: от 2000 ₽
+- generic "Настройка подключения к Wi-Fi":
+  - generic: Настройка подключения к Wi-Fi
+  - generic: от 2000 ₽
+- generic "Настройка подключения к ADSL":
+  - generic: Настройка подключения к ADSL
+  - generic: от 2000 ₽
+- generic "Установка видеокарты":
+  - generic: Установка видеокарты
+  - generic: от 2000 ₽
+- button "Показать все цены":
+  - generic: Показать все цены
+- img "Почему выбирают наш сервис?"
+- heading "Почему выбирают наш сервис?" [level=2]
+- heading "Более 30 лет оказываем качественные услуги на дому." [level=3]
+- link "О Компании":
+  - /url: https://spb.iceberg.ru/company/
+  - generic: О Компании
+- generic: 
+- generic: Уверенность в нас
+- text: Мы успешно выполнили миллионы заявок
+- generic: 
+- generic: Многообразие услуг
+- text: Мы оказываем более 100 видов различных услуг
+- generic: 
+- generic: Развитие
+- text: Наши услуги доступны в крупнейших городах России
+- generic: 
+- generic: Надежность
+- text: На все услуги предоставляется гарантия
+- generic: 
+- generic: Поддержка
+- text: Мы ежедневно обрабатываем все ваши вопросы и пожелания
+- generic: 
+- generic: Стабильность
+- text: Мы успешно обслуживаем технику с 1993 года
+- heading "Порядок и скорость оказания услуг" [level=2]
+- heading "Убедитесь в качестве нашей работы лично" [level=3]
+- button "Вызвать мастера":
+  - generic: Вызвать мастера
+- generic: "1"
+- generic: минута требуется для оформления заявки
+- generic: "5"
+- generic: минут нужно для выезда мастера
+- generic: "60"
+- generic: минут нужно, чтобы добраться до вас
+- generic: "30"
+- generic: минут в среднем требуется на работу
+- heading "Популярные вопросы" [level=2]
+- heading "Ответы по услуге «Ремонт ноутбуков»" [level=3]
+- button "Вызвать мастера":
+  - generic: Вызвать мастера
+- button "Open":
+  - text: С какими неисправностями обращаются по услуге «Ремонт ноутбуков»?
+  - button "":
+    - generic: 
+- button "Open":
+  - text: Что сообщить при заявке по услуге «Ремонт ноутбуков»?
+  - button "":
+    - generic: 
+- button "Open":
+  - text: Как действовать до приезда мастера по услуге «Ремонт ноутбуков»?
+  - button "":
+    - generic: 
+- button "Open":
+  - text: Как формируется стоимость ремонта по услуге «Ремонт ноутбуков»?
+  - button "":
+    - generic: 
+- button "Open":
+  - text: Как принимают работу и гарантию по итогам услуги «Ремонт ноутбуков»?
+  - button "":
+    - generic: 
+- img "Нужна услуга?"
+- heading "Нужен ремонт?" [level=2]
+- heading "Оставьте заявку, мы с вами свяжемся" [level=3]
+- generic: Телефон*
+- textbox [disabled]
+- textbox "Телефон*":
+  - /placeholder: +7 (000) 000-00-00
+- generic: Введите код с картинки
+- img "Введите код с картинки"
+- button "Обновить код капчи":
+  - generic: 
+- generic: Код*
+- textbox "Код*":
+  - /placeholder: Введите код
+- button "Отправить":
+  - generic: Отправить
+- heading "Бренды" [level=2]
+- link "Acer":
+  - /url: https://spb.iceberg.ru/remont-noutbukov/acer/
+  - img "Acer"
+- link "Alienware":
+  - /url: https://spb.iceberg.ru/remont-noutbukov/alienware/
+  - img "Alienware"
+- link "APPLE":
+  - /url: https://spb.iceberg.ru/remont-noutbukov/apple/
+  - img "APPLE"
+- link "Asus":
+  - /url: https://spb.iceberg.ru/remont-noutbukov/asus/
+  - img "Asus"
+- link "BenQ":
+  - /url: https://spb.iceberg.ru/remont-noutbukov/benq/
+  - img "BenQ"
+- link "Compaq":
+  - /url: https://spb.iceberg.ru/remont-noutbukov/remont-cifrovoy-tekhniki/compaq/
+  - img "Compaq"
+- link "Dell":
+  - /url: https://spb.iceberg.ru/remont-noutbukov/dell/
+  - img "Dell"
+- link "Dexp":
+  - /url: https://spb.iceberg.ru/remont-noutbukov/dexp/
+  - img "Dexp"
+- link "DNS":
+  - /url: https://spb.iceberg.ru/remont-noutbukov/dns/
+  - img "DNS"
+- link "eMachines":
+  - /url: https://spb.iceberg.ru/remont-noutbukov/emachines/
+  - img "eMachines"
+- link "FUJITSU":
+  - /url: https://spb.iceberg.ru/remont-noutbukov/fujitsu/
+  - img "FUJITSU"
+- link "GIGABYTE":
+  - /url: https://spb.iceberg.ru/remont-noutbukov/gigabyte/
+  - img "GIGABYTE"
+- heading "Отзывы" [level=2]
+- generic: ремонт ноутбуков
+- text: Наталья
+- generic: Заявка 9989712
+- generic "4.8":
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+- generic: 4.8/5
+- generic: Обратились за услугой «Ремонт ноутбуков», поскольку возникла неисправность «шумит ноутбук». До начала ремонта специалист уточнил детали и согласовал объём работ. После завершения показал результат и ответил на вопросы.
+- generic: Ноутбук Intel
+- text: Евгений
+- generic: Заявка 2378534
+- generic "4.9":
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+- generic: 4.9/5
+- generic: Алексей прекрасный специалист! Очень советую. Починил все быстро, настроил и отдал уже исправный ноутбук. Объяснил все доступным языком, а также дал рекомендации. Если что случится, теперь я знаю к кому обращусь
+- generic: Ноутбук HP
+- text: Константин
+- generic: Заявка 9874351
+- generic "4.8":
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+- generic: 4.8/5
+- generic: Было нужно заменить матрицу на ноутбуке. Мастер забрал ноутбук в стационар и уже через день привез его обратно абсолютно исправным. В общении Артур приятный, вежливый и очень внимательный к клиенту
+- generic: ремонт ноутбуков
+- text: Марина
+- generic: Заявка 9989710
+- generic "4.8":
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+- generic: 4.8/5
+- generic: Заказывали услугу «Ремонт ноутбуков» после появления неисправности «нет звука на ноутбуке». Специалист осмотрел технику, нашёл источник проблемы и заранее объяснил план ремонта. Готовый результат проверили при обычной нагрузке.
+- generic: Ноутбук Toshiba
+- text: Любовь
+- generic: Заявка 3598235
+- generic "4.9":
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+- generic: 4.9/5
+- generic: Все супер быстро и качественно. Утром у меня слёг ноут, мастер приехал оперативно, забрал его в стационар, а уже на следующий день все вернул исправным. Все понятно объяснил, даже дал несколько советов. Огромнейшее спасибо!
+- generic: ремонт ноутбуков
+- text: Дмитрий
+- generic: Заявка 9989711
+- generic "4.7":
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+- generic: 4.7/5
+- generic: В заявке на услугу «Ремонт ноутбуков» указали симптом «черный экран на ноутбуке». Мастер последовательно проверил узлы, выполнил согласованные работы и рассказал, что было причиной. После ремонта техника прошла контрольную проверку.
+- generic: Ноутбук Acer
+- text: Мария
+- generic: Заявка 2564358
+- generic "5":
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+  - generic: 
+- generic: 5/5
+- generic: Выражаю огромную благодарность мастеру Артуру! Спас мой ноутбук после затопления. Я думала, что уже ничего нельзя сделать, но он сотворил чудо, не иначе! Ноутбук шуршит и больше не думает умирать
+- heading "Ремонт ноутбуков на дому с выездом мастера в Санкт-Петербурге" [level=2]
+- paragraph: "Ноутбук редко ломается «по расписанию»: он может не включиться перед рабочим днем, начать перегреваться после чистки системы охлаждения или перестать заряжаться из-за разъема питания. А-Айсберг выполняет ремонт ноутбуков на дому: мастер приезжает по заявке, проводит диагностику, согласует работы и устраняет неисправность, если ремонт возможен на месте."
+- heading "Какие неисправности устраняем" [level=3]
+- paragraph: Мастер проверяет устройство и определяет, связана ли проблема с питанием, охлаждением, экраном, клавиатурой, накопителем, программной частью или последствиями залития. Такой подход помогает не менять исправные детали и сразу объяснить, что именно требует ремонта.
+- list:
+  - listitem: ноутбук не включается, выключается сам или зависает;
+  - listitem: появились шум, перегрев, сильное замедление работы;
+  - listitem: не заряжается аккумулятор или поврежден разъем питания;
+  - listitem: не работает экран, клавиатура, тачпад, Wi-Fi или порты;
+  - listitem: нужна установка системы, настройка программ или восстановление работы после сбоя.
+- heading "Как проходит выездной ремонт" [level=3]
+- list:
+  - listitem: "Вы оставляете заявку в любое время: прием обращений работает 24/7."
+  - listitem: Специалист уточняет симптомы и подбирает мастера по профилю неисправности.
+  - listitem: Мастер приезжает в течение часа в городах присутствия компании.
+  - listitem: После диагностики согласуются работы, запчасти и итоговый порядок ремонта.
+  - listitem: По завершении вы получаете письменную гарантию на выполненные работы.
+- heading "Запчасти, бренды и гарантия" [level=3]
+- paragraph: Мастера А-Айсберг обслуживают технику известных брендов и используют необходимые запчасти, которые есть в наличии для ремонта на дому. Если неисправность требует более сложной проверки, специалист объясняет дальнейший порядок действий без навязывания лишних услуг.
+- table:
+  - rowgroup:
+    - row "Что важно клиенту Как это закрывает сервис":
+      - columnheader "Что важно клиенту"
+      - columnheader "Как это закрывает сервис"
+    - row "Скорость Заявки принимаются круглосуточно, работа ведется без выходных и праздников.":
+      - cell "Скорость"
+      - cell "Заявки принимаются круглосуточно, работа ведется без выходных и праздников."
+    - row "Надежность Компания работает с 1993 года и выдает письменную гарантию.":
+      - cell "Надежность"
+      - cell "Компания работает с 1993 года и выдает письменную гарантию."
+    - row "Удобство Большинство задач решается на дому без поездки в сервисный центр.":
+      - cell "Удобство"
+      - cell "Большинство задач решается на дому без поездки в сервисный центр."
+- heading "Почему обращаются в А-Айсберг" [level=3]
+- paragraph: "А-Айсберг больше 30 лет развивает экосистему бытового сервиса на дому: от ремонта техники до электрики, сантехники, клининга и работ мастера на час. За время работы выполнено свыше 6,3 миллиона услуг, а сервис представлен в 14 крупных городах России. Для клиента это означает понятный порядок работ, опытных мастеров и ответственность по гарантии."
+- generic: Нужен качественный и профессиональный ремонт ноутбука в Санкт-Петербурге?
+- generic: "1"
+- paragraph: Позвоните в сервисный центр «А-Айсберг» по телефону или воспользуйтесь формой обратной связи на сайте.
+- generic: "2"
+- paragraph: Опишите поломку менеджеру и согласуйте время приезда мастера.
+- generic: "3"
+- paragraph: Компания принимает заказы из любой точки города.
+- img "Остались вопросы?"
+- heading "Остались вопросы?" [level=2]
+- heading "Оставьте заявку, специалист с вами свяжется" [level=3]
+- generic: Телефон*
+- textbox [disabled]
+- textbox "Телефон*":
+  - /placeholder: +7 (000) 000-00-00
+- generic: Введите код с картинки
+- img "Введите код с картинки"
+- button "Обновить код капчи":
+  - generic: 
+- generic: Код*
+- textbox "Код*":
+  - /placeholder: Введите код
+- button "Отправить":
+  - generic: Отправить
+- link "Главная":
+  - /url: https://spb.iceberg.ru/
+  - generic: Главная
+- link "Ремонт техники":
+  - /url: https://spb.iceberg.ru/remont-texniki/
+  - generic: Ремонт техники
+- link "Ремонт цифровой техники":
+  - /url: https://spb.iceberg.ru/remont-cifrovoy-tekhniki/
+  - generic: Ремонт цифровой техники
+- generic "Ремонт ноутбуков":
+  - generic: Ремонт ноутбуков
+- contentinfo:
+  - navigation "Навигация в подвале сайта":
+    - generic: Услуги
+    - link "Ремонт бытовой техники":
+      - /url: https://spb.iceberg.ru/remont-bytovoy-tehniki/
+    - link "Ремонт холодильников":
+      - /url: https://spb.iceberg.ru/remont-holodilnikov/
+    - link "Ремонт стиральных машин":
+      - /url: https://spb.iceberg.ru/remont-stiralnyh-mashin/
+    - link "Ремонт кухонных плит":
+      - /url: https://spb.iceberg.ru/remont-kuhonnyh-plit/
+    - link "Ремонт электроплит":
+      - /url: https://spb.iceberg.ru/remont-elektroplit/
+    - link "Ремонт цифровой техники":
+      - /url: https://spb.iceberg.ru/remont-cifrovoy-tekhniki/
+    - link "Ремонт электрики":
+      - /url: https://spb.iceberg.ru/remont-elektriki/
+    - link "Ремонт сантехники":
+      - /url: https://spb.iceberg.ru/remont-santekhniki/
+    - link "Услуги мастера на час":
+      - /url: https://spb.iceberg.ru/master-na-chas/
+    - generic: Клиентам
+    - link "Рекламное агентство":
+      - /url: https://proreklam.ru/
+    - link "Ремонтная компания":
+      - /url: https://spb.iceberg-stroy.ru/
+    - link "Ремонт квартир":
+      - /url: https://spb.iceberg-stroy.ru/remont-kvartir/
+    - link "Сертификаты и награды":
+      - /url: https://spb.iceberg.ru/certificates/
+    - link "Награды и достижения":
+      - /url: https://spb.iceberg.ru/awards/
+    - link "Программа лояльности":
+      - /url: https://spb.iceberg.ru/cards/
+    - link "Установка и подключение техники":
+      - /url: https://spb.iceberg.ru/dostavka-i-montaj/
+    - link "Компания":
+      - /url: https://spb.iceberg.ru/company/
+    - generic: Общее
+    - link "Карта сайта":
+      - /url: https://spb.iceberg.ru/html-map/
+    - link "Контакты":
+      - /url: https://spb.iceberg.ru/contacts/
+    - link "FAQ":
+      - /url: https://spb.iceberg.ru/faq/
+    - link "Политика обработки персональных данных":
+      - /url: https://iceberg.ru/docs/privacy-policy.pdf
+  - link "Сервисный Центр «А‑Айсберг»":
+    - /url: /
+    - img "Сервисный Центр «А‑Айсберг»"
+  - generic: © 1993–2026 Сервисный Центр «А‑Айсберг»
+  - generic: ООО "МАСТЕР-СЕРВИС"
+  - generic: 127572, Город Москва, вн.тер. г. Муниципальный Округ Лианозово, ул Новгородская, дом 31, помещение 1/1
+  - generic: ИНН 9715511730
+  - generic: ОГРН 1257700246308
+  - link "https://vk.com/a_iceberg":
+    - /url: https://vk.com/a_iceberg
+    - generic: 
+  - link "https://www.youtube.com/channel/UCFGj3J43zw0ncCRtV4d01Iw":
+    - /url: https://www.youtube.com/channel/UCFGj3J43zw0ncCRtV4d01Iw
+    - generic: 
+  - text: "Есть вопросы? Звоните:"
+  - link "8 (812) 322-22-80":
+    - /url: tel:+78123222280
+  - generic: "Режим работы: пн-вс 07:00–23:00"
+  - generic: Вся представленная на сайте информация, касающаяся сроков, стоимости и порядка предоставления услуг, носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса РФ.
+  - generic: "* Некоторые виды работ могут быть выполнены подрядными организациями"
+- text:   
+- button "To Top":
+  - generic: 

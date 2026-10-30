@@ -39,7 +39,9 @@ const rows = standardPrices.filter(([work]) => page.priceWorks.includes(work));
       width={1152}
       height={768}
       symptom={symptom.title}
+      warning={page.warning}
     />
+    <Reviews />
     <section
       id="lr-problem-guide"
       class="lr-section lr-child-guide"
@@ -55,21 +57,14 @@ const rows = standardPrices.filter(([work]) => page.priceWorks.includes(work));
         </nav>
         <article class="lr-child-article">
           <header id="lr-causes">
-            <p class="lr-eyebrow">Причины и рекомендации</p>
             <h2 id="lr-causes-title">{page.causesTitle}</h2>
           </header>
-          <aside class="lr-problem-warning" aria-label="Важная рекомендация">
-            <strong>Важно</strong>
-            <p>{page.warning}</p>
-          </aside>
           <div class="lr-child-topics">
             {
               page.causes.map((item) => (
                 <div>
-                  <>
-                    <h3>{item.title}</h3>
-                    <p>{item.text}</p>
-                  </>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
                 </div>
               ))
             }
@@ -98,10 +93,8 @@ const rows = standardPrices.filter(([work]) => page.priceWorks.includes(work));
               {
                 page.decisions.map((item) => (
                   <div>
-                    <>
-                      <dt>{item.title}</dt>
-                      <dd>{item.text}</dd>
-                    </>
+                    <dt>{item.title}</dt>
+                    <dd>{item.text}</dd>
                   </div>
                 ))
               }
@@ -144,12 +137,17 @@ const rows = standardPrices.filter(([work]) => page.priceWorks.includes(work));
       ) : (
         <section id="lr-prices" class="lr-section lr-prices">
           <div class="lr-container">
-            <h2>Стоимость ремонта привода</h2>
+            <h2>Стоимость ремонта: {page.label}</h2>
+            <div class="lr-prices__diagnostics">
+              <strong>Обычная диагностика в мастерской — 0 ₽</strong>
+              <span>Бесплатно даже при отказе от ремонта</span>
+            </div>
             <p class="lr-lead">
               Стоимость согласуем после диагностики, до ремонта. Запчасти
               рассчитываем отдельно. Обычная диагностика бесплатна даже при
               отказе от ремонта.
             </p>
+            <p class="lr-caption">Срочная диагностика вне очереди — 500 ₽.</p>
           </div>
         </section>
       )
@@ -157,7 +155,6 @@ const rows = standardPrices.filter(([work]) => page.priceWorks.includes(work));
     <RepairProcess />
     <SecurityRules />
     <Guarantee />
-    <Reviews />
     <ServiceFaq items={page.faq} />
     <RelatedServices current={pagePath(page)} />
     <LeadCapture

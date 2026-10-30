@@ -1,0 +1,26 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+
+const g = copy.guarantee;
+---
+
+<section id="lr-guarantee" class="lr-section lr-home-protection">
+  <div class="lr-container">
+    <SectionHeading title="Гарантия и порядок ремонта" />
+    <div id="lr-security" class="lr-home-protection__facts">
+      <article>
+        <h3>{g.fields["Большой факт"]}</h3>
+        <p>Гарантии на ремонт и установленные запчасти.</p>
+      </article>
+      <article>
+        <h3>Смета до работ</h3>
+        <p>Стоимость работ и деталей согласуем заранее.</p>
+      </article>
+      <article>
+        <h3>Проверка до оплаты</h3>
+        <p>Покажем результат и проверим ноутбук вместе с вами.</p>
+      </article>
+    </div>
+  </div>
+</section>

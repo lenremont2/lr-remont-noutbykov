@@ -1,0 +1,24 @@
+---
+import LandingLayout from "../../layouts/LandingLayout.astro";
+import DesignConcept from "../../components/DesignConcept.astro";
+import "../../styles/sections/_design-directions.scss";
+export function getStaticPaths() {
+  return ["focus", "lab", "service"].map((concept) => ({
+    params: { concept },
+  }));
+}
+const concept = Astro.params.concept as "focus" | "lab" | "service";
+const names = {
+  focus: "Фокус на устройстве",
+  lab: "Внутри лаборатории",
+  service: "В вашем ритме",
+};
+---
+
+<LandingLayout
+  title={`${names[concept]} — дизайн-концепция Ленремонта`}
+  description="Интерактивный макет для выбора визуального направления."
+  noindex
+>
+  <DesignConcept concept={concept} />
+</LandingLayout>

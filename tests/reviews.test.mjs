@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 
 const reviews = JSON.parse(
   readFileSync(new URL("../src/data/reviews.json", import.meta.url), "utf8"),
@@ -11,12 +11,21 @@ const html = readFileSync(
 const section = html.match(/<section id="lr-reviews"[\s\S]*?<\/section>/)?.[0];
 
 assert.ok(section, "Reviews section must be built");
-assert.equal(reviews.items.length, 24);
-assert.equal(new Set(reviews.items.map((review) => review.name)).size, 24);
-assert.equal(new Set(reviews.items.map((review) => review.avatar)).size, 24);
-assert.equal((section.match(/<article class="lr-review">/g) || []).length, 24);
+assert.equal(reviews.items.length, 26);
+assert.equal(new Set(reviews.items.map((review) => review.name)).size, 26);
+const avatarReviews = reviews.items.filter((review) => review.avatar);
+assert.equal(avatarReviews.length, 24);
+assert.deepEqual(
+  avatarReviews.map((review) => review.avatar).sort(),
+  Array.from(
+    { length: 24 },
+    (_, index) =>
+      `/media/review-avatar-${String(index + 1).padStart(2, "0")}.webp`,
+  ),
+);
+assert.equal((section.match(/<article class="lr-review">/g) || []).length, 26);
 assert.equal((section.match(/Оценка 4 из 5/g) || []).length, 1);
-assert.equal((section.match(/Оценка 5 из 5/g) || []).length, 23);
+assert.equal((section.match(/Оценка 5 из 5/g) || []).length, 25);
 assert.match(section, /data-lr-review-track/);
 assert.match(section, /aria-roledescription="карусель"/);
 assert.match(section, /aria-controls="lr-review-track"/);
@@ -27,26 +36,113 @@ for (const review of reviews.items) {
     Number.isInteger(review.rating) && review.rating >= 4 && review.rating <= 5,
     review.name,
   );
-  assert.ok(
-    review.text.trim() && review.date.trim() && review.avatar.trim(),
-    review.name,
-  );
+  assert.ok(review.text.trim() && review.date.trim(), review.name);
   const source = reviews.sources[review.source];
   assert.ok(source, `Missing source for ${review.name}`);
   assert.equal(new URL(source.url).protocol, "https:");
   assert.ok(
-    section.includes(review.name) &&
-      section.includes(review.text) &&
-      section.includes(review.avatar),
+    section.includes(review.name) && section.includes(review.text),
     review.name,
   );
+  if (review.avatar) {
+    assert.ok(section.includes(review.avatar), review.name);
+    assert.ok(
+      existsSync(new URL(`../public${review.avatar}`, import.meta.url)),
+    );
+  }
 }
-console.log("24 sourced laptop reviews with accessible ratings: passed.");
+const photoReview = reviews.items.find((review) => review.name === "DS");
+assert.ok(photoReview);
+assert.equal(photoReview.avatar, undefined, "Do not invent an avatar for DS");
+assert.equal(photoReview.subject, "Ремонт iMac");
+assert.equal(photoReview.source, "yandexZvezdnaya");
+assert.equal(new URL(photoReview.reviewUrl).hostname, "yandex.ru");
+assert.equal(photoReview.photos.length, 1);
+const photo = photoReview.photos[0];
+assert.equal(photo.src, "/media/review-ds-imac-2023.jpg");
+assert.deepEqual([photo.width, photo.height], [113, 150]);
+assert.match(photo.alt, /iMac/);
+const photoBytes = readFileSync(
+  new URL(`../public${photo.src}`, import.meta.url),
+);
+assert.equal(photoBytes.readUInt16BE(0), 0xffd8, "Review photo must be JPEG");
+const photoCard = section
+  .match(/<article class="lr-review">[\s\S]*?<\/article>/g)
+  ?.find((card) => card.includes(photo.src));
+assert.ok(
+  photoCard?.includes(photoReview.subject),
+  "Photo subject must be explicit",
+);
+assert.ok(photoCard.includes(`href="${photo.src}"`));
+assert.ok(photoCard.includes('width="113" height="150"'));
+assert.ok(photoCard.includes(photoReview.reviewUrl));
+const computerReview = reviews.items.find(
+  (review) => review.name === "Егор Налимов",
+);
+assert.equal(computerReview.subject, "Чистка настольного компьютера");
+assert.equal(computerReview.source, "yandexAvia");
+assert.equal(computerReview.photos.length, 1);
+assert.ok(
+  existsSync(
+    new URL(`../public${computerReview.photos[0].src}`, import.meta.url),
+  ),
+);
+assert.ok(section.includes(computerReview.subject));
+assert.ok(section.includes(computerReview.photos[0].src));
+for (const rating of reviews.ratings) {
+  assert.ok(reviews.sources[rating.source]);
+  assert.ok(rating.rating > 0 && rating.rating <= 5);
+  assert.ok(Number.isInteger(rating.ratingCount) && rating.ratingCount > 0);
+  assert.match(rating.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);
+}
+for (const aggregator of reviews.aggregators) {
+  assert.ok(section.includes(aggregator.url));
+  assert.ok(section.includes(aggregator.name));
+  assert.ok(aggregator.rating > 0 && aggregator.rating <= 5);
+  assert.ok(
+    Number.isInteger(aggregator.ratingCount) && aggregator.ratingCount > 0,
+  );
+}
+assert.equal(reviews.aggregators.length, 3);
+const award = section.match(
+  /<div\b[^>]*class="[^"]*lr-reviews__award[^\"]*"[^>]*>[\s\S]*?<\/div>/,
+)?.[0];
+assert.ok(
+  award,
+  "The brand-rating article is separate from three aggregator scores",
+);
+assert.ok(award.includes("Рейтинг брендов") && award.includes("2026"));
+assert.doesNotMatch(award, /<a\b|href=|tabindex=|role="(?:button|link)"/);
+const ratings = section.match(
+  /<ul class="lr-reviews__ratings"[\s\S]*?<\/ul>/,
+)?.[0];
+assert.equal(
+  (ratings.match(/<div class="lr-reviews__rating-card\b/g) || []).length,
+  4,
+);
+const ratingLinks = [
+  ...ratings.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g),
+];
+assert.deepEqual(
+  ratingLinks.map((link) => ({
+    url: link[1],
+    name: link[2].replace(/<[^>]+>/g, " ").trim(),
+  })),
+  reviews.aggregators.map(({ url, name }) => ({ url, name })),
+);
+assert.doesNotMatch(award, /№\s*1|номер\s*один/i);
+assert.ok(!award.includes("lr-reviews__rating-stars"));
+assert.doesNotMatch(section, /lr-reviews__ratings-reference|lr-reviews-hint/);
+assert.doesNotMatch(section, /data-lr-review-position/);
+console.log(
+  "24 laptop reviews and two explicitly labelled computer photo reviews: passed.",
+);
 
 const { initializeReviewSlider } = await import("../src/scripts/landing.js");
 const handlers = new Map();
 const trackHandlers = new Map();
 let step = 340;
+let frameWidth;
 let reduceMotion = true;
 const motionHandlers = new Map();
 globalThis.matchMedia = () => ({
@@ -67,7 +163,7 @@ const finishAnimation = () => {
   animationFrames.delete(id);
   callback(performance.now() + 600);
 };
-const cards = Array.from({ length: 24 }, (_, index) => ({
+const cards = Array.from({ length: 25 }, (_, index) => ({
   dataset: {},
   inert: false,
   get offsetLeft() {
@@ -83,7 +179,6 @@ const next = {
   disabled: false,
   addEventListener: (type, listener) => handlers.set("next:" + type, listener),
 };
-const position = { textContent: "" };
 const controls = { hidden: true };
 const track = {
   dataset: {},
@@ -116,21 +211,26 @@ const elements = {
   "[data-lr-review-track]": track,
   "[data-lr-review-frame]": {
     get clientWidth() {
-      return track.clientWidth + 32;
+      return frameWidth ?? track.clientWidth + 32;
     },
   },
   "[data-lr-review-prev]": previous,
   "[data-lr-review-next]": next,
-  "[data-lr-review-position]": position,
   "[data-lr-review-controls]": controls,
 };
-initializeReviewSlider({ querySelector: (selector) => elements[selector] });
+assert.doesNotThrow(() =>
+  initializeReviewSlider({
+    querySelector: (selector) => elements[selector] ?? null,
+  }),
+);
+const activeCards = () =>
+  cards.flatMap((card, index) => (!card.inert ? [index + 1] : []));
 assert.equal(controls.hidden, false);
 assert.equal(previous.disabled, true);
-assert.equal(position.textContent, "1–3 / 24");
+assert.deepEqual(activeCards(), [1, 2, 3]);
 handlers.get("next:click")();
 assert.equal(track.scrollLeft, 1020);
-assert.equal(position.textContent, "4–6 / 24");
+assert.deepEqual(activeCards(), [4, 5, 6]);
 handlers.get("previous:click")();
 assert.equal(track.scrollLeft, 0);
 const press = (key, target = track) => {
@@ -146,7 +246,7 @@ const press = (key, target = track) => {
 };
 assert.equal(press("End"), true);
 assert.equal(next.disabled, true);
-assert.equal(position.textContent, "22–24 / 24");
+assert.deepEqual(activeCards(), [23, 24, 25]);
 assert.equal(press("Home"), true);
 assert.equal(previous.disabled, true);
 assert.equal(
@@ -154,16 +254,26 @@ assert.equal(
   false,
   "Links retain their keyboard behavior",
 );
-step = 360;
-track.clientWidth = 340;
-assert.equal(press("ArrowRight"), true);
-assert.equal(position.textContent, "2–2 / 24");
-assert.equal(press("ArrowLeft"), true);
-assert.equal(previous.disabled, true);
+for (const viewport of [360, 390]) {
+  track.clientWidth = viewport;
+  frameWidth = viewport * 0.88;
+  step = frameWidth - 64 + 16;
+  assert.equal(press("ArrowRight"), true);
+  assert.equal(track.scrollLeft, step);
+  assert.deepEqual(activeCards(), [2]);
+  assert.equal(cards[1].inert, false);
+  assert.equal(cards[2].inert, true, "The next-card preview is not focusable");
+  assert.equal(press("End"), true);
+  assert.equal(next.disabled, true);
+  assert.deepEqual(activeCards(), [25]);
+  assert.equal(press("Home"), true);
+  assert.equal(previous.disabled, true);
+}
+frameWidth = undefined;
 step = 340;
 track.clientWidth = 660;
 handlers.get("next:click")();
-assert.equal(position.textContent, "3–4 / 24");
+assert.deepEqual(activeCards(), [3, 4]);
 console.log(
   "Review slider: paging, endpoints, mobile, tablet and keyboard passed.",
 );
@@ -183,7 +293,7 @@ assert.equal(
   "A repeated click replaces the running animation",
 );
 finishAnimation();
-assert.equal(position.textContent, "7–9 / 24");
+assert.deepEqual(activeCards(), [7, 8, 9]);
 assert.equal(track.dataset.lrAnimating, undefined);
 assert.equal(cards[6].dataset.lrReviewActive, "true");
 assert.equal(cards[5].inert, true);
@@ -194,7 +304,7 @@ handlers.get("next:click")();
 reduceMotion = true;
 motionHandlers.get("change")();
 assert.equal(animationFrames.size, 0);
-assert.equal(position.textContent, "10–12 / 24");
+assert.deepEqual(activeCards(), [10, 11, 12]);
 console.log(
   "Review motion: interrupted and repeated transitions, active cards and reduced motion passed.",
 );

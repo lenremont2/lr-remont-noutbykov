@@ -37,6 +37,9 @@
   outline: 3px solid var(--lr-color-focus);
   outline-offset: 3px;
 }
+#hop-landing .lr-section--dark :focus-visible {
+  outline-color: var(--lr-color-focus-on-dark);
+}
 #hop-landing section {
   scroll-margin-top: 88px;
 }
@@ -61,6 +64,7 @@
   border: 0;
 }
 
+#hop-landing::selection,
 #hop-landing ::selection {
   background: var(--lr-color-accent-soft);
   color: var(--lr-color-text);

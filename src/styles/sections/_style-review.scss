@@ -1,0 +1,236 @@
+#hop-landing .lr-style-review {
+  background: var(--lr-white);
+  color: var(--lr-color-text);
+}
+#hop-landing .lr-style-review .lr-style-review__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 28px;
+}
+#hop-landing .lr-style-review .lr-style-review__brand {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+#hop-landing .lr-style-review .lr-style-review__brand span {
+  color: var(--lr-amber-600);
+}
+#hop-landing .lr-style-review .lr-style-review__notice,
+#hop-landing .lr-style-review .lr-style-review__caption,
+#hop-landing .lr-style-review small {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--lr-color-muted);
+}
+#hop-landing .lr-style-review .lr-style-review__hero {
+  padding-top: 64px;
+  text-align: center;
+}
+#hop-landing .lr-style-review h1 {
+  font-size: clamp(36px, 5.3vw, 76px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+#hop-landing .lr-style-review .lr-style-review__lead {
+  margin: 24px auto 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+#hop-landing .lr-style-review .lr-style-review__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 28px;
+}
+#hop-landing .lr-style-review .lr-style-review__button {
+  display: inline-flex;
+  justify-content: center;
+  padding: 16px 24px;
+  background: var(--lr-amber-400);
+  border-radius: var(--lr-radius-small);
+  color: var(--lr-graphite-900);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 140ms ease;
+}
+#hop-landing .lr-style-review .lr-style-review__button:hover {
+  background: var(--lr-amber-500);
+}
+#hop-landing .lr-style-review .lr-style-review__workshop {
+  display: grid;
+  grid-template-columns: minmax(0, 480px) minmax(0, 320px);
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  margin-top: 56px;
+  text-align: left;
+}
+#hop-landing .lr-style-review .lr-style-review__workshop img {
+  width: 100%;
+  border-radius: var(--lr-radius-small);
+}
+#hop-landing .lr-style-review .lr-style-review__workshop figcaption {
+  display: grid;
+  gap: 20px;
+  margin: 0;
+  color: var(--lr-color-text);
+  font-size: 16px;
+  line-height: 1.5;
+}
+#hop-landing .lr-style-review h2 {
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.15;
+}
+#hop-landing .lr-style-review .lr-style-review__workshop h2 {
+  font-size: 28px;
+}
+#hop-landing .lr-style-review .lr-style-review__section {
+  max-width: 848px;
+  padding-top: 112px;
+}
+#hop-landing .lr-style-review .lr-style-review__intro {
+  display: grid;
+  gap: 24px;
+  max-width: 640px;
+}
+#hop-landing .lr-style-review .lr-style-review__intro > p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+#hop-landing .lr-style-review .lr-style-review__ratings {
+  display: grid;
+  gap: 12px;
+  margin-block: 32px 16px;
+}
+#hop-landing .lr-style-review .lr-style-review__rating {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 24px;
+  background: var(--lr-stone-100);
+  padding: 24px;
+  border-radius: var(--lr-radius-small);
+  text-decoration: none;
+}
+#hop-landing .lr-style-review .lr-style-review__rating small {
+  display: block;
+  margin-top: 8px;
+}
+#hop-landing .lr-style-review .lr-style-review__rating strong {
+  font-size: 32px;
+  font-weight: 500;
+}
+#hop-landing .lr-style-review .lr-style-review__rating strong span {
+  font-size: 16px;
+}
+#hop-landing .lr-style-review .lr-style-review__reviews {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  margin-block: 40px 24px;
+}
+#hop-landing .lr-style-review .lr-style-review__reviews article {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+}
+#hop-landing .lr-style-review .lr-style-review__reviews h3 {
+  font-size: 20px;
+}
+#hop-landing .lr-style-review .lr-style-review__price-list {
+  margin-block: 36px 24px;
+}
+#hop-landing .lr-style-review .lr-style-review__price-list > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 20px;
+}
+#hop-landing .lr-style-review .lr-style-review__price-list dt {
+  max-width: 480px;
+  font-size: 18px;
+}
+#hop-landing .lr-style-review .lr-style-review__price-list dd {
+  margin: 0;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 500;
+}
+#hop-landing .lr-style-review .lr-style-review__prices > p {
+  margin-top: 16px;
+}
+#hop-landing .lr-style-review .lr-style-review__formats {
+  margin-top: 40px;
+  background: var(--lr-stone-100);
+  padding: 24px;
+  border-radius: var(--lr-radius-small);
+}
+#hop-landing .lr-style-review .lr-style-review__formats summary {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+#hop-landing .lr-style-review .lr-style-review__formats dl {
+  display: grid;
+  gap: 24px;
+  margin: 28px 0 0;
+}
+#hop-landing .lr-style-review .lr-style-review__formats dt {
+  font-weight: 500;
+}
+#hop-landing .lr-style-review .lr-style-review__formats dd {
+  margin: 8px 0 0;
+}
+#hop-landing .lr-style-review .lr-style-review__footer {
+  padding-block: 80px 40px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  #hop-landing .lr-style-review .lr-style-review__header {
+    align-items: start;
+  }
+  #hop-landing .lr-style-review .lr-style-review__notice {
+    max-width: 150px;
+    text-align: right;
+  }
+  #hop-landing .lr-style-review .lr-style-review__hero {
+    padding-top: 40px;
+  }
+  #hop-landing .lr-style-review .lr-style-review__lead {
+    font-size: 18px;
+  }
+  #hop-landing .lr-style-review .lr-style-review__workshop,
+  #hop-landing .lr-style-review .lr-style-review__reviews {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  #hop-landing .lr-style-review .lr-style-review__section {
+    padding-top: 72px;
+  }
+  #hop-landing .lr-style-review .lr-style-review__rating {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 16px;
+    padding: 20px;
+  }
+  #hop-landing .lr-style-review .lr-style-review__rating > span:last-child {
+    grid-column: 1 / -1;
+  }
+  #hop-landing .lr-style-review .lr-style-review__price-list > div {
+    align-items: start;
+    gap: 16px;
+  }
+  #hop-landing .lr-style-review .lr-style-review__price-list dt,
+  #hop-landing .lr-style-review .lr-style-review__price-list dd {
+    font-size: 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #hop-landing .lr-style-review .lr-style-review__button {
+    transition: none;
+  }
+}

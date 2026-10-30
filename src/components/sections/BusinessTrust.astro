@@ -1,0 +1,60 @@
+---
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+---
+
+<section
+  id="lr-business-trust"
+  class="lr-section lr-business-trust"
+  aria-labelledby="lr-business-trust-title"
+>
+  <div class="lr-container">
+    <SectionHeading
+      id="lr-business-trust-title"
+      title="Бизнесу и частным лицам"
+    />
+    <div class="lr-business-trust__grid">
+      <article class="lr-business-trust__business">
+        <img
+          class="lr-business-trust__background"
+          src="/media/workshop-prosveshcheniya-engineer-640.webp"
+          alt=""
+          width="640"
+          height="360"
+          loading="lazy"
+          decoding="async"
+        />
+        <h3>Ремонт для бизнеса</h3>
+        <p>
+          Договор, безналичный расчёт и закрывающие документы. Условия
+          обслуживания согласуем с вашей организацией.
+        </p>
+        <div class="lr-business-trust__contacts">
+          <p class="lr-caption">Отдел по работе с юридическими лицами</p>
+          <a href="tel:+78126404804">+7 (812) 640-48-04</a>
+          <a href="mailto:lenremont@lenrem.ru">lenremont@lenrem.ru</a>
+        </div>
+      </article>
+      <article class="lr-business-trust__parts">
+        <h3>Подберём под вашу модель</h3>
+        <p>Проверим наличие оригинальной детали или совместимой замены.</p>
+        <ul>
+          <li>
+            <strong>Совместимость.</strong> Объясним, какой вариант подходит.
+          </li>
+          <li>
+            <strong>Стоимость и гарантия.</strong> Согласуем деталь и условия до начала
+            работ.
+          </li>
+          <li>
+            <strong>Срок поставки.</strong> Уточним, если детали нет в наличии.
+          </li>
+        </ul>
+        <LeadButton
+          label="Обсудить ремонт и запчасти"
+          source="business-trust-parts"
+        />
+      </article>
+    </div>
+  </div>
+</section>

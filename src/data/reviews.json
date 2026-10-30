@@ -56,7 +56,80 @@
       "url": "https://yandex.ru/maps/org/lenremont/114129606406/reviews/"
     }
   },
+  "ratings": [
+    {
+      "source": "yandexAvia",
+      "rating": 4.4,
+      "ratingCount": 516,
+      "verifiedAt": "2026-10-29"
+    },
+    {
+      "source": "dgMarshala",
+      "rating": 4.5,
+      "ratingCount": 161,
+      "verifiedAt": "2026-10-29"
+    }
+  ],
+  "aggregators": [
+    {
+      "name": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/-/CLs1j84s",
+      "rating": 5,
+      "ratingCount": 2818
+    },
+    {
+      "name": "2ГИС",
+      "url": "https://go.2gis.com/dBctd",
+      "rating": 4.9,
+      "ratingCount": 273
+    },
+    {
+      "name": "Google",
+      "url": "https://www.google.com/maps/search/ленремонт/@59.9449329,30.2798636,11z",
+      "rating": 4.9,
+      "ratingCount": 1692
+    }
+  ],
+  "ratingsReference": {
+    "label": "Показатели — по данным Ленремонта",
+    "url": "https://www.lenremont.ru/remont-robotov-pylesosov.htm",
+    "checkedAt": "2026-10-29"
+  },
   "items": [
+    {
+      "name": "DS",
+      "subject": "Ремонт iMac",
+      "rating": 5,
+      "date": "12 октября 2023",
+      "text": "Автор сдал в ремонт iMac 27 дюймов 2012 года. Сроки диагностики объяснили, стоимость согласовали по телефону. После ремонта работу компьютера показали и проверили при авторе.",
+      "source": "yandexZvezdnaya",
+      "reviewUrl": "https://yandex.ru/maps/org/lenremont/114129606406/reviews/?page=2",
+      "photos": [
+        {
+          "src": "/media/review-ds-imac-2023.jpg",
+          "alt": "iMac на рабочем столе — фото из отзыва DS",
+          "width": 113,
+          "height": 150
+        }
+      ]
+    },
+    {
+      "name": "Егор Налимов",
+      "rating": 5,
+      "date": "13 марта 2026",
+      "source": "yandexAvia",
+      "subject": "Чистка настольного компьютера",
+      "reviewUrl": "https://yandex.ru/maps/user/k5r66rdx4k82e2gpm6wh3xrvpw",
+      "text": "Автор обратился на чистку компьютера, который не обслуживали больше восьми лет. После работы мастера Романа компьютер стал заметно тише. Автор отмечает быстрое выполнение работы.",
+      "photos": [
+        {
+          "src": "/media/review-egor-computer-2026.jpg",
+          "alt": "Системный блок и рабочее место — фотография из отзыва Егора Налимова",
+          "width": 150,
+          "height": 150
+        }
+      ]
+    },
     {
       "name": "Андрей Старомодин",
       "avatar": "/media/review-avatar-01.webp",

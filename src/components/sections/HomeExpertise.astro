@@ -1,0 +1,44 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+import LeadButton from "../ui/LeadButton.astro";
+
+const c = copy.expertise;
+---
+
+<section id="lr-expertise" class="lr-section lr-expertise lr-home-expertise">
+  <div class="lr-container">
+    <div class="lr-home-expertise__header">
+      <SectionHeading
+        title="Найдём причину поломки"
+        lead="Проверим ноутбук и согласуем ремонт. Перед выдачей проверим работу восстановленных узлов."
+      />
+      <LeadButton label="Обсудить неисправность" source="home-expertise" />
+    </div>
+    <div class="lr-expertise__grid">
+      <figure>
+        <img
+          src="/media/laptop-board-diagnostics.webp"
+          alt="Проверка платы ноутбука"
+          width="580"
+          height="384"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>Работа начинается с диагностики</figcaption>
+      </figure>
+      <div>
+        <div class="lr-editorial-list">
+          {
+            c.items.map((item) => (
+              <article>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

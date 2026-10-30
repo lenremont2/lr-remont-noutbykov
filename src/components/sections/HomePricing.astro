@@ -1,0 +1,94 @@
+---
+import copy from "../../data/laptop-service.json";
+import SectionHeading from "../ui/SectionHeading.astro";
+
+const c = copy.prices;
+const groups = [
+  { title: c.fields["Категория 1"], rows: [...c.tables[0], ...c.tables[1]] },
+  { title: c.fields["Категория 2"], rows: c.tables[2] },
+];
+---
+
+<section id="lr-prices" class="lr-section lr-prices lr-home-pricing">
+  <div class="lr-container">
+    <SectionHeading
+      title="Сколько стоит ремонт ноутбука"
+      lead="Указана стоимость работы без запчастей. Итоговую смету и срок согласуем до ремонта. Обычная диагностика в мастерской — бесплатно, даже при отказе от ремонта; срочная — 500 ₽."
+    />
+    <div id="lr-full-price" class="lr-home-pricing__groups">
+      {
+        groups.map((group, index) => (
+          <div
+            class:list={[
+              "lr-home-pricing__group",
+              { "lr-home-pricing__group--premium": index === 1 },
+            ]}
+          >
+            <h3 class="lr-home-pricing__category">{group.title}</h3>
+            <div class="lr-home-pricing__group-body">
+              <table class="lr-price-table lr-price-table--with-time">
+                <caption class="lr-visually-hidden">
+                  {group.title}: стоимость работы и ориентировочное время
+                  ремонта
+                </caption>
+                <thead class="lr-home-pricing__columns">
+                  <tr>
+                    <>
+                      <th scope="col">
+                        <span class="lr-visually-hidden">Работа</span>
+                      </th>
+                      <th scope="col" class="lr-price-table__duration">
+                        <span class="lr-visually-hidden">Время работы</span>
+                      </th>
+                      <th scope="col">
+                        <span class="lr-visually-hidden">Стоимость работы</span>
+                      </th>
+                    </>
+                  </tr>
+                </thead>
+                {index === 0 && (
+                  <tbody>
+                    <tr class="lr-home-pricing__diagnostic">
+                      <th scope="row" colspan="3">
+                        <div class="lr-home-pricing__diagnostic-content">
+                          <div>
+                            Обычная диагностика в мастерской
+                            <span class="lr-home-pricing__diagnostic-note">
+                              Бесплатно, даже при отказе от ремонта
+                            </span>
+                          </div>
+                          <span class="lr-home-pricing__diagnostic-duration">
+                            Срок уточним при обращении
+                          </span>
+                          <strong class="lr-home-pricing__diagnostic-price">
+                            0 ₽
+                          </strong>
+                        </div>
+                      </th>
+                    </tr>
+                  </tbody>
+                )}
+                <tbody>
+                  {group.rows.map(([work, price, duration]) => (
+                    <tr>
+                      <th scope="row">
+                        {work}
+                        <span class="lr-price-table__time-inline">
+                          Время: {duration}
+                        </span>
+                      </th>
+                      <td class="lr-price-table__duration">{duration}</td>
+                      <td class="lr-home-pricing__price">
+                        <strong>{price}</strong>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
