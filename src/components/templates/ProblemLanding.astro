@@ -3,7 +3,7 @@ import LandingLayout from "../../layouts/LandingLayout.astro";
 import RepairFormats from "../sections/RepairFormats.astro";
 import RepairProcess from "../sections/RepairProcess.astro";
 import SecurityRules from "../sections/SecurityRules.astro";
-import Guarantee from "../sections/Guarantee.astro";
+import HomeProtection from "../sections/HomeProtection.astro";
 import Reviews from "../sections/Reviews.astro";
 import LeadCapture from "../sections/LeadCapture.astro";
 import Breadcrumbs from "../ui/Breadcrumbs.astro";
@@ -25,6 +25,25 @@ interface Props {
 const { page } = Astro.props;
 const symptom = copy.symptoms.items.find((item) => item.slug === page.slug)!;
 const rows = standardPrices.filter(([work]) => page.priceWorks.includes(work));
+const usesHomeBlocks = page.slug === "noutbuk-ne-vklyuchaetsya";
+const powerRepairSteps = [
+  {
+    title: "Расскажите, как ноутбук перестал включаться",
+    text: "Уточним модель, реакцию на кнопку питания и зарядное устройство. Сообщите, горят ли индикаторы, слышен ли вентилятор и что произошло перед поломкой.",
+  },
+  {
+    title: "Передайте ноутбук на диагностику",
+    text: "Выберите удобный формат: мастерская на колёсах, сервисный центр или курьер. Проверим цепи питания и системную плату; по возможности передайте вместе с ноутбуком его зарядное устройство.",
+  },
+  {
+    title: "Согласуйте работы и стоимость",
+    text: "Объясним причину неисправности и согласуем работы, детали и полную стоимость до ремонта. Обычная диагностика в мастерской бесплатна даже при отказе от ремонта.",
+  },
+  {
+    title: "Проверьте запуск и получите гарантию",
+    text: "Вместе с вами проверим включение и работу ноутбука после ремонта. Вы получите кассовый чек, акт выполненных работ и гарантийный талон на 1 год.",
+  },
+];
 ---
 
 <LandingLayout {...getSeo(page)}>
@@ -128,33 +147,21 @@ const rows = standardPrices.filter(([work]) => page.priceWorks.includes(work));
       </div>
     </section>
     <RepairFormats linkToLocations={false} />
+    <ServicePriceTable title="Какие работы могут понадобиться" rows={rows} />
     {
-      rows.length ? (
-        <ServicePriceTable
-          title="Какие работы могут понадобиться"
-          rows={rows}
+      usesHomeBlocks ? (
+        <RepairProcess
+          layout="steps"
+          title="Как пройдёт ремонт ноутбука, который не включается"
+          lead="Найдём причину отсутствия питания или запуска, объясним результат диагностики и согласуем ремонт. Перед выдачей проверим ноутбук вместе с вами."
+          items={powerRepairSteps}
         />
       ) : (
-        <section id="lr-prices" class="lr-section lr-prices">
-          <div class="lr-container">
-            <h2>Стоимость ремонта: {page.label}</h2>
-            <div class="lr-prices__diagnostics">
-              <strong>Обычная диагностика в мастерской — 0 ₽</strong>
-              <span>Бесплатно даже при отказе от ремонта</span>
-            </div>
-            <p class="lr-lead">
-              Стоимость согласуем после диагностики, до ремонта. Запчасти
-              рассчитываем отдельно. Обычная диагностика бесплатна даже при
-              отказе от ремонта.
-            </p>
-            <p class="lr-caption">Срочная диагностика вне очереди — 500 ₽.</p>
-          </div>
-        </section>
+        <RepairProcess />
       )
     }
-    <RepairProcess />
     <SecurityRules />
-    <Guarantee />
+    <HomeProtection securityAnchor={false} />
     <ServiceFaq items={page.faq} />
     <RelatedServices current={pagePath(page)} />
     <LeadCapture

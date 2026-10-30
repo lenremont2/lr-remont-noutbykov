@@ -16,6 +16,12 @@ const usesRepairIllustration =
   brand?.heroImage === "/media/laptop-engineer-hero.webp";
 const c = copy.hero.fields;
 const [repairLabel, repairDuration] = c["Срок ремонта"].split(" всего за ");
+const facts = [
+  "Диагностика ноутбука — 0 ₽ в мастерской",
+  "Восстанавливаем платы ноутбуков",
+  "Гарантия на ремонт — 1 год",
+  "Проверяете ноутбук до оплаты",
+];
 ---
 
 {
@@ -76,12 +82,7 @@ const [repairLabel, repairDuration] = c["Срок ремонта"].split(" вс�
             class="lr-hero__facts"
             aria-label="Преимущества ремонта в Ленремонте"
           >
-            {[
-              "Диагностика ноутбука — 0 ₽ в мастерской",
-              "Восстанавливаем платы ноутбуков",
-              "Гарантия на ремонт — 1 год",
-              "Проверяете ноутбук до оплаты",
-            ].map((fact) => (
+            {facts.map((fact) => (
               <li>
                 <span class="lr-fact-mark" aria-hidden="true" />
                 <h3>{fact}</h3>
@@ -104,6 +105,10 @@ const [repairLabel, repairDuration] = c["Срок ремонта"].split(" вс�
             {brand.h1}
           </h1>
           <p class="lr-lead lr-hero__lead">{brand.lead}</p>
+          <p class="lr-caption">
+            Обычная диагностика в мастерской — бесплатно, даже при отказе от
+            ремонта.
+          </p>
           <div class="lr-actions" data-lr-hero-cta>
             <LeadButton
               label={c["Основной CTA"]}
@@ -143,11 +148,10 @@ const [repairLabel, repairDuration] = c["Срок ремонта"].split(" вс�
           class="lr-hero__facts"
           aria-label="Преимущества ремонта в Ленремонте"
         >
-          {copy.hero.bullets.map((fact) => (
+          {facts.map((fact) => (
             <li>
               <div>
-                <h3>{fact.title}</h3>
-                {fact.text ? <p>{fact.text}</p> : null}
+                <h3>{fact}</h3>
               </div>
             </li>
           ))}

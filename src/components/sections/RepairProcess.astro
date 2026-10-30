@@ -5,8 +5,16 @@ import LeadButton from "../ui/LeadButton.astro";
 const c = copy.process;
 interface Props {
   layout?: "steps" | "accordion";
+  title?: string;
+  lead?: string;
+  items?: { title: string; text: string }[];
 }
-const { layout = "accordion" } = Astro.props;
+const {
+  layout = "steps",
+  title = c.fields.H2,
+  lead = c.fields["Лид"],
+  items = c.items,
+} = Astro.props;
 ---
 
 <section
@@ -17,14 +25,14 @@ const { layout = "accordion" } = Astro.props;
   ]}
 >
   <div class="lr-container">
-    <SectionHeading title={c.fields.H2} lead={c.fields["Лид"]} />
+    <SectionHeading title={title} lead={lead} />
     <div class="lr-process-section__layout">
       <ol
         class:list={["lr-process", { "lr-process--steps": layout === "steps" }]}
         role="list"
       >
         {
-          c.items.map((item, i) => (
+          items.map((item, i) => (
             <li>
               {layout === "steps" ? (
                 <>
@@ -53,8 +61,8 @@ const { layout = "accordion" } = Astro.props;
       </ol>
       <figure class="lr-process-section__media">
         <img
-          src="/media/workshop-v3-process-1280.webp"
-          srcset="/media/workshop-v3-process-640.webp 640w, /media/workshop-v3-process-1280.webp 1280w"
+          src="/media/workshop-v4-process-1280.webp"
+          srcset="/media/workshop-v4-process-640.webp 640w, /media/workshop-v4-process-1280.webp 1280w"
           sizes="(min-width: 1024px) 40vw, 90vw"
           width="1280"
           height="720"

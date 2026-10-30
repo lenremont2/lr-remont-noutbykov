@@ -1,20 +1,30 @@
 ---
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
+import PriceVerification from "../ui/PriceVerification.astro";
 
 const c = copy.prices;
-const groups = [
+const defaultGroups = [
   { title: c.fields["Категория 1"], rows: [...c.tables[0], ...c.tables[1]] },
   { title: c.fields["Категория 2"], rows: c.tables[2] },
 ];
+interface Props {
+  title?: string;
+  lead?: string;
+  groups?: { title?: string; rows: string[][] }[];
+  verification?: boolean;
+}
+const {
+  title = "Сколько стоит ремонт ноутбука",
+  lead = "Указана стоимость работы без запчастей. Итоговую смету и срок согласуем до ремонта. Обычная диагностика в мастерской — бесплатно, даже при отказе от ремонта; срочная — 500 ₽.",
+  groups = defaultGroups,
+  verification = false,
+} = Astro.props;
 ---
 
 <section id="lr-prices" class="lr-section lr-prices lr-home-pricing">
   <div class="lr-container">
-    <SectionHeading
-      title="Сколько стоит ремонт ноутбука"
-      lead="Указана стоимость работы без запчастей. Итоговую смету и срок согласуем до ремонта. Обычная диагностика в мастерской — бесплатно, даже при отказе от ремонта; срочная — 500 ₽."
-    />
+    <SectionHeading title={title} lead={lead} />
     <div id="lr-full-price" class="lr-home-pricing__groups">
       {
         groups.map((group, index) => (
@@ -24,12 +34,14 @@ const groups = [
               { "lr-home-pricing__group--premium": index === 1 },
             ]}
           >
-            <h3 class="lr-home-pricing__category">{group.title}</h3>
+            {group.title && (
+              <h3 class="lr-home-pricing__category">{group.title}</h3>
+            )}
             <div class="lr-home-pricing__group-body">
               <table class="lr-price-table lr-price-table--with-time">
                 <caption class="lr-visually-hidden">
-                  {group.title}: стоимость работы и ориентировочное время
-                  ремонта
+                  {group.title ?? title}: стоимость работы и ориентировочное
+                  время ремонта
                 </caption>
                 <thead class="lr-home-pricing__columns">
                   <tr>
@@ -90,5 +102,6 @@ const groups = [
         ))
       }
     </div>
+    {verification && <PriceVerification />}
   </div>
 </section>

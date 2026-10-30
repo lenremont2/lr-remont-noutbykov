@@ -1,66 +1,11 @@
 ---
-import SectionHeading from "./SectionHeading.astro";
-import PriceVerification from "./PriceVerification.astro";
+import HomePricing from "../sections/HomePricing.astro";
 interface Props {
   title: string;
+  lead?: string;
   rows: string[][];
 }
-const { title, rows } = Astro.props;
+const { title, lead, rows } = Astro.props;
 ---
 
-<section id="lr-prices" class="lr-section lr-prices">
-  <div class="lr-container">
-    <SectionHeading title={title} />
-    <table
-      class="lr-price-table lr-price-table--with-time lr-service-price-table"
-      aria-label={title}
-    >
-      <thead>
-        <tr>
-          <th scope="col">Работа</th>
-          <th scope="col" class="lr-price-table__duration">Время работы</th>
-          <th scope="col">Стоимость работы</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="lr-price-table__diagnostics">
-          <th scope="row">
-            Обычная диагностика в мастерской
-            <span class="lr-service-price-table__detail">
-              Бесплатно даже при отказе от ремонта
-            </span>
-            <span class="lr-price-table__time-inline">
-              Срок уточним при обращении
-            </span>
-          </th>
-          <td class="lr-price-table__duration">Срок уточним при обращении</td>
-          <td>0 ₽</td>
-        </tr>
-        {
-          rows.map(([work, price, duration]) => (
-            <tr>
-              <th scope="row">
-                {work}
-                {duration && (
-                  <span class="lr-price-table__time-inline">
-                    Время: {duration}
-                  </span>
-                )}
-              </th>
-              <td class="lr-price-table__duration">
-                {duration ?? "По согласованию"}
-              </td>
-              <td>{price}</td>
-            </tr>
-          ))
-        }
-      </tbody>
-    </table>
-    <PriceVerification />
-    <p class="lr-caption lr-prices__note">
-      Цены «от» относятся к работе. Запчасти оплачиваются отдельно; полную сумму
-      согласуем после диагностики, до ремонта. Обычная диагностика бесплатна,
-      срочная — 500 ₽.
-    </p>
-  </div>
-</section>
+<HomePricing title={title} lead={lead} groups={[{ rows }]} verification />

@@ -1,0 +1,104 @@
+{
+  "desktop": [
+    {
+      "formatsColumns": "623.594px 623.594px",
+      "overflow": false,
+      "path": "/",
+      "priceNumeric": "lining-nums tabular-nums",
+      "processSteps": 4,
+      "smallText": [],
+      "width": 1440
+    },
+    {
+      "formatsColumns": "623.594px 623.594px",
+      "overflow": false,
+      "path": "/remont-noutbukov-asus-spb.htm",
+      "priceNumeric": "lining-nums tabular-nums",
+      "processSteps": 4,
+      "smallText": [],
+      "width": 1440
+    },
+    {
+      "formatsColumns": "623.594px 623.594px",
+      "overflow": false,
+      "path": "/noutbuk-ne-vklyuchaetsya.htm",
+      "priceNumeric": "lining-nums tabular-nums",
+      "processSteps": 4,
+      "smallText": [],
+      "width": 1440
+    },
+    {
+      "formatsColumns": "623.594px 623.594px",
+      "overflow": false,
+      "path": "/remont-macbook-spb.htm",
+      "priceNumeric": "lining-nums tabular-nums",
+      "processSteps": 4,
+      "smallText": [],
+      "width": 1440
+    }
+  ],
+  "mobile": [
+    {
+      "articleHeading": null,
+      "formats": "350px",
+      "overflow": false,
+      "path": "/",
+      "priceFont": "18px",
+      "priceWidth": 130,
+      "width": 390
+    },
+    {
+      "articleHeading": null,
+      "formats": "350px",
+      "overflow": false,
+      "path": "/remont-noutbukov-asus-spb.htm",
+      "priceFont": "18px",
+      "priceWidth": 130,
+      "width": 390
+    },
+    {
+      "articleHeading": "33.93px",
+      "formats": "350px",
+      "overflow": false,
+      "path": "/noutbuk-ne-vklyuchaetsya.htm",
+      "priceFont": "18px",
+      "priceWidth": 130,
+      "width": 390
+    },
+    {
+      "articleHeading": null,
+      "formats": "350px",
+      "overflow": false,
+      "path": "/remont-macbook-spb.htm",
+      "priceFont": "18px",
+      "priceWidth": 130,
+      "width": 390
+    }
+  ],
+  "narrow": [
+    {
+      "clippedText": [],
+      "inputSizes": ["16px"],
+      "overflow": false,
+      "path": "/"
+    },
+    {
+      "clippedText": [],
+      "inputSizes": ["16px"],
+      "overflow": false,
+      "path": "/remont-noutbukov-asus-spb.htm"
+    },
+    {
+      "clippedText": [],
+      "inputSizes": ["16px"],
+      "overflow": false,
+      "path": "/noutbuk-ne-vklyuchaetsya.htm"
+    },
+    {
+      "clippedText": [],
+      "inputSizes": ["16px"],
+      "overflow": false,
+      "path": "/remont-macbook-spb.htm"
+    }
+  ]
+}

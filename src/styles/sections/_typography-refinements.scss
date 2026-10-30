@@ -1,0 +1,68 @@
+// Marketing sections keep the approved scale; long articles use a reading scale.
+#hop-landing p {
+  max-width: 65ch;
+  text-wrap: pretty;
+}
+#hop-landing h1,
+#hop-landing h2,
+#hop-landing h3,
+#hop-landing h4 {
+  overflow-wrap: anywhere;
+}
+#hop-landing .lr-section-heading h2 {
+  max-width: 26ch;
+  line-height: 1.14;
+}
+#hop-landing .lr-section-heading .lr-eyebrow {
+  margin-bottom: var(--lr-space-8);
+}
+#hop-landing .lr-lead,
+#hop-landing .lr-section-heading .lr-lead {
+  max-width: 62ch;
+  line-height: 1.55;
+}
+#hop-landing .lr-child-page .lr-child-article h2,
+#hop-landing .lr-mac-page .lr-mac-dossier h2 {
+  max-width: 30ch;
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+#hop-landing .lr-child-page .lr-child-article h3,
+#hop-landing .lr-mac-page .lr-mac-dossier h3 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.3;
+  font-weight: 600;
+}
+#hop-landing .lr-child-page .lr-child-article p,
+#hop-landing .lr-child-page .lr-child-article dd,
+#hop-landing .lr-mac-page .lr-mac-dossier p,
+#hop-landing .lr-service-guide p {
+  max-width: 65ch;
+  line-height: 1.65;
+}
+#hop-landing .lr-child-page .lr-child-article .lr-problem-checks,
+#hop-landing .lr-child-page .lr-child-article .lr-child-list {
+  gap: var(--lr-space-12);
+  margin-top: var(--lr-space-24);
+}
+#hop-landing .lr-child-topics p {
+  margin-top: var(--lr-space-12);
+}
+#hop-landing .lr-price-table {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+#hop-landing .lr-price-table thead th:last-child,
+#hop-landing .lr-price-table td:last-child {
+  text-align: right;
+}
+#hop-landing .lr-home-service__intro {
+  max-width: 65ch;
+}
+#hop-landing .lr-mac-header h2 {
+  max-width: 26ch;
+  line-height: 1.14;
+}
+#hop-landing .lr-mac-header__lead {
+  line-height: 1.55;
+}

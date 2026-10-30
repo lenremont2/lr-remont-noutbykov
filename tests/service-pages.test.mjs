@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
-import { readFileSync, existsSync } from "node:fs";
+import { existsSync } from "node:fs";
+import { readFileSync } from "./read-normalized.mjs";
 import { parse } from "postcss";
 import { readdirSync } from "node:fs";
 
@@ -154,12 +155,13 @@ for (const page of pages) {
       ),
       page.slug,
     );
-    for (const fact of source.hero.bullets) {
-      assert.ok(
-        hero.includes(fact.title) && hero.includes(fact.text),
-        page.slug,
-      );
-    }
+    for (const fact of [
+      "Диагностика ноутбука — 0 ₽ в мастерской",
+      "Восстанавливаем платы ноутбуков",
+      "Гарантия на ремонт — 1 год",
+      "Проверяете ноутбук до оплаты",
+    ])
+      assert.ok(hero.includes(fact), page.slug);
     for (const channel of ["ВКонтакте", "Telegram", "MAX", "WhatsApp"]) {
       assert.ok(hero.includes(channel), page.slug);
     }
@@ -365,21 +367,7 @@ for (const page of pages) {
     /<section id="lr-prices"[\s\S]*?<\/section>/,
   )?.[0];
   assert.ok(priceSection, page.slug);
-  if (content.problems.includes(page) && page.priceWorks.length === 0) {
-    assert.ok(!priceSection.includes("<table"), page.slug);
-    assert.ok(
-      priceSection.includes("Стоимость согласуем после диагностики"),
-      page.slug,
-    );
-    assert.ok(
-      priceSection.includes("Обычная диагностика в мастерской — 0 ₽"),
-      page.slug,
-    );
-    assert.ok(
-      priceSection.includes("Бесплатно даже при отказе от ремонта"),
-      page.slug,
-    );
-  } else {
+  {
     const firstPriceRow = priceSection.match(
       /<tbody\b[^>]*>\s*(<tr\b[\s\S]*?<\/tr>)/,
     )?.[1];
@@ -387,7 +375,7 @@ for (const page of pages) {
     assert.ok(firstPriceRow.includes("в мастерской"), page.slug);
     assert.ok(firstPriceRow.includes("0 ₽"), page.slug);
     assert.ok(
-      firstPriceRow.includes("Бесплатно даже при отказе от ремонта"),
+      firstPriceRow.includes("Бесплатно, даже при отказе от ремонта"),
       page.slug,
     );
   }

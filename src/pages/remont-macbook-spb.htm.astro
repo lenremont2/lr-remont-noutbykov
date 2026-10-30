@@ -4,84 +4,66 @@ import Reviews from "../components/sections/Reviews.astro";
 import QuickContacts from "../components/sections/QuickContacts.astro";
 import LeadCapture from "../components/sections/LeadCapture.astro";
 import LeadButton from "../components/ui/LeadButton.astro";
-import GuaranteeSupport from "../components/ui/GuaranteeSupport.astro";
-import PriceVerification from "../components/ui/PriceVerification.astro";
+import HomeProtection from "../components/sections/HomeProtection.astro";
+import RepairFormats from "../components/sections/RepairFormats.astro";
+import RepairProcess from "../components/sections/RepairProcess.astro";
+import Symptoms from "../components/sections/Symptoms.astro";
+import ServicePriceTable from "../components/ui/ServicePriceTable.astro";
 import Breadcrumbs from "../components/ui/Breadcrumbs.astro";
 import ServiceFaq from "../components/ui/ServiceFaq.astro";
 import RelatedServices from "../components/ui/RelatedServices.astro";
 import {
   macbook,
   macbookPrices,
-  standardPrices,
   pagePath,
   getSeo,
 } from "../data/service-pages";
 
-const allPrices = [...macbookPrices, ...standardPrices];
-const priceOf = (work: string) =>
-  allPrices.find(([name]) => name === work)?.[1] ?? "По диагностике";
-
 const macSymptoms = [
   {
     title: "Не включается и не реагирует на кнопку",
-    price: priceOf("Ремонт платы или цепей питания"),
-    time: "1–3 дня",
     image: "/media/mac-symptom-no-power.webp",
     imageAlt: "MacBook с тёмным экраном на диагностике цепей питания",
     href: "/noutbuk-ne-vklyuchaetsya.htm",
   },
   {
     title: "Залит водой, кофе или вином",
-    price: priceOf("Ремонт после попадания жидкости"),
-    time: "1–2 дня",
     image: "/media/mac-symptom-liquid.webp",
     imageAlt: "Пролитый кофе на клавиатуре и трекпаде MacBook",
     href: "/remont-noutbuka-posle-zalitiya.htm",
   },
   {
     title: "Разбит экран Retina или погасла подсветка",
-    price: priceOf("Установка новой матрицы экрана"),
-    time: "от 1 часа",
     image: "/media/mac-symptom-screen.webp",
     imageAlt: "Повреждённый экран Retina с полосами и неравномерной подсветкой",
     href: "/remont-ekrana-noutbuka.htm",
   },
   {
     title: "Вздулась батарея или быстро садится",
-    price: priceOf("Замена приклеенного аккумулятора"),
-    time: "1–2 дня",
     image: "/media/mac-symptom-battery.webp",
     imageAlt: "Вздувшийся аккумулятор MacBook, приподнявший стеклянный трекпад",
     href: "/noutbuk-ne-zaryazhaetsya.htm",
   },
   {
     title: "Не заряжается по USB-C или MagSafe",
-    price: priceOf("Восстановление разъёма USB-C или MagSafe"),
-    time: "1–2 дня",
     image: "/media/mac-symptom-charging.webp",
     imageAlt: "Подгоревшие контакты разъёма USB-C и MagSafe на корпусе MacBook",
     href: "/remont-razemov-noutbuka.htm",
   },
   {
     title: "Сильно греется и шумит вентиляторами",
-    price: priceOf("Обслуживание охлаждения с полной разборкой"),
-    time: "2–4 часа",
     image: "/media/mac-symptom-overheating.webp",
     imageAlt: "Забитые пылью вентиляторы охлаждения внутри открытого MacBook",
     href: "/noutbuk-peregrevaetsya.htm",
   },
   {
     title: "Залипают клавиши или не работает трекпад",
-    price: priceOf("Замена клавиатуры или верхней панели"),
-    time: "от 3 часов",
     image: "/media/mac-symptom-keyboard.webp",
     imageAlt: "Ремонт механизма клавиш на клавиатуре MacBook",
     href: "/remont-klaviatury-noutbuka.htm",
   },
   {
     title: "Зависает на яблоке или тормозит macOS",
-    price: priceOf("Восстановление macOS с переносом данных"),
-    time: "1–3 часа",
     image: "/media/mac-symptom-macos.webp",
     imageAlt:
       "Зависшая полоса загрузки macOS на экране MacBook с внешним накопителем",
@@ -155,75 +137,20 @@ const macBenefits = [
   },
 ];
 
-const macFormats = [
-  {
-    format: "mobile-lab",
-    featured: true,
-    title: "Мобильная мастерская у дома или офиса",
-    text: "Согласуем адрес в СПб или ЛО и возможность выполнить нужные работы в мобильной мастерской. Срок зависит от модели, неисправности и наличия деталей.",
-    specs: [
-      "Подходящие работы определим до приезда",
-      "Возможность подъезда уточним по адресу",
-      "Полную стоимость согласуем до ремонта",
-    ],
-    cta: "Вызвать мобильную мастерскую",
-    image: "/media/mobile-lab-exterior.webp",
-    imageAlt: "Мобильная лаборатория Ленремонта у дома клиента",
-    width: 480,
-    height: 640,
-  },
-  {
-    format: "workshop",
-    featured: false,
-    title: "В стационарной мастерской",
-    text: "Для пайки материнских плат, замены контроллеров и чистки после залития.",
-    specs: [
-      "Диагностика 0 ₽ даже при отказе от ремонта",
-      "Обсудим ремонт платы или замену узла",
-      "Фиксация серийных номеров в договоре",
-    ],
-    cta: "Подобрать мастерскую",
-    image: "/media/laptop-engineer-hero.webp",
-    imageAlt: "Инженер Ленремонта в стационарной мастерской",
-    width: 580,
-    height: 384,
-  },
-  {
-    format: "courier",
-    featured: false,
-    title: "Курьер туда и обратно",
-    text: "Обсудим передачу MacBook курьеру, оформление документов и обратную доставку из сервисного центра.",
-    specs: [
-      "Акт приёма-передачи с описью устройства",
-      "Согласование сметы по телефону до работ",
-      "Оплата после проверки при получении",
-    ],
-    cta: "Вызвать курьера",
-    image: "/media/laptop-courier.webp",
-    imageAlt: "Бережная передача ноутбука курьеру по акту",
-    width: 580,
-    height: 384,
-  },
-];
-
 const macProcess = [
   {
-    step: "01",
     title: "Сверка модели и симптомов",
     text: "Назовите модель и год выпуска, если они известны, и опишите проблему. Подойдут сведения из раздела «Об этом Mac», с корпуса, упаковки или документов. Уточним задачу и подходящий способ передачи устройства.",
   },
   {
-    step: "02",
     title: "Бесплатная диагностика",
     text: "Обычная диагностика в мастерской — 0 ₽ даже при отказе от ремонта. Необходимые проверки определяются по жалобе. Срочную диагностику за 500 ₽ и условия выездного обслуживания согласуем отдельно.",
   },
   {
-    step: "03",
     title: "Согласование сметы до начала работ",
     text: "Согласуем состав работ и общую стоимость с учётом деталей. Если предложение не подходит, сообщите об отказе до начала ремонта. Условия доставки и выбранного выездного формата обсудим отдельно.",
   },
   {
-    step: "04",
     title: "Проверка при получении и гарантия 1 год",
     text: "Вместе проверяем зарядку, экран, звук, клавиатуру, Touch ID и работу под нагрузкой. Выдаём чек, гарантийный талон и старые детали.",
   },
@@ -367,66 +294,12 @@ const macModels = [
 
     <Reviews />
 
-    <section
-      id="lr-symptoms"
-      class="lr-section lr-mac-symptoms"
-      aria-labelledby="lr-symptoms-title"
-    >
-      <div class="lr-container">
-        <div class="lr-mac-header">
-          <h2 id="lr-symptoms-title">Что случилось с вашим MacBook?</h2>
-          <p class="lr-mac-header__lead">
-            Выберите похожую проблему. После диагностики обсудим необходимые
-            работы и полную стоимость. Цены «от» относятся к работе, а сроки в
-            карточках — ориентиры: срок для вашей модели согласуем отдельно.
-          </p>
-        </div>
-
-        <div class="lr-mac-matrix">
-          {
-            macSymptoms.map((item) => (
-              <a class="lr-mac-matrix__cell" href={item.href}>
-                <img
-                  class="lr-mac-matrix__image"
-                  src={item.image}
-                  alt={item.imageAlt}
-                  width="768"
-                  height="512"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div class="lr-mac-matrix__body">
-                  <h3 class="lr-mac-matrix__title">{item.title}</h3>
-                  <div class="lr-mac-matrix__meta">
-                    <span class="lr-mac-matrix__price">{item.price}</span>
-                    <span class="lr-mac-matrix__time">{item.time}</span>
-                  </div>
-                </div>
-              </a>
-            ))
-          }
-        </div>
-
-        <div class="lr-mac-shield">
-          <div class="lr-mac-shield__copy">
-            <h3>Сначала согласованный заказ, затем ремонт</h3>
-            <p>
-              Обсудим, какие проверки нужны и что входит в предложенную
-              стоимость: работа, детали и дополнительные услуги. Полную сумму
-              согласуем до ремонта, оплату — после вашей проверки. Обычная
-              диагностика в мастерской бесплатна даже при отказе от ремонта;
-              срочная диагностика и доставка согласуются отдельно.
-            </p>
-          </div>
-          <div class="lr-mac-shield__action">
-            <LeadButton
-              label="Обсудить стоимость по симптомам"
-              source="symptoms-other"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+    <Symptoms
+      compact
+      title="Что случилось с вашим MacBook?"
+      lead="Выберите похожую проблему. После диагностики обсудим необходимые работы и полную стоимость ремонта."
+      items={macSymptoms}
+    />
 
     <section
       id="lr-timeline"
@@ -553,90 +426,13 @@ const macModels = [
       </div>
     </section>
 
-    <section
-      id="lr-formats"
-      class="lr-section lr-mac-formats"
-      aria-labelledby="lr-formats-title"
-    >
-      <div class="lr-container">
-        <div class="lr-mac-header">
-          <h2 id="lr-formats-title">Как сдать MacBook в ремонт</h2>
-          <p class="lr-mac-header__lead">
-            Выезд мобильной мастерской по адресу, приём в сервисном центре или
-            доставка курьером по договору.
-          </p>
-        </div>
+    <RepairFormats linkToLocations={false} />
 
-        <div class="lr-mac-formats__grid">
-          {
-            macFormats.map((item) => (
-              <article
-                class:list={[
-                  "lr-mac-format-card",
-                  { "lr-mac-format-card--featured": item.featured },
-                ]}
-              >
-                <figure class="lr-mac-format-card__media">
-                  <img
-                    src={item.image}
-                    alt={item.imageAlt}
-                    width={item.width}
-                    height={item.height}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <div class="lr-mac-format-card__body">
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                  <ul class="lr-mac-format-card__list">
-                    {item.specs.map((spec) => (
-                      <li>{spec}</li>
-                    ))}
-                  </ul>
-                  <div class="lr-mac-format-card__action">
-                    <LeadButton
-                      label={item.cta}
-                      source="formats"
-                      format={item.format}
-                    />
-                  </div>
-                </div>
-              </article>
-            ))
-          }
-        </div>
-      </div>
-    </section>
-
-    <section
-      id="lr-process"
-      class="lr-section lr-mac-process"
-      aria-labelledby="lr-process-title"
-    >
-      <div class="lr-container">
-        <div class="lr-mac-header">
-          <h2 id="lr-process-title">
-            Как проходит ремонт: 4 понятных шага без сюрпризов в чеке
-          </h2>
-          <p class="lr-mac-header__lead">
-            Обсуждаем необходимые работы, их стоимость и срок до начала ремонта.
-          </p>
-        </div>
-
-        <ol class="lr-mac-process__grid">
-          {
-            macProcess.map((item) => (
-              <li class="lr-mac-process__card">
-                <span class="lr-mac-process__step">{item.step}</span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </li>
-            ))
-          }
-        </ol>
-      </div>
-    </section>
+    <RepairProcess
+      title="Как пройдёт ремонт MacBook"
+      lead="Уточним модель, проверим неисправность и согласуем работы до ремонта. При получении проверим результат вместе с вами."
+      items={macProcess}
+    />
 
     <section
       id="lr-security"
@@ -698,153 +494,12 @@ const macModels = [
       </div>
     </section>
 
-    <section
-      id="lr-guarantee"
-      class="lr-section lr-mac-guarantee"
-      aria-labelledby="lr-guarantee-title"
-    >
-      <div class="lr-container lr-mac-guarantee__grid">
-        <div class="lr-mac-guarantee__seal">
-          <h2 id="lr-guarantee-title">
-            Честная гарантия Ленремонта на ремонт и запчасти MacBook
-          </h2>
-          <div class="lr-mac-guarantee__badge">
-            <strong>1 год</strong>
-            <span>
-              официальной гарантии по наряд-заказу и кассовому чеку на
-              выполненную работу и установленные комплектующие
-            </span>
-          </div>
-          <p class="lr-mac-guarantee__lead">
-            Мы отвечаем за результат деньгами и договором: от соблюдения
-            согласованной цены до бесплатного гарантийного обслуживания.
-          </p>
-          <a class="lr-mac-guarantee__phone" href="tel:+78123444444">
-            Служба контроля качества: +7 (812) 344-44-44
-          </a>
-        </div>
+    <HomeProtection securityAnchor={false} />
 
-        <div class="lr-mac-guarantee__pillars">
-          <article class="lr-mac-guarantee__pillar">
-            <h3>12 месяцев гарантии на пайку и детали</h3>
-            <p>
-              Если восстановленный узел питания, заменённый разъём или
-              установленный аккумулятор проявит дефект в течение года — устраним
-              обращайтесь по гарантии. Условия повторного ремонта определяются
-              документами о выполненных работах.
-            </p>
-          </article>
-          <article class="lr-mac-guarantee__pillar">
-            <h3>Твёрдая смета: ни рублём больше</h3>
-            <p>
-              Сумма утверждается до начала ремонта. Если в процессе работы
-              потребовалось больше расходников или времени мастера — разницу
-              полностью покрывает компания.
-            </p>
-          </article>
-          <article class="lr-mac-guarantee__pillar">
-            <h3>Прямая связь с руководством</h3>
-            <p>
-              В каждом гарантийном талоне указан прямой телефон службы контроля
-              качества. Опишите, что произошло, и подготовьте сведения о заказе:
-              специалист уточнит обращение и согласует следующий шаг.
-            </p>
-          </article>
-        </div>
-      </div>
-      <div class="lr-container">
-        <GuaranteeSupport />
-      </div>
-    </section>
-
-    <section
-      id="lr-prices"
-      class="lr-section lr-mac-prices"
-      aria-labelledby="lr-prices-title"
-    >
-      <div class="lr-container">
-        <div class="lr-mac-header">
-          <h2 id="lr-prices-title">Стоимость работ по ремонту MacBook</h2>
-          <p class="lr-mac-header__lead">
-            В таблице указана цена работы мастера по основным узлам MacBook Air
-            и MacBook Pro. Полная стоимость с учётом деталей фиксируется до
-            начала ремонта.
-          </p>
-        </div>
-
-        <div class="lr-mac-prices__card">
-          <table
-            class="lr-price-table lr-mac-price-table"
-            aria-label="Стоимость работ для MacBook"
-          >
-            <thead>
-              <tr>
-                <th scope="col">Вид работ</th>
-                <th scope="col" class="lr-mac-price-table__time-col"
-                  >Срок выполнения</th
-                >
-                <th scope="col">Стоимость работы</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="lr-price-table__diagnostics">
-                <th scope="row">
-                  <span class="lr-mac-price-table__work"
-                    >Обычная диагностика в мастерской</span
-                  >
-                  <span class="lr-mac-price-table__mobile-time">
-                    Бесплатно даже при отказе от ремонта
-                  </span>
-                </th>
-                <td class="lr-mac-price-table__duration">
-                  Бесплатно даже при отказе от ремонта
-                </td>
-                <td class="lr-mac-price-table__val">0 ₽</td>
-              </tr>
-              {
-                macbookPrices.map(([work, price, duration]) => (
-                  <tr>
-                    <th scope="row">
-                      <span class="lr-mac-price-table__work">{work}</span>
-                      <span class="lr-mac-price-table__mobile-time">
-                        {duration}
-                      </span>
-                    </th>
-                    <td class="lr-mac-price-table__duration">{duration}</td>
-                    <td class="lr-mac-price-table__val">{price}</td>
-                  </tr>
-                ))
-              }
-            </tbody>
-          </table>
-          <PriceVerification />
-
-          <div class="lr-mac-prices__notes">
-            <div class="lr-mac-prices__note-item">
-              <strong>Диагностика — 0 ₽</strong>
-              <p>
-                Обычная диагностика в мастерской бесплатна даже при отказе от
-                ремонта. Срочная диагностика вне очереди — 500 ₽.
-              </p>
-            </div>
-            <div class="lr-mac-prices__note-item">
-              <strong>Подбор запчастей по модели</strong>
-              <p>
-                Цены «от» указаны за работу мастера. Запчасти (контроллеры,
-                аккумуляторы, экраны, клавиатуры) подбираются по A-номеру вашего
-                MacBook и согласуются заранее.
-              </p>
-            </div>
-            <div class="lr-mac-prices__cta">
-              <LeadButton
-                label="Рассчитать стоимость для вашей модели"
-                source="macbook-prices"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ServicePriceTable
+      title="Стоимость работ по ремонту MacBook"
+      rows={macbookPrices}
+    />
 
     <section
       id="lr-brand-guide"

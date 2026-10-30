@@ -1,0 +1,246 @@
+[
+  {
+    "name": "diagnostics",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-1d87b002-4ae3-4751-89d3-4205123b4138.png",
+    "prefix": "workshop-v4-diagnostics",
+    "visualReview": "Individually inspected: screwdriver meets an accessible fan fastener; supported laptop and cover; ordinary bench and continuous wrists.",
+    "requestedSize": [1920, 1080],
+    "actualOriginalSize": [1672, 941],
+    "requestedSizeMatched": false,
+    "originalCopy": "artifacts\\minsk-realism-v4\\originals\\diagnostics.png",
+    "sourceSha256": "49658f92fc2e7ff6f4220307963df91d81b26ba9f78659d33e125ef33efaa407",
+    "webOutputs": [
+      {
+        "path": "public\\media\\workshop-v4-diagnostics-640.webp",
+        "size": [640, 360]
+      },
+      {
+        "path": "public\\media\\workshop-v4-diagnostics-1280.webp",
+        "size": [1280, 720]
+      }
+    ],
+    "optimization": "Original preserved; web versions fitted to 16:9 without color or creative edits."
+  },
+  {
+    "name": "soldering",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-1bb7bdd7-e793-4086-8b66-cee2cfbfbcc4.png",
+    "prefix": "workshop-v4-soldering",
+    "visualReview": "Individually inspected: board is held in a stable PCB holder; iron approaches a visible pad; extraction and natural seated posture.",
+    "requestedSize": [1920, 1080],
+    "actualOriginalSize": [1672, 941],
+    "requestedSizeMatched": false,
+    "originalCopy": "artifacts\\minsk-realism-v4\\originals\\soldering.png",
+    "sourceSha256": "fd7f908c7b932460272f8954ef37a62edb65d529436297bbfdb1372179f587e8",
+    "webOutputs": [
+      {
+        "path": "public\\media\\workshop-v4-soldering-640.webp",
+        "size": [640, 360]
+      },
+      {
+        "path": "public\\media\\workshop-v4-soldering-1280.webp",
+        "size": [1280, 720]
+      }
+    ],
+    "optimization": "Original preserved; web versions fitted to 16:9 without color or creative edits."
+  },
+  {
+    "name": "cooling",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-5b12fa25-25c5-4bcf-acf4-0eb77e9a0c59.png",
+    "prefix": "workshop-v4-cooling",
+    "visualReview": "Individually inspected: fan rests on mat; brush touches fan; other hand steadies outer housing, no obvious geometric intersection.",
+    "requestedSize": [1920, 1080],
+    "actualOriginalSize": [1672, 941],
+    "requestedSizeMatched": false,
+    "originalCopy": "artifacts\\minsk-realism-v4\\originals\\cooling.png",
+    "sourceSha256": "c2e9f9f380b97ef94ac8eb2265283ac4bf1f14e00e7dcc610ea03622f610b862",
+    "webOutputs": [
+      {
+        "path": "public\\media\\workshop-v4-cooling-640.webp",
+        "size": [640, 360]
+      },
+      {
+        "path": "public\\media\\workshop-v4-cooling-1280.webp",
+        "size": [1280, 720]
+      }
+    ],
+    "optimization": "Original preserved; web versions fitted to 16:9 without color or creative edits."
+  },
+  {
+    "name": "reception",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-bb0b124b-8add-40e1-8759-0746bde494f8.png",
+    "prefix": "workshop-v4-reception",
+    "visualReview": "Individually inspected: ordinary worn counter; laptop supported on protective sleeve; practical cabinet; no people or showroom scenery.",
+    "requestedSize": [1920, 1080],
+    "actualOriginalSize": [1672, 941],
+    "requestedSizeMatched": false,
+    "originalCopy": "artifacts\\minsk-realism-v4\\originals\\reception.png",
+    "sourceSha256": "2dd8a35487d4c2581e4a09a3a71e3656bfc4afa75a55c68c56f770dac33d8664",
+    "webOutputs": [
+      {
+        "path": "public\\media\\workshop-v4-reception-640.webp",
+        "size": [640, 360]
+      },
+      {
+        "path": "public\\media\\workshop-v4-reception-1280.webp",
+        "size": [1280, 720]
+      }
+    ],
+    "optimization": "Original preserved; web versions fitted to 16:9 without color or creative edits."
+  },
+  {
+    "name": "testing",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-74b936e0-396a-4997-87eb-ea435762871e.png",
+    "prefix": "workshop-v4-testing",
+    "visualReview": "Individually inspected corrected image: hand rests naturally on mouse; cable reaches laptop; loose USB plug removed.",
+    "rejectedSource": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-504ea3e9-cbae-42c1-93a6-c68ee7dff9a6.png",
+    "rejectionReason": "USB plug-to-port contact was ambiguous; replaced with corrected mouse-use image.",
+    "requestedSize": [1920, 1080],
+    "actualOriginalSize": [1672, 941],
+    "requestedSizeMatched": false,
+    "originalCopy": "artifacts\\minsk-realism-v4\\originals\\testing.png",
+    "sourceSha256": "f3d05a2b8d24bc3e3b6b3b977472a80bff37d7e7cd10c96673e01082139e2255",
+    "webOutputs": [
+      {
+        "path": "public\\media\\workshop-v4-testing-640.webp",
+        "size": [640, 360]
+      },
+      {
+        "path": "public\\media\\workshop-v4-testing-1280.webp",
+        "size": [1280, 720]
+      }
+    ],
+    "optimization": "Original preserved; web versions fitted to 16:9 without color or creative edits."
+  },
+  {
+    "name": "parts",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-d7341a99-0e00-4c3d-8641-38ad4103f1d3.png",
+    "prefix": "workshop-v4-parts",
+    "visualReview": "Individually inspected: supported shelves, component trays and anti-static packaging; no people, decorative scene or logos.",
+    "requestedSize": [1920, 1080],
+    "actualOriginalSize": [1672, 941],
+    "requestedSizeMatched": false,
+    "originalCopy": "artifacts\\minsk-realism-v4\\originals\\parts.png",
+    "sourceSha256": "670dd4d09f5b1325be46078cac317bf9e1082746aa6c2dfb69d7fca27ac2bca4",
+    "webOutputs": [
+      {
+        "path": "public\\media\\workshop-v4-parts-640.webp",
+        "size": [640, 360]
+      },
+      {
+        "path": "public\\media\\workshop-v4-parts-1280.webp",
+        "size": [1280, 720]
+      }
+    ],
+    "optimization": "Original preserved; web versions fitted to 16:9 without color or creative edits."
+  },
+  {
+    "name": "process",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-838d0c72-7860-48b7-bab9-14c63555c1d0.png",
+    "prefix": "workshop-v4-process",
+    "visualReview": "Individually inspected: one technician turns microscope focus knob; board held securely; second seat empty, ordinary workroom.",
+    "requestedSize": [1920, 1080],
+    "actualOriginalSize": [1672, 941],
+    "requestedSizeMatched": false,
+    "originalCopy": "artifacts\\minsk-realism-v4\\originals\\process.png",
+    "sourceSha256": "1632948eaa20b8a84336a159d2eb0ca7a806db75467142541235577e3c39a114",
+    "webOutputs": [
+      {
+        "path": "public\\media\\workshop-v4-process-640.webp",
+        "size": [640, 360]
+      },
+      {
+        "path": "public\\media\\workshop-v4-process-1280.webp",
+        "size": [1280, 720]
+      }
+    ],
+    "optimization": "Original preserved; web versions fitted to 16:9 without color or creative edits."
+  },
+  {
+    "name": "home",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-6d68e240-96a7-4208-bc52-37f709ae44f9.png",
+    "prefix": "format-home-v4",
+    "visualReview": "Individually inspected: normal lived-in apartment; two separate hand positions, supported laptop and removed cover; screw contact visible.",
+    "requestedSize": [1920, 1080],
+    "actualOriginalSize": [1672, 941],
+    "requestedSizeMatched": false,
+    "originalCopy": "artifacts\\minsk-realism-v4\\originals\\home.png",
+    "sourceSha256": "3c492c702173c0e7f604e6515e132ad02b75559e7e38ec74c652b5c3623a5c5d",
+    "webOutputs": [
+      {
+        "path": "public\\media\\format-home-v4-640.webp",
+        "size": [640, 360]
+      },
+      {
+        "path": "public\\media\\format-home-v4-1280.webp",
+        "size": [1280, 720]
+      }
+    ],
+    "optimization": "Original preserved; web versions fitted to 16:9 without color or creative edits."
+  },
+  {
+    "name": "mobile",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-edaaf234-fd92-422d-960f-ab575a08085b.png",
+    "prefix": "format-mobile-v4",
+    "visualReview": "Individually inspected: technician sits at mounted bench inside van; light points toward supported laptop; ordinary residential courtyard.",
+    "requestedSize": [1920, 1080],
+    "actualOriginalSize": [1672, 941],
+    "requestedSizeMatched": false,
+    "originalCopy": "artifacts\\minsk-realism-v4\\originals\\mobile.png",
+    "sourceSha256": "3cd61d63c9fdbca606eae3b41bdd9f98ebf95d33e395eb3b0568aa4de78a7684",
+    "webOutputs": [
+      {
+        "path": "public\\media\\format-mobile-v4-640.webp",
+        "size": [640, 360]
+      },
+      {
+        "path": "public\\media\\format-mobile-v4-1280.webp",
+        "size": [1280, 720]
+      }
+    ],
+    "optimization": "Original preserved; web versions fitted to 16:9 without color or creative edits."
+  },
+  {
+    "name": "workshop",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-bb9a94f8-f529-407a-b3f7-394cfaff59d8.png",
+    "prefix": "format-workshop-v4",
+    "visualReview": "Individually inspected: intact cover held at two outer corners above supported laptop; natural wrists, practical workshop.",
+    "requestedSize": [1920, 1080],
+    "actualOriginalSize": [1672, 941],
+    "requestedSizeMatched": false,
+    "originalCopy": "artifacts\\minsk-realism-v4\\originals\\workshop.png",
+    "sourceSha256": "a4b594b006b404af806869a8c0be0329994af8c6e79ad25c181d863283740000",
+    "webOutputs": [
+      {
+        "path": "public\\media\\format-workshop-v4-640.webp",
+        "size": [640, 360]
+      },
+      {
+        "path": "public\\media\\format-workshop-v4-1280.webp",
+        "size": [1280, 720]
+      }
+    ],
+    "optimization": "Original preserved; web versions fitted to 16:9 without color or creative edits."
+  },
+  {
+    "name": "courier",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-4f6fc3f9-d393-480a-bb97-86cd42b58d31.png",
+    "prefix": "format-courier-v4",
+    "visualReview": "Individually inspected: hands support separate outer edges of closed laptop over padded sleeve; ordinary entryway and no client documents.",
+    "requestedSize": [1920, 1080],
+    "actualOriginalSize": [1672, 941],
+    "requestedSizeMatched": false,
+    "originalCopy": "artifacts\\minsk-realism-v4\\originals\\courier.png",
+    "sourceSha256": "c525abcab3a204ca2da46b931c85e352efaaf6a0d71515e78a32408b656811e0",
+    "webOutputs": [
+      {
+        "path": "public\\media\\format-courier-v4-640.webp",
+        "size": [640, 360]
+      },
+      {
+        "path": "public\\media\\format-courier-v4-1280.webp",
+        "size": [1280, 720]
+      }
+    ],
+    "optimization": "Original preserved; web versions fitted to 16:9 without color or creative edits."
+  }
+]

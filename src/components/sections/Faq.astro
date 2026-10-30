@@ -3,16 +3,22 @@ import copy from "../../data/laptop-service.json";
 const c = copy.faq;
 interface Props {
   showQuestion?: boolean;
+  title?: string;
+  items?: { title: string; text: string }[];
 }
-const { showQuestion = true } = Astro.props;
+const {
+  showQuestion = true,
+  title = c.fields.H2,
+  items = c.items,
+} = Astro.props;
 ---
 
 <section id="lr-faq" class="lr-section">
   <div class="lr-container lr-faq">
-    <h2>{c.fields.H2}</h2>
+    <h2>{title}</h2>
     <div>
       {
-        c.items.map((item) => (
+        items.map((item) => (
           <details class="lr-faq__item">
             <summary>
               {item.title}

@@ -2,13 +2,20 @@
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
 
+interface Props {
+  securityAnchor?: boolean;
+}
+const { securityAnchor = true } = Astro.props;
 const g = copy.guarantee;
 ---
 
 <section id="lr-guarantee" class="lr-section lr-home-protection">
   <div class="lr-container">
     <SectionHeading title="Гарантия и порядок ремонта" />
-    <div id="lr-security" class="lr-home-protection__facts">
+    <div
+      id={securityAnchor ? "lr-security" : undefined}
+      class="lr-home-protection__facts"
+    >
       <article>
         <h3>{g.fields["Большой факт"]}</h3>
         <p>Гарантии на ремонт и установленные запчасти.</p>

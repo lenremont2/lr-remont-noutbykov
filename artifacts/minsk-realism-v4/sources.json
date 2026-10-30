@@ -1,0 +1,70 @@
+[
+  {
+    "name": "diagnostics",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-1d87b002-4ae3-4751-89d3-4205123b4138.png",
+    "prefix": "workshop-v4-diagnostics",
+    "visualReview": "Individually inspected: screwdriver meets an accessible fan fastener; supported laptop and cover; ordinary bench and continuous wrists."
+  },
+  {
+    "name": "soldering",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-1bb7bdd7-e793-4086-8b66-cee2cfbfbcc4.png",
+    "prefix": "workshop-v4-soldering",
+    "visualReview": "Individually inspected: board is held in a stable PCB holder; iron approaches a visible pad; extraction and natural seated posture."
+  },
+  {
+    "name": "cooling",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-5b12fa25-25c5-4bcf-acf4-0eb77e9a0c59.png",
+    "prefix": "workshop-v4-cooling",
+    "visualReview": "Individually inspected: fan rests on mat; brush touches fan; other hand steadies outer housing, no obvious geometric intersection."
+  },
+  {
+    "name": "reception",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-bb0b124b-8add-40e1-8759-0746bde494f8.png",
+    "prefix": "workshop-v4-reception",
+    "visualReview": "Individually inspected: ordinary worn counter; laptop supported on protective sleeve; practical cabinet; no people or showroom scenery."
+  },
+  {
+    "name": "testing",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-74b936e0-396a-4997-87eb-ea435762871e.png",
+    "prefix": "workshop-v4-testing",
+    "visualReview": "Individually inspected corrected image: hand rests naturally on mouse; cable reaches laptop; loose USB plug removed.",
+    "rejectedSource": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-504ea3e9-cbae-42c1-93a6-c68ee7dff9a6.png",
+    "rejectionReason": "USB plug-to-port contact was ambiguous; replaced with corrected mouse-use image."
+  },
+  {
+    "name": "parts",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-d7341a99-0e00-4c3d-8641-38ad4103f1d3.png",
+    "prefix": "workshop-v4-parts",
+    "visualReview": "Individually inspected: supported shelves, component trays and anti-static packaging; no people, decorative scene or logos."
+  },
+  {
+    "name": "process",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-838d0c72-7860-48b7-bab9-14c63555c1d0.png",
+    "prefix": "workshop-v4-process",
+    "visualReview": "Individually inspected: one technician turns microscope focus knob; board held securely; second seat empty, ordinary workroom."
+  },
+  {
+    "name": "home",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-6d68e240-96a7-4208-bc52-37f709ae44f9.png",
+    "prefix": "format-home-v4",
+    "visualReview": "Individually inspected: normal lived-in apartment; two separate hand positions, supported laptop and removed cover; screw contact visible."
+  },
+  {
+    "name": "mobile",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-edaaf234-fd92-422d-960f-ab575a08085b.png",
+    "prefix": "format-mobile-v4",
+    "visualReview": "Individually inspected: technician sits at mounted bench inside van; light points toward supported laptop; ordinary residential courtyard."
+  },
+  {
+    "name": "workshop",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-bb9a94f8-f529-407a-b3f7-394cfaff59d8.png",
+    "prefix": "format-workshop-v4",
+    "visualReview": "Individually inspected: intact cover held at two outer corners above supported laptop; natural wrists, practical workshop."
+  },
+  {
+    "name": "courier",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a18d13-a834-77b1-a86f-e2909eea75d0\\exec-4f6fc3f9-d393-480a-bb97-86cd42b58d31.png",
+    "prefix": "format-courier-v4",
+    "visualReview": "Individually inspected: hands support separate outer edges of closed laptop over padded sleeve; ordinary entryway and no client documents."
+  }
+]

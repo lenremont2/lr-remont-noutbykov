@@ -1,5 +1,6 @@
 ---
 import "../styles/landing.scss";
+import { typographHtml } from "../utils/typography.mjs";
 
 interface Props {
   title?: string;
@@ -16,6 +17,7 @@ const {
   structuredData,
   noindex = false,
 } = Astro.props;
+const content = typographHtml(await Astro.slots.render("default"));
 ---
 
 <!doctype html>
@@ -52,7 +54,7 @@ const {
   </head>
   <body style="margin: 0">
     <main id="hop-landing">
-      <slot />
+      <Fragment set:html={content} />
     </main>
 
     <script>

@@ -7,7 +7,7 @@ import Benefits from "../sections/Benefits.astro";
 import RepairFormats from "../sections/RepairFormats.astro";
 import RepairProcess from "../sections/RepairProcess.astro";
 import SecurityRules from "../sections/SecurityRules.astro";
-import Guarantee from "../sections/Guarantee.astro";
+import HomeProtection from "../sections/HomeProtection.astro";
 import Reviews from "../sections/Reviews.astro";
 import LeadCapture from "../sections/LeadCapture.astro";
 import Breadcrumbs from "../ui/Breadcrumbs.astro";
@@ -31,13 +31,13 @@ const { page } = Astro.props;
     <Breadcrumbs current={page.label} />
     <Hero brand={page} />
     <Reviews />
-    <Symptoms />
+    <Symptoms compact />
     <RepairTimeline />
     <Benefits />
     <RepairFormats linkToLocations={false} />
     <RepairProcess />
     <SecurityRules />
-    <Guarantee />
+    <HomeProtection securityAnchor={false} />
     <ServicePriceTable
       title={"Стоимость работ по ремонту " + page.label}
       rows={standardPrices}
@@ -74,10 +74,9 @@ const { page } = Astro.props;
     <RelatedServices current={pagePath(page)} />
     <LeadCapture
       title={page.contactTitle ??
-        "Зафиксируйте бесплатную экспресс-диагностику и скидку 15% на ремонт " +
-          page.label}
+        "Обсудим неисправность и стоимость ремонта " + page.label}
       lead={page.contactLead ??
-        "Назовите модель и симптомы поломки. Инженер согласует смету ДО начала работ. Если цена вас не устроит — отказ без каких-либо оплат."}
+        "Назовите модель и симптомы. Уточним удобный способ передачи ноутбука, а после диагностики согласуем работы и полную стоимость."}
       serviceName={"Ремонт ноутбуков " + page.label}
     />
   </div>

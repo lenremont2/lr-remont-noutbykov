@@ -1,6 +1,7 @@
 import { parse } from "postcss";
 import assert from "node:assert/strict";
-import { readFileSync, existsSync, readdirSync } from "node:fs";
+import { existsSync, readdirSync } from "node:fs";
+import { readFileSync } from "./read-normalized.mjs";
 import {
   validatePhone,
   formatPhone,
@@ -496,10 +497,14 @@ assert.equal((html.match(/data-lead-success/g) || []).length, 3);
 assert.equal((html.match(/method="post"/g) || []).length, 3);
 console.log("CSS isolation and Lead Capture attributes: passed.");
 
-for (const benefit of data.hero.bullets) {
-  assert.ok(brandHtml.includes(benefit.title), benefit.title);
-  assert.ok(brandHtml.includes(benefit.text), benefit.title);
-}
+const homeFactList = homeHero.match(
+  /<ul class="lr-hero__facts"[\s\S]*?<\/ul>/,
+)[0];
+const homeFacts = [...homeFactList.matchAll(/<h3>([\s\S]*?)<\/h3>/g)].map(
+  ([, title]) => title,
+);
+assert.equal(homeFacts.length, 4);
+for (const fact of homeFacts) assert.ok(brandHtml.includes(fact), fact);
 
 assert.ok(
   html.includes('id="lr-symptoms"'),
@@ -520,7 +525,7 @@ assert.equal(symptomCards.length, 8);
 assert.equal(
   (brandHtml.match(/<a class="lr-symptoms__modern-card"[\s\S]*?<\/a>/g) || [])
     .length,
-  12,
+  0,
 );
 assert.ok(!html.includes('id="lr-laptop-failures"'));
 assert.equal(new Set(data.symptoms.items.map((item) => item.slug)).size, 9);
@@ -554,15 +559,8 @@ for (const group of [
 data.symptoms.items
   .filter((item) => item !== secondarySymptom)
   .forEach((item, i) => {
-    const price = data.prices.tables
-      .flat()
-      .find(([work]) => work === item.priceWork)?.[1];
-    assert.ok(price || item.priceWork === null, item.title);
     assert.ok(symptomCards[i].includes(item.image), item.title);
-    assert.ok(
-      symptomCards[i].includes(price ?? "Бесплатная диагностика"),
-      item.title,
-    );
+    assert.ok(!symptomCards[i].includes("lr-symptom__price"), item.title);
     assert.ok(symptomCards[i].includes(item.title), item.title);
     assert.ok(!symptomCards[i].includes(item.text), item.title);
     if (item.priceWork)
@@ -672,7 +670,7 @@ assert.equal(
   ).length,
   3,
 );
-assert.ok(brandHtml.includes(data.symptoms.fields["Пояснение цены"]));
+assert.ok(!brandHtml.includes(data.symptoms.fields["Пояснение цены"]));
 assert.ok(html.includes('href="#lr-map-workshops"'));
 const homeFaq = html.match(/<section id="lr-faq"[\s\S]*?<\/section>/)?.[0];
 assert.ok(homeFaq && !homeFaq.includes("data-lr-question"));
@@ -689,7 +687,8 @@ assert.ok(!homeContact.includes(data.contact.fields["Подпись режима
 assert.ok(
   !homeContact.includes("Пришлите модель ноутбука и описание проблемы."),
 );
-assert.ok(brandHtml.includes(data.contact.fields["Подпись режима"]));
+assert.ok(brandHtml.includes("Позвоните нам по телефону"));
+assert.ok(brandHtml.includes("Или напишите нам в мессенджере"));
 
 const businessSection = html.match(
   /<section id="lr-business-trust"[\s\S]*?<\/section>/,

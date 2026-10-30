@@ -5,15 +5,15 @@ import LeadButton from "../ui/LeadButton.astro";
 
 interface Props {
   linkToLocations?: boolean;
+  compact?: boolean;
 }
-const { linkToLocations = true } = Astro.props;
-const compact = linkToLocations;
+const { linkToLocations = true, compact = true } = Astro.props;
 const c = copy.formats;
 const compactImages = {
-  "at-home": "/media/format-home-v2.webp",
-  "mobile-lab": "/media/format-mobile-v2.webp",
-  workshop: "/media/format-workshop-v2.webp",
-  courier: "/media/format-courier-v2.webp",
+  "at-home": "/media/format-home-v4-1280.webp",
+  "mobile-lab": "/media/format-mobile-v4-1280.webp",
+  workshop: "/media/format-workshop-v4-1280.webp",
+  courier: "/media/format-courier-v4-1280.webp",
 };
 const formatMeta = {
   "at-home": {

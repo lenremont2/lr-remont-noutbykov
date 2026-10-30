@@ -5,8 +5,11 @@ import LeadButton from "../ui/LeadButton.astro";
 import { pagePath } from "../../data/service-pages";
 interface Props {
   compact?: boolean;
+  title?: string;
+  lead?: string;
+  items?: { title: string; image: string; imageAlt: string; href: string }[];
 }
-const { compact = false } = Astro.props;
+const { compact = false, title, lead, items } = Astro.props;
 const c = copy.symptoms;
 const prices = copy.prices.tables.flat();
 const priceByWork = (
@@ -17,6 +20,12 @@ const secondarySymptom = c.items.find(
   (item) => item.slug === "remont-cd-dvd-privoda-noutbuka",
 );
 const primarySymptoms = c.items.filter((item) => item !== secondarySymptom);
+const cards =
+  items ??
+  primarySymptoms.map((item) => ({
+    ...item,
+    href: pagePath(item),
+  }));
 const serviceGroups = [
   {
     title: "Поломка",
@@ -148,35 +157,40 @@ const modernFaults = [
   class:list={["lr-section lr-symptoms", { "lr-symptoms--compact": compact }]}
 >
   <div class="lr-container">
-    <SectionHeading title={c.fields.H2} lead={c.fields["Лид"]} />
+    <SectionHeading
+      title={title ?? c.fields.H2}
+      lead={lead ?? c.fields["Лид"]}
+    />
     <div class="lr-symptoms__catalog">
       <nav
         class="lr-symptoms__groups"
         aria-label="Направления помощи с ноутбуком"
+        hidden={Boolean(items)}
       >
         {
-          serviceGroups.map((group) => (
-            <a class="lr-symptoms__group" href={group.href}>
-              {compact && (
-                <img
-                  src={group.image}
-                  alt=""
-                  width="768"
-                  height="512"
-                  loading="lazy"
-                  decoding="async"
-                />
-              )}
-              <strong>{group.title}</strong>
-              {!compact && <span>{group.detail}</span>}
-            </a>
-          ))
+          !items &&
+            serviceGroups.map((group) => (
+              <a class="lr-symptoms__group" href={group.href}>
+                {compact && (
+                  <img
+                    src={group.image}
+                    alt=""
+                    width="768"
+                    height="512"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )}
+                <strong>{group.title}</strong>
+                {!compact && <span>{group.detail}</span>}
+              </a>
+            ))
         }
       </nav>
       <div class="lr-symptoms__grid">
         {
-          primarySymptoms.map((item) => (
-            <a class="lr-symptom" href={pagePath(item)}>
+          cards.map((item) => (
+            <a class="lr-symptom" href={item.href}>
               <img
                 class="lr-symptom__image"
                 src={item.image}
@@ -189,7 +203,13 @@ const modernFaults = [
               <div class="lr-symptom__body">
                 <h3>{item.title}</h3>
                 {!compact && (
-                  <p class="lr-symptom__price">{priceByWork(item.priceWork)}</p>
+                  <p class="lr-symptom__price">
+                    {priceByWork(
+                      "priceWork" in item
+                        ? (item.priceWork as string | null)
+                        : null,
+                    )}
+                  </p>
                 )}
               </div>
             </a>
@@ -234,7 +254,7 @@ const modernFaults = [
       )
     }
     {
-      secondarySymptom && (
+      !items && secondarySymptom && (
         <p class="lr-symptoms__secondary">
           Для ноутбуков с дисководом:{" "}
           <a href={pagePath(secondarySymptom)}>ремонт CD/DVD-привода</a>.

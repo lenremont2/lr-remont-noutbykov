@@ -30,7 +30,7 @@
 #hop-landing .lr-hero--home .lr-hero__title-location {
   display: block;
   margin-top: 16px;
-  font-size: 0.55em;
+  font-size: clamp(1.125rem, 2.2vw, 1.875rem);
   line-height: 1.35;
   letter-spacing: -0.02em;
   color: var(--lr-color-muted-on-dark);

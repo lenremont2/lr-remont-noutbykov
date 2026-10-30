@@ -1148,6 +1148,10 @@
     margin-top: 0;
   }
 
+  .lr-contact__grid > .lr-social-links > h3 {
+    text-align: center;
+  }
+
   .lr-contact__copy h2 {
     margin-block: 0 24px;
   }
@@ -1171,12 +1175,20 @@
   .lr-contact__phone {
     display: inline-block;
     margin-block: 12px;
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: var(--lr-radius-small);
+    background: var(--lr-color-accent);
+    color: var(--lr-color-accent-contrast);
+    font-size: clamp(24px, 3vw, 36px);
+    line-height: 1.25;
+    font-weight: 700;
     letter-spacing: -0.02em;
     text-decoration: none;
     white-space: nowrap;
+  }
+
+  .lr-contact__phone:hover {
+    background: var(--lr-color-accent-hover);
   }
 
   .lr-contact__footer {
