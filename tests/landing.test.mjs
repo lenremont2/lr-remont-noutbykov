@@ -355,7 +355,7 @@ assert.ok(director.includes("/media/director-sorokin-640.webp"));
 const directorMessage = director.match(
   /<blockquote\b[\s\S]*?<\/blockquote>/,
 )?.[0];
-assert.equal((directorMessage.match(/<p>/g) || []).length, 1);
+assert.equal((directorMessage.match(/<p\b/g) || []).length, 4);
 assert.ok(directorMessage.includes("до оплаты"));
 assert.ok(directorMessage.includes("до начала работ"));
 const portraitPosition = director.indexOf("<figure");

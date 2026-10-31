@@ -17,7 +17,7 @@
 }
 
 #hop-landing .lr-director .lr-section-heading {
-  margin-bottom: var(--lr-space-24);
+  margin-bottom: var(--lr-space-32);
 }
 
 #hop-landing .lr-director .lr-section-heading h2 {
@@ -26,29 +26,29 @@
 }
 
 #hop-landing .lr-director__message {
+  display: grid;
+  gap: var(--lr-space-20);
   margin: 0;
-  max-width: 60ch;
-  font-size: 17px;
+  max-width: 62ch;
+  color: var(--lr-color-text);
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.65;
 }
 
-#hop-landing .lr-director__message p + p {
-  margin-top: var(--lr-space-16);
+#hop-landing .lr-director__message p {
+  max-width: 62ch;
+  margin: 0;
+  text-wrap: pretty;
 }
 
 #hop-landing .lr-director__principle {
   display: block;
-  margin-bottom: 20px;
   color: var(--lr-color-text);
-  font-size: clamp(22px, 2.2vw, 28px);
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 1.35;
-  letter-spacing: -0.02em;
-}
-
-#hop-landing .lr-director__promise {
-  display: block;
-  max-width: 42ch;
+  letter-spacing: -0.015em;
 }
 
 #hop-landing .lr-director__name {
@@ -59,7 +59,7 @@
 }
 
 #hop-landing .lr-director__action {
-  margin-top: var(--lr-space-28);
+  margin-top: var(--lr-space-32);
 }
 
 #hop-landing .lr-director__action .lr-button {
@@ -350,8 +350,8 @@
     padding: var(--lr-space-40);
   }
 
-  #hop-landing .lr-director__message {
-    font-size: 18px;
+  #hop-landing .lr-director__principle {
+    font-size: 24px;
   }
 
   #hop-landing .lr-manufacturers__list {
@@ -364,6 +364,11 @@
 }
 
 @media (min-width: 1024px) {
+  #hop-landing .lr-director__message {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
   #hop-landing .lr-director__grid {
     gap: var(--lr-space-64);
     padding: var(--lr-space-48);
