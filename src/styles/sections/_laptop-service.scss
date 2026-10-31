@@ -693,6 +693,12 @@
     align-items: center;
     min-height: 44px;
     text-underline-offset: 3px;
+    color: var(--lr-color-link);
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--lr-color-link-hover);
+    }
   }
 
   .lr-reviews__rating-value {
@@ -746,6 +752,12 @@
     display: inline-block;
     padding-block: 8px;
     text-underline-offset: 3px;
+    color: var(--lr-color-link);
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--lr-color-link-hover);
+    }
   }
 
   @media (min-width: 768px) {

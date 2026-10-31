@@ -181,13 +181,13 @@ const casesEnabled = !readFileSync(
 ).includes("<!-- <RepairCases /> -->");
 const ids = [
   "hero",
+  "formats",
+  "process",
   "reviews",
   "prices",
-  "formats",
   "lab",
   "quiz",
   "workshop-gallery",
-  "process",
   "expertise",
   "business-trust",
   "director",
@@ -241,12 +241,20 @@ assert.ok(
 assert.ok(!formatsSection.includes("lr-formats__trust"));
 for (const card of formatsSection.match(/<article\b[\s\S]*?<\/article>/g) ||
   []) {
-  const features = card.match(
-    /<ul class="lr-format__features">[\s\S]*?<\/ul>/,
-  )?.[0];
-  assert.ok(features, "Every format must explain its benefits");
-  const count = (features.match(/<li>/g) || []).length;
-  assert.equal(count, 2, "Each format has two checked benefits");
+  assert.ok(
+    card.includes('class="lr-format__note"'),
+    "Each format keeps one essential distinction",
+  );
+  assert.equal(
+    (card.match(/<a\b/g) || []).length,
+    1,
+    "Each format has one direct action",
+  );
+  assert.doesNotMatch(
+    card,
+    /<input\b|lr-format__features/,
+    "No preliminary selection or repeated list",
+  );
 }
 const labSection = html.match(/<section id="lr-lab"[\s\S]*?<\/section>/)?.[0];
 assert.ok(labSection);
@@ -261,16 +269,21 @@ assert.match(labSection, /<button\b[^>]*data-lr-player-play[^>]*\bhidden\b/);
 const processSection = html.match(
   /<section id="lr-process"[\s\S]*?<\/section>/,
 )?.[0];
-assert.ok(processSection?.includes("lr-process--steps"));
+assert.ok(processSection?.includes("lr-repair-journey"));
 assert.equal(
-  (processSection.match(/<li>/g) || []).length,
+  (processSection.match(/data-lr-journey-step/g) || []).length,
   data.process.items.length,
 );
 assert.doesNotMatch(processSection, /<details\b|data-source="process"/);
 for (const item of data.process.items) {
   assert.ok(processSection.includes(item.title), item.title);
-  assert.ok(processSection.includes(item.text), item.title);
 }
+assert.ok(processSection.includes("до оплаты"));
+assert.ok(processSection.includes("согласования сметы"));
+assert.equal((processSection.match(/data-lr-journey-photo=/g) || []).length, 4);
+assert.ok(!processSection.includes("data-lr-route-name"));
+assert.ok(!formatsSection.includes("data-lr-route-choice"));
+assert.equal((formatsSection.match(/<a\b/g) || []).length, 4);
 assert.deepEqual(
   data.prices.tables.map((table) => table.length),
   [8, 4, 6],
@@ -339,6 +352,12 @@ const director = html.match(
   /<section\b[^>]*id="lr-director"[\s\S]*?<\/section>/,
 )?.[0];
 assert.ok(director.includes("/media/director-sorokin-640.webp"));
+const directorMessage = director.match(
+  /<blockquote\b[\s\S]*?<\/blockquote>/,
+)?.[0];
+assert.equal((directorMessage.match(/<p>/g) || []).length, 1);
+assert.ok(directorMessage.includes("до оплаты"));
+assert.ok(directorMessage.includes("до начала работ"));
 const portraitPosition = director.indexOf("<figure");
 const identityPosition = director.indexOf('class="lr-director__name"');
 const signaturePosition = director.indexOf("data-lr-signature");

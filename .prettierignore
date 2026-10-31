@@ -3,3 +3,5 @@ node_modules/
 dist/
 package-lock.json
 docs/MASTER_DEVELOPMENT_PROMPT.md
+scrollcraft/builds/home-2026-10-31/engine/
+scrollcraft/builds/*/lab/

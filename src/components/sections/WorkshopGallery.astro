@@ -40,12 +40,18 @@ const frames = [
     <div class="lr-workshop-gallery__grid">
       {
         frames.map((frame) => (
-          <figure class="lr-workshop-gallery__item">
+          <figure
+            class={`lr-workshop-gallery__item lr-workshop-gallery__item--${frame.key}`}
+          >
             <img
               class="lr-workshop-gallery__image"
               src={`/media/workshop-v4-${frame.key}-1280.webp`}
               srcset={`/media/workshop-v4-${frame.key}-640.webp 640w, /media/workshop-v4-${frame.key}-1280.webp 1280w`}
-              sizes="(min-width: 1024px) 30vw, (min-width: 768px) 44vw, 90vw"
+              sizes={
+                frame.key === "diagnostics"
+                  ? "(min-width: 1024px) 58vw, 90vw"
+                  : "(min-width: 1024px) 30vw, (min-width: 768px) 44vw, 90vw"
+              }
               width="1280"
               height="720"
               alt={frame.alt}

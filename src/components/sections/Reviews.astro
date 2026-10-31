@@ -4,6 +4,10 @@ import reviews from "../../data/reviews.json";
 import ReviewCard from "../ui/ReviewCard.astro";
 import SectionHeading from "../ui/SectionHeading.astro";
 const c = copy.reviews.fields;
+interface Props {
+  scrollScene?: boolean;
+}
+const { scrollScene = false } = Astro.props;
 interface Aggregator {
   name: string;
   url: string;
@@ -30,6 +34,7 @@ const countLabel = (count: number) => {
   id="lr-reviews"
   class="lr-section lr-section--compact"
   data-lr-review-slider
+  data-sc-act={scrollScene ? "flow" : undefined}
 >
   <div class="lr-container lr-reviews">
     <div class="lr-reviews__header">

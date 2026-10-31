@@ -1,0 +1,68 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "fourRoutes": true,
+      "modalContext": true,
+      "keyboard": true,
+      "visualStates": true
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "fourRoutes": true,
+      "modalContext": true,
+      "keyboard": true,
+      "visualStates": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "fourRoutes": true,
+      "modalContext": true,
+      "keyboard": true,
+      "visualStates": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "fourRoutes": true,
+      "modalContext": true,
+      "keyboard": true,
+      "visualStates": true
+    },
+    {
+      "width": 360,
+      "height": 640,
+      "overflow": false,
+      "fourRoutes": true,
+      "modalContext": true,
+      "keyboard": true,
+      "visualStates": true
+    },
+    {
+      "width": 1440,
+      "reducedMotion": true,
+      "pausedVideo": true,
+      "staticJourney": true
+    },
+    {
+      "width": 390,
+      "reducedMotion": true,
+      "pausedVideo": true,
+      "staticJourney": true
+    },
+    {
+      "noJavaScript": true,
+      "readableSteps": true,
+      "disabledUnconnectedForm": true,
+      "anchorNavigation": true
+    }
+  ],
+  "errors": []
+}

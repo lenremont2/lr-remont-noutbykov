@@ -6,9 +6,16 @@ import LeadButton from "../ui/LeadButton.astro";
 interface Props {
   linkToLocations?: boolean;
   compact?: boolean;
+  journey?: boolean;
 }
-const { linkToLocations = true, compact = true } = Astro.props;
+const { linkToLocations = true, compact = true, journey = false } = Astro.props;
 const c = copy.formats;
+const journeyNotes = {
+  "at-home": "Возможность ремонта уточним по модели",
+  "mobile-lab": "Оборудование внутри автомобиля",
+  workshop: "Обычная диагностика: 0 ₽, даже при отказе",
+  courier: "Передача ноутбука по документу",
+};
 const compactImages = {
   "at-home": "/media/format-home-v4-1280.webp",
   "mobile-lab": "/media/format-mobile-v4-1280.webp",
@@ -77,107 +84,135 @@ const compactFeatures = {
 
 <section
   id="lr-formats"
-  class:list={["lr-section lr-formats", { "lr-formats--compact": compact }]}
+  class:list={[
+    "lr-section lr-formats",
+    { "lr-formats--compact": compact, "lr-formats--journey": journey },
+  ]}
+  data-lr-route-picker={journey || undefined}
+  data-sc-act={journey ? "flow" : undefined}
 >
   <div class="lr-container">
     <SectionHeading
-      title={compact ? "Способы ремонта" : c.fields.H2}
-      lead={compact
-        ? "Выберите удобный способ ремонта. Детали и стоимость согласуем заранее."
-        : c.fields["Лид"]}
+      title={journey
+        ? "Выберите способ ремонта"
+        : compact
+          ? "Способы ремонта"
+          : c.fields.H2}
+      lead={journey
+        ? undefined
+        : compact
+          ? "Выберите удобный способ ремонта. Детали и стоимость согласуем заранее."
+          : c.fields["Лид"]}
     />
-    <div class="lr-formats__grid">
-      {
-        c.items.map((item) => {
-          const meta = formatMeta[item.format as keyof typeof formatMeta];
-          const isFeatured = item.format === "mobile-lab";
-          return (
-            <article
-              class:list={["lr-format", isFeatured && "lr-format--featured"]}
-            >
-              <figure class="lr-format__media">
-                <img
-                  src={
-                    compact
-                      ? compactImages[item.format as keyof typeof compactImages]
-                      : meta.image
-                  }
-                  alt={
-                    compact
-                      ? `Иллюстрация: ${meta.alt.toLocaleLowerCase("ru-RU")}`
-                      : meta.alt
-                  }
-                  width={compact ? 1280 : meta.width}
-                  height={compact ? 720 : meta.height}
-                  loading="lazy"
-                  decoding="async"
-                />
-                {!compact && <figcaption>{item.fields["Акцент"]}</figcaption>}
-              </figure>
-              <div class="lr-format__body">
-                <h3 class="lr-format__title">{item.title}</h3>
-                {!compact && <p class="lr-format__text">{item.text}</p>}
-                <ul class="lr-format__features">
-                  {(compact
-                    ? compactFeatures[
-                        item.format as keyof typeof compactFeatures
-                      ]
-                    : meta.features
-                  ).map((feature) => (
-                    <li>
-                      {compact && (
-                        <svg
-                          width="14"
-                          height="14"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          aria-hidden="true"
-                        >
-                          <path
-                            d="m3 8 3 3 7-7"
-                            stroke="currentColor"
-                            stroke-width="1.8"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      )}
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div class="lr-format__footer">
-                  {linkToLocations && item.format === "workshop" ? (
-                    <a
-                      class="lr-text-action lr-format__btn"
-                      href="#lr-map-workshops"
-                    >
-                      {item.fields.CTA}
-                      <span aria-hidden="true">→</span>
-                    </a>
-                  ) : linkToLocations && item.format === "courier" ? (
-                    <LeadButton
-                      label={item.fields.CTA}
-                      source="formats:courier"
-                      format="courier"
-                      text
-                      class="lr-format__btn"
-                    />
+    <div class="lr-formats__choices">
+      <div class="lr-formats__grid">
+        {
+          c.items.map((item) => {
+            const meta = formatMeta[item.format as keyof typeof formatMeta];
+            const isFeatured = item.format === "mobile-lab";
+            const actionLabel =
+              journey && item.format === "at-home"
+                ? "Вызвать мастера"
+                : item.fields.CTA;
+            return (
+              <article
+                class:list={["lr-format", isFeatured && "lr-format--featured"]}
+              >
+                <figure class="lr-format__media">
+                  <img
+                    src={
+                      compact
+                        ? compactImages[
+                            item.format as keyof typeof compactImages
+                          ]
+                        : meta.image
+                    }
+                    alt={
+                      compact
+                        ? `Иллюстрация: ${meta.alt.toLocaleLowerCase("ru-RU")}`
+                        : meta.alt
+                    }
+                    width={compact ? 1280 : meta.width}
+                    height={compact ? 720 : meta.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  {!compact && <figcaption>{item.fields["Акцент"]}</figcaption>}
+                </figure>
+                <div class="lr-format__body">
+                  <h3 class="lr-format__title">{item.title}</h3>
+                  {!compact && <p class="lr-format__text">{item.text}</p>}
+                  {journey ? (
+                    <p class="lr-format__note">
+                      {journeyNotes[item.format as keyof typeof journeyNotes]}
+                    </p>
                   ) : (
-                    <LeadButton
-                      label={item.fields.CTA}
-                      source="formats"
-                      format={item.format}
-                      text={compact || !isFeatured}
-                      class="lr-format__btn"
-                    />
+                    <ul class="lr-format__features">
+                      {(compact
+                        ? compactFeatures[
+                            item.format as keyof typeof compactFeatures
+                          ]
+                        : meta.features
+                      ).map((feature) => (
+                        <li>
+                          {compact && (
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              aria-hidden="true"
+                            >
+                              <path
+                                d="m3 8 3 3 7-7"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          )}
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
                   )}
+                  <div class="lr-format__footer">
+                    {linkToLocations && item.format === "workshop" ? (
+                      <a
+                        class:list={[
+                          journey ? "lr-button" : "lr-text-action",
+                          "lr-format__btn",
+                        ]}
+                        href="#lr-map-workshops"
+                      >
+                        {actionLabel}
+                        {!journey && <span aria-hidden="true">→</span>}
+                      </a>
+                    ) : linkToLocations && item.format === "courier" ? (
+                      <LeadButton
+                        label={actionLabel}
+                        source="formats:courier"
+                        format="courier"
+                        text={!journey}
+                        class="lr-format__btn"
+                      />
+                    ) : (
+                      <LeadButton
+                        label={actionLabel}
+                        source="formats"
+                        format={item.format}
+                        text={!journey && (compact || !isFeatured)}
+                        class="lr-format__btn"
+                      />
+                    )}
+                  </div>
                 </div>
-              </div>
-            </article>
-          );
-        })
-      }
+              </article>
+            );
+          })
+        }
+      </div>
     </div>
     {
       !compact && (

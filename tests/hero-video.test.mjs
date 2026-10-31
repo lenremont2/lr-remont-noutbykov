@@ -40,6 +40,7 @@ function setup({ reduced = false, blocked = false } = {}) {
 }
 
 const originalMatchMedia = globalThis.matchMedia;
+const originalObserver = globalThis.IntersectionObserver;
 try {
   const playing = setup();
   assert.equal(playing.video.plays, 1);
@@ -70,7 +71,30 @@ try {
     false,
     "Blocked autoplay does not enable controls",
   );
+
+  let visibility;
+  globalThis.IntersectionObserver = class {
+    constructor(callback) {
+      visibility = callback;
+    }
+    observe() {}
+  };
+  const observed = setup();
+  visibility([{ isIntersecting: false }]);
+  assert.equal(observed.video.autoplay, false, "Offscreen footage pauses");
+  assert.equal(observed.video.pauses, 1);
+  visibility([{ isIntersecting: true }]);
+  assert.equal(observed.video.plays, 2, "Visible footage resumes");
+  observed.changeMotion(true);
+  visibility([{ isIntersecting: true }]);
+  assert.equal(
+    observed.video.plays,
+    2,
+    "Visibility cannot override reduced motion",
+  );
 } finally {
+  if (originalObserver === undefined) delete globalThis.IntersectionObserver;
+  else globalThis.IntersectionObserver = originalObserver;
   if (originalMatchMedia === undefined) delete globalThis.matchMedia;
   else globalThis.matchMedia = originalMatchMedia;
 }

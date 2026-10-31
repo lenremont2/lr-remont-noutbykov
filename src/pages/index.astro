@@ -8,7 +8,7 @@ import QuizModal from "../components/sections/QuizModal.astro";
 import RepairFormats from "../components/sections/RepairFormats.astro";
 import MobileLab from "../components/sections/MobileLab.astro";
 import WorkshopGallery from "../components/sections/WorkshopGallery.astro";
-import RepairProcess from "../components/sections/RepairProcess.astro";
+import HomeRepairJourney from "../components/sections/HomeRepairJourney.astro";
 import HomeExpertise from "../components/sections/HomeExpertise.astro";
 import BusinessTrust from "../components/sections/BusinessTrust.astro";
 import DirectorMessage from "../components/sections/DirectorMessage.astro";
@@ -28,13 +28,13 @@ import LeadCapture from "../components/sections/LeadCapture.astro";
   description="Ремонт ноутбуков в Санкт-Петербурге: мастерская на колёсах, сервисные центры и доставка курьером. Согласуем стоимость до ремонта. Гарантия 1 год."
 >
   <Hero />
-  <Reviews />
+  <RepairFormats journey />
+  <HomeRepairJourney />
+  <Reviews scrollScene />
   <HomePricing />
-  <RepairFormats />
   <MobileLab />
   <RepairQuiz />
   <WorkshopGallery />
-  <RepairProcess layout="steps" />
   <HomeExpertise />
   <BusinessTrust />
   <DirectorMessage />
@@ -46,6 +46,6 @@ import LeadCapture from "../components/sections/LeadCapture.astro";
   <Symptoms compact />
   <ManufacturerLinks />
   <Faq showQuestion={false} />
-  <LeadCapture compactChannels />
+  <LeadCapture compactChannels scrollScene />
   <QuizModal />
 </LandingLayout>

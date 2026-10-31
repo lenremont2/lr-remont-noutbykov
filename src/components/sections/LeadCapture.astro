@@ -9,16 +9,22 @@ interface Props {
   lead?: string;
   serviceName?: string;
   compactChannels?: boolean;
+  scrollScene?: boolean;
 }
 const {
   title = c.H2,
   lead = c["Лид"],
   serviceName = "Ремонт ноутбуков",
   compactChannels = true,
+  scrollScene = false,
 } = Astro.props;
 ---
 
-<section id="lr-contact" class="lr-section lr-contact">
+<section
+  id="lr-contact"
+  class="lr-section lr-contact"
+  data-sc-act={scrollScene ? "flow" : undefined}
+>
   <div class="lr-container lr-contact__grid">
     <div class="lr-contact__copy">
       <h2>{title}</h2>

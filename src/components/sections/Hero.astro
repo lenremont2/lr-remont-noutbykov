@@ -30,25 +30,55 @@ const facts = [
       id="lr-hero"
       class="lr-hero lr-section lr-hero--home"
       aria-labelledby="lr-hero-title"
+      data-lr-depth-scene
+      data-sc-act="flow"
     >
       <div class="lr-container lr-hero__grid">
+        <nav class="lr-home-nav" aria-label="Разделы страницы">
+          <span class="lr-home-nav__brand">
+            <img
+              src="/media/lenremont-logo-patch.png"
+              width="228"
+              height="39"
+              alt="Ленремонт"
+            />
+            <span>Ремонт ноутбуков</span>
+          </span>
+          <div class="lr-home-nav__links">
+            <a href="#lr-formats">Способы ремонта</a>
+            <a href="#lr-process">Как всё проходит</a>
+            <a href="#lr-prices">Цены</a>
+            <a href="#lr-guarantee">Гарантия</a>
+          </div>
+        </nav>
         <figure class="lr-hero__media">
-          <video
-            class="lr-hero__video"
-            autoplay
-            loop
-            muted
-            data-lr-hero-video
-            playsinline
-            preload="metadata"
-            width="480"
-            height="640"
-            poster="/media/mobile-lab-exterior.webp"
-            aria-label="Мобильная мастерская Ленремонта — ремонт ноутбуков"
-          >
-            <source src="/media/notebook-auto.mp4" type="video/mp4" />
-            Мобильная мастерская Ленремонта — ремонт ноутбуков.
-          </video>
+          <div class="lr-hero__backplane" aria-hidden="true" />
+          <div class="lr-hero__film">
+            <video
+              class="lr-hero__video"
+              autoplay
+              loop
+              muted
+              data-lr-hero-video
+              playsinline
+              preload="metadata"
+              width="480"
+              height="640"
+              poster="/media/mobile-lab-exterior.webp"
+              aria-label="Мобильная мастерская Ленремонта — ремонт ноутбуков"
+            >
+              <source src="/media/notebook-auto.mp4" type="video/mp4" />
+              Мобильная мастерская Ленремонта — ремонт ноутбуков.
+            </video>
+          </div>
+          <figcaption class="lr-hero__scene-note">
+            <span class="lr-hero__scene-mark" aria-hidden="true">
+              ✓
+            </span>
+            <span>
+              <strong>Сначала согласуем.</strong>Затем ремонтируем.
+            </span>
+          </figcaption>
         </figure>
         <div class="lr-hero__copy">
           <h1 class="lr-hero__title" id="lr-hero-title">
@@ -78,6 +108,9 @@ const facts = [
             </a>
             <LeadButton label="Оставить заявку" source="hero-request" text />
           </div>
+          <a class="lr-hero__route-link" href="#lr-formats">
+            В мастерской, у вас дома или с доставкой
+          </a>
           <ul
             class="lr-hero__facts"
             aria-label="Преимущества ремонта в Ленремонте"

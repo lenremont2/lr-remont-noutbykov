@@ -1,45 +1,51 @@
 #hop-landing {
+  // Official Lenremont brand palette (https://www.lenremont.ru/)
   --lr-white: #fff;
-  --lr-pearl-100: #f2f2f0;
-  --lr-graphite-950: #191e23;
-  --lr-graphite-900: #242a2e;
-  --lr-graphite-800: #30373e;
-  --lr-neutral-600: #5c6368;
-  --lr-neutral-200: #deded5;
-  --lr-neutral-border: #d9dcd9;
-  --lr-neutral-control: #747c82;
-  --lr-gold-400: #f2b632;
-  --lr-gold-500: #e6a61f;
-  --lr-gold-600: #d99913;
-  --lr-gold-50: #fff3d7;
-  --lr-bronze-700: #77613b;
-  --lr-red-700: #b42318;
-  --lr-red-50: #fff1f0;
-  --lr-green-700: #246347;
-  --lr-green-50: #edf7f0;
+  --lr-pearl-100: #f4f7fb;
+  --lr-graphite-950: #0c234b;
+  --lr-graphite-900: #102a52;
+  --lr-graphite-800: #1a447e;
+  --lr-neutral-600: #526477;
+  --lr-neutral-200: #c0dcfa;
+  --lr-neutral-border: #d9e2ec;
+  --lr-neutral-control: #7b8794;
+  --lr-gold-400: #ffd000;
+  --lr-gold-500: #f5b800;
+  --lr-gold-600: #e09900;
+  --lr-gold-50: #fff8db;
+  --lr-bronze-700: #006fe6;
+  --lr-red-700: #e62727;
+  --lr-red-50: #faecee;
+  --lr-green-700: #2a9d5c;
+  --lr-green-50: #eaf4ee;
+  --lr-brand-blue: #006fe6;
+  --lr-brand-blue-hover: #005ec4;
+  --lr-brand-blue-light: #3898fc;
   --lr-social-vk: #0077ff;
-  --lr-social-telegram: #4bb3f7;
+  --lr-social-telegram: #24a1de;
   --lr-social-max: #3568d4;
-  --lr-social-whatsapp: #23b33a;
+  --lr-social-whatsapp: #25d366;
 
   // Keep existing consumers working while sections adopt semantic roles.
   --lr-ivory-50: var(--lr-pearl-100);
-  --lr-stone-100: var(--lr-pearl-100);
-  --lr-stone-200: var(--lr-neutral-200);
+  --lr-stone-100: #e8f2fc;
+  --lr-stone-200: var(--lr-neutral-border);
   --lr-stone-500: var(--lr-neutral-control);
   --lr-stone-600: var(--lr-neutral-600);
   --lr-amber-100: var(--lr-gold-50);
   --lr-amber-400: var(--lr-gold-400);
   --lr-amber-500: var(--lr-gold-500);
-  --lr-amber-600: var(--lr-bronze-700);
-  --lr-blue-700: var(--lr-neutral-600);
-  --lr-blue-50: var(--lr-pearl-100);
-  --lr-blue-100: var(--lr-pearl-100);
-  --lr-blue-200: var(--lr-neutral-border);
+  --lr-amber-600: var(--lr-gold-600);
+  --lr-blue-700: var(--lr-brand-blue);
+  --lr-blue-600: #1672e8;
+  --lr-blue-500: #2b7ff0;
+  --lr-blue-200: #b8d7fb;
+  --lr-blue-100: #e0edfc;
+  --lr-blue-50: #f0f6fd;
 
   --lr-color-bg: var(--lr-pearl-100);
   --lr-color-surface: var(--lr-white);
-  --lr-color-surface-alt: var(--lr-pearl-100);
+  --lr-color-surface-alt: #e8f2fc;
   --lr-color-text: var(--lr-graphite-900);
   --lr-color-muted: var(--lr-neutral-600);
   --lr-color-border: var(--lr-neutral-border);
@@ -52,13 +58,15 @@
   --lr-color-dark: var(--lr-graphite-950);
   --lr-color-on-dark: var(--lr-white);
   --lr-color-muted-on-dark: var(--lr-neutral-200);
-  --lr-color-focus: var(--lr-bronze-700);
+  --lr-color-focus: var(--lr-brand-blue);
   --lr-color-focus-on-dark: var(--lr-gold-400);
   --lr-color-danger: var(--lr-red-700);
   --lr-color-danger-soft: var(--lr-red-50);
   --lr-color-success: var(--lr-green-700);
   --lr-color-success-soft: var(--lr-green-50);
-  --lr-color-overlay: rgb(25 30 35 / 64%);
+  --lr-color-overlay: rgb(12 35 75 / 75%);
+  --lr-color-link: var(--lr-brand-blue);
+  --lr-color-link-hover: var(--lr-brand-blue-hover);
   --lr-photo-gradient: linear-gradient(
     180deg,
     transparent 16%,

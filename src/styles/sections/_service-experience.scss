@@ -305,52 +305,77 @@
 }
 #hop-landing .lr-workshop-gallery__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 20px 12px;
-  margin-bottom: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas:
+    "diagnostics diagnostics"
+    "soldering cooling"
+    "reception reception"
+    "testing parts";
+  grid-template-rows: 220px 170px 180px 170px;
+  gap: 12px;
 }
 #hop-landing .lr-workshop-gallery__item {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  isolation: isolate;
   min-width: 0;
   min-height: 0;
   margin: 0;
   border-radius: var(--lr-radius);
   overflow: hidden;
-  aspect-ratio: 16 / 10;
 }
-#hop-landing .lr-workshop-gallery__item--lead,
-#hop-landing .lr-workshop-gallery__item--equipment,
-#hop-landing .lr-workshop-gallery__item--wide {
-  grid-column: span 2;
+#hop-landing .lr-workshop-gallery__item--diagnostics {
+  grid-area: diagnostics;
+}
+#hop-landing .lr-workshop-gallery__item--soldering {
+  grid-area: soldering;
+}
+#hop-landing .lr-workshop-gallery__item--cooling {
+  grid-area: cooling;
+}
+#hop-landing .lr-workshop-gallery__item--reception {
+  grid-area: reception;
+}
+#hop-landing .lr-workshop-gallery__item--testing {
+  grid-area: testing;
+}
+#hop-landing .lr-workshop-gallery__item--parts {
+  grid-area: parts;
 }
 #hop-landing .lr-workshop-gallery__image {
   width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
-  border-radius: var(--lr-radius);
+  object-position: center;
 }
-#hop-landing .lr-workshop-gallery__item--lead img {
-  aspect-ratio: 6 / 5;
-  object-position: 50% 45%;
-}
-#hop-landing .lr-workshop-gallery__item--equipment img,
-#hop-landing .lr-workshop-gallery__image--wide {
-  aspect-ratio: 16 / 9;
+#hop-landing .lr-workshop-gallery__item::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: min(70%, 160px);
+  background: linear-gradient(
+    180deg,
+    transparent,
+    color-mix(in srgb, var(--lr-color-dark) 84%, transparent) 65%,
+    color-mix(in srgb, var(--lr-color-dark) 94%, transparent)
+  );
+  pointer-events: none;
 }
 #hop-landing .lr-workshop-gallery__item figcaption {
   position: absolute;
-  inset: auto 0 0;
+  z-index: 1;
+  inset: auto 16px 16px;
   max-width: none;
   margin: 0;
-  padding: 16px;
-  background: color-mix(in srgb, var(--lr-color-dark) 84%, transparent);
+  padding: 0;
+  background: transparent;
   color: var(--lr-color-on-dark);
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.4;
   text-align: left;
+}
+#hop-landing .lr-workshop-gallery__item--diagnostics figcaption {
+  font-size: 20px;
 }
 #hop-landing .lr-workshop-gallery__grid + p {
   max-width: 76ch;
@@ -373,20 +398,20 @@
 @media (min-width: 768px) {
   #hop-landing .lr-workshop-gallery__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: auto;
+    grid-template-areas:
+      "diagnostics diagnostics"
+      "soldering cooling"
+      "reception testing"
+      "parts parts";
+    grid-template-rows: 280px 210px 210px 180px;
     gap: 16px;
   }
-  #hop-landing .lr-workshop-gallery__item {
-    display: grid;
-    grid-template-rows: minmax(0, 1fr);
+  #hop-landing .lr-workshop-gallery__item figcaption {
+    inset: auto 20px 20px;
+    font-size: 16px;
   }
-  #hop-landing .lr-workshop-gallery__item--lead {
-    grid-row: span 2;
-  }
-  #hop-landing .lr-workshop-gallery__item img {
-    height: 100%;
-    min-height: 0;
-    aspect-ratio: auto;
+  #hop-landing .lr-workshop-gallery__item--diagnostics figcaption {
+    font-size: 24px;
   }
   #hop-landing .lr-lab .lr-section-heading {
     margin-bottom: 40px;
@@ -409,7 +434,11 @@
 @media (min-width: 1024px) {
   #hop-landing .lr-workshop-gallery__grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: auto;
+    grid-template-areas:
+      "diagnostics diagnostics soldering"
+      "diagnostics diagnostics cooling"
+      "reception testing parts";
+    grid-template-rows: repeat(3, clamp(180px, 16vw, 230px));
     gap: 20px;
   }
   #hop-landing .lr-lab__stage {

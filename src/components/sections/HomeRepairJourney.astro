@@ -1,0 +1,116 @@
+---
+import LeadButton from "../ui/LeadButton.astro";
+import copy from "../../data/laptop-service.json";
+
+const steps = [
+  {
+    title: copy.process.items[0].title,
+    text: "Достаточно назвать модель и рассказать, что случилось. Выберите мастерскую, выезд на дом, мобильную мастерскую или курьера. Техническую причину выяснит инженер.",
+    image: "/media/workshop-v4-reception-1280.webp",
+    caption: "Обращение начинается с вашей ситуации",
+    detail: "Модель и симптомы",
+  },
+  {
+    title: copy.process.items[1].title,
+    text: "Проверим ноутбук и объясним причину неисправности. Обычная диагностика в мастерской бесплатна, даже если вы откажетесь от ремонта.",
+    image: "/media/workshop-v4-diagnostics-1280.webp",
+    caption: "Сначала выясняем причину неисправности",
+    detail: "Диагностика в мастерской: 0 ₽",
+  },
+  {
+    title: copy.process.items[2].title,
+    text: "Обсудим работы, детали, полную стоимость и срок. К ремонту приступим с вашего согласия. Если потребуется доступ к системе или файлам, согласуем его отдельно.",
+    image: "/media/workshop-v4-soldering-1280.webp",
+    caption: "Работаем после согласования сметы",
+    detail: "Сначала смета, затем ремонт",
+  },
+  {
+    title: copy.process.items[3].title,
+    text: "Проверьте результат вместе со специалистом до оплаты. Вы получите чек, акт и гарантийный талон. Гарантия на ремонт и установленные запчасти составляет 1 год.",
+    image: "/media/workshop-v4-testing-1280.webp",
+    caption: "Проверяем результат вместе с вами",
+    detail: "Проверка до оплаты. Гарантия 1 год",
+  },
+];
+---
+
+<section
+  id="lr-process"
+  class="lr-section lr-repair-journey"
+  aria-labelledby="lr-journey-title"
+  data-lr-repair-journey
+  data-sc-act="flow"
+>
+  <div class="lr-container">
+    <div class="lr-repair-journey__heading">
+      <p class="lr-repair-journey__kicker">Понятно на каждом этапе</p>
+      <h2 id="lr-journey-title">
+        Вам не нужно разбираться в ремонте.<br />Нужно понимать, что происходит.
+      </h2>
+      <p>
+        От первого обращения до проверки ноутбука. Без работ, которые вы не
+        согласовали.
+      </p>
+    </div>
+    <div class="lr-repair-journey__layout">
+      <div class="lr-repair-journey__visual">
+        <div class="lr-repair-journey__photos" aria-hidden="true">
+          {
+            steps.map((step, index) => (
+              <img
+                class:list={[
+                  "lr-repair-journey__photo",
+                  { "lr-repair-journey__photo--first": index === 0 },
+                ]}
+                src={step.image}
+                width="1280"
+                height="720"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                data-lr-journey-photo={index}
+              />
+            ))
+          }
+          <div class="lr-repair-journey__aperture" aria-hidden="true"></div>
+        </div>
+        <p class="lr-repair-journey__caption" data-lr-journey-caption>
+          {steps[0].caption}
+        </p>
+        <p class="lr-repair-journey__illustration">
+          Иллюстрации этапов ремонта
+        </p>
+        <LeadButton label="Узнать стоимость ремонта" source="repair-journey" />
+      </div>
+      <ol class="lr-repair-journey__steps" role="list">
+        {
+          steps.map((step, index) => (
+            <li
+              class="lr-repair-journey__step"
+              data-lr-journey-step
+              data-step-caption={step.caption}
+            >
+              <span class="lr-repair-journey__node" aria-hidden="true">
+                {index + 1}
+              </span>
+              <div>
+                <h3>{step.title}</h3>
+                <p>{step.text}</p>
+                <strong class="lr-repair-journey__detail">{step.detail}</strong>
+                <img
+                  class="lr-repair-journey__inline-photo"
+                  src={step.image.replace("1280", "640")}
+                  width="640"
+                  height="360"
+                  alt={`Иллюстрация: ${step.caption.toLocaleLowerCase("ru-RU")}`}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+</section>

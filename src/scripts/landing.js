@@ -428,17 +428,30 @@ export function validateVisitFields(form, editedField = null) {
 
 export function initializeHeroVideo(video) {
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  let visible = true;
   video.controls = false;
   video.muted = true;
   video.loop = true;
   video.playsInline = true;
   const updateVideo = () => {
-    video.autoplay = !reducedMotion.matches;
-    if (reducedMotion.matches) video.pause();
+    video.autoplay =
+      !reducedMotion.matches &&
+      visible &&
+      (typeof document === "undefined" ||
+        document.visibilityState !== "hidden");
+    if (!video.autoplay) video.pause();
     else video.play().catch(() => {});
   };
   updateVideo();
   reducedMotion.addEventListener("change", updateVideo);
+  if (typeof IntersectionObserver !== "undefined") {
+    new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      updateVideo();
+    }).observe(video);
+  }
+  if (typeof document !== "undefined")
+    document.addEventListener("visibilitychange", updateVideo);
 }
 
 export function initializeVideoPlayer(player) {
@@ -493,6 +506,7 @@ export function initializeLanding() {
   if (!root || root.dataset.lrInitialized === "true") return;
   root.dataset.lrInitialized = "true";
   initializeDesignConcept(root);
+  initializeHomeScroll(root);
   initializePhoneMask(root);
   root
     .querySelectorAll("[data-lr-review-slider]")
@@ -836,6 +850,55 @@ export function initializeLanding() {
     observer.observe(root.querySelector("[data-lr-hero-cta]"));
     observer.observe(root.querySelector("#lr-contact"));
   }
+}
+
+export function initializeHomeScroll(root) {
+  const hero = root.querySelector("[data-lr-depth-scene]");
+  const journey = root.querySelector("[data-lr-repair-journey]");
+  if (!hero || !journey) return;
+  const steps = Array.from(journey.querySelectorAll("[data-lr-journey-step]"));
+  const photos = Array.from(
+    journey.querySelectorAll("[data-lr-journey-photo]"),
+  );
+  const caption = journey.querySelector("[data-lr-journey-caption]");
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  let frame;
+  let current = -1;
+  const update = () => {
+    frame = undefined;
+    const height = window.innerHeight;
+    const heroBounds = hero.getBoundingClientRect();
+    if (heroBounds.bottom > 0 && heroBounds.top < height) {
+      const progress = reducedMotion.matches
+        ? 0
+        : Math.max(0, Math.min(1, -heroBounds.top / heroBounds.height));
+      hero.style.setProperty("--lr-depth", progress.toFixed(3));
+    }
+    const bounds = journey.getBoundingClientRect();
+    if (bounds.bottom <= 0 || bounds.top >= height) return;
+    let index = 0;
+    steps.forEach((step, i) => {
+      if (step.getBoundingClientRect().top < height * 0.6) index = i;
+    });
+    if (index === current) return;
+    current = index;
+    journey.dataset.lrActiveStep = String(index);
+    steps.forEach((step, i) => {
+      step.dataset.lrCurrent = String(i === index);
+    });
+    photos.forEach((photo, i) => {
+      photo.dataset.lrCurrent = String(i === index);
+    });
+    // This caption supplements the complete static steps; it is not a live region.
+    caption.textContent = steps[index].dataset.stepCaption;
+  };
+  const schedule = () => {
+    if (!frame) frame = requestAnimationFrame(update);
+  };
+  window.addEventListener("scroll", schedule, { passive: true });
+  window.addEventListener("resize", schedule, { passive: true });
+  reducedMotion.addEventListener("change", schedule);
+  update();
 }
 if (typeof document !== "undefined") {
   if (document.readyState === "loading")
