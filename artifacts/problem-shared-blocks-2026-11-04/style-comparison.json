@@ -1,0 +1,37 @@
+[
+  {
+    "width": 360,
+    "homeWidth": 360,
+    "problemOverflow": false,
+    "homeOverflow": false,
+    "differences": []
+  },
+  {
+    "width": 390,
+    "homeWidth": 390,
+    "problemOverflow": false,
+    "homeOverflow": false,
+    "differences": []
+  },
+  {
+    "width": 768,
+    "homeWidth": 768,
+    "problemOverflow": false,
+    "homeOverflow": false,
+    "differences": []
+  },
+  {
+    "width": 1280,
+    "homeWidth": 1280,
+    "problemOverflow": false,
+    "homeOverflow": false,
+    "differences": []
+  },
+  {
+    "width": 1440,
+    "homeWidth": 1440,
+    "problemOverflow": false,
+    "homeOverflow": false,
+    "differences": []
+  }
+]

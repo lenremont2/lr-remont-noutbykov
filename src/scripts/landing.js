@@ -1268,7 +1268,7 @@ export function initializeLanding() {
 export function initializeHomeScroll(root) {
   const hero = root.querySelector("[data-lr-depth-scene]");
   const journey = root.querySelector("[data-lr-repair-journey]");
-  if (!hero || !journey) return;
+  if (!journey) return;
   const steps = Array.from(journey.querySelectorAll("[data-lr-journey-step]"));
   const photos = Array.from(
     journey.querySelectorAll("[data-lr-journey-photo]"),
@@ -1280,12 +1280,14 @@ export function initializeHomeScroll(root) {
   const update = () => {
     frame = undefined;
     const height = window.innerHeight;
-    const heroBounds = hero.getBoundingClientRect();
-    if (heroBounds.bottom > 0 && heroBounds.top < height) {
-      const progress = reducedMotion.matches
-        ? 0
-        : Math.max(0, Math.min(1, -heroBounds.top / heroBounds.height));
-      hero.style.setProperty("--lr-depth", progress.toFixed(3));
+    if (hero) {
+      const heroBounds = hero.getBoundingClientRect();
+      if (heroBounds.bottom > 0 && heroBounds.top < height) {
+        const progress = reducedMotion.matches
+          ? 0
+          : Math.max(0, Math.min(1, -heroBounds.top / heroBounds.height));
+        hero.style.setProperty("--lr-depth", progress.toFixed(3));
+      }
     }
     const bounds = journey.getBoundingClientRect();
     if (bounds.bottom <= 0 || bounds.top >= height) return;
