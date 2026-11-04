@@ -1,0 +1,21 @@
+{
+  "taskId":"card-032",
+  "organizationId":"62f37d43773ff45350070e0d",
+  "reviewUrlBase":"https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_moskovskom_prospekte_212/reviews/#comment",
+  "publishedCount":3,
+  "rejectedCount":8,
+  "replyCount":3,
+  "records":[
+    {"id":"63da226e4bc4f5703f060555","section":"published","author":"Виктория Драгунова","date":"2023-02-01","rating":null,"topic":"laptop_repair","summary":"После ремонта ноутбук снова включается.","replyId":"645386e809ea0fa5ca0ab27c","mediaCount":0},
+    {"id":"635cc80ac4ac11f4bb0b76a9","section":"published","author":"Эвелина","date":"2022-10-29","rating":5,"topic":"unspecified_repair","summary":"Положительная оценка ремонта без указания устройства; ответ компании устройство не уточняет.","replyId":"645386b93676699a160c9948","mediaCount":0},
+    {"id":"6359115ecc932ae78405598c","section":"published","author":"Ирина Кокорина","date":"2022-10-26","rating":5,"topic":"washing_machine","summary":"Ремонт стиральной машины после ожидания детали.","replyId":"645386a3adcf9e01170d70e7","mediaCount":0},
+    {"id":"63d3d22358be7b22a2057111","section":"rejected","author":"Вероника","date":"2023-01-27","rating":null,"topic":"robot_vacuum","summary":"Положительная оценка ремонта робота-пылесоса.","mediaCount":0},
+    {"id":"63c5456a212a48246b023c8e","section":"rejected","author":"Екатерина","date":"2023-01-16","rating":null,"topic":"television","summary":"Ремонт телевизора с неисправной материнской платой.","mediaCount":0},
+    {"id":"63b6f0d7d6e488114a0b795a","section":"rejected","author":"Елена Мячина","date":"2023-01-05","rating":null,"topic":"unspecified_electronics","summary":"Положительная оценка ремонта электроники без уточнения устройства; ответа и фото нет.","mediaCount":0},
+    {"id":"63a441d1a22a31f0ab0e40ba","section":"rejected","author":"Амир С","date":"2022-12-22","rating":null,"topic":"furniture","summary":"Перетяжка дачного дивана.","mediaCount":0},
+    {"id":"6395809cc4da7338f80062f5","section":"rejected","author":"Кристина","date":"2022-12-11","rating":5,"topic":"playstation_4","summary":"Ремонт игровой приставки PlayStation 4.","mediaCount":0},
+    {"id":"6385a6ab4ca86eb109020dc5","section":"rejected","author":"Виктория Драгунова","date":"2022-11-29","rating":null,"topic":"coffee_machine","summary":"Ремонт кофемашины.","mediaCount":0},
+    {"id":"636cf0397885ea906a0cea9e","section":"rejected","author":"Виктория Драгунова","date":"2022-11-10","rating":null,"topic":"dishwasher","summary":"Ремонт посудомоечной машины.","mediaCount":0},
+    {"id":"636112df4e8d4329790323d4","section":"rejected","author":"Кристина","date":"2022-11-01","rating":5,"topic":"unspecified_household_appliance","summary":"Общая оценка нескольких ремонтов бытовой техники; без модели, ответа и фото.","mediaCount":0}
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "width": 320,
+    "overflow": false,
+    "columns": 12,
+    "businessColumns": 1,
+    "documents": "4 loaded; Escape, close and focus pass",
+    "reviews": 26,
+    "faq": 5,
+    "seoCentered": true
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "columns": 12,
+    "businessColumns": 1,
+    "documents": "4 loaded; Escape, close and focus pass",
+    "reviews": 26,
+    "faq": 5,
+    "seoCentered": true
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "columns": 12,
+    "businessColumns": 2,
+    "documents": "4 loaded; Escape, close and focus pass",
+    "reviews": 26,
+    "faq": 5,
+    "seoCentered": true
+  },
+  {
+    "width": 1024,
+    "overflow": false,
+    "columns": 3,
+    "businessColumns": 2,
+    "documents": "4 loaded; Escape, close and focus pass",
+    "reviews": 26,
+    "faq": 5,
+    "seoCentered": true
+  },
+  {
+    "width": 1435,
+    "overflow": false,
+    "columns": 3,
+    "businessColumns": 2,
+    "documents": "4 loaded; Escape, close and focus pass",
+    "reviews": 26,
+    "faq": 5,
+    "seoCentered": true
+  }
+]

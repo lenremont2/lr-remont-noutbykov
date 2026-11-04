@@ -1,9 +1,11 @@
 ---
 import copy from "../../data/laptop-service.json";
+import home from "../../data/home-copy.json";
 import LeadButton from "../ui/LeadButton.astro";
 import QuickContacts from "./QuickContacts.astro";
 import type { BrandPage } from "../../data/service-pages";
 interface Props {
+  variant?: "default" | "home";
   imageWidth?: number;
   imageHeight?: number;
   brand?: Pick<
@@ -11,102 +13,196 @@ interface Props {
     "h1" | "lead" | "label" | "heroImage" | "repairTimeNote"
   >;
 }
-const { brand, imageWidth = 768, imageHeight = 1024 } = Astro.props;
+const {
+  brand,
+  variant = "default",
+  imageWidth = 768,
+  imageHeight = 1024,
+} = Astro.props;
 const usesRepairIllustration =
   brand?.heroImage === "/media/laptop-engineer-hero.webp";
 const c = copy.hero.fields;
 const [repairLabel, repairDuration] = c["Срок ремонта"].split(" всего за ");
 const facts = [
-  "Диагностика ноутбука — 0 ₽ в мастерской",
-  "Восстанавливаем платы ноутбуков",
+  "Стоимость согласуем до ремонта",
+  "Оплата после вашей проверки",
   "Гарантия на ремонт — 1 год",
-  "Проверяете ноутбук до оплаты",
+];
+const [homeLead, homeProtection] = home.hero.lead.split(/(?=Называем)/);
+const bulletIcons = [
+  "M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z",
+  "M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z",
+  "M2 4.75C2 3.784 2.784 3 3.75 3h4.836c.464 0 .909.184 1.237.513l1.414 1.414a.25.25 0 00.177.073h4.836c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0116.25 17H3.75A1.75 1.75 0 012 15.25V4.75z",
+  "M16.403 12.652a3 3 0 000-5.304 3 3 0 00-3.75-3.751 3 3 0 00-5.305 0 3 3 0 00-3.751 3.75 3 3 0 000 5.305 3 3 0 003.75 3.751 3 3 0 005.305 0 3 3 0 003.751-3.75zm-2.546-4.46a.75.75 0 00-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z",
+  "M5.5 3A2.5 2.5 0 003 5.5v2.879a2.5 2.5 0 00.732 1.767l6.5 6.5a2.5 2.5 0 003.536 0l2.878-2.878a2.5 2.5 0 000-3.536l-6.5-6.5A2.5 2.5 0 008.38 3H5.5zM6 7a1 1 0 100-2 1 1 0 000 2z",
 ];
 ---
 
 {
-  !brand ? (
+  !brand || variant === "home" ? (
     <section
       id="lr-hero"
-      class="lr-hero lr-section lr-hero--home"
+      class={`lr-hero lr-section lr-hero--reference ${brand ? "lr-hero--brand-reference" : "lr-hero--home"}`}
       aria-labelledby="lr-hero-title"
-      data-lr-depth-scene
       data-sc-act="flow"
     >
-      <div class="lr-container lr-hero__grid">
-        <figure class="lr-hero__media">
-          <div class="lr-hero__backplane" aria-hidden="true" />
-          <div class="lr-hero__film">
-            <video
-              class="lr-hero__video"
-              autoplay
-              loop
-              muted
-              data-lr-hero-video
-              playsinline
-              preload="metadata"
-              width="480"
-              height="640"
-              poster="/media/mobile-lab-exterior.webp"
-              aria-label="Мобильная мастерская Ленремонта — ремонт ноутбуков"
-            >
-              <source src="/media/notebook-auto.mp4" type="video/mp4" />
-              Мобильная мастерская Ленремонта — ремонт ноутбуков.
-            </video>
-          </div>
-          <figcaption class="lr-hero__scene-note">
-            <span class="lr-hero__scene-mark" aria-hidden="true">
-              ✓
-            </span>
-            <span>
-              <strong>Сначала согласуем.</strong>Затем ремонтируем.
-            </span>
-          </figcaption>
-        </figure>
-        <div class="lr-hero__copy">
-          <h1 class="lr-hero__title" id="lr-hero-title">
-            <span class="lr-hero__title-message">
-              Ремонт ноутбуков на дому или в сервисном центре
-            </span>
-            <span class="lr-hero__title-location">
-              в Санкт-Петербурге и Ленинградской области
-            </span>
+      <div class="lr-hero__reference">
+        <div class="lr-hero__stage">
+          {brand ? (
+            <div class="lr-hero__film">
+              <img
+                class="lr-hero__stage-photo"
+                src={brand.heroImage}
+                alt={
+                  usesRepairIllustration
+                    ? "Иллюстрация диагностики ноутбука инженером"
+                    : `Ноутбук ${brand.label} на рабочем столе для диагностики`
+                }
+                width={usesRepairIllustration ? 580 : imageWidth}
+                height={usesRepairIllustration ? 384 : imageHeight}
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+          ) : (
+            <>
+              <div class="lr-hero__film">
+                <video
+                  class="lr-hero__stage-video"
+                  autoplay
+                  loop
+                  muted
+                  data-lr-hero-video
+                  playsinline
+                  preload="auto"
+                  width="480"
+                  height="640"
+                  poster="/media/notebook-auto-poster.webp"
+                  aria-label="Мобильная мастерская Ленремонта — ремонт ноутбуков"
+                >
+                  <source
+                    src="/media/notebook-auto-hero.mp4"
+                    type="video/mp4"
+                  />
+                  Мобильная мастерская Ленремонта — ремонт ноутбуков.
+                </video>
+                <img
+                  class="lr-hero__video-preview"
+                  data-lr-hero-preview
+                  src="/media/notebook-auto-poster.webp"
+                  alt=""
+                  width="480"
+                  height="640"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+                <button
+                  class="lr-hero__video-play"
+                  type="button"
+                  data-lr-hero-play
+                  hidden
+                  aria-label="Запустить видео мобильной мастерской"
+                >
+                  ▶ Смотреть видео
+                </button>
+                <p class="lr-hero__scene-note">
+                  <span class="lr-hero__scene-mark" aria-hidden="true">
+                    ✓
+                  </span>
+                  <span>
+                    <strong>Сначала согласуем.</strong>Затем ремонтируем.
+                  </span>
+                </p>
+              </div>
+            </>
+          )}
+        </div>
+        <div class="lr-hero__reference-copy">
+          <h1 class="lr-hero__seo" id="lr-hero-title">
+            {brand?.h1 ??
+              "Ремонт ноутбуков на дому или в сервисном центре в Санкт-Петербурге и ЛО"}
           </h1>
-          <p class="lr-lead lr-hero__lead">
-            <strong class="lr-hero__diagnostics">
-              Обычная диагностика в мастерской — бесплатно, даже при отказе от
-              ремонта.
-            </strong>
-            Стоимость согласуем до начала работ.
+          <h2 class="lr-hero__offer">
+            {brand ? `Ремонт ноутбуков ${brand.label}` : home.hero.title} —
+            диагностика <span class="lr-hero__highlight">бесплатно (0 ₽)</span>{" "}
+            даже при
+            {brand ? "отказе от ремонта" : "отказе"}
+          </h2>
+          <p class="lr-hero__reference-lead">
+            {brand ? (
+              brand.lead
+            ) : (
+              <>
+                {homeLead}
+                <strong>{homeProtection}</strong>
+              </>
+            )}
           </p>
-          <div class="lr-actions" data-lr-hero-cta>
+          <ul class="lr-hero__benefits" aria-label="Условия ремонта">
+            {home.hero.bullets.map((fact, index) => (
+              <li
+                class:list={[
+                  "lr-hero__benefit",
+                  { "lr-hero__benefit--bonus": index === 4 },
+                ]}
+              >
+                {index === 4 ? (
+                  <>
+                    <span class="lr-hero__benefit-icon" aria-hidden="true">
+                      <svg viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                          d={bulletIcons[index]}
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                    <div class="lr-hero__bonus-copy">
+                      <strong>{fact.title}</strong> <span>{fact.text}</span>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div class="lr-hero__benefit-top">
+                      <span class="lr-hero__benefit-icon" aria-hidden="true">
+                        <svg viewBox="0 0 20 20" fill="currentColor">
+                          <path
+                            d={bulletIcons[index]}
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                      <strong>{fact.title}</strong>
+                    </div>
+                    <span class="lr-hero__benefit-description">
+                      {fact.text}
+                    </span>
+                  </>
+                )}
+              </li>
+            ))}
+          </ul>
+          <div class="lr-hero__cta" data-lr-hero-cta>
             <a
-              class="lr-button"
+              class="lr-button lr-hero__primary"
               href="#lr-quiz"
               data-lr-quiz-open
               aria-controls="lr-quiz-modal"
               aria-haspopup="dialog"
             >
-              {c["Основной CTA"]}
+              Узнать стоимость
             </a>
-            <LeadButton label="Оставить заявку" source="hero-request" text />
+            <LeadButton
+              label="Оставить заявку"
+              source={brand ? `brand:${brand.label}` : "hero-request"}
+              class="lr-hero__secondary"
+            />
           </div>
-          <a class="lr-hero__route-link" href="#lr-formats">
-            В мастерской, у вас дома или с доставкой
-          </a>
-          <ul
-            class="lr-hero__facts"
-            aria-label="Преимущества ремонта в Ленремонте"
-          >
-            {facts.map((fact) => (
-              <li>
-                <span class="lr-fact-mark" aria-hidden="true" />
-                <h3>{fact}</h3>
-              </li>
-            ))}
-          </ul>
         </div>
-        <QuickContacts />
+        <div class="lr-hero__contacts">
+          <QuickContacts messengerText={home.hero.messengerText} />
+        </div>
       </div>
     </section>
   ) : (
@@ -122,8 +218,7 @@ const facts = [
           </h1>
           <p class="lr-lead lr-hero__lead">{brand.lead}</p>
           <p class="lr-caption">
-            Обычная диагностика в мастерской — бесплатно, даже при отказе от
-            ремонта.
+            Диагностика — бесплатно, даже при отказе от ремонта.
           </p>
           <div class="lr-actions" data-lr-hero-cta>
             <LeadButton

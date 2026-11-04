@@ -1,15 +1,25 @@
 ---
 import copy from "../../data/laptop-service.json";
+import home from "../../data/home-copy.json";
 import SectionHeading from "../ui/SectionHeading.astro";
 import LeadButton from "../ui/LeadButton.astro";
 import { pagePath } from "../../data/service-pages";
 interface Props {
   compact?: boolean;
+  grouped?: boolean;
+  extraFaults?: boolean;
   title?: string;
   lead?: string;
   items?: { title: string; image: string; imageAlt: string; href: string }[];
 }
-const { compact = false, title, lead, items } = Astro.props;
+const {
+  compact = false,
+  grouped = false,
+  extraFaults = false,
+  title,
+  lead,
+  items,
+} = Astro.props;
 const c = copy.symptoms;
 const prices = copy.prices.tables.flat();
 const priceByWork = (
@@ -26,7 +36,7 @@ const cards =
     ...item,
     href: pagePath(item),
   }));
-const serviceGroups = [
+const defaultServiceGroups = [
   {
     title: "Поломка",
     image: "/media/failure-no-power.webp",
@@ -51,7 +61,60 @@ const serviceGroups = [
     detail: "Шум, нагрев и выключения под нагрузкой",
     href: "/noutbuk-peregrevaetsya.htm",
   },
+  {
+    title: "Восстановление данных",
+    image: "/media/failure-software.webp",
+    detail: "Файлы недоступны или удалены",
+    href: "#lr-contact",
+  },
 ];
+interface ServiceGroup {
+  title: string;
+  image: string;
+  detail: string;
+  href: string;
+  price?: string;
+  tags?: string[];
+  note?: string;
+  badge?: string;
+}
+const serviceGroups: ServiceGroup[] = grouped
+  ? [
+      ...home.symptoms.items.map((item) => ({ ...item, detail: item.text })),
+      ...cards
+        .filter(
+          (item) =>
+            !home.symptoms.items.some((group) => group.href === item.href),
+        )
+        .map((item) => ({
+          title: item.title,
+          image: item.image,
+          href: item.href,
+          detail: "",
+          price: priceByWork(
+            "priceWork" in item ? (item.priceWork as string | null) : null,
+          ),
+        })),
+      ...(extraFaults
+        ? [
+            {
+              title: "Быстро разряжается или вздулся аккумулятор",
+              image: "/media/mac-symptom-battery.webp",
+              href: "/noutbuk-ne-zaryazhaetsya.htm",
+              detail: "",
+              price: priceByWork("Установка нового аккумулятора"),
+            },
+            {
+              title: "Пропадает Wi-Fi и Bluetooth",
+              image: "/media/laptop-board-diagnostics.webp",
+              href: "/noutbuk-tormozit-ne-zagruzhaetsya.htm",
+              detail: "",
+              price: "Бесплатная диагностика",
+            },
+          ]
+        : []),
+    ]
+  : defaultServiceGroups;
 const modernFaults = [
   {
     category: "Питание и порты",
@@ -154,7 +217,11 @@ const modernFaults = [
 
 <section
   id="lr-symptoms"
-  class:list={["lr-section lr-symptoms", { "lr-symptoms--compact": compact }]}
+  data-lr-swipe-slider={grouped || undefined}
+  class:list={[
+    "lr-section lr-symptoms",
+    { "lr-symptoms--compact": compact, "lr-symptoms--grouped": grouped },
+  ]}
 >
   <div class="lr-container">
     <SectionHeading
@@ -163,15 +230,31 @@ const modernFaults = [
     />
     <div class="lr-symptoms__catalog">
       <nav
-        class="lr-symptoms__groups"
+        class:list={["lr-symptoms__groups", { "lr-swipe-track": grouped }]}
+        data-lr-swipe-track={grouped || undefined}
+        tabindex={grouped ? "0" : undefined}
+        aria-roledescription={grouped ? "карусель" : undefined}
         aria-label="Направления помощи с ноутбуком"
         hidden={Boolean(items)}
       >
         {
           !items &&
             serviceGroups.map((group) => (
-              <a class="lr-symptoms__group" href={group.href}>
-                {compact && (
+              <a
+                class:list={[
+                  "lr-symptoms__group",
+                  { "lr-symptoms__group--copy": grouped },
+                ]}
+                href={group.href}
+                data-lr-lead-open={group.href === "#lr-contact" || undefined}
+                data-symptom={
+                  group.href === "#lr-contact" ? group.title : undefined
+                }
+                data-source={
+                  group.href === "#lr-contact" ? "data-recovery" : undefined
+                }
+              >
+                {compact && !grouped && (
                   <img
                     src={group.image}
                     alt=""
@@ -181,41 +264,67 @@ const modernFaults = [
                     decoding="async"
                   />
                 )}
-                <strong>{group.title}</strong>
-                {!compact && <span>{group.detail}</span>}
+                {grouped && group.price ? (
+                  <>
+                    <div class="lr-symptoms__group-media">
+                      <img
+                        src={group.image}
+                        alt=""
+                        width="768"
+                        height="512"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div class="lr-symptoms__group-overlay">
+                        <strong>{group.title}</strong>
+                        <b>{group.price}</b>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <strong>{group.title}</strong>
+                    {!compact && <span>{group.detail}</span>}
+                  </>
+                )}
               </a>
             ))
         }
       </nav>
-      <div class="lr-symptoms__grid">
-        {
-          cards.map((item) => (
-            <a class="lr-symptom" href={item.href}>
-              <img
-                class="lr-symptom__image"
-                src={item.image}
-                alt={item.imageAlt}
-                width="768"
-                height="512"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="lr-symptom__body">
-                <h3>{item.title}</h3>
-                {!compact && (
-                  <p class="lr-symptom__price">
-                    {priceByWork(
-                      "priceWork" in item
-                        ? (item.priceWork as string | null)
-                        : null,
+      {
+        !grouped && (
+          <details class="lr-symptoms__all" open>
+            <summary>Все неисправности ноутбука</summary>
+            <div class="lr-symptoms__grid">
+              {cards.map((item) => (
+                <a class="lr-symptom" href={item.href}>
+                  <img
+                    class="lr-symptom__image"
+                    src={item.image}
+                    alt={item.imageAlt}
+                    width="768"
+                    height="512"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div class="lr-symptom__body">
+                    <h3>{item.title}</h3>
+                    {!compact && (
+                      <p class="lr-symptom__price">
+                        {priceByWork(
+                          "priceWork" in item
+                            ? (item.priceWork as string | null)
+                            : null,
+                        )}
+                      </p>
                     )}
-                  </p>
-                )}
-              </div>
-            </a>
-          ))
-        }
-      </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </details>
+        )
+      }
     </div>
     {
       !compact && (
@@ -240,10 +349,7 @@ const modernFaults = [
                 </div>
                 <div class="lr-symptoms__modern-footer">
                   <span class="lr-symptoms__modern-price">
-                    {priceByWork(
-                      fault.priceWork,
-                      "Диагностика в мастерской — 0 ₽",
-                    )}
+                    {priceByWork(fault.priceWork, "Диагностика — 0 ₽")}
                   </span>
                   <span class="lr-symptoms__modern-link">Подробнее →</span>
                 </div>

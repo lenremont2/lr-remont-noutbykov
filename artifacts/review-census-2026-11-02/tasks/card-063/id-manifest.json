@@ -1,0 +1,15 @@
+{
+  "taskId": "card-063",
+  "urlPrefix": "http://www.yell.ru/spb/com/lenremont_11538956/reviews/?reviewId=",
+  "observedFilter": "Все источники",
+  "reportedTotal": 29,
+  "uniqueCount": 29,
+  "fullBodiesAndRepliesExpanded": true,
+  "reviewAttachments": 0,
+  "yellIds": ["6480755","4921253","4706390","4647572","4600785","4084541","3465624","3461218","3400450"],
+  "zoonImportIds": ["5404806","5397008","5397009","5388440","5388441","5388442","5388443","5388444","5355259","5355260","5355261","5093712","5084358","5063645","5063646","5063647","4360917","4175107","4175112","4175115"],
+  "matchedIds": ["4175107","4175115"],
+  "undeterminedDeviceIds": ["5388440","4706390","3400450"],
+  "endpointLastId": "4175115",
+  "sourceNote": "Источники подтверждены явным фильтром Zoon.ru (20); исходных URL/ID Zoon не опубликовано. Все ID выше принадлежат Yell."
+}

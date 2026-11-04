@@ -29,6 +29,8 @@ for (const image of quizImages) {
 }
 for (const task of [
   "Физическая поломка",
+  "Залит водой, чаем или кофе",
+  "Восстановление данных",
   "Программы и настройка",
   "Чистка и перегрев",
   "Ускорение и апгрейд",
@@ -49,6 +51,15 @@ assert.deepEqual(formats, [
   "consultation",
 ]);
 assert.ok(section.includes("К дому или работе"));
+assert.match(section, /label[^>]*>Когда нужна помощь\?/);
+assert.match(section, /name="request_timing"/);
+for (const timing of [
+  "Срочно сегодня (за 1–2 часа)",
+  "Сегодня вечером или завтра",
+  "Сначала просто узнать точную цену",
+])
+  assert.ok(section.includes(timing), timing);
+assert.ok(section.includes("Заберём и привезём курьером по акту"));
 
 const names = ["device_category", "symptom", "service_format"];
 const answers = [null, null, null];
@@ -88,6 +99,9 @@ const next = control("next");
 const progress = control("progress");
 const error = control("error");
 const navigation = control("navigation");
+const analysis = { hidden: true, querySelector: () => ({ focus() {} }) };
+const finish = control("finish");
+globalThis.matchMedia = () => ({ matches: false });
 const selectors = new Map([
   ["[data-lr-quiz-questions]", questions],
   ["[data-lr-form]", form],
@@ -96,8 +110,13 @@ const selectors = new Map([
   ["[data-lr-quiz-progress]", progress],
   ["[data-lr-quiz-error]", error],
   ["[data-lr-quiz-navigation]", navigation],
+  ["[data-lr-quiz-analysis]", analysis],
+  ["[data-lr-quiz-finish]", finish],
+  ["[data-lr-quiz-summary]", control("summary")],
 ]);
 const quiz = {
+  setAttribute() {},
+  removeAttribute() {},
   querySelectorAll: () => steps,
   querySelector: (selector) => selectors.get(selector),
 };
@@ -115,6 +134,7 @@ assert.ok(error.textContent);
 assert.equal(progress.textContent, "Шаг 1 из 4");
 assert.equal(focused, 0);
 answers[0] = { value: "premium" };
+handlers["questions:keydown"]();
 handlers["questions:change"]();
 assert.equal(error.textContent, "");
 handlers["next:click"]();
@@ -133,6 +153,9 @@ assert.equal(progress.textContent, "Шаг 3 из 4");
 assert.equal(next.textContent, "Перейти к контактам");
 answers[2] = { value: "courier" };
 handlers["next:click"]();
+assert.equal(analysis.hidden, false);
+assert.equal(progress.textContent, "Ответы сохранены");
+handlers["finish:click"]();
 assert.equal(progress.textContent, "Шаг 4 из 4");
 assert.equal(next.hidden, true);
 assert.equal(contextUpdates, 1);
@@ -144,10 +167,43 @@ form.elements.phone = { value: "+7 (921) 234-56-78" };
 handlers["previous:click"]();
 answers[2] = { value: "workshop" };
 handlers["next:click"]();
+handlers["finish:click"]();
 assert.equal(form.elements.service_format.value, "workshop");
 assert.equal(form.elements.phone.value, "+7 (921) 234-56-78");
 handlers["next:click"]();
 assert.equal(contextUpdates, 2);
+handlers["previous:click"]();
+handlers["questions:pointerdown"]();
+const selection = { target: { closest: () => steps[2] } };
+handlers["questions:change"](selection);
+handlers["finish:click"]();
+assert.equal(
+  progress.textContent,
+  "Шаг 4 из 4",
+  "Touch choice advances without Next",
+);
+assert.equal(contextUpdates, 3);
+handlers["questions:change"](selection);
+assert.equal(contextUpdates, 3, "A stale change must not skip another step");
+handlers["previous:click"]();
+handlers["questions:click"]({
+  target: { matches: () => true, checked: true, closest: () => steps[2] },
+});
+handlers["finish:click"]();
+assert.equal(
+  contextUpdates,
+  4,
+  "Tapping the saved answer after Back advances again",
+);
+handlers["previous:click"]();
+handlers["next:click"]();
+assert.equal(analysis.hidden, false);
+handlers["previous:click"]();
+assert.equal(analysis.hidden, true);
+assert.equal(progress.textContent, "Шаг 3 из 4");
+assert.equal(contextUpdates, 4, "Back cancels the pending transition");
+handlers["next:click"]();
+handlers["finish:click"]();
 console.log(
   "Quiz: required answers, back navigation, Enter, context transfer and preserved contact passed.",
 );
@@ -195,7 +251,6 @@ const root = {
   addEventListener: listen("root"),
 };
 let restoredFocus = 0;
-let toggles = 0;
 const trigger = {
   focus: () => {
     restoredFocus += 1;
@@ -222,9 +277,7 @@ const restored = () => {
   assert.equal(home.style.minHeight, "3px");
   assert.equal(form.elements.service_format.value, "workshop");
 };
-initializeQuizModal(root, () => {
-  toggles += 1;
-});
+initializeQuizModal(root);
 open();
 handlers["previous:click"]();
 assert.equal(progress.textContent, "Шаг 3 из 4");
@@ -232,6 +285,7 @@ modalHandlers["close:click"]();
 restored();
 assert.equal(progress.textContent, "Шаг 3 из 4");
 handlers["next:click"]();
+handlers["finish:click"]();
 open();
 let cancelled = false;
 modalHandlers["dialog:cancel"]({
@@ -256,7 +310,6 @@ assert.equal(blockedScroll, true);
 modalHandlers["dialog:click"]({ target: dialog, clientX: 0, clientY: 0 });
 restored();
 assert.equal(restoredFocus, 3);
-assert.equal(toggles, 6);
 const fallbackHandlers = {};
 initializeQuizModal({
   querySelector: (selector) => (selector === "[data-lr-quiz-home]" ? home : {}),
@@ -267,4 +320,43 @@ initializeQuizModal({
 assert.deepEqual(fallbackHandlers, {});
 console.log(
   "Quiz modal: same form and step preserved, button/Escape/backdrop close, focus restored and unsupported-dialog fallback passed.",
+);
+
+// Reuse the controls with the device-category question removed, as on brand pages.
+names.shift();
+answers.shift();
+answers.fill(null);
+steps.pop();
+form.elements.device_category.value = "";
+form.elements.quiz_service = { value: "Ремонт ноутбуков ASUS" };
+initializeRepairQuiz(quiz, () => {});
+assert.equal(progress.textContent, "Шаг 1 из 3");
+handlers["next:click"]();
+assert.ok(error.textContent);
+answers[0] = { value: "Чистка и перегрев" };
+handlers["questions:keydown"]();
+handlers["next:click"]();
+assert.equal(progress.textContent, "Шаг 2 из 3");
+answers[1] = { value: "courier" };
+handlers["previous:click"]();
+assert.equal(answers[0].value, "Чистка и перегрев");
+handlers["next:click"]();
+handlers["next:click"]();
+handlers["finish:click"]();
+assert.equal(progress.textContent, "Шаг 3 из 3");
+assert.equal(form.elements.symptom.value, "Чистка и перегрев");
+assert.equal(form.elements.service_format.value, "courier");
+assert.equal(form.elements.device_category.value, "");
+assert.equal(form.elements.quiz_service.value, "Ремонт ноутбуков ASUS");
+assert.equal(form.elements.phone.value, "+7 (921) 234-56-78");
+handlers["previous:click"]();
+assert.equal(progress.textContent, "Шаг 2 из 3");
+answers[1] = { value: "workshop" };
+handlers["next:click"]();
+handlers["finish:click"]();
+assert.equal(form.elements.service_format.value, "workshop");
+assert.equal(form.elements.quiz_service.value, "Ремонт ноутбуков ASUS");
+assert.equal(form.elements.phone.value, "+7 (921) 234-56-78");
+console.log(
+  "Brand quiz: two required questions, Back, context and preserved contact passed.",
 );

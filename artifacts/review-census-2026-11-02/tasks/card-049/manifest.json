@@ -1,0 +1,23 @@
+{
+  "taskId": "card-049",
+  "sourceUrl": "https://rem-rating.ru/lenremont-otzyvy",
+  "observedAt": "2026-11-02",
+  "reportedTotal": 7,
+  "examinedCount": 7,
+  "confirmedLaptopReviews": 0,
+  "uncertainDeviceReviews": 1,
+  "photos": [],
+  "datePrecision": "month",
+  "ratingOrder": ["price", "quality", "speed"],
+  "items": [
+    {"id": "6617", "author": "Александр", "date": "2026-03", "rating": null, "ratings": [5, 5, 5], "summary": "Положительный отзыв о замене разбитого экрана iPhone и восстановлении влагозащиты.", "classification": "excluded_phone", "url": "https://rem-rating.ru/lenremont-otzyvy#comment-6617", "fullTextRead": true, "attachmentCount": 0, "replyCount": 0, "publishedOriginalSourceUrl": null},
+    {"id": "6611", "author": "Владислав", "date": "2026-03", "rating": null, "ratings": [5, 5, 5], "summary": "Положительно описывает ремонт слива стиральной машины на дому.", "classification": "excluded_washing_machine", "url": "https://rem-rating.ru/lenremont-otzyvy#comment-6611", "fullTextRead": true, "attachmentCount": 0, "replyCount": 0, "publishedOriginalSourceUrl": null},
+    {"id": "6610", "author": "Диана", "date": "2026-03", "rating": null, "ratings": [5, 5, 5], "summary": "Положительно оценивает диагностику и ремонт переставшего морозить холодильника.", "classification": "excluded_refrigerator", "url": "https://rem-rating.ru/lenremont-otzyvy#comment-6610", "fullTextRead": true, "attachmentCount": 0, "replyCount": 0, "publishedOriginalSourceUrl": null},
+    {"id": "6609", "author": "Василиса", "date": "2026-03", "rating": null, "ratings": [5, 5, 5], "summary": "Довольна реставрацией ванны и ценой.", "classification": "excluded_bath_restoration", "url": "https://rem-rating.ru/lenremont-otzyvy#comment-6609", "fullTextRead": true, "attachmentCount": 0, "replyCount": 0, "publishedOriginalSourceUrl": null},
+    {"id": "4929", "author": "Андрей", "date": "2023-09", "rating": null, "ratings": [1, 4, 5], "summary": "Жалуется на цену замены прокладки гибкой подводки унитаза; сообщает о частичном возврате средств.", "classification": "excluded_plumbing", "url": "https://rem-rating.ru/lenremont-otzyvy#comment-4929", "fullTextRead": true, "attachmentCount": 0, "replyCount": 0, "publishedOriginalSourceUrl": null},
+    {"id": "4570", "author": "Виталий", "date": "2023-06", "rating": null, "ratings": [1, 4, 4], "summary": "Считает выполненную работу слишком дорогой; устройство и услуга не указаны.", "classification": "uncertain_device", "url": "https://rem-rating.ru/lenremont-otzyvy#comment-4570", "fullTextRead": true, "attachmentCount": 0, "replyCount": 0, "publishedOriginalSourceUrl": null},
+    {"id": "4527", "author": "Айли", "date": "2023-06", "rating": null, "ratings": [5, 5, 5], "summary": "Благодарит мастера за быстрый ремонт электроплиты.", "classification": "excluded_electric_stove", "url": "https://rem-rating.ru/lenremont-otzyvy#comment-4527", "fullTextRead": true, "attachmentCount": 0, "replyCount": 0, "publishedOriginalSourceUrl": null}
+  ],
+  "endpointEvidence": {"scrollY": 3402, "innerHeight": 863, "scrollHeight": 4265, "paginationObserved": false, "additionalSortObserved": false, "collapsedReviewTextObserved": false},
+  "provenanceNote": "ID взяты из наблюдённых permalink-ссылок. Площадка не публикует внешних источников этих семи отзывов; происхождение вне Rem-rating неизвестно."
+}

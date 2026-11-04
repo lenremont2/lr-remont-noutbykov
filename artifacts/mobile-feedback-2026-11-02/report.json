@@ -1,0 +1,45 @@
+{
+  "widths": [
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "qrVisible": false,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "qrVisible": false,
+      "broken": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "qrVisible": true,
+      "broken": []
+    },
+    {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "qrVisible": true,
+      "broken": []
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "qrVisible": true,
+      "broken": []
+    }
+  ],
+  "scenarios": [
+    "quiz auto advance, back, context, modal Escape",
+    "workshop selector in place, Escape and scroll preserved",
+    "courier address, dialpad, clear, native input, readiness, consent revoked",
+    "review disclosure and image dialog",
+    "remont-macbook-spb.htm: mobile layout and courier modal",
+    "remont-noutbukov-acer-spb.htm: mobile layout and courier modal",
+    "noutbuk-ne-vklyuchaetsya.htm: mobile layout and courier modal",
+    "reduced motion, keyboard radio selection and explicit Next"
+  ],
+  "errors": []
+}

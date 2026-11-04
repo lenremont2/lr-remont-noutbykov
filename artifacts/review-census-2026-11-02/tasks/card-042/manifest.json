@@ -1,0 +1,21 @@
+{
+  "taskId": "card-042",
+  "checkedAt": "2026-11-02",
+  "source": "https://www.klerk.ru/company/4692/reviews/",
+  "result": "result.json",
+  "coverageStatus": "complete",
+  "reportedReviews": 0,
+  "examinedReviews": 0,
+  "matchingReviews": 0,
+  "candidateReviews": 0,
+  "savedPhotos": 0,
+  "visuallyVerifiedPhotos": 0,
+  "photos": [],
+  "publicEvidence": [
+    "В самостоятельном разделе отзывов Klerk показаны счётчик 0 и пустое состояние.",
+    "Проверены новые и старые отзывы, достигнут низ страницы без пагинации.",
+    "Профиль повторяет отсутствие отзывов и связывает компанию с lenremont.ru и Сорокиным Денисом Николаевичем.",
+    "Официальный домен и руководитель совпадают; телефон и точный адрес Klerk не совпали с текущими контактами на официальном сайте."
+  ],
+  "excluded": "Корпоративный блог, логотип, рекламные картинки и аватары не включены в фото отзывов."
+}

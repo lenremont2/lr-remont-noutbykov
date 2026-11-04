@@ -1,0 +1,64 @@
+[
+  {
+    "viewport": {
+      "width": 320,
+      "height": 740
+    },
+    "formats": 4,
+    "closing": ["Escape", "backdrop", "button"],
+    "focusRestored": true,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "formats": 4,
+    "closing": ["Escape", "backdrop", "button"],
+    "focusRestored": true,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 564,
+      "height": 991
+    },
+    "formats": 4,
+    "closing": ["Escape", "backdrop", "button"],
+    "focusRestored": true,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 740,
+      "height": 360
+    },
+    "formats": 4,
+    "closing": ["Escape", "backdrop", "button"],
+    "focusRestored": true,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "formats": 4,
+    "closing": ["Escape", "backdrop", "button"],
+    "focusRestored": true,
+    "errors": []
+  },
+  {
+    "path": "/remont-noutbukov-acer-spb.htm",
+    "mapModal": true
+  },
+  {
+    "path": "/remont-macbook-spb.htm",
+    "mapModal": true
+  },
+  {
+    "path": "/noutbuk-ne-vklyuchaetsya.htm",
+    "mapModal": true
+  }
+]

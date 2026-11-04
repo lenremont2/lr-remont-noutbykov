@@ -1,0 +1,33 @@
+{
+  "taskId": "card-144",
+  "reviewIds": [
+    "3559215",
+    "3539327",
+    "3535641",
+    "3532534",
+    "3531257",
+    "3529974",
+    "3529957",
+    "3527434",
+    "3526291"
+  ],
+  "total": 9,
+  "fullTextsRead": 9,
+  "repliesRead": 9,
+  "dateRange": [
+    "2020-08-10",
+    "2020-10-12"
+  ],
+  "ratings": {
+    "5": 9
+  },
+  "matchedReviews": 0,
+  "candidateReviews": 0,
+  "reviewPhotos": 0,
+  "replyPhotos": 0,
+  "galleryPhotos": 7,
+  "downloadedPhotos": 0,
+  "allSourcesFilter": "not exposed",
+  "sortControls": "not exposed",
+  "endpointObserved": true
+}

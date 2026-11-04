@@ -1,0 +1,138 @@
+{
+  "checkedAt": "2026-11-02",
+  "reviewer": "root coordinator",
+  "scope": "Independent second check of the twenty-three photo files listed below. Later discoveries require separate checks. Record IDs are reconciled after collection.",
+  "checks": [
+    {
+      "recordId": "review-339bcd862a79",
+      "photoIds": ["review-339bcd862a79-1"],
+      "sourcePage": "https://yandex.ru/maps/org/10031707827/reviews?reviews%5BpublicId%5D=xzmx1ec6at5bqw9x686ucxc2j0",
+      "sourceImageIds": ["2a0000017eb6a868ad5ea58a45cfd56cf264"],
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator independently opened Vladimir G's actual public profile, followed its Lenremont business link10031707827 and expanded the full five-star review dated1February2022 about Samsung charging-socket repair. The own business-review-media image identity matches the saved file, separately from the organization logo. The local image shows an open black Samsung on a wooden desk, screen dark. It does not prove completion or quality of repair."
+    },
+    {
+      "recordId": "review-70bdc9cac595",
+      "photoIds": ["review-70bdc9cac595-1"],
+      "sourcePage": "https://yandex.ru/maps/org/24343010724/reviews?reviews%5BpublicId%5D=7b3uzt79r2e910ejqg47z7mrtr",
+      "sourceImageIds": ["2a0000017eb55b6428f868c65c405d27f666"],
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator independently opened Yulia's actual public profile and read the expanded five-star review dated1February2022, linked to business24343010724. Its own review media image identity matches the local file. The photograph shows a silver MacBook Pro on a cloth sofa, forest wallpaper and macOS dock visible, with a MacBook Pro label. The image does not establish the claimed repair or guarantee."
+    },
+    {
+      "recordId": "review-ad2808b2ab9e",
+      "photoIds": ["review-ad2808b2ab9e-1", "review-ad2808b2ab9e-2", "review-ad2808b2ab9e-3"],
+      "sourcePage": "https://yandex.ru/maps/org/142299563723/reviews?reviews%5BpublicId%5D=2p5k9vp7u9gmjd21rka1g50d74",
+      "sourceImageIds": ["2a0000019fff98afce9476ef6a1215363573", "2a0000019fff98bf43cf71dd1e2aba02ba12", "2a0000019fff98cdaf94ac7b12bc6581f16c"],
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator opened the exact shared review, expanded Sofia's one-star keyboard-cleaning complaint dated14August2026 (metadata2026-08-14T09:29:04.056Z), and matched all three own review-media image identities. All three local files were opened: left keyboard edges with light traces, touchpad/palmrest with light particles, and right keyboard/hinge/display edge marked Lenovo. The text says computer; the photos establish laptop form. Images do not establish key functionality, timing or cause of the alleged problem."
+    },
+    {
+      "recordId": "review-f6f5784d780a",
+      "photoIds": ["review-f6f5784d780a-1"],
+      "sourcePage": "https://yandex.ru/maps/org/lenremont/142299563723/reviews/?page=2",
+      "sourceImageIds": ["2a0000018e41427a87fe5daa7fb95c46e40e"],
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator selected the actual page2 review by Vlad, one star,15March2024 (metadata2024-03-15T08:37:37.941Z), expanded its full laptop diagnosis and alleged battery-substitution complaint, and matched its own nested review-media image identity. The local file was opened: a removable Lenovo battery with a printed2012.06 label. This is a manufacturing label, not the review/photo date; the image does not prove substitution, age of installation or causation. No individual public share link was exposed, so the actual source page and composite review key are retained."
+    },
+    {
+      "recordId": "review-9ef96017de84",
+      "photoIds": ["review-9ef96017de84-1"],
+      "sourcePage": "https://yandex.ru/maps/user/wz2kjdftb87vq90tvw6qtf4ynm",
+      "sourceImageId": "2a0000019b375ce5f92059f5714567fe5845",
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator read the author's Lenremont review and its own review-media image URL. Local 1280x720 image was opened: underside of a light laptop on a wooden surface, tape and paper label. 08.12.2025 in the text is the service visit date, not the publication date; the profile displays December 2025."
+    },
+    {
+      "recordId": "review-7b6cc4163a3b",
+      "photoIds": ["review-7b6cc4163a3b-1"],
+      "sourcePage": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_bolshevikov/reviews/",
+      "sourceImageId": "original_6570fe493b4c42784a040360_6570fe49f1f9c3.12068726.jpg",
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator read comment6570fe4dc1512617f3000577, Artur Pshukov, 7 December 2023, and its nested photo DIV data-src. The source image was opened in Chrome: an open ASUS laptop with a browser/messenger on its display near a window. The server returns AVIF despite the URL's JPG suffix."
+    },
+    {
+      "recordId": "review-a62fb8b6da0a",
+      "photoIds": ["review-a62fb8b6da0a-1"],
+      "sourcePage": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_bolshevikov/reviews/",
+      "sourceImageId": "original_658c0465d0e890446b0fea8c_658c04651e2c41.13146151.jpg",
+      "attachment": "review",
+      "sourceModerationStatus": "rejected",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator independently found the Rejected reviews section and read comment658c0467492d23e8610ddec9: Albina Apsheva, 5.0, 27 December 2023, Samsung charging socket repair. The nested js-comment-photoview-item data-src matches the saved image. Opened image shows a light laptop displaying the Windows lock screen, beside a window; Intel stickers are visible, Samsung branding is not established by the photograph."
+    },
+    {
+      "recordId": "review-5f45e71a5ff6",
+      "photoIds": ["review-5f45e71a5ff6-1"],
+      "sourcePage": "https://yandex.ru/maps/org/195356065526/reviews?reviews%5BpublicId%5D=tq8jrehv6p9bug4btj3jcbm6v8",
+      "sourceImageId": "2a0000018ca0f5ac67a33aaf29833fb713a7",
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator read the business-review-view belonging to vladimir zarubin and its own image carousel URL. The local 960x1280 image shows an open Acer Nitro 5, red keyboard and video player on screen. The viewer's December 2023 photo label is distinct from the review publication date, 6 February 2024."
+    },
+    {
+      "recordId": "review-acc1fa3650ec",
+      "photoIds": ["review-acc1fa3650ec-1"],
+      "sourcePage": "https://yandex.ru/maps/org/139175119866/reviews/",
+      "sourceImageId": "2a0000019ba7e37c7b12de5d48174f822c28",
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator independently read Maxim Antonov's review container and its own image carousel URL. The opened image shows a dark HP laptop lid, green logo, stickers and service-order paper label. The same image identity is present on the old and new Zvezdnaya source cards; those appearances are duplicate occurrences, not separate photographs. The image does not establish processor or memory specifications."
+    },
+    {
+      "recordId": "review-103f98b6752c",
+      "photoIds": ["review-103f98b6752c-1", "review-103f98b6752c-2", "review-103f98b6752c-3", "review-103f98b6752c-4"],
+      "sourcePage": "https://www.otzyvru.com/lenremont/review-1951259",
+      "sourceImageIds": ["lenremont_6791f826192bd.jpeg", "lenremont_6791f8269ac72.jpeg", "lenremont_6791f82708b64.jpeg", "lenremont_6791f827684d3.jpeg"],
+      "attachment": "company_reply",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator read the four image ancestors on the original review page: all belong to the Lenremont representative's response dated 23 January 2025. Each local JPEG was opened separately. They show interior laptop case corners, damaged fastening bosses and grey repair compound in before/after-like views. They are company-response photographs, not attachments authored by the reviewer; the pictures alone do not verify either party's account."
+    },
+    {
+      "recordId": "review-f10ce9ffba1b",
+      "photoIds": ["review-f10ce9ffba1b-1"],
+      "sourcePage": "https://yandex.ru/maps/org/3295465178/reviews?reviews%5BpublicId%5D=w6b1wnvuzq58y65jhax8kzjk4r",
+      "sourceImageIds": ["2a0000018eec0b49e6a9ea4e06b0867f1f01"],
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator independently opened the exact shared review URL. The selected review is Oleg Sergushev, 17 April 2024, 1 star, act1850142, laptop cleaning complaint. Its nested business-review-media img has the same image identity as the saved XXXL file. The local file was opened: an HP Pavilion g6 on a desk with Windows system information displayed. The photo alone does not demonstrate the claimed key or speaker fault."
+    },
+    {
+      "recordId": "review-3df21c81a136",
+      "photoIds": ["review-3df21c81a136-1", "review-3df21c81a136-2", "review-3df21c81a136-3"],
+      "sourcePage": "https://yandex.ru/maps/org/3295465178/reviews?reviews%5BpublicId%5D=xve3dmrvnzakmufvv68quuj5hr",
+      "sourceImageIds": ["2a0000018e7551e84acb5c1ed7e8587cfa4c", "2a0000018e7551e8102d77b7a33e4d881986", "2a0000018e7551e848706efff13c6d2ee505"],
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator opened the exact shared review URL and read Alexandra Gavrilova's complete 1-star complaint dated25March2024 (metadata2024-03-25T11:14:51.192Z). Three nested business-review-media image identities match all three saved XXXL files. Each local file was opened separately: progressively wider views of an open laptop, BIOS screen, separated upper case strip near the hinges and exposed interior above the function keys. The author also states that she broke hinges before service. The pictures do not establish when or by whom the observed damage occurred."
+    },
+    {
+      "recordId": "review-d20bdcdeeedb",
+      "photoIds": ["review-d20bdcdeeedb-1", "review-d20bdcdeeedb-2", "review-d20bdcdeeedb-3", "review-d20bdcdeeedb-4"],
+      "sourcePage": "https://yandex.ru/maps/org/87389556464/reviews?reviews%5BpublicId%5D=2ua2x62f2xxypxavf2e1pk5mpc&si=517v1r88kzgb3kpw65wkeevaq0&utm_source=review",
+      "sourceImageIds": ["2a00000198d25204cebd49f8421bf27c7054", "2a00000198d252036eacdd0f4a0eb2caf3ee", "2a00000198d25206c0cf7613f070450bddf2", "2a00000198d251ff8a5aa59ee35a1bee1986"],
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "evidence": "Coordinator opened the exact shared review, independently read the author/date (yulia balyura,22August2025; metadata2025-08-22T15:07:30.965Z) and checked all four nested business-review-media image identities against the downloaded originals. Each local file was opened. Photos1/2 show hinge and case seams, labelled Колпино and Москва; photo3 shows power supply/cable and a service label; photo4 shows a screen/hinge corner labelled Москва. The author's Москва-labelled images compare an earlier repair at another Moscow service. They are not evidence of a repair by Moscow Lenremont and do not establish the cause of the reported charging fault. The actual review source card is Kolpino,Tverskaya1/13."
+    }
+  ]
+}

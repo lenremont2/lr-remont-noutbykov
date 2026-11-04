@@ -1,0 +1,170 @@
+{
+  "taskId": "card-033",
+  "platform": "Zoon",
+  "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_bely_kuna/",
+  "branch": "Белы Куна, 20 к1",
+  "city": "Санкт-Петербург",
+  "networkEvidence": {
+    "status": "confirmed_by_name_address_network_and_official_site",
+    "officialSite": "https://www.lenremont.ru/lenremont-na-mezhdunarodnoj.htm",
+    "officialAddress": "Санкт-Петербург, ул. Белы Куна, д.20, к.1",
+    "cardAddress": "Санкт-Петербург, Белы Куна, 20 к1",
+    "cardPhone": "+7 (812) 380-88-41",
+    "officialBranchPhones": [
+      "+7 (812) 242-99-45",
+      "+7 (812) 688-89-33",
+      "+7 (812) 640-44-35"
+    ],
+    "phoneCheck": "Телефон Zoon раскрыт кнопкой; отличается от опубликованных официальных телефонов. Ответ компании Alexey Kudrin от 05.07.2021 указывает сетевую горячую линию 344-44-44, также указанную на официальной странице вакансии. Прямого совпадения телефона самой карточки с официальным сайтом не установлено.",
+    "additionalOfficialSource": "https://www.lenremont.ru/promo-spb",
+    "networkPage": "https://zoon.ru/spb/repair/network/lenremont/",
+    "cardSignals": [
+      "Название Ленремонт, адрес совпадает с официальной мастерской",
+      "В карточке ссылка «Вся сеть Ленремонт», 28 заведений",
+      "Ссылки wa.me/78127023333 и t.me/lenremont_bot; официальные ответы ООО ЛЕНРЕМОНТ"
+    ]
+  },
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 13,
+    "examinedCount": 24,
+    "endpointObserved": true,
+    "method": "Собственная Chrome-вкладка CUA. Прочитаны основная карточка и отдельный /reviews/: 13 основных и 11 отклонённых, все оценки/даты. Все видимые .js-comment-show-full раскрыты, осталось 0. В обоих списках достигнута последняя запись; дополнительных кнопок загрузки/пагинации нет. 13 основных совпадают с заявленными 13, 146 обозначает оценки, а не тексты.",
+    "stopReason": "Реальный конец обоих доступных списков. Последний основной — Константин 10.04.2020; последний отклонённый — Игорь 15.04.2020.",
+    "publishedCount": 13,
+    "rejectedCount": 11,
+    "uniqueCount": 24,
+    "overlapCount": 0,
+    "sort": "дате",
+    "photosExamined": 0
+  },
+  "reviews": [
+    {
+      "id": "635c21d388358b0988026493",
+      "author": "Марина Соколова",
+      "date": "2022-10-28",
+      "rating": 5,
+      "summary": "Ремонт клавиш ноутбука за два дня",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_bely_kuna/reviews/#comment635c21d388358b0988026493",
+      "topic": "ноутбук: ремонт/обслуживание",
+      "photos": [],
+      "evidence": {
+        "section": "published",
+        "textFullyExpanded": true,
+        "attachmentCheck": "В DOM конкретного отзыва и ответов отсутствуют img/video и видимые вложения.",
+        "companyReply": "Прочитан; не уточняет модель устройства.",
+        "rejected": false
+      }
+    },
+    {
+      "id": "60ddcadeb8defc4dd6337506",
+      "author": "Alexey Kudrin",
+      "date": "2021-07-01",
+      "rating": 5,
+      "summary": "Ремонт ноутбука с редкой деталью; почти соблюдён срок",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_bely_kuna/reviews/#comment60ddcadeb8defc4dd6337506",
+      "topic": "ноутбук: ремонт/обслуживание",
+      "photos": [],
+      "evidence": {
+        "section": "published",
+        "textFullyExpanded": true,
+        "attachmentCheck": "В DOM конкретного отзыва и ответов отсутствуют img/video и видимые вложения.",
+        "companyReply": "Прочитан; не уточняет модель устройства.",
+        "rejected": false
+      }
+    },
+    {
+      "id": "5ee6579987fa3852033a2743",
+      "author": "Игорь Смирнов",
+      "date": "2020-06-14",
+      "rating": 4,
+      "summary": "Чистка ноутбука и замена неназванной детали ускорили работу",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_bely_kuna/reviews/#comment5ee6579987fa3852033a2743",
+      "topic": "ноутбук: ремонт/обслуживание",
+      "photos": [],
+      "evidence": {
+        "section": "published",
+        "textFullyExpanded": true,
+        "attachmentCheck": "В DOM конкретного отзыва и ответов отсутствуют img/video и видимые вложения.",
+        "companyReply": "Прочитан; не уточняет модель устройства.",
+        "rejected": false
+      }
+    },
+    {
+      "id": "5e9054ecc35eda71454aaf5d",
+      "author": "Константин",
+      "date": "2020-04-10",
+      "rating": null,
+      "summary": "Замена экрана ноутбука, бесплатная диагностика, год гарантии",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_bely_kuna/reviews/#comment5e9054ecc35eda71454aaf5d",
+      "topic": "ноутбук: ремонт/обслуживание",
+      "photos": [],
+      "evidence": {
+        "section": "published",
+        "textFullyExpanded": true,
+        "attachmentCheck": "В DOM конкретного отзыва и ответов отсутствуют img/video и видимые вложения.",
+        "companyReply": "Прочитан; не уточняет модель устройства.",
+        "rejected": false
+      }
+    },
+    {
+      "id": "60da0e53dda22e7db63c6f34",
+      "author": "Алиса александровна Александрова",
+      "date": "2021-06-28",
+      "rating": 5,
+      "summary": "Замена динамика ноутбука и чистка; работа устроила автора",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_bely_kuna/reviews/#comment60da0e53dda22e7db63c6f34",
+      "topic": "ноутбук: ремонт/обслуживание",
+      "photos": [],
+      "evidence": {
+        "section": "rejected",
+        "textFullyExpanded": true,
+        "attachmentCheck": "В DOM конкретного отзыва и ответов отсутствуют img/video и видимые вложения.",
+        "companyReply": null,
+        "rejected": true
+      }
+    },
+    {
+      "id": "60d7001da25de90d8b4ff96c",
+      "author": "Ольга Фомина",
+      "date": "2021-06-26",
+      "rating": 5,
+      "summary": "Ремонт ноутбука после бесплатной диагностики; гарантия, небольшое опоздание",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_bely_kuna/reviews/#comment60d7001da25de90d8b4ff96c",
+      "topic": "ноутбук: ремонт/обслуживание",
+      "photos": [],
+      "evidence": {
+        "section": "rejected",
+        "textFullyExpanded": true,
+        "attachmentCheck": "В DOM конкретного отзыва и ответов отсутствуют img/video и видимые вложения.",
+        "companyReply": null,
+        "rejected": true
+      }
+    }
+  ],
+  "candidateReviews": [
+    {
+      "author": "Максим",
+      "date": "2023-02-07",
+      "rating": 5,
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_bely_kuna/reviews/#comment63e1da9f1a45c3efea08758c",
+      "summary": "ПК: замена диска на SSD; форм-фактор не уточнён",
+      "reason": "Указан ПК; официальный ответ не уточняет ноутбук, вложений нет."
+    }
+  ],
+  "discoveredSources": [
+    {
+      "platform": "Официальный сайт Ленремонта",
+      "url": "https://www.lenremont.ru/masterskaya-lenremonta-u-m-mezhdunarodnaya-ul-bely-kuna-d-20-k-1.htm",
+      "address": "Белы Куна, 20 к1",
+      "city": "Санкт-Петербург"
+    }
+  ],
+  "notes": [
+    "Подтверждено 6 тематических отзывов: 4 основных и 2 отклонённых. Отклонённые явно отмечены площадкой сомнительными и сохранены с этим статусом.",
+    "Все 24 записи и ответы проверены на вложения: отзывных фотографий нет; 30 фотографий карточки — общая галерея, не доказательство к отзывам.",
+    "Неопределённые устройства: Максим, Тимофей Нилов, Игорь Ильин, Артём Смолин, Инна Фемчук; проверены ответы и отсутствие вложений, дополнительные ноутбуки не подтверждены.",
+    "Полные тексты, cookies и аккаунт не сохранялись; manifest содержит метаданные и краткие пересказы.",
+    "Другие сортировки не требовались: основной список содержит все заявленные 13 записей, отклонённый список отдельный и дошёл до конца."
+  ]
+}

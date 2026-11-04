@@ -1,0 +1,2558 @@
+{
+  "layouts": [
+    {
+      "width": 360,
+      "height": 640,
+      "scrollWidth": 360,
+      "pageHeight": 22943,
+      "sections": [
+        {
+          "id": "lr-hero",
+          "top": 0,
+          "height": 1271,
+          "width": 360,
+          "words": 64
+        },
+        {
+          "id": "lr-symptoms",
+          "top": 1271,
+          "height": 703,
+          "width": 360,
+          "words": 59
+        },
+        {
+          "id": "lr-manufacturers",
+          "top": 1974,
+          "height": 470,
+          "width": 360,
+          "words": 26
+        },
+        {
+          "id": "lr-formats",
+          "top": 2444,
+          "height": 1064,
+          "width": 360,
+          "words": 43
+        },
+        {
+          "id": "lr-reviews",
+          "top": 3509,
+          "height": 1160,
+          "width": 360,
+          "words": 666
+        },
+        {
+          "id": "lr-prices",
+          "top": 4668,
+          "height": 3248,
+          "width": 360,
+          "words": 302
+        },
+        {
+          "id": "lr-quiz",
+          "top": 7916,
+          "height": 972,
+          "width": 360,
+          "words": 58
+        },
+        {
+          "id": "lr-process",
+          "top": 8888,
+          "height": 1105,
+          "width": 360,
+          "words": 96
+        },
+        {
+          "id": "lr-lab",
+          "top": 9993,
+          "height": 1193,
+          "width": 360,
+          "words": 60
+        },
+        {
+          "id": "lr-workshop-gallery",
+          "top": 11186,
+          "height": 969,
+          "width": 360,
+          "words": 21
+        },
+        {
+          "id": "lr-business-trust",
+          "top": 12154,
+          "height": 574,
+          "width": 360,
+          "words": 29
+        },
+        {
+          "id": "lr-director",
+          "top": 12728,
+          "height": 1462,
+          "width": 360,
+          "words": 85
+        },
+        {
+          "id": "lr-guarantee",
+          "top": 14190,
+          "height": 725,
+          "width": 360,
+          "words": 32
+        },
+        {
+          "id": "lr-locations",
+          "top": 14914,
+          "height": 943,
+          "width": 360,
+          "words": 56
+        },
+        {
+          "id": "lr-service-guide",
+          "top": 15857,
+          "height": 3974,
+          "width": 360,
+          "words": 511
+        },
+        {
+          "id": "lr-faq",
+          "top": 19831,
+          "height": 1816,
+          "width": 360,
+          "words": 77
+        },
+        {
+          "id": "lr-contact",
+          "top": 21646,
+          "height": 1297,
+          "width": 360,
+          "words": 72
+        }
+      ],
+      "heroCTA": {
+        "top": 632,
+        "height": 126,
+        "width": 320
+      },
+      "mobileBarHidden": true,
+      "smallTargets": [
+        {
+          "text": "+7 (812) 344-44-44",
+          "top": 956,
+          "height": 33,
+          "width": 254
+        },
+        {
+          "text": "ремонт CD/DVD-привода",
+          "top": 1887,
+          "height": 39,
+          "width": 259
+        },
+        {
+          "text": "2ГИС",
+          "top": 3786,
+          "height": 44,
+          "width": 31
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4501,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4521,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4383,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Google Карты",
+          "top": 4383,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4340,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "2ГИС",
+          "top": 4364,
+          "height": 21,
+          "width": 52
+        },
+        {
+          "text": "Zoon",
+          "top": 4340,
+          "height": 21,
+          "width": 50
+        },
+        {
+          "text": "Zoon",
+          "top": 4340,
+          "height": 21,
+          "width": 50
+        },
+        {
+          "text": "Google Карты",
+          "top": 4361,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4340,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4340,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4362,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4383,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4316,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4364,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4340,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4364,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4340,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Zoon",
+          "top": 4361,
+          "height": 21,
+          "width": 50
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4340,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4292,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4340,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4316,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4340,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4316,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4292,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "",
+          "top": 15544,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 15689,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 15834,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 15979,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 16103,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 16227,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 16351,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 16496,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 16641,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 16786,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 16931,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 17055,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 17200,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 17345,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 17490,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 17614,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 17759,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 17904,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 18028,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 18173,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 18318,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 18463,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 18608,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "",
+          "top": 18774,
+          "height": 37,
+          "width": 272
+        },
+        {
+          "text": "Вызвать мастера",
+          "top": 15754,
+          "height": 17,
+          "width": 117
+        },
+        {
+          "text": "неисправностей",
+          "top": 16520,
+          "height": 20,
+          "width": 130
+        },
+        {
+          "text": "прайсе ремонта ноутбуков",
+          "top": 16705,
+          "height": 20,
+          "width": 213
+        },
+        {
+          "text": "мастерскую",
+          "top": 17976,
+          "height": 20,
+          "width": 96
+        },
+        {
+          "text": "форматов ремонта",
+          "top": 18467,
+          "height": 20,
+          "width": 149
+        },
+        {
+          "text": "Политика обработки данных",
+          "top": 22248,
+          "height": 38,
+          "width": 229
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "height": 667,
+      "scrollWidth": 375,
+      "pageHeight": 22387,
+      "sections": [
+        {
+          "id": "lr-hero",
+          "top": 0,
+          "height": 1280,
+          "width": 375,
+          "words": 64
+        },
+        {
+          "id": "lr-symptoms",
+          "top": 1280,
+          "height": 704,
+          "width": 375,
+          "words": 59
+        },
+        {
+          "id": "lr-manufacturers",
+          "top": 1984,
+          "height": 470,
+          "width": 375,
+          "words": 26
+        },
+        {
+          "id": "lr-formats",
+          "top": 2454,
+          "height": 1016,
+          "width": 375,
+          "words": 43
+        },
+        {
+          "id": "lr-reviews",
+          "top": 3470,
+          "height": 1161,
+          "width": 375,
+          "words": 666
+        },
+        {
+          "id": "lr-prices",
+          "top": 4631,
+          "height": 3155,
+          "width": 375,
+          "words": 302
+        },
+        {
+          "id": "lr-quiz",
+          "top": 7786,
+          "height": 974,
+          "width": 375,
+          "words": 58
+        },
+        {
+          "id": "lr-process",
+          "top": 8759,
+          "height": 1021,
+          "width": 375,
+          "words": 96
+        },
+        {
+          "id": "lr-lab",
+          "top": 9780,
+          "height": 1179,
+          "width": 375,
+          "words": 60
+        },
+        {
+          "id": "lr-workshop-gallery",
+          "top": 10959,
+          "height": 970,
+          "width": 375,
+          "words": 21
+        },
+        {
+          "id": "lr-business-trust",
+          "top": 11929,
+          "height": 575,
+          "width": 375,
+          "words": 29
+        },
+        {
+          "id": "lr-director",
+          "top": 12505,
+          "height": 1435,
+          "width": 375,
+          "words": 85
+        },
+        {
+          "id": "lr-guarantee",
+          "top": 13940,
+          "height": 726,
+          "width": 375,
+          "words": 32
+        },
+        {
+          "id": "lr-locations",
+          "top": 14666,
+          "height": 944,
+          "width": 375,
+          "words": 56
+        },
+        {
+          "id": "lr-service-guide",
+          "top": 15610,
+          "height": 3817,
+          "width": 375,
+          "words": 511
+        },
+        {
+          "id": "lr-faq",
+          "top": 19427,
+          "height": 1714,
+          "width": 375,
+          "words": 77
+        },
+        {
+          "id": "lr-contact",
+          "top": 21140,
+          "height": 1247,
+          "width": 375,
+          "words": 72
+        }
+      ],
+      "heroCTA": {
+        "top": 640,
+        "height": 126,
+        "width": 335
+      },
+      "mobileBarHidden": true,
+      "smallTargets": [
+        {
+          "text": "+7 (812) 344-44-44",
+          "top": 964,
+          "height": 33,
+          "width": 254
+        },
+        {
+          "text": "ремонт CD/DVD-привода",
+          "top": 1897,
+          "height": 39,
+          "width": 259
+        },
+        {
+          "text": "2ГИС",
+          "top": 3749,
+          "height": 44,
+          "width": 31
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4464,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4484,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4324,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Google Карты",
+          "top": 4300,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4303,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "2ГИС",
+          "top": 4327,
+          "height": 21,
+          "width": 52
+        },
+        {
+          "text": "Zoon",
+          "top": 4303,
+          "height": 21,
+          "width": 50
+        },
+        {
+          "text": "Zoon",
+          "top": 4279,
+          "height": 21,
+          "width": 50
+        },
+        {
+          "text": "Google Карты",
+          "top": 4324,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4303,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4279,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4301,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4322,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4255,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4303,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4279,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4303,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4255,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Zoon",
+          "top": 4300,
+          "height": 21,
+          "width": 50
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4303,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4255,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4303,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4279,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4279,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4279,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4255,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "",
+          "top": 15297,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 15442,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 15566,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 15711,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 15835,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 15959,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 16083,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 16228,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 16352,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 16497,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 16642,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 16766,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 16911,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 17056,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 17201,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 17325,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 17470,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 17615,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 17739,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 17884,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 18029,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 18174,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 18298,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "",
+          "top": 18464,
+          "height": 37,
+          "width": 287
+        },
+        {
+          "text": "Вызвать мастера",
+          "top": 15507,
+          "height": 17,
+          "width": 117
+        },
+        {
+          "text": "неисправностей",
+          "top": 16248,
+          "height": 20,
+          "width": 130
+        },
+        {
+          "text": "прайсе ремонта ноутбуков",
+          "top": 16433,
+          "height": 20,
+          "width": 213
+        },
+        {
+          "text": "мастерскую",
+          "top": 17678,
+          "height": 20,
+          "width": 96
+        },
+        {
+          "text": "форматов ремонта",
+          "top": 18143,
+          "height": 20,
+          "width": 149
+        },
+        {
+          "text": "Порядок обращения по гарантии",
+          "top": 19306,
+          "height": 20,
+          "width": 262
+        },
+        {
+          "text": "Политика обработки данных",
+          "top": 21716,
+          "height": 38,
+          "width": 229
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "pageHeight": 22039,
+      "sections": [
+        {
+          "id": "lr-hero",
+          "top": 0,
+          "height": 1288,
+          "width": 390,
+          "words": 64
+        },
+        {
+          "id": "lr-symptoms",
+          "top": 1288,
+          "height": 707,
+          "width": 390,
+          "words": 59
+        },
+        {
+          "id": "lr-manufacturers",
+          "top": 1996,
+          "height": 470,
+          "width": 390,
+          "words": 26
+        },
+        {
+          "id": "lr-formats",
+          "top": 2466,
+          "height": 994,
+          "width": 390,
+          "words": 43
+        },
+        {
+          "id": "lr-reviews",
+          "top": 3459,
+          "height": 1120,
+          "width": 390,
+          "words": 666
+        },
+        {
+          "id": "lr-prices",
+          "top": 4579,
+          "height": 3134,
+          "width": 390,
+          "words": 302
+        },
+        {
+          "id": "lr-quiz",
+          "top": 7713,
+          "height": 958,
+          "width": 390,
+          "words": 58
+        },
+        {
+          "id": "lr-process",
+          "top": 8671,
+          "height": 1021,
+          "width": 390,
+          "words": 96
+        },
+        {
+          "id": "lr-lab",
+          "top": 9692,
+          "height": 1171,
+          "width": 390,
+          "words": 60
+        },
+        {
+          "id": "lr-workshop-gallery",
+          "top": 10864,
+          "height": 973,
+          "width": 390,
+          "words": 21
+        },
+        {
+          "id": "lr-business-trust",
+          "top": 11837,
+          "height": 557,
+          "width": 390,
+          "words": 29
+        },
+        {
+          "id": "lr-director",
+          "top": 12394,
+          "height": 1409,
+          "width": 390,
+          "words": 85
+        },
+        {
+          "id": "lr-guarantee",
+          "top": 13803,
+          "height": 729,
+          "width": 390,
+          "words": 32
+        },
+        {
+          "id": "lr-locations",
+          "top": 14532,
+          "height": 902,
+          "width": 390,
+          "words": 56
+        },
+        {
+          "id": "lr-service-guide",
+          "top": 15434,
+          "height": 3661,
+          "width": 390,
+          "words": 511
+        },
+        {
+          "id": "lr-faq",
+          "top": 19095,
+          "height": 1692,
+          "width": 390,
+          "words": 77
+        },
+        {
+          "id": "lr-contact",
+          "top": 20787,
+          "height": 1252,
+          "width": 390,
+          "words": 72
+        }
+      ],
+      "heroCTA": {
+        "top": 649,
+        "height": 126,
+        "width": 350
+      },
+      "mobileBarHidden": true,
+      "smallTargets": [
+        {
+          "text": "+7 (812) 344-44-44",
+          "top": 973,
+          "height": 33,
+          "width": 254
+        },
+        {
+          "text": "ремонт CD/DVD-привода",
+          "top": 1909,
+          "height": 39,
+          "width": 259
+        },
+        {
+          "text": "2ГИС",
+          "top": 3742,
+          "height": 44,
+          "width": 31
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4432,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4456,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4292,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Google Карты",
+          "top": 4292,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4271,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "2ГИС",
+          "top": 4295,
+          "height": 21,
+          "width": 52
+        },
+        {
+          "text": "Zoon",
+          "top": 4295,
+          "height": 21,
+          "width": 50
+        },
+        {
+          "text": "Zoon",
+          "top": 4247,
+          "height": 21,
+          "width": 50
+        },
+        {
+          "text": "Google Карты",
+          "top": 4292,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4295,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4271,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4293,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4314,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4247,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4295,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4271,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4271,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4247,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Zoon",
+          "top": 4292,
+          "height": 21,
+          "width": 50
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4271,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4247,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4271,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4247,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4271,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4271,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4223,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "",
+          "top": 15121,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 15266,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 15390,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 15535,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 15659,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 15783,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 15907,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 16031,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 16155,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 16279,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 16424,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 16548,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 16693,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 16838,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 16962,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 17086,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 17231,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 17376,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 17500,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 17624,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 17748,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 17893,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 18017,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "",
+          "top": 18162,
+          "height": 37,
+          "width": 302
+        },
+        {
+          "text": "Вызвать мастера",
+          "top": 15331,
+          "height": 17,
+          "width": 117
+        },
+        {
+          "text": "неисправностей",
+          "top": 16075,
+          "height": 20,
+          "width": 130
+        },
+        {
+          "text": "прайсе ремонта ноутбуков",
+          "top": 16260,
+          "height": 20,
+          "width": 213
+        },
+        {
+          "text": "мастерскую",
+          "top": 17452,
+          "height": 20,
+          "width": 96
+        },
+        {
+          "text": "форматов ремонта",
+          "top": 17890,
+          "height": 20,
+          "width": 149
+        },
+        {
+          "text": "Политика обработки данных",
+          "top": 21368,
+          "height": 38,
+          "width": 229
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "scrollWidth": 430,
+      "pageHeight": 21043,
+      "sections": [
+        {
+          "id": "lr-hero",
+          "top": 0,
+          "height": 1297,
+          "width": 430,
+          "words": 64
+        },
+        {
+          "id": "lr-symptoms",
+          "top": 1297,
+          "height": 690,
+          "width": 430,
+          "words": 59
+        },
+        {
+          "id": "lr-manufacturers",
+          "top": 1987,
+          "height": 443,
+          "width": 430,
+          "words": 26
+        },
+        {
+          "id": "lr-formats",
+          "top": 2429,
+          "height": 968,
+          "width": 430,
+          "words": 43
+        },
+        {
+          "id": "lr-reviews",
+          "top": 3397,
+          "height": 1100,
+          "width": 430,
+          "words": 666
+        },
+        {
+          "id": "lr-prices",
+          "top": 4497,
+          "height": 2982,
+          "width": 430,
+          "words": 302
+        },
+        {
+          "id": "lr-quiz",
+          "top": 7478,
+          "height": 917,
+          "width": 430,
+          "words": 58
+        },
+        {
+          "id": "lr-process",
+          "top": 8395,
+          "height": 1021,
+          "width": 430,
+          "words": 96
+        },
+        {
+          "id": "lr-lab",
+          "top": 9416,
+          "height": 1150,
+          "width": 430,
+          "words": 60
+        },
+        {
+          "id": "lr-workshop-gallery",
+          "top": 10566,
+          "height": 978,
+          "width": 430,
+          "words": 21
+        },
+        {
+          "id": "lr-business-trust",
+          "top": 11544,
+          "height": 562,
+          "width": 430,
+          "words": 29
+        },
+        {
+          "id": "lr-director",
+          "top": 12106,
+          "height": 1382,
+          "width": 430,
+          "words": 85
+        },
+        {
+          "id": "lr-guarantee",
+          "top": 13488,
+          "height": 708,
+          "width": 430,
+          "words": 32
+        },
+        {
+          "id": "lr-locations",
+          "top": 14196,
+          "height": 879,
+          "width": 430,
+          "words": 56
+        },
+        {
+          "id": "lr-service-guide",
+          "top": 15075,
+          "height": 3213,
+          "width": 430,
+          "words": 511
+        },
+        {
+          "id": "lr-faq",
+          "top": 18288,
+          "height": 1515,
+          "width": 430,
+          "words": 77
+        },
+        {
+          "id": "lr-contact",
+          "top": 19803,
+          "height": 1239,
+          "width": 430,
+          "words": 72
+        }
+      ],
+      "heroCTA": {
+        "top": 685,
+        "height": 126,
+        "width": 390
+      },
+      "mobileBarHidden": true,
+      "smallTargets": [
+        {
+          "text": "+7 (812) 344-44-44",
+          "top": 981,
+          "height": 33,
+          "width": 254
+        },
+        {
+          "text": "ремонт CD/DVD-привода",
+          "top": 1922,
+          "height": 17,
+          "width": 172
+        },
+        {
+          "text": "2ГИС",
+          "top": 3684,
+          "height": 44,
+          "width": 31
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4375,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4374,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4210,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Google Карты",
+          "top": 4210,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4189,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "2ГИС",
+          "top": 4213,
+          "height": 21,
+          "width": 52
+        },
+        {
+          "text": "Zoon",
+          "top": 4213,
+          "height": 21,
+          "width": 49
+        },
+        {
+          "text": "Zoon",
+          "top": 4189,
+          "height": 21,
+          "width": 49
+        },
+        {
+          "text": "Google Карты",
+          "top": 4210,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4213,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4189,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4189,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4234,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4166,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4237,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4189,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4189,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 4189,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Zoon",
+          "top": 4210,
+          "height": 21,
+          "width": 49
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4213,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4166,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4189,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4189,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4189,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4189,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 4166,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "",
+          "top": 14762,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 14886,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 15010,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 15134,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 15258,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 15382,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 15506,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 15630,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 15754,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 15878,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 16002,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 16126,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 16271,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 16395,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 16519,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 16643,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 16767,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 16891,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 17015,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 17139,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 17263,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 17408,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 17532,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "",
+          "top": 17656,
+          "height": 37,
+          "width": 342
+        },
+        {
+          "text": "Вызвать мастера",
+          "top": 14972,
+          "height": 17,
+          "width": 117
+        },
+        {
+          "text": "неисправностей",
+          "top": 15669,
+          "height": 20,
+          "width": 130
+        },
+        {
+          "text": "прайсе ремонта ноутбуков",
+          "top": 15798,
+          "height": 20,
+          "width": 213
+        },
+        {
+          "text": "мастерскую",
+          "top": 16858,
+          "height": 20,
+          "width": 96
+        },
+        {
+          "text": "форматов ремонта",
+          "top": 17218,
+          "height": 20,
+          "width": 149
+        },
+        {
+          "text": "Политика обработки данных",
+          "top": 20391,
+          "height": 17,
+          "width": 199
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "pageHeight": 18158,
+      "sections": [
+        {
+          "id": "lr-hero",
+          "top": 0,
+          "height": 1248,
+          "width": 768,
+          "words": 64
+        },
+        {
+          "id": "lr-symptoms",
+          "top": 1248,
+          "height": 653,
+          "width": 768,
+          "words": 59
+        },
+        {
+          "id": "lr-manufacturers",
+          "top": 1901,
+          "height": 450,
+          "width": 768,
+          "words": 26
+        },
+        {
+          "id": "lr-formats",
+          "top": 2351,
+          "height": 611,
+          "width": 768,
+          "words": 43
+        },
+        {
+          "id": "lr-reviews",
+          "top": 2962,
+          "height": 1019,
+          "width": 768,
+          "words": 666
+        },
+        {
+          "id": "lr-prices",
+          "top": 3980,
+          "height": 2274,
+          "width": 768,
+          "words": 292
+        },
+        {
+          "id": "lr-quiz",
+          "top": 6254,
+          "height": 883,
+          "width": 768,
+          "words": 58
+        },
+        {
+          "id": "lr-process",
+          "top": 7137,
+          "height": 1491,
+          "width": 768,
+          "words": 123
+        },
+        {
+          "id": "lr-lab",
+          "top": 8628,
+          "height": 817,
+          "width": 768,
+          "words": 60
+        },
+        {
+          "id": "lr-workshop-gallery",
+          "top": 9444,
+          "height": 1113,
+          "width": 768,
+          "words": 21
+        },
+        {
+          "id": "lr-business-trust",
+          "top": 10557,
+          "height": 516,
+          "width": 768,
+          "words": 29
+        },
+        {
+          "id": "lr-director",
+          "top": 11073,
+          "height": 818,
+          "width": 768,
+          "words": 85
+        },
+        {
+          "id": "lr-guarantee",
+          "top": 11891,
+          "height": 483,
+          "width": 768,
+          "words": 32
+        },
+        {
+          "id": "lr-locations",
+          "top": 12374,
+          "height": 836,
+          "width": 768,
+          "words": 56
+        },
+        {
+          "id": "lr-service-guide",
+          "top": 13210,
+          "height": 2377,
+          "width": 768,
+          "words": 511
+        },
+        {
+          "id": "lr-faq",
+          "top": 15586,
+          "height": 1339,
+          "width": 768,
+          "words": 77
+        },
+        {
+          "id": "lr-contact",
+          "top": 16926,
+          "height": 1232,
+          "width": 768,
+          "words": 72
+        }
+      ],
+      "heroCTA": {
+        "top": 622,
+        "height": 82,
+        "width": 368
+      },
+      "mobileBarHidden": true,
+      "smallTargets": [
+        {
+          "text": "+7 (812) 344-44-44",
+          "top": 854,
+          "height": 40,
+          "width": 304
+        },
+        {
+          "text": "ремонт CD/DVD-привода",
+          "top": 1824,
+          "height": 17,
+          "width": 172
+        },
+        {
+          "text": "2ГИС",
+          "top": 3151,
+          "height": 44,
+          "width": 31
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 3830,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 3854,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 3666,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Google Карты",
+          "top": 3666,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 3669,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "2ГИС",
+          "top": 3669,
+          "height": 21,
+          "width": 52
+        },
+        {
+          "text": "Zoon",
+          "top": 3693,
+          "height": 21,
+          "width": 49
+        },
+        {
+          "text": "Zoon",
+          "top": 3645,
+          "height": 21,
+          "width": 49
+        },
+        {
+          "text": "Google Карты",
+          "top": 3666,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 3669,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 3669,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 3667,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 3690,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 3621,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 3693,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 3669,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 3645,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Google Карты",
+          "top": 3645,
+          "height": 21,
+          "width": 110
+        },
+        {
+          "text": "Zoon",
+          "top": 3666,
+          "height": 21,
+          "width": 49
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 3669,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 3621,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 3669,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 3645,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 3645,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 3645,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "Яндекс Карты",
+          "top": 3621,
+          "height": 21,
+          "width": 113
+        },
+        {
+          "text": "",
+          "top": 12902,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 13026,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 13150,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 13274,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 13398,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 13522,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 13646,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 13770,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 13894,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 14018,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 14142,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 14266,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 14390,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 14514,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 14638,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 14762,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 14886,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 15010,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 15134,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 15258,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 15382,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 15506,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 15630,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "",
+          "top": 15754,
+          "height": 37,
+          "width": 656
+        },
+        {
+          "text": "Вызвать мастера",
+          "top": 13095,
+          "height": 17,
+          "width": 117
+        },
+        {
+          "text": "неисправностей",
+          "top": 13668,
+          "height": 21,
+          "width": 138
+        },
+        {
+          "text": "прайсе ремонта ноутбуков",
+          "top": 13801,
+          "height": 21,
+          "width": 226
+        },
+        {
+          "text": "мастерскую",
+          "top": 14547,
+          "height": 21,
+          "width": 102
+        },
+        {
+          "text": "форматов ремонта",
+          "top": 14787,
+          "height": 21,
+          "width": 158
+        },
+        {
+          "text": "Порядок обращения по гарантии",
+          "top": 15477,
+          "height": 21,
+          "width": 278
+        },
+        {
+          "text": "Политика обработки данных",
+          "top": 17407,
+          "height": 17,
+          "width": 199
+        }
+      ]
+    }
+  ],
+  "scenarios": {
+    "quizContact": {
+      "phoneReadOnly": true,
+      "values": {
+        "contact_method": "Телефон",
+        "quiz_service": "Ремонт ноутбуков",
+        "source": "quiz",
+        "service_format": "courier",
+        "device_category": "standard",
+        "symptom": "Программы и настройка",
+        "phone": "",
+        "workshop_id": "",
+        "district": "",
+        "visit_address": "",
+        "requested_repair_place": "",
+        "consent": "yes"
+      },
+      "text": "Неисправность: Программы и настройка · Устройство: Ноутбуки · Способ ремонта: С доставкой курьером\n\nВаш телефон\nПерезвоним и уточним вашу задачу\nОткуда забрать ноутбук?\nТочный адрес и время согласуем до приезда. Квартиру и код домофона можно сообщить при звонке.\nДаю согласие на обработку персональных данных. Политика обработки данных\nПолучить консультацию\n\nВведите номер телефона полностью."
+    },
+    "priceAfterQuiz": {
+      "format": "consultation",
+      "symptom": "",
+      "device": ""
+    },
+    "keypad": {
+      "phoneReadOnly": true,
+      "inputmode": "none",
+      "placeholder": "+7 (___) ___-__-__",
+      "phone": "",
+      "keypad": 268,
+      "consent": 867,
+      "submit": 945,
+      "dialogHeight": 812
+    },
+    "recoveryAfterCourier": {
+      "format": "courier",
+      "symptom": "Восстановление данных",
+      "addressRequired": true
+    },
+    "reviewPhoto": {
+      "naturalWidth": 113,
+      "naturalHeight": 150,
+      "width": 311,
+      "height": 412.828125
+    },
+    "videoBytes": [],
+    "remont-macbook-spb.htm": {
+      "height": 27503,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "Ремонт MacBook Air и Pro в Санкт-Петербурге — диагностика и гарантия 1 год",
+      "firstCTA": [
+        {
+          "text": "Рассчитать стоимость ремонта",
+          "top": 651
+        },
+        {
+          "text": "Уточнить срок готовности",
+          "top": 8193
+        }
+      ]
+    },
+    "remont-noutbukov-acer-spb.htm": {
+      "height": 23864,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "Ремонт ноутбуков Acer в Санкт-Петербурге",
+      "firstCTA": [
+        {
+          "text": "Узнать стоимость ремонта",
+          "top": 447
+        },
+        {
+          "text": "Восстановление данных",
+          "top": 3897
+        }
+      ]
+    },
+    "noutbuk-ne-vklyuchaetsya.htm": {
+      "height": 16459,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "Ноутбук не включается: диагностика и ремонт в Санкт-Петербурге",
+      "firstCTA": [
+        {
+          "text": "Узнать стоимость ремонта",
+          "top": 832
+        },
+        {
+          "text": "Обсудить симптомы с мастером",
+          "top": 5871
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "httpErrors": []
+}

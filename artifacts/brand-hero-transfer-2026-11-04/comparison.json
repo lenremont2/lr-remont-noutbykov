@@ -1,0 +1,473 @@
+{
+  "checks": [
+    {
+      "page": "home",
+      "card": {
+        "background": "rgb(11, 28, 46)",
+        "borderRadius": "16px",
+        "margin": "-32px 16px 0px",
+        "maxWidth": "680px",
+        "padding": "28px 20px",
+        "width": "288px",
+        "zIndex": "2"
+      },
+      "desktopSideBySide": false,
+      "media": {
+        "aspectRatio": "auto",
+        "height": "405px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "none",
+        "stageRadius": "0px"
+      },
+      "mediaLeft": 0,
+      "mediaRight": 320,
+      "overlap": 32,
+      "pageWidth": 320,
+      "photoLoaded": true,
+      "width": 320
+    },
+    {
+      "page": "home",
+      "card": {
+        "background": "rgb(11, 28, 46)",
+        "borderRadius": "16px",
+        "margin": "-32px 16px 0px",
+        "maxWidth": "680px",
+        "padding": "28px 20px",
+        "width": "358px",
+        "zIndex": "2"
+      },
+      "desktopSideBySide": false,
+      "media": {
+        "aspectRatio": "auto",
+        "height": "405px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "none",
+        "stageRadius": "0px"
+      },
+      "mediaLeft": 0,
+      "mediaRight": 390,
+      "overlap": 32,
+      "pageWidth": 390,
+      "photoLoaded": true,
+      "width": 390
+    },
+    {
+      "page": "home",
+      "card": {
+        "background": "rgb(11, 28, 46)",
+        "borderRadius": "16px",
+        "margin": "-32px 44px 0px",
+        "maxWidth": "680px",
+        "padding": "28px 20px",
+        "width": "680px",
+        "zIndex": "2"
+      },
+      "desktopSideBySide": false,
+      "media": {
+        "aspectRatio": "auto",
+        "height": "405px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "none",
+        "stageRadius": "0px"
+      },
+      "mediaLeft": 0,
+      "mediaRight": 768,
+      "overlap": 32,
+      "pageWidth": 768,
+      "photoLoaded": true,
+      "width": 768
+    },
+    {
+      "page": "home",
+      "card": {
+        "background": "rgb(11, 28, 46)",
+        "borderRadius": "16px",
+        "margin": "-32px 171.5px 0px",
+        "maxWidth": "680px",
+        "padding": "28px 20px",
+        "width": "680px",
+        "zIndex": "2"
+      },
+      "desktopSideBySide": false,
+      "media": {
+        "aspectRatio": "auto",
+        "height": "405px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "none",
+        "stageRadius": "0px"
+      },
+      "mediaLeft": 0,
+      "mediaRight": 1023,
+      "overlap": 32,
+      "pageWidth": 1023,
+      "photoLoaded": true,
+      "width": 1023
+    },
+    {
+      "page": "home",
+      "card": {
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "margin": "0px",
+        "maxWidth": "none",
+        "padding": "0px",
+        "width": "492.469px",
+        "zIndex": "auto"
+      },
+      "desktopSideBySide": true,
+      "media": {
+        "aspectRatio": "3 / 4",
+        "height": "559.375px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "480px",
+        "stageRadius": "16px"
+      },
+      "mediaLeft": 580.46875,
+      "mediaRight": 1000,
+      "overlap": 626.546875,
+      "pageWidth": 1024,
+      "photoLoaded": true,
+      "width": 1024
+    },
+    {
+      "page": "home",
+      "card": {
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "margin": "0px",
+        "maxWidth": "none",
+        "padding": "0px",
+        "width": "635.031px",
+        "zIndex": "auto"
+      },
+      "desktopSideBySide": true,
+      "media": {
+        "aspectRatio": "3 / 4",
+        "height": "640px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "480px",
+        "stageRadius": "16px"
+      },
+      "mediaLeft": 860,
+      "mediaRight": 1340,
+      "overlap": 659.015625,
+      "pageWidth": 1440,
+      "photoLoaded": true,
+      "width": 1440
+    },
+    {
+      "page": "sony",
+      "card": {
+        "background": "rgb(11, 28, 46)",
+        "borderRadius": "16px",
+        "margin": "-32px 16px 0px",
+        "maxWidth": "680px",
+        "padding": "28px 20px",
+        "width": "288px",
+        "zIndex": "2"
+      },
+      "desktopSideBySide": false,
+      "media": {
+        "aspectRatio": "auto",
+        "height": "405px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "none",
+        "stageRadius": "0px"
+      },
+      "mediaLeft": 0,
+      "mediaRight": 320,
+      "overlap": 32,
+      "pageWidth": 320,
+      "photoLoaded": true,
+      "width": 320
+    },
+    {
+      "page": "sony",
+      "card": {
+        "background": "rgb(11, 28, 46)",
+        "borderRadius": "16px",
+        "margin": "-32px 16px 0px",
+        "maxWidth": "680px",
+        "padding": "28px 20px",
+        "width": "358px",
+        "zIndex": "2"
+      },
+      "desktopSideBySide": false,
+      "media": {
+        "aspectRatio": "auto",
+        "height": "405px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "none",
+        "stageRadius": "0px"
+      },
+      "mediaLeft": 0,
+      "mediaRight": 390,
+      "overlap": 32,
+      "pageWidth": 390,
+      "photoLoaded": true,
+      "width": 390
+    },
+    {
+      "page": "sony",
+      "card": {
+        "background": "rgb(11, 28, 46)",
+        "borderRadius": "16px",
+        "margin": "-32px 44px 0px",
+        "maxWidth": "680px",
+        "padding": "28px 20px",
+        "width": "680px",
+        "zIndex": "2"
+      },
+      "desktopSideBySide": false,
+      "media": {
+        "aspectRatio": "auto",
+        "height": "405px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "none",
+        "stageRadius": "0px"
+      },
+      "mediaLeft": 0,
+      "mediaRight": 768,
+      "overlap": 32,
+      "pageWidth": 768,
+      "photoLoaded": true,
+      "width": 768
+    },
+    {
+      "page": "sony",
+      "card": {
+        "background": "rgb(11, 28, 46)",
+        "borderRadius": "16px",
+        "margin": "-32px 171.5px 0px",
+        "maxWidth": "680px",
+        "padding": "28px 20px",
+        "width": "680px",
+        "zIndex": "2"
+      },
+      "desktopSideBySide": false,
+      "media": {
+        "aspectRatio": "auto",
+        "height": "405px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "none",
+        "stageRadius": "0px"
+      },
+      "mediaLeft": 0,
+      "mediaRight": 1023,
+      "overlap": 32,
+      "pageWidth": 1023,
+      "photoLoaded": true,
+      "width": 1023
+    },
+    {
+      "page": "sony",
+      "card": {
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "margin": "0px",
+        "maxWidth": "none",
+        "padding": "0px",
+        "width": "492.469px",
+        "zIndex": "auto"
+      },
+      "desktopSideBySide": true,
+      "media": {
+        "aspectRatio": "3 / 4",
+        "height": "559.375px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "480px",
+        "stageRadius": "16px"
+      },
+      "mediaLeft": 580.46875,
+      "mediaRight": 1000,
+      "overlap": 654.4375,
+      "pageWidth": 1024,
+      "photoLoaded": true,
+      "width": 1024
+    },
+    {
+      "page": "sony",
+      "card": {
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "margin": "0px",
+        "maxWidth": "none",
+        "padding": "0px",
+        "width": "635.031px",
+        "zIndex": "auto"
+      },
+      "desktopSideBySide": true,
+      "media": {
+        "aspectRatio": "3 / 4",
+        "height": "640px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "480px",
+        "stageRadius": "16px"
+      },
+      "mediaLeft": 860,
+      "mediaRight": 1340,
+      "overlap": 672.96875,
+      "pageWidth": 1440,
+      "photoLoaded": true,
+      "width": 1440
+    },
+    {
+      "page": "huawei",
+      "card": {
+        "background": "rgb(11, 28, 46)",
+        "borderRadius": "16px",
+        "margin": "-32px 16px 0px",
+        "maxWidth": "680px",
+        "padding": "28px 20px",
+        "width": "288px",
+        "zIndex": "2"
+      },
+      "desktopSideBySide": false,
+      "media": {
+        "aspectRatio": "auto",
+        "height": "405px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "none",
+        "stageRadius": "0px"
+      },
+      "mediaLeft": 0,
+      "mediaRight": 320,
+      "overlap": 32,
+      "pageWidth": 320,
+      "photoLoaded": true,
+      "width": 320
+    },
+    {
+      "page": "huawei",
+      "card": {
+        "background": "rgb(11, 28, 46)",
+        "borderRadius": "16px",
+        "margin": "-32px 16px 0px",
+        "maxWidth": "680px",
+        "padding": "28px 20px",
+        "width": "358px",
+        "zIndex": "2"
+      },
+      "desktopSideBySide": false,
+      "media": {
+        "aspectRatio": "auto",
+        "height": "405px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "none",
+        "stageRadius": "0px"
+      },
+      "mediaLeft": 0,
+      "mediaRight": 390,
+      "overlap": 32,
+      "pageWidth": 390,
+      "photoLoaded": true,
+      "width": 390
+    },
+    {
+      "page": "huawei",
+      "card": {
+        "background": "rgb(11, 28, 46)",
+        "borderRadius": "16px",
+        "margin": "-32px 44px 0px",
+        "maxWidth": "680px",
+        "padding": "28px 20px",
+        "width": "680px",
+        "zIndex": "2"
+      },
+      "desktopSideBySide": false,
+      "media": {
+        "aspectRatio": "auto",
+        "height": "405px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "none",
+        "stageRadius": "0px"
+      },
+      "mediaLeft": 0,
+      "mediaRight": 768,
+      "overlap": 32,
+      "pageWidth": 768,
+      "photoLoaded": true,
+      "width": 768
+    },
+    {
+      "page": "huawei",
+      "card": {
+        "background": "rgb(11, 28, 46)",
+        "borderRadius": "16px",
+        "margin": "-32px 171.5px 0px",
+        "maxWidth": "680px",
+        "padding": "28px 20px",
+        "width": "680px",
+        "zIndex": "2"
+      },
+      "desktopSideBySide": false,
+      "media": {
+        "aspectRatio": "auto",
+        "height": "405px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "none",
+        "stageRadius": "0px"
+      },
+      "mediaLeft": 0,
+      "mediaRight": 1023,
+      "overlap": 32,
+      "pageWidth": 1023,
+      "photoLoaded": true,
+      "width": 1023
+    },
+    {
+      "page": "huawei",
+      "card": {
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "margin": "0px",
+        "maxWidth": "none",
+        "padding": "0px",
+        "width": "492.469px",
+        "zIndex": "auto"
+      },
+      "desktopSideBySide": true,
+      "media": {
+        "aspectRatio": "3 / 4",
+        "height": "559.375px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "480px",
+        "stageRadius": "16px"
+      },
+      "mediaLeft": 580.46875,
+      "mediaRight": 1000,
+      "overlap": 640.5,
+      "pageWidth": 1024,
+      "photoLoaded": true,
+      "width": 1024
+    },
+    {
+      "page": "huawei",
+      "card": {
+        "background": "rgba(0, 0, 0, 0)",
+        "borderRadius": "0px",
+        "margin": "0px",
+        "maxWidth": "none",
+        "padding": "0px",
+        "width": "635.031px",
+        "zIndex": "auto"
+      },
+      "desktopSideBySide": true,
+      "media": {
+        "aspectRatio": "3 / 4",
+        "height": "640px",
+        "mask": "linear-gradient(rgb(0, 0, 0) 55%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0) 100%)",
+        "stageMaxWidth": "480px",
+        "stageRadius": "16px"
+      },
+      "mediaLeft": 860,
+      "mediaRight": 1340,
+      "overlap": 659.015625,
+      "pageWidth": 1440,
+      "photoLoaded": true,
+      "width": 1440
+    }
+  ],
+  "issues": []
+}

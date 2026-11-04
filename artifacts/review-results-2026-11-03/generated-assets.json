@@ -1,0 +1,184 @@
+[
+  {
+    "name": "DS",
+    "slug": "imac",
+    "scene": "A silver 27-inch 2012 iMac, fully assembled and switched on with a calm island landscape wallpaper, white keyboard and ordinary mouse. On an everyday home computer desk, cable to a wall socket visible.",
+    "alt": "Исправный iMac на домашнем рабочем столе",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-948b6d97-c85c-4ab6-a0fb-f183698e98f8.png"
+  },
+  {
+    "name": "Егор Налимов",
+    "slug": "desktop",
+    "scene": "An older black desktop PC tower with optical drive bays, CLOSED side panel, connected to a monitor displaying an ordinary desktop. On a modest home desk next to a black speaker; computer is ready for normal use.",
+    "alt": "Системный блок и монитор дома после обслуживания",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-6f37a618-bb66-4aa3-8c8f-ec97c3c0f91d.png"
+  },
+  {
+    "name": "Андрей Старомодин",
+    "slug": "water",
+    "scene": "A fully assembled black laptop switched on and working on a simple wooden home desk, normal wallpaper, wireless mouse nearby. Morning daylight in an ordinary apartment.",
+    "alt": "Работающий ноутбук на домашнем столе",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-2b24fd6a-14d2-4c90-a970-3d23b97f29a0.png"
+  },
+  {
+    "name": "Виктория Суворова",
+    "slug": "tea",
+    "scene": "A fully assembled silver laptop, dry clean keyboard intact, running a normal desktop, on a small home study desk near a notebook and pencil. Warm afternoon light.",
+    "alt": "Исправный ноутбук после ремонта дома",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-3c01e563-da3b-4575-8068-3833e2a20c9c.png"
+  },
+  {
+    "name": "Руфина",
+    "slug": "home",
+    "scene": "A fully assembled grey laptop with screen on, on a small white home desk near a window with a radiator below. Simple slightly lived-in apartment, blue mousepad.",
+    "alt": "Ноутбук на домашнем столе после обслуживания",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-403ddc24-d37d-49ea-917c-3f2eac7ca686.png"
+  },
+  {
+    "name": "Егор Костин",
+    "slug": "ready",
+    "scene": "A fully assembled dark grey laptop switched on with plain blue desktop wallpaper, on a worn brown desk in a small home office. Charging cable loosely laid to the left.",
+    "alt": "Работающий ноутбук дома после ремонта",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-52f281ec-798a-4fcb-a468-132e73c27a29.png"
+  },
+  {
+    "name": "Николай",
+    "slug": "asus",
+    "scene": "A fully assembled older dark ASUS laptop, switched on with a normal wallpaper, on a home desk, ordinary black mouse and household bookshelf behind. All covers attached.",
+    "alt": "Исправный ноутбук ASUS на рабочем столе",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-438cc5e4-c744-44fc-ab7c-6fd91ca8f1dc.png"
+  },
+  {
+    "name": "Артур Пшуков",
+    "slug": "power",
+    "scene": "A fully assembled black ASUS laptop with power indicator lit and working screen, on a modest home computer desk photographed in evening lamplight. Nothing being repaired.",
+    "alt": "Включённый ноутбук ASUS после ремонта",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-2641776a-3985-4cb0-8e89-a4ea49ce2820.png"
+  },
+  {
+    "name": "Warfece 5ш6ш8",
+    "slug": "spill",
+    "scene": "A fully assembled black laptop on a kitchen table in an ordinary apartment, screen working normally, intact dry keyboard, charging cable connected. No liquids near the laptop.",
+    "alt": "Ноутбук с исправным экраном и клавиатурой дома",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-213c8d1d-b981-49a5-b82a-ca33bbaa24e9.png"
+  },
+  {
+    "name": "AMJAD DHUDDI",
+    "slug": "older",
+    "scene": "An older fully assembled black laptop with visibly worn palm rest, switched on to a blue sky wallpaper on an inexpensive light wood desk. Modest domestic setting, afternoon light.",
+    "alt": "Работающий старый ноутбук дома",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-cba1a306-2e3f-4add-83e2-5decce025c43.png"
+  },
+  {
+    "name": "kami",
+    "slug": "compact",
+    "scene": "A fully assembled compact silver laptop switched on, placed slightly diagonally on a white desk with a school notebook off to one side. Ordinary small apartment room, soft daylight.",
+    "alt": "Исправный ноутбук на письменном столе",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-db44e1a8-3b83-48f3-afb2-69cc7e8c0cdd.png"
+  },
+  {
+    "name": "Александра Поварницина",
+    "slug": "day",
+    "scene": "A fully assembled slim grey laptop, screen switched on showing landscape wallpaper, on a home dining table near a folded cloth and wireless mouse. Late afternoon natural light.",
+    "alt": "Ноутбук после ремонта на домашнем столе",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-c5127bd2-01eb-4454-b6b3-29d7e8b79cd6.png"
+  },
+  {
+    "name": "ASHFAQ AHMAD ANJUM",
+    "slug": "charge",
+    "scene": "A fully assembled dark laptop working on a home desk, charging plug visibly connected to its side and ordinary power adapter on the table. Three-quarter customer snapshot, warm room light.",
+    "alt": "Ноутбук с подключённым зарядным устройством дома",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-8d179400-85b6-497e-9891-d8a19bd385b5.png"
+  },
+  {
+    "name": "Иван Леванов",
+    "slug": "jack",
+    "scene": "A fully assembled black laptop switched on on a simple beige home desk, charging cable firmly plugged in and adapter nearby, slight side angle showing the charging port. Daylight, no repair activity.",
+    "alt": "Исправный ноутбук с подключённой зарядкой",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-3bd3a9cb-d0ed-4c72-b6f4-2c52f747e365.png"
+  },
+  {
+    "name": "Рамазан Саидов",
+    "slug": "devices",
+    "scene": "A fully assembled working laptop and a normal intact smartphone side by side on a slightly worn home office desk. Both screens lit with abstract wallpaper, no readable messages. Ordinary household cables.",
+    "alt": "Ноутбук и телефон на домашнем рабочем столе",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-e05f5c8a-204b-42e0-9840-54b374e9b075.png"
+  },
+  {
+    "name": "1 2",
+    "slug": "restored",
+    "scene": "A fully assembled charcoal laptop running a normal desktop, on a simple brown table in a small apartment study, notebook and ballpoint pen nearby. Casual overhead three-quarter photo.",
+    "alt": "Ноутбук после ремонта в домашней обстановке",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-6718e1ee-1a3e-478d-9d7d-02865b26d4f9.png"
+  },
+  {
+    "name": "Геннадий Тузов",
+    "slug": "ssd",
+    "scene": "A fully assembled grey laptop, switched on with an ordinary blue desktop wallpaper, on a clean but everyday home desk with wireless mouse and small external drive beside it. No exposed parts.",
+    "alt": "Работающий ноутбук после обновления накопителя",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-a7f905ae-c848-4ab0-aefd-cd0317056809.png"
+  },
+  {
+    "name": "Artyom S",
+    "slug": "speed",
+    "scene": "A fully assembled dark silver laptop working normally on an everyday home desk, simple desktop wallpaper, mousepad slightly skewed, a pair of everyday headphones nearby. Cool overcast daylight.",
+    "alt": "Исправный ноутбук на домашнем рабочем месте",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-42495dd4-3033-4fae-b442-a660aa8309fe.png"
+  },
+  {
+    "name": "Дмитрий Власенко",
+    "slug": "screen",
+    "scene": "A fully assembled black laptop with intact bright screen displaying a clear green landscape wallpaper, on a modest home study desk. Screen prominently visible without damage, no repair tools.",
+    "alt": "Ноутбук с исправным экраном дома",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-b9859eb7-9303-4a3e-aa6a-9c3848153fb6.png"
+  },
+  {
+    "name": "сергей коротков",
+    "slug": "two",
+    "scene": "Two different fully assembled laptops, one silver and one black, both switched on with plain landscape wallpaper, on a shared home office table. Ordinary household scene, natural window light.",
+    "alt": "Два исправных ноутбука на домашнем столе",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-0f0f7f9a-c9dc-4dd2-a4c5-494353e3ed1f.png"
+  },
+  {
+    "name": "Н Б",
+    "slug": "quick",
+    "scene": "A small fully assembled older grey laptop switched on on a modest kitchen table, a closed personal notebook nearby, loosely coiled charging cable. Casual customer snapshot taken after using it.",
+    "alt": "Работающий ноутбук на домашнем столе",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-1212c1d9-1437-4376-99b8-4666b2759fd0.png"
+  },
+  {
+    "name": "Константин",
+    "slug": "office",
+    "scene": "A fully assembled black laptop with screen on, on an ordinary personal office desk with a notebook and a basic wired mouse. Warm desk lamp, slight domestic clutter, no repair bench.",
+    "alt": "Исправный ноутбук на рабочем столе",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-4e4bd683-30d0-476b-b0c2-8addd4d8d182.png"
+  },
+  {
+    "name": "Лада С.",
+    "slug": "family",
+    "scene": "A fully assembled older silver laptop running a normal desktop on a small home table with a fabric tablecloth. Quiet lived-in apartment, reading glasses and closed book off to one side. Soft daylight.",
+    "alt": "Исправный ноутбук в домашней обстановке",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-b9d53e0f-e3fc-47c1-9c2c-061461dfd226.png"
+  },
+  {
+    "name": "Алексей Миронов",
+    "slug": "case",
+    "scene": "A fully assembled dark laptop with all casing intact, open and switched on on a home desk. Low three-quarter angle naturally shows neat unbroken case edges, no loose screws or tools.",
+    "alt": "Собранный ноутбук с целым корпусом дома",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-df1b531e-204d-4d09-a11f-a5fef17794cf.png"
+  },
+  {
+    "name": "Наталья Р.",
+    "slug": "quiet",
+    "scene": "A fully assembled silver laptop with screen on, on an ordinary light wood home desk near a window. Small mouse and personal notebook nearby, no cooling equipment or tools.",
+    "alt": "Работающий ноутбук дома после обслуживания",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-8fa58f07-78ff-4108-9d74-f84f0d4a3737.png"
+  },
+  {
+    "name": "Анна Мельникова",
+    "slug": "laptop-pc",
+    "scene": "A fully assembled laptop and CLOSED black desktop tower connected to a monitor at an ordinary home computer desk. Both computer screens show simple wallpaper. Everyday family workspace, not a shop.",
+    "alt": "Ноутбук и системный блок на домашнем рабочем месте",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-866145f6-f0c9-4577-9bfc-569386cfe5dc.png"
+  }
+]

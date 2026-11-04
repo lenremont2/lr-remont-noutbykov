@@ -1,0 +1,74 @@
+[
+  {
+    "containerLeft": 20,
+    "containerWidth": 280,
+    "copyLeft": 20,
+    "copyWidth": 280,
+    "desktopSideBySide": false,
+    "overlap": 24,
+    "pageWidth": 320,
+    "photoLeft": 0,
+    "photoRight": 320,
+    "width": 320
+  },
+  {
+    "containerLeft": 20,
+    "containerWidth": 350,
+    "copyLeft": 20,
+    "copyWidth": 350,
+    "desktopSideBySide": false,
+    "overlap": 24,
+    "pageWidth": 390,
+    "photoLeft": 0,
+    "photoRight": 390,
+    "width": 390
+  },
+  {
+    "containerLeft": 32,
+    "containerWidth": 704,
+    "copyLeft": 32,
+    "copyWidth": 704,
+    "desktopSideBySide": false,
+    "overlap": 24,
+    "pageWidth": 768,
+    "photoLeft": 0,
+    "photoRight": 768,
+    "width": 768
+  },
+  {
+    "containerLeft": 32,
+    "containerWidth": 959,
+    "copyLeft": 32,
+    "copyWidth": 959,
+    "desktopSideBySide": false,
+    "overlap": 24,
+    "pageWidth": 1023,
+    "photoLeft": 0,
+    "photoRight": 1023,
+    "width": 1023
+  },
+  {
+    "containerLeft": 61.4375,
+    "containerWidth": 901.109375,
+    "copyLeft": 0,
+    "copyWidth": 536.796875,
+    "desktopSideBySide": true,
+    "overlap": 660,
+    "pageWidth": 1024,
+    "photoLeft": 584.796875,
+    "photoRight": 1023.984375,
+    "width": 1024
+  },
+  {
+    "containerLeft": 86.40625,
+    "containerWidth": 1267.1875,
+    "copyLeft": 80,
+    "copyWidth": 677.59375,
+    "desktopSideBySide": true,
+    "overlap": 615.4375,
+    "pageWidth": 1440,
+    "photoLeft": 805.59375,
+    "photoRight": 1360,
+    "width": 1440
+  }
+]

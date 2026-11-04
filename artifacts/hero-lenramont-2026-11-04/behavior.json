@@ -1,0 +1,23 @@
+{
+  "before": {
+    "x": 580.46875,
+    "y": 139.171875,
+    "width": 419.53125,
+    "height": 559.375
+  },
+  "after": {
+    "x": 580.46875,
+    "y": 139.171875,
+    "width": 419.53125,
+    "height": 559.375
+  },
+  "stable": true,
+  "quiz": true,
+  "focusReturned": true,
+  "dialogs": 1,
+  "reduced": {
+    "paused": true,
+    "controls": false
+  },
+  "overflow": false
+}

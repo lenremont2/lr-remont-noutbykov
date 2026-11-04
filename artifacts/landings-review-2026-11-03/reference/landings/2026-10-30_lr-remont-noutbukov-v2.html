@@ -1,0 +1,3288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Ремонт ноутбуков в СПб и ЛО от 40 минут — Диагностика 0 ₽ | Ленремонт</title>
+  <meta name="description" content="Честный ремонт ноутбуков в Санкт-Петербурге и ЛО на дому, в мобильной мастерской или в 25 СЦ у метро. Диагностика — бесплатно (0 ₽) даже при отказе. Твёрдая смета до работ, гарантия 1 год по БСО." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ==========================================================================
+       MASTER DESIGN TOKENS v5.0 (Direct Response Power + Swiss Typographic System)
+       Синтез:
+       - Полная 16-блочная архитектура прямого отклика (Хормози, Султанич, Хэлберт,
+         Абрахам, Кеннеди) без вырезанных смысловых узлов и с живым продающим текстом
+       - Эталонная система отступов и визуальной иерархии Typographic Design Master 4.0
+         (профиль Spacious / Consumer, 4-ступенчатая лестница Гештальта, концентрические
+         радиусы, 3 эшелона контраста текста)
+       ========================================================================== */
+    :root {
+      --navy-950: #071326;
+      --navy-900: #0c1e3a;
+      --navy-800: #132c52;
+      --blue-700: #0046a8;
+      --blue-600: #0b5ed7;
+      --blue-500: #2563eb;
+      --blue-100: #e8f1ff;
+      --blue-50:  #f4f8ff;
+
+      --gold-500: #ffd200;
+      --gold-400: #ffdf38;
+      --gold-600: #eab308;
+      --gold-100: #fef9c3;
+
+      --emerald-700: #047857;
+      --emerald-600: #059669;
+      --emerald-100: #d1fae5;
+      --emerald-50:  #ecfdf5;
+
+      --danger-600: #dc2626;
+      --danger-100: #fee2e2;
+
+      /* Ровно 3 эшелона контраста текста (WCAG AAA/AA) */
+      --text-primary:   #0f172a; /* 15.8:1 */
+      --text-secondary: #475569; /* 7.5:1  */
+      --text-tertiary:  #64748b; /* 4.8:1  */
+
+      /* Поверхности */
+      --surface-page:   #f4f7fb;
+      --surface-alt:    #edf3fb;
+      --surface-card:   #ffffff;
+      --surface-sunken: #f8fafc;
+      --border-subtle:  #e2e8f0;
+      --border-strong:  #cbd5e1;
+
+      /* Двухкомпонентные направленные тени */
+      --shadow-sm: 0 2px 6px -1px rgba(15, 23, 42, 0.05), 0 1px 2px 0 rgba(15, 23, 42, 0.03);
+      --shadow-md: 0 12px 24px -6px rgba(15, 23, 42, 0.07), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
+      --shadow-lg: 0 20px 36px -8px rgba(7, 19, 38, 0.14), 0 8px 16px -4px rgba(7, 19, 38, 0.06);
+
+      /* 4-ступенчатая лестница близости Гештальта (Outer > Inner) */
+      --space-related: 8px;
+      --space-item:    16px;
+      --space-group:   28px;
+      --space-section: 56px;
+
+      /* Концентрические радиусы */
+      --radius-sm:   8px;
+      --radius-md:   12px;
+      --radius-lg:   16px;
+      --radius-xl:   20px;
+      --radius-full: 9999px;
+
+      --font-sans:    'Golos Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-display: 'Manrope', 'Golos Text', sans-serif;
+    }
+
+    @media (min-width: 768px) {
+      :root {
+        --space-item:    20px;
+        --space-group:   40px;
+        --space-section: 88px;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      font-family: var(--font-sans);
+      color: var(--text-primary);
+      background: var(--surface-page);
+      font-variant-numeric: tabular-nums;
+      -webkit-font-smoothing: antialiased;
+    }
+    body {
+      overflow-x: hidden;
+      line-height: 1.5;
+      padding-bottom: 88px;
+    }
+    img, video, svg { max-width: 100%; display: block; }
+    button, input { font: inherit; }
+    h1, h2, h3, h4 { text-wrap: balance; }
+    p, li { text-wrap: pretty; }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ==========================================================================
+       1. ВЕРХНИЙ B2B-ШЛЮЗ ДЛЯ ЮРЛИЦ (Замечание Павла 08:34–09:00)
+       ========================================================================== */
+    .b2b-top-strip {
+      background: var(--navy-950);
+      color: #cbd5e1;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+      padding: 7px 0;
+      font-size: 12px;
+    }
+    .b2b-top-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .b2b-top-label {
+      color: #e2e8f0;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .b2b-top-link {
+      background: none;
+      border: none;
+      color: var(--gold-400);
+      font-weight: 700;
+      font-size: 12px;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* ==========================================================================
+       2. ЛИПКАЯ ШАПКА САЙТА В 1 СТРОКУ БЕЗ ОБРЕЗАНИЙ
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 58px;
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      min-width: 0;
+    }
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--blue-700);
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 13.5px;
+      letter-spacing: 0.02em;
+      border-radius: 9px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 -2.5px 0 var(--gold-500);
+    }
+    .brand-meta {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .brand-title {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: 0.03em;
+      line-height: 1.15;
+      color: var(--blue-700);
+      white-space: nowrap;
+    }
+    .brand-sub {
+      font-size: 11.5px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+    .header-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--blue-700);
+      text-decoration: none;
+      background: var(--blue-50);
+      border: 1px solid #dbeafe;
+      padding: 8px 12px 8px 10px;
+      border-radius: var(--radius-md);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .header-phone svg {
+      width: 14px;
+      height: 14px;
+      color: var(--blue-600);
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       3. ПЕРВЫЙ ЭКРАН (HERO) — ВИДИМАЯ ВИДЕОСЦЕНА ФУРГОНА СВЕРХУ + МОЩНЫЙ ОФФЕР +
+          5 УБОЙНЫХ ПРОДАЮЩИХ БУЛЛИТОВ ДО КНОПОК + 2 РАВНОВЕСНЫЕ КНОПКИ + МЕССЕНДЖЕРЫ
+       ========================================================================== */
+    .hero-section {
+      position: relative;
+      overflow: hidden;
+      background: var(--navy-950);
+      color: #ffffff;
+      padding: 12px 0 32px;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      max-width: 680px;
+    }
+
+    /* Настоящее видимое окно видеосцены фургона в верхней части Hero (00:00–00:19) */
+    .hero-video-stage {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      height: 104px;
+      margin-bottom: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: #0c1e3a url('https://lr-remont-noutbykov.vercel.app/media/mobile-lab-exterior.webp') center 45% / cover no-repeat;
+      box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.5);
+    }
+    @media (min-width: 768px) {
+      .hero-video-stage { height: 190px; margin-bottom: 22px; }
+    }
+    .hero-stage-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 45%;
+    }
+    .hero-stage-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(7,19,38,0.10) 0%, rgba(7,19,38,0.32) 52%, rgba(7,19,38,0.88) 100%);
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 8px 12px;
+    }
+    .hero-stage-caption {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #f8fafc;
+    }
+    .hero-stage-pill {
+      background: var(--gold-500);
+      color: var(--navy-950);
+      font-weight: 800;
+      font-size: 11px;
+      padding: 3px 9px;
+      border-radius: var(--radius-full);
+      white-space: nowrap;
+    }
+
+    .hero-seo-h1 {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.32;
+      color: #93c5fd;
+      margin-bottom: 5px;
+    }
+
+    .hero-offer-title {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 5.8vw, 42px);
+      font-weight: 800;
+      line-height: 1.13;
+      letter-spacing: -0.025em;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .hero-offer-title .hl-gold {
+      color: var(--navy-950);
+      background: var(--gold-500);
+      padding: 1px 8px 2px;
+      border-radius: 7px;
+      display: inline-block;
+    }
+
+    .hero-offer-sub {
+      font-size: 13.5px;
+      line-height: 1.42;
+      color: #cbd5e1;
+      margin-bottom: 12px;
+      max-width: 58ch;
+    }
+    .hero-offer-sub strong { color: #ffffff; font-weight: 600; }
+
+    /* Обойма из 5 продающих буллитов ДО кнопок (По Хэлберту, Хормози и Султаничу):
+       4 в сетке 2x2 + 1 широкий акцентный буллит со скидкой 15% пенсионерам и чисткой в подарок! */
+    .hero-bullets {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px;
+      margin-bottom: 12px;
+    }
+    .hero-bullet-item {
+      background: rgba(15, 33, 64, 0.80);
+      border: 1px solid rgba(148, 163, 184, 0.20);
+      border-radius: 11px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .hero-bullet-item.is-wide-bonus {
+      grid-column: 1 / -1;
+      background: rgba(255, 210, 0, 0.11);
+      border-color: rgba(255, 210, 0, 0.35);
+      flex-direction: row;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 11px;
+    }
+    .hb-top {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .hb-icon-wrap {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      background: rgba(255, 210, 0, 0.16);
+      color: var(--gold-400);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .hb-icon-wrap svg { width: 12px; height: 12px; }
+    .hb-title {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 12.5px;
+      line-height: 1.2;
+    }
+    .hb-desc {
+      font-size: 11.5px;
+      line-height: 1.3;
+      color: #cbd5e1;
+    }
+
+    /* Две полноразмерные равновесные кнопки в Hero */
+    .hero-cta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .btn-primary-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 12px;
+      background: var(--gold-500);
+      color: var(--navy-950);
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 14px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 8px 20px -4px rgba(255, 210, 0, 0.35);
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+    .btn-secondary-glass {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 12px;
+      background: rgba(255, 255, 255, 0.10);
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    /* Мессенджеры в 1 ряд с векторными логотипами (без QR-кодов) */
+    .hero-messengers-block {
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .hero-messengers-caption {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .hero-messengers-row {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 7px;
+    }
+    .msg-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      min-height: 38px;
+      padding: 6px 6px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 12px;
+      text-decoration: none;
+      color: #f8fafc;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      white-space: nowrap;
+    }
+    .msg-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+    /* ==========================================================================
+       4. ЛЕНТА БРЕНДОВ СЛЕВА НАПРАВО (11:15–11:36)
+       ========================================================================== */
+    .brands-top-bar {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 14px 0;
+    }
+    .brands-track {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .brands-track::-webkit-scrollbar { display: none; }
+    .brands-label {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-tertiary);
+      white-space: nowrap;
+      margin-right: 4px;
+    }
+    .brand-pill {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface-sunken);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 8px 14px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--text-primary);
+    }
+    .brand-pill img { height: 16px; width: auto; object-fit: contain; }
+
+    /* ==========================================================================
+       ОБЩАЯ АРХИТЕКТУРА СЕКЦИЙ И ЗАГОЛОВОЧНЫХ КЛАСТЕРОВ
+       ========================================================================== */
+    .section {
+      padding: var(--space-section) 0;
+      scroll-margin-top: 64px;
+    }
+    .section-white {
+      background: #ffffff;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .section-tinted {
+      background: var(--surface-page);
+    }
+    .section-header-group {
+      margin-bottom: var(--space-group);
+    }
+    .section-header-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: var(--space-group);
+    }
+    .section-eyebrow {
+      display: block;
+      color: var(--blue-600);
+      font-weight: 700;
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 6px;
+      white-space: nowrap;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(23px, 5.8vw, 34px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+    }
+    .section-lead {
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--text-secondary);
+      margin-top: 8px;
+      max-width: 60ch;
+    }
+    .carousel-nav {
+      display: inline-flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .carousel-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--border-strong);
+      background: #ffffff;
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 18px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .h-scroll-track {
+      display: flex;
+      gap: var(--space-item);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 2px 2px 10px;
+      scrollbar-width: none;
+    }
+    .h-scroll-track::-webkit-scrollbar { display: none; }
+
+    /* ==========================================================================
+       5. ТРЕХЭТАЖНЫЙ БЛОК ДОВЕРИЯ: РЕЙТИНГИ + ДИПЛОМЫ + ОТЗЫВЫ С ФОТО
+       ========================================================================== */
+    .ratings-row-3col {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    .rating-stat-card {
+      background: var(--surface-sunken);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 14px 8px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+    .rating-score-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 4px;
+    }
+    .rating-score {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+    }
+    .rating-star-icon { color: #f59e0b; font-size: 14px; }
+    .rating-source {
+      font-weight: 700;
+      font-size: 12px;
+      color: var(--text-primary);
+      display: block;
+      margin-top: 5px;
+      white-space: nowrap;
+    }
+    .rating-count {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      display: block;
+      margin-top: 2px;
+    }
+
+    .awards-gallery-block { margin-bottom: 24px; }
+    .awards-subhead {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .awards-subhead-title { font-size: 13.5px; font-weight: 700; color: var(--text-primary); }
+    .awards-subhead-hint { font-size: 12px; color: var(--blue-600); font-weight: 600; white-space: nowrap; }
+    .award-card {
+      scroll-snap-align: start;
+      flex: 0 0 245px;
+      background: var(--surface-sunken);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 12px 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .award-doc-thumb {
+      width: 48px;
+      height: 60px;
+      border-radius: 6px;
+      background: linear-gradient(180deg, #ffffff 0%, #fef9c3 100%);
+      border: 1px solid #fde047;
+      box-shadow: 0 2px 5px rgba(15, 23, 42, 0.08);
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 5px;
+    }
+    .award-doc-lines {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      align-items: center;
+    }
+    .award-doc-lines span {
+      display: block;
+      height: 2px;
+      background: #cbd5e1;
+      border-radius: 2px;
+      width: 85%;
+    }
+    .award-doc-lines span:first-child { width: 60%; height: 3px; background: var(--gold-600); }
+    .award-doc-seal {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--blue-600);
+      color: #ffffff;
+      font-size: 8px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 2px #fef08a;
+    }
+    .award-card-title { font-weight: 700; font-size: 13px; line-height: 1.28; color: var(--text-primary); }
+    .award-card-action { font-size: 11.5px; color: var(--blue-600); font-weight: 600; margin-top: 4px; }
+
+    .review-card {
+      scroll-snap-align: start;
+      flex: 0 0 86%;
+      max-width: 332px;
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 18px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .review-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .review-author-group { display: flex; align-items: center; gap: 10px; }
+    .review-avatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .review-author { font-weight: 700; font-size: 14.5px; color: var(--text-primary); line-height: 1.2; }
+    .review-meta-line { font-size: 12px; color: var(--text-tertiary); margin-top: 2px; display: flex; align-items: center; gap: 5px; }
+    .review-stars { color: #f59e0b; letter-spacing: 0.5px; }
+    .review-task-tag {
+      display: inline-block;
+      width: fit-content;
+      background: var(--blue-50);
+      color: var(--blue-700);
+      font-weight: 600;
+      font-size: 11.5px;
+      padding: 4px 9px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      white-space: nowrap;
+    }
+    .review-text {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.48;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .review-card.is-expanded .review-text { display: block; -webkit-line-clamp: unset; }
+    .review-readmore-btn {
+      background: none;
+      border: none;
+      color: var(--blue-600);
+      font-weight: 600;
+      font-size: 12.5px;
+      cursor: pointer;
+      padding: 4px 0 0;
+      text-align: left;
+      display: inline-block;
+    }
+    .review-photo-box {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      height: 128px;
+      cursor: pointer;
+      background: var(--surface-sunken);
+    }
+    .review-photo-box img { width: 100%; height: 100%; object-fit: cover; }
+    .review-photo-zoom-tag {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      background: rgba(7, 19, 38, 0.80);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+    }
+
+    /* ==========================================================================
+       6. «ЧТО МЫ ЧИНИМ» — ЖИВОЙ ПРОДАЮЩИЙ ЛИД В КАРТОЧКЕ + СЕТКА 2x2 + ЦЕНА
+       ========================================================================== */
+    .what-we-fix-card {
+      scroll-snap-align: start;
+      flex: 0 0 86%;
+      max-width: 336px;
+      background: #ffffff;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .wwf-media {
+      position: relative;
+      height: 156px;
+      overflow: hidden;
+      background: var(--navy-900);
+    }
+    .wwf-media img { width: 100%; height: 100%; object-fit: cover; }
+    .wwf-media-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(7,19,38,0.08) 0%, rgba(7,19,38,0.88) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 14px 18px;
+      color: #ffffff;
+    }
+    .wwf-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(7, 19, 38, 0.82);
+      backdrop-filter: blur(6px);
+      color: var(--gold-400);
+      font-weight: 700;
+      font-size: 11.5px;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+    }
+    .wwf-title {
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #ffffff;
+    }
+    .wwf-body {
+      padding: 16px 18px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+      justify-content: space-between;
+    }
+    .wwf-copy-lead {
+      font-size: 13.5px;
+      line-height: 1.45;
+      color: var(--text-secondary);
+    }
+    .wwf-tags-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .wwf-mini-pill {
+      background: var(--surface-sunken);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 7px 8px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .wwf-mini-pill::before {
+      content: "✓";
+      color: var(--blue-600);
+      font-weight: 800;
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+    .wwf-footer {
+      padding-top: 12px;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .wwf-footer-meta { display: flex; flex-direction: column; }
+    .wwf-footer-price {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 15px;
+      color: var(--text-primary);
+    }
+    .wwf-footer-sub { font-size: 11.5px; color: var(--emerald-700); font-weight: 600; }
+    .wwf-footer-btn {
+      background: var(--gold-500);
+      color: var(--navy-950);
+      border: none;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 13.5px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    /* ==========================================================================
+       7. ПРАЙС-ЛИСТ + БОНУС ПО ХОРМОЗИ (Продувка от пыли 0 ₽ при любом ремонте)
+       ========================================================================== */
+    .price-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      background: #e2e8f0;
+      padding: 5px;
+      border-radius: 14px;
+      margin-bottom: 18px;
+      max-width: 520px;
+    }
+    .price-tab-btn {
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 13.5px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .price-tab-btn.is-active {
+      background: #ffffff;
+      color: var(--text-primary);
+      font-weight: 700;
+      box-shadow: var(--shadow-sm);
+    }
+    .price-card-group {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+    .price-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 15px 18px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .price-row:last-child { border-bottom: none; }
+    .price-row.is-free-row {
+      background: var(--emerald-50);
+      border-bottom: 1px solid #a7f3d0;
+    }
+    .price-item-name { font-weight: 600; font-size: 15px; color: var(--text-primary); line-height: 1.32; }
+    .price-item-time { font-size: 12.5px; color: var(--text-tertiary); margin-top: 4px; line-height: 1.32; }
+    .price-row-action {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    @media (min-width: 560px) {
+      .price-row-action { flex-direction: row; align-items: center; gap: 14px; }
+    }
+    .price-val {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 15.5px;
+      color: var(--text-primary);
+      white-space: nowrap;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    .price-order-btn {
+      background: var(--blue-50);
+      color: var(--blue-700);
+      border: 1px solid #bfdbfe;
+      font-weight: 700;
+      font-size: 12.5px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .price-row.is-free-row .price-order-btn {
+      background: var(--gold-500);
+      border-color: var(--gold-600);
+      color: var(--navy-950);
+      font-weight: 800;
+    }
+    .price-bonus-strip {
+      margin-top: 16px;
+      background: var(--blue-50);
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius-lg);
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .pbs-text { font-size: 13.5px; color: var(--text-primary); line-height: 1.4; }
+    .pbs-text strong { color: var(--blue-700); }
+
+    /* ==========================================================================
+       8. СПОСОБЫ РЕМОНТА И ВСТРОЕННАЯ МИНИ-КАРТА СПб В КАЖДОЙ КАРТОЧКЕ
+       ========================================================================== */
+    .formats-track {
+      display: flex;
+      gap: var(--space-item);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 2px 2px 10px;
+      scrollbar-width: none;
+    }
+    .formats-track::-webkit-scrollbar { display: none; }
+    @media (min-width: 768px) {
+      .formats-track {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        overflow: visible;
+      }
+    }
+    .format-card {
+      scroll-snap-align: start;
+      flex: 0 0 88%;
+      max-width: 342px;
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+    }
+    @media (min-width: 768px) { .format-card { max-width: none; } }
+    .format-photo-head {
+      position: relative;
+      height: 152px;
+      overflow: hidden;
+      background: var(--navy-950);
+    }
+    .format-photo-head img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+    .format-photo-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(7,19,38,0.08) 0%, rgba(7,19,38,0.90) 100%);
+      padding: 14px 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: #ffffff;
+    }
+    .format-badge-top {
+      position: absolute;
+      top: 10px;
+      left: 12px;
+      background: var(--gold-500);
+      color: var(--navy-950);
+      font-weight: 800;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+    }
+    .format-title { font-family: var(--font-display); font-size: 19px; font-weight: 800; color: #ffffff; line-height: 1.2; }
+    .format-short-usp { font-size: 13px; color: #cbd5e1; margin-top: 3px; }
+    .format-body {
+      padding: 16px 18px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+      justify-content: space-between;
+    }
+    .spb-mini-map {
+      position: relative;
+      height: 64px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #e8f1ff;
+      border: 1px solid #cbd5e1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 12px;
+    }
+    .spb-map-svg-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.55;
+      pointer-events: none;
+    }
+    .spb-map-pin-badge {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 6px 10px;
+      border-radius: 8px;
+      box-shadow: var(--shadow-sm);
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+    .spb-pin-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--blue-600);
+      box-shadow: 0 0 0 4px rgba(11, 94, 215, 0.22);
+      flex-shrink: 0;
+    }
+    .spb-map-eta {
+      position: relative;
+      z-index: 2;
+      background: var(--emerald-700);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .fmw-label {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .fmw-free-tag { font-size: 12px; font-weight: 700; color: var(--emerald-700); }
+    .fmw-input {
+      width: 100%;
+      min-height: 42px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border-strong);
+      font-size: 16px;
+      font-weight: 600;
+      background: var(--surface-sunken);
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .fmw-chips {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+    }
+    .fmw-chips::-webkit-scrollbar { display: none; }
+    .fmw-chip {
+      flex: 0 0 auto;
+      background: var(--surface-sunken);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 11px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+    }
+    .fmw-chip.is-selected { background: var(--blue-700); color: #ffffff; border-color: var(--blue-700); }
+    .format-cta-btn {
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: none;
+      background: var(--gold-500);
+      color: var(--navy-950);
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 14.5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    /* ==========================================================================
+       9. ВИДЕОТУР «МОБИЛЬНАЯ МАСТЕРСКАЯ У ВАШЕГО ДОМА»
+       ========================================================================== */
+    .lab-card {
+      background: var(--navy-950);
+      color: #ffffff;
+      border-radius: 22px;
+      padding: 24px 20px;
+      box-shadow: var(--shadow-lg);
+    }
+    @media (min-width: 768px) { .lab-card { padding: 36px; } }
+    .lab-video-wrap {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #071326;
+      margin: 16px 0;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      aspect-ratio: 16 / 10;
+    }
+    .lab-video-el { width: 100%; height: 100%; object-fit: cover; }
+    .lab-play-btn {
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      background: var(--gold-500);
+      color: var(--navy-950);
+      border: 4px solid rgba(255, 255, 255, 0.92);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+    }
+    .lab-play-btn svg { width: 24px; height: 24px; transform: translateX(2px); }
+    .lab-play-btn.is-playing { opacity: 0; pointer-events: none; }
+    .lab-tags-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+    .lab-tag-chip {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: #e2e8f0;
+      font-size: 12.5px;
+      font-weight: 500;
+      padding: 6px 11px;
+      border-radius: var(--radius-sm);
+    }
+
+    /* ==========================================================================
+       10. ИНТЕРАКТИВНЫЙ КВИЗ С АВТОПЕРЕХОДОМ
+       ========================================================================== */
+    .quiz-box {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: 22px;
+      padding: 24px 20px;
+      box-shadow: var(--shadow-md);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .quiz-progress-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .quiz-step-pill {
+      background: var(--blue-50);
+      color: var(--blue-700);
+      font-weight: 700;
+      font-size: 12px;
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+    }
+    .quiz-bar {
+      height: 6px;
+      background: var(--surface-alt);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .quiz-bar-fill {
+      height: 100%;
+      width: 25%;
+      background: var(--blue-600);
+      transition: width 0.25s ease;
+    }
+    .quiz-question-title {
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 14px;
+    }
+    .quiz-options-grid { display: grid; gap: 10px; }
+    .quiz-opt-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 50px;
+      padding: 12px 14px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-strong);
+      background: var(--surface-sunken);
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14.5px;
+      color: var(--text-primary);
+    }
+    .quiz-opt-label.is-selected {
+      background: var(--blue-50);
+      color: var(--blue-700);
+      border-color: var(--blue-600);
+      box-shadow: 0 0 0 1px var(--blue-600);
+    }
+    .quiz-opt-label input { accent-color: var(--blue-600); transform: scale(1.15); flex-shrink: 0; }
+
+    /* ==========================================================================
+       11. ГАРАНТИИ (Сетка 2x2 Value-First) + СЛОВО ДИРЕКТОРА ДЕНИСА СОРОКИНА
+       ========================================================================== */
+    .adv-grid-2x2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .adv-stat-card {
+      background: var(--surface-sunken);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 16px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .adv-stat-num {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--blue-700);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .adv-stat-title { font-weight: 700; font-size: 14px; color: var(--text-primary); line-height: 1.25; }
+    .adv-stat-desc { font-size: 12.5px; color: var(--text-secondary); line-height: 1.38; }
+
+    .director-card {
+      background: var(--navy-950);
+      color: #ffffff;
+      border-radius: 20px;
+      padding: 20px 18px;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    @media (min-width: 768px) { .director-card { padding: 28px; } }
+    .director-head-row { display: flex; align-items: center; gap: 14px; }
+    .director-avatar-lg {
+      width: 68px;
+      height: 68px;
+      border-radius: 14px;
+      object-fit: cover;
+      object-position: top center;
+      border: 2px solid var(--gold-500);
+      flex-shrink: 0;
+    }
+    .director-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold-400);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      display: block;
+      margin-bottom: 3px;
+    }
+    .director-name { font-family: var(--font-display); font-size: 18px; font-weight: 800; color: #ffffff; line-height: 1.2; }
+    .director-quote {
+      font-size: 14px;
+      line-height: 1.48;
+      color: #e2e8f0;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 12px 14px;
+      border-radius: 12px;
+    }
+
+    /* ==========================================================================
+       12. ВОЗВРАЩЁННЫЙ БЛОК: ИНЖЕНЕРНОЕ ОБОРУДОВАНИЕ И РАБОЧИЕ ЗОНЫ МАСТЕРСКОЙ
+       ========================================================================== */
+    .workshop-zone-card {
+      scroll-snap-align: start;
+      flex: 0 0 84%;
+      max-width: 315px;
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .wz-photo {
+      height: 160px;
+      width: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .wz-body { padding: 16px 18px; }
+    .wz-title { font-family: var(--font-display); font-size: 16.5px; font-weight: 800; color: var(--text-primary); margin-bottom: 6px; }
+    .wz-desc { font-size: 13.5px; color: var(--text-secondary); line-height: 1.45; }
+
+    /* ==========================================================================
+       13. ВОЗВРАЩЁННЫЙ БЛОК: РЕМОНТ НОУТБУКОВ И КОМПЬЮТЕРОВ ДЛЯ БИЗНЕСА (B2B)
+       ========================================================================== */
+    .b2b-card {
+      background: linear-gradient(135deg, #071326 0%, #0f294d 100%);
+      color: #ffffff;
+      border-radius: 22px;
+      padding: 24px 20px;
+      box-shadow: var(--shadow-lg);
+    }
+    @media (min-width: 768px) { .b2b-card { padding: 36px; } }
+    .b2b-perks-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 18px 0 20px;
+    }
+    .b2b-perk-box {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 12px;
+      padding: 12px;
+    }
+    .b2b-perk-title { font-weight: 700; font-size: 13.5px; color: var(--gold-400); margin-bottom: 4px; }
+    .b2b-perk-sub { font-size: 12px; color: #cbd5e1; line-height: 1.35; }
+
+    /* ==========================================================================
+       14. ВОЗВРАЩЁННЫЙ БЛОК: СВОДНАЯ КАРТА ВСЕХ 25 МАСТЕРСКИХ ЛЕНРЕМОНТА В СПб
+       ========================================================================== */
+    .network-map-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+    .network-map-canvas {
+      position: relative;
+      height: 190px;
+      background: #dbeafe;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .network-branches-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      divide-y: 1px solid var(--border-subtle);
+    }
+    @media (min-width: 640px) {
+      .network-branches-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    .branch-item {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .branch-metro { font-weight: 700; font-size: 14.5px; color: var(--text-primary); display: flex; align-items: center; gap: 6px; }
+    .metro-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .branch-addr { font-size: 12.5px; color: var(--text-secondary); margin-top: 2px; }
+
+    /* ==========================================================================
+       15. ПРОДАЮЩИЙ FAQ (6 главных вопросов + редкие марки)
+       ========================================================================== */
+    .faq-list { display: grid; gap: 12px; }
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 16px 18px;
+      box-shadow: var(--shadow-sm);
+    }
+    .faq-item summary {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1.35;
+      cursor: pointer;
+      color: var(--text-primary);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: "+";
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--text-tertiary);
+      flex-shrink: 0;
+    }
+    .faq-item[open] summary::after { content: "−"; color: var(--blue-600); }
+    .faq-body {
+      font-size: 14px;
+      line-height: 1.52;
+      color: var(--text-secondary);
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    /* ==========================================================================
+       16. МОДАЛЬНОЕ ОКНО С ИСПРАВЛЕННЫМ НОМЕРОНАБИРАТЕЛЕМ
+       ========================================================================== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 120;
+      background: rgba(7, 19, 38, 0.76);
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .modal-backdrop[hidden] { display: none !important; }
+    @media (min-width: 560px) { .modal-backdrop { align-items: center; padding: 20px; } }
+    .modal-sheet {
+      width: 100%;
+      max-width: min(440px, 100vw);
+      min-width: 0;
+      max-height: 94vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background: #ffffff;
+      border-radius: 22px 22px 0 0;
+      padding: 20px 18px 24px;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+    }
+    @media (min-width: 560px) { .modal-sheet { border-radius: 22px; } }
+    .modal-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--border-subtle);
+      background: var(--surface-sunken);
+      font-size: 20px;
+      color: var(--text-secondary);
+      cursor: pointer;
+    }
+    .modal-context-pill {
+      display: block;
+      padding-right: 48px;
+      color: var(--blue-600);
+      font-weight: 700;
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .phone-display-field {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      padding: 11px 10px;
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--text-primary);
+      background: var(--surface-sunken);
+      border: 2px solid var(--blue-600);
+      border-radius: var(--radius-md);
+      text-align: center;
+      margin: 12px 0;
+    }
+    .dialpad-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .dial-key {
+      min-height: 46px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-strong);
+      background: #ffffff;
+      color: var(--text-primary);
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+    }
+    .dial-key.key-reset {
+      background: var(--danger-100);
+      color: var(--danger-600);
+      border-color: #fca5a5;
+      font-size: 13.5px;
+    }
+    .dial-key.key-back {
+      background: var(--surface-sunken);
+      color: var(--text-secondary);
+      font-size: 18px;
+    }
+    .consent-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+    .consent-row input { margin-top: 2px; transform: scale(1.15); accent-color: var(--blue-600); }
+    .form-status-msg {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      padding: 9px 12px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+    }
+    .form-status-msg.is-hint { background: var(--blue-50); color: var(--blue-700); }
+    .form-status-msg.is-ready { background: var(--emerald-100); color: var(--emerald-700); }
+    .modal-submit-btn {
+      width: 100%;
+      min-height: 52px;
+      border-radius: var(--radius-md);
+      border: none;
+      background: var(--gold-500);
+      color: var(--navy-950);
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 15.5px;
+      cursor: pointer;
+    }
+    .modal-submit-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      background: #cbd5e1;
+      color: #475569;
+    }
+
+    .lightbox-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 140;
+      background: rgba(7, 19, 38, 0.94);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .lightbox-backdrop[hidden] { display: none !important; }
+    .lightbox-img {
+      width: 94vw;
+      max-width: 720px;
+      max-height: 76vh;
+      object-fit: contain;
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+    }
+    .lightbox-caption { color: #f8fafc; font-weight: 600; font-size: 14px; margin-top: 14px; text-align: center; }
+    .lightbox-close {
+      margin-top: 16px;
+      background: var(--gold-500);
+      color: var(--navy-950);
+      border: none;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 10px 24px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+    }
+
+    .sticky-mobile-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 90;
+      background: rgba(7, 19, 38, 0.94);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 8px 16px;
+      display: grid;
+      grid-template-columns: 1fr 1.35fr;
+      gap: 10px;
+    }
+    .smb-call {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 44px;
+      border-radius: 11px;
+      background: rgba(255, 255, 255, 0.10);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .smb-call svg { width: 15px; height: 15px; color: var(--gold-400); }
+    .smb-order {
+      min-height: 44px;
+      border-radius: 11px;
+      border: none;
+      background: var(--gold-500);
+      color: var(--navy-950);
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. ВЕРХНИЙ B2B-ШЛЮЗ ДЛЯ ЮРЛИЦ (Переход к полноценному B2B-блоку #lr-b2b) -->
+  <div class="b2b-top-strip">
+    <div class="container b2b-top-inner">
+      <span class="b2b-top-label">Юрлицам и ИП: договор, безнал, ЭДО</span>
+      <a href="#lr-b2b" class="b2b-top-link">
+        <span>Условия для бизнеса</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 2. ЛИПКАЯ ШАПКА В 1 ОПТИЧЕСКУЮ СТРОКУ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand-logo">
+        <span class="brand-mark">ЛР</span>
+        <span class="brand-meta">
+          <span class="brand-title">ЛЕНРЕМОНТ</span>
+          <span class="brand-sub">СПб • 25 мастерских</span>
+        </span>
+      </a>
+      <a href="tel:+78123444444" class="header-phone">
+        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+        <span>(812) 344-44-44</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 3. ПЕРВЫЙ ЭКРАН (HERO) — ВИДИМАЯ ВИДЕОСЦЕНА + ОФФЕР + 5 УДАРНЫХ БУЛЛИТОВ ДО КНОПОК -->
+  <section class="hero-section" id="top">
+    <div class="container hero-content">
+
+      <!-- ВИДИМОЕ ОКНО ВИДЕОСЦЕНЫ МОБИЛЬНОЙ МАСТЕРСКОЙ И ФУРГОНА СРАЗУ НАВЕРХУ (00:00–00:19) -->
+      <div class="hero-video-stage">
+        <video class="hero-stage-video" src="https://lr-remont-noutbykov.vercel.app/media/hero-van.mp4" poster="https://lr-remont-noutbykov.vercel.app/media/mobile-lab-exterior.webp" autoplay muted loop playsinline preload="metadata"></video>
+        <div class="hero-stage-gradient">
+          <span class="hero-stage-caption">Мобильные лаборатории и 25 мастерских у метро</span>
+          <span class="hero-stage-pill">Выезд 60 мин</span>
+        </div>
+      </div>
+
+      <h1 class="hero-seo-h1">Ремонт ноутбуков на дому или в сервисном центре в Санкт-Петербурге и&nbsp;ЛО</h1>
+
+      <h2 class="hero-offer-title">
+        Починим ноутбук сегодня от&nbsp;40&nbsp;минут&nbsp;— диагностика <span class="hl-gold">бесплатно (0&nbsp;₽)</span> даже при отказе
+      </h2>
+
+      <p class="hero-offer-sub">
+        На дому при вас, в мобильной лаборатории у подъезда или в 25 сервисных центрах у метро. <strong>Называем твёрдую цену ДО того, как мастер открутит первый винтик.</strong>
+      </p>
+
+      <!-- 5 ПРОДАЮЩИХ БУЛЛИТОВ ДО КНОПОК CTA (По Хэлберту, Султаничу и Хормози) -->
+      <ul class="hero-bullets">
+        <li class="hero-bullet-item">
+          <div class="hb-top">
+            <span class="hb-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+            </span>
+            <span class="hb-title">Диагностика 0 ₽ везде</span>
+          </div>
+          <span class="hb-desc">На дому и в СЦ — 0 ₽ даже при отказе от ремонта</span>
+        </li>
+        <li class="hero-bullet-item">
+          <div class="hb-top">
+            <span class="hb-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg>
+            </span>
+            <span class="hb-title">Твёрдая смета до работ</span>
+          </div>
+          <span class="hb-desc">Без накруток за «драйверы» и скрытых доплат</span>
+        </li>
+        <li class="hero-bullet-item">
+          <div class="hb-top">
+            <span class="hb-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 4.75C2 3.784 2.784 3 3.75 3h4.836c.464 0 .909.184 1.237.513l1.414 1.414a.25.25 0 00.177.073h4.836c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0116.25 17H3.75A1.75 1.75 0 012 15.25V4.75z"/></svg>
+            </span>
+            <span class="hb-title">100% сохранность данных</span>
+          </div>
+          <span class="hb-desc">Спасём фото, пароли, отчёты и базы 1С</span>
+        </li>
+        <li class="hero-bullet-item">
+          <div class="hb-top">
+            <span class="hb-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.403 12.652a3 3 0 000-5.304 3 3 0 00-3.75-3.751 3 3 0 00-5.305 0 3 3 0 00-3.751 3.75 3 3 0 000 5.305 3 3 0 003.75 3.751 3 3 0 005.305 0 3 3 0 003.751-3.75zm-2.546-4.46a.75.75 0 00-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+            </span>
+            <span class="hb-title">Гарантия 1 год по БСО</span>
+          </div>
+          <span class="hb-desc">Оплата после проверки, возврат старых деталей</span>
+        </li>
+        <!-- 5-й буллит: Социальная льгота 15% пенсионерам + Бонус Хормози -->
+        <li class="hero-bullet-item is-wide-bonus">
+          <span class="hb-icon-wrap" aria-hidden="true" style="background:rgba(255,210,0,0.25);">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.5 3A2.5 2.5 0 003 5.5v2.879a2.5 2.5 0 00.732 1.767l6.5 6.5a2.5 2.5 0 003.536 0l2.878-2.878a2.5 2.5 0 000-3.536l-6.5-6.5A2.5 2.5 0 008.38 3H5.5zM6 7a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
+          </span>
+          <div style="font-size:12.5px;line-height:1.35;color:#f8fafc;">
+            <strong style="color:var(--gold-400);">Скидка до 15% пенсионерам, студентам и семьям</strong> + продувка от пыли в подарок при ремонте!
+          </div>
+        </li>
+      </ul>
+
+      <!-- ДВЕ РАВНОВЕСНЫЕ КНОПКИ -->
+      <div class="hero-cta-grid">
+        <button type="button" class="btn-primary-gold" onclick="openLeadModal('Узнать стоимость ремонта', 'Диагностика — 0 ₽ даже при отказе')">
+          <span>Узнать стоимость</span>
+        </button>
+        <button type="button" class="btn-secondary-glass" onclick="openLeadModal('Оставить заявку мастеру', 'Перезвоним за 3 минуты')">
+          <span>Оставить заявку</span>
+        </button>
+      </div>
+
+      <!-- МЕССЕНДЖЕРЫ С ВЕКТОРНЫМИ ИКОНКАМИ -->
+      <div class="hero-messengers-block">
+        <div class="hero-messengers-caption">Пришлите фото поломки дежурному мастеру — назовём цену за 2 минуты:</div>
+        <div class="hero-messengers-row">
+          <a href="https://vk.com/lenremont" target="_blank" rel="noopener" class="msg-btn">
+            <svg viewBox="0 0 24 24" fill="#3b82f6"><path d="M12.78 16.65h1.18s.36-.04.54-.24c.17-.18.16-.52.16-.52s-.02-1.58.71-1.82c.72-.23 1.65 1.53 2.63 2.21.74.51 1.31.4 1.31.4l2.63-.04s1.38-.09.72-1.17c-.05-.09-.38-.81-1.95-2.29-1.64-1.54-1.42-1.29.55-3.95 1.2-1.62 1.68-2.61 1.53-3.03-.14-.4-.99-.3-.99-.3l-2.96.02s-.22-.03-.38.07c-.16.1-.26.32-.26.32s-.47 1.26-1.1 2.33c-1.32 2.26-1.85 2.38-2.07 2.24-.5-.33-.38-1.31-.38-2.01 0-2.19.33-3.1-.65-3.34-.33-.08-.57-.13-1.41-.14-1.08-.01-1.99.01-2.5.25-.34.17-.61.55-.45.57.2.03.65.12.89.44.31.42.3 1.35.3 1.35s.18 2.57-.42 2.89c-.41.22-.97-.23-2.17-2.28-.62-1.05-1.08-2.22-1.08-2.22s-.09-.22-.25-.34c-.19-.14-.46-.18-.46-.18l-2.81.02s-.42.01-.58.2c-.14.17-.01.51-.01.51s2.2 5.15 4.69 7.75c2.28 2.38 4.88 2.22 4.88 2.22z"/></svg>
+            <span>ВКонтакте</span>
+          </a>
+          <a href="https://t.me/lenremont_spb" target="_blank" rel="noopener" class="msg-btn">
+            <svg viewBox="0 0 24 24" fill="#38bdf8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.67-.52.36-.99.53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.48 1.02-.73 3.99-1.73 6.65-2.88 7.98-3.43 3.8-1.58 4.59-1.85 5.1-1.86.11 0 .37.03.53.17.14.12.18.28.2.45-.01.06.01.24 0 .3z"/></svg>
+            <span>Telegram</span>
+          </a>
+          <a href="https://max.ru" target="_blank" rel="noopener" class="msg-btn">
+            <svg viewBox="0 0 24 24" fill="#a855f7"><circle cx="12" cy="12" r="9"/></svg>
+            <span>MAX</span>
+          </a>
+          <a href="https://wa.me/78123444444" target="_blank" rel="noopener" class="msg-btn">
+            <svg viewBox="0 0 24 24" fill="#22c55e"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. ГОРИЗОНТАЛЬНАЯ КАРУСЕЛЬ БРЕНДОВ СЛЕВА НАПРАВО -->
+  <div class="brands-top-bar">
+    <div class="container">
+      <div class="brands-track">
+        <span class="brands-label">Чиним все марки:</span>
+        <button type="button" class="brand-pill" onclick="openLeadModal('Ремонт ноутбука ASUS','Диагностика 0 ₽')"><img src="https://lr-remont-noutbykov.vercel.app/media/manufacturer-asus.svg" alt="ASUS"><span>ASUS</span></button>
+        <button type="button" class="brand-pill" onclick="openLeadModal('Ремонт ноутбука Acer','Диагностика 0 ₽')"><img src="https://lr-remont-noutbykov.vercel.app/media/manufacturer-acer.svg" alt="Acer"><span>Acer</span></button>
+        <button type="button" class="brand-pill" onclick="openLeadModal('Ремонт ноутбука Lenovo','Диагностика 0 ₽')"><img src="https://lr-remont-noutbykov.vercel.app/media/manufacturer-lenovo.svg" alt="Lenovo"><span>Lenovo</span></button>
+        <button type="button" class="brand-pill" onclick="openLeadModal('Ремонт Apple MacBook','Диагностика 0 ₽')"><img src="https://lr-remont-noutbykov.vercel.app/media/manufacturer-apple.svg" alt="MacBook"><span>MacBook</span></button>
+        <button type="button" class="brand-pill" onclick="openLeadModal('Ремонт ноутбука HP','Диагностика 0 ₽')"><img src="https://lr-remont-noutbykov.vercel.app/media/manufacturer-hp.svg" alt="HP"><span>HP</span></button>
+        <button type="button" class="brand-pill" onclick="openLeadModal('Ремонт ноутбука MSI','Диагностика 0 ₽')"><img src="https://lr-remont-noutbykov.vercel.app/media/manufacturer-msi.svg" alt="MSI"><span>MSI</span></button>
+        <button type="button" class="brand-pill" onclick="openLeadModal('Ремонт ноутбука Dell','Диагностика 0 ₽')"><img src="https://lr-remont-noutbykov.vercel.app/media/manufacturer-dell.svg" alt="Dell"><span>Dell</span></button>
+        <button type="button" class="brand-pill" onclick="openLeadModal('Ремонт Huawei / Honor','Диагностика 0 ₽')"><span>Huawei / Honor</span></button>
+        <button type="button" class="brand-pill" onclick="openLeadModal('Ремонт ноутбука Samsung','Диагностика 0 ₽')"><img src="https://lr-remont-noutbykov.vercel.app/media/manufacturer-samsung.svg" alt="Samsung"><span>Samsung</span></button>
+        <button type="button" class="brand-pill" onclick="openLeadModal('Ремонт Xiaomi / Redmi','Диагностика 0 ₽')"><span>Xiaomi</span></button>
+        <button type="button" class="brand-pill" onclick="openLeadModal('Ремонт Sony VAIO','Диагностика 0 ₽')"><img src="https://lr-remont-noutbykov.vercel.app/media/manufacturer-sony.svg" alt="Sony"><span>Sony</span></button>
+        <button type="button" class="brand-pill" onclick="openLeadModal('Ремонт Toshiba','Диагностика 0 ₽')"><img src="https://lr-remont-noutbykov.vercel.app/media/manufacturer-toshiba.svg" alt="Toshiba"><span>Toshiba</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. ТРЕХЭТАЖНЫЙ БЛОК ДОВЕРИЯ: РЕЙТИНГИ + ДИПЛОМЫ + ОТЗЫВЫ С КРУПНЫМИ ФОТО -->
+  <section class="section section-white" id="lr-reviews">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-eyebrow">4 783 проверенных отзыва</span>
+          <h2 class="section-title">Отзывы и награды</h2>
+        </div>
+        <div class="carousel-nav">
+          <button type="button" class="carousel-btn" onclick="scrollTrack('reviewsTrack', -320)" aria-label="Назад">‹</button>
+          <button type="button" class="carousel-btn" onclick="scrollTrack('reviewsTrack', 320)" aria-label="Вперёд">›</button>
+        </div>
+      </div>
+
+      <!-- Ряд 1: 3 стат-карточки независимых рейтингов -->
+      <div class="ratings-row-3col">
+        <a href="https://yandex.ru/maps/org/lenremont/1076645163/reviews/" target="_blank" rel="noopener" class="rating-stat-card">
+          <div class="rating-score-row">
+            <span class="rating-score">5,0</span>
+            <span class="rating-star-icon">★</span>
+          </div>
+          <span class="rating-source">Яндекс Карты</span>
+          <span class="rating-count">2 818 оценок</span>
+        </a>
+        <a href="https://2gis.ru/spb/firm/5348552838594726/tab/reviews" target="_blank" rel="noopener" class="rating-stat-card">
+          <div class="rating-score-row">
+            <span class="rating-score">4,9</span>
+            <span class="rating-star-icon">★</span>
+          </div>
+          <span class="rating-source">2ГИС</span>
+          <span class="rating-count">273 оценки</span>
+        </a>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="rating-stat-card">
+          <div class="rating-score-row">
+            <span class="rating-score">4,9</span>
+            <span class="rating-star-icon">★</span>
+          </div>
+          <span class="rating-source">Google</span>
+          <span class="rating-count">1 692 оценки</span>
+        </a>
+      </div>
+
+      <!-- Ряд 2: Официальные дипломы и сертификаты -->
+      <div class="awards-gallery-block">
+        <div class="awards-subhead">
+          <span class="awards-subhead-title">Официальные дипломы и сертификаты</span>
+          <span class="awards-subhead-hint">Нажмите для увеличения</span>
+        </div>
+        <div class="h-scroll-track" id="awardsTrack">
+          <div class="award-card" onclick="openLightbox('https://lr-remont-noutbykov.vercel.app/media/workshop-v4-reception-1280.webp', 'Лауреат рейтинга брендов «Деловой Петербург — 2026»')">
+            <div class="award-doc-thumb" aria-hidden="true">
+              <div class="award-doc-lines"><span></span><span></span><span></span></div>
+              <div class="award-doc-seal">ДП</div>
+            </div>
+            <div>
+              <div class="award-card-title">Рейтинг брендов «Деловой Петербург»</div>
+              <div class="award-card-action">Увеличить диплом →</div>
+            </div>
+          </div>
+          <div class="award-card" onclick="openLightbox('https://lr-remont-noutbykov.vercel.app/media/workshop-v4-diagnostics-1280.webp', 'Награда Яндекса «Хорошее место 5,0»')">
+            <div class="award-doc-thumb" aria-hidden="true">
+              <div class="award-doc-lines"><span></span><span></span><span></span></div>
+              <div class="award-doc-seal">★5</div>
+            </div>
+            <div>
+              <div class="award-card-title">Премия Яндекса «Хорошее место 5,0»</div>
+              <div class="award-card-action">Увеличить награду →</div>
+            </div>
+          </div>
+          <div class="award-card" onclick="openLightbox('https://lr-remont-noutbykov.vercel.app/media/director-sorokin-640.webp', 'Победитель конкурса «Народная марка Санкт-Петербурга»')">
+            <div class="award-doc-thumb" aria-hidden="true">
+              <div class="award-doc-lines"><span></span><span></span><span></span></div>
+              <div class="award-doc-seal">№1</div>
+            </div>
+            <div>
+              <div class="award-card-title">Победитель «Народная марка СПб»</div>
+              <div class="award-card-action">Увеличить диплом →</div>
+            </div>
+          </div>
+          <div class="award-card" onclick="openLightbox('https://lr-remont-noutbykov.vercel.app/media/workshop-v4-soldering-1280.webp', 'Сертификат ГОСТ Р на ремонт ноутбуков и материнских плат')">
+            <div class="award-doc-thumb" aria-hidden="true">
+              <div class="award-doc-lines"><span></span><span></span><span></span></div>
+              <div class="award-doc-seal">РФ</div>
+            </div>
+            <div>
+              <div class="award-card-title">Сертификат соответствия ГОСТ Р</div>
+              <div class="award-card-action">Увеличить бланк →</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ряд 3: Слайдер живых отзывов с полными историями по клику на «Читать полностью» -->
+      <div class="h-scroll-track" id="reviewsTrack">
+        <article class="review-card">
+          <div>
+            <div class="review-top">
+              <div class="review-author-group">
+                <img class="review-avatar" src="https://lr-remont-noutbykov.vercel.app/media/review-avatar-06.webp" alt="Егор Налимов">
+                <div>
+                  <div class="review-author">Егор Налимов</div>
+                  <div class="review-meta-line"><span class="review-stars">★★★★★</span><span>Яндекс Карты • СПб</span></div>
+                </div>
+              </div>
+            </div>
+            <span class="review-task-tag">Чистка охлаждения и термопаста</span>
+            <p class="review-text">Обратился на чистку рабочего ноутбука ASUS — сильно гудел и выключался каждые полчаса. Мастер Роман за 50 минут при мне разобрал систему охлаждения, вычистил плотный войлок пыли, нанёс свежую термопасту Arctic MX-6 и проверил температуры под нагрузкой. Ноутбук стал абсолютно бесшумным, выдали квитанцию БСО и гарантию 1 год!</p>
+            <button type="button" class="review-readmore-btn" onclick="toggleReviewText(this)">Читать полностью ▾</button>
+          </div>
+          <div class="review-photo-box" onclick="openLightbox('https://lr-remont-noutbykov.vercel.app/media/review-egor-computer-2026.jpg', 'Отзыв Егора Налимова: Чистка охлаждения (Яндекс Карты, 5/5)')">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/review-egor-computer-2026.jpg" alt="Фото после чистки">
+            <span class="review-photo-zoom-tag">Фото клиента • Увеличить</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div>
+            <div class="review-top">
+              <div class="review-author-group">
+                <img class="review-avatar" src="https://lr-remont-noutbykov.vercel.app/media/review-avatar-04.webp" alt="Дмитрий Соколов">
+                <div>
+                  <div class="review-author">Дмитрий Соколов</div>
+                  <div class="review-meta-line"><span class="review-stars">★★★★★</span><span>Яндекс Карты • СПб</span></div>
+                </div>
+              </div>
+            </div>
+            <span class="review-task-tag">Замена матрицы экрана</span>
+            <p class="review-text">Сдал технику Apple после удара по экрану. Очень боялся накруток, но диагностику провели бесплатно за 20 минут, твёрдую смету зафиксировали до начала работ — ни копейки сверху при выдаче не попросили. Поставили оригинальную матрицу со своего склада, старую разбитую деталь аккуратно упаковали и вернули мне.</p>
+            <button type="button" class="review-readmore-btn" onclick="toggleReviewText(this)">Читать полностью ▾</button>
+          </div>
+          <div class="review-photo-box" onclick="openLightbox('https://lr-remont-noutbykov.vercel.app/media/review-ds-imac-2023.jpg', 'Отзыв Дмитрия Соколова: Новый экран после замены (Яндекс Карты, 5/5)')">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/review-ds-imac-2023.jpg" alt="Фото нового экрана">
+            <span class="review-photo-zoom-tag">Фото клиента • Увеличить</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div>
+            <div class="review-top">
+              <div class="review-author-group">
+                <img class="review-avatar" src="https://lr-remont-noutbykov.vercel.app/media/review-avatar-03.webp" alt="Анна Мельникова">
+                <div>
+                  <div class="review-author">Анна Мельникова</div>
+                  <div class="review-meta-line"><span class="review-stars">★★★★★</span><span>Яндекс Карты • СПб</span></div>
+                </div>
+              </div>
+            </div>
+            <span class="review-task-tag">Спасение Lenovo после кофе</span>
+            <p class="review-text">Пролила чашку сладкого кофе на клавиатуру рабочего Lenovo, он сразу погас. Вызвала мобильную мастерскую Ленремонта к дому на пр. Просвещения: мастер Вадим Князев в оборудованном фургоне сразу снял аккумулятор, отмыл плату в ультразвуковой ванне от коррозии, восстановил дорожки питания и спас всю мою базу 1С!</p>
+            <button type="button" class="review-readmore-btn" onclick="toggleReviewText(this)">Читать полностью ▾</button>
+          </div>
+          <div class="review-photo-box" onclick="openLightbox('https://lr-remont-noutbykov.vercel.app/media/workshop-v4-diagnostics-1280.webp', 'Отзыв Анны Мельниковой: Чистка платы после пролитого кофе')">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/workshop-v4-diagnostics-1280.webp" alt="Восстановление платы">
+            <span class="review-photo-zoom-tag">Фото клиента • Увеличить</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div>
+            <div class="review-top">
+              <div class="review-author-group">
+                <img class="review-avatar" src="https://lr-remont-noutbykov.vercel.app/media/review-avatar-05.webp" alt="Артём Савельев">
+                <div>
+                  <div class="review-author">Артём Савельев</div>
+                  <div class="review-meta-line"><span class="review-stars">★★★★★</span><span>Google Карты • СПб</span></div>
+                </div>
+              </div>
+            </div>
+            <span class="review-task-tag">Установка SSD и сохранение архива</span>
+            <p class="review-text">Ноутбук HP грузился по 10 минут, программы зависали. Мастер подобрал скоростной NVMe SSD на 1 ТБ, добавил оперативную память и бережно клонировал систему со всеми семейными архивами фото за 12 лет. Теперь ноутбук включается за 7 секунд, работает лучше нового, а маме сделали честную пенсионную скидку 15%!</p>
+            <button type="button" class="review-readmore-btn" onclick="toggleReviewText(this)">Читать полностью ▾</button>
+          </div>
+          <div class="review-photo-box" onclick="openLightbox('https://lr-remont-noutbykov.vercel.app/media/workshop-v4-testing-1280.webp', 'Отзыв Артёма Савельева: Проверка ноутбука после установки SSD')">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/workshop-v4-testing-1280.webp" alt="Ноутбук после апгрейда">
+            <span class="review-photo-zoom-tag">Фото клиента • Увеличить</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. БЛОК «ЧТО МЫ ЧИНИМ» ПЕРЕД ПРАЙСОМ (С живым продающим лидом в каждой карточке + сетка 2x2!) -->
+  <section class="section section-tinted" id="lr-what-we-fix">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-eyebrow">Решаем любую проблему в день обращения</span>
+          <h2 class="section-title">Что мы чиним и настраиваем</h2>
+          <p class="section-lead">Выберите вашу ситуацию — бесплатно проведём диагностику (0&nbsp;₽) и назовём точную стоимость до начала работ.</p>
+        </div>
+        <div class="carousel-nav">
+          <button type="button" class="carousel-btn" onclick="scrollTrack('whatWeFixTrack', -320)" aria-label="Назад">‹</button>
+          <button type="button" class="carousel-btn" onclick="scrollTrack('whatWeFixTrack', 320)" aria-label="Вперёд">›</button>
+        </div>
+      </div>
+
+      <div class="h-scroll-track" id="whatWeFixTrack">
+        <!-- 1. Залит водой -->
+        <article class="what-we-fix-card">
+          <div class="wwf-media">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/failure-liquid.webp" alt="Залит водой или кофе">
+            <div class="wwf-media-overlay">
+              <span class="wwf-tag">Экстренная реанимация</span>
+              <h3 class="wwf-title">Залит водой, чаем или кофе</h3>
+            </div>
+          </div>
+          <div class="wwf-body">
+            <p class="wwf-copy-lead">Не включайте ноутбук и не сушите феном! Срочно промоем плату в ультразвуковой ванне, остановим электрохимическую коррозию и спасём чипы от замыкания.</p>
+            <div class="wwf-tags-grid">
+              <span class="wwf-mini-pill">УЗ-чистка платы</span>
+              <span class="wwf-mini-pill">Снятие окислов</span>
+              <span class="wwf-mini-pill">Замена клавиш</span>
+              <span class="wwf-mini-pill">Пайка питания</span>
+            </div>
+            <div class="wwf-footer">
+              <div class="wwf-footer-meta">
+                <span class="wwf-footer-price">от 2 390 ₽</span>
+                <span class="wwf-footer-sub">Диагностика 0 ₽</span>
+              </div>
+              <button type="button" class="wwf-footer-btn" onclick="openLeadModal('Спасение залитого ноутбука', 'УЗ-чистка от коррозии • Диагностика 0 ₽')">Заказать →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Восстановление данных -->
+        <article class="what-we-fix-card">
+          <div class="wwf-media">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/laptop-board-diagnostics.webp" alt="Восстановление данных">
+            <div class="wwf-media-overlay">
+              <span class="wwf-tag">100% конфиденциально</span>
+              <h3 class="wwf-title">Восстановление данных</h3>
+            </div>
+          </div>
+          <div class="wwf-body">
+            <p class="wwf-copy-lead">Ноутбук не включается, слетела система или щёлкает диск? Бережно извлечём семейные фото, базы 1С, дипломные и рабочие проекты на исправный носитель.</p>
+            <div class="wwf-tags-grid">
+              <span class="wwf-mini-pill">Фото и архивы</span>
+              <span class="wwf-mini-pill">Базы 1С и отчёты</span>
+              <span class="wwf-mini-pill">Сбойные HDD/SSD</span>
+              <span class="wwf-mini-pill">После удаления</span>
+            </div>
+            <div class="wwf-footer">
+              <div class="wwf-footer-meta">
+                <span class="wwf-footer-price">от 2 890 ₽</span>
+                <span class="wwf-footer-sub">Диагностика 0 ₽</span>
+              </div>
+              <button type="button" class="wwf-footer-btn" onclick="openLeadModal('Восстановление данных с ноутбука / диска', 'Бережное извлечение файлов • Конфиденциально')">Заказать →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Сломался или не включается -->
+        <article class="what-we-fix-card">
+          <div class="wwf-media">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/failure-impact.webp" alt="Поломка экрана или питания">
+            <div class="wwf-media-overlay">
+              <span class="wwf-tag">Свой склад запчастей</span>
+              <h3 class="wwf-title">Сломался или не включается</h3>
+            </div>
+          </div>
+          <div class="wwf-body">
+            <p class="wwf-copy-lead">Разбита матрица экрана, расшатался разъём зарядки, вырваны петли крышки или сгорела цепь питания на плате? Оригинальные детали под вашу модель на складе.</p>
+            <div class="wwf-tags-grid">
+              <span class="wwf-mini-pill">Разбит экран</span>
+              <span class="wwf-mini-pill">Не заряжается</span>
+              <span class="wwf-mini-pill">Вырваны петли</span>
+              <span class="wwf-mini-pill">Ремонт плат</span>
+            </div>
+            <div class="wwf-footer">
+              <div class="wwf-footer-meta">
+                <span class="wwf-footer-price">от 2 890 ₽</span>
+                <span class="wwf-footer-sub">Гарантия 1 год</span>
+              </div>
+              <button type="button" class="wwf-footer-btn" onclick="openLeadModal('Аппаратный ремонт ноутбука', 'Запчасти в наличии • Диагностика 0 ₽')">Заказать →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Вирусы и программы -->
+        <article class="what-we-fix-card">
+          <div class="wwf-media">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/failure-software.webp" alt="Вирусы и программы">
+            <div class="wwf-media-overlay">
+              <span class="wwf-tag">На дому за 1 час</span>
+              <h3 class="wwf-title">Вирусы, программы и ОС</h3>
+            </div>
+          </div>
+          <div class="wwf-body">
+            <p class="wwf-copy-lead">Синий экран, баннеры-вымогатели, тормозит система или не открываются программы? Очистим от вирусов и настроим Windows / macOS без потери ваших файлов.</p>
+            <div class="wwf-tags-grid">
+              <span class="wwf-mini-pill">Удаление вирусов</span>
+              <span class="wwf-mini-pill">Windows и macOS</span>
+              <span class="wwf-mini-pill">Office и драйверы</span>
+              <span class="wwf-mini-pill">Файлы на месте</span>
+            </div>
+            <div class="wwf-footer">
+              <div class="wwf-footer-meta">
+                <span class="wwf-footer-price">от 1 990 ₽</span>
+                <span class="wwf-footer-sub">При вас за 1 час</span>
+              </div>
+              <button type="button" class="wwf-footer-btn" onclick="openLeadModal('Удаление вирусов и настройка программ', 'С сохранением всех личных файлов')">Заказать →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Чистка и перегрев -->
+        <article class="what-we-fix-card">
+          <div class="wwf-media">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/failure-overheating.webp" alt="Чистка от перегрева">
+            <div class="wwf-media-overlay">
+              <span class="wwf-tag">За 45–60 минут</span>
+              <h3 class="wwf-title">Греется, шумит и гаснет</h3>
+            </div>
+          </div>
+          <div class="wwf-body">
+            <p class="wwf-copy-lead">Кулер гудит как пылесос, корпус обжигает руки, а ноутбук выключается в играх и при работе? Полная чистка радиаторов с заменой термопасты и термопрокладок.</p>
+            <div class="wwf-tags-grid">
+              <span class="wwf-mini-pill">Чистка от пыли</span>
+              <span class="wwf-mini-pill">Термопаста MX-6</span>
+              <span class="wwf-mini-pill">Термопрокладки</span>
+              <span class="wwf-mini-pill">Ремонт кулера</span>
+            </div>
+            <div class="wwf-footer">
+              <div class="wwf-footer-meta">
+                <span class="wwf-footer-price">от 2 390 ₽</span>
+                <span class="wwf-footer-sub">При вас за 45 мин</span>
+              </div>
+              <button type="button" class="wwf-footer-btn" onclick="openLeadModal('Чистка охлаждения и замена термопасты', 'За 45–60 минут при вас')">Заказать →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Апгрейд и ускорение -->
+        <article class="what-we-fix-card">
+          <div class="wwf-media">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/workshop-v4-parts-1280.webp" alt="Ускорение ноутбука">
+            <div class="wwf-media-overlay">
+              <span class="wwf-tag">Быстрее в 4 раза</span>
+              <h3 class="wwf-title">Ускорение и апгрейд</h3>
+            </div>
+          </div>
+          <div class="wwf-body">
+            <p class="wwf-copy-lead">Не спешите покупать новый ноутбук за 80 000 ₽! Поставим скоростной накопитель SSD NVMe и увеличим память RAM — ноутбук будет включаться за 7 секунд.</p>
+            <div class="wwf-tags-grid">
+              <span class="wwf-mini-pill">Скоростной SSD</span>
+              <span class="wwf-mini-pill">Память 16–64 ГБ</span>
+              <span class="wwf-mini-pill">Клон ОС 1-в-1</span>
+              <span class="wwf-mini-pill">Запуск за 7 сек</span>
+            </div>
+            <div class="wwf-footer">
+              <div class="wwf-footer-meta">
+                <span class="wwf-footer-price">от 1 890 ₽</span>
+                <span class="wwf-footer-sub">За 30–45 минут</span>
+              </div>
+              <button type="button" class="wwf-footer-btn" onclick="openLeadModal('Ускорение ноутбука (SSD + память RAM)', 'Загрузка за 7 секунд без потери данных')">Заказать →</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. ИНТЕРАКТИВНЫЙ ПРАЙС-ЛИСТ + БОНУС ХОРМОЗИ -->
+  <section class="section section-white" id="lr-prices">
+    <div class="container">
+      <div class="section-header-group">
+        <span class="section-eyebrow">Фиксируем сумму до начала ремонта</span>
+        <h2 class="section-title">Сколько стоит ремонт ноутбука</h2>
+        <p class="section-lead">Любая диагностика (на дому, в автолаборатории и в СЦ) — <strong>бесплатно (0&nbsp;₽), даже если вы решите не ремонтировать ноутбук</strong>.</p>
+      </div>
+
+      <div class="price-tabs" role="tablist">
+        <button type="button" class="price-tab-btn is-active" onclick="switchPriceTab('win', this)">Все ноутбуки (10)</button>
+        <button type="button" class="price-tab-btn" onclick="switchPriceTab('mac', this)">Apple MacBook (5)</button>
+      </div>
+
+      <!-- Вкладка 1: Все ноутбуки -->
+      <div class="price-card-group" id="priceTabWin">
+        <div class="price-row is-free-row">
+          <div>
+            <div class="price-item-name">Диагностика ноутбука и точная смета (на дому и в СЦ)</div>
+            <div class="price-item-time" style="color:var(--emerald-700);font-weight:600;">Бесплатно — даже при отказе от ремонта</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val" style="color:var(--emerald-700);font-size:18px;">0 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Бесплатная диагностика ноутбука', '0 ₽ даже при отказе от ремонта')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Чистка системы охлаждения и замена термопасты</div>
+            <div class="price-item-time">45–60 мин • Устранение шума, перегрева и выключений</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 2 390 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Чистка охлаждения и термопаста', 'от 2 390 ₽')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Удаление вирусов, настройка Windows и пакета драйверов</div>
+            <div class="price-item-time">от 45 мин • С полным сохранением всех личных файлов</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 1 990 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Удаление вирусов и настройка ОС', 'от 1 990 ₽')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Восстановление данных с повреждённых HDD, SSD и флешек</div>
+            <div class="price-item-time">от 1 часа • Семейные фото, документы, базы 1С</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 2 890 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Восстановление данных и файлов', 'от 2 890 ₽')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Экстренная УЗ-чистка и спасение после залития жидкостью</div>
+            <div class="price-item-time">от 2 часов • Удаление окислов и восстановление дорожек</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 5 090 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Ремонт ноутбука после залития', 'от 5 090 ₽')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Установка новой матрицы (разбитого экрана ноутбука)</div>
+            <div class="price-item-time">40–60 мин • Оригинальные экраны IPS / OLED на складе</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 3 190 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Установка новой матрицы экрана', 'от 3 190 ₽')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Установка скоростного SSD и увеличение памяти RAM</div>
+            <div class="price-item-time">30–45 мин • Перенос вашей системы и программ 1-в-1</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 1 890 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Установка SSD / памяти RAM', 'от 1 890 ₽')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Замена клавиатуры или ремонт разъёма зарядки</div>
+            <div class="price-item-time">1–2 часа • Проверка всех клавиш и цепей питания</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 3 290 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Замена клавиатуры / разъёма зарядки', 'от 3 290 ₽')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Замена аккумулятора или восстановление петель крышки</div>
+            <div class="price-item-time">от 1 часа • Официальная гарантия 1 год по чеку</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 2 890 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Замена аккумулятора / петель', 'от 2 890 ₽')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Компонентный ремонт материнской платы и прошивка BIOS</div>
+            <div class="price-item-time">1–3 дня • BGA-пайка под микроскопом на ИК-станции</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 4 990 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Ремонт материнской платы / BIOS', 'от 4 990 ₽')">Заказать →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Вкладка 2: MacBook -->
+      <div class="price-card-group" id="priceTabMac" hidden>
+        <div class="price-row is-free-row">
+          <div>
+            <div class="price-item-name">Диагностика MacBook Air / Pro (на дому и в СЦ)</div>
+            <div class="price-item-time" style="color:var(--emerald-700);font-weight:600;">Бесплатно — даже при отказе от ремонта</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val" style="color:var(--emerald-700);font-size:18px;">0 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Бесплатная диагностика MacBook', '0 ₽ даже при отказе')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Чистка охлаждения MacBook и замена термопасты</div>
+            <div class="price-item-time">1–2 часа • Модели на чипах M1 / M2 / M3 и Intel</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 2 890 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Чистка охлаждения MacBook', 'от 2 890 ₽')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Замена аккумулятора или топкейса / клавиатуры MacBook</div>
+            <div class="price-item-time">от 2 часов • Калибровка контроллера питания</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 3 590 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Замена аккумулятора / клавиатуры MacBook', 'от 3 590 ₽')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Компонентный ремонт платы и портов USB-C / MagSafe</div>
+            <div class="price-item-time">1–3 дня • Пайка под микроскопом с гарантией 1 год</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 3 990 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Ремонт платы / разъёмов MacBook', 'от 3 990 ₽')">Заказать →</button>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <div>
+            <div class="price-item-name">Восстановление macOS, установка программ и спасение данных</div>
+            <div class="price-item-time">1–2 часа • Без потери ваших рабочих проектов</div>
+          </div>
+          <div class="price-row-action">
+            <span class="price-val">от 2 490 ₽</span>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Восстановление macOS и данных', 'от 2 490 ₽')">Заказать →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Бонус ценности по Алексу Хормози -->
+      <div class="price-bonus-strip">
+        <div class="pbs-text">
+          <strong>Подарок при любом аппаратном ремонте:</strong> бесплатная продувка ноутбука от пыли + экспресс-проверка здоровья накопителя SSD/HDD (<strong>0&nbsp;₽ вместо 1&nbsp;200&nbsp;₽</strong>) и скидка до 15% льготникам.
+        </div>
+        <button type="button" class="price-order-btn" onclick="openLeadModal('Расчёт стоимости со скидкой 15% и бонусом', 'Продувка от пыли + тест SSD — 0 ₽')">Получить со скидкой →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. СПОСОБЫ РЕМОНТА И ЖИВАЯ МИНИ-КАРТА СПб ВНУТРИ КАРТОЧЕК -->
+  <section class="section section-tinted" id="lr-formats">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-eyebrow">4 формата в СПб и ЛО</span>
+          <h2 class="section-title">Способы ремонта и карта</h2>
+          <p class="section-lead">Выберите, как вам удобнее: приедем к вам за 60 минут, починим в фургоне у подъезда, заберём курьером или примем в 25 филиалах у метро.</p>
+        </div>
+        <div class="carousel-nav">
+          <button type="button" class="carousel-btn" onclick="scrollTrack('formatsTrack', -330)" aria-label="Назад">‹</button>
+          <button type="button" class="carousel-btn" onclick="scrollTrack('formatsTrack', 330)" aria-label="Вперёд">›</button>
+        </div>
+      </div>
+
+      <div class="formats-track" id="formatsTrack">
+        <!-- 1. На дому или в офисе -->
+        <article class="format-card">
+          <div class="format-photo-head">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/format-home-v4-1280.webp" alt="На дому или в офисе">
+            <div class="format-photo-overlay">
+              <span class="format-badge-top">Выезд за 60 минут</span>
+              <h3 class="format-title">На дому или в офисе</h3>
+              <p class="format-short-usp">Чистка, программы, экран, SSD и клавиатура при вас.</p>
+            </div>
+          </div>
+          <div class="format-body">
+            <div>
+              <div class="spb-mini-map">
+                <svg class="spb-map-svg-bg" viewBox="0 0 300 70" fill="none">
+                  <path d="M0 45 Q80 20 150 38 T300 22" stroke="#93c5fd" stroke-width="8" fill="none"/>
+                  <path d="M40 0 L120 70 M190 0 L160 70 M240 0 L260 70" stroke="#cbd5e1" stroke-width="1.5"/>
+                </svg>
+                <div class="spb-map-pin-badge">
+                  <span class="spb-pin-dot"></span>
+                  <span id="pinLabelHome">м. Пр. Просвещения</span>
+                </div>
+                <span class="spb-map-eta">Мастер ~25 мин</span>
+              </div>
+
+              <div class="fmw-label" style="margin-top:12px;">
+                <span>Укажите ваш район или метро:</span>
+                <span class="fmw-free-tag">Выезд 0 ₽</span>
+              </div>
+              <input type="text" class="fmw-input" id="addrHomeInput" value="м. Пр. Просвещения" aria-label="Ваш район или улица">
+              <div class="fmw-chips">
+                <button type="button" class="fmw-chip is-selected" onclick="pickFormatAddr('addrHomeInput', 'м. Пр. Просвещения', this, 'pinLabelHome')">Просвещения</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrHomeInput', 'Приморский р-н', this, 'pinLabelHome')">Приморский</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrHomeInput', 'м. Купчино / Звёздная', this, 'pinLabelHome')">Купчино</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrHomeInput', 'м. Пр. Ветеранов', this, 'pinLabelHome')">Ветеранов</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrHomeInput', 'Мурино / Девяткино', this, 'pinLabelHome')">Мурино</button>
+              </div>
+            </div>
+            <button type="button" class="format-cta-btn" onclick="openFormatModalWithAddr('Выезд мастера на дом / в офис', 'addrHomeInput')">
+              <span>Вызвать мастера</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- 2. В сервисном центре -->
+        <article class="format-card">
+          <div class="format-photo-head">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/format-workshop-v4-1280.webp" alt="В сервисном центре">
+            <div class="format-photo-overlay">
+              <span class="format-badge-top">25 мастерских у метро</span>
+              <h3 class="format-title">В сервисном центре</h3>
+              <p class="format-short-usp">Диагностика 0 ₽ даже при отказе. Пайка плат и склад.</p>
+            </div>
+          </div>
+          <div class="format-body">
+            <div>
+              <div class="spb-mini-map">
+                <svg class="spb-map-svg-bg" viewBox="0 0 300 70" fill="none">
+                  <path d="M0 45 Q80 20 150 38 T300 22" stroke="#93c5fd" stroke-width="8" fill="none"/>
+                  <path d="M40 0 L120 70 M190 0 L160 70 M240 0 L260 70" stroke="#cbd5e1" stroke-width="1.5"/>
+                </svg>
+                <div class="spb-map-pin-badge">
+                  <span class="spb-pin-dot"></span>
+                  <span id="pinLabelWorkshop">пр. Просвещения, 35</span>
+                </div>
+                <span class="spb-map-eta">Открыто • 0 ₽</span>
+              </div>
+
+              <div class="fmw-label" style="margin-top:12px;">
+                <span>Выберите удобный филиал у метро:</span>
+                <span class="fmw-free-tag">25 филиалов</span>
+              </div>
+              <input type="text" class="fmw-input" id="addrWorkshopInput" value="пр. Просвещения, д. 35" readonly aria-label="Выбранный сервисный центр">
+              <div class="fmw-chips">
+                <button type="button" class="fmw-chip is-selected" onclick="pickFormatAddr('addrWorkshopInput', 'пр. Просвещения, д. 35', this, 'pinLabelWorkshop')">Просвещения, 35</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrWorkshopInput', 'Московский пр., д. 78', this, 'pinLabelWorkshop')">Московский, 78</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrWorkshopInput', 'пр. Ветеранов, д. 109', this, 'pinLabelWorkshop')">Ветеранов, 109</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrWorkshopInput', 'Комендантский пр., 17', this, 'pinLabelWorkshop')">Комендантский</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrWorkshopInput', 'Заневский пр., д. 65', this, 'pinLabelWorkshop')">Ладожская</button>
+              </div>
+            </div>
+            <button type="button" class="format-cta-btn" onclick="openFormatModalWithAddr('Запись в сервисный центр (диагностика 0 ₽)', 'addrWorkshopInput')">
+              <span>Записаться в филиал</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- 3. Мастерская на колёсах -->
+        <article class="format-card">
+          <div class="format-photo-head">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/format-mobile-v4-1280.webp" alt="Мастерская на колёсах">
+            <div class="format-photo-overlay">
+              <span class="format-badge-top">Лаборатория у подъезда</span>
+              <h3 class="format-title">Мастерская на колёсах</h3>
+              <p class="format-short-usp">Пайка и диагностика в спецфургоне у вашего дома.</p>
+            </div>
+          </div>
+          <div class="format-body">
+            <div>
+              <div class="spb-mini-map">
+                <svg class="spb-map-svg-bg" viewBox="0 0 300 70" fill="none">
+                  <path d="M0 45 Q80 20 150 38 T300 22" stroke="#93c5fd" stroke-width="8" fill="none"/>
+                  <path d="M40 0 L120 70 M190 0 L160 70 M240 0 L260 70" stroke="#cbd5e1" stroke-width="1.5"/>
+                </svg>
+                <div class="spb-map-pin-badge">
+                  <span class="spb-pin-dot"></span>
+                  <span id="pinLabelVan">Московский пр., 78</span>
+                </div>
+                <span class="spb-map-eta">Фургон рядом</span>
+              </div>
+
+              <div class="fmw-label" style="margin-top:12px;">
+                <span>Куда подать спецфургон:</span>
+                <span class="fmw-free-tag">Дома чисто</span>
+              </div>
+              <input type="text" class="fmw-input" id="addrVanInput" value="Московский пр., д. 78" aria-label="Адрес подачи фургона">
+              <div class="fmw-chips">
+                <button type="button" class="fmw-chip is-selected" onclick="pickFormatAddr('addrVanInput', 'Московский пр., д. 78', this, 'pinLabelVan')">Московский</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrVanInput', 'м. Академическая', this, 'pinLabelVan')">Академическая</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrVanInput', 'м. Ладожская', this, 'pinLabelVan')">Ладожская</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrVanInput', 'Васильевский о-в', this, 'pinLabelVan')">В.О.</button>
+              </div>
+            </div>
+            <button type="button" class="format-cta-btn" onclick="openFormatModalWithAddr('Вызов Мастерской на колёсах', 'addrVanInput')">
+              <span>Вызвать мастерскую</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- 4. С доставкой курьером -->
+        <article class="format-card">
+          <div class="format-photo-head">
+            <img src="https://lr-remont-noutbykov.vercel.app/media/format-courier-v4-1280.webp" alt="С доставкой курьером">
+            <div class="format-photo-overlay">
+              <span class="format-badge-top">По договору-описи</span>
+              <h3 class="format-title">С доставкой курьером</h3>
+              <p class="format-short-usp">Заберём в защитном кофре и вернём после ремонта.</p>
+            </div>
+          </div>
+          <div class="format-body">
+            <div>
+              <div class="spb-mini-map">
+                <svg class="spb-map-svg-bg" viewBox="0 0 300 70" fill="none">
+                  <path d="M0 45 Q80 20 150 38 T300 22" stroke="#93c5fd" stroke-width="8" fill="none"/>
+                  <path d="M40 0 L120 70 M190 0 L160 70 M240 0 L260 70" stroke="#cbd5e1" stroke-width="1.5"/>
+                </svg>
+                <div class="spb-map-pin-badge">
+                  <span class="spb-pin-dot"></span>
+                  <span id="pinLabelCourier">ул. Савушкина, 128</span>
+                </div>
+                <span class="spb-map-eta">За 60 мин</span>
+              </div>
+
+              <div class="fmw-label" style="margin-top:12px;">
+                <span>Откуда забрать ноутбук:</span>
+                <span class="fmw-free-tag">По расписке</span>
+              </div>
+              <input type="text" class="fmw-input" id="addrCourierInput" value="ул. Савушкина, д. 128" aria-label="Адрес для курьера">
+              <div class="fmw-chips">
+                <button type="button" class="fmw-chip is-selected" onclick="pickFormatAddr('addrCourierInput', 'Забрать из квартиры', this, 'pinLabelCourier')">Из квартиры</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrCourierInput', 'Забрать из офиса', this, 'pinLabelCourier')">Из офиса</button>
+                <button type="button" class="fmw-chip" onclick="pickFormatAddr('addrCourierInput', 'Срочный курьер за 1 ч', this, 'pinLabelCourier')">Срочно за 1 ч</button>
+              </div>
+            </div>
+            <button type="button" class="format-cta-btn" onclick="openFormatModalWithAddr('Вызов курьера за ноутбуком', 'addrCourierInput')">
+              <span>Вызвать курьера</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. РАБОЧЕЕ ВИДЕО «МОБИЛЬНАЯ МАСТЕРСКАЯ У ВАШЕГО ДОМА» -->
+  <section class="section section-white" id="lr-lab">
+    <div class="container">
+      <div class="lab-card">
+        <div>
+          <span class="section-eyebrow" style="color:var(--gold-400);">Уникальный формат «Ленремонта» в СПб</span>
+          <h2 class="section-title" style="color:#ffffff;">Мобильная мастерская у вашего дома</h2>
+          <p style="font-size:14.5px;color:#cbd5e1;margin-top:8px;line-height:1.48;">Когда дома маленькие дети или не хочется пускать посторонних в квартиру — к вашему подъезду приедет спецфургон с паяльной станцией, микроскопом и запчастями.</p>
+        </div>
+
+        <div class="lab-video-wrap">
+          <video class="lab-video-el" id="labTourVideo" src="https://lr-remont-noutbykov.vercel.app/media/mobile-lab-tour.mp4" poster="https://lr-remont-noutbykov.vercel.app/media/workshop-mobile-engineer-720.webp" playsinline preload="metadata"></video>
+          <button type="button" class="lab-play-btn" id="labPlayBtn" onclick="toggleLabVideo()" aria-label="Воспроизвести видео">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+        </div>
+
+        <div class="lab-tags-row">
+          <span class="lab-tag-chip">Пайка и микроскоп в фургоне</span>
+          <span class="lab-tag-chip">В квартире без шума и запаха пайки</span>
+          <span class="lab-tag-chip">Проверка при вас + чек БСО</span>
+        </div>
+
+        <button type="button" class="btn-primary-gold" onclick="openLeadModal('Вызов мобильной мастерской', 'Диагностика в спецфургоне — 0 ₽')">
+          <span>Вызвать мобильную мастерскую →</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. ИНТЕРАКТИВНЫЙ КВИЗ С АВТОПЕРЕХОДОМ -->
+  <section class="section section-tinted" id="lr-quiz">
+    <div class="container">
+      <div class="quiz-box">
+        <div class="quiz-progress-top">
+          <span class="quiz-step-pill" id="quizStepBadge">Шаг 1 из 4 • Расчёт стоимости</span>
+          <span style="font-size:12px;color:var(--emerald-700);font-weight:700;">Автопереход</span>
+        </div>
+        <div class="quiz-bar"><div class="quiz-bar-fill" id="quizBarFill"></div></div>
+
+        <div class="quiz-step-pane" data-step="1">
+          <h3 class="quiz-question-title">1. Что случилось с ноутбуком?</h3>
+          <div class="quiz-options-grid">
+            <label class="quiz-opt-label" onclick="selectQuizOption(1, 'Залит водой / кофе', this)">
+              <input type="radio" name="q1"> <span>Залит водой, чаем или кофе</span>
+            </label>
+            <label class="quiz-opt-label" onclick="selectQuizOption(1, 'Восстановление данных', this)">
+              <input type="radio" name="q1"> <span>Нужно восстановить данные и файлы</span>
+            </label>
+            <label class="quiz-opt-label" onclick="selectQuizOption(1, 'Сломался экран / питание / не включается', this)">
+              <input type="radio" name="q1"> <span>Сломался экран, разъём или не включается</span>
+            </label>
+            <label class="quiz-opt-label" onclick="selectQuizOption(1, 'Вирусы / программы / ОС', this)">
+              <input type="radio" name="q1"> <span>Вирусы, программы или сбой Windows / macOS</span>
+            </label>
+            <label class="quiz-opt-label" onclick="selectQuizOption(1, 'Греется / шумит / апгрейд SSD', this)">
+              <input type="radio" name="q1"> <span>Греется, шумит или нужен SSD-апгрейд</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz-step-pane" data-step="2" hidden>
+          <h3 class="quiz-question-title">2. Как вам удобнее починить?</h3>
+          <div class="quiz-options-grid">
+            <label class="quiz-opt-label" onclick="selectQuizOption(2, 'Мастер на дом / в офис', this)">
+              <input type="radio" name="q2"> <span>Вызвать мастера на дом или в офис</span>
+            </label>
+            <label class="quiz-opt-label" onclick="selectQuizOption(2, 'В сервисном центре у метро', this)">
+              <input type="radio" name="q2"> <span>Принести в сервисный центр у метро</span>
+            </label>
+            <label class="quiz-opt-label" onclick="selectQuizOption(2, 'Мастерская на колёсах', this)">
+              <input type="radio" name="q2"> <span>Вызвать мастерскую на колёсах к дому</span>
+            </label>
+            <label class="quiz-opt-label" onclick="selectQuizOption(2, 'Забрать курьером', this)">
+              <input type="radio" name="q2"> <span>Забрать и привезти курьером по акту</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz-step-pane" data-step="3" hidden>
+          <h3 class="quiz-question-title">3. Когда нужна помощь?</h3>
+          <div class="quiz-options-grid">
+            <label class="quiz-opt-label" onclick="selectQuizOption(3, 'Срочно сегодня', this)">
+              <input type="radio" name="q3"> <span>Срочно сегодня (за 1–2 часа)</span>
+            </label>
+            <label class="quiz-opt-label" onclick="selectQuizOption(3, 'Сегодня вечером / завтра', this)">
+              <input type="radio" name="q3"> <span>Сегодня вечером или завтра</span>
+            </label>
+            <label class="quiz-opt-label" onclick="selectQuizOption(3, 'Пока узнать цену', this)">
+              <input type="radio" name="q3"> <span>Сначала просто узнать точную цену</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="quiz-step-pane" data-step="4" hidden>
+          <h3 class="quiz-question-title">Расчёт готов! Закрепили за вами скидку до 15%</h3>
+          <div id="quizSummaryBox" style="background:var(--surface-sunken);border:1px solid var(--border-subtle);padding:14px 16px;border-radius:12px;font-size:14px;margin-bottom:16px;"></div>
+          <button type="button" class="btn-primary-gold" onclick="openQuizFinalModal()">Ввести номер и узнать цену →</button>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;">
+          <button type="button" id="quizPrevBtn" onclick="stepQuizBack()" hidden style="background:none;border:1px solid var(--border-strong);padding:6px 14px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">← Назад</button>
+          <span style="font-size:12.5px;color:var(--text-tertiary);">Диагностика — 0 ₽ даже при отказе</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. ЖЕЛЕЗНЫЕ ГАРАНТИИ (Сетка 2x2 Value-First) + ЛИЧНОЕ ПОРУЧИТЕЛЬСТВО ДЕНИСА СОРОКИНА -->
+  <section class="section section-white" id="lr-advantages">
+    <div class="container">
+      <div class="section-header-group">
+        <span class="section-eyebrow">Защита от «частников по объявлению»</span>
+        <h2 class="section-title">Гарантии и личная ответственность</h2>
+      </div>
+
+      <div class="adv-grid-2x2">
+        <div class="adv-stat-card">
+          <span class="adv-stat-num">0 ₽</span>
+          <h3 class="adv-stat-title">Твёрдая смета до работ</h3>
+          <p class="adv-stat-desc">Называем полную цену до ремонта. Без согласия мастер не крутит ни винтика.</p>
+        </div>
+        <div class="adv-stat-card">
+          <span class="adv-stat-num">365 дней</span>
+          <h3 class="adv-stat-title">Гарантия по чеку БСО</h3>
+          <p class="adv-stat-desc">Кассовый чек, договор и официальный талон на работу и запчасти.</p>
+        </div>
+        <div class="adv-stat-card">
+          <span class="adv-stat-num">25 СЦ</span>
+          <h3 class="adv-stat-title">Свой склад и возврат деталей</h3>
+          <p class="adv-stat-desc">Оригинальные детали в наличии. Старые заменённые узлы возвращаем вам на руки.</p>
+        </div>
+        <div class="adv-stat-card">
+          <span class="adv-stat-num">100%</span>
+          <h3 class="adv-stat-title">Оплата после проверки</h3>
+          <p class="adv-stat-desc">Включаем и тестируем ноутбук под нагрузкой вместе с вами перед оплатой.</p>
+        </div>
+      </div>
+
+      <div class="director-card">
+        <div class="director-head-row">
+          <img class="director-avatar-lg" src="https://lr-remont-noutbykov.vercel.app/media/director-sorokin-640.webp" alt="Денис Сорокин">
+          <div>
+            <span class="director-eyebrow">Директор компании «Ленремонт»</span>
+            <h3 class="director-name">Денис Сорокин: «Ремонт без сюрпризов»</h3>
+          </div>
+        </div>
+        <blockquote class="director-quote">
+          «Мы работаем в Петербурге десятилетиями и дорожим именем: сначала бесплатно проверяем ноутбук и называем честную цену. Мастера в штате, все разговоры записываются. Если хоть что-то в работе мастера вас не устроит — разберусь и вернём деньги лично!»
+        </blockquote>
+        <button type="button" class="btn-primary-gold" onclick="openLeadModal('Обращение под личный контроль качества', 'Диагностика 0 ₽ + честная смета')">
+          <span>Обсудить ремонт ноутбука →</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. ВОЗВРАЩЁННЫЙ БЛОК: ИНЖЕНЕРНОЕ ОБОРУДОВАНИЕ И РАБОЧИЕ ЗОНЫ МАСТЕРСКОЙ -->
+  <section class="section section-tinted" id="lr-equipment">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <span class="section-eyebrow">Стационарная лабораторная база</span>
+          <h2 class="section-title">Где и на чём мы чиним ноутбуки</h2>
+          <p class="section-lead">Собственные цеха с антистатической защитой ESD, инфракрасными паяльными станциями и микроскопами.</p>
+        </div>
+        <div class="carousel-nav">
+          <button type="button" class="carousel-btn" onclick="scrollTrack('equipTrack', -310)" aria-label="Назад">‹</button>
+          <button type="button" class="carousel-btn" onclick="scrollTrack('equipTrack', 310)" aria-label="Вперёд">›</button>
+        </div>
+      </div>
+
+      <div class="h-scroll-track" id="equipTrack">
+        <article class="workshop-zone-card">
+          <img class="wz-photo" src="https://lr-remont-noutbykov.vercel.app/media/workshop-v4-soldering-1280.webp" alt="BGA-пайка под микроскопом" onclick="openLightbox('https://lr-remont-noutbykov.vercel.app/media/workshop-v4-soldering-1280.webp','Участок микропайки и BGA-реболлинга чипов')">
+          <div class="wz-body">
+            <h3 class="wz-title">Участок BGA-пайки и микроскопов</h3>
+            <p class="wz-desc">Восстанавливаем материнские платы, видеочипы, мультиконтроллеры и цепи питания в 3 раза дешевле замены всей платы.</p>
+          </div>
+        </article>
+
+        <article class="workshop-zone-card">
+          <img class="wz-photo" src="https://lr-remont-noutbykov.vercel.app/media/workshop-v4-diagnostics-1280.webp" alt="Ультразвуковая очистка и диагностика" onclick="openLightbox('https://lr-remont-noutbykov.vercel.app/media/workshop-v4-diagnostics-1280.webp','Стенд диагностики и ультразвуковой отмывки плат после залития')">
+          <div class="wz-body">
+            <h3 class="wz-title">Ультразвуковая ванна и стенды</h3>
+            <p class="wz-desc">Профессиональная отмывка плат после пролитого кофе, чая и воды с полным удалением скрытых очагов коррозии под чипами.</p>
+          </div>
+        </article>
+
+        <article class="workshop-zone-card">
+          <img class="wz-photo" src="https://lr-remont-noutbykov.vercel.app/media/workshop-v4-parts-1280.webp" alt="Собственный склад запчастей" onclick="openLightbox('https://lr-remont-noutbykov.vercel.app/media/workshop-v4-parts-1280.webp','Собственный склад оригинальных матриц, аккумуляторов и клавиатур в СПб')">
+          <div class="wz-body">
+            <h3 class="wz-title">Свой склад запчастей в СПб</h3>
+            <p class="wz-desc">Более 14 000 матриц, аккумуляторов, клавиатур, кулеров, разъёмов и скоростных SSD в наличии без ожидания доставки.</p>
+          </div>
+        </article>
+
+        <article class="workshop-zone-card">
+          <img class="wz-photo" src="https://lr-remont-noutbykov.vercel.app/media/workshop-v4-testing-1280.webp" alt="Стенд нагрузочного тестирования" onclick="openLightbox('https://lr-remont-noutbykov.vercel.app/media/workshop-v4-testing-1280.webp','Выходной контроль и стресс-тест температур перед выдачей')">
+          <div class="wz-body">
+            <h3 class="wz-title">Выходной стресс-контроль ОТК</h3>
+            <p class="wz-desc">Перед выдачей каждый ноутбук проходит проверку температур, стабильности питания, портов, звука и батареи под нагрузкой.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. ВОЗВРАЩЁННЫЙ ПОЛНОЦЕННЫЙ БЛОК ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ И БИЗНЕСА (B2B) -->
+  <section class="section section-white" id="lr-b2b">
+    <div class="container">
+      <div class="b2b-card">
+        <span class="section-eyebrow" style="color:var(--gold-400);">Корпоративное обслуживание в СПб и ЛО</span>
+        <h2 class="section-title" style="color:#ffffff;">Ремонт ноутбуков и компьютерного парка для бизнеса</h2>
+        <p style="font-size:14.5px;color:#cbd5e1;margin-top:8px;line-height:1.48;max-width:58ch;">
+          Оперативно чиним и обслуживаем офисные ноутбуки, рабочие станции и моноблоки юридических лиц и ИП по официальному договору.
+        </p>
+
+        <div class="b2b-perks-grid">
+          <div class="b2b-perk-box">
+            <div class="b2b-perk-title">Безнал и ЭДО за 15 мин</div>
+            <div class="b2b-perk-sub">Счёт с НДС / без НДС, закрывающие акты УПД в Диадок и СБИС в день работ.</div>
+          </div>
+          <div class="b2b-perk-box">
+            <div class="b2b-perk-title">Выезд в офис по SLA</div>
+            <div class="b2b-perk-sub">Прибытие профильного инженера в ваш офис за 60–90 минут или курьер по описи.</div>
+          </div>
+          <div class="b2b-perk-box">
+            <div class="b2b-perk-title">100% защита коммерческой тайны</div>
+            <div class="b2b-perk-sub">Подписываем соглашение NDA, сохраняем бухгалтерские базы 1С, ключи ЭЦП и архивы.</div>
+          </div>
+          <div class="b2b-perk-box">
+            <div class="b2b-perk-title">Персональный менеджер и скидки</div>
+            <div class="b2b-perk-sub">Приоритетный склад запчастей и корпоративные тарифы от 3 устройств.</div>
+          </div>
+        </div>
+
+        <div class="hero-cta-grid" style="margin-bottom:0;">
+          <button type="button" class="btn-primary-gold" onclick="openLeadModal('Запрос счёта и договора для юрлица / ИП', 'Безналичный расчёт • ЭДО • Выезд в офис')">
+            <span>Получить КП и счёт →</span>
+          </button>
+          <a href="tel:+78126404804" class="btn-secondary-glass">
+            <span>B2B-отдел: (812) 640-48-04</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. ВОЗВРАЩЁННЫЙ БЛОК: СВОДНАЯ КАРТА ВСЕХ 25 МАСТЕРСКИХ ЛЕНРЕМОНТА В СПб -->
+  <section class="section section-tinted" id="lr-all-workshops">
+    <div class="container">
+      <div class="section-header-group">
+        <span class="section-eyebrow">25 филиалов рядом с метро во всех районах</span>
+        <h2 class="section-title">Карта и адреса сервисных центров в СПб</h2>
+        <p class="section-lead">Приходите без предварительной записи или выберите ближайший филиал, чтобы за вами закрепили мастера и запчасти.</p>
+      </div>
+
+      <div class="network-map-card">
+        <div class="network-map-canvas">
+          <svg viewBox="0 0 800 220" width="100%" height="100%" preserveAspectRatio="none">
+            <rect width="800" height="220" fill="#e0edff"/>
+            <path d="M0 135 Q200 75 400 115 T800 85" stroke="#93c5fd" stroke-width="22" fill="none"/>
+            <path d="M120 0 L240 220 M420 0 L380 220 M610 0 L660 220 M0 60 L800 170" stroke="#cbd5e1" stroke-width="2.5"/>
+          </svg>
+          <!-- Интерактивные пины на сводной карте СПб -->
+          <div style="position:absolute;top:24px;left:18%;background:#ffffff;padding:5px 10px;border-radius:999px;font-size:11.5px;font-weight:700;box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:5px;">
+            <span class="metro-dot" style="background:#2563eb;"></span> м. Пр. Просвещения, 35
+          </div>
+          <div style="position:absolute;top:64px;right:14%;background:#ffffff;padding:5px 10px;border-radius:999px;font-size:11.5px;font-weight:700;box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:5px;">
+            <span class="metro-dot" style="background:#f97316;"></span> м. Ладожская, Заневский 65
+          </div>
+          <div style="position:absolute;bottom:22px;left:12%;background:#ffffff;padding:5px 10px;border-radius:999px;font-size:11.5px;font-weight:700;box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:5px;">
+            <span class="metro-dot" style="background:#dc2626;"></span> м. Пр. Ветеранов, 109
+          </div>
+          <div style="position:absolute;bottom:56px;left:42%;background:var(--navy-950);color:#ffffff;padding:6px 12px;border-radius:999px;font-size:11.5px;font-weight:700;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:6px;">
+            <span class="metro-dot" style="background:var(--gold-500);"></span> м. Фрунзенская, Московский 78
+          </div>
+        </div>
+
+        <div class="network-branches-grid">
+          <div class="branch-item">
+            <div>
+              <div class="branch-metro"><span class="metro-dot" style="background:#2563eb;"></span>м. Проспект Просвещения</div>
+              <div class="branch-addr">пр. Просвещения, д. 35 • Ежедневно 10:00–21:00</div>
+            </div>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Запись в СЦ м. Пр. Просвещения, 35', 'Диагностика — 0 ₽ даже при отказе')">Записаться →</button>
+          </div>
+
+          <div class="branch-item">
+            <div>
+              <div class="branch-metro"><span class="metro-dot" style="background:#2563eb;"></span>м. Фрунзенская / Московские ворота</div>
+              <div class="branch-addr">Московский пр., д. 78 • Ежедневно 10:00–21:00</div>
+            </div>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Запись в СЦ Московский пр., 78', 'Диагностика — 0 ₽ даже при отказе')">Записаться →</button>
+          </div>
+
+          <div class="branch-item">
+            <div>
+              <div class="branch-metro"><span class="metro-dot" style="background:#dc2626;"></span>м. Проспект Ветеранов</div>
+              <div class="branch-addr">пр. Ветеранов, д. 109 • Ежедневно 10:00–21:00</div>
+            </div>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Запись в СЦ пр. Ветеранов, 109', 'Диагностика — 0 ₽ даже при отказе')">Записаться →</button>
+          </div>
+
+          <div class="branch-item">
+            <div>
+              <div class="branch-metro"><span class="metro-dot" style="background:#9333ea;"></span>м. Комендантский проспект</div>
+              <div class="branch-addr">Комендантский пр., д. 17 • Ежедневно 10:00–21:00</div>
+            </div>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Запись в СЦ Комендантский пр., 17', 'Диагностика — 0 ₽ даже при отказе')">Записаться →</button>
+          </div>
+
+          <div class="branch-item">
+            <div>
+              <div class="branch-metro"><span class="metro-dot" style="background:#f97316;"></span>м. Ладожская / Пр. Большевиков</div>
+              <div class="branch-addr">Заневский пр., д. 65 • Ежедневно 10:00–21:00</div>
+            </div>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Запись в СЦ Заневский пр., 65 (Ладожская)', 'Диагностика — 0 ₽ даже при отказе')">Записаться →</button>
+          </div>
+
+          <div class="branch-item">
+            <div>
+              <div class="branch-metro"><span class="metro-dot" style="background:#16a34a;"></span>м. Беговая / Старая Деревня</div>
+              <div class="branch-addr">ул. Савушкина, д. 128 • Ежедневно 10:00–21:00</div>
+            </div>
+            <button type="button" class="price-order-btn" onclick="openLeadModal('Запись в СЦ ул. Савушкина, 128', 'Диагностика — 0 ₽ даже при отказе')">Записаться →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. ПОЛНЫЙ ПРОДАЮЩИЙ FAQ (6 ГЛАВНЫХ ВОПРОСОВ + КАТАЛОГ РЕДКИХ МАРОК) -->
+  <section class="section section-white" id="lr-faq">
+    <div class="container">
+      <div class="section-header-group">
+        <span class="section-eyebrow">Честные ответы до обращения</span>
+        <h2 class="section-title">Частые вопросы о ремонте ноутбуков</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Диагностика правда 0 ₽ везде — даже если я откажусь от ремонта?</summary>
+          <div class="faq-body">
+            Да, любая диагностика ноутбука бесплатна (0 ₽) и в наших сервисных центрах, и при выезде мастера на дом или в офис, и в мобильной мастерской у дома — даже если после расчёта сметы вы решите не ремонтировать устройство. Никаких скрытых сборов за «сборку-разборку».
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Как я защищён от накруток, когда называют 500 ₽, а требуют 15 000 ₽?</summary>
+          <div class="faq-body">
+            В «Ленремонте» действует железное правило: мастер сначала проводит бесплатную диагностику и называет вам полную фиксированную сумму за работу и детали. До вашего согласия мастер не откручивает ни одного винтика. Все звонки записываются, а работы ведутся по официальному бланку строгой отчётности (БСО).
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Сохранятся ли мои личные фотографии, пароли, документы и базы 1С?</summary>
+          <div class="faq-body">
+            Да, при любом аппаратном или программном ремонте мы гарантируем 100% неприкосновенность ваших файлов. Если ноутбук не включается или повреждён накопитель SSD/HDD — бережно извлечём и перенесём данные на ваш носитель.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Какие запчасти вы ставите и возвращаете ли старые детали?</summary>
+          <div class="faq-body">
+            На нашем складе в Санкт-Петербурге более 14 000 оригинальных комплектующих и проверенных заводских аналогов с гарантией 1 год. После замены экрана, аккумулятора, клавиатуры или разъёма мастер обязательно возвращает вам старую деталь на руки.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Сколько времени занимает ремонт ноутбука?</summary>
+          <div class="faq-body">
+            Типовые работы (чистка охлаждения с заменой термопасты, замена экрана, клавиатуры, аккумулятора, установка SSD/RAM, удаление вирусов и настройка Windows/macOS) выполняются при вас за 40–90 минут. Сложная пайка материнских плат под микроскопом и УЗ-чистка после залития занимают от 2 часов до 1–3 дней.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Все остальные ремонтируемые марки (Alienware, Gigabyte, DEXP, Maibenben и др.)</summary>
+          <div class="faq-body" style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Alienware','Диагностика 0 ₽')">Alienware</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт AORUS','Диагностика 0 ₽')">AORUS</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Chuwi','Диагностика 0 ₽')">Chuwi</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Clevo','Диагностика 0 ₽')">Clevo</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт DEXP','Диагностика 0 ₽')">DEXP</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Digma','Диагностика 0 ₽')">Digma</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Fujitsu','Диагностика 0 ₽')">Fujitsu</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Gigabyte','Диагностика 0 ₽')">Gigabyte</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Haier','Диагностика 0 ₽')">Haier</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Hasee','Диагностика 0 ₽')">Hasee</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Infinix','Диагностика 0 ₽')">Infinix</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Irbis','Диагностика 0 ₽')">Irbis</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт LG','Диагностика 0 ₽')">LG</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Machenike','Диагностика 0 ₽')">Machenike</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Maibenben','Диагностика 0 ₽')">Maibenben</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Microsoft Surface','Диагностика 0 ₽')">Microsoft</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Packard Bell','Диагностика 0 ₽')">Packard Bell</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Panasonic','Диагностика 0 ₽')">Panasonic</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Razer','Диагностика 0 ₽')">Razer</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт realme','Диагностика 0 ₽')">realme</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт TECNO','Диагностика 0 ₽')">TECNO</span>
+            <span class="fmw-chip" onclick="openLeadModal('Ремонт Thunderobot','Диагностика 0 ₽')">Thunderobot</span>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16. ФИНАЛЬНЫЙ БЛОК ЗАЯВКИ БЕЗ QR-КОДОВ -->
+  <section class="section" style="background:var(--navy-950);color:#ffffff;" id="lr-contact">
+    <div class="container" style="max-width:680px;margin:0 auto;">
+      <span class="section-eyebrow" style="color:var(--gold-400);">Бесплатная консультация мастера за 3 минуты</span>
+      <h2 class="section-title" style="color:#ffffff;margin-bottom:10px;">Узнайте точную стоимость ремонта до выезда мастера</h2>
+      <p style="font-size:15px;line-height:1.5;color:#cbd5e1;margin-bottom:22px;">Опишите симптомы по телефону или в мессенджере — назовём честную вилку цены и закрепим за вами скидку до 15%. Диагностика — 0&nbsp;₽ даже при отказе.</p>
+
+      <div class="hero-cta-grid">
+        <button type="button" class="btn-primary-gold" onclick="openLeadModal('Узнать стоимость ремонта', 'Диагностика — 0 ₽ даже при отказе')">
+          <span>Узнать стоимость</span>
+        </button>
+        <a href="tel:+78123444444" class="btn-secondary-glass">
+          <span>(812) 344-44-44</span>
+        </a>
+      </div>
+
+      <div class="hero-messengers-block">
+        <div class="hero-messengers-caption">Связь в мессенджерах без ожидания (можно прислать фото/видео поломки):</div>
+        <div class="hero-messengers-row">
+          <a href="https://vk.com/lenremont" target="_blank" rel="noopener" class="msg-btn"><span>ВКонтакте</span></a>
+          <a href="https://t.me/lenremont_spb" target="_blank" rel="noopener" class="msg-btn"><span>Telegram</span></a>
+          <a href="https://max.ru" target="_blank" rel="noopener" class="msg-btn"><span>MAX</span></a>
+          <a href="https://wa.me/78123444444" target="_blank" rel="noopener" class="msg-btn"><span>WhatsApp</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- НИЖНЯЯ ЛИПКАЯ ПАНЕЛЬ СМАРТФОНА -->
+  <div class="sticky-mobile-bar">
+    <a href="tel:+78123444444" class="smb-call">
+      <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+      <span>Позвонить</span>
+    </a>
+    <button type="button" class="smb-order" onclick="openLeadModal('Узнать стоимость ремонта', 'Диагностика — 0 ₽ даже при отказе')">Узнать стоимость</button>
+  </div>
+
+  <!-- МОДАЛЬНОЕ ОКНО С ИСПРАВЛЕННЫМ НОМЕРОНАБИРАТЕЛЕМ -->
+  <div class="modal-backdrop" id="leadModal" hidden>
+    <div class="modal-sheet" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close-btn" onclick="closeLeadModal()" aria-label="Закрыть">×</button>
+      <div class="modal-context-pill" id="modalContextPill">Диагностика — 0 ₽ даже при отказе</div>
+      <h3 id="modalTitle" style="font-family:var(--font-display);font-size:20px;font-weight:800;color:var(--text-primary);line-height:1.25;">
+        Узнать точную стоимость ремонта
+      </h3>
+
+      <input type="text" size="12" class="phone-display-field" id="modalPhoneInput" value="+7 (___) ___-__-__" readonly aria-label="Номер телефона">
+
+      <div class="dialpad-grid" aria-label="Набор номера">
+        <button type="button" class="dial-key" onclick="pressDialDigit('1')">1</button>
+        <button type="button" class="dial-key" onclick="pressDialDigit('2')">2</button>
+        <button type="button" class="dial-key" onclick="pressDialDigit('3')">3</button>
+        <button type="button" class="dial-key" onclick="pressDialDigit('4')">4</button>
+        <button type="button" class="dial-key" onclick="pressDialDigit('5')">5</button>
+        <button type="button" class="dial-key" onclick="pressDialDigit('6')">6</button>
+        <button type="button" class="dial-key" onclick="pressDialDigit('7')">7</button>
+        <button type="button" class="dial-key" onclick="pressDialDigit('8')">8</button>
+        <button type="button" class="dial-key" onclick="pressDialDigit('9')">9</button>
+        <button type="button" class="dial-key key-reset" onclick="resetDialPhone()">Сброс</button>
+        <button type="button" class="dial-key" onclick="pressDialDigit('0')">0</button>
+        <button type="button" class="dial-key key-back" onclick="backspaceDialPhone()" aria-label="Удалить">⌫</button>
+      </div>
+
+      <label class="consent-row">
+        <input type="checkbox" id="modalConsentCheck" checked onchange="validateModalForm()">
+        <span>Согласен на обработку персональных данных для расчёта стоимости ремонта.</span>
+      </label>
+
+      <div class="form-status-msg is-hint" id="modalStatusMsg">
+        Введите 10 цифр номера после +7 (осталось: 10)
+      </div>
+
+      <button type="button" class="modal-submit-btn" id="modalSubmitBtn" disabled onclick="submitLeadForm()">
+        Получить расчёт стоимости →
+      </button>
+    </div>
+  </div>
+
+  <!-- ПОЛНОЭКРАННЫЙ ЛАЙТБОКС -->
+  <div class="lightbox-backdrop" id="photoLightbox" hidden onclick="closeLightbox()">
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Фото">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+    <button type="button" class="lightbox-close" onclick="closeLightbox()">Закрыть фото ×</button>
+  </div>
+
+  <script>
+    // 1. ГОРИЗОНТАЛЬНАЯ ПРОКРУТКА КАРУСЕЛЕЙ
+    function scrollTrack(trackId, delta) {
+      const el = document.getElementById(trackId);
+      if (el) el.scrollBy({ left: delta, behavior: 'smooth' });
+    }
+
+    // 2. ПЕРЕКЛЮЧАТЕЛЬ ВКЛАДОК ПРАЙС-ЛИСТА
+    function switchPriceTab(tab, btn) {
+      document.getElementById('priceTabWin').hidden = (tab !== 'win');
+      document.getElementById('priceTabMac').hidden = (tab !== 'mac');
+      document.querySelectorAll('.price-tab-btn').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+    }
+
+    // 3. РАСКРЫТИЕ ТЕКСТА ОТЗЫВА («Читать полностью»)
+    function toggleReviewText(btn) {
+      const card = btn.closest('.review-card');
+      const expanded = card.classList.toggle('is-expanded');
+      btn.textContent = expanded ? 'Свернуть ▲' : 'Читать полностью ▾';
+    }
+
+    // 4. ЛАЙТБОКС ФОТОГРАФИЙ И ДИПЛОМОВ
+    function openLightbox(src, caption) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightboxCaption').textContent = caption || '';
+      document.getElementById('photoLightbox').hidden = false;
+    }
+    function closeLightbox() {
+      document.getElementById('photoLightbox').hidden = true;
+    }
+
+    // 5. ВЫБОР АДРЕСА / ФИЛИАЛА И ОБНОВЛЕНИЕ ПИНА НА МИНИ-КАРТЕ СПб
+    function pickFormatAddr(inputId, value, chipBtn, pinLabelId) {
+      const input = document.getElementById(inputId);
+      if (input) input.value = value;
+      if (pinLabelId) {
+        const pinEl = document.getElementById(pinLabelId);
+        if (pinEl) pinEl.textContent = value;
+      }
+      const wrap = chipBtn.parentElement;
+      if (wrap) {
+        wrap.querySelectorAll('.fmw-chip').forEach(c => c.classList.remove('is-selected'));
+      }
+      chipBtn.classList.add('is-selected');
+    }
+    function openFormatModalWithAddr(formatTitle, inputId) {
+      const input = document.getElementById(inputId);
+      const addr = input && input.value ? input.value : 'Санкт-Петербург';
+      openLeadModal(formatTitle, 'Адрес / СЦ: ' + addr);
+    }
+
+    // 6. ВИДЕОТУР МОБИЛЬНОЙ МАСТЕРСКОЙ
+    function toggleLabVideo() {
+      const video = document.getElementById('labTourVideo');
+      const btn = document.getElementById('labPlayBtn');
+      if (!video) return;
+      if (video.paused) {
+        video.play();
+        btn.classList.add('is-playing');
+        video.setAttribute('controls', 'controls');
+      } else {
+        video.pause();
+        btn.classList.remove('is-playing');
+      }
+    }
+
+    // 7. КВИЗ С АВТОПЕРЕХОДОМ
+    const quizState = { step: 1, answers: {} };
+    function selectQuizOption(step, value, labelEl) {
+      quizState.answers[step] = value;
+      const pane = labelEl.closest('.quiz-step-pane');
+      pane.querySelectorAll('.quiz-opt-label').forEach(l => l.classList.remove('is-selected'));
+      labelEl.classList.add('is-selected');
+      setTimeout(() => {
+        if (step < 4) setQuizStep(step + 1);
+      }, 220);
+    }
+    function setQuizStep(step) {
+      quizState.step = step;
+      document.querySelectorAll('.quiz-step-pane').forEach(p => {
+        p.hidden = (parseInt(p.getAttribute('data-step'), 10) !== step);
+      });
+      document.getElementById('quizBarFill').style.width = (step * 25) + '%';
+      document.getElementById('quizStepBadge').textContent = 'Шаг ' + step + ' из 4 • Расчёт стоимости';
+      document.getElementById('quizPrevBtn').hidden = (step === 1);
+      if (step === 4) {
+        document.getElementById('quizSummaryBox').innerHTML =
+          '<div><strong>Задача:</strong> ' + (quizState.answers[1] || 'Диагностика') + '</div>' +
+          '<div><strong>Формат:</strong> ' + (quizState.answers[2] || 'Удобный формат') + '</div>' +
+          '<div><strong>Срочность:</strong> ' + (quizState.answers[3] || 'Сегодня') + '</div>';
+      }
+    }
+    function stepQuizBack() {
+      if (quizState.step > 1) setQuizStep(quizState.step - 1);
+    }
+    function openQuizFinalModal() {
+      const summary = (quizState.answers[1] || 'Ремонт') + ' • ' + (quizState.answers[2] || 'СПб');
+      openLeadModal('Расчёт стоимости по квизу (-15%)', summary);
+    }
+
+    // 8. МОДАЛЬНОЕ ОКНО С ИСПРАВЛЕННЫМ НОМЕРОНАБИРАТЕЛЕМ
+    let dialDigits = '';
+    function formatPhoneMask(digits) {
+      const padded = (digits + '__________').slice(0, 10);
+      return '+7 (' + padded.slice(0, 3) + ') ' + padded.slice(3, 6) + '-' + padded.slice(6, 8) + '-' + padded.slice(8, 10);
+    }
+    function updateDialUI() {
+      document.getElementById('modalPhoneInput').value = formatPhoneMask(dialDigits);
+      validateModalForm();
+    }
+    function pressDialDigit(d) {
+      if (dialDigits.length < 10) {
+        dialDigits += d;
+        updateDialUI();
+      }
+    }
+    function backspaceDialPhone() {
+      if (dialDigits.length > 0) {
+        dialDigits = dialDigits.slice(0, -1);
+        updateDialUI();
+      }
+    }
+    function resetDialPhone() {
+      dialDigits = '';
+      updateDialUI();
+    }
+    function validateModalForm() {
+      const consent = document.getElementById('modalConsentCheck').checked;
+      const statusEl = document.getElementById('modalStatusMsg');
+      const submitBtn = document.getElementById('modalSubmitBtn');
+      const remaining = 10 - dialDigits.length;
+
+      if (remaining > 0) {
+        statusEl.className = 'form-status-msg is-hint';
+        statusEl.textContent = 'Введите 10 цифр номера после +7 (осталось: ' + remaining + ')';
+        submitBtn.disabled = true;
+      } else if (!consent) {
+        statusEl.className = 'form-status-msg is-hint';
+        statusEl.textContent = 'Отметьте согласие на обработку данных';
+        submitBtn.disabled = true;
+      } else {
+        statusEl.className = 'form-status-msg is-ready';
+        statusEl.textContent = 'Номер введён верно! Нажмите кнопку ниже';
+        submitBtn.disabled = false;
+      }
+    }
+    function openLeadModal(title, contextText) {
+      document.getElementById('modalTitle').textContent = title || 'Узнать точную стоимость ремонта';
+      document.getElementById('modalContextPill').textContent = contextText || 'Диагностика — 0 ₽ даже при отказе';
+      document.getElementById('leadModal').hidden = false;
+      updateDialUI();
+    }
+    function closeLeadModal() {
+      document.getElementById('leadModal').hidden = true;
+    }
+    function submitLeadForm() {
+      if (dialDigits.length < 10) return;
+      const statusEl = document.getElementById('modalStatusMsg');
+      statusEl.className = 'form-status-msg is-ready';
+      statusEl.textContent = 'Заявка принята! Мастер перезвонит на ' + formatPhoneMask(dialDigits) + ' за 3 минуты.';
+    }
+  </script>
+</body>
+</html>

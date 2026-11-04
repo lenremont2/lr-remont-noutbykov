@@ -1,0 +1,78 @@
+
+> lr-remont-noutbykov@0.1.0 build
+> astro build
+
+13:57:36 [vite] Re-optimizing dependencies because vite config has changed
+13:57:36 [types] Generated 172ms
+13:57:36 [build] output: "static"
+13:57:36 [build] mode: "static"
+13:57:36 [build] directory: D:\works\projects\lr-remont-noutbykov\dist\
+13:57:36 [build] Collecting build info...
+13:57:36 [build] ✓ Completed in 193ms.
+13:57:36 [build] Building static entrypoints...
+13:57:37 [vite] ✓ built in 1.31s
+13:57:39 [vite] ✓ built in 1.60s
+13:57:39 [build] Rearranging server assets...
+
+ generating static routes 
+13:57:39   ├─ /design-directions/focus/index.html (+15ms) 
+13:57:39   ├─ /design-directions/lab/index.html (+2ms) 
+13:57:39   ├─ /design-directions/service/index.html (+3ms) 
+13:57:39   ├─ /design-directions/index.html (+3ms) 
+13:57:39   ├─ /remont-macbook-spb.htm/index.html (+19ms) 
+13:57:39   ├─ /remont-noutbukov-spb.htm/index.html (+16ms) 
+13:57:39   ├─ /style-review/index.html (+5ms) 
+13:57:39   ├─ /remont-noutbukov-acer-spb.htm/index.html (+9ms) 
+13:57:39   ├─ /remont-noutbukov-asus-spb.htm/index.html (+10ms) 
+13:57:39   ├─ /remont-noutbukov-dell-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /remont-noutbukov-hp-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /remont-noutbukov-lenovo-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-msi-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-samsung-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-sony-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /remont-noutbukov-toshiba-spb.htm/index.html (+16ms) 
+13:57:39   ├─ /remont-noutbukov-huawei-spb.htm/index.html (+6ms) 
+13:57:39   ├─ /remont-noutbukov-honor-spb.htm/index.html (+6ms) 
+13:57:39   ├─ /remont-noutbukov-xiaomi-spb.htm/index.html (+65ms) 
+13:57:39   ├─ /remont-noutbukov-redmi-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-gigabyte-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-aorus-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-fujitsu-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /remont-noutbukov-panasonic-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /remont-noutbukov-lg-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /remont-noutbukov-microsoft-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-razer-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-alienware-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-packard-bell-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /remont-noutbukov-emachines-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-haier-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-dexp-spb.htm/index.html (+11ms) 
+13:57:39   ├─ /remont-noutbukov-digma-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /remont-noutbukov-irbis-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-prestigio-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-chuwi-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-teclast-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-maibenben-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-machenike-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-thunderobot-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-infinix-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /remont-noutbukov-tecno-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /remont-noutbukov-realme-spb.htm/index.html (+7ms) 
+13:57:39   ├─ /remont-noutbukov-hasee-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /remont-noutbukov-medion-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /remont-noutbukov-clevo-spb.htm/index.html (+8ms) 
+13:57:39   ├─ /noutbuk-ne-vklyuchaetsya.htm/index.html (+8ms) 
+13:57:39   ├─ /noutbuk-peregrevaetsya.htm/index.html (+6ms) 
+13:57:39   ├─ /remont-noutbuka-posle-zalitiya.htm/index.html (+14ms) 
+13:57:39   ├─ /remont-ekrana-noutbuka.htm/index.html (+6ms) 
+13:57:39   ├─ /noutbuk-ne-zaryazhaetsya.htm/index.html (+6ms) 
+13:57:39   ├─ /noutbuk-tormozit-ne-zagruzhaetsya.htm/index.html (+6ms) 
+13:57:40   ├─ /remont-cd-dvd-privoda-noutbuka.htm/index.html (+7ms) 
+13:57:40   ├─ /remont-klaviatury-noutbuka.htm/index.html (+7ms) 
+13:57:40   ├─ /remont-razemov-noutbuka.htm/index.html (+7ms) 
+13:57:40   ├─ /index.html (+11ms) 
+13:57:40 ✓ Completed in 545ms.
+
+13:57:40 [build] ✓ Completed in 3.50s.
+13:57:40 [build] 56 page(s) built in 3.85s
+13:57:40 [build] Complete!

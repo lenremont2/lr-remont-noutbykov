@@ -1,0 +1,62 @@
+{
+  "taskId": "card-056",
+  "platform": "Spravka.City",
+  "url": "https://pskov.spravka.city/company/lenremont-18",
+  "branch": "улица Яна Фабрициуса, 8; магазин уценённой и восстановленной б/у техники",
+  "city": "Псков",
+  "networkEvidence": [
+    {
+      "url": "https://pskov.spravka.city/company/lenremont-18",
+      "evidence": "Live Chrome card identifies Ленремонт, address улица Яна Фабрициуса, 8, Pskov, category store of restored used appliances. Telephone popup opened and displayed tel:+78112700707. Card links pskov-bu-tekhnika.lenremont.ru and vk.com/lenremontpskov."
+    },
+    {
+      "url": "https://pskov-bu-tekhnika.lenremont.ru/adresa-i-kontakty/",
+      "evidence": "Official store domain linked by the card states Pskov, улица Яна Фабрициуса, 8 and +7 (8112) 70-07-07. Confirms this card belongs to the network's used-appliance shop."
+    },
+    {
+      "url": "https://pskov.lenremont.ru/",
+      "evidence": "Official Pskov homepage retrieved by web tool lists same office address and telephone, Denis Sorokin as general director, network history since 1968. It links the exact 2GIS firm 70000001094767445."
+    },
+    {
+      "url": "https://pskov.lenremont.ru/contact.htm",
+      "evidence": "Requested legacy contact path was not accessible to web tool; direct Chrome navigation timed out without leaving the Spravka card. Current homepage Contacts link is /kontakty/, whose web retrieval also failed. Network verification rests on accessible official homepage and store contacts, not on the unavailable legacy path."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 0,
+    "examinedCount": 0,
+    "endpointObserved": true,
+    "method": "Live Chrome CUA full accessibility tree of assigned card, including entire reviews section and page footer; opened telephone disclosure. Independent web retrieval confirms empty reviews section. No pagination or collapsed review text exists when section explicitly says Отзывов пока нет / Будьте первым, кто оценит эту компанию.",
+    "stopReason": "Assigned card has no reviews. Complete applies only to this Spravka.City card; newly discovered external cards have not been counted as examined."
+  },
+  "reviews": [],
+  "discoveredSources": [
+    {
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/pskov/firm/70000001094767445/center/28.344726562500004%2C57.8077994535994/zoom/16?utm_campaign=firmsonmap&utm_medium=widget-source&utm_source=bigMap",
+      "address": "улица Яна Фабрициуса, 8; address stated by linking official homepage, target card not inspected",
+      "city": "Псков"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.com/maps/org/tekhnika_s_utsenkoy/143153493696/",
+      "address": "улица Яна Фабрициуса, 8; Техника с уценкой, store, +7 (901) 634-72-38",
+      "city": "Псков"
+    },
+    {
+      "platform": "Официальный сайт магазина — видеоотзывы",
+      "url": "https://pskov-bu-tekhnika.lenremont.ru/otzyvy/",
+      "address": "улица Яна Фабрициуса, 8; store website, testimonial branch attribution unverified",
+      "city": "Псков"
+    }
+  ],
+  "notes": [
+    "Observed 2026-11-02. Matching laptop repair reviews: 0. Review photos: 0. No gallery or avatar was reclassified as a review attachment.",
+    "The assigned source is a used-appliance sales shop card, not necessarily the same listing as the network's repair office at this address. Do not merge external cards solely by address.",
+    "2GIS URL is an actual link observed on official Pskov homepage; web click failed to fetch target, so its reviews and identity remain for a separate task.",
+    "Yandex store URL came from focused search, not from a proven official outgoing link. Search result identifies same store address and second phone shown by Spravka, but no review census was performed there. No Google exact card was found and no identifier was guessed.",
+    "Official store testimonial page was retrieved for source discovery. Its exposed captions concern appliance sales/delivery, especially washing machines and refrigerators. It was not counted as part of this card's review coverage; videos were not watched and thumbnails were not treated as review photos.",
+    "No site source files or other task results changed. No CAPTCHA, authentication, or access controls bypassed."
+  ]
+}

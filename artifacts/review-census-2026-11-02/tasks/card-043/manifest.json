@@ -1,0 +1,27 @@
+{
+  "taskId": "card-043",
+  "checkedAt": "2026-11-02",
+  "sourceUrl": "https://firmateka.com/company/lenremont/",
+  "status": "partial",
+  "examined": 10,
+  "confirmedLaptopReviews": 0,
+  "verifiedPhotos": 0,
+  "textRepresentationsRead": 10,
+  "companyRepliesRead": 5,
+  "browserExpandedReviews": 0,
+  "originalTextCompletenessVerified": false,
+  "records": [
+    {"author":"Ксения Подсекина","date":"2026-10-07","rating":5,"source":"Яндекс Карты","topic":"ванна","replyDate":"2026-10-26"},
+    {"author":"Маргарита Рудакова","date":"2026-08-16","rating":5,"source":"Яндекс Карты","topic":"электрика","replyDate":"2026-08-17"},
+    {"author":"Игнатьева Т.","date":"2026-10-09","rating":5,"source":"Яндекс Карты","topic":"неопределённые мелкие заказы","replyDate":null},
+    {"author":"Ольга Самойленко","date":"2026-08-26","rating":5,"source":"Яндекс Карты","topic":"колонка и бытовые услуги","replyDate":"2026-08-27"},
+    {"author":"Сергей Г.","date":"2026-09-30","rating":5,"source":"Яндекс Карты","topic":"телевизор Samsung","replyDate":"2026-10-26"},
+    {"author":"Елена Гельм","date":"2026-09-26","rating":5,"source":"Яндекс Карты","topic":"панель AEG и холодильник","replyDate":"2026-09-28"},
+    {"author":"Ирина Шейк","date":"2026-10-28","rating":5,"source":"2ГИС","topic":"чайник","replyDate":null},
+    {"author":"Городской Пользователь","date":"2026-10-28","rating":5,"source":"2ГИС","topic":"чистка парогенератора","replyDate":null},
+    {"author":"Городской Пользователь","date":"2026-10-26","rating":5,"source":"2ГИС","topic":"уборка","replyDate":null},
+    {"author":"Городской Пользователь","date":"2026-10-26","rating":4,"source":"2ГИС","topic":"водонагреватель","replyDate":null}
+  ],
+  "replyDateMeaning": "Дата доступного ответа; null означает, что ответ в текстовой выдаче не показан.",
+  "limits": "Статический текст закончился после 10 записей; интерактивный конец, ещё 40 записей и изображения не проверены."
+}

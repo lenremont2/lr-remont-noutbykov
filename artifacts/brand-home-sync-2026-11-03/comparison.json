@@ -1,0 +1,146 @@
+[
+  {
+    "page": "home",
+    "cardCount": 12,
+    "documentWidth": 320,
+    "documents": 4,
+    "hasBattery": true,
+    "hasWireless": true,
+    "quizSteps": 4,
+    "spacing": {
+      "benefitPadding": "14px",
+      "benefitsGap": "12px",
+      "copyPadding": "20px",
+      "leadBottom": "28px",
+      "offerBottom": "24px",
+      "seoBottom": "16px"
+    },
+    "width": 320
+  },
+  {
+    "page": "home",
+    "cardCount": 12,
+    "documentWidth": 390,
+    "documents": 4,
+    "hasBattery": true,
+    "hasWireless": true,
+    "quizSteps": 4,
+    "spacing": {
+      "benefitPadding": "14px",
+      "benefitsGap": "12px",
+      "copyPadding": "20px",
+      "leadBottom": "28px",
+      "offerBottom": "24px",
+      "seoBottom": "16px"
+    },
+    "width": 390
+  },
+  {
+    "page": "home",
+    "cardCount": 12,
+    "documentWidth": 768,
+    "documents": 4,
+    "hasBattery": true,
+    "hasWireless": true,
+    "quizSteps": 4,
+    "spacing": {
+      "benefitPadding": "14px",
+      "benefitsGap": "12px",
+      "copyPadding": "20px",
+      "leadBottom": "28px",
+      "offerBottom": "24px",
+      "seoBottom": "16px"
+    },
+    "width": 768
+  },
+  {
+    "page": "home",
+    "cardCount": 12,
+    "documentWidth": 1440,
+    "documents": 4,
+    "hasBattery": true,
+    "hasWireless": true,
+    "quizSteps": 4,
+    "spacing": {
+      "benefitPadding": "14px",
+      "benefitsGap": "12px",
+      "copyPadding": "0px",
+      "leadBottom": "28px",
+      "offerBottom": "24px",
+      "seoBottom": "16px"
+    },
+    "width": 1440
+  },
+  {
+    "page": "hp",
+    "cardCount": 12,
+    "documentWidth": 320,
+    "documents": 4,
+    "hasBattery": true,
+    "hasWireless": true,
+    "quizSteps": 3,
+    "spacing": {
+      "benefitPadding": "14px",
+      "benefitsGap": "12px",
+      "copyPadding": "20px",
+      "leadBottom": "28px",
+      "offerBottom": "24px",
+      "seoBottom": "16px"
+    },
+    "width": 320
+  },
+  {
+    "page": "hp",
+    "cardCount": 12,
+    "documentWidth": 390,
+    "documents": 4,
+    "hasBattery": true,
+    "hasWireless": true,
+    "quizSteps": 3,
+    "spacing": {
+      "benefitPadding": "14px",
+      "benefitsGap": "12px",
+      "copyPadding": "20px",
+      "leadBottom": "28px",
+      "offerBottom": "24px",
+      "seoBottom": "16px"
+    },
+    "width": 390
+  },
+  {
+    "page": "hp",
+    "cardCount": 12,
+    "documentWidth": 768,
+    "documents": 4,
+    "hasBattery": true,
+    "hasWireless": true,
+    "quizSteps": 3,
+    "spacing": {
+      "benefitPadding": "14px",
+      "benefitsGap": "12px",
+      "copyPadding": "20px",
+      "leadBottom": "28px",
+      "offerBottom": "24px",
+      "seoBottom": "16px"
+    },
+    "width": 768
+  },
+  {
+    "page": "hp",
+    "cardCount": 12,
+    "documentWidth": 1440,
+    "documents": 4,
+    "hasBattery": true,
+    "hasWireless": true,
+    "quizSteps": 3,
+    "spacing": {
+      "benefitPadding": "14px",
+      "benefitsGap": "12px",
+      "copyPadding": "0px",
+      "leadBottom": "28px",
+      "offerBottom": "24px",
+      "seoBottom": "16px"
+    },
+    "width": 1440
+  }
+]

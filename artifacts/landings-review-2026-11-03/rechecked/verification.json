@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "primaryBottom": 833.0625,
+      "primaryInsideFold": true,
+      "tabs": "click, arrows, Home/End, context and focus return passed",
+      "maps": "all four formats passed",
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "overflow": 0,
+      "primaryBottom": 987.328125,
+      "primaryInsideFold": false,
+      "tabs": "click, arrows, Home/End, context and focus return passed",
+      "maps": "all four formats passed",
+      "errors": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": 0,
+      "primaryBottom": 772.5625,
+      "primaryInsideFold": true,
+      "tabs": "click, arrows, Home/End, context and focus return passed",
+      "maps": "all four formats passed",
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": 0,
+      "primaryBottom": 660.4375,
+      "primaryInsideFold": true,
+      "tabs": "click, arrows, Home/End, context and focus return passed",
+      "maps": "all four formats passed",
+      "errors": []
+    }
+  ],
+  "noScript": "Both price categories readable",
+  "childPages": "Acer, no-power and MacBook passed",
+  "formSubmission": "Not performed"
+}

@@ -1,60 +1,110 @@
 ---
 import SectionHeading from "../ui/SectionHeading.astro";
 import LeadButton from "../ui/LeadButton.astro";
+import home from "../../data/home-copy.json";
+interface Props {
+  businessOnly?: boolean;
+}
+const { businessOnly = false } = Astro.props;
 ---
 
 <section
   id="lr-business-trust"
-  class="lr-section lr-business-trust"
+  class:list={[
+    "lr-section lr-business-trust",
+    { "lr-business-trust--reference": businessOnly },
+  ]}
   aria-labelledby="lr-business-trust-title"
 >
   <div class="lr-container">
-    <SectionHeading
-      id="lr-business-trust-title"
-      title="Бизнесу и частным лицам"
-    />
-    <div class="lr-business-trust__grid">
-      <article class="lr-business-trust__business">
-        <img
-          class="lr-business-trust__background"
-          src="/media/workshop-prosveshcheniya-engineer-640.webp"
-          alt=""
-          width="640"
-          height="360"
-          loading="lazy"
-          decoding="async"
-        />
-        <h3>Ремонт для бизнеса</h3>
-        <p>
-          Договор, безналичный расчёт и закрывающие документы. Условия
-          обслуживания согласуем с вашей организацией.
-        </p>
-        <div class="lr-business-trust__contacts">
-          <p class="lr-caption">Отдел по работе с юридическими лицами</p>
-          <a href="tel:+78126404804">+7 (812) 640-48-04</a>
-          <a href="mailto:lenremont@lenrem.ru">lenremont@lenrem.ru</a>
-        </div>
-      </article>
-      <article class="lr-business-trust__parts">
-        <h3>Подберём под вашу модель</h3>
-        <p>Проверим наличие оригинальной детали или совместимой замены.</p>
-        <ul>
-          <li>
-            <strong>Совместимость.</strong> Объясним, какой вариант подходит.
-          </li>
-          <li>
-            <strong>Стоимость и гарантия.</strong> Согласуем деталь и условия до начала
-            работ.
-          </li>
-          <li>
-            <strong>Срок поставки.</strong> Уточним, если детали нет в наличии.
-          </li>
-        </ul>
-        <LeadButton
-          label="Обсудить ремонт и запчасти"
-          source="business-trust-parts"
-        />
-      </article>
-    </div>
+    {
+      businessOnly ? (
+        <article class="lr-business-card">
+          <p class="lr-business-card__eyebrow">
+            Корпоративное обслуживание в СПб и ЛО
+          </p>
+          <h2 id="lr-business-trust-title">{home.business.title}</h2>
+          <p class="lr-business-card__lead">{home.business.lead}</p>
+          <ul class="lr-business-card__terms">
+            {home.business.items.map((item) => (
+              <li>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </li>
+            ))}
+          </ul>
+          <div class="lr-business-card__actions">
+            <>
+              <LeadButton
+                label="Получить КП и счёт"
+                source="business-trust"
+                symptom={home.business.title}
+                format="consultation"
+              />
+              <a
+                class="lr-button lr-business-card__phone"
+                href="tel:+78126404804"
+              >
+                B2B-отдел: (812) 640-48-04
+              </a>
+            </>
+          </div>
+        </article>
+      ) : (
+        <>
+          <SectionHeading
+            id="lr-business-trust-title"
+            title="Бизнесу и частным лицам"
+          />
+          <div class="lr-business-trust__grid">
+            <article class="lr-business-trust__business">
+              <img
+                class="lr-business-trust__background"
+                src="/media/workshop-prosveshcheniya-engineer-640.webp"
+                alt=""
+                width="640"
+                height="360"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3>Ремонт для бизнеса</h3>
+              <p>
+                Договор, безналичный расчёт и закрывающие документы. Условия
+                обслуживания согласуем с вашей организацией.
+              </p>
+              <div class="lr-business-trust__contacts">
+                <p class="lr-caption">Отдел по работе с юридическими лицами</p>
+                <a href="tel:+78126404804">+7 (812) 640-48-04</a>
+                <a href="mailto:lenremont@lenrem.ru">lenremont@lenrem.ru</a>
+              </div>
+            </article>
+            <article class="lr-business-trust__parts">
+              <h3>Подберём под вашу модель</h3>
+              <p>
+                Проверим наличие оригинальной детали или совместимой замены.
+              </p>
+              <ul>
+                <li>
+                  <strong>Совместимость.</strong> Объясним, какой вариант
+                  подходит.
+                </li>
+                <li>
+                  <strong>Стоимость и гарантия.</strong> Согласуем деталь и
+                  условия до начала работ.
+                </li>
+                <li>
+                  <strong>Срок поставки.</strong> Уточним, если детали нет в
+                  наличии.
+                </li>
+              </ul>
+              <LeadButton
+                label="Обсудить ремонт и запчасти"
+                source="business-trust-parts"
+              />
+            </article>
+          </div>
+        </>
+      )
+    }
   </div>
 </section>

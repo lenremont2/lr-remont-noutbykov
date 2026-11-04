@@ -1,0 +1,601 @@
+{
+  "url": "http://127.0.0.1:4322/",
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "state": {
+        "overflow": 0,
+        "bullets": 5,
+        "brands": 41,
+        "yandexLinks": 0,
+        "equipment": 4,
+        "terms": 4,
+        "guarantees": 4,
+        "formatRows": [
+          {
+            "x": 20,
+            "y": -10314
+          },
+          {
+            "x": 337,
+            "y": -10314
+          },
+          {
+            "x": 654,
+            "y": -10314
+          },
+          {
+            "x": 971,
+            "y": -10314
+          }
+        ]
+      },
+      "sections": [
+        {
+          "id": "lr-hero",
+          "height": 860,
+          "heading": [
+            {
+              "text": "Починим ноутбук сегодня от 40 минут — диагностика  бесплатно (0 ₽) даже при\n            отказе",
+              "size": "22.62px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-symptoms",
+          "height": 1136,
+          "heading": [
+            {
+              "text": "Что мы чиним и настраиваем",
+              "size": "33.93px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-manufacturers",
+          "height": 366,
+          "heading": [
+            {
+              "text": "Ремонтируем ноутбуки различных производителей",
+              "size": "24px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-formats",
+          "height": 993,
+          "heading": [
+            {
+              "text": "Выберите способ ремонта",
+              "size": "33.93px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-reviews",
+          "height": 1037,
+          "heading": [
+            {
+              "text": "Отзывы и награды",
+              "size": "33.93px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-workshop-gallery",
+          "height": 747,
+          "heading": [
+            {
+              "text": "Где и на чём мы чиним ноутбуки",
+              "size": "24px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-business-trust",
+          "height": 905,
+          "heading": [
+            {
+              "text": "Ремонт ноутбуков и компьютерного парка для бизнеса",
+              "size": "24px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-guarantee",
+          "height": 1055,
+          "heading": [
+            {
+              "text": "Гарантии и личная ответственность",
+              "size": "24px"
+            }
+          ],
+          "clipped": []
+        }
+      ],
+      "modalState": {
+        "width": 366,
+        "height": 705,
+        "scrollHeight": 705,
+        "viewportHeight": 844,
+        "numpadVisible": true,
+        "readOnly": true,
+        "submitDisabled": true,
+        "submitBottom": 750.5,
+        "visibleFields": [
+          "phone",
+          "consent"
+        ]
+      },
+      "photoState": {
+        "dialogWidth": 358,
+        "imageWidth": 334,
+        "imageHeight": 443.359375,
+        "naturalWidth": 113,
+        "naturalHeight": 150,
+        "src": "http://127.0.0.1:4322/media/review-ds-imac-2023.jpg"
+      },
+      "thumbnails": [
+        {
+          "src": "/media/review-petr-pertsev-2025.webp",
+          "cardWidth": 274.99969482421875,
+          "contentWidth": 229,
+          "linkWidth": 225.74969482421875,
+          "linkHeight": 126.97265625,
+          "imageWidth": 223.77969360351562,
+          "imageHeight": 125.002685546875,
+          "naturalWidth": 800,
+          "naturalHeight": 450
+        },
+        {
+          "src": "/media/review-ds-imac-2023.jpg",
+          "cardWidth": 279.1875,
+          "contentWidth": 229,
+          "linkWidth": 229.1875,
+          "linkHeight": 128.90625,
+          "imageWidth": 227.1875,
+          "imageHeight": 126.90625,
+          "naturalWidth": 113,
+          "naturalHeight": 150
+        },
+        {
+          "src": "/media/review-egor-computer-2026.jpg",
+          "cardWidth": 274.9997253417969,
+          "contentWidth": 229,
+          "linkWidth": 225.74972534179688,
+          "linkHeight": 126.97265625,
+          "imageWidth": 223.7796630859375,
+          "imageHeight": 125.002685546875,
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        }
+      ],
+      "savedFocus": true,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "state": {
+        "overflow": 0,
+        "bullets": 5,
+        "brands": 41,
+        "yandexLinks": 0,
+        "equipment": 4,
+        "terms": 4,
+        "guarantees": 4,
+        "formatRows": [
+          {
+            "x": 86,
+            "y": -8058
+          },
+          {
+            "x": 728,
+            "y": -8058
+          },
+          {
+            "x": 86,
+            "y": -7415
+          },
+          {
+            "x": 728,
+            "y": -7415
+          }
+        ]
+      },
+      "sections": [
+        {
+          "id": "lr-hero",
+          "height": 895,
+          "heading": [
+            {
+              "text": "Починим ноутбук сегодня от 40 минут — диагностика  бесплатно (0 ₽) даже при\n            отказе",
+              "size": "42px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-symptoms",
+          "height": 1049,
+          "heading": [
+            {
+              "text": "Что мы чиним и настраиваем",
+              "size": "60.48px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-manufacturers",
+          "height": 354,
+          "heading": [
+            {
+              "text": "Ремонтируем ноутбуки различных производителей",
+              "size": "36px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-formats",
+          "height": 1629,
+          "heading": [
+            {
+              "text": "Выберите способ ремонта",
+              "size": "60.48px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-reviews",
+          "height": 1049,
+          "heading": [
+            {
+              "text": "Отзывы и награды",
+              "size": "60.48px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-workshop-gallery",
+          "height": 677,
+          "heading": [
+            {
+              "text": "Где и на чём мы чиним ноутбуки",
+              "size": "32px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-business-trust",
+          "height": 670,
+          "heading": [
+            {
+              "text": "Ремонт ноутбуков и компьютерного парка для бизнеса",
+              "size": "32px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-guarantee",
+          "height": 835,
+          "heading": [
+            {
+              "text": "Гарантии и личная ответственность",
+              "size": "32px"
+            }
+          ],
+          "clipped": []
+        }
+      ],
+      "modalState": {
+        "width": 480,
+        "height": 441,
+        "scrollHeight": 441,
+        "viewportHeight": 900,
+        "numpadVisible": false,
+        "readOnly": false,
+        "submitDisabled": true,
+        "submitBottom": 646.5,
+        "visibleFields": [
+          "phone",
+          "consent"
+        ]
+      },
+      "photoState": {
+        "dialogWidth": 1408,
+        "imageWidth": 1384,
+        "imageHeight": 1837.15625,
+        "naturalWidth": 113,
+        "naturalHeight": 150,
+        "src": "http://127.0.0.1:4322/media/review-ds-imac-2023.jpg"
+      },
+      "thumbnails": [
+        {
+          "src": "/media/review-petr-pertsev-2025.webp",
+          "cardWidth": 385.0625,
+          "contentWidth": 335,
+          "linkWidth": 335.0625,
+          "linkHeight": 188.46875,
+          "imageWidth": 333.0625,
+          "imageHeight": 186.46875,
+          "naturalWidth": 800,
+          "naturalHeight": 450
+        },
+        {
+          "src": "/media/review-ds-imac-2023.jpg",
+          "cardWidth": 385.0625,
+          "contentWidth": 335,
+          "linkWidth": 335.0625,
+          "linkHeight": 188.46875,
+          "imageWidth": 333.0625,
+          "imageHeight": 186.46875,
+          "naturalWidth": 113,
+          "naturalHeight": 150
+        },
+        {
+          "src": "/media/review-egor-computer-2026.jpg",
+          "cardWidth": 385.0625,
+          "contentWidth": 335,
+          "linkWidth": 335.0625,
+          "linkHeight": 188.46875,
+          "imageWidth": 333.0625,
+          "imageHeight": 186.46875,
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        }
+      ],
+      "savedFocus": true,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "status": 200,
+      "state": {
+        "overflow": 0,
+        "bullets": 5,
+        "brands": 41,
+        "yandexLinks": 0,
+        "equipment": 4,
+        "terms": 4,
+        "guarantees": 4,
+        "formatRows": [
+          {
+            "x": 20,
+            "y": -12480
+          },
+          {
+            "x": 277,
+            "y": -12480
+          },
+          {
+            "x": 534,
+            "y": -12480
+          },
+          {
+            "x": 790,
+            "y": -12480
+          }
+        ]
+      },
+      "sections": [
+        {
+          "id": "lr-hero",
+          "height": 972,
+          "heading": [
+            {
+              "text": "Починим ноутбук сегодня от 40 минут — диагностика  бесплатно (0 ₽) даже при\n            отказе",
+              "size": "22px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-symptoms",
+          "height": 1280,
+          "heading": [
+            {
+              "text": "Что мы чиним и настраиваем",
+              "size": "32px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-manufacturers",
+          "height": 394,
+          "heading": [
+            {
+              "text": "Ремонтируем ноутбуки различных производителей",
+              "size": "24px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-formats",
+          "height": 1018,
+          "heading": [
+            {
+              "text": "Выберите способ ремонта",
+              "size": "32px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-reviews",
+          "height": 1140,
+          "heading": [
+            {
+              "text": "Отзывы и награды",
+              "size": "32px"
+            }
+          ],
+          "clipped": [
+            {
+              "tag": "P",
+              "text": "Обратился из-за самопроизвольных выключений старого ноутбука. Положительно оценивает спокойные и понятные объя",
+              "width": 168,
+              "scroll": 174
+            }
+          ]
+        },
+        {
+          "id": "lr-workshop-gallery",
+          "height": 747,
+          "heading": [
+            {
+              "text": "Где и на чём мы чиним ноутбуки",
+              "size": "24px"
+            }
+          ],
+          "clipped": []
+        },
+        {
+          "id": "lr-business-trust",
+          "height": 1021,
+          "heading": [
+            {
+              "text": "Ремонт ноутбуков и компьютерного парка для бизнеса",
+              "size": "24px"
+            }
+          ],
+          "clipped": [
+            {
+              "tag": "P",
+              "text": "Приоритетный склад запчастей и корпоративные тарифы от 3 устройств.",
+              "width": 96,
+              "scroll": 112
+            }
+          ]
+        },
+        {
+          "id": "lr-guarantee",
+          "height": 1290,
+          "heading": [
+            {
+              "text": "Гарантии и личная ответственность",
+              "size": "24px"
+            }
+          ],
+          "clipped": []
+        }
+      ],
+      "modalState": {
+        "width": 296,
+        "height": 695.59375,
+        "scrollHeight": 776,
+        "viewportHeight": 740,
+        "numpadVisible": true,
+        "readOnly": true,
+        "submitDisabled": true,
+        "submitBottom": 774.203125,
+        "visibleFields": [
+          "phone",
+          "consent"
+        ]
+      },
+      "photoState": {
+        "dialogWidth": 288,
+        "imageWidth": 264,
+        "imageHeight": 350.4375,
+        "naturalWidth": 113,
+        "naturalHeight": 150,
+        "src": "http://127.0.0.1:4322/media/review-ds-imac-2023.jpg"
+      },
+      "thumbnails": [
+        {
+          "src": "/media/review-petr-pertsev-2025.webp",
+          "cardWidth": 214.32984924316406,
+          "contentWidth": 168,
+          "linkWidth": 165.07984924316406,
+          "linkHeight": 92.8516845703125,
+          "imageWidth": 163.10984802246094,
+          "imageHeight": 90.88165283203125,
+          "naturalWidth": 800,
+          "naturalHeight": 450
+        },
+        {
+          "src": "/media/review-ds-imac-2023.jpg",
+          "cardWidth": 217.59375,
+          "contentWidth": 168,
+          "linkWidth": 167.59375,
+          "linkHeight": 94.265625,
+          "imageWidth": 165.59375,
+          "imageHeight": 92.265625,
+          "naturalWidth": 113,
+          "naturalHeight": 150
+        },
+        {
+          "src": "/media/review-egor-computer-2026.jpg",
+          "cardWidth": 214.329833984375,
+          "contentWidth": 168,
+          "linkWidth": 165.079833984375,
+          "linkHeight": 92.8516845703125,
+          "imageWidth": 163.10986328125,
+          "imageHeight": 90.88165283203125,
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        }
+      ],
+      "savedFocus": true,
+      "errors": []
+    }
+  ],
+  "movement": {
+    "firstOtherMs": 93302.06378986867,
+    "groupWidth": 6396,
+    "duration": 120000,
+    "visibleInert": true,
+    "label": "Acer",
+    "href": "/remont-noutbukov-acer-spb.htm",
+    "x": 254.34619140625,
+    "y": 477.671875,
+    "hitTag": "DIV",
+    "hitClass": "lr-marquee__track",
+    "hitLink": null,
+    "navigated": false
+  },
+  "narrowDesktop": {
+    "coarse": false,
+    "hover": true,
+    "numpadVisible": true,
+    "readOnly": true
+  },
+  "submission": "Not performed",
+  "touchGestures": [
+    {
+      "selector": "#lr-formats [data-lr-swipe-track]",
+      "before": 0,
+      "after": 300
+    },
+    {
+      "selector": "#lr-workshop-gallery [data-lr-swipe-track]",
+      "before": 2,
+      "after": 274
+    }
+  ],
+  "formatMapSize": {
+    "headingSize": "20px",
+    "mapWidth": 593.59375,
+    "mapHeight": 243.8125,
+    "photoHeight": 190
+  }
+}

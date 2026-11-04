@@ -1,0 +1,26 @@
+{
+  "publication": "LOCAL WORKING EVIDENCE ONLY — do not publish full review texts",
+  "taskId": "card-032",
+  "observedDate": "2026-11-02",
+  "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_moskovskom_prospekte_212/reviews/",
+  "organizationId": "62f37d43773ff45350070e0d",
+  "textExtraction": "Exact textContent of .js-comment-content, UTF-8 without normalization; NBSP preserved as U+00A0. Empty .js-comment-additional-text.",
+  "records": [
+    {
+      "id": "63da226e4bc4f5703f060555",
+      "author": "Виктория Драгунова",
+      "date": "2023-02-01T11:27:21+03:00",
+      "rating": null,
+      "text": "Отремонтировали мне ноутбук, так как он\u00a0перестал включаться. Работа мастера порадовала, так как ноутбук он\u00a0без\u00a0проблем взял в\u00a0работу, да\u00a0и обнаружил и\u00a0устранил причину поломки. В\u00a0общем\u00a0то, всё работает, так что большое спасибо!",
+      "reply": {"id":"645386e809ea0fa5ca0ab27c","date":"2023-05-04T13:20:24+03:00","summary":"Компания благодарит автора и сообщает, что рада удовлетворённости качеством ремонта.","mediaCount":0},
+      "mediaCount": 0
+    }
+  ],
+  "listEndpoints": [
+    {"section":"published","data-count":3,"data-remain":0,"data-has-more":false,"ids":["63da226e4bc4f5703f060555","635cc80ac4ac11f4bb0b76a9","6359115ecc932ae78405598c"]},
+    {"section":"rejected","data-count":8,"data-remain":0,"data-has-more":false,"ids":["63d3d22358be7b22a2057111","63c5456a212a48246b023c8e","63b6f0d7d6e488114a0b795a","63a441d1a22a31f0ab0e40ba","6395809cc4da7338f80062f5","6385a6ab4ca86eb109020dc5","636cf0397885ea906a0cea9e","636112df4e8d4329790323d4"]}
+  ],
+  "allAdditionalTextEmpty": true,
+  "all14ReviewAndReplyMediaCounts": 0,
+  "officialAddressEvidence": {"url":"https://www.lenremont.ru/contact.htm","observation":"Официальная страница контактов перечисляет Московский проспект, 212, Дом Советов, 1 этаж, кабинет 1130, вход у кафе Авантаж. Zoon указывает кабинет 1124; расхождение сохранено.","officialPhone":"+7 (812) 344-44-44","zoonPhone":"+7 (812) 380-88-41","phoneMatchVerified":false}
+}

@@ -1,0 +1,57 @@
+{
+  "taskId": "card-010",
+  "observedOn": "2026-11-02",
+  "source": "Назначенная карточка Google Maps /g/11cm_prq_7",
+  "coverageEvidence": {
+    "reportedTotal": 206,
+    "uniqueReviewIds": 206,
+    "withUserText": 151,
+    "ratingOnly": 55,
+    "collapsedUserTextsRemaining": 0,
+    "ratingHistogram": {"5":135,"4":18,"3":7,"2":7,"1":39},
+    "endRepeatedScrollCounts": [198,206,206,206],
+    "finalEndScrollTop": 72188,
+    "finalEndScrollHeight": 73202,
+    "lastRecord": {"author":"Elena Rotaru","date":"8 лет назад","text":""},
+    "photoBearingReviewAuthors": ["Сергей О.","Константин паплавный","ON Vas","Максим Лихачев"]
+  },
+  "matchedWorkingTexts": [
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ3enZTcFVBEAE",
+      "author": "Геннадий Тузов",
+      "date": "2 года назад",
+      "rating": 5,
+      "reviewUrl": "https://maps.app.goo.gl/NJt4L9QEy1DH4BED6",
+      "nestedReviewPhotos": 0,
+      "text": "Ноутбук начал сильно тормозить и отключаться без видимых причин. Я на удаленке и без ноута никуда. Обратился в этот сервисный центр.Мастер провел диагностику, оказалось что проблема была связана с перегревом из-за скопившейся пыли и изношенной термопасты. Помимо этого сказали что жесткий диск начал показывать признаки износа, предложили заменить его на более надежный SSD.Ремонт занял всего несколько часов, и ноутбук вернулся ко мне в идеальном состоянии. Он теперь работает гораздо быстрее, не перегревается. Работой сервисного центра остался доволен, буду рекомендовать вас друзьям."
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21GTVptWTNZamc0TlRKUlRsSTFkbTF2YTJSbmVXYxAB",
+      "author": "1 2",
+      "date": "год назад",
+      "rating": 5,
+      "reviewUrl": "https://maps.app.goo.gl/2VGAkfrNsCwdNUJv7",
+      "nestedReviewPhotos": 0,
+      "text": "Принёс свой ноутбук на ремонт, прошло 2 дня, и мне его починили. Ноутбук стал работать как раньше, починили хорошо, а главное — недорого. Всем советую!"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQwbGRheFZnEAE",
+      "author": "Никон Плешков",
+      "date": "Изменено 6 лет назад",
+      "rating": 1,
+      "reviewUrl": "https://maps.app.goo.gl/N7L6i3rNywCjCNbi8",
+      "nestedReviewPhotos": 0,
+      "text": "Отвратительное место. Отдал ноутбук на ремонт в процессе сломали защелку и не докрутили болтов. По телефону сказали что болтов якобы не хватало.\nномер м620618"
+    }
+  ],
+  "networkEvidence": {
+    "googleAddress": "пр. Просвещения, 20/25, Санкт-Петербург, 194355",
+    "googleWebsiteHref": "https://lenremont.ru/",
+    "googlePhone": "8 (812) 344-44-44",
+    "officialUrl": "https://www.lenremont.ru/",
+    "officialPhone": "+7 (812) 344-44-44",
+    "officialBranchAddress": "м. Пр. Просвещения, пр. Просвещения, д.20",
+    "officialEvidenceLocation": "Официальная главная: телефон около строк 320, 355, 376; мастерская около строк 2499–2527 в текстовом представлении web.open."
+  },
+  "limitations": ["Относительные даты оставлены как показано Google.","У подходящих отзывов не было вложенных фотографий; аватары и профильный счётчик фото вложениями не считались."]
+}

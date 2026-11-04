@@ -1,0 +1,48 @@
+{
+  "taskId": "card-200",
+  "observedDate": "2026-11-02",
+  "sourceUrl": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82+%D0%B1%2F%D1%83+%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D0%B3%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D0%B8%D0%B5%D0%B9/@57.8074449,28.3445342,17z/data=!3m1!4b1!4m6!3m5!1s0x4697cd8d7ce0b415:0x827446421853ee8!8m2!3d57.8074449!4d28.3445342!16s%2Fg%2F11y99b4zm5",
+  "sourceTitle": "Ленремонт б/у техника с гарантией – Google Карты",
+  "browserTabId": "2080318441",
+  "scope": "Только публичная панель назначенной организации, без оболочки аккаунта.",
+  "identity": {
+    "name": "Ленремонт б/у техника с гарантией",
+    "category": "Магазин бытовой техники",
+    "address": "ул. Яна Фабрициуса, 8, Псков, Псковская обл., 180017",
+    "website": "https://pskov-bu-tekhnika.lenremont.ru/",
+    "phone": "+78112700707"
+  },
+  "reviewState": {
+    "tabs": [
+      "Обзор",
+      "Информация"
+    ],
+    "reviewsTabPresent": false,
+    "ratingDisplayed": false,
+    "reviewCounterDisplayed": false,
+    "reviewButtons": [
+      "Оставить отзыв"
+    ],
+    "reviewElementsWithDataReviewId": 0,
+    "publishedReviewCards": 0,
+    "sortingControlsPresent": false
+  },
+  "endpoint": {
+    "panelClientHeight": 1135,
+    "panelScrollHeight": 1757,
+    "panelScrollTop": 622.6666870117188,
+    "atBottomWithinOnePixel": true,
+    "sectionsAfterReviewAction": [
+      "Похожие запросы",
+      "Результаты поиска в Интернете",
+      "Об этих данных"
+    ]
+  },
+  "interpretation": "Полностью загруженная карточка не содержит корпуса отзывов. Счётчик 0 явно не напечатан; нулевой доступный корпус установлен по отсутствию рейтинга, вкладки и отзывов после полного просмотра.",
+  "photos": {
+    "reviewAttachments": 0,
+    "companyReplyAttachments": 0,
+    "businessGalleryExcluded": true
+  },
+  "officialWebsiteNavigation": "Attempted observed website URL; navigation timed out and Google Maps remained active."
+}

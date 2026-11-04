@@ -1,0 +1,13 @@
+{
+  "unchanged": [
+    "lr-prices",
+    "lr-quiz",
+    "lr-process",
+    "lr-lab",
+    "lr-locations",
+    "lr-service-guide",
+    "lr-faq",
+    "lr-contact"
+  ],
+  "comparison": "Identical final built HTML"
+}

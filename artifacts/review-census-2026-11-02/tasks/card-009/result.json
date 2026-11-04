@@ -1,0 +1,102 @@
+{
+  "taskId": "card-009",
+  "platform": "Google Карты",
+  "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@59.8445146,30.2471749,17z/data=!4m8!3m7!1s0x46963ae33e43faf7:0xc3666b90d7a7f71d!8m2!3d59.8445146!4d30.2471749!9m1!1b1!16s%2Fg%2F11b8v9kctp?hl=ru",
+  "branch": "проспект Ветеранов, 9, Санкт-Петербург, 198255",
+  "city": "Санкт-Петербург",
+  "networkEvidence": [
+    {
+      "source": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@59.8445146,30.2471749,17z/data=!4m8!3m7!1s0x46963ae33e43faf7:0xc3666b90d7a7f71d!8m2!3d59.8445146!4d30.2471749!9m1!1b1!16s%2Fg%2F11b8v9kctp?hl=ru",
+      "observed": "В обзоре карточки указаны Ленремонт; пр-т. Ветеранов,9; сайт https://lenremont.ru/; телефон 8(812)344-44-44."
+    },
+    {
+      "source": "https://www.lenremont.ru/lenremont-na-veteranov.htm",
+      "observed": "Официальная адресная страница называет мастерскую Ленремонта на проспекте Ветеранов,9 и телефон 344-44-44."
+    },
+    {
+      "source": "https://www.lenremont.ru/contact.htm",
+      "observed": "Официальный список мастерских содержит Ветеранов,9, общий телефон сайта 8(812)344-44-44."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 161,
+    "examinedCount": 161,
+    "endpointObserved": true,
+    "method": "Live Chrome UI: unfiltered «Самые релевантные» feed scrolled from start to actual bottom; all 161 unique data-review-id entries read, all reviewer expandReview controls expanded, all displayed ratings/dates examined. Full corpus manually screened and keyword-screened for laptop/notebook/MacBook and brands. Four matching review-specific links copied via each review's own Share dialog.",
+    "stopReason": "Actual accessible endpoint: 161 entries equals reported total; repeated bottom scroll stopped at scrollTop 59789.332, clientHeight1015, scrollHeight60804; 0 reviewer expandReview controls remained. Last entry Владимир Соколов, 3 stars, 9 years ago."
+  },
+  "reviews": [
+    {
+      "author": "Мухаммад",
+      "date": "5 месяцев назад",
+      "rating": 5,
+      "summary": "Описывает выездной ремонт зависавшего и выключавшегося ноутбука: устранение перегрева от пыли и замену термопасты за полтора часа; сообщает о цене 3500 рублей, чеке и гарантии.",
+      "reviewUrl": "https://maps.app.goo.gl/w55rtU4Nj9MkaPTv5",
+      "topic": "Ноутбук: перегрев, чистка, термопаста, ремонт на дому",
+      "photos": [],
+      "evidence": {
+        "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sNlQxQXhTbWxUYURFME1FVTJhRUkyVkcxMGFsRRAB",
+        "profileUrl": "https://www.google.com/maps/contrib/105494078824215508907/reviews?hl=ru",
+        "fullTextExpanded": true,
+        "reviewPhotoButtons": 0
+      }
+    },
+    {
+      "author": "Руфина",
+      "date": "10 месяцев назад",
+      "rating": 5,
+      "summary": "Сообщает о ремонте ноутбука на дому за полтора часа: удалили пыль, заменили термопасту; после работы устройство тише и не перегревается. Упоминает чек и гарантию.",
+      "reviewUrl": "https://maps.app.goo.gl/6tfqiEjCsXVqYAXV6",
+      "topic": "Ноутбук: чистка, термопаста, перегрев, ремонт на дому",
+      "photos": [],
+      "evidence": {
+        "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xreVRXbDJSWHBQUkRNd1NUWktTRUpWZFVKQlRYYxAB",
+        "profileUrl": "https://www.google.com/maps/contrib/103029545917379794823/reviews?hl=ru",
+        "fullTextExpanded": true,
+        "reviewPhotoButtons": 0
+      }
+    },
+    {
+      "author": "Рамазан Саидов",
+      "date": "год назад",
+      "rating": 5,
+      "summary": "Постоянный клиент сообщает о ремонте телефона и ноутбука; положительно оценивает качество и цену, без описания конкретной неисправности ноутбука.",
+      "reviewUrl": "https://maps.app.goo.gl/7uo4wZ8bb6o473cJ7",
+      "topic": "Ремонт ноутбука и телефона",
+      "photos": [],
+      "evidence": {
+        "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xaVWNGTmlhRE5YVjBRelJUUXdjME00VFZoaE9YYxAB",
+        "profileUrl": "https://www.google.com/maps/contrib/111342473385132970650/reviews?hl=ru",
+        "fullTextExpanded": true,
+        "reviewPhotoButtons": 0
+      }
+    },
+    {
+      "author": "Сергей Сергеев",
+      "date": "7 лет назад",
+      "rating": 1,
+      "summary": "Жалуется на трёхнедельную задержку ремонта ноутбука и утверждает, что после возврата обнаружил неработающую оперативную память и повреждения BIOS, батарейки и цепей питания. Это утверждения автора; владелец просит номер заказа для подтверждения обращения.",
+      "reviewUrl": "https://maps.app.goo.gl/aV2FKVXucBnBbnMD8",
+      "topic": "Ноутбук: задержка ремонта, заявленные повреждения и подмена деталей",
+      "photos": [],
+      "evidence": {
+        "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURZeFBDZkNnEAE",
+        "profileUrl": "https://www.google.com/maps/contrib/107849783609844266200/reviews?hl=ru",
+        "fullTextExpanded": true,
+        "reviewPhotoButtons": 0,
+        "photoCountCaution": "Профиль показывает суммарно «4 отзыва · 1 фото», но в этом отзыве нет кнопки вложенного фото; это не доказательство фото у данного отзыва."
+      }
+    }
+  ],
+  "discoveredSources": [],
+  "notes": [
+    "Observed 2026-11-02. Dates are preserved exactly as relative dates displayed by Google; no exact calendar dates invented.",
+    "Rating distribution observed and independently counted: 5★100,4★14,3★9,2★7,1★31; total161.",
+    "107 entries have narrative text in .MyEned; one additional entry (Александр Яковлев) has only negative attributes/service category, expanded and checked (Установка бытовой техники); remaining53 are rating-only.",
+    "Four laptop matches: three5★ and one1★; zero attached review photos among these four. Avatars and profile aggregate photo counts were excluded. Unrelated review photos and branch gallery were not downloaded.",
+    "No CAPTCHA or login was bypassed. Existing Chrome account was already signed in; no account interaction performed.",
+    "No target-site code/content edits. Coverage evidence ledger saved in coverage-evidence.json.",
+    "Direct share URLs were produced by Google Share/Copy Link for the named author, not constructed from guessed URL formats."
+  ]
+}

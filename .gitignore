@@ -1,4 +1,5 @@
 node_modules/
+.just-scrape/
 .astro/
 dist/
 .DS_Store

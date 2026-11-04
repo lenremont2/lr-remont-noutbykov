@@ -1,0 +1,100 @@
+{
+  "taskId": "card-047",
+  "platform": "Зеркало (otzovikkrd23.ru)",
+  "url": "https://otzovikkrd23.ru/lenremont-otzyvy/",
+  "branch": "company-wide",
+  "city": null,
+  "networkEvidence": {
+    "status": "inferred_company_wide",
+    "summary": "Название и ответы ООО «ЛЕНРЕМОНТ» согласуются с сетью; упоминается директор Сорокин. Филиал, адрес и телефон на зеркале не проверены.",
+    "officialSource": "https://www.lenremont.ru/remont-okhrannoj-signalizacii.htm",
+    "officialObservation": "Официальный индекс связывает Дениса Сорокина с Ленремонтом и телефоном 8 (812) 344-44-44.",
+    "sourceRelationship": "Одна перепечатка подтверждена сравнением текста, даты, заголовка и ответа с отдельной страницей Отзыв.ру; происхождение второй не установлено."
+  },
+  "coverage": {
+    "status": "partial",
+    "reportedTotal": null,
+    "examinedCount": null,
+    "endpointObserved": false,
+    "method": "Собственная Chrome-вкладка: сертификат не прошёл проверку. Только независимый поисковый индекс web.search: основной URL, ноутбук/нетбук/ультрабук/MacBook, компьютер, точные заголовки и номер заказа. Проверены доступные тематические фрагменты и уточняющий ответ компании.",
+    "stopReason": "Chrome net::ERR_CERT_AUTHORITY_INVALID. Предупреждение не обходилось, HTTP/альтернативные протоколы не использовались. web.open/find: Cache miss. Полный корпус, раскрытия, сортировки, конец выдачи и оригинальные файлы вложений недоступны; точный размер и число просмотренных отзывов неизвестны."
+  },
+  "reviews": [
+    {
+      "author": "Гость",
+      "date": "2025-04-14",
+      "rating": null,
+      "summary": "Благодарность за чистку ноутбука и замену разъёма зарядки; автор сравнивает стоимость с другим сервисом.",
+      "reviewUrl": "https://otzovikkrd23.ru/lenremont-otzyvy/",
+      "topic": "Ремонт разъёма зарядки и чистка ноутбука",
+      "photos": [],
+      "evidence": {
+        "title": "Ремонт ноутбука,благодарю,все замечательно!",
+        "observedVia": "independent_search_index",
+        "primarySourceUrl": "https://www.otzyvru.com/lenremont/review-2017163",
+        "primarySourceId": "2017163",
+        "primaryMatch": "Совпадают заголовок, дата, последовательность событий и ответ 17.04.2025; не объединено по имени.",
+        "sourceNativeId": null,
+        "fullTextObservedInIndex": true,
+        "reviewRatingObserved": false,
+        "photoNote": "В индексе имеется Image: Гость; это не доказательство вложения отзыва. Файлов тематических фото не наблюдалось.",
+        "primarySourceLinkExplicitOnMirror": false,
+        "primarySourceDiscovery": "Отдельный поисковый результат Отзыв.ру с URL review-2017163; HTML-ссылка зеркала не наблюдалась.",
+        "visibleTextLimit": "В индексе доступен развёрнутый текст отзыва с окончанием благодарности и ответ 17.04.2025; живое раскрытие зеркала не проверено."
+      }
+    },
+    {
+      "author": "Орлова Татьяна Алексеевна",
+      "date": "2025-01-20",
+      "rating": null,
+      "summary": "Жалоба на стоимость и спорные работы по заказу 8292175. Ответ компании уточняет ремонт корпуса ноутбука и заявляет фотографии до/после.",
+      "reviewUrl": "https://otzovikkrd23.ru/lenremont-otzyvy/",
+      "topic": "Спор о ремонте корпуса ноутбука; устройство уточнено ответом компании",
+      "photos": [],
+      "evidence": {
+        "title": "мастер развел на деньги",
+        "observedVia": "independent_search_index",
+        "primarySourceUrl": null,
+        "primarySourceId": null,
+        "sourceNativeId": null,
+        "orderId": "8292175",
+        "replyDate": "2025-01-23",
+        "deviceIdentification": "company_reply",
+        "photoNote": "Ответ компании сообщает о фотографиях до/после корпуса. Индекс показывает четыре image placeholders около ответа, но URL файлов, самостоятельность изображений и визуальное содержание не проверены.",
+        "photoCandidateStatus": "mentioned_but_unavailable",
+        "photoAttachment": "company_reply",
+        "fullTextObservedInIndex": true,
+        "reviewRatingObserved": false,
+        "primarySourceLinkExplicitOnMirror": false,
+        "primarySourceDiscovery": "Ни URL, ни ID оригинала в доступном индексе зеркала не наблюдались. Координатор сообщил о проверенном оригинале review-1951259; это внешняя сверка, не наблюдение ссылки зеркала.",
+        "coordinatorProvidedPrimarySourceUrl": "https://www.otzyvru.com/lenremont/review-1951259",
+        "coordinatorProvidedPrimarySourceId": "1951259",
+        "visibleTextLimit": "В индексе доступен текст жалобы и ответ 23.01.2025 с уточнением ноутбука; четыре placeholders не дают URL или визуальных данных.",
+        "photoDeduplication": "Один кандидат наличия вложений в ответе; не четыре новых фото. Координатор подтвердил четыре фото у первоисточника, их копии здесь не создавались."
+      }
+    }
+  ],
+  "candidateReviews": [],
+  "discoveredSources": [
+    {
+      "platform": "Отзыв.ру",
+      "url": "https://www.otzyvru.com/lenremont/review-2017163",
+      "address": null,
+      "city": null
+    },
+    {
+      "platform": "ТОЧКА МНЕНИЯ (другое зеркало)",
+      "url": "https://tochka-mneniy.com/lenremont-otzyvy/",
+      "address": null,
+      "city": null
+    }
+  ],
+  "notes": [
+    "2 тематические записи выявлены в индексе; это нижняя граница, не полный итог карточки.",
+    "0 файлов фото скачано; 0 визуально проверено. Есть 1 запись с заявленными фото в ответе компании.",
+    "Повторяющиеся сокращённые и полные части одного отзыва в индексе не считались разными записями.",
+    "Зеркало не является независимым отзывом поверх установленного первоисточника 2017163; сохранить связь при дедупликации.",
+    "Отсутствие иных тематических результатов в индексе не доказывает отсутствие иных отзывов.",
+    "Полные копии отзывов, оболочка аккаунта и браузерные данные не сохранены."
+  ]
+}

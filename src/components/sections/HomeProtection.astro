@@ -1,33 +1,65 @@
 ---
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
+import DirectorMessage from "./DirectorMessage.astro";
+import home from "../../data/home-copy.json";
 
 interface Props {
   securityAnchor?: boolean;
+  withDirector?: boolean;
 }
-const { securityAnchor = true } = Astro.props;
+const { securityAnchor = true, withDirector = false } = Astro.props;
 const g = copy.guarantee;
+const facts = withDirector
+  ? home.guarantees.items
+  : [
+      {
+        value: "",
+        title: g.fields["Большой факт"],
+        text: "Гарантии на ремонт и установленные запчасти.",
+      },
+      {
+        value: "",
+        title: "Смета до работ",
+        text: "Стоимость работ и деталей согласуем заранее.",
+      },
+      {
+        value: "",
+        title: "Проверка до оплаты",
+        text: "Покажем результат и проверим ноутбук вместе с вами.",
+      },
+    ];
 ---
 
-<section id="lr-guarantee" class="lr-section lr-home-protection">
+<section
+  id="lr-guarantee"
+  class:list={[
+    "lr-section lr-home-protection",
+    { "lr-home-protection--combined": withDirector },
+  ]}
+>
   <div class="lr-container">
-    <SectionHeading title="Гарантия и порядок ремонта" />
+    <SectionHeading
+      title={withDirector
+        ? home.guarantees.title
+        : "Гарантия и порядок ремонта"}
+    />
     <div
       id={securityAnchor ? "lr-security" : undefined}
       class="lr-home-protection__facts"
     >
-      <article>
-        <h3>{g.fields["Большой факт"]}</h3>
-        <p>Гарантии на ремонт и установленные запчасти.</p>
-      </article>
-      <article>
-        <h3>Смета до работ</h3>
-        <p>Стоимость работ и деталей согласуем заранее.</p>
-      </article>
-      <article>
-        <h3>Проверка до оплаты</h3>
-        <p>Покажем результат и проверим ноутбук вместе с вами.</p>
-      </article>
+      {
+        facts.map((fact) => (
+          <article>
+            {withDirector && (
+              <span class="lr-home-protection__value">{fact.value}</span>
+            )}
+            <h3>{fact.title}</h3>
+            <p>{fact.text}</p>
+          </article>
+        ))
+      }
     </div>
+    {withDirector && <DirectorMessage compact />}
   </div>
 </section>

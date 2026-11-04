@@ -1,0 +1,421 @@
+# Отзывы Ленремонта о ремонте ноутбуков
+
+Дата исследования: 2 ноября 2026. Охват: вся обнаруженная сеть России, действующие и исторические адреса.
+
+**Состояние: исследование продолжается; 154 источников в очереди.** Обработано 75 карточек: 56 полностью, 16 частично, 3 недоступны. В реестре мастерских 55 адресных/городских записей, включая непроверенных кандидатов. Эти числа не означают полноту всей сети.
+
+В данных 150 исходных записей по ноутбукам, 23 вложений (19 привязанных и просмотренных фото в отзывах; остальные типы отражены отдельно). Исходные записи разных карточек могут дублировать друг друга; не считать это числом уникальных клиентов.
+
+## Файлы
+
+- [Отзывы CSV](reviews.csv), [JSON](reviews.json) — краткие пересказы и исходные ссылки.
+- [Охват источников](coverage.csv), [очередь](queue.json), [мастерские и кандидаты](workshops.json).
+- [Фотографии с подписями](photos-index.html), [метаданные фото](photos.json), [папка фото](photos/).
+- Папка tasks содержит независимые результаты субагентов и ограничения каждого обхода.
+
+## Ограничения
+
+Оценки относятся к конкретным отзывам и не являются рейтингом ноутбучного ремонта сети. Заявления клиентов пересказаны как их опыт, а не как установленные факты. Полнота отмечена только для отдельных карточек с наблюдавшимся концом выдачи. Отзовик: CAPTCHA после восьмой страницы; 320 просмотров превью не равны 320 прочитанным полным отзывам. Яндекс может переносить отзывы между адресами. У Zoon есть отдельно отклонённые отзывы: их статус сохранён. Аватары, общая галерея и фотографии настольных компьютеров не считаются фото ноутбучного ремонта.
+
+## Подборка с фотографиями
+
+- **Петр Перцев**, 2025-12-19, 1/5, Яндекс Карты. Автор сообщает о неудачном срочном ремонте кнопки включения ноутбука: доплата за срочность, повторный возврат с прежней проблемой, задержки связи и итоговая выдача через 12 дней. Стоимость ремонта, по отзыву, 3800 рублей. [Источник](https://yandex.ru/maps/org/161275174491/reviews?reviews%5BpublicId%5D=wz2kjdftb87vq90tvw6qtf4ynm). Вложения: review.
+- **Артур Пшуков**, 2023-12-07, 5/5, Zoon. Сообщает о ремонте кнопки питания ноутбука Asus в течение рабочего дня. [Источник](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_bolshevikov/#comment6570fe4dc1512617f3000577). Вложения: review.
+- **Альбина Апшева**, 2023-12-27, 5/5, Zoon. Сообщает о замене расшатанного гнезда зарядки ноутбука Samsung за полчаса и сравнительно низкой цене. Zoon поместил отзыв в отклонённые. [Источник](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_bolshevikov/reviews/#comment658c0467492d23e8610ddec9). Вложения: review.
+- **владимир зарубин**, 2024-02-06, 1/5, Яндекс Карты. Ноутбук находился в сервисе около 20 дней; автор сообщает о безрезультатном поиске платы и предложении утилизации. По его словам, другой сервис восстановил устройство за три дня. Отзыв отрицательный. [Источник](https://yandex.ru/maps/org/195356065526/reviews?reviews%5BpublicId%5D=tq8jrehv6p9bug4btj3jcbm6v8). Вложения: review.
+- **Максим Антонов**, 10 января, 1/5, Яндекс Карты. Жалуется на ухудшение конфигурации ноутбука после замены процессора, длительность и стоимость ремонта. [Источник](https://yandex.ru/maps/user/bfjkuhbpgygcywp268awg1v500). Вложения: review.
+- **Олег Сергушев**, 2024-04-17, 1/5, Яндекс Карты. После чистки ноутбука от пыли заявляет о неисправных кнопках и левом динамике, недоволен предложением дополнительного платного ремонта и отрицанием ответственности сервисом. Указывает акт выдачи 1850142. [Источник](https://yandex.ru/maps/org/3295465178/reviews?reviews%5BpublicId%5D=w6b1wnvuzq58y65jhax8kzjk4r). Вложения: review.
+- **Александра Гаврилова**, 2024-03-25, 1/5, Яндекс Карты. Сдала залитый маслом ноутбук, самостоятельно повредив петли до обращения. Жалуется на несостоявшийся срочный ремонт после доплаты, отказ от чистки, задержку возврата на 2–3 недели и поврежденную переднюю панель после возврата. [Источник](https://yandex.ru/maps/org/3295465178/reviews?reviews%5BpublicId%5D=xve3dmrvnzakmufvv68quuj5hr). Вложения: review, review, review.
+- **юлия балюра**, 2025-08-22, 1/5, Яндекс Карты. Автор сообщает о ремонте петли ноутбука MSI: ожидание диагностики неделю, выдача через десять дней, неаккуратный результат и появившаяся после возврата нестабильная зарядка. По словам автора, мастер отрицал ответственность за зарядку. Адрес выдачи указан прямо: Колпино, Тверская 1/13. [Источник](https://yandex.ru/maps/org/87389556464/reviews?reviews%5BpublicId%5D=2ua2x62f2xxypxavf2e1pk5mpc&si=517v1r88kzgb3kpw65wkeevaq0&utm_source=review). Вложения: review, review, review, review.
+- **Юлия**, 2022-02-01, 5/5, Яндекс Карты. Срочный ремонт ноутбука после бесплатной диагностики; автор сообщает об успешном ремонте и двухлетней гарантии. На прикреплённом фото MacBook Pro. [Источник](https://yandex.ru/maps/org/24343010724/reviews?reviews%5BpublicId%5D=7b3uzt79r2e910ejqg47z7mrtr). Вложения: review.
+- **Владимир Г.**, 2022-02-01, 5/5, Яндекс Карты. Ремонтировал ноутбук Samsung после повреждения гнезда питания собакой. По словам автора, ремонт занял два дня, выдали квитанцию и год гарантии; звонок поступил на день позже обещанного. [Источник](https://yandex.ru/maps/org/10031707827/reviews?reviews%5BpublicId%5D=xzmx1ec6at5bqw9x686ucxc2j0). Вложения: review.
+- **София**, 2026-08-14, 1/5, Яндекс Карты. После чистки клавиатуры за 5800 рублей, по словам автора, отмеченные неисправные клавиши продолжили не работать; она разочарована результатом. Хотя в тексте сказано «компьютер», три привязанных фото подтверждают ноутбук Lenovo. [Источник](https://yandex.ru/maps/org/142299563723/reviews?reviews%5BpublicId%5D=2p5k9vp7u9gmjd21rka1g50d74). Вложения: review, review, review.
+- **Влад**, 2024-03-15, 1/5, Яндекс Карты. Автор сдал не включавшийся ноутбук; жалуется на диагностику в течение полутора месяцев вместо 10 дней, ошибочный диагноз северного моста и предполагаемую замену родного аккумулятора старой неработающей батареей. По его словам, знакомый затем устранил программную ошибку за час. [Источник](https://yandex.ru/maps/org/lenremont/142299563723/reviews/?page=2). Вложения: review.
+- **Орлова Татьяна Алексеевна**, 2025-01-20, 1/5, Отзыв.ру. Оспаривает состав выполненных работ и сумму почти 20000 рублей. Компания в ответе утверждает, что ремонтировала корпус ноутбука. [Источник](https://www.otzyvru.com/lenremont/review-1951259). Вложения: company_reply, company_reply, company_reply, company_reply.
+
+## Повторы текста
+
+[Группы содержания JSON](review-groups.json), [CSV](review-groups.csv): 146 групп после объединения только подтверждённых повторов по [свидетельствам проверки](duplicate-verification.json). Все публикации и ссылки сохранены внутри каждой группы; исходные CSV/JSON остаются реестром появлений на площадках. Разные имена авторов не устанавливают личность владельцев аккаунтов. Группы без подтверждённого повтора не означают доказанно уникальных клиентов.
+
+
+## Независимая проверка фото
+
+[Свидетельства координатора](coordinator-verification.json): 19 текущих вложений к отзывам прошли повторную проверку. Флаги работников и повторная проверка учитываются отдельно; новые фото без записи координатора ожидают её. Отклонённый площадкой отзыв Альбины сохранён с этим статусом.
+
+
+## Число просмотренных записей
+
+Сумма известных счётчиков отдельных карточек: 10108 записей. У 4 обработанных источников точный счётчик неизвестен. Это сумма просмотров по источникам, включая повторные публикации, оценки без текста и отдельно описанные превью Отзовика; она не означает число уникальных клиентов или полностью прочитанных текстов. Метод, конец выдачи и причина остановки для каждой карточки сохранены в [таблице охвата](coverage.csv).
+
+
+## Кандидаты и недоступные вложения
+
+[Кандидаты CSV](candidates.csv), [JSON](candidates.json): 29 записей. Пограничные темы не включены в подтверждённые отзывы о ремонте ноутбука; упоминание фото без доступного вложения не считается найденной фотографией.
+
+- **Кирилл Бурунов**, дата не указана: Компьютер может быть настольным или ноутбуком; тип не уточнён, фото нет. Ответ компании от 4 июля 2024 также не называет тип компьютера. Дата ответа не подставлена как дата отзыва. [Источник](https://2gis.ru/spb/firm/70000001039113813/tab/reviews).
+- **Олег Исаев**, дата не указана: Тип компьютера не уточнён, фото нет. Ответ компании от 15 мая 2025 не устанавливает тип устройства. Дата ответа не подставлена как дата отзыва. [Источник](https://2gis.ru/spb/firm/70000001039113813/tab/reviews).
+- **Анастасия Л.**, 2023-11-17: Пограничное упоминание ноутбука как устройства для подключения принтера; нет явного ремонта или обслуживания самого ноутбука. В основной список не включено. [Источник](https://yandex.ru/maps/user/dxcrn87trh55z96g5z9znhn4e8).
+- **Кристина Неборак**, 30 марта 2023: В тексте автор упоминает номер заказа на фотографии, но в доступном отзыве нет карусели/изображений; отсутствие вложения проверено DOM и визуально на странице 3. Фото не выдумано и не подменено галереей. [Источник](https://yandex.ru/maps/org/68341760403/reviews?reviews%5BpublicId%5D=3u18npf8auhwv05rv0epbgvw10).
+- **Максим**, 2023-02-07: Указан ПК; официальный ответ не уточняет ноутбук, вложений нет. [Источник](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_bely_kuna/reviews/#comment63e1da9f1a45c3efea08758c).
+- **Эля Ежкова**, 2017.11.05 18:06: Контекст страницы ремонта ноутбуков; Устройство и работа не названы; только аватар, уточняющего ответа компании нет. [Источник](https://www.lenremont.ru/remont-noutbukov-spb.htm#cc-71667517).
+- **Елена Матвеева**, 2017.10.16 17:14: Контекст страницы ремонта ноутбуков; Устройство не названо; только аватар. Число 1 — рейтинг полезности комментария, не звёздная оценка услуги. [Источник](https://www.lenremont.ru/remont-noutbukov-spb.htm#cc-71142065).
+- **Нина Бушуева**, 2017.10.11 21:00: Контекст страницы ремонта ноутбуков; Устройство не названо; только аватар, уточняющего ответа компании нет. [Источник](https://www.lenremont.ru/remont-noutbukov-spb.htm#cc-71027152).
+- **Арсений Сыроватко**, 2017.07.29 13:00: Контекст страницы ремонта ноутбуков; Устройство не названо; только аватар, уточняющего ответа компании нет. [Источник](https://www.lenremont.ru/remont-noutbukov-spb.htm#cc-69153942).
+- **Леша Марадона**, 2017.03.30 14:54: Контекст страницы ремонта ноутбуков; Устройство не названо; только аватар, уточняющего ответа компании нет. [Источник](https://www.lenremont.ru/remont-noutbukov-spb.htm#cc-65832046).
+- **Юрий Христов**, 2017.01.13 17:59: Контекст страницы ремонта ноутбуков; Устройство не названо; только аватар, уточняющего ответа компании нет. [Источник](https://www.lenremont.ru/remont-noutbukov-spb.htm#cc-63328009).
+- **Анна Хмелевская**, 2016.12.11 16:57: Контекст страницы ремонта ноутбуков; Устройство не названо; только аватар, уточняющего ответа компании нет. [Источник](https://www.lenremont.ru/remont-noutbukov-spb.htm#cc-62318903).
+- **Эмилия Лихт**, 2016.10.21 11:10: Контекст страницы ремонта ноутбуков; Возможно компьютерная техника, но ноутбук не указан; только аватар, уточняющего ответа компании нет. [Источник](https://www.lenremont.ru/remont-noutbukov-spb.htm#cc-60748360).
+- **Автор не указан**, дата не указана: В подписи сказано компьютер, тип устройства не установлен. Постер визуально проверен: мужчина, женщина и ребёнок, устройства не видно. Не включено в подтверждённые отзывы о ноутбуках. [Источник](https://www.lenremont.ru/testimonials.htm#x-section-2).
+- **Орлова Татьяна Алексеевна**, 2025-01-20: Ответ компании сообщает о фотографиях до/после корпуса. Индекс показывает четыре image placeholders около ответа, но URL файлов, самостоятельность изображений и визуальное содержание не проверены. [Источник](https://otzovikkrd23.ru/lenremont-otzyvy/).
+- **Иван Иванов**, 2024-10-03: Указан компьютер без уточнения настольный/ноутбук; фото отсутствует. Ответ организации от 17 октября 2024 просит номер договора или телефона, тип устройства не уточняет. [Источник](https://yandex.ru/maps/org/1905751304/reviews?reviews%5BpublicId%5D=dpg51wry8qhm5ppqwp2wvct3tr).
+- **Роман Торцев**, 2022-12-27: Указан компьютер без уточнения ноутбук/настольный ПК. Вложения отсутствуют; открытый ответ от 10 января 2023 лишь благодарит за отзыв и не уточняет устройство. В подтверждённые ноутбучные отзывы не включён. [Источник](https://yandex.ru/maps/org/24343010724/reviews?reviews%5BpublicId%5D=hxmmxxr8wn81r9tkbk5xdcyxy0).
+- **Владимир Проворов**, 2025-11-10: Тип компьютера не указан; фото нет, ответ от 11 ноября 2025 повторяет компьютер без уточнения. [Источник](https://yandex.ru/maps/org/10031707827/reviews?reviews%5BpublicId%5D=0y8kn8a5yygtk8p5q0rfq6141m).
+- **Руслана А.**, 2022-03-02: Компьютер без уточнения форм-фактора; фото нет, ответ от 25 июля 2022 тип не уточняет. Ссылка получена через Поделиться. [Источник](https://yandex.ru/maps/org/10031707827/reviews?reviews%5BpublicId%5D=3erbhfah0v9x2mrcyvqeypr5e4).
+- **Мария**, 2024-02-21: Тип компьютера не указан; фото нет, ответ от 26 февраля 2024 без технических подробностей. В отзыве имя Мария, в обращении компании Мария Волкова; сохранено имя из отзыва. Нет профиля и кнопки Поделиться. [Источник](https://yandex.ru/maps/org/lenremont/10031707827/reviews/).
+- **Запердоллер**, 2023-03-31: Электронный блок и процессор названы, но принадлежность ноутбуку не установлена. Фото и ответа организации нет. Не включён в подтверждённые ноутбучные отзывы. [Источник](https://yandex.ru/maps/org/87092134009/reviews?reviews%5BpublicId%5D=egjqzezae507kcfg6jpahtyea4).
+- **あなたの サタン**, 2023-03-02: Накопитель может относиться к ноутбуку или другому компьютеру; тип компьютера не назван. Фото отсутствуют, ответ компании вид устройства не уточняет. Ссылка ведёт на опубликованный профиль автора, а не выделенный отзыв. [Источник](https://yandex.ru/maps/user/ajbw1zzqhta5bdcpd1cvhmv934).
+- **Бардушко Н.**, 2022-03-11: Слово компьютер не доказывает ноутбук. Привязанных фото нет. Открытый ответ компании от 25 мая 2022 содержит благодарность и не уточняет устройство. [Источник](https://yandex.ru/maps/org/166250120114/reviews?reviews%5BpublicId%5D=14rbp8dd7n456q5at30649gkd8).
+- **Leonid**, 2024-05-13: Не указан ноутбук или устройство, из которого извлечён SSD. Ответ компании 17.05.2024 просит уточнить заказ, устройство не уточняет. Вложений нет. [Источник](https://yandex.ru/maps/org/242898370104/reviews?reviews%5BpublicId%5D=nxf8hchafd92w3gwvt219x8jxg).
+- **Яна Великанова**, 2024-07-09: Не указан ноутбук или устройство, из которого извлечён SSD. Ответ компании 18.07.2024 просит уточнить заказ, устройство не уточняет. Вложений нет. [Источник](https://yandex.ru/maps/org/242898370104/reviews?reviews%5BpublicId%5D=r0z0terrd3k7hz4h2a6fb97ttg).
+- **Дмитрий Васильев**, 2024-11-29: Слово «компьютер» не позволяет отличить ноутбук от настольного ПК. Ответ компании 01.12.2024 только благодарит, вложений нет. [Источник](https://yandex.ru/maps/org/242898370104/reviews?reviews%5BpublicId%5D=gjmmmbax9wjjagv5gkhbahm2k0).
+- **Вадим Ташбаев**, 2022-02-10: Указан «комп», форм-фактор не определён. Ответ компании 26.05.2022 просит уточнить заказ, устройство не уточняет. Вложений нет. [Источник](https://yandex.ru/maps/org/242898370104/reviews?reviews%5BpublicId%5D=9qm25gg4zznm7yu4nmtnp40hr4).
+- **Галина Соболева**, 2020-07-31: Указан «компьютер», ноутбук не подтверждён. Ответ компании 03.08.2020 просит уточнить заказ, устройство не уточняет. Вложений нет. [Источник](https://yandex.ru/maps/org/242898370104/reviews?reviews%5BpublicId%5D=a0va06gvuk0bf0j3cd8f2eabx0).
+- **Дава**, год назад: Не описан личный случай ремонта, диагностики, чистки или обслуживания ноутбука. Ответ компании повторяет общую мысль об универсальности, без уточнения устройства или выполненной работы. Поэтому запись не включена в подтверждённые тематические отзывы. [Источник](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46963aac51d9151f:0x405dec6efcfde4c7!8m2!3d59.8526934!4d30.3267895!16s%2Fg%2F11csrsr9ls!19sChIJHxXZUaw6lkYRx-T9_G7sXUA).
+
+[Реестр мастерских CSV](workshops.csv), [JSON](workshops.json) отдельно содержит непроверенные адреса и варианты написания.
+
+
+## Охват площадок
+
+| Площадка | Карточек | Полностью | Частично | Недоступны | В очереди | Записей по теме |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Яндекс Карты | 27 | 26 | 1 | 0 | 0 | 91 |
+| Отзовик | 2 | 0 | 2 | 0 | 0 | 0 |
+| 2ГИС | 22 | 1 | 0 | 0 | 21 | 1 |
+| Отзыв.ру | 1 | 1 | 0 | 0 | 0 | 5 |
+| Google Карты | 27 | 8 | 0 | 0 | 19 | 18 |
+| Google Maps | 1 | 1 | 0 | 0 | 0 | 1 |
+| Zoon | 28 | 6 | 0 | 0 | 22 | 17 |
+| yandex_maps | 1 | 1 | 0 | 0 | 0 | 6 |
+| rting.ru | 6 | 0 | 3 | 0 | 3 | 0 |
+| Rting (Каталог) | 1 | 0 | 1 | 0 | 0 | 0 |
+| RemKarta.ru | 1 | 0 | 1 | 0 | 0 | 0 |
+| yandex | 2 | 2 | 0 | 0 | 0 | 0 |
+| 2GIS | 2 | 1 | 0 | 1 | 0 | 0 |
+| SPR | 1 | 0 | 0 | 0 | 1 | 0 |
+| Klerk | 1 | 1 | 0 | 0 | 0 | 0 |
+| Firmateka | 1 | 0 | 1 | 0 | 0 | 0 |
+| Companypage | 1 | 0 | 1 | 0 | 0 | 0 |
+| Официальный сайт Ленремонт / Cackle | 1 | 1 | 0 | 0 | 0 | 6 |
+| Официальный сайт Ленремонта | 3 | 0 | 1 | 0 | 2 | 1 |
+| Зеркало (otzovikkrd23.ru) | 1 | 0 | 1 | 0 | 0 | 2 |
+| Зеркало (tv-press.ru) | 1 | 0 | 0 | 1 | 0 | 0 |
+| Rem-rating | 1 | 1 | 0 | 0 | 0 | 0 |
+| Flamp | 23 | 1 | 0 | 0 | 22 | 1 |
+| НайдиСервис | 1 | 0 | 1 | 0 | 0 | 0 |
+| Spravka.City | 1 | 1 | 0 | 0 | 0 | 0 |
+| Rting | 3 | 0 | 2 | 0 | 1 | 0 |
+| Yell | 20 | 3 | 0 | 0 | 17 | 1 |
+| Yandex Maps | 1 | 1 | 0 | 0 | 0 | 0 |
+| Официальный сайт магазина — видеоотзывы | 1 | 0 | 0 | 0 | 1 | 0 |
+| Redmap | 27 | 0 | 0 | 0 | 27 | 0 |
+| Guidebook | 1 | 0 | 0 | 0 | 1 | 0 |
+| isfix | 1 | 0 | 0 | 0 | 1 | 0 |
+| Rating.msk | 1 | 0 | 0 | 0 | 1 | 0 |
+| YP | 1 | 0 | 0 | 0 | 1 | 0 |
+| Serviced | 1 | 0 | 0 | 0 | 1 | 0 |
+| Spravochnika | 1 | 0 | 0 | 0 | 1 | 0 |
+| Официальный сайт — видеоотзывы | 1 | 0 | 0 | 0 | 1 | 0 |
+| Справкер | 1 | 0 | 0 | 0 | 1 | 0 |
+| ВКонтакте | 1 | 0 | 0 | 1 | 0 | 0 |
+| Одноклассники | 1 | 0 | 1 | 0 | 0 | 0 |
+| Официальный сайт Ленремонта — контакты | 1 | 0 | 0 | 0 | 1 | 0 |
+| rting.ru network directory | 1 | 0 | 0 | 0 | 1 | 0 |
+| Rting — список филиалов | 1 | 0 | 0 | 0 | 1 | 0 |
+| Официальный сайт магазина Ленремонт | 1 | 0 | 0 | 0 | 1 | 0 |
+| YouTube | 1 | 0 | 0 | 0 | 1 | 0 |
+| Официальный сайт магазина Ленремонт — ссылка из RemKarta | 1 | 0 | 0 | 0 | 1 | 0 |
+| RemKarta — список сети в Великом Новгороде | 1 | 0 | 0 | 0 | 1 | 0 |
+| Официальный сайт московского Ленремонта | 1 | 0 | 0 | 0 | 1 | 0 |
+| ТОЧКА МНЕНИЯ (другое зеркало) | 1 | 0 | 0 | 0 | 1 | 0 |
+| Zoon — сеть | 1 | 0 | 0 | 0 | 1 | 0 |
+
+Уникальных файлов по SHA256: 23, из них авторских: 19. Одинаковые байты из нескольких источников хранятся одним файлом; разные версии изображений могут иметь разные контрольные суммы.
+
+
+## Частично проверенные и недоступные источники
+
+- [otzovik-company — Отзовик](https://otzovik.com/reviews/kompaniya_po_remontu_bitovoy_tehniki_lenremont_russia_sankt-peterburg/): просмотрено 320, заявленный размер 3980. Navigation to page 9 redirected to a CAPTCHA URL with capt4a parameter. No CAPTCHA was solved or bypassed. The page offered last page 100 before blocking. 320 is preview-card encounters, not verified unique full review texts; absence of keywords in previews is not proof of no laptop references in full reviews.
+
+- [card-021 — Яндекс Карты](https://yandex.ru/maps/org/lenremont/3295465178/reviews/): просмотрено 1422, заявленный размер 2436. Все доступные режимы сортировки и их публичные списки проверены до наблюдаемых концов: по 600 строк в каждом, 1422 различных отзыва после удаления пересечений. Повторные прокрутки у границ не добавили строк. Заголовок продолжает сообщать 2436 отзывов и отдельно 3466 оценок; доступ к остальным 1014 текстам этими публичными режимами не получен, поэтому полный охват 2436 не заявлен. Сортировки от старых к новым в меню нет; CAPTCHA и авторизация не обходились.
+
+- [card-025 — rting.ru](https://rting.ru/sankt-peterburg/co/lenremont/4911925): просмотрено 0, заявленный размер не указан. Страница публикует агрегат 59 оценок, но не показывает ни одного индивидуального отзыва. Счётчик — обычный DIV без ссылки; присутствует только форма добавления оценки с комментарием, затем похожие организации, категории и футер. Пагинация, сортировки, раскрываемые отзывы, дополнительные разделы отзывов и вложения отсутствуют в наблюдаемом интерфейсе. Конец страницы проверен, конец корпуса индивидуальных оценок недоступен. 59 оценок нельзя приравнять к 59 текстовым отзывам или признать проверенными.
+
+- [card-028 — Rting (Каталог)](https://rting.ru/sankt-peterburg/co/lenremont/4268803): просмотрено 0, заявленный размер не указан. Карточка показывает лишь агрегат 4,5 по 4 оценкам и форму добавления оценки. Индивидуальных отзывов, авторов, дат, текстов, пагинации, сортировок, раскрываемых отзывов и фотоприложений не обнаружено. Нижний край страницы подтверждён; конец корпуса отзывов установить невозможно. Число оценок не является числом прочитанных отзывов.
+
+- [card-029 — rting.ru](https://rting.ru/sankt-peterburg/co/lenremont/2855827): просмотрено 0, заявленный размер не указан. Карточка показывает только агрегат 3,0 / 6 оценок и форму добавления оценки. Публичные отдельные отзывы, даты, авторы, ответы и вложения не представлены. Конец страницы подтвержден; конец неизвестного корпуса отзывов не подтвержден.
+
+- [card-030 — rting.ru](https://rting.ru/sankt-peterburg/co/lenremont/2855844): просмотрено 0, заявленный размер не указан. Rting показывает агрегат 3,6 и 23 оценки, сведения о пункте, форму добавления оценки и соседние организации. Лента текстов отзывов, авторы, даты, ответы компании, вложения, сортировки и пагинация не предоставлены. Достигнут конец документа, но доступный корпус отзывов неизвестен; 23 оценки не приравниваются к 23 текстовым отзывам.
+
+- [card-035 — RemKarta.ru](https://nov.remkarta.ru/velikiy-novgorod/lenremont-954830/): просмотрено 0, заявленный размер не указан. Видимый конец страницы достигнут, но конец неизвестного корпуса отзывов не установлен: нет явного сообщения об отсутствии отзывов. Наблюдалось 0 доступных текстовых записей; общее фактическое число текстовых отзывов неизвестно. Показанные в описании 60 оценок не являются заявленным числом текстовых отзывов. Официальный связанный сайт недоступен.
+
+- [card-039 — 2GIS](https://2gis.ru/spb/firm/70000001045431574): просмотрено 0, заявленный размер не указан. Удалённая карточка: раздел Отзывы, рейтинг, счётчик, сортировки, неподтверждённые отзывы и подгрузка не доступны. Число существовавших отзывов неизвестно; ноль найденных записей не означает отсутствие отзывов.
+
+- [card-040 — Отзовик](https://otzovik.com/reviews/kompaniya_po_remontu_bitovoy_tehniki_lenremont_russia_gatchina/): просмотрено 0, заявленный размер 5. При успешной загрузке в Chrome площадка показала «Вы робот?» и сообщение о большом количестве обращений с IP. CAPTCHA не решалась и не обходилась; дальнейшие запросы к Отзовику прекращены. Ранее запущенный второй HTTP GET завершился timeout.
+
+- [card-043 — Firmateka](https://firmateka.com/company/lenremont/): просмотрено 10, заявленный размер 50. Текстовый источник раскрывает 10 записей при заявленных 50. Браузерная выдача, фильтры, продолжение и вложения недоступны; конец корпуса не подтверждён.
+
+- [card-044 — Companypage](https://companypage.ru/servisyi/lenremont): просмотрено 0, заявленный размер не указан. Карточка доступна, но раздел #reviews содержит только агрегированный рейтинг 1.4 и характеристики карточки. Нет индивидуальных отзывов, дат, авторов, оценок записей, ответов компании, пагинации, сортировок или перехода к списку. Надпись 277 объединяет оценки и отзывы; FAQ сообщает 227. Нулевой корпус не объявлен полным: отсутствие записей не является явным сообщением «отзывов нет».
+
+- [card-046 — Официальный сайт Ленремонта](https://www.lenremont.ru/testimonials.htm): просмотрено 560, заявленный размер не указан. Статическая страница достигнута до конца, пагинации/сортировки/раскрытия текстов нет. VK Comments не загрузился: #vk_comments остаётся пустым после прокрутки и продолжительной работы со страницей; iframe комментариев, счётчика и отзывов нет. Это не ноль отзывов VK. 17 аудиосвидетельств без расшифровок и полное содержание видео не прослушаны; прочитаны опубликованные подписи.
+
+- [card-047 — Зеркало (otzovikkrd23.ru)](https://otzovikkrd23.ru/lenremont-otzyvy/): просмотрено неизвестно, заявленный размер не указан. Chrome net::ERR_CERT_AUTHORITY_INVALID. Предупреждение не обходилось, HTTP/альтернативные протоколы не использовались. web.open/find: Cache miss. Полный корпус, раскрытия, сортировки, конец выдачи и оригинальные файлы вложений недоступны; точный размер и число просмотренных отзывов неизвестны.
+
+- [card-048 — Зеркало (tv-press.ru)](https://tv-press.ru/lenremont-otzyvy/): просмотрено неизвестно, заявленный размер не указан. Вместо корпуса отзывов показана страница HostiMan с заголовком «Сайт недоступен» и сообщением о недоступности tv-press.ru. Перечислены возможные причины: просроченная оплата, нарушение условий либо отключение владельцем; конкретная причина не установлена.
+
+- [card-055 — НайдиСервис](https://naydiservis.ru/services/lenremont): просмотрено 0, заявленный размер 87. В заголовке показаны 3.8 и 87 отзывов, но доступный раздел Отзывы прямо сообщает, что отзывов пока нет. Ни одного тела отзыва, автора, даты или оценки отдельного отзыва не предоставлено. Счётчик 87 не означает, что проверены 87 отзывов. Динамическое содержимое и происхождение агрегированного рейтинга проверить не удалось.
+
+- [card-057 — Rting](https://rting.ru/sankt-peterburg/co/lenremont/2855843): просмотрено 0, заявленный размер не указан. Карточка предоставляет агрегат 17 оценок без доступной ленты отзывов. Эти оценки не интерпретируются как 17 текстовых отзывов. Конец корпуса отзывов не наблюдался, содержание корпуса и наличие целевых отзывов неизвестны.
+
+- [card-058 — Rting](https://rting.ru/sankt-peterburg/co/lenremont/2855830): просмотрено 0, заявленный размер не указан. Rting показывает агрегат 4,5 / 21 оценка, но не предоставляет на наблюдаемой карточке тексты отзывов и ответы компании. Число оценок не принято за число отзывов. Конец доступного корпуса отзывов установить нельзя.
+
+- [card-214 — ВКонтакте](https://vk.com/lenremont): просмотрено неизвестно, заявленный размер не указан. Browser Use rejected this action due to browser security policy. The site-safety policy blocks this action. The site safety gate did not grant access for https://vk.ru. Инструмент явно запретил обход, косвенное исполнение, raw CDP, альтернативные поверхности браузера и иные способы достижения того же заблокированного действия. Авторизация, CAPTCHA и обход ограничения не выполнялись.
+
+- [card-215 — Одноклассники](https://ok.ru/group/59828513407178): просмотрено неизвестно, заявленный размер не указан. Восемь тем заявляют суммарно 17 комментариев, но их тела не отображаются, а элементы подгрузки скрыты; повторная проверка результата не изменила. Видеосодержимое и аудиоречь всех роликов не расшифрованы: 81 тема содержит только видео без текста, ещё одна тема пустая. Поэтому ноль подтверждённых тематических отзывов не доказывает их отсутствие в недоступных комментариях или видео.
+
+
+## Проверка карточек
+
+| Карточка | Площадка | Состояние |
+| --- | --- | --- |
+| [yandex-zvezdnaya9](https://yandex.ru/maps/org/lenremont/139175119866/reviews/) | Яндекс Карты | complete |
+| [otzovik-company](https://otzovik.com/reviews/kompaniya_po_remontu_bitovoy_tehniki_lenremont_russia_sankt-peterburg/) | Отзовик | partial |
+| [2gis-marshala](https://2gis.ru/spb/firm/70000001039113813/tab/reviews) | 2ГИС | complete |
+| [otzyvru-company](https://www.otzyvru.com/lenremont) | Отзыв.ру | complete |
+| [card-005](https://yandex.ru/maps/org/lenremont/161275174491/reviews/) | Яндекс Карты | complete |
+| [card-006](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@60.010909,30.2444107,17z/data=!4m8!3m7!1s0x46963433a96b46ad:0x839a075e7c5c7adc!8m2!3d60.010909!4d30.2444107!9m1!1b1!16s%2Fg%2F11cssykgqz?hl=ru) | Google Карты | complete |
+| [card-007](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@59.9038731,30.4840055,17z/data=!4m8!3m7!1s0x46962e5c5a2d1e3d:0x2b576a458503262f!8m2!3d59.9038731!4d30.4840055!9m1!1b1!16s%2Fg%2F1q6n2j3_d?hl=ru) | Google Карты | complete |
+| [card-008](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@59.9517875,30.2143552,17z/data=!4m8!3m7!1s0x469636dfea991871:0x4c5ba27d6d7ae9bf!8m2!3d59.9517875!4d30.2143552!9m1!1b1!16s%2Fg%2F11f40y9xym?hl=ru) | Google Карты | complete |
+| [card-009](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@59.8445146,30.2471749,17z/data=!4m8!3m7!1s0x46963ae33e43faf7:0xc3666b90d7a7f71d!8m2!3d59.8445146!4d30.2471749!9m1!1b1!16s%2Fg%2F11b8v9kctp?hl=ru) | Google Карты | complete |
+| [card-010](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@60.057051,30.3167345,17z/data=!4m8!3m7!1s0x469634dc4147ae21:0xa64234b5308140f9!8m2!3d60.057051!4d30.3167345!9m1!1b1!16s%2Fg%2F11cm_prq_7?hl=ru) | Google Карты | complete |
+| [card-011](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@59.8559015,30.2229499,17z/data=!4m8!3m7!1s0x46963b7db519f01b:0xa8371ea6aa2ab2ff!8m2!3d59.8559015!4d30.2229499!9m1!1b1!16s%2Fg%2F11hyn7nnvc?hl=ru) | Google Maps | complete |
+| [card-012](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_bolshevikov/) | Zoon | complete |
+| [card-013](https://yandex.ru/maps/org/lenremont/1775267878/reviews/) | Яндекс Карты | complete |
+| [card-014](https://yandex.ru/maps/org/lenremont/195356065526/reviews/) | Яндекс Карты | complete |
+| [card-015](https://yandex.ru/maps/org/lenremont/114129606406/reviews/) | Яндекс Карты | complete |
+| [card-016](https://yandex.ru/maps/org/lenremont/210656280325/reviews/) | Яндекс Карты | complete |
+| [card-017](https://yandex.ru/maps/org/lenremont/1030067535/reviews/) | Яндекс Карты | complete |
+| [card-018](https://yandex.ru/maps/org/lenremont/1599365044/reviews/) | Яндекс Карты | complete |
+| [card-019](https://yandex.ru/maps/org/lenremont/1317216259/reviews/) | Яндекс Карты | complete |
+| [card-020](https://yandex.ru/maps/org/lenremont/171815838530/reviews/) | Яндекс Карты | complete |
+| [card-021](https://yandex.ru/maps/org/lenremont/3295465178/reviews/) | Яндекс Карты | partial |
+| [card-022](https://yandex.ru/maps/org/lenremont/81941462637/reviews/) | Яндекс Карты | complete |
+| [card-023](https://yandex.ru/maps/org/lenremont/1401251799/reviews/) | Яндекс Карты | complete |
+| [card-024](https://yandex.ru/maps/org/lenremont/68341760403/reviews/) | yandex_maps | complete |
+| [card-025](https://rting.ru/sankt-peterburg/co/lenremont/4911925) | rting.ru | partial |
+| [card-026](https://yandex.ru/maps/org/lenremont/87389556464/reviews/) | Яндекс Карты | complete |
+| [card-027](https://yandex.ru/maps/org/lenremont/226292025159/reviews/) | Яндекс Карты | complete |
+| [card-028](https://rting.ru/sankt-peterburg/co/lenremont/4268803) | Rting (Каталог) | partial |
+| [card-029](https://rting.ru/sankt-peterburg/co/lenremont/2855827) | rting.ru | partial |
+| [card-030](https://rting.ru/sankt-peterburg/co/lenremont/2855844) | rting.ru | partial |
+| [card-031](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_zvyozdnoj_ulitse/) | Zoon | complete |
+| [card-032](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_moskovskom_prospekte_212/) | Zoon | complete |
+| [card-033](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_bely_kuna/) | Zoon | complete |
+| [card-034](https://yandex.ru/maps/org/lenremont/108377671807/reviews/) | Яндекс Карты | complete |
+| [card-035](https://nov.remkarta.ru/velikiy-novgorod/lenremont-954830/) | RemKarta.ru | partial |
+| [card-036](https://yandex.ru/maps/org/lenremont/194503819445/reviews/) | Яндекс Карты | complete |
+| [card-037](https://yandex.ru/maps/org/lenremont/147829209306/reviews/) | yandex | complete |
+| [card-038](https://yandex.ru/maps/org/lenremont/2394177609/reviews/) | Яндекс Карты | complete |
+| [card-039](https://2gis.ru/spb/firm/70000001045431574) | 2GIS | blocked |
+| [card-040](https://otzovik.com/reviews/kompaniya_po_remontu_bitovoy_tehniki_lenremont_russia_gatchina/) | Отзовик | partial |
+| [card-041](https://szo.spr.ru/sankt-peterburg/remont-kompyuterov-orgtehniki-mobilnih-telefonov/reviews/lenremont.html) | SPR | queued |
+| [card-042](https://www.klerk.ru/company/4692/reviews/) | Klerk | complete |
+| [card-043](https://firmateka.com/company/lenremont/) | Firmateka | partial |
+| [card-044](https://companypage.ru/servisyi/lenremont) | Companypage | partial |
+| [card-045](https://www.lenremont.ru/remont-noutbukov-spb.htm) | Официальный сайт Ленремонт / Cackle | complete |
+| [card-046](https://www.lenremont.ru/testimonials.htm) | Официальный сайт Ленремонта | partial |
+| [card-047](https://otzovikkrd23.ru/lenremont-otzyvy/) | Зеркало (otzovikkrd23.ru) | partial |
+| [card-048](https://tv-press.ru/lenremont-otzyvy/) | Зеркало (tv-press.ru) | blocked |
+| [card-049](https://rem-rating.ru/lenremont-otzyvy) | Rem-rating | complete |
+| [card-050](https://yandex.ru/maps/org/lenremont/234880316037/reviews/) | Яндекс Карты | complete |
+| [card-051](https://yandex.ru/maps/org/lenremont/226732697387/reviews/) | Яндекс Карты | complete |
+| [card-052](https://yandex.ru/maps/org/lenremont/26288651597/reviews/) | Яндекс Карты | complete |
+| [card-053](https://yandex.ru/maps/org/lenremont/1905751304/reviews/) | yandex | complete |
+| [card-054](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001030609738) | Flamp | complete |
+| [card-055](https://naydiservis.ru/services/lenremont) | НайдиСервис | partial |
+| [card-056](https://pskov.spravka.city/company/lenremont-18) | Spravka.City | complete |
+| [card-057](https://rting.ru/sankt-peterburg/co/lenremont/2855843) | Rting | partial |
+| [card-058](https://rting.ru/sankt-peterburg/co/lenremont/2855830) | Rting | partial |
+| [card-059](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_pyatiletok/) | Zoon | complete |
+| [card-060](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_elizarova/) | Zoon | complete |
+| [card-061](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_kosygina/) | Zoon | queued |
+| [card-062](https://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-moskovskom-prospekte-212_14448542/) | Yell | complete |
+| [card-063](https://www.yell.ru/spb/com/lenremont_11538956/) | Yell | queued |
+| [card-064](https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-marshala-zhukova_12060753/) | Yell | queued |
+| [card-065](https://www.yell.ru/spb/com/servisnyj-centr-lenremont_12206706/) | Yell | queued |
+| [card-066](https://www.yell.ru/spb/com/lenremont-ooo_11852552/) | Yell | queued |
+| [card-067](https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-metro-komendantskij-prospekt_12061020/) | Yell | queued |
+| [card-068](https://yandex.ru/maps/2/saint-petersburg/chain/lenremont/3503425074/) | Яндекс Карты — сеть | discovery-only |
+| [card-069](https://otzovik.com/review_18242490.html) | Отзовик | discovery-only |
+| [card-070](https://yandex.ru/maps/org/lenremont/24343010724/reviews/) | Яндекс Карты | complete |
+| [card-071](https://yandex.ru/maps/org/lenremont/10031707827/reviews/) | Яндекс Карты | complete |
+| [card-072](https://yandex.ru/maps/org/lenremont/142299563723/reviews/) | Яндекс Карты | complete |
+| [card-073](https://yandex.ru/maps/org/lenremont/87092134009/reviews/) | Яндекс Карты | complete |
+| [card-074](https://yandex.ru/maps/org/lenremont/166250120114/reviews/) | Яндекс Карты | complete |
+| [card-075](https://yandex.ru/maps/org/lenremont/242898370104/reviews/) | Яндекс Карты | complete |
+| [card-076](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552840261007) | Flamp | queued |
+| [card-077](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552840261005) | Flamp | queued |
+| [card-078](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552839608766) | Flamp | queued |
+| [card-079](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001025261830) | Flamp | queued |
+| [card-080](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001020122849) | Flamp | queued |
+| [card-081](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001047818597) | Flamp | queued |
+| [card-082](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001007540186) | Flamp | queued |
+| [card-083](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001048368935) | Flamp | queued |
+| [card-084](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348553838710040) | Flamp | queued |
+| [card-085](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001039113813) | Flamp | queued |
+| [card-086](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001035088365) | Flamp | queued |
+| [card-087](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001093090102) | Flamp | queued |
+| [card-088](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001044671839) | Flamp | queued |
+| [card-089](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001045109632) | Flamp | queued |
+| [card-090](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001101432136) | Flamp | queued |
+| [card-091](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001058962565) | Flamp | queued |
+| [card-092](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001035088361) | Flamp | queued |
+| [card-093](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001067809478) | Flamp | queued |
+| [card-094](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001060840319) | Flamp | queued |
+| [card-095](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001060449107) | Flamp | queued |
+| [card-096](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001030609751) | Flamp | queued |
+| [card-097](https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552840261006) | Flamp | queued |
+| [card-098](https://2gis.ru/spb/firm/70000001007540186/tab/reviews) | 2ГИС | queued |
+| [card-099](https://2gis.ru/spb/firm/70000001058962565/tab/reviews) | 2ГИС | queued |
+| [card-100](https://2gis.ru/spb/firm/70000001030609738/tab/reviews) | 2ГИС | queued |
+| [card-101](https://2gis.ru/spb/firm/70000001093090102/tab/reviews) | 2ГИС | queued |
+| [card-102](https://2gis.ru/spb/firm/70000001044671839/tab/reviews) | 2ГИС | queued |
+| [card-103](https://2gis.ru/spb/firm/5348552839608766/tab/reviews) | 2ГИС | queued |
+| [card-104](https://2gis.ru/spb/firm/70000001048368935/tab/reviews) | 2ГИС | queued |
+| [card-105](https://2gis.ru/spb/firm/70000001025261830/tab/reviews) | 2ГИС | queued |
+| [card-106](https://2gis.ru/spb/firm/70000001030609751/tab/reviews) | 2ГИС | queued |
+| [card-107](https://2gis.ru/spb/firm/70000001047818597/tab/reviews) | 2ГИС | queued |
+| [card-108](https://2gis.ru/spb/firm/70000001035088365/tab/reviews) | 2ГИС | queued |
+| [card-109](https://2gis.ru/spb/firm/70000001060840319/tab/reviews) | 2ГИС | queued |
+| [card-110](https://2gis.ru/spb/firm/5348553838710040/tab/reviews) | 2ГИС | queued |
+| [card-111](https://2gis.ru/spb/firm/70000001060449107/tab/reviews) | 2ГИС | queued |
+| [card-112](https://2gis.ru/spb/firm/5348552840261007/tab/reviews) | 2ГИС | queued |
+| [card-113](https://2gis.ru/spb/firm/70000001020122849/tab/reviews) | 2ГИС | queued |
+| [card-114](https://2gis.ru/spb/firm/70000001035088361/tab/reviews) | 2ГИС | queued |
+| [card-115](https://2gis.ru/spb/firm/70000001045109632/tab/reviews) | 2ГИС | queued |
+| [card-116](https://2gis.ru/spb/firm/5348552840261005/tab/reviews) | 2ГИС | queued |
+| [card-117](https://2gis.ru/spb/firm/70000001067809478/tab/reviews) | 2ГИС | queued |
+| [card-118](https://2gis.ru/spb/firm/70000001101432136/tab/reviews) | 2ГИС | queued |
+| [card-119](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_yaroslava_gasheka/) | Zoon | queued |
+| [card-120](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_yuriya_gagarina/) | Zoon | queued |
+| [card-121](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_marshala_zhukova/) | Zoon | queued |
+| [card-122](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_aviakonstruktorov/) | Zoon | queued |
+| [card-123](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_prosvescheniya/) | Zoon | queued |
+| [card-124](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_ushinskogo/) | Zoon | queued |
+| [card-125](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_kievskoj_ulitse_32v/) | Zoon | queued |
+| [card-126](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_nauki/) | Zoon | queued |
+| [card-127](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_veteranov/) | Zoon | queued |
+| [card-128](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_korablestroitelej/) | Zoon | queued |
+| [card-129](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_kievskoj_ulitse/) | Zoon | queued |
+| [card-130](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_mineralnoj_ulitse/) | Zoon | queued |
+| [card-131](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_prosvescheniya_20_25/) | Zoon | queued |
+| [card-132](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_frunze/) | Zoon | queued |
+| [card-133](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_reshetnikova/) | Zoon | queued |
+| [card-134](https://zoon.ru/spb/repair/remontnaya_masterskaya_lenremont_na_mineralnoj_ulitse/) | Zoon | queued |
+| [card-135](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_v_kolpino/) | Zoon | queued |
+| [card-136](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_ispytatelej_11_k_1/) | Zoon | queued |
+| [card-137](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_metro_ploschad_muzhestva/) | Zoon | queued |
+| [card-138](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_yunyh_pionerov/) | Zoon | queued |
+| [card-139](https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_krugovoj_ulitse_47/) | Zoon | queued |
+| [card-140](https://2gis.ru/pskov/firm/70000001094767445/tab/reviews) | 2GIS | complete |
+| [card-141](https://yandex.com/maps/org/tekhnika_s_utsenkoy/143153493696/) | Yandex Maps | complete |
+| [card-142](https://pskov-bu-tekhnika.lenremont.ru/otzyvy/) | Официальный сайт магазина — видеоотзывы | queued |
+| [card-143](https://www.yell.ru/moscow/com/lenremont-remont-tehniki_11893264/) | Yell | complete |
+| [card-144](https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/) | Yell | complete |
+| [card-145](https://redmap.ru/moskva/lenremont/bratislavskaya-ul-25-51806) | Redmap | queued |
+| [card-146](https://redmap.ru/moskva/lenremont/nagornaya-ul-23-korp-1-51805) | Redmap | queued |
+| [card-147](https://redmap.ru/murino/lenremont/privokzalnaya-ploschad-3-korp-4-murino-147910) | Redmap | queued |
+| [card-148](https://redmap.ru/murino/lenremont/privokzalnaya-ploschad-3-korp-4-murino-147913) | Redmap | queued |
+| [card-149](https://guidebook.ru/moskva/nagornaya-ulitsa/lenremont.html) | Guidebook | queued |
+| [card-150](https://isfix.ru/165466-lenremont-ooo-montazhno-remontnaya-firma.html) | isfix | queued |
+| [card-151](https://mail.rating.msk.ru/remont_holodilnik/lenremont) | Rating.msk | queued |
+| [card-152](https://www.yp.ru/detail/id/lenremont_1427505/) | YP | queued |
+| [card-153](https://serviced.ru/service/lenremont/) | Serviced | queued |
+| [card-154](https://sankt-peterburg.spravochnika.ru/org/id-468567) | Spravochnika | queued |
+| [card-155](https://novgorod.lenremont.ru/) | Официальный сайт — видеоотзывы | queued |
+| [card-156](https://redmap.ru/sanktpeterburg/lenremont/ul-zhaka-dyuklo-6-korp-2-147907) | Redmap | queued |
+| [card-157](https://redmap.ru/sanktpeterburg/lenremont/ul-reshetnikova-3-147895) | Redmap | queued |
+| [card-158](https://redmap.ru/sanktpeterburg/lenremont/ul-korablestroitelej-30-147893) | Redmap | queued |
+| [card-159](https://redmap.ru/sanktpeterburg/lenremont/prosp-marshala-zhukova-35-korp-3-147906) | Redmap | queued |
+| [card-160](https://redmap.ru/sanktpeterburg/lenremont/kievskaya-ul-32v-147897) | Redmap | queued |
+| [card-161](https://redmap.ru/sanktpeterburg/lenremont/ul-belyi-kuna-20-korp-1-147916) | Redmap | queued |
+| [card-162](https://redmap.ru/sanktpeterburg/lenremont/prosp-yuriya-gagarina-23-147912) | Redmap | queued |
+| [card-163](https://redmap.ru/sanktpeterburg/lenremont/ul-frunze-15-147909) | Redmap | queued |
+| [card-164](https://redmap.ru/sanktpeterburg/lenremont/prosp-nepokoryonnyih-2-147908) | Redmap | queued |
+| [card-165](https://redmap.ru/sanktpeterburg/lenremont/prosp-bolshevikov-25-147905) | Redmap | queued |
+| [card-166](https://redmap.ru/sanktpeterburg/lenremont/prosp-nauki-8-korp-1-147902) | Redmap | queued |
+| [card-167](https://redmap.ru/sanktpeterburg/lenremont/prosp-prosvescheniya-2025-147896) | Redmap | queued |
+| [card-168](https://redmap.ru/sanktpeterburg/lenremont/prosp-lunacharskogo-56-korp-1-147900) | Redmap | queued |
+| [card-169](https://redmap.ru/sanktpeterburg/lenremont/prosp-nastavnikov-47-korp-1-147901) | Redmap | queued |
+| [card-170](https://redmap.ru/sanktpeterburg/lenremont/prosp-veteranov-9-147894) | Redmap | queued |
+| [card-171](https://redmap.ru/sanktpeterburg/lenremont/prosp-ispyitatelej-11-korp-1-147911) | Redmap | queued |
+| [card-172](https://redmap.ru/sanktpeterburg/lenremont/prosp-elizarova-36-147903) | Redmap | queued |
+| [card-173](https://redmap.ru/sanktpeterburg/lenremont/ul-oleko-dundicha-36-korp-1-147904) | Redmap | queued |
+| [card-174](https://redmap.ru/sanktpeterburg/lenremont/prosp-aviakonstruktorov-4-korp-1-147898) | Redmap | queued |
+| [card-175](https://redmap.ru/sanktpeterburg/lenremont/prosp-nastavnikov-47-korp-1-147918) | Redmap | queued |
+| [card-176](https://redmap.ru/sanktpeterburg/lenremont/prosp-veteranov-9-147899) | Redmap | queued |
+| [card-177](https://redmap.ru/sanktpeterburg/lenremont/prosp-marshala-zhukova-35-korp-3-147915) | Redmap | queued |
+| [card-178](https://redmap.ru/sanktpeterburg/lenremont/ul-ushinskogo-25-korp-1-147917) | Redmap | queued |
+| [card-179](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46963aac51d9151f:0x405dec6efcfde4c7!8m2!3d59.8526934!4d30.3267895!16s%2Fg%2F11csrsr9ls!19sChIJHxXZUaw6lkYRx-T9_G7sXUA) | Google Карты | complete |
+| [card-180](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469631ba422bc3d7:0xad44bcca44f87641!8m2!3d59.9042544!4d30.333828!16s%2Fg%2F11trhxzt9v!19sChIJ18MrQroxlkYRQXb4RMq8RK0) | Google Карты | queued |
+| [card-181](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46963b39765a0291:0xc8af33a81621f762!8m2!3d59.8613478!4d30.3154893!16s%2Fg%2F11n6rs7m3h!19sChIJkQJadjk7lkYRYvchFqgzr8g) | Google Карты | queued |
+| [card-182](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46962f68f9c56f11:0xd02e91321fc3179f!8m2!3d59.8739974!4d30.385776!16s%2Fg%2F11fqzz0b1g!19sChIJEW_F-WgvlkYRnxfDHzKRLtA) | Google Карты | queued |
+| [card-183](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46962f79bd84cf5f:0xe97f95913e0816d8!8m2!3d59.8916065!4d30.4059095!16s%2Fg%2F11smvg9bj7!19sChIJX8-EvXkvlkYR2BYIPpGVf-k) | Google Карты | queued |
+| [card-184](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x4696300c7bb95ed1:0x2a2bd1e4fd34931e!8m2!3d59.8677849!4d30.6756687!16s%2Fg%2F11nfr1ppxz!19sChIJ0V65ewwwlkYRHpM0_eTRKyo) | Google Карты | queued |
+| [card-185](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46963aae5444ce83:0xfc6d481ef8012cbd!8m2!3d59.8336805!4d30.352745!16s%2Fg%2F11xb7hs9x!19sChIJg85EVK46lkYRvSwB-B5Ibfw) | Google Карты | queued |
+| [card-186](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x4696317a662610bf:0x6419ed04ae235a0a!8m2!3d59.8324415!4d30.3883566!16s%2Fg%2F11k9jvrdfn!19sChIJvxAmZnoxlkYRClojrgTtGWQ) | Google Карты | queued |
+| [card-187](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469631f33dd59d1f:0x904e2f7a0e5f5d02!8m2!3d60.0018578!4d30.3285109!16s%2Fg%2F11wjmd4fcc!19sChIJH53VPfMxlkYRAl1fDnovTpA) | Google Карты | queued |
+| [card-188](https://www.google.com/maps/place/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D1%83%D1%86%D0%B5%D0%BD%D0%BA%D0%BE%D0%B9+%D0%BE%D1%82+%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0/data=!4m7!3m6!1s0x46963186d2c3d303:0x1c76acaee18dc0b!8m2!3d59.8613515!4d30.3154549!16s%2Fg%2F11sc7jpsbh!19sChIJA9PD0oYxlkYRC9wY7spqxwE) | Google Карты | queued |
+| [card-189](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469633284485756d:0xf6a5bddb92a8c188!8m2!3d59.9664811!4d30.372206!16s%2Fg%2F11zyk5h2l6!19sChIJbXWFRCgzlkYRiMGoktu9pfY) | Google Карты | queued |
+| [card-190](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469633359f878e7d:0x9de24e95f442df47!8m2!3d60.0153406!4d30.3895613!16s%2Fg%2F11h7jcpw7_!19sChIJfY6HnzUzlkYRR99C9JVO4p0) | Google Карты | queued |
+| [card-191](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x4696312c5dfe05ff:0xa18f332d851bbbe1!8m2!3d59.9462687!4d30.4962268!16s%2Fg%2F11swcwr3nl!19sChIJ_wX-XSwxlkYR4bsbhS0zj6E) | Google Карты | queued |
+| [card-192](https://www.google.com/maps/place/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D1%83%D1%86%D0%B5%D0%BD%D0%BA%D0%BE%D0%B9+%D0%BE%D1%82+%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0/data=!4m7!3m6!1s0x46963bd421494b13:0xc43721673a718ba9!8m2!3d59.8640025!4d30.3349269!16s%2Fg%2F11rd_4__mx!19sChIJE0tJIdQ7lkYRqYtxOmchN8Q) | Google Карты | queued |
+| [card-193](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x4696359e52835efb:0x44ff983bfa370a6f!8m2!3d60.0049437!4d30.291043!16s%2Fg%2F11rdvw73_l!19sChIJ-16DUp41lkYRbwo3-juY_0Q) | Google Карты | queued |
+| [card-194](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46962f06a47a5ff3:0x396dd739f5cbf268!8m2!3d60.0358632!4d30.4107421!16s%2Fg%2F11h94wvg9x!19sChIJ8196pAYvlkYRaPLL9TnXbTk) | Google Карты | queued |
+| [card-195](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469634522a369997:0xdfee5769623bedf6!8m2!3d60.0279721!4d30.273746!16s%2Fg%2F11gy3j38bp!19sChIJl5k2KlI0lkYR9u07YmlX7t8) | Google Карты | queued |
+| [card-196](https://www.google.com/maps/place/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D1%83%D1%86%D0%B5%D0%BD%D0%BA%D0%BE%D0%B9+%D0%BE%D1%82+%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0/data=!4m7!3m6!1s0x469631a28b752a0f:0x431f4a3e2bac1fb3!8m2!3d59.9234895!4d30.4527617!16s%2Fg%2F11t5_0xj_m!19sChIJDyp1i6IxlkYRsx-sKz5KH0M) | Google Карты | queued |
+| [card-197](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46963c007cae5555:0xa3331794d6b0c65f!8m2!3d59.8258877!4d30.0979275!16s%2Fg%2F11rq1ldb39!19sChIJVVWufAA8lkYRX8aw1pQXM6M) | Google Карты | queued |
+| [card-198](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46b5359ca1382a69:0x40b4d1952946e701!8m2!3d55.787194!4d37.6766529!16s%2Fg%2F11gjj41bz3!19sChIJaSo4oZw1tUYRAedGKZXRtEA) | Google Карты | queued |
+| [card-199](https://www.google.com/maps/place/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D1%83%D1%86%D0%B5%D0%BD%D0%BA%D0%BE%D0%B9+%D0%BE%D1%82+%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0/@58.526366,31.2551189,17z/data=!3m1!4b1!4m6!3m5!1s0x46bf0f92a8e34a91:0xbc759f00367f2a7c!8m2!3d58.526366!4d31.2551189!16s%2Fg%2F11y5ts02lr) | Google Карты | complete |
+| [card-200](https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82+%D0%B1%2F%D1%83+%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D0%B3%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D0%B8%D0%B5%D0%B9/@57.8074449,28.3445342,17z/data=!3m1!4b1!4m6!3m5!1s0x4697cd8d7ce0b415:0x827446421853ee8!8m2!3d57.8074449!4d28.3445342!16s%2Fg%2F11y99b4zm5) | Google Карты | complete |
+| [card-201](https://msk.spravker.ru/otdelochnye-raboty/lenremont.htm) | Справкер | queued |
+| [card-202](https://www.yell.ru/spb/com/lenremont_11538957/) | Yell | queued |
+| [card-203](https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-nauki_12061016/) | Yell | queued |
+| [card-204](https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-elizarova_12755962/) | Yell | queued |
+| [card-205](https://www.yell.ru/spb/com/lenremont-ooo_9625417/) | Yell | queued |
+| [card-206](https://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-ulice-bely-kuna_12060750/) | Yell | queued |
+| [card-207](https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-ulice-korablestroitelej_12061018/) | Yell | queued |
+| [card-208](https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-lunacharskogo_11978145/) | Yell | queued |
+| [card-209](https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-nastavnikov_12061759/) | Yell | queued |
+| [card-210](https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-ispytatelej-11-k-1_12789105/) | Yell | queued |
+| [card-211](https://www.yell.ru/spb/com/servisnyj-centr-lenremont-v-kolpino_14441597/) | Yell | queued |
+| [card-212](https://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-ulice-yaroslava-gasheka_14441589/) | Yell | queued |
+| [card-213](https://www.yell.ru/spb/chain/lenremont-ooo_9625417/) | Yell | queued |
+| [card-214](https://vk.com/lenremont) | ВКонтакте | blocked |
+| [card-215](https://ok.ru/group/59828513407178) | Одноклассники | partial |
+| [card-216](https://www.lenremont.ru/contact.htm) | Официальный сайт Ленремонта — контакты | queued |
+| [card-217](https://rting.ru/sankt-peterburg/filial/lenremont/201215) | rting.ru network directory | queued |
+| [card-218](https://rting.ru/sankt-peterburg/filial/lenremont/298336) | Rting — список филиалов | queued |
+| [card-219](https://kupit-bu-tekhniku.lenremont.ru/) | Официальный сайт магазина Ленремонт | queued |
+| [card-220](https://youtube.com/channel/UChZQrVGyddGxE515iZFY6uA) | YouTube | queued |
+| [card-221](https://rting.ru/sankt-peterburg/co/lenremont/4916409) | rting.ru | queued |
+| [card-222](https://rting.ru/sankt-peterburg/co/lenremont/2837699) | rting.ru | queued |
+| [card-223](https://rting.ru/sankt-peterburg/co/lenremont/2855819) | rting.ru | queued |
+| [card-224](http://novgorod-bu-tekhnika.lenremont.ru/) | Официальный сайт магазина Ленремонт — ссылка из RemKarta | queued |
+| [card-225](https://nov.remkarta.ru/velikiy-novgorod/tehnika-s-utsenkoy/all/) | RemKarta — список сети в Великом Новгороде | queued |
+| [card-226](https://www.lenremont.ru/masterskaya-lenremonta-u-m-mezhdunarodnaya-ul-bely-kuna-d-20-k-1.htm) | Официальный сайт Ленремонта | queued |
+| [card-227](https://lenremont.moscow/) | Официальный сайт московского Ленремонта | queued |
+| [card-228](https://tochka-mneniy.com/lenremont-otzyvy/) | ТОЧКА МНЕНИЯ (другое зеркало) | queued |
+| [card-229](https://www.lenremont.ru/lenremont-na-muzhestva.htm) | Официальный сайт Ленремонта | queued |
+| [card-230](https://rting.ru/sankt-peterburg/co/lenremont/2855829) | Rting | queued |
+| [card-231](https://zoon.ru/spb/repair/network/lenremont/) | Zoon — сеть | queued |

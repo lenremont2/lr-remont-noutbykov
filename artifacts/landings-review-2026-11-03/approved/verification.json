@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "overflow": 0,
+      "errors": [],
+      "forms": "context, readiness, Escape and focus passed",
+      "sliders": "formats and equipment passed",
+      "photos": "wide viewer passed",
+      "dialpad": "touch layout"
+    },
+    {
+      "width": 390,
+      "overflow": 0,
+      "errors": [],
+      "forms": "context, readiness, Escape and focus passed",
+      "sliders": "formats and equipment passed",
+      "photos": "wide viewer passed",
+      "dialpad": "touch layout"
+    },
+    {
+      "width": 768,
+      "overflow": 0,
+      "errors": [],
+      "forms": "context, readiness, Escape and focus passed",
+      "sliders": "formats and equipment passed",
+      "photos": "wide viewer passed",
+      "dialpad": "touch layout"
+    },
+    {
+      "width": 1024,
+      "overflow": 0,
+      "errors": [],
+      "forms": "context, readiness, Escape and focus passed",
+      "sliders": "formats and equipment passed",
+      "photos": "wide viewer passed",
+      "dialpad": "native input"
+    },
+    {
+      "width": 1440,
+      "overflow": 0,
+      "errors": [],
+      "forms": "context, readiness, Escape and focus passed",
+      "sliders": "formats and equipment passed",
+      "photos": "wide viewer passed",
+      "dialpad": "native input"
+    }
+  ],
+  "marquee": "continuous, pause and keyboard pause passed; reduced motion static",
+  "largeTouchTablet": "dialpad visible",
+  "submission": "Not performed"
+}

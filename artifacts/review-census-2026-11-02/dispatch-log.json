@@ -1,0 +1,378 @@
+{
+  "coordinator": "/root",
+  "started": "2026-11-02",
+  "note": "Dispatcher handed ownership back to root after200sources. card-021 resumed on same agent for alternative-sort exhaustion. Entries before dispatcher tracked by existing task results; do not infer unknown historical agent names.",
+  "assignments": [
+    {
+      "taskId": "card-008",
+      "agent": "/root/card_008",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-021",
+      "agent": "/root/card_021",
+      "status": "completed"
+    },
+    {
+      "taskId": "yandex-zvezdnaya9",
+      "agent": "/root/card_yandex_zvezdnaya9",
+      "status": "completed"
+    },
+    {
+      "taskId": "otzovik-company",
+      "agent": "/root/card_otzovik_company",
+      "status": "completed"
+    },
+    {
+      "taskId": "2gis-marshala",
+      "agent": "/root/card_2gis_marshala",
+      "status": "completed"
+    },
+    {
+      "taskId": "otzyvru-company",
+      "agent": "/root/card_otzyvru_company",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-005",
+      "agent": "/root/card_005",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-006",
+      "agent": "/root/card_006",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-007",
+      "agent": "/root/card_007",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-012",
+      "agent": "/root/card_012",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-013",
+      "agent": "/root/card_013",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-014",
+      "agent": "/root/card_014",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-015",
+      "agent": "/root/card_015",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-031",
+      "agent": "/root/card_031",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-036",
+      "agent": "/root/card_036",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-051",
+      "agent": "/root/card_051",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-054",
+      "agent": "/root/card_054",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-055",
+      "agent": "/root/card_055",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-056",
+      "agent": "/root/card_056",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-062",
+      "agent": "/root/card_062",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-009",
+      "agent": "/root/dispatch_remaining_cards/card_009",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-010",
+      "agent": "/root/dispatch_remaining_cards/card_010",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-011",
+      "agent": "/root/card_011",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-016",
+      "agent": "/root/card_016",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-017",
+      "agent": "/root/card_017",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-018",
+      "agent": "/root/card_018",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-019",
+      "agent": "/root/card_019",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-020",
+      "agent": "/root/card_020",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-022",
+      "agent": "/root/card_022",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-023",
+      "agent": "/root/card_023",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-024",
+      "agent": "/root/card_024",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-026",
+      "agent": "/root/card_026",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-027",
+      "agent": "/root/card_027",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-034",
+      "agent": "/root/card_034",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-037",
+      "agent": "/root/card_037",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-038",
+      "agent": "/root/card_038",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-140",
+      "agent": "/root/card_140",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-141",
+      "agent": "/root/card_141",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-143",
+      "agent": "/root/card_143",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-144",
+      "agent": "/root/card_144",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-199",
+      "agent": "/root/card_199",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-200",
+      "agent": "/root/card_200",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-214",
+      "agent": "/root/card_214",
+      "status": "blocked-source"
+    },
+    {
+      "taskId": "card-215",
+      "agent": "/root/card_215",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-045",
+      "agent": "/root/card_045",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-046",
+      "agent": "/root/card_046",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-052",
+      "agent": "/root/card_052",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-050",
+      "agent": "/root/card_050",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-053",
+      "agent": "/root/card_053",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-071",
+      "agent": "/root/card_071",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-025",
+      "agent": "/root/card_025",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-070",
+      "agent": "/root/card_070",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-072",
+      "agent": "/root/card_072",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-073",
+      "agent": "/root/card_073",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-074",
+      "agent": "/root/card_074",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-075",
+      "agent": "/root/card_075",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-179",
+      "agent": "/root/card_179",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-028",
+      "agent": "/root/card_028",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-029",
+      "agent": "/root/card_029",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-032",
+      "agent": "/root/card_032",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-030",
+      "agent": "/root/card_030",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-033",
+      "agent": "/root/card_033",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-035",
+      "agent": "/root/card_035",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-040",
+      "agent": "/root/card_040",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-041",
+      "agent": "/root/card_041",
+      "status": "running"
+    },
+    {
+      "taskId": "card-042",
+      "agent": "/root/card_042",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-043",
+      "agent": "/root/card_043",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-044",
+      "agent": "/root/card_044",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-047",
+      "agent": "/root/card_047",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-048",
+      "agent": "/root/card_048",
+      "status": "blocked-source"
+    },
+    {
+      "taskId": "card-049",
+      "agent": "/root/card_049",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-057",
+      "agent": "/root/card_057",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-058",
+      "agent": "/root/card_058",
+      "status": "completed"
+    },
+    {
+      "taskId": "card-059",
+      "agent": "/root/card_059",
+      "status": "running"
+    }
+  ],
+  "discoveryPasses": []
+}

@@ -1,0 +1,33 @@
+{
+  "taskId": "otzovik-company",
+  "platform": "Отзовик",
+  "url": "https://otzovik.com/reviews/kompaniya_po_remontu_bitovoy_tehniki_lenremont_russia_sankt-peterburg/",
+  "branch": "company-wide",
+  "city": "Russia",
+  "networkEvidence": "Canonical corpus title identifies Lenremont, Russia, Saint Petersburg; an official company representative is linked on the corpus and replies as ООО ЛЕНРЕМОНТ. Browser live corpus observed 2026-11-02.",
+  "coverage": {
+    "status": "partial",
+    "reportedTotal": 3980,
+    "examinedCount": 320,
+    "endpointObserved": false,
+    "method": "Chrome live browser: followed actual Далее links from corpus page 1 through page 8; read 40 preview cards on each page and checked visible preview text for ноут, макбук, macbook, нетбук, ультрабук. Also inspected indexed pages 21 and 61 through web search and opened one computer-related full review to determine device type.",
+    "stopReason": "Navigation to page 9 redirected to a CAPTCHA URL with capt4a parameter. No CAPTCHA was solved or bypassed. The page offered last page 100 before blocking. 320 is preview-card encounters, not verified unique full review texts; absence of keywords in previews is not proof of no laptop references in full reviews."
+  },
+  "reviews": [],
+  "discoveredSources": [
+    {
+      "platform": "Отзовик",
+      "url": "https://otzovik.com/reviews/kompaniya_po_remontu_bitovoy_tehniki_lenremont_russia_gatchina/",
+      "address": null,
+      "city": "Гатчина"
+    }
+  ],
+  "notes": [
+    "No laptop-specific photo confirmed in the inspected portion. This does not mean the full corpus has none.",
+    "https://otzovik.com/review_16779335.html (EmrisAA, 27 ноября 2024, rating 2) was inspected and excluded: review describes a desktop/system-unit repair. Laptop mentions are comparisons and an anecdote, not the repaired device.",
+    "Search results repeatedly returned a separate Гарант-Ремонт corpus mentioning Ленремонт; its attribution to this network was not established and it was excluded.",
+    "Indexed versions of the corpus report 3931/3954 reviews while live browser reports 3980; use live count only for the observed 2026-11-02 snapshot.",
+    "Additional indexed corpus pages checked: /21/ and /61/. Neither indexed page contained ноут in available text; not added to live examinedCount because index freshness and overlap were not established.",
+    "No photographs were downloaded because no qualifying laptop review/photo was confirmed."
+  ]
+}

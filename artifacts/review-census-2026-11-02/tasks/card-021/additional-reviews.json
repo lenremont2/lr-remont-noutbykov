@@ -1,0 +1,74 @@
+[
+  {
+    "author": "Олег Сергушев",
+    "date": "2024-04-17",
+    "rating": 1,
+    "summary": "После чистки ноутбука от пыли заявляет о неисправных кнопках и левом динамике, недоволен предложением дополнительного платного ремонта и отрицанием ответственности сервисом. Указывает акт выдачи 1850142.",
+    "reviewUrl": "https://yandex.ru/maps/org/3295465178/reviews?reviews%5BpublicId%5D=w6b1wnvuzq58y65jhax8kzjk4r",
+    "topic": "ноутбук: чистка, повреждения, спор о дополнительном ремонте; отрицательный",
+    "photos": [
+      {
+        "sourceUrl": "https://avatars.mds.yandex.net/get-altay/11409713/2a0000018eec0b49e6a9ea4e06b0867f1f01/XXXL",
+        "localPath": "artifacts/review-census-2026-11-02/tasks/card-021/photos/oleg-sergushev-2024-04-17-1.webp",
+        "attachment": "review",
+        "bindingVerified": true,
+        "visuallyVerified": true,
+        "description": "Открытый ноутбук HP Pavilion g6 на столе с экраном сведений Windows и видимой клавиатурой. Изображение само по себе не доказывает заявленную неисправность динамика или кнопок."
+      }
+    ],
+    "evidence": {
+      "authorUrl": "https://yandex.ru/maps/user/w6b1wnvuzq58y65jhax8kzjk4r",
+      "datePublished": "2024-04-17T12:32:36.378Z",
+      "fullTextExpanded": true,
+      "sortFound": "Сначала отрицательные",
+      "replyChecked": true,
+      "replySummary": "22 апреля 2024 организация оспорила ответственность: сообщила о первоначальной чистке и установке ОС, приемке 3 апреля и повторном обращении 8 апреля; предложила платную замену динамика и клавиатуры со скидкой 20% на работу.",
+      "replyMediaCount": 0,
+      "photoBinding": "Вложение открыто из конкретного отзыва. Просмотрщик показывает Олег Сергушев, апрель 2024, 1 из 1; скачан фактически открытый публичный размер XXXL и визуально просмотрен."
+    }
+  },
+  {
+    "author": "Александра Гаврилова",
+    "date": "2024-03-25",
+    "rating": 1,
+    "summary": "Сдала залитый маслом ноутбук, самостоятельно повредив петли до обращения. Жалуется на несостоявшийся срочный ремонт после доплаты, отказ от чистки, задержку возврата на 2–3 недели и поврежденную переднюю панель после возврата.",
+    "reviewUrl": "https://yandex.ru/maps/org/3295465178/reviews?reviews%5BpublicId%5D=xve3dmrvnzakmufvv68quuj5hr",
+    "topic": "ноутбук: диагностика после залития, сроки, состояние при возврате; отрицательный",
+    "photos": [
+      {
+        "sourceUrl": "https://avatars.mds.yandex.net/get-altay/11047134/2a0000018e7551e84acb5c1ed7e8587cfa4c/XXXL",
+        "localPath": "artifacts/review-census-2026-11-02/tasks/card-021/photos/alexandra-gavrilova-2024-03-25-1.webp",
+        "attachment": "review",
+        "bindingVerified": true,
+        "visuallyVerified": true,
+        "description": "Крупный план верхней части клавиатуры и основания экрана ноутбука. Видны раскрытая полоса корпуса над функциональными клавишами, внутренние элементы и разрыв справа; экран с BIOS."
+      },
+      {
+        "sourceUrl": "https://avatars.mds.yandex.net/get-altay/11886651/2a0000018e7551e8102d77b7a33e4d881986/XXXL",
+        "localPath": "artifacts/review-census-2026-11-02/tasks/card-021/photos/alexandra-gavrilova-2024-03-25-2.webp",
+        "attachment": "review",
+        "bindingVerified": true,
+        "visuallyVerified": true,
+        "description": "Более широкий вид клавиатуры того же ноутбука; над рядом функциональных клавиш корпус раскрыт, видны внутренние детали."
+      },
+      {
+        "sourceUrl": "https://avatars.mds.yandex.net/get-altay/9831711/2a0000018e7551e848706efff13c6d2ee505/XXXL",
+        "localPath": "artifacts/review-census-2026-11-02/tasks/card-021/photos/alexandra-gavrilova-2024-03-25-3.webp",
+        "attachment": "review",
+        "bindingVerified": true,
+        "visuallyVerified": true,
+        "description": "Общий вид открытого ноутбука с клавиатурой, тачпадом и экраном BIOS. Видна раскрытая верхняя полоса корпуса у креплений экрана. Фото не устанавливает, когда и кем возникли повреждения."
+      }
+    ],
+    "evidence": {
+      "authorUrl": "https://yandex.ru/maps/user/xve3dmrvnzakmufvv68quuj5hr",
+      "datePublished": "2024-03-25T11:14:51.192Z",
+      "fullTextExpanded": true,
+      "sortFound": "Сначала отрицательные",
+      "replyChecked": true,
+      "replySummary": "28 марта 2024 организация выразила сожаление и попросила номер договора либо телефона для прояснения ситуации.",
+      "replyMediaCount": 0,
+      "photoBinding": "Открыты вложения конкретного отзыва. Просмотрщик показывает Александра Гаврилова, март 2024 и серию 1 из 3; переходы через Следующий шаг дали все три оригинальных URL XXXL. Все файлы скачаны и визуально просмотрены."
+    }
+  }
+]

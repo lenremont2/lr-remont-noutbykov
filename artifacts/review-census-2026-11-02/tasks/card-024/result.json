@@ -1,0 +1,66 @@
+{
+  "taskId": "card-024",
+  "platform": "yandex_maps",
+  "url": "https://yandex.ru/maps/org/lenremont/68341760403/reviews/",
+  "branch": "Ленремонт, проспект Науки, 8, корпус 1",
+  "city": "Санкт-Петербург",
+  "networkEvidence": [
+    {"url":"https://yandex.ru/maps/org/lenremont/68341760403/","observation":"Обзор карточки: просп. Науки, 8, корп. 1, Санкт-Петербург; +7 (812) 688-89-33; ссылка www.lenremont.ru; ссылка «Все филиалы сети» на сеть Ленремонт 3503425074."},
+    {"url":"https://www.lenremont.ru/contact.htm","observation":"Официальные контакты перечисляют мастерскую м. Академическая, пр. Науки, д.8, к.1 и телефон +7 (812) 688-89-33, совпадающие с карточкой."},
+    {"url":"https://www.lenremont.ru/masterskaya-lenremonta-u-m-akademicheskaya-pr-nauki-d-8-k-1.htm","observation":"Официальная страница мастерской подтверждает адрес г. Санкт-Петербург, пр. Науки, д.8, к.1."}
+  ],
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 173,
+    "examinedCount": 173,
+    "endpointObserved": true,
+    "method": "Chrome CUA, вкладка 2080318412. Сортировка «По умолчанию»: скролл с подгрузкой 50 → 100 → 150 → 173. Раскрыты все кнопки «Ещё» (в конечном корпусе 0). Нижняя граница: scrollTop 52889.08984375 + clientHeight 785 = scrollHeight 53674 с округлением. Дедуп по публичному ID профиля и datePublished; без профиля — имя и точная дата. 173 уникальные записи. Проверена наблюдаемая SEO-пагинация 1–4: страницы 2 и 3 по 50 записей, все уже в корпусе; страница 4 содержит 23 последние записи, совпадающие с концом скролла. Для шести целевых отзывов раскрыты ответы организации и получены реальные ссылки через «Поделиться».",
+    "stopReason": "Конец доступной выдачи достигнут; 173 уникальных отзыва равны заявленному счётчику. Дополнительные сортировки для добора не требовались."
+  },
+  "reviews": [
+    {
+      "author":"Анастасия Ф.","date":"14 марта 2023","rating":5,
+      "summary":"Обращалась по поводу ремонта ноутбука; положительно оценила подробную и понятную консультацию мастера Александра и его рекомендации по необходимым работам.",
+      "reviewUrl":"https://yandex.ru/maps/org/68341760403/reviews?reviews%5BpublicId%5D=zcrm7ufyj4yhm9uuhjtm41z4w4",
+      "topic":"ремонт ноутбука, консультация","photos":[],
+      "evidence":{"publicId":"zcrm7ufyj4yhm9uuhjtm41z4w4","profileUrl":"https://yandex.ru/maps/user/zcrm7ufyj4yhm9uuhjtm41z4w4","datePublished":"2023-03-14T16:38:09.926Z","fullTextExpanded":true,"sourcePosition":50,"companyReply":{"date":"17 марта 2023","summary":"Организация благодарит за оценку и рекомендации.","expanded":true,"attachmentsObserved":0},"reviewAttachmentsObserved":0,"linkEvidence":"Получена в диалоге «Поделиться отзывом»; удалены только si и utm_source."}
+    },
+    {
+      "author":"Dima M.","date":"5 марта 2023","rating":5,
+      "summary":"Ноутбук не заряжался. По словам автора, диагностика заняла примерно час даже в праздничный день; ремонт выполнили тогда же, результатом довольны.",
+      "reviewUrl":"https://yandex.ru/maps/org/68341760403/reviews?reviews%5BpublicId%5D=136yqnqeb6xmvj9npp0tz35bqr",
+      "topic":"диагностика и ремонт зарядки ноутбука","photos":[],
+      "evidence":{"publicId":"136yqnqeb6xmvj9npp0tz35bqr","profileUrl":"https://yandex.ru/maps/user/136yqnqeb6xmvj9npp0tz35bqr","datePublished":"2023-03-04T22:15:55.764Z","fullTextExpanded":true,"sourcePosition":92,"companyReply":{"date":"9 марта 2023","summary":"Организация приглашает обращаться снова.","expanded":true,"attachmentsObserved":0},"reviewAttachmentsObserved":0,"linkEvidence":"Получена в диалоге «Поделиться отзывом»; удалены только si и utm_source.","dateNote":"Отображаемая дата 5 марта; машинная дата UTC начинается 4 марта."}
+    },
+    {
+      "author":"Леха Питерский","date":"1 сентября 2024","rating":4,
+      "summary":"Проблему ноутбука решили перепрошивкой платы, но работа заняла три недели; стоимость автор считает высокой.",
+      "reviewUrl":"https://yandex.ru/maps/org/68341760403/reviews?reviews%5BpublicId%5D=1peavnnxtwtrfuzwnxxj4jr6wm",
+      "topic":"перепрошивка платы ноутбука, сроки и стоимость","photos":[],
+      "evidence":{"publicId":"1peavnnxtwtrfuzwnxxj4jr6wm","profileUrl":"https://yandex.ru/maps/user/1peavnnxtwtrfuzwnxxj4jr6wm","datePublished":"2024-09-01T10:18:19.161Z","fullTextExpanded":true,"sourcePosition":108,"companyReply":{"date":"5 сентября 2024","summary":"Компания объясняет цену официальным оформлением, документами и гарантийными обязательствами.","expanded":true,"attachmentsObserved":0},"reviewAttachmentsObserved":0,"linkEvidence":"Получена в диалоге «Поделиться отзывом»; удалены только si и utm_source."}
+    },
+    {
+      "author":"Uzelock","date":"21 декабря 2022","rating":5,
+      "summary":"Обратился с перегревом ноутбука; после быстрого ремонта устройство, по его словам, работает хорошо. Отметил отзывчивость мастера и рекомендации.",
+      "reviewUrl":"https://yandex.ru/maps/org/68341760403/reviews?reviews%5BpublicId%5D=hbb31jvgk1axfmtxtcjg2dwc04",
+      "topic":"перегрев и ремонт ноутбука","photos":[],
+      "evidence":{"publicId":"hbb31jvgk1axfmtxtcjg2dwc04","profileUrl":"https://yandex.ru/maps/user/hbb31jvgk1axfmtxtcjg2dwc04","datePublished":"2022-12-21T14:16:46.349Z","fullTextExpanded":true,"sourcePosition":116,"companyReply":{"date":"28 декабря 2022","summary":"Организация приглашает обращаться снова.","expanded":true,"attachmentsObserved":0},"reviewAttachmentsObserved":0,"linkEvidence":"Получена в диалоге «Поделиться отзывом»; удалены только si и utm_source."}
+    },
+    {
+      "author":"Кристина Неборак","date":"30 марта 2023","rating":5,
+      "summary":"Сдала ноутбук со сломанным корпусом; положительно оценила восстановление и работу мастера Александра.",
+      "reviewUrl":"https://yandex.ru/maps/org/68341760403/reviews?reviews%5BpublicId%5D=3u18npf8auhwv05rv0epbgvw10",
+      "topic":"ремонт корпуса ноутбука","photos":[],
+      "evidence":{"publicId":"3u18npf8auhwv05rv0epbgvw10","profileUrl":"https://yandex.ru/maps/user/3u18npf8auhwv05rv0epbgvw10","datePublished":"2023-03-30T18:55:54.790Z","fullTextExpanded":true,"sourcePosition":120,"companyReply":{"date":"3 апреля 2023","summary":"Организация благодарит за выбор и положительную оценку качества ремонта.","expanded":true,"attachmentsObserved":0},"reviewAttachmentsObserved":0,"linkEvidence":"Получена в диалоге «Поделиться отзывом»; удалены только si и utm_source.","photoCandidateStatus":"mentioned_but_unavailable","photoNote":"В тексте автор упоминает номер заказа на фотографии, но в доступном отзыве нет карусели/изображений; отсутствие вложения проверено DOM и визуально на странице 3. Фото не выдумано и не подменено галереей."}
+    },
+    {
+      "author":"Александр","date":"1 октября 2023","rating":4,
+      "summary":"Постоянно обращается с ремонтом ноутбуков; отмечает длительные сроки при невысокой цене и хорошем качестве.",
+      "reviewUrl":"https://yandex.ru/maps/org/68341760403/reviews?reviews%5BpublicId%5D=gxdu10hxm303x0x9jz5ub2p9v8",
+      "topic":"повторные ремонты ноутбуков, сроки и качество","photos":[],
+      "evidence":{"publicId":"gxdu10hxm303x0x9jz5ub2p9v8","profileUrl":"https://yandex.ru/maps/user/gxdu10hxm303x0x9jz5ub2p9v8","datePublished":"2023-10-01T14:15:29.592Z","fullTextExpanded":true,"sourcePosition":132,"companyReply":{"date":"2 октября 2023","summary":"Организация благодарит за обратную связь и приглашает обращаться.","expanded":true,"attachmentsObserved":0},"reviewAttachmentsObserved":0,"linkEvidence":"Получена в диалоге «Поделиться отзывом»; удалены только si и utm_source."}
+    }
+  ],
+  "discoveredSources":[],
+  "notes":["Проверены все годы и оценки доступной карточки; фильтр по ноутбукам и брендам применялся к полностью раскрытому корпусу.","В подходящих отзывах и раскрытых ответах доступных фото нет (0); аватары и 94 фото общей галереи не считались вложениями отзывов.","Полные тексты отзывов, аккаунт браузера, рекомендации подписчиков, cookies и токены в файлы не сохранены.","Манифест 173 записей — manifest.json. Для записей без публичного профиля применён составной ключ имени и даты; такие ключи не выдаются за ID платформы."]
+}

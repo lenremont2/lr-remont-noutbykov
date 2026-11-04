@@ -2,6 +2,7 @@
 import copy from "../../data/laptop-service.json";
 import LeadForm from "../ui/LeadForm.astro";
 import LeadModal from "../ui/LeadModal.astro";
+import MapSlot from "../ui/MapSlot.astro";
 import SocialLinks from "./SocialLinks.astro";
 const c = copy.contact.fields;
 interface Props {
@@ -10,6 +11,9 @@ interface Props {
   serviceName?: string;
   compactChannels?: boolean;
   scrollScene?: boolean;
+  eyebrow?: string;
+  messengerText?: string;
+  compactModal?: boolean;
 }
 const {
   title = c.H2,
@@ -17,6 +21,9 @@ const {
   serviceName = "Ремонт ноутбуков",
   compactChannels = true,
   scrollScene = false,
+  eyebrow,
+  messengerText = "",
+  compactModal = false,
 } = Astro.props;
 ---
 
@@ -27,6 +34,7 @@ const {
 >
   <div class="lr-container lr-contact__grid">
     <div class="lr-contact__copy">
+      {eyebrow && <p class="lr-eyebrow">{eyebrow}</p>}
       <h2>{title}</h2>
       <p class="lr-lead">{lead}</p>
     </div>
@@ -48,7 +56,10 @@ const {
     </div>
     {
       compactChannels ? (
-        <SocialLinks title="Или напишите нам в мессенджере" text="" />
+        <SocialLinks
+          title="Или напишите нам в мессенджере"
+          text={messengerText}
+        />
       ) : (
         <SocialLinks />
       )
@@ -57,6 +68,7 @@ const {
 </section>
 <LeadModal
   id="lead"
+  compact={compactModal}
   title="Узнайте стоимость ремонта"
   closeLabel="Закрыть форму"
 >
@@ -69,19 +81,14 @@ const {
     source="hero"
     serviceName={serviceName}
     submitLabel="Узнать стоимость ремонта"
+    compact={compactModal}
   />
 </LeadModal>
-<div class="lr-mobile-bar" data-lr-mobile-bar hidden>
-  <a
-    class="lr-mobile-bar__call"
-    href="tel:+78123444444"
-    aria-label="Позвонить в Ленремонт">Позвонить</a
-  >
-  <a
-    class="lr-button"
-    href="#lr-contact"
-    data-lr-lead-open
-    data-source="mobile-bar"
-    aria-label="Узнать стоимость ремонта ноутбука">Узнать стоимость</a
-  >
-</div>
+<LeadModal id="map" title="Выберите мастерскую" closeLabel="Закрыть карту">
+  <div data-lr-map-view="workshops">
+    <MapSlot id="lr-map-workshops-modal" type="workshops" />
+  </div>
+  <div data-lr-map-view="address" hidden>
+    <MapSlot id="lr-map-address" type="address" />
+  </div>
+</LeadModal>

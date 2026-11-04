@@ -1,0 +1,21 @@
+{
+  "taskId": "card-029",
+  "result": "result.json",
+  "checkedDate": "2026-11-02",
+  "status": "partial",
+  "branch": "Санкт-Петербург, проспект Елизарова, 36",
+  "networkVerified": true,
+  "corpusStatus": "unknown",
+  "examinedReviews": 0,
+  "matchingReviews": 0,
+  "candidateReviews": 0,
+  "savedPhotos": 0,
+  "aggregate": {"rating": 3.0, "ratingCount": 6},
+  "evidence": [
+    "Вся публичная карточка просмотрена до футера; scrollTop 3543 + clientHeight 863 = scrollHeight 4406.",
+    "Отзывной ленты, сортировок, пагинации, раскрываемых текстов и изображений нет; есть агрегат и форма оценки.",
+    "Официальные контакты подтверждают адрес, телефон +78126404435, WhatsApp +78127023333 и социальную ссылку сети."
+  ],
+  "limitation": "Агрегат из 6 оценок не раскрывает отдельные отзывы. Полнота корпуса и наличие ноутбучных отзывов неизвестны.",
+  "files": ["result.json", "manifest.json"]
+}

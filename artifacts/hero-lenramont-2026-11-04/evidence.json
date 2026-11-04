@@ -1,0 +1,442 @@
+[
+  {
+    "width": 320,
+    "overflow": false,
+    "video": {
+      "playing": true,
+      "time": 0.622109,
+      "controls": false,
+      "loaded": true,
+      "previewOpacity": "0"
+    },
+    "parts": [
+      {
+        "cls": "lr-hero__stage",
+        "background": "rgb(12, 30, 58) url(\"http://localhost:4322/media/notebook-auto-poster.webp\") no-repeat scroll 50% 45% / cover padding-box border-box",
+        "padding": "0px",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 422.390625,
+          "top": 0,
+          "right": 320,
+          "bottom": 422.390625,
+          "left": 0
+        }
+      },
+      {
+        "cls": "lr-hero__reference-copy",
+        "background": "rgb(11, 28, 46) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "28px 20px",
+        "rect": {
+          "x": 16,
+          "y": 390.390625,
+          "width": 288,
+          "height": 1067.46875,
+          "top": 390.390625,
+          "right": 304,
+          "bottom": 1457.859375,
+          "left": 16
+        }
+      },
+      {
+        "cls": "lr-hero__benefit lr-hero__benefit--bonus",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "0px 0px 0px 30px",
+        "rect": {
+          "x": 36,
+          "y": 1345.859375,
+          "width": 248,
+          "height": 84,
+          "top": 1345.859375,
+          "right": 284,
+          "bottom": 1429.859375,
+          "left": 36
+        }
+      },
+      {
+        "cls": "lr-button lr-hero__primary",
+        "background": "rgb(232, 173, 69) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "14px 18px",
+        "rect": {
+          "x": 36,
+          "y": 901.859375,
+          "width": 248,
+          "height": 54,
+          "top": 901.859375,
+          "right": 284,
+          "bottom": 955.859375,
+          "left": 36
+        }
+      },
+      {
+        "cls": "lr-button lr-hero__secondary",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "14px 18px",
+        "rect": {
+          "x": 36,
+          "y": 959.859375,
+          "width": 248,
+          "height": 54,
+          "top": 959.859375,
+          "right": 284,
+          "bottom": 1013.859375,
+          "left": 36
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "video": {
+      "playing": true,
+      "time": 0.540856,
+      "controls": false,
+      "loaded": true,
+      "previewOpacity": "0"
+    },
+    "parts": [
+      {
+        "cls": "lr-hero__stage",
+        "background": "rgb(12, 30, 58) url(\"http://localhost:4322/media/notebook-auto-poster.webp\") no-repeat scroll 50% 45% / cover padding-box border-box",
+        "padding": "0px",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 514.796875,
+          "top": 0,
+          "right": 390,
+          "bottom": 514.796875,
+          "left": 0
+        }
+      },
+      {
+        "cls": "lr-hero__reference-copy",
+        "background": "rgb(11, 28, 46) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "28px 20px",
+        "rect": {
+          "x": 16,
+          "y": 482.796875,
+          "width": 358,
+          "height": 937.71875,
+          "top": 482.796875,
+          "right": 374,
+          "bottom": 1420.515625,
+          "left": 16
+        }
+      },
+      {
+        "cls": "lr-hero__benefit lr-hero__benefit--bonus",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "0px 0px 0px 30px",
+        "rect": {
+          "x": 36,
+          "y": 1329.515625,
+          "width": 318,
+          "height": 63,
+          "top": 1329.515625,
+          "right": 354,
+          "bottom": 1392.515625,
+          "left": 36
+        }
+      },
+      {
+        "cls": "lr-button lr-hero__primary",
+        "background": "rgb(232, 173, 69) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "14px 18px",
+        "rect": {
+          "x": 36,
+          "y": 969.515625,
+          "width": 318,
+          "height": 54,
+          "top": 969.515625,
+          "right": 354,
+          "bottom": 1023.515625,
+          "left": 36
+        }
+      },
+      {
+        "cls": "lr-button lr-hero__secondary",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "14px 18px",
+        "rect": {
+          "x": 36,
+          "y": 1027.515625,
+          "width": 318,
+          "height": 54,
+          "top": 1027.515625,
+          "right": 354,
+          "bottom": 1081.515625,
+          "left": 36
+        }
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "video": {
+      "playing": true,
+      "time": 0.561635,
+      "controls": false,
+      "loaded": true,
+      "previewOpacity": "0"
+    },
+    "parts": [
+      {
+        "cls": "lr-hero__stage",
+        "background": "rgb(12, 30, 58) url(\"http://localhost:4322/media/notebook-auto-poster.webp\") no-repeat scroll 50% 45% / cover padding-box border-box",
+        "padding": "0px",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 520,
+          "top": 0,
+          "right": 768,
+          "bottom": 520,
+          "left": 0
+        }
+      },
+      {
+        "cls": "lr-hero__reference-copy",
+        "background": "rgb(11, 28, 46) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "28px 20px",
+        "rect": {
+          "x": 44,
+          "y": 488,
+          "width": 680,
+          "height": 735.625,
+          "top": 488,
+          "right": 724,
+          "bottom": 1223.625,
+          "left": 44
+        }
+      },
+      {
+        "cls": "lr-hero__benefit lr-hero__benefit--bonus",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "0px 0px 0px 30px",
+        "rect": {
+          "x": 64,
+          "y": 1153.625,
+          "width": 640,
+          "height": 42,
+          "top": 1153.625,
+          "right": 704,
+          "bottom": 1195.625,
+          "left": 64
+        }
+      },
+      {
+        "cls": "lr-button lr-hero__primary",
+        "background": "rgb(232, 173, 69) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "14px 18px",
+        "rect": {
+          "x": 64,
+          "y": 877.625,
+          "width": 640,
+          "height": 54,
+          "top": 877.625,
+          "right": 704,
+          "bottom": 931.625,
+          "left": 64
+        }
+      },
+      {
+        "cls": "lr-button lr-hero__secondary",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "14px 18px",
+        "rect": {
+          "x": 64,
+          "y": 935.625,
+          "width": 640,
+          "height": 54,
+          "top": 935.625,
+          "right": 704,
+          "bottom": 989.625,
+          "left": 64
+        }
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "overflow": false,
+    "video": {
+      "playing": true,
+      "time": 0.540126,
+      "controls": false,
+      "loaded": true,
+      "previewOpacity": "0"
+    },
+    "parts": [
+      {
+        "cls": "lr-hero__stage",
+        "background": "rgb(12, 30, 58) url(\"http://localhost:4322/media/notebook-auto-poster.webp\") no-repeat scroll 50% 45% / cover padding-box border-box",
+        "padding": "0px",
+        "rect": {
+          "x": 582.390625,
+          "y": 113.953125,
+          "width": 441.609375,
+          "height": 588.8125,
+          "top": 113.953125,
+          "right": 1024,
+          "bottom": 702.765625,
+          "left": 582.390625
+        }
+      },
+      {
+        "cls": "lr-hero__reference-copy",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "0px",
+        "rect": {
+          "x": 0,
+          "y": 72,
+          "width": 518.390625,
+          "height": 672.734375,
+          "top": 72,
+          "right": 518.390625,
+          "bottom": 744.734375,
+          "left": 0
+        }
+      },
+      {
+        "cls": "lr-hero__benefit lr-hero__benefit--bonus",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "0px 0px 0px 30px",
+        "rect": {
+          "x": 0,
+          "y": 702.734375,
+          "width": 518.390625,
+          "height": 42,
+          "top": 702.734375,
+          "right": 518.390625,
+          "bottom": 744.734375,
+          "left": 0
+        }
+      },
+      {
+        "cls": "lr-button lr-hero__primary",
+        "background": "rgb(232, 173, 69) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "14px 18px",
+        "rect": {
+          "x": 0,
+          "y": 413.734375,
+          "width": 253.1875,
+          "height": 54,
+          "top": 413.734375,
+          "right": 253.1875,
+          "bottom": 467.734375,
+          "left": 0
+        }
+      },
+      {
+        "cls": "lr-button lr-hero__secondary",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "14px 18px",
+        "rect": {
+          "x": 265.1875,
+          "y": 413.734375,
+          "width": 253.203125,
+          "height": 54,
+          "top": 413.734375,
+          "right": 518.390625,
+          "bottom": 467.734375,
+          "left": 265.1875
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "overflow": false,
+    "video": {
+      "playing": true,
+      "time": 0.527346,
+      "controls": false,
+      "loaded": true,
+      "previewOpacity": "0"
+    },
+    "parts": [
+      {
+        "cls": "lr-hero__stage",
+        "background": "rgb(12, 30, 58) url(\"http://localhost:4322/media/notebook-auto-poster.webp\") no-repeat scroll 50% 45% / cover padding-box border-box",
+        "padding": "0px",
+        "rect": {
+          "x": 860,
+          "y": 91.015625,
+          "width": 480,
+          "height": 640,
+          "top": 91.015625,
+          "right": 1340,
+          "bottom": 731.015625,
+          "left": 860
+        }
+      },
+      {
+        "cls": "lr-hero__reference-copy",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "0px",
+        "rect": {
+          "x": 100,
+          "y": 72,
+          "width": 635.03125,
+          "height": 678.046875,
+          "top": 72,
+          "right": 735.03125,
+          "bottom": 750.046875,
+          "left": 100
+        }
+      },
+      {
+        "cls": "lr-hero__benefit lr-hero__benefit--bonus",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "0px 0px 0px 30px",
+        "rect": {
+          "x": 100,
+          "y": 708.046875,
+          "width": 635.03125,
+          "height": 42,
+          "top": 708.046875,
+          "right": 735.03125,
+          "bottom": 750.046875,
+          "left": 100
+        }
+      },
+      {
+        "cls": "lr-button lr-hero__primary",
+        "background": "rgb(232, 173, 69) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "14px 18px",
+        "rect": {
+          "x": 100,
+          "y": 482.046875,
+          "width": 311.515625,
+          "height": 54,
+          "top": 482.046875,
+          "right": 411.515625,
+          "bottom": 536.046875,
+          "left": 100
+        }
+      },
+      {
+        "cls": "lr-button lr-hero__secondary",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "padding": "14px 18px",
+        "rect": {
+          "x": 423.515625,
+          "y": 482.046875,
+          "width": 311.515625,
+          "height": 54,
+          "top": 482.046875,
+          "right": 735.03125,
+          "bottom": 536.046875,
+          "left": 423.515625
+        }
+      }
+    ]
+  }
+]

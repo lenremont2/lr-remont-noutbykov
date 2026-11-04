@@ -1,13 +1,16 @@
 ---
 import copy from "../../data/laptop-service.json";
 import reviews from "../../data/reviews.json";
+import homePhotos from "../../data/review-illustrations.json";
 import ReviewCard from "../ui/ReviewCard.astro";
 import SectionHeading from "../ui/SectionHeading.astro";
 const c = copy.reviews.fields;
 interface Props {
   scrollScene?: boolean;
+  title?: string;
+  homeVariant?: boolean;
 }
-const { scrollScene = false } = Astro.props;
+const { scrollScene = false, title = c.H2, homeVariant = false } = Astro.props;
 interface Aggregator {
   name: string;
   url: string;
@@ -28,62 +31,38 @@ const countLabel = (count: number) => {
   if (lastTwo >= 11 && lastTwo <= 14) return "оценок";
   return last === 1 ? "оценка" : last >= 2 && last <= 4 ? "оценки" : "оценок";
 };
+const documents = [
+  {
+    image: "/media/lenremont-nagrady_blagodarnosti1-1.jpg",
+    title: "Диплом «Gazelle Бизнеса 2016»",
+  },
+  {
+    image: "/media/lenremont-nagrady_blagodarnosti2-1.jpg",
+    title: "Благодарственное письмо школы-интерната № 6",
+  },
+  {
+    image: "/media/lenremont-svidetelstvo3-1.jpg",
+    title: "Свидетельство на товарный знак № 430931",
+  },
+  {
+    image: "/media/lenremont-svidetelstvo4-1.jpg",
+    title: "Свидетельство на товарный знак № 442165",
+  },
+];
 ---
 
 <section
   id="lr-reviews"
-  class="lr-section lr-section--compact"
+  class:list={[
+    "lr-section lr-section--compact",
+    { "lr-reviews--wide-photos": homeVariant },
+  ]}
   data-lr-review-slider
   data-sc-act={scrollScene ? "flow" : undefined}
 >
   <div class="lr-container lr-reviews">
     <div class="lr-reviews__header">
-      <SectionHeading title={c.H2} />
-      <div class="lr-reviews__controls" data-lr-review-controls hidden>
-        <button
-          class="lr-reviews__arrow"
-          type="button"
-          data-lr-review-prev
-          aria-label="Предыдущие отзывы"
-          aria-controls="lr-review-track"
-          disabled
-        >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            aria-hidden="true"
-            ><path
-              d="m14 6-6 6 6 6"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"></path></svg
-          >
-        </button>
-        <button
-          class="lr-reviews__arrow"
-          type="button"
-          data-lr-review-next
-          aria-label="Следующие отзывы"
-          aria-controls="lr-review-track"
-        >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            aria-hidden="true"
-            ><path
-              d="m10 6 6 6-6 6"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"></path></svg
-          >
-        </button>
-      </div>
+      <SectionHeading title={title} />
     </div>
     {
       aggregators.length > 0 && (
@@ -109,9 +88,7 @@ const countLabel = (count: number) => {
                   ))}
                 </span>
                 <span class="lr-reviews__rating-source">
-                  <a href={item.url} target="_blank" rel="noopener noreferrer">
-                    {item.name}
-                  </a>
+                  <span>{item.name}</span>
                   <span aria-hidden="true"> · </span>
                   <span class="lr-reviews__rating-count">
                     {item.ratingCount.toLocaleString("ru-RU")}{" "}
@@ -121,17 +98,29 @@ const countLabel = (count: number) => {
               </div>
             </li>
           ))}
-          <li>
-            <div class="lr-reviews__rating-card lr-reviews__award">
-              <strong class="lr-reviews__rating-value">2026</strong>
-              <span class="lr-reviews__award-title">Рейтинг брендов</span>
-              <span class="lr-reviews__rating-source">Деловой Петербург</span>
-            </div>
-          </li>
         </ul>
       )
     }
   </div>
+  {
+    !homeVariant && (
+      <div class="lr-container lr-reviews__awards">
+        <h3>Признание компании</h3>
+        <div class="lr-reviews__award">
+          <>
+            <strong>2026</strong>
+            <p>
+              Рейтинг брендов
+              <>
+                <br />
+                <span>Деловой Петербург</span>
+              </>
+            </p>
+          </>
+        </div>
+      </div>
+    )
+  }
   <div class="lr-reviews__stage">
     <div
       class="lr-container lr-reviews__frame"
@@ -149,15 +138,79 @@ const countLabel = (count: number) => {
       tabindex="0"
     >
       {
-        reviews.items.map((review) => (
-          <ReviewCard
-            review={review}
-            source={
-              reviews.sources[review.source as keyof typeof reviews.sources]
-            }
-          />
-        ))
+        reviews.items
+          .filter((review) => !homeVariant || review.name !== "Петр Перцев")
+          .map((review) => (
+            <ReviewCard
+              hideYandexLinks={homeVariant}
+              review={
+                homeVariant &&
+                homePhotos[review.name as keyof typeof homePhotos]
+                  ? {
+                      ...review,
+                      photos: [
+                        homePhotos[review.name as keyof typeof homePhotos],
+                      ],
+                    }
+                  : review
+              }
+              source={
+                reviews.sources[review.source as keyof typeof reviews.sources]
+              }
+            />
+          ))
       }
     </div>
   </div>
+  {
+    homeVariant && (
+      <div class="lr-container lr-reviews__documents">
+        <div class="lr-reviews__subhead">
+          <h3>Официальные дипломы и сертификаты</h3>
+        </div>
+        <ul
+          class="lr-documents"
+          tabindex="0"
+          aria-label="Дипломы и сертификаты"
+        >
+          {documents.map((document) => (
+            <li class="lr-document">
+              <a
+                class="lr-document__preview"
+                href={document.image}
+                data-lr-photo-open
+                aria-label={`Открыть: ${document.title}`}
+              >
+                <img
+                  src={document.image}
+                  alt={document.title}
+                  width="924"
+                  height="1250"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="lr-document__copy">
+                <h4>{document.title}</h4>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+  <dialog
+    class:list={["lr-photo-dialog", { "lr-photo-dialog--wide": homeVariant }]}
+    data-lr-review-photo
+    aria-label={homeVariant ? "Просмотр фотографии" : "Фотография из отзыва"}
+  >
+    <button
+      type="button"
+      class="lr-photo-dialog__close"
+      data-lr-photo-close
+      aria-label="Закрыть фотографию">×</button
+    >
+    <img data-lr-photo-image alt="" />
+    <p data-lr-photo-caption></p>
+  </dialog>
 </section>

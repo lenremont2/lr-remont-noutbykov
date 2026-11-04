@@ -1,5 +1,6 @@
 ---
 interface Props {
+  hideYandexLinks?: boolean;
   review: {
     name: string;
     avatar?: string;
@@ -13,11 +14,15 @@ interface Props {
       alt: string;
       width: number;
       height: number;
+      illustration?: boolean;
     }[];
   };
   source: { name: string; url: string; branch: string };
 }
-const { review, source } = Astro.props;
+const { review, source, hideYandexLinks = false } = Astro.props;
+const hideSourceLink =
+  hideYandexLinks &&
+  /yandex|Яндекс/i.test(source.name + source.url + (review.reviewUrl ?? ""));
 const nameParts = review.name.trim().split(/\s+/);
 const initials = (
   nameParts.length > 1
@@ -27,6 +32,8 @@ const initials = (
         .join("")
     : review.name.trim().slice(0, 2)
 ).toLocaleUpperCase("ru-RU");
+const longReview = review.text.length > 145;
+const excerpt = review.text.slice(0, 105).replace(/\s+\S*$/, "") + "…";
 ---
 
 <article class="lr-review">
@@ -77,32 +84,88 @@ const initials = (
         <span aria-hidden="true">{review.rating}/5</span>
       </div>
     </div>
+    {
+      hideSourceLink ? (
+        <span class="lr-review__source">{source.name}</span>
+      ) : (
+        <a
+          class="lr-review__source"
+          href={review.reviewUrl ?? source.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Отзывы: ${review.name}, ${source.name}, ${source.branch}`}
+        >
+          {source.name}
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M6 18 18 6M7 6h11v11"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      )
+    }
   </header>
   {
     review.subject && (
       <p class="lr-caption lr-review__subject">{review.subject}</p>
     )
   }
-  <p class="lr-review__text">{review.text}</p>
+  {
+    longReview ? (
+      <details class="lr-review__details">
+        <summary>
+          <>
+            <span class="lr-review__excerpt">{excerpt}</span>
+            <span class="lr-review__read">Читать далее</span>
+            <span class="lr-review__collapse">Свернуть отзыв</span>
+          </>
+        </summary>
+        <p class="lr-review__text">{review.text}</p>
+      </details>
+    ) : (
+      <p class="lr-review__text">{review.text}</p>
+    )
+  }
   {
     review.photos?.length ? (
       <div
         class="lr-review__photos"
         role="group"
-        aria-label={`Фотографии к отзыву ${review.name}`}
+        aria-label={
+          review.photos.some((photo) => photo.illustration)
+            ? "Иллюстрация ремонта"
+            : `Фотографии к отзыву ${review.name}`
+        }
       >
         {review.photos.map((photo) => (
           <a
             class="lr-review__photo"
+            data-lr-photo-open
             href={photo.src}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Открыть фото к отзыву ${review.name}: ${photo.alt}`}
+            aria-label={
+              photo.illustration
+                ? `Открыть иллюстрацию: ${photo.alt}`
+                : `Открыть фото к отзыву ${review.name}: ${photo.alt}`
+            }
           >
             <img
               class="lr-review__photo-image"
               src={photo.src}
-              alt={photo.alt}
+              alt={photo.alt
+                .replace(/^Иллюстрация ремонта: /, "")
+                .replace(/ \(создано с ИИ\)$/, "")}
               width={photo.width}
               height={photo.height}
               loading="lazy"
@@ -113,28 +176,4 @@ const initials = (
       </div>
     ) : null
   }
-  <footer class="lr-review__footer">
-    <a
-      class="lr-review__source"
-      href={review.reviewUrl ?? source.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={`Отзывы: ${review.name}, ${source.name}, ${source.branch}`}
-    >
-      {source.name}<svg
-        width="12"
-        height="12"
-        viewBox="0 0 24 24"
-        fill="none"
-        aria-hidden="true"
-        ><path
-          d="M6 18 18 6M7 6h11v11"
-          stroke="currentColor"
-          stroke-width="1.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"></path></svg
-      >
-    </a>
-    <span class="lr-review__date">{review.date}</span>
-  </footer>
 </article>

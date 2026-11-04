@@ -1,0 +1,177 @@
+{
+  "taskId": "card-054",
+  "platform": "Flamp",
+  "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001030609738",
+  "branch": "Кораблестроителей, 30",
+  "city": "Санкт-Петербург",
+  "networkEvidence": {
+    "name": "Ленремонт, ремонтное городское предприятие",
+    "address": "Санкт-Петербург, улица Кораблестроителей, 30 — цокольный этаж",
+    "phone": "+7 (812) 640-44-35",
+    "officialWebsite": "http://lenremont.ru",
+    "social": "https://vk.com/lenremont",
+    "evidence": "На карточке указаны сайт lenremont.ru, сетевой телефон, адрес, официальный представитель и ссылка «Ещё 21 филиал». Ответы компании подписаны ООО «ЛЕНРЕМОНТ»."
+  },
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 3,
+    "examinedCount": 3,
+    "endpointObserved": true,
+    "method": "Собственная вкладка Chrome через CUA. Прочитаны все 3 отзыва; оба сокращённых текста раскрыты кнопкой «Показать целиком». Сверены опубликованные даты/оценки в DOM schema.org. Просмотрен конец списка до footer, дополнительных страниц или загрузки отзывов нет.",
+    "stopReason": "Достигнут конец всей доступной выдачи: 3 из 3 отзывов. Найден 1 отзыв с явным упоминанием ноутбука. Вложений к нему нет; изображения — аватар автора и логотип ответа компании."
+  },
+  "reviews": [
+    {
+      "author": "Илья Алексеев",
+      "date": "2026-09-26T15:30:24+03:00",
+      "rating": 5,
+      "summary": "Ноутбук перестал включаться; автор доволен бесплатной диагностикой, устранением неисправности питания за день, объяснением причины и рекомендациями по охлаждению. Упоминает чек, двухлетнюю гарантию и набор для экрана. Недостаток — трудно дозвониться.",
+      "reviewUrl": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001030609738/otzyv-10251920",
+      "topic": "Ремонт ноутбука: цепь питания; положительный отзыв с замечанием о дозвоне",
+      "photos": [],
+      "evidence": "Полный текст раскрыт в карточке. Прямо упомянут ноутбук и ремонт цепи питания. Оценка ratingValue=5, дата datePublished=2026-09-26T15:30:24+03:00. В пределах .ugc-item[data-entity-id=10251920] найдены только img.image.avatar__image автора и компании; ссылок/изображений вложений отзыва нет."
+    }
+  ],
+  "discoveredSources": [
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552840261007",
+      "address": "Звёздная улица, 5 к1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552840261005",
+      "address": "проспект Просвещения, 20",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552839608766",
+      "address": "улица Решетникова, 3",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001025261830",
+      "address": "проспект Авиаконструкторов, 4",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001020122849",
+      "address": "проспект Ветеранов, 9",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001047818597",
+      "address": "улица Фрунзе, 3",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001007540186",
+      "address": "Киевская улица, 32 лит В",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001048368935",
+      "address": "проспект Пятилеток, 14 к1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348553838710040",
+      "address": "проспект Большевиков, 25",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001039113813",
+      "address": "проспект Маршала Жукова, 35 к3",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001035088365",
+      "address": "проспект Науки, 8 к1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001093090102",
+      "address": "проспект Энгельса, 19",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001044671839",
+      "address": "проспект Испытателей, 11 к1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001045109632",
+      "address": "улица Ушинского, 25 к1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001101432136",
+      "address": "Круговая улица, 47",
+      "city": null
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001058962565",
+      "address": "Минеральная улица, 13 к5",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001035088361",
+      "address": "проспект Луначарского, 56 к1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001067809478",
+      "address": "улица Ярослава Гашека, 4 к1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001060840319",
+      "address": "Московский проспект, 212",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001060449107",
+      "address": "проспект Косыгина, 28 к1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001030609751",
+      "address": "проспект Елизарова, 36",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552840261006",
+      "address": null,
+      "city": null
+    }
+  ],
+  "notes": [
+    "Flamp показывает предупреждение о скором прекращении работы; карточка и каталог филиалов доступны.",
+    "Два исключённых отзыва: Ирина Дорохина, 2026-09-13, 5★ — общий ремонт техники без ноутбука; Marat Averin, 2018-08-14, 3★ — рассуждение о чужих отзывах и бесплатной диагностике, без собственного ноутбучного кейса.",
+    "Каталог «Ещё 21 филиал» сообщает 22 места; просмотрены страницы 1, 2, 3. В discoveredSources включены 21 другая карточка каталога и одна карточка, непосредственно связанная ссылкой из отзыва Marat Averin (адрес неизвестен). Соседние отзывы не исследованы в рамках этой карточки.",
+    "У Круговой улицы, 47 каталог не выводит населённый пункт; city оставлен null.",
+    "Ссылка «Открыть в 2ГИС» в каталоге ведёт только на https://2gis.ru/. На исходной карточке наблюдалась ссылка исправления данных https://2gis.ru/novosibirsk/firm/70000001030609738/feedback; это не подтверждённый URL карточки СПб, поэтому не добавлен как эквивалент.",
+    "Фото не скачивались: подходящий отзыв не содержит вложенных фото."
+  ]
+}

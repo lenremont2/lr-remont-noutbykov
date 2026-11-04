@@ -1,6 +1,11 @@
 ---
 import copy from "../../data/laptop-service.json";
 import LeadForm from "../ui/LeadForm.astro";
+import type { BrandPage } from "../../data/service-pages";
+interface Props {
+  brand?: Pick<BrandPage, "label">;
+}
+const { brand } = Astro.props;
 interface QuizOption {
   value: string;
   label: string;
@@ -28,24 +33,33 @@ const questions: { name: string; title: string; options: QuizOption[] }[] = [
   },
   {
     name: "symptom",
-    title: "Чем помочь вашему ноутбуку?",
+    title: "Что случилось с ноутбуком?",
     options: [
       {
         value: "Физическая поломка",
-        label: "Починить поломку",
-        detail:
-          "Не включается, залит, повреждены экран, клавиатура или разъёмы",
+        label: "Сломался экран, разъём или не включается",
+        detail: "Повреждены экран, клавиатура, петли или цепи питания",
         image: "/media/failure-impact.webp",
       },
       {
+        value: "Залит водой, чаем или кофе",
+        label: "Залит водой, чаем или кофе",
+        detail: "Не включайте ноутбук и не сушите феном",
+      },
+      {
+        value: "Восстановление данных",
+        label: "Нужно восстановить данные и файлы",
+        detail: "Фото, документы, базы 1С и рабочие проекты",
+      },
+      {
         value: "Программы и настройка",
-        label: "Помочь с программами и настройкой",
+        label: "Вирусы, программы или сбой Windows / macOS",
         detail: "Windows или macOS не загружается, ошибки, зависания, вирусы",
         image: "/media/failure-software.webp",
       },
       {
         value: "Чистка и перегрев",
-        label: "Почистить и устранить перегрев",
+        label: "Греется, шумит или гаснет",
         detail: "Греется, шумит или выключается под нагрузкой",
         image: "/media/failure-overheating.webp",
       },
@@ -87,7 +101,7 @@ const questions: { name: string; title: string; options: QuizOption[] }[] = [
       {
         value: "courier",
         label: "Передам курьеру",
-        detail: "Согласуем адрес и доставку",
+        detail: "Заберём и привезём курьером по акту",
         image: "/media/laptop-courier.webp",
       },
       {
@@ -98,6 +112,9 @@ const questions: { name: string; title: string; options: QuizOption[] }[] = [
     ],
   },
 ];
+const pageQuestions = brand
+  ? questions.filter((question) => question.name !== "device_category")
+  : questions;
 ---
 
 <section
@@ -108,13 +125,16 @@ const questions: { name: string; title: string; options: QuizOption[] }[] = [
   <div class="lr-container lr-quiz__layout">
     <div class="lr-quiz__intro">
       <p class="lr-eyebrow">Начнём с вашей ситуации</p>
-      <h2 id="lr-quiz-title">Поможем выбрать удобный способ ремонта</h2>
+      <h2 id="lr-quiz-title">
+        Узнайте стоимость ремонта{brand ? ` ${brand.label}` : ""}
+      </h2>
       <p class="lr-lead">
-        Ответьте на три вопроса — при обращении сориентируем по стоимости и
-        подберём вариант обслуживания.
+        Выберите неисправность и удобный формат. Оставьте номер — назовём
+        стоимость и закрепим за вами скидку до 15%.
       </p>
       <p class="lr-caption">
-        Полную сумму согласуем после диагностики, до начала работ.
+        Полную сумму согласуем после диагностики, до начала работ. Диагностика —
+        0 ₽ даже при отказе.
       </p>
     </div>
     <div class="lr-quiz__home" data-lr-quiz-home>
@@ -131,11 +151,15 @@ const questions: { name: string; title: string; options: QuizOption[] }[] = [
           role="status"
           aria-live="polite"
         >
-          Три вопроса и контактный шаг
+          {
+            brand
+              ? "Два вопроса и контактный шаг"
+              : "Три вопроса и контактный шаг"
+          }
         </p>
         <form data-lr-quiz-questions data-hop-lead-ignore novalidate>
           {
-            questions.map((question) => (
+            pageQuestions.map((question) => (
               <fieldset class="lr-quiz__step" data-lr-quiz-step>
                 <legend class="lr-quiz__question" tabindex="-1">
                   {question.title}
@@ -150,10 +174,22 @@ const questions: { name: string; title: string; options: QuizOption[] }[] = [
                         required
                       />
                       <span class="lr-quiz__option-copy">
-                        <strong>{option.label}</strong>
+                        <strong>
+                          {brand
+                            ? option.label.replaceAll(
+                                "Windows / macOS",
+                                "Windows",
+                              )
+                            : option.label}
+                        </strong>
                         {option.detail && (
                           <span class="lr-quiz__option-detail">
-                            {option.detail}
+                            {brand
+                              ? option.detail.replaceAll(
+                                  "Windows или macOS",
+                                  "Windows",
+                                )
+                              : option.detail}
                           </span>
                         )}
                       </span>
@@ -175,6 +211,19 @@ const questions: { name: string; title: string; options: QuizOption[] }[] = [
             ))
           }
         </form>
+        <div class="lr-quiz__analysis" data-lr-quiz-analysis hidden>
+          <span class="lr-quiz__spinner" aria-hidden="true"></span>
+          <h3 tabindex="-1">Подготовим расчёт со скидкой до 15%</h3>
+          <p role="status">Ваши ответы сохранены.</p>
+          <p class="lr-caption" data-lr-quiz-summary></p>
+          <p class="lr-caption">
+            Оставьте номер, чтобы получить стоимость ремонта с учётом ваших
+            ответов.
+          </p>
+          <button type="button" class="lr-button" data-lr-quiz-finish
+            >Перейти к контактам</button
+          >
+        </div>
         <div class="lr-quiz__step" data-lr-quiz-step>
           <h3 class="lr-quiz__question" tabindex="-1">Куда вам перезвонить?</h3>
           <p class="lr-caption">
@@ -184,7 +233,9 @@ const questions: { name: string; title: string; options: QuizOption[] }[] = [
           <LeadForm
             id="lr-quiz-form"
             source="quiz"
-            submitLabel="Получить консультацию"
+            serviceName={brand ? `Ремонт ноутбуков ${brand.label}` : undefined}
+            submitLabel="Получить расчёт стоимости"
+            requestTiming
           />
         </div>
         <p class="lr-quiz__error" data-lr-quiz-error role="alert"></p>

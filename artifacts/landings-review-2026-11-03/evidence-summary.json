@@ -1,0 +1,175 @@
+{
+  "archive": "C:/Users/User/Downloads/landings.zip",
+  "sha256": "bfe658bbb1788ce2a213490e678dc35231c9754fc90f7634b6fad89046e40013",
+  "method": "ZIP inventory and HTML/JS source inspection; Taste browser capture; Hallmark static audit. No REA MCP tools available.",
+  "mediaRelocation": "local-preview changes media URLs only, uses matching project files and archived videos; reference folder unchanged.",
+  "discarded": "current-inspect has an incorrect HTTP asset root and is excluded from conclusions.",
+  "productionBuild": "npm run build: 56 pages built successfully after allowing child processes outside the sandbox",
+  "summary": {
+    "reference-inspect": {
+      "at": "2026-11-03T08:43:43.529Z",
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 900,
+          "consoleErrors": []
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "consoleErrors": []
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "consoleErrors": []
+        }
+      ],
+      "fails": 21,
+      "warns": 7,
+      "images": [
+        {
+          "viewport": "desktop",
+          "width": 1440,
+          "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-inspect\\desktop-fold.jpg",
+          "pages": [
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-inspect\\desktop-page-01.jpg",
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-inspect\\desktop-page-02.jpg",
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-inspect\\desktop-page-03.jpg"
+          ],
+          "film": []
+        },
+        {
+          "viewport": "tablet",
+          "width": 768,
+          "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-inspect\\tablet-fold.jpg",
+          "pages": [
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-inspect\\tablet-page-01.jpg",
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-inspect\\tablet-page-02.jpg"
+          ],
+          "film": []
+        },
+        {
+          "viewport": "mobile",
+          "width": 390,
+          "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-inspect\\mobile-fold.jpg",
+          "pages": [
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-inspect\\mobile-page-01.jpg",
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-inspect\\mobile-page-02.jpg"
+          ],
+          "film": []
+        }
+      ]
+    },
+    "reference-local-inspect": {
+      "at": "2026-11-03T08:47:15.343Z",
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 900,
+          "consoleErrors": []
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "consoleErrors": []
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "consoleErrors": []
+        }
+      ],
+      "fails": 19,
+      "warns": 7,
+      "images": [
+        {
+          "viewport": "desktop",
+          "width": 1440,
+          "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\desktop-fold.jpg",
+          "pages": [
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\desktop-page-01.jpg",
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\desktop-page-02.jpg",
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\desktop-page-03.jpg"
+          ],
+          "film": []
+        },
+        {
+          "viewport": "tablet",
+          "width": 768,
+          "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\tablet-fold.jpg",
+          "pages": [
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\tablet-page-01.jpg",
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\tablet-page-02.jpg"
+          ],
+          "film": []
+        },
+        {
+          "viewport": "mobile",
+          "width": 390,
+          "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\mobile-fold.jpg",
+          "pages": [
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\mobile-page-01.jpg",
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\mobile-page-02.jpg"
+          ],
+          "film": []
+        }
+      ]
+    },
+    "current-corrected": {
+      "at": "2026-11-03T08:46:27.335Z",
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 900,
+          "consoleErrors": []
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "consoleErrors": []
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "consoleErrors": []
+        }
+      ],
+      "fails": 14,
+      "warns": 8,
+      "images": [
+        {
+          "viewport": "desktop",
+          "width": 1440,
+          "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-corrected\\desktop-fold.jpg",
+          "pages": [
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-corrected\\desktop-page-01.jpg",
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-corrected\\desktop-page-02.jpg",
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-corrected\\desktop-page-03.jpg"
+          ],
+          "film": []
+        },
+        {
+          "viewport": "tablet",
+          "width": 768,
+          "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-corrected\\tablet-fold.jpg",
+          "pages": [
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-corrected\\tablet-page-01.jpg",
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-corrected\\tablet-page-02.jpg"
+          ],
+          "film": []
+        },
+        {
+          "viewport": "mobile",
+          "width": 390,
+          "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-corrected\\mobile-fold.jpg",
+          "pages": [
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-corrected\\mobile-page-01.jpg",
+            "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-corrected\\mobile-page-02.jpg"
+          ],
+          "film": []
+        }
+      ]
+    }
+  }
+}

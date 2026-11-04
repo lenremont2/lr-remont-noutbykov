@@ -1,0 +1,149 @@
+{
+  "checks": [
+    {
+      "brand": "sony",
+      "copyBackground": "rgb(7, 19, 38)",
+      "copyRadius": "24px 24px 0px 0px",
+      "desktopSideBySide": false,
+      "documentWidth": 320,
+      "imageLeft": 0,
+      "imageRight": 320,
+      "overlap": 24,
+      "photoLoaded": true,
+      "width": 320
+    },
+    {
+      "brand": "sony",
+      "copyBackground": "rgb(7, 19, 38)",
+      "copyRadius": "24px 24px 0px 0px",
+      "desktopSideBySide": false,
+      "documentWidth": 390,
+      "imageLeft": 0,
+      "imageRight": 390,
+      "overlap": 24,
+      "photoLoaded": true,
+      "width": 390
+    },
+    {
+      "brand": "sony",
+      "copyBackground": "rgb(7, 19, 38)",
+      "copyRadius": "24px 24px 0px 0px",
+      "desktopSideBySide": false,
+      "documentWidth": 768,
+      "imageLeft": 0,
+      "imageRight": 768,
+      "overlap": 24,
+      "photoLoaded": true,
+      "width": 768
+    },
+    {
+      "brand": "sony",
+      "copyBackground": "rgb(7, 19, 38)",
+      "copyRadius": "24px 24px 0px 0px",
+      "desktopSideBySide": false,
+      "documentWidth": 1023,
+      "imageLeft": 0,
+      "imageRight": 1023,
+      "overlap": 24,
+      "photoLoaded": true,
+      "width": 1023
+    },
+    {
+      "brand": "sony",
+      "copyBackground": "rgba(0, 0, 0, 0)",
+      "copyRadius": "0px",
+      "desktopSideBySide": true,
+      "documentWidth": 1024,
+      "imageLeft": 584.796875,
+      "imageRight": 1023.984375,
+      "overlap": 660,
+      "photoLoaded": true,
+      "width": 1024
+    },
+    {
+      "brand": "sony",
+      "copyBackground": "rgba(0, 0, 0, 0)",
+      "copyRadius": "0px",
+      "desktopSideBySide": true,
+      "documentWidth": 1440,
+      "imageLeft": 805.59375,
+      "imageRight": 1360,
+      "overlap": 615.4375,
+      "photoLoaded": true,
+      "width": 1440
+    },
+    {
+      "brand": "huawei",
+      "copyBackground": "rgb(7, 19, 38)",
+      "copyRadius": "24px 24px 0px 0px",
+      "desktopSideBySide": false,
+      "documentWidth": 320,
+      "imageLeft": 0,
+      "imageRight": 320,
+      "overlap": 24,
+      "photoLoaded": true,
+      "width": 320
+    },
+    {
+      "brand": "huawei",
+      "copyBackground": "rgb(7, 19, 38)",
+      "copyRadius": "24px 24px 0px 0px",
+      "desktopSideBySide": false,
+      "documentWidth": 390,
+      "imageLeft": 0,
+      "imageRight": 390,
+      "overlap": 24,
+      "photoLoaded": true,
+      "width": 390
+    },
+    {
+      "brand": "huawei",
+      "copyBackground": "rgb(7, 19, 38)",
+      "copyRadius": "24px 24px 0px 0px",
+      "desktopSideBySide": false,
+      "documentWidth": 768,
+      "imageLeft": 0,
+      "imageRight": 768,
+      "overlap": 24,
+      "photoLoaded": true,
+      "width": 768
+    },
+    {
+      "brand": "huawei",
+      "copyBackground": "rgb(7, 19, 38)",
+      "copyRadius": "24px 24px 0px 0px",
+      "desktopSideBySide": false,
+      "documentWidth": 1023,
+      "imageLeft": 0,
+      "imageRight": 1023,
+      "overlap": 24,
+      "photoLoaded": true,
+      "width": 1023
+    },
+    {
+      "brand": "huawei",
+      "copyBackground": "rgba(0, 0, 0, 0)",
+      "copyRadius": "0px",
+      "desktopSideBySide": true,
+      "documentWidth": 1024,
+      "imageLeft": 584.796875,
+      "imageRight": 1023.984375,
+      "overlap": 660,
+      "photoLoaded": true,
+      "width": 1024
+    },
+    {
+      "brand": "huawei",
+      "copyBackground": "rgba(0, 0, 0, 0)",
+      "copyRadius": "0px",
+      "desktopSideBySide": true,
+      "documentWidth": 1440,
+      "imageLeft": 805.59375,
+      "imageRight": 1360,
+      "overlap": 593.84375,
+      "photoLoaded": true,
+      "width": 1440
+    }
+  ],
+  "issues": []
+}

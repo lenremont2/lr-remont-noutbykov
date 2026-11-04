@@ -1,6 +1,11 @@
 ---
 import { brands, macbook, pagePath } from "../../data/service-pages";
 import SectionHeading from "../ui/SectionHeading.astro";
+interface Props {
+  compact?: boolean;
+  marquee?: boolean;
+}
+const { compact = false, marquee = false } = Astro.props;
 
 const marks: Record<string, string> = {
   Acer: "acer",
@@ -23,47 +28,123 @@ const otherManufacturers = manufacturers
   );
 ---
 
-<section id="lr-manufacturers" class="lr-section lr-manufacturers">
+<section
+  id="lr-manufacturers"
+  data-lr-swipe-slider={(!marquee && compact) || undefined}
+  data-lr-auto-swipe={(!marquee && compact) || undefined}
+  class:list={[
+    "lr-section lr-manufacturers",
+    { "lr-manufacturers--compact": compact },
+    { "lr-manufacturers--marquee": marquee },
+  ]}
+>
   <div class="lr-container">
     <SectionHeading
-      title="Ремонт ноутбуков разных производителей"
+      title={marquee
+        ? "Ремонтируем ноутбуки различных производителей"
+        : "Ремонт ноутбуков разных производителей"}
       lead="Выберите марку, чтобы узнать об особенностях ремонта вашего ноутбука."
     />
-    <ul class="lr-manufacturers__list">
-      {
-        featuredManufacturers.map((page) => (
-          <li>
-            <a class="lr-manufacturers__link" href={pagePath(page)}>
-              <img
-                src={`/media/manufacturer-${marks[page.label]}.svg`}
-                alt=""
-                width="128"
-                height="48"
-                loading="lazy"
-              />
-              <span>{page.label}</span>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
     {
-      otherManufacturers.length > 0 && (
-        <div class="lr-manufacturers__other">
-          <h3 id="lr-other-manufacturers-title">Другие производители</h3>
+      marquee ? (
+        <div class="lr-marquee" data-lr-marquee>
+          <div class="lr-marquee__viewport">
+            <div class="lr-marquee__track">
+              {[false, true].map((duplicate) => (
+                <ul
+                  class="lr-marquee__list"
+                  aria-hidden={duplicate || undefined}
+                  data-lr-marquee-copy={duplicate || undefined}
+                >
+                  {manufacturers.map((page) => (
+                    <li>
+                      <a
+                        class="lr-manufacturers__link"
+                        href={pagePath(page)}
+                        tabindex={duplicate ? -1 : undefined}
+                      >
+                        {marks[page.label] && (
+                          <img
+                            src={`/media/manufacturer-${marks[page.label]}.svg`}
+                            alt=""
+                            width="128"
+                            height="48"
+                            loading="lazy"
+                          />
+                        )}
+                        <span>{page.label}</span>
+                      </a>
+                    </li>
+                  ))}
+                  <li>
+                    <a
+                      class="lr-manufacturers__link"
+                      href="#lr-contact"
+                      data-lr-lead-open
+                      data-source="manufacturers-other"
+                      data-format="consultation"
+                      data-symptom=""
+                      tabindex={duplicate ? -1 : undefined}
+                    >
+                      И другие бренды
+                    </a>
+                  </li>
+                </ul>
+              ))}
+            </div>
+          </div>
+        </div>
+      ) : (
+        <>
           <ul
-            class="lr-manufacturers__other-list"
-            aria-labelledby="lr-other-manufacturers-title"
+            class:list={[
+              "lr-manufacturers__list",
+              { "lr-swipe-track": compact },
+            ]}
+            id="lr-manufacturer-track"
+            data-lr-swipe-track={compact || undefined}
+            tabindex={compact ? "0" : undefined}
+            aria-label="Производители ноутбуков"
+            aria-roledescription={compact ? "карусель" : undefined}
           >
-            {otherManufacturers.map((page) => (
+            {featuredManufacturers.map((page) => (
               <li>
-                <a class="lr-manufacturers__text-link" href={pagePath(page)}>
-                  {page.label}
+                <a class="lr-manufacturers__link" href={pagePath(page)}>
+                  <img
+                    src={`/media/manufacturer-${marks[page.label]}.svg`}
+                    alt=""
+                    width="128"
+                    height="48"
+                    loading="lazy"
+                  />
+                  <span>{page.label}</span>
                 </a>
               </li>
             ))}
           </ul>
-        </div>
+          {otherManufacturers.length > 0 && (
+            <details class="lr-manufacturers__other" open={!compact}>
+              <summary id="lr-other-manufacturers-title">
+                Другие производители
+              </summary>
+              <ul
+                class="lr-manufacturers__other-list"
+                aria-labelledby="lr-other-manufacturers-title"
+              >
+                {otherManufacturers.map((page) => (
+                  <li>
+                    <a
+                      class="lr-manufacturers__text-link"
+                      href={pagePath(page)}
+                    >
+                      {page.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+        </>
       )
     }
   </div>

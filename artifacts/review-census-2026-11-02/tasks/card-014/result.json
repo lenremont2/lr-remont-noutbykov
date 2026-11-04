@@ -1,0 +1,251 @@
+{
+  "taskId": "card-014",
+  "platform": "Яндекс Карты",
+  "url": "https://yandex.ru/maps/org/lenremont/195356065526/reviews/",
+  "branch": "Ленремонт, улица Фрунзе, 3",
+  "city": "Санкт-Петербург",
+  "networkEvidence": {
+    "verified": true,
+    "address": "Санкт-Петербург, улица Фрунзе, 3, 196070",
+    "phone": "+7 (812) 688-89-33",
+    "officialSite": "https://www.lenremont.ru/",
+    "chainUrl": "https://yandex.ru/maps/2/saint-petersburg/chain/lenremont/3503425074/",
+    "evidence": "Обзор карточки показывает официальный сайт, телефон и адрес; вкладка «Филиалы» содержит эту карточку и другие отделения Ленремонта. В обзоре указано «Открыто до 20:00»."
+  },
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 273,
+    "examinedCount": 273,
+    "endpointObserved": true,
+    "method": "CUA Chrome, собственная вкладка. Прокрутка .scroll__container до фактического конца; последовательный рост количества DOM-отзывов 50→150→200→250→273. Внизу scrollTop=70820, scrollHeight=71604, clientHeight=785. Раскрыты все 64 .business-review-view__expand; после раскрытия осталось 0. Проверены полные reviewBody всех 273 отзывов по ноутбук/ноут/нетбук/ультрабук/MacBook/макбук, маркам и дополнительным компьютерным терминам. Точные даты/оценки из видимых schema.org meta. Прямые ссылки получены кнопкой «Поделиться» каждого подходящего отзыва.",
+    "stopReason": "Достигнут конец выдачи; 273 загруженных отзыва совпадают с опубликованным числом; свёрнутых текстов не осталось."
+  },
+  "reviews": [
+    {
+      "author": "владимир зарубин",
+      "date": "2024-02-06",
+      "rating": 1,
+      "summary": "Ноутбук находился в сервисе около 20 дней; автор сообщает о безрезультатном поиске платы и предложении утилизации. По его словам, другой сервис восстановил устройство за три дня. Отзыв отрицательный.",
+      "reviewUrl": "https://yandex.ru/maps/org/195356065526/reviews?reviews%5BpublicId%5D=tq8jrehv6p9bug4btj3jcbm6v8",
+      "topic": "неудачный ремонт ноутбука; Acer Nitro 5 на вложенном фото",
+      "photos": [
+        {
+          "sourceUrl": "https://avatars.mds.yandex.net/get-altay/10141118/2a0000018ca0f5ac67a33aaf29833fb713a7/XXXL",
+          "localPath": "artifacts/review-census-2026-11-02/tasks/card-014/photos/vladimir-zarubin-laptop.webp",
+          "attachment": "review",
+          "bindingVerified": true,
+          "visuallyVerified": true,
+          "description": "Вертикальная фотография открытого ноутбука Acer Nitro 5 с красными клавишами и видеоплеером на экране. Превью находится внутри business-review-media данного отзыва; открытый просмотрщик указывает автора «владимир зарубин», «Декабрь 2023», 1 из 1. Это вложение отзыва, не аватар и не ответ организации."
+        }
+      ],
+      "evidence": {
+        "domIndex": 52,
+        "datePublished": "2024-02-06T13:34:39.806Z",
+        "ratingValue": "1.0",
+        "fullTextExpanded": true,
+        "mediaCount": 1,
+        "shareLinkObserved": true
+      }
+    },
+    {
+      "author": "Лада С.",
+      "date": "2024-12-02",
+      "rating": 5,
+      "summary": "Довольна ремонтом холодильника и клинингом; также упоминает, что её мама пользовалась услугой ремонта ноутбука. Рекомендует сервис.",
+      "reviewUrl": "https://yandex.ru/maps/org/195356065526/reviews?reviews%5BpublicId%5D=yrtbk7mnzfcgm814rea1a2epam",
+      "topic": "положительное упоминание ремонта ноутбука у родственницы",
+      "photos": [],
+      "evidence": {
+        "domIndex": 71,
+        "datePublished": "2024-12-02T16:19:19.837Z",
+        "ratingValue": "5.0",
+        "fullTextExpanded": true,
+        "mediaCount": 0,
+        "shareLinkObserved": true
+      }
+    },
+    {
+      "author": "Алексей Миронов",
+      "date": "2023-08-13",
+      "rating": 5,
+      "summary": "Мастера за минуту помогли выкрутить неподдающийся винт в ноутбуке; автор отмечает отсутствие повреждений и скорость помощи.",
+      "reviewUrl": "https://yandex.ru/maps/org/195356065526/reviews?reviews%5BpublicId%5D=hw4dyhz8c94azhz2et6c9md34c",
+      "topic": "помощь с винтом ноутбука",
+      "photos": [],
+      "evidence": {
+        "domIndex": 119,
+        "datePublished": "2023-08-13T17:07:03.046Z",
+        "ratingValue": "5.0",
+        "fullTextExpanded": true,
+        "mediaCount": 0,
+        "shareLinkObserved": true
+      }
+    },
+    {
+      "author": "Наталья Р.",
+      "date": "2021-07-09",
+      "rating": 5,
+      "summary": "Положительно оценивает быструю диагностику ноутбука и замену термопасты за 2000 ₽; по словам автора, лишний ремонт не навязывали.",
+      "reviewUrl": "https://yandex.ru/maps/org/195356065526/reviews?reviews%5BpublicId%5D=ym8fjhew5wbym3kvgdj760j258",
+      "topic": "диагностика ноутбука; замена термопасты",
+      "photos": [],
+      "evidence": {
+        "domIndex": 221,
+        "datePublished": "2021-07-09T07:56:46.036Z",
+        "ratingValue": "5.0",
+        "fullTextExpanded": true,
+        "mediaCount": 0,
+        "shareLinkObserved": true
+      }
+    }
+  ],
+  "discoveredSources": [
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/114129606406/reviews/",
+      "address": "Звёздная ул., 5, корп. 1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/171815838530/reviews/",
+      "address": "просп. Энгельса, 19",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/1775267878/reviews/",
+      "address": "просп. Авиаконструкторов, 4, корп. 1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/24343010724/reviews/",
+      "address": "просп. Маршала Жукова, 35, корп. 3",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/1317216259/reviews/",
+      "address": "просп. Ветеранов, 9",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/3295465178/reviews/",
+      "address": "Минеральная ул., 13Ц",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/10031707827/reviews/",
+      "address": "просп. Испытателей, 11, корп. 1В",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/210656280325/reviews/",
+      "address": "ул. Кораблестроителей, 30",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/1599365044/reviews/",
+      "address": "просп. Просвещения, 20/25",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/139175119866/reviews/",
+      "address": "Звёздная ул., 9, корп. 1 (организация переехала)",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/142299563723/reviews/",
+      "address": "просп. Луначарского, 56, корп. 1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/68341760403/reviews/",
+      "address": "просп. Науки, 8, корп. 1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/1030067535/reviews/",
+      "address": "просп. Большевиков, 25",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/81941462637/reviews/",
+      "address": "просп. Косыгина, 28, корп. 1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/234880316037/reviews/",
+      "address": "Киевская ул., 32В",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/161275174491/reviews/",
+      "address": "ул. Ушинского, 25, корп. 1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/87092134009/reviews/",
+      "address": "просп. Пятилеток, 14, корп. 1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/87389556464/reviews/",
+      "address": "Тверская ул., 1/13, Колпино",
+      "city": "Колпино"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/26288651597/reviews/",
+      "address": "Московский просп., 212, офис 1130",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/166250120114/reviews/",
+      "address": "просп. Елизарова, 36",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/1401251799/reviews/",
+      "address": "ул. Решетникова, 3",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/147829209306/reviews/",
+      "address": "просп. Юрия Гагарина, 15",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/lenremont/242898370104/reviews/",
+      "address": "Круговая ул., 47, территория Промзона Мягловская",
+      "city": "территория Промзона Мягловская"
+    }
+  ],
+  "notes": [
+    "Найдено 4 подходящих отзыва: три с оценкой 5 и один с оценкой 1; во вложениях один фотофайл.",
+    "Число 401 относится к оценкам, а 273 — к текстовым отзывам; не смешивать эти показатели.",
+    "Фраза «на Парке Победы (закрыта)» в заголовке относится к станции метро Парк Победы. Филиал в обзоре отмечен открытым.",
+    "Фото в просмотрщике датировано «Декабрь 2023», сам отзыв опубликован 6 февраля 2024. Даты сохранены раздельно.",
+    "Дополнительные совпадения о настольном ПК, общих компьютерах, смартфоне Samsung и телевизоре Sony исключены из ноутбучной выборки.",
+    "Обнаруженные другие карточки только перечислены для очереди; их отзывы в рамках этой задачи не исследовались.",
+    "Скачана максимальная версия XXXL, прямо доступная в просмотрщике (960×1280, WebP); URL /orig не подбирался. CAPTCHA и авторизация не потребовались."
+  ]
+}

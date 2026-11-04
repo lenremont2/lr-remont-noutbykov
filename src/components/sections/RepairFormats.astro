@@ -1,21 +1,15 @@
 ---
 import copy from "../../data/laptop-service.json";
+import home from "../../data/home-copy.json";
 import SectionHeading from "../ui/SectionHeading.astro";
-import LeadButton from "../ui/LeadButton.astro";
+import FormatRoute from "../ui/FormatRoute.astro";
 
 interface Props {
-  linkToLocations?: boolean;
   compact?: boolean;
   journey?: boolean;
 }
-const { linkToLocations = true, compact = true, journey = false } = Astro.props;
+const { compact = true, journey = false } = Astro.props;
 const c = copy.formats;
-const journeyNotes = {
-  "at-home": "Возможность ремонта уточним по модели",
-  "mobile-lab": "Оборудование внутри автомобиля",
-  workshop: "Обычная диагностика: 0 ₽, даже при отказе",
-  courier: "Передача ноутбука по документу",
-};
 const compactImages = {
   "at-home": "/media/format-home-v4-1280.webp",
   "mobile-lab": "/media/format-mobile-v4-1280.webp",
@@ -89,6 +83,7 @@ const compactFeatures = {
     { "lr-formats--compact": compact, "lr-formats--journey": journey },
   ]}
   data-lr-route-picker={journey || undefined}
+  data-lr-swipe-slider={journey || undefined}
   data-sc-act={journey ? "flow" : undefined}
 >
   <div class="lr-container">
@@ -99,15 +94,23 @@ const compactFeatures = {
           ? "Способы ремонта"
           : c.fields.H2}
       lead={journey
-        ? undefined
+        ? home.formats.lead
         : compact
           ? "Выберите удобный способ ремонта. Детали и стоимость согласуем заранее."
           : c.fields["Лид"]}
     />
     <div class="lr-formats__choices">
-      <div class="lr-formats__grid">
+      <div
+        class="lr-formats__grid"
+        data-lr-swipe-track={journey || undefined}
+        tabindex={journey ? "0" : undefined}
+        aria-label={journey ? "Четыре формата ремонта" : undefined}
+      >
         {
           c.items.map((item) => {
+            const updated = home.formats.items.find(
+              (entry) => entry.format === item.format,
+            );
             const meta = formatMeta[item.format as keyof typeof formatMeta];
             const isFeatured = item.format === "mobile-lab";
             const actionLabel =
@@ -118,33 +121,41 @@ const compactFeatures = {
               <article
                 class:list={["lr-format", isFeatured && "lr-format--featured"]}
               >
-                <figure class="lr-format__media">
+                <figure
+                  class="lr-format__media"
+                  data-format-illustration={journey ? item.format : undefined}
+                >
                   <img
                     src={
-                      compact
+                      journey || compact
                         ? compactImages[
                             item.format as keyof typeof compactImages
                           ]
                         : meta.image
                     }
                     alt={
-                      compact
-                        ? `Иллюстрация: ${meta.alt.toLocaleLowerCase("ru-RU")}`
-                        : meta.alt
+                      journey
+                        ? `Иллюстрация: ${updated?.title}`
+                        : compact
+                          ? `Иллюстрация: ${meta.alt.toLocaleLowerCase("ru-RU")}`
+                          : meta.alt
                     }
-                    width={compact ? 1280 : meta.width}
-                    height={compact ? 720 : meta.height}
+                    width={journey || compact ? 1280 : meta.width}
+                    height={journey || compact ? 720 : meta.height}
                     loading="lazy"
                     decoding="async"
                   />
                   {!compact && <figcaption>{item.fields["Акцент"]}</figcaption>}
                 </figure>
                 <div class="lr-format__body">
-                  <h3 class="lr-format__title">{item.title}</h3>
+                  <h3 class="lr-format__title">
+                    {journey ? updated?.title : item.title}
+                  </h3>
+                  {compact && !journey && <FormatRoute format={item.format} />}
                   {!compact && <p class="lr-format__text">{item.text}</p>}
                   {journey ? (
                     <p class="lr-format__note">
-                      {journeyNotes[item.format as keyof typeof journeyNotes]}
+                      {updated?.note}. {updated?.text}
                     </p>
                   ) : (
                     <ul class="lr-format__features">
@@ -178,34 +189,24 @@ const compactFeatures = {
                     </ul>
                   )}
                   <div class="lr-format__footer">
-                    {linkToLocations && item.format === "workshop" ? (
-                      <a
-                        class:list={[
-                          journey ? "lr-button" : "lr-text-action",
-                          "lr-format__btn",
-                        ]}
-                        href="#lr-map-workshops"
-                      >
-                        {actionLabel}
-                        {!journey && <span aria-hidden="true">→</span>}
-                      </a>
-                    ) : linkToLocations && item.format === "courier" ? (
-                      <LeadButton
-                        label={actionLabel}
-                        source="formats:courier"
-                        format="courier"
-                        text={!journey}
-                        class="lr-format__btn"
-                      />
-                    ) : (
-                      <LeadButton
-                        label={actionLabel}
-                        source="formats"
-                        format={item.format}
-                        text={!journey && (compact || !isFeatured)}
-                        class="lr-format__btn"
-                      />
-                    )}
+                    <a
+                      class:list={[
+                        !journey && (compact || !isFeatured)
+                          ? "lr-text-action"
+                          : "lr-button",
+                        "lr-format__btn",
+                      ]}
+                      href="#lr-contact"
+                      data-lr-map-open={
+                        item.format === "workshop" ? "workshops" : "address"
+                      }
+                      data-format={item.format}
+                      data-source={`formats:${item.format}`}
+                      aria-haspopup="dialog"
+                    >
+                      {actionLabel}
+                      {!journey && <span aria-hidden="true">→</span>}
+                    </a>
                   </div>
                 </div>
               </article>
@@ -218,8 +219,7 @@ const compactFeatures = {
       !compact && (
         <div class="lr-formats__trust">
           <p>
-            <strong>Диагностика в мастерской — 0 ₽.</strong> Даже при отказе от
-            ремонта.
+            <strong>Диагностика — 0 ₽.</strong> Даже при отказе от ремонта.
           </p>
           <p>
             <strong>Гарантия 1 год.</strong> Фиксируем все работы в документах.

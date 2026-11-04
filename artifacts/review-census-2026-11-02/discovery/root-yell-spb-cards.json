@@ -1,0 +1,110 @@
+[
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/lenremont_11538957/",
+    "address": "проспект Большевиков,25",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/lenremont_11538956/",
+    "address": "проспект Ветеранов,9",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-nauki_12061016/",
+    "address": "проспект Науки,8к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-marshala-zhukova_12060753/",
+    "address": "проспект Маршала Жукова,35к3",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-elizarova_12755962/",
+    "address": "проспект Елизарова,36",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/lenremont-ooo_9625417/",
+    "address": "проспект Просвещения,20/25",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-ulice-bely-kuna_12060750/",
+    "address": "Белы Куна,20к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-ulice-korablestroitelej_12061018/",
+    "address": "Кораблестроителей,30",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-metro-komendantskij-prospekt_12061020/",
+    "address": "Авиаконструкторов,4к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-lunacharskogo_11978145/",
+    "address": "Луначарского,56к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/servisnyj-centr-lenremont_12206706/",
+    "address": "Фрунзе,3",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-nastavnikov_12061759/",
+    "address": "Косыгина,28к1; название карточки — «на проспекте Наставников»",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/lenremont-ooo_11852552/",
+    "address": "Звёздная,9к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-moskovskom-prospekte-212_14448542/",
+    "address": "Московский проспект,212",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-ispytatelej-11-k-1_12789105/",
+    "address": "Испытателей,11к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/servisnyj-centr-lenremont-v-kolpino_14441597/",
+    "address": "Колпино,Тверская,1/13",
+    "city": "Колпино"
+  },
+  {
+    "platform": "Yell",
+    "url": "http://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-ulice-yaroslava-gasheka_14441589/",
+    "address": "Ярослава Гашека,4к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/chain/lenremont-ooo_9625417/",
+    "address": "company-wide network page; own19review list, possible duplication of Просвещения card to check",
+    "city": "Санкт-Петербург"
+  }
+]

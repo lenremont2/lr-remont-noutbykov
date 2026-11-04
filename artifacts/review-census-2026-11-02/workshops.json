@@ -1,0 +1,389 @@
+[
+  {
+    "id": "prosveshcheniya",
+    "city": "Санкт-Петербург",
+    "address": "пр. Просвещения, д. 20",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "aviakonstruktorov",
+    "city": "Санкт-Петербург",
+    "address": "пр. Авиаконструкторов, д. 4",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "bolshevikov",
+    "city": "Санкт-Петербург",
+    "address": "пр. Большевиков, д. 25",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "korablestroiteley",
+    "city": "Санкт-Петербург",
+    "address": "ул. Кораблестроителей, д. 30",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "veteranov",
+    "city": "Санкт-Петербург",
+    "address": "пр. Ветеранов, д. 9",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "frunze",
+    "city": "Санкт-Петербург",
+    "address": "ул. Фрунзе, д. 3",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "engelsa",
+    "city": "Санкт-Петербург",
+    "address": "пр. Энгельса, д. 19",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "pyatiletok",
+    "city": "Санкт-Петербург",
+    "address": "пр. Пятилеток, д. 14, к. 1",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "zvezdnaya",
+    "city": "Санкт-Петербург",
+    "address": "ул. Звёздная, д. 5, к. 1",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "kosygina",
+    "city": "Санкт-Петербург",
+    "address": "пр. Косыгина, д. 28, к. 1",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "lunacharskogo",
+    "city": "Санкт-Петербург",
+    "address": "пр. Луначарского, д. 56, к. 1",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "nauki",
+    "city": "Санкт-Петербург",
+    "address": "пр. Науки, д. 8, к. 1",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "zhukova",
+    "city": "Санкт-Петербург",
+    "address": "пр. Маршала Жукова, д. 35, к. 3",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "ispytateley",
+    "city": "Санкт-Петербург",
+    "address": "пр. Испытателей, д. 11, к. 1",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "ushinskogo",
+    "city": "Санкт-Петербург",
+    "address": "ул. Ушинского, д. 25, к. 1",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "kievskaya",
+    "city": "Санкт-Петербург",
+    "address": "ул. Киевская, д. 32В",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "gasheka",
+    "city": "Санкт-Петербург",
+    "address": "ул. Ярослава Гашека, д. 4, к. 1",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "kolpino",
+    "city": "Санкт-Петербург, Колпино",
+    "address": "ул. Тверская, д. 1/13",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "elizarova",
+    "city": "Санкт-Петербург",
+    "address": "пр. Елизарова, д. 36",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "mineralnaya",
+    "city": "Санкт-Петербург",
+    "address": "ул. Минеральная, д. 13Ц",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "gagarina",
+    "city": "Санкт-Петербург",
+    "address": "пр. Юрия Гагарина, д. 15",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "moskovskiy",
+    "city": "Санкт-Петербург",
+    "address": "Московский пр., д. 212, Дом Советов",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "reshetnikova",
+    "city": "Санкт-Петербург",
+    "address": "ул. Решетникова, д. 3",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "myaglovo",
+    "city": "Промзона Мягловская",
+    "address": "ул. Круговая, д. 47",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "moscow-sadovaya",
+    "city": "Москва",
+    "address": "Садовая-Триумфальная,16 стр.3",
+    "status": "official-listed",
+    "networkEvidence": "https://lenremont.moscow/contact"
+  },
+  {
+    "id": "novgorod",
+    "city": "Великий Новгород",
+    "address": "Воскресенский бульвар,10",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "pskov",
+    "city": "Псков",
+    "address": "Яна Фабрициуса,8",
+    "status": "official-listed",
+    "networkEvidence": "https://www.lenremont.ru/contact.htm"
+  },
+  {
+    "id": "zvezdnaya9",
+    "city": "Санкт-Петербург",
+    "address": "Звёздная,9к1",
+    "status": "historical-card",
+    "networkEvidence": "https://yandex.ru/maps/org/lenremont/139175119866/reviews/"
+  },
+  {
+    "id": "catalog-0",
+    "city": "Санкт-Петербург",
+    "address": "Белы Куна,20к1",
+    "status": "candidate",
+    "networkEvidence": "https://totadres.ru/sankt-peterburg/filials/564484"
+  },
+  {
+    "id": "catalog-1",
+    "city": "Санкт-Петербург",
+    "address": "Юных Пионеров,38 лит.Ж",
+    "status": "candidate",
+    "networkEvidence": "https://totadres.ru/sankt-peterburg/filials/564484"
+  },
+  {
+    "id": "catalog-2",
+    "city": "Санкт-Петербург",
+    "address": "наб.Комсомольского канала,13",
+    "status": "candidate",
+    "networkEvidence": "https://totadres.ru/sankt-peterburg/filials/564484"
+  },
+  {
+    "id": "catalog-3",
+    "city": "Санкт-Петербург",
+    "address": "Полюстровский,47",
+    "status": "closed-card-network-linked",
+    "networkEvidence": "Historical catalog https://totadres.ru/sankt-peterburg/filials/564484 and https://yandex.ru/maps/org/lenremont/2394177609/ . Yandex header says Shut down, lists Полюстровский47, official www.lenremont.ru link and +78123444444; observed2November2026."
+  },
+  {
+    "id": "catalog-4",
+    "city": "Санкт-Петербург",
+    "address": "Кузнецовская,52к15",
+    "status": "candidate",
+    "networkEvidence": "https://totadres.ru/sankt-peterburg/filials/564484"
+  },
+  {
+    "id": "catalog-5",
+    "city": "Санкт-Петербург",
+    "address": "Гончарная,3",
+    "status": "candidate",
+    "networkEvidence": "https://totadres.ru/sankt-peterburg/filials/564484"
+  },
+  {
+    "id": "catalog-6",
+    "city": "Санкт-Петербург",
+    "address": "1-й Верхний пер.,10 лит.А",
+    "status": "closed-card-network-linked",
+    "networkEvidence": "Historical catalog https://totadres.ru/sankt-peterburg/filials/564484 and https://yandex.ru/maps/org/lenremont/108377671807/ . Yandex header says Shut down, lists1-йВерхний10 without letterА, links www.lenremont.ru and +78126888933; observed2November2026. Address lettering not automatically corrected."
+  },
+  {
+    "id": "historical-0",
+    "city": "Санкт-Петербург",
+    "address": "Олеко Дундича,36к1",
+    "status": "candidate",
+    "networkEvidence": "https://064.ru/93856"
+  },
+  {
+    "id": "historical-1",
+    "city": "Санкт-Петербург",
+    "address": "Жака Дюкло,6к2",
+    "status": "closed-card-network-linked",
+    "networkEvidence": "Historical catalog https://064.ru/93856 and https://yandex.ru/maps/org/lenremont/1905751304/ . Yandex header says Shut down, listsЖакаДюкло6к2 and links www.lenremont.ru/+78126888933; observed2November2026."
+  },
+  {
+    "id": "historical-2",
+    "city": "Санкт-Петербург",
+    "address": "Наставников,47к2",
+    "status": "candidate",
+    "networkEvidence": "https://064.ru/93856"
+  },
+  {
+    "id": "historical-3",
+    "city": "Санкт-Петербург",
+    "address": "Непокорённых,2",
+    "status": "official-closed",
+    "networkEvidence": "https://www.lenremont.ru/lenremont-na-muzhestva.htm",
+    "notes": "card-057: официальный сайт прямо сообщает Мастерская не работает; Rting продолжает показывать открыто. Исторический адрес подтверждён сайтом и WhatsApp сети."
+  },
+  {
+    "id": "historical-4",
+    "city": "Санкт-Петербург",
+    "address": "Фрунзе,15",
+    "status": "candidate",
+    "networkEvidence": "https://064.ru/93856"
+  },
+  {
+    "id": "moscow-nagornaya",
+    "city": "Москва",
+    "address": "Нагорная,23к1",
+    "status": "historical-card-network-linked",
+    "networkEvidence": "https://www.yell.ru/moscow/com/lenremont-remont-tehniki_11893264/ checked in card143: published+74993711111 matches official lenremont.moscow/contact, description calls it Moscow branch of SPb Lenremont, VKlenremont and company replies3444444 match. Native reviews2020–2021; current operation at this address not confirmed."
+  },
+  {
+    "id": "moscow-bratislavskaya",
+    "city": "Москва",
+    "address": "Братиславская,25",
+    "status": "historical-card-network-linked",
+    "networkEvidence": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/ checked in card144: published+74993711111 matches official lenremont.moscow/contact, lenremont.ru/VKlenremont linked. Reviews2020. Current operation at this address not confirmed; separate from Нагорная and Садовая-Триумфальная."
+  },
+  {
+    "id": "pskov-rizhskiy",
+    "city": "Псков",
+    "address": "Рижский проспект,26",
+    "status": "candidate",
+    "networkEvidence": "https://pskov.lenremont.ru/"
+  },
+  {
+    "id": "tver",
+    "city": "Тверь",
+    "address": null,
+    "status": "city-mention-unverified",
+    "networkEvidence": "https://v8.lenremont.ru/about.htm"
+  },
+  {
+    "id": "donetsk",
+    "city": "Донецк",
+    "address": null,
+    "status": "city-mention-unverified",
+    "networkEvidence": "https://v8.lenremont.ru/about.htm"
+  },
+  {
+    "id": "avtobusnaya3-store",
+    "city": "Санкт-Петербург",
+    "address": "Автобусная улица, 3",
+    "status": "platform-listed-network-store",
+    "type": "магазин; наличие ремонтных услуг не установлено",
+    "networkEvidence": "Google card links kupit-bu-tekhniku.lenremont.ru; exact card in discovery/root-google-spb-additions.json"
+  },
+  {
+    "id": "moscow-rusakovskaya27",
+    "city": "Москва",
+    "address": "Русаковская улица, 27",
+    "status": "candidate-closed-network-unverified",
+    "networkEvidence": "Google says permanently closed; no website; phone +74951815155; exact card in discovery/root-google-regions.json. Name alone does not establish network identity."
+  },
+  {
+    "id": "murino-privokzalnaya3k4",
+    "city": "Мурино",
+    "address": "Привокзальная площадь, 3к4",
+    "status": "candidate",
+    "networkEvidence": "https://redmap.ru/murino/lenremont lists two separate card IDs147910/147913 at the same address; not evidence of two workshops. Both card tasks queued."
+  },
+  {
+    "id": "moscow-novocheryomushkinskaya66",
+    "city": "Москва",
+    "address": "Новочерёмушкинская улица, 66, корп. 1",
+    "status": "candidate",
+    "networkEvidence": "https://msk.spravker.ru/otdelochnye-raboty/lenremont.htm; category lists network numbers +78005554510,+74993711111,+78123444444 alongside +74951815155. Historical attribution requires detail-card verification."
+  },
+  {
+    "id": "mineralnaya13k5",
+    "city": "Санкт-Петербург",
+    "address": "Минеральная улица, 13к5",
+    "status": "platform-listed-address-variant-unverified",
+    "networkEvidence": "https://2gis.ru/spb/firm/70000001058962565/tab/reviews and corresponding Flamp card. Retained separately from official13Ц until identity/address history is verified."
+  },
+  {
+    "id": "nastavnikov47k1",
+    "city": "Санкт-Петербург",
+    "address": "проспект Наставников, 47к1",
+    "status": "candidate",
+    "networkEvidence": "https://rting.ru/sankt-peterburg/co/lenremont/2855830 and Redmap cards147901/147918. Separate from064catalog's47к2; no automatic address correction."
+  },
+  {
+    "id": "gagarina23",
+    "city": "Санкт-Петербург",
+    "address": "проспект Юрия Гагарина, 23",
+    "status": "candidate",
+    "networkEvidence": "https://redmap.ru/sanktpeterburg/lenremont/prosp-yuriya-gagarina-23-147912 . Historical catalog candidate, separate from current15."
+  },
+  {
+    "id": "bolshevikov25k2",
+    "city": "Санкт-Петербург",
+    "address": "проспект Большевиков, 25к2",
+    "status": "catalog-address-variant-unverified",
+    "networkEvidence": "https://064.ru/81712 lists25корпус2. Variant retained separately from official25; not established as a separate physical workshop."
+  },
+  {
+    "id": "ispytateley11k1v",
+    "city": "Санкт-Петербург",
+    "address": "проспект Испытателей, 11к1В",
+    "status": "platform-listed-address-variant-unverified",
+    "networkEvidence": "https://yandex.ru/maps/org/lenremont/10031707827/reviews/ . Yandex branch-directory address spelling, retained separately from official11к1 pending card verification."
+  },
+  {
+    "id": "moscow-sadovaya16str1",
+    "city": "Москва",
+    "address": "Садовая-Триумфальная улица, 16, строение 1",
+    "status": "catalog-address-variant-unverified",
+    "networkEvidence": "https://naydiservis.ru/services/lenremont and indexed mirror akhamitov.ru/services list16стр1; official Moscow site lists16стр3. No automatic merge or inference of relocation."
+  }
+]

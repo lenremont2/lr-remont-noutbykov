@@ -93,7 +93,19 @@ assert.equal(validateVisitFields(form, place), null);
 assert.equal(placeError.textContent, "");
 assert.equal(place.attributes["aria-invalid"], "false");
 
-for (const format of ["courier", "workshop", "consultation"]) {
+form.elements.service_format.value = "courier";
+updateVisitFields(form);
+assert.equal(address.disabled, false, "Courier needs a pickup address");
+assert.equal(
+  place.disabled,
+  true,
+  "Courier does not need a repair-place choice",
+);
+address.value = "";
+assert.equal(validateVisitFields(form), address);
+address.value = "Санкт-Петербург, Невский проспект, 1";
+assert.equal(validateVisitFields(form), null);
+for (const format of ["workshop", "consultation"]) {
   form.elements.service_format.value = format;
   updateVisitFields(form);
   assert.equal(block.hidden, true);

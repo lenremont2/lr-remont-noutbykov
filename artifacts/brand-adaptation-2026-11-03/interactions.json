@@ -1,0 +1,28 @@
+{
+  "brand": "ASUS",
+  "width": 390,
+  "quiz": {
+    "requiredAnswer": true,
+    "twoQuestions": true,
+    "backPreservesAnswer": true,
+    "contactStep": true,
+    "blankSubmitDisabled": true,
+    "tabFocusInsideDialog": true,
+    "escapeCloses": true,
+    "focusRestored": true,
+    "returnedToInlineSection": true
+  },
+  "leadModal": {
+    "opens": true,
+    "phoneFocused": true,
+    "blankSubmitDisabled": true,
+    "escapeCloses": true
+  },
+  "workshopMap": {
+    "opens": true,
+    "placeholderMatchesHomepage": true
+  },
+  "preparationOpens": true,
+  "faqOpens": true,
+  "consoleErrors": []
+}

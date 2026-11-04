@@ -1,0 +1,118 @@
+[
+  {
+    "width": 320,
+    "overflow": 0,
+    "heroBullets": 5,
+    "contacts": "   Позвоните для бесплатной консультации   +7 (812) 344-44-44   Или напишите нам в мессенджере Пришлите фото поломки дежурному мастеру — назовём цену за 2 минуты.         ВКонтакте            Telegram            MAX            WhatsApp          ",
+    "qrVisible": 0,
+    "services": 6,
+    "serviceCopy": 0,
+    "formatImages": [
+      "/media/format-at-home-vector.svg",
+      "/media/format-mobile-lab-vector.svg",
+      "/media/format-workshop-vector.svg",
+      "/media/format-courier-vector.svg"
+    ],
+    "columns": "240.797px 240.797px 240.797px 240.797px",
+    "carousel": true,
+    "documents": 4,
+    "illustrations": 2,
+    "reviews": 27,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "overflow": 0,
+    "heroBullets": 5,
+    "contacts": "   Позвоните для бесплатной консультации   +7 (812) 344-44-44   Или напишите нам в мессенджере Пришлите фото поломки дежурному мастеру — назовём цену за 2 минуты.         ВКонтакте            Telegram            MAX            WhatsApp          ",
+    "qrVisible": 0,
+    "services": 6,
+    "serviceCopy": 0,
+    "formatImages": [
+      "/media/format-at-home-vector.svg",
+      "/media/format-mobile-lab-vector.svg",
+      "/media/format-workshop-vector.svg",
+      "/media/format-courier-vector.svg"
+    ],
+    "columns": "301px 301px 301px 301px",
+    "carousel": true,
+    "documents": 4,
+    "illustrations": 2,
+    "reviews": 27,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "overflow": 0,
+    "heroBullets": 5,
+    "contacts": "   Позвоните для бесплатной консультации   +7 (812) 344-44-44   Или напишите нам в мессенджере Пришлите фото поломки дежурному мастеру — назовём цену за 2 минуты.         ВКонтакте            Telegram            MAX            WhatsApp          ",
+    "qrVisible": 4,
+    "services": 6,
+    "serviceCopy": 0,
+    "formatImages": [
+      "/media/format-at-home-vector.svg",
+      "/media/format-mobile-lab-vector.svg",
+      "/media/format-workshop-vector.svg",
+      "/media/format-courier-vector.svg"
+    ],
+    "columns": "344px 344px",
+    "carousel": false,
+    "documents": 4,
+    "illustrations": 2,
+    "reviews": 27,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "overflow": 0,
+    "heroBullets": 5,
+    "contacts": "   Позвоните для бесплатной консультации   +7 (812) 344-44-44   Или напишите нам в мессенджере Пришлите фото поломки дежурному мастеру — назовём цену за 2 минуты.         ВКонтакте            Telegram            MAX            WhatsApp          ",
+    "qrVisible": 4,
+    "services": 6,
+    "serviceCopy": 0,
+    "formatImages": [
+      "/media/format-at-home-vector.svg",
+      "/media/format-mobile-lab-vector.svg",
+      "/media/format-workshop-vector.svg",
+      "/media/format-courier-vector.svg"
+    ],
+    "columns": "442.547px 442.562px",
+    "carousel": false,
+    "documents": 4,
+    "illustrations": 2,
+    "reviews": 27,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "overflow": 0,
+    "heroBullets": 5,
+    "contacts": "   Позвоните для бесплатной консультации   +7 (812) 344-44-44   Или напишите нам в мессенджере Пришлите фото поломки дежурному мастеру — назовём цену за 2 минуты.         ВКонтакте            Telegram            MAX            WhatsApp          ",
+    "qrVisible": 4,
+    "services": 6,
+    "serviceCopy": 0,
+    "formatImages": [
+      "/media/format-at-home-vector.svg",
+      "/media/format-mobile-lab-vector.svg",
+      "/media/format-workshop-vector.svg",
+      "/media/format-courier-vector.svg"
+    ],
+    "columns": "625.594px 625.594px",
+    "carousel": false,
+    "documents": 4,
+    "illustrations": 2,
+    "reviews": 27,
+    "errors": []
+  },
+  {
+    "marquee": {
+      "viewport": {
+        "x": 0,
+        "width": 1440
+      },
+      "cloneLink": "/remont-noutbukov-acer-spb.htm",
+      "clickable": true,
+      "cloneTabStops": 0
+    }
+  }
+]

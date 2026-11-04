@@ -1,5 +1,10 @@
 {
   "sources": {
+    "yandexUshinskogo": {
+      "name": "Яндекс Карты",
+      "branch": "Ушинского, 25 к1",
+      "url": "https://yandex.ru/maps/org/lenremont/161275174491/reviews/"
+    },
     "googleAvia": {
       "name": "Google Карты",
       "branch": "Авиаконструкторов, 4 к1",
@@ -96,6 +101,23 @@
     "checkedAt": "2026-10-29"
   },
   "items": [
+    {
+      "name": "Петр Перцев",
+      "subject": "Ремонт ноутбука",
+      "rating": 1,
+      "date": "Декабрь 2025",
+      "text": "Автор сдал ноутбук с неисправной кнопкой включения и оплатил срочный ремонт. По его словам, сроки затянулись, а при выдаче кнопка по-прежнему не работала. Клиент остался недоволен обслуживанием.",
+      "source": "yandexUshinskogo",
+      "reviewUrl": "https://yandex.ru/maps/user/wz2kjdftb87vq90tvw6qtf4ynm",
+      "photos": [
+        {
+          "src": "/media/review-petr-pertsev-2025.webp",
+          "alt": "Ноутбук на столе — фотография из отзыва Петра Перцева",
+          "width": 800,
+          "height": 450
+        }
+      ]
+    },
     {
       "name": "DS",
       "subject": "Ремонт iMac",

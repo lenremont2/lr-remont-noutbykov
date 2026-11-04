@@ -1,0 +1,3337 @@
+{
+  "summary": {
+    "fails": 251,
+    "reflex": 104,
+    "warns": 14,
+    "waived": 0,
+    "rejected": 0,
+    "answered": 0,
+    "dismissed": 0,
+    "notes": 0,
+    "files": 1,
+    "render": "not run: no puppeteer-core found locally, globally or via HALLMARK_PUPPETEER"
+  },
+  "findings": [
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 182,
+      "evidence": "pure #fff: color: #ffffff (.brand-mark)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 245,
+      "evidence": "pure #fff: color: #ffffff (.hero-section)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 312,
+      "evidence": "pure #fff: color: #ffffff (.hero-offer-title)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 330,
+      "evidence": "pure #fff: color: #ffffff (.hero-offer-sub strong)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 377,
+      "evidence": "pure #fff: color: #ffffff (.hb-title)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 424,
+      "evidence": "pure #fff: color: #ffffff (.btn-secondary-glass)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 473,
+      "evidence": "pure #fff: background: #ffffff (.brands-top-bar)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 516,
+      "evidence": "pure #fff: background: #ffffff (.section-white)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 568,
+      "evidence": "pure #fff: background: #ffffff (.carousel-btn)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 692,
+      "evidence": "pure #fff: color: #ffffff (.award-doc-seal)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 707,
+      "evidence": "pure #fff: background: #ffffff (.review-card)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 777,
+      "evidence": "pure #fff: color: #ffffff (.review-photo-zoom-tag)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 791,
+      "evidence": "pure #fff: background: #ffffff (.what-we-fix-card)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 815,
+      "evidence": "pure #fff: color: #ffffff (.wwf-media-overlay)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 834,
+      "evidence": "pure #fff: color: #ffffff (.wwf-title)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 930,
+      "evidence": "pure #fff: background: #ffffff (.price-tab-btn.is-active)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 936,
+      "evidence": "pure #fff: background: #ffffff (.price-card-group)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1031,
+      "evidence": "pure #fff: background: #ffffff (.format-card)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1055,
+      "evidence": "pure #fff: color: #ffffff (.format-photo-overlay)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1068,
+      "evidence": "pure #fff: color: #ffffff (.format-title)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1125,
+      "evidence": "pure #fff: color: #ffffff (.spb-map-eta)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1174,
+      "evidence": "pure #fff: color: #ffffff (.fmw-chip.is-selected)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1198,
+      "evidence": "pure #fff: color: #ffffff (.lab-card)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1247,
+      "evidence": "pure #fff: background: #ffffff (.quiz-box)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1343,
+      "evidence": "pure #fff: color: #ffffff (.director-card)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1371,
+      "evidence": "pure #fff: color: #ffffff (.director-name)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1388,
+      "evidence": "pure #fff: background: #ffffff (.workshop-zone-card)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1409,
+      "evidence": "pure #fff: color: #ffffff (.b2b-card)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1434,
+      "evidence": "pure #fff: background: #ffffff (.network-map-card)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1472,
+      "evidence": "pure #fff: background: #ffffff (.faq-item)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1530,
+      "evidence": "pure #fff: background: #ffffff (.modal-sheet)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1589,
+      "evidence": "pure #fff: background: #ffffff (.dial-key)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1665,
+      "evidence": "pure #fff: background: #ffffff (.lightbox-img)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "7a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1702,
+      "evidence": "pure #fff: color: #ffffff (.smb-call)",
+      "fix": "Tint the base toward the anchor hue"
+    },
+    {
+      "gate": "10a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1280,
+      "evidence": "transitioning width on .quiz-bar-fill",
+      "fix": "Animate transform or opacity instead"
+    },
+    {
+      "gate": "19",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 6,
+      "evidence": "dash \"—\" in copy",
+      "fix": "A comma, a colon, a full stop or parentheses; never a dash"
+    },
+    {
+      "gate": "20",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1,
+      "evidence": "no Hallmark stamp on the first non-empty line of any CSS",
+      "fix": "The stamp comment is line 1 of the CSS; only @charset may precede it"
+    },
+    {
+      "gate": "24a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1,
+      "evidence": "+28 more raw spacing lengths with a matching --space-* token in this file",
+      "fix": "Use the tokens"
+    },
+    {
+      "gate": "24a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 100,
+      "evidence": "padding-bottom: 88px on body where --space-section exists",
+      "fix": "Use var(--space-section)"
+    },
+    {
+      "gate": "24a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 111,
+      "evidence": "padding: 0 20px on .container where --space-item exists",
+      "fix": "Use var(--space-item)"
+    },
+    {
+      "gate": "24a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 128,
+      "evidence": "gap: 8px on .b2b-top-inner where --space-related exists",
+      "fix": "Use var(--space-related)"
+    },
+    {
+      "gate": "24a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 225,
+      "evidence": "padding: 8px 12px 8px 10px on .header-phone where --space-related exists",
+      "fix": "Use var(--space-related)"
+    },
+    {
+      "gate": "24a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 281,
+      "evidence": "padding: 8px 12px on .hero-stage-gradient where --space-related exists",
+      "fix": "Use var(--space-related)"
+    },
+    {
+      "gate": "24a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 313,
+      "evidence": "margin-bottom: 8px on .hero-offer-title where --space-related exists",
+      "fix": "Use var(--space-related)"
+    },
+    {
+      "gate": "24a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 318,
+      "evidence": "padding: 1px 8px 2px on .hero-offer-title .hl-gold where --space-related exists",
+      "fix": "Use var(--space-related)"
+    },
+    {
+      "gate": "24a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 345,
+      "evidence": "padding: 8px 10px on .hero-bullet-item where --space-related exists",
+      "fix": "Use var(--space-related)"
+    },
+    {
+      "gate": "26a",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1,
+      "evidence": "no :focus-visible styling anywhere",
+      "fix": "A focus ring at 3:1 or better, instant"
+    },
+    {
+      "gate": "33",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1841,
+      "evidence": "<svg> without aria-hidden or aria-label",
+      "fix": "Add aria-hidden or an aria-label"
+    },
+    {
+      "gate": "33",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1845,
+      "evidence": "<svg> without aria-hidden or aria-label",
+      "fix": "Add aria-hidden or an aria-label"
+    },
+    {
+      "gate": "33",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1849,
+      "evidence": "<svg> without aria-hidden or aria-label",
+      "fix": "Add aria-hidden or an aria-label"
+    },
+    {
+      "gate": "33",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1853,
+      "evidence": "<svg> without aria-hidden or aria-label",
+      "fix": "Add aria-hidden or an aria-label"
+    },
+    {
+      "gate": "33",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2468,
+      "evidence": "<svg> without aria-hidden or aria-label",
+      "fix": "Add aria-hidden or an aria-label"
+    },
+    {
+      "gate": "33",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2512,
+      "evidence": "<svg> without aria-hidden or aria-label",
+      "fix": "Add aria-hidden or an aria-label"
+    },
+    {
+      "gate": "33",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2556,
+      "evidence": "<svg> without aria-hidden or aria-label",
+      "fix": "Add aria-hidden or an aria-label"
+    },
+    {
+      "gate": "33",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2599,
+      "evidence": "<svg> without aria-hidden or aria-label",
+      "fix": "Add aria-hidden or an aria-label"
+    },
+    {
+      "gate": "33",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2891,
+      "evidence": "<svg> without aria-hidden or aria-label",
+      "fix": "Add aria-hidden or an aria-label"
+    },
+    {
+      "gate": "34",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 98,
+      "evidence": "overflow-x: hidden on body (breaks sticky)",
+      "fix": "Use overflow-x: clip on both html and body, never hidden"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 119,
+      "evidence": "colour literal #cbd5e1 outside tokens (color on .b2b-top-strip)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 120,
+      "evidence": "colour literal rgba(255, 255, 255, 0.10) outside tokens (border-bottom on .b2b-top-strip)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 131,
+      "evidence": "colour literal #e2e8f0 outside tokens (color on .b2b-top-label)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 159,
+      "evidence": "colour literal rgba(255, 255, 255, 0.96) outside tokens (background on .site-header)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 182,
+      "evidence": "colour literal #ffffff outside tokens (color on .brand-mark)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 224,
+      "evidence": "colour literal #dbeafe outside tokens (border on .header-phone)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 245,
+      "evidence": "colour literal #ffffff outside tokens (color on .hero-section)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 261,
+      "evidence": "colour literal rgba(255, 255, 255, 0.18) outside tokens (border on .hero-video-stage)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 262,
+      "evidence": "colour literal #0c1e3a outside tokens (background on .hero-video-stage)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 263,
+      "evidence": "colour literal rgba(0, 0, 0, 0.5) outside tokens (box-shadow on .hero-video-stage)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 277,
+      "evidence": "colour literal rgba(7,19,38,0.10) outside tokens (background on .hero-stage-gradient)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 277,
+      "evidence": "colour literal rgba(7,19,38,0.32) outside tokens (background on .hero-stage-gradient)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 277,
+      "evidence": "colour literal rgba(7,19,38,0.88) outside tokens (background on .hero-stage-gradient)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 286,
+      "evidence": "colour literal #f8fafc outside tokens (color on .hero-stage-caption)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 302,
+      "evidence": "colour literal #93c5fd outside tokens (color on .hero-seo-h1)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 312,
+      "evidence": "colour literal #ffffff outside tokens (color on .hero-offer-title)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 326,
+      "evidence": "colour literal #cbd5e1 outside tokens (color on .hero-offer-sub)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 330,
+      "evidence": "colour literal #ffffff outside tokens (color on .hero-offer-sub strong)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 342,
+      "evidence": "colour literal rgba(15, 33, 64, 0.80) outside tokens (background on .hero-bullet-item)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 343,
+      "evidence": "colour literal rgba(148, 163, 184, 0.20) outside tokens (border on .hero-bullet-item)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 352,
+      "evidence": "colour literal rgba(255, 210, 0, 0.11) outside tokens (background on .hero-bullet-item.is-wide-bon…)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 353,
+      "evidence": "colour literal rgba(255, 210, 0, 0.35) outside tokens (border-color on .hero-bullet-item.is-wide-bon…)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 368,
+      "evidence": "colour literal rgba(255, 210, 0, 0.16) outside tokens (background on .hb-icon-wrap)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 377,
+      "evidence": "colour literal #ffffff outside tokens (color on .hb-title)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 385,
+      "evidence": "colour literal #cbd5e1 outside tokens (color on .hb-desc)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 410,
+      "evidence": "colour literal rgba(255, 210, 0, 0.35) outside tokens (box-shadow on .btn-primary-gold)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 423,
+      "evidence": "colour literal rgba(255, 255, 255, 0.10) outside tokens (background on .btn-secondary-glass)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 424,
+      "evidence": "colour literal #ffffff outside tokens (color on .btn-secondary-glass)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 429,
+      "evidence": "colour literal rgba(255, 255, 255, 0.28) outside tokens (border on .btn-secondary-glass)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 438,
+      "evidence": "colour literal rgba(255, 255, 255, 0.12) outside tokens (border-top on .hero-messengers-block)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 442,
+      "evidence": "colour literal #94a3b8 outside tokens (color on .hero-messengers-caption)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 462,
+      "evidence": "colour literal #f8fafc outside tokens (color on .msg-btn)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 463,
+      "evidence": "colour literal rgba(255, 255, 255, 0.08) outside tokens (background on .msg-btn)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 464,
+      "evidence": "colour literal rgba(255, 255, 255, 0.14) outside tokens (border on .msg-btn)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 473,
+      "evidence": "colour literal #ffffff outside tokens (background on .brands-top-bar)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 516,
+      "evidence": "colour literal #ffffff outside tokens (background on .section-white)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 568,
+      "evidence": "colour literal #ffffff outside tokens (background on .carousel-btn)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 620,
+      "evidence": "colour literal #f59e0b outside tokens (color on .rating-star-icon)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 662,
+      "evidence": "colour literal #ffffff outside tokens (background on .award-doc-thumb)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 662,
+      "evidence": "colour literal #fef9c3 outside tokens (background on .award-doc-thumb)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 663,
+      "evidence": "colour literal #fde047 outside tokens (border on .award-doc-thumb)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 664,
+      "evidence": "colour literal rgba(15, 23, 42, 0.08) outside tokens (box-shadow on .award-doc-thumb)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 682,
+      "evidence": "colour literal #cbd5e1 outside tokens (background on .award-doc-lines span)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 692,
+      "evidence": "colour literal #ffffff outside tokens (color on .award-doc-seal)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 698,
+      "evidence": "colour literal #fef08a outside tokens (box-shadow on .award-doc-seal)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 707,
+      "evidence": "colour literal #ffffff outside tokens (background on .review-card)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 728,
+      "evidence": "colour literal #f59e0b outside tokens (color on .review-stars)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 775,
+      "evidence": "colour literal rgba(7, 19, 38, 0.80) outside tokens (background on .review-photo-zoom-tag)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 777,
+      "evidence": "colour literal #ffffff outside tokens (color on .review-photo-zoom-tag)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 791,
+      "evidence": "colour literal #ffffff outside tokens (background on .what-we-fix-card)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 810,
+      "evidence": "colour literal rgba(7,19,38,0.08) outside tokens (background on .wwf-media-overlay)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 810,
+      "evidence": "colour literal rgba(7,19,38,0.88) outside tokens (background on .wwf-media-overlay)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 815,
+      "evidence": "colour literal #ffffff outside tokens (color on .wwf-media-overlay)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 821,
+      "evidence": "colour literal rgba(7, 19, 38, 0.82) outside tokens (background on .wwf-tag)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 834,
+      "evidence": "colour literal #ffffff outside tokens (color on .wwf-title)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 912,
+      "evidence": "colour literal #e2e8f0 outside tokens (background on .price-tabs)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 930,
+      "evidence": "colour literal #ffffff outside tokens (background on .price-tab-btn.is-active)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 936,
+      "evidence": "colour literal #ffffff outside tokens (background on .price-card-group)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 953,
+      "evidence": "colour literal #a7f3d0 outside tokens (border-bottom on .price-row.is-free-row)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 979,
+      "evidence": "colour literal #bfdbfe outside tokens (border on .price-order-btn)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 996,
+      "evidence": "colour literal #bfdbfe outside tokens (border on .price-bonus-strip)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1031,
+      "evidence": "colour literal #ffffff outside tokens (background on .format-card)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1050,
+      "evidence": "colour literal rgba(7,19,38,0.08) outside tokens (background on .format-photo-overlay)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1050,
+      "evidence": "colour literal rgba(7,19,38,0.90) outside tokens (background on .format-photo-overlay)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1055,
+      "evidence": "colour literal #ffffff outside tokens (color on .format-photo-overlay)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1068,
+      "evidence": "colour literal #ffffff outside tokens (color on .format-title)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1069,
+      "evidence": "colour literal #cbd5e1 outside tokens (color on .format-short-usp)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1083,
+      "evidence": "colour literal #e8f1ff outside tokens (background on .spb-mini-map)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1084,
+      "evidence": "colour literal #cbd5e1 outside tokens (border on .spb-mini-map)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1104,
+      "evidence": "colour literal rgba(255, 255, 255, 0.95) outside tokens (background on .spb-map-pin-badge)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1118,
+      "evidence": "colour literal rgba(11, 94, 215, 0.22) outside tokens (box-shadow on .spb-pin-dot)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1125,
+      "evidence": "colour literal #ffffff outside tokens (color on .spb-map-eta)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1174,
+      "evidence": "colour literal #ffffff outside tokens (color on .fmw-chip.is-selected)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1198,
+      "evidence": "colour literal #ffffff outside tokens (color on .lab-card)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1208,
+      "evidence": "colour literal #071326 outside tokens (background on .lab-video-wrap)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1210,
+      "evidence": "colour literal rgba(255, 255, 255, 0.14) outside tokens (border on .lab-video-wrap)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1223,
+      "evidence": "colour literal rgba(255, 255, 255, 0.92) outside tokens (border on .lab-play-btn)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1228,
+      "evidence": "colour literal rgba(0, 0, 0, 0.45) outside tokens (box-shadow on .lab-play-btn)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1234,
+      "evidence": "colour literal rgba(255, 255, 255, 0.08) outside tokens (background on .lab-tag-chip)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1235,
+      "evidence": "colour literal rgba(255, 255, 255, 0.14) outside tokens (border on .lab-tag-chip)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1236,
+      "evidence": "colour literal #e2e8f0 outside tokens (color on .lab-tag-chip)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1247,
+      "evidence": "colour literal #ffffff outside tokens (background on .quiz-box)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1343,
+      "evidence": "colour literal #ffffff outside tokens (color on .director-card)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1371,
+      "evidence": "colour literal #ffffff outside tokens (color on .director-name)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1375,
+      "evidence": "colour literal #e2e8f0 outside tokens (color on .director-quote)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1376,
+      "evidence": "colour literal rgba(255, 255, 255, 0.06) outside tokens (background on .director-quote)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1388,
+      "evidence": "colour literal #ffffff outside tokens (background on .workshop-zone-card)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1408,
+      "evidence": "colour literal #071326 outside tokens (background on .b2b-card)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1408,
+      "evidence": "colour literal #0f294d outside tokens (background on .b2b-card)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1409,
+      "evidence": "colour literal #ffffff outside tokens (color on .b2b-card)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1422,
+      "evidence": "colour literal rgba(255, 255, 255, 0.07) outside tokens (background on .b2b-perk-box)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1423,
+      "evidence": "colour literal rgba(255, 255, 255, 0.14) outside tokens (border on .b2b-perk-box)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1428,
+      "evidence": "colour literal #cbd5e1 outside tokens (color on .b2b-perk-sub)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1434,
+      "evidence": "colour literal #ffffff outside tokens (background on .network-map-card)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1443,
+      "evidence": "colour literal #dbeafe outside tokens (background on .network-map-canvas)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1472,
+      "evidence": "colour literal #ffffff outside tokens (background on .faq-item)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1515,
+      "evidence": "colour literal rgba(7, 19, 38, 0.76) outside tokens (background on .modal-backdrop)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1530,
+      "evidence": "colour literal #ffffff outside tokens (background on .modal-sheet)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1589,
+      "evidence": "colour literal #ffffff outside tokens (background on .dial-key)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1600,
+      "evidence": "colour literal #fca5a5 outside tokens (border-color on .dial-key.key-reset)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1643,
+      "evidence": "colour literal #cbd5e1 outside tokens (background on .modal-submit-btn:disabled)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1644,
+      "evidence": "colour literal #475569 outside tokens (color on .modal-submit-btn:disabled)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1651,
+      "evidence": "colour literal rgba(7, 19, 38, 0.94) outside tokens (background on .lightbox-backdrop)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1665,
+      "evidence": "colour literal #ffffff outside tokens (background on .lightbox-img)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1667,
+      "evidence": "colour literal #f8fafc outside tokens (color on .lightbox-caption)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1686,
+      "evidence": "colour literal rgba(7, 19, 38, 0.94) outside tokens (background on .sticky-mobile-bar)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1688,
+      "evidence": "colour literal rgba(255, 255, 255, 0.14) outside tokens (border-top on .sticky-mobile-bar)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1701,
+      "evidence": "colour literal rgba(255, 255, 255, 0.10) outside tokens (background on .smb-call)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1702,
+      "evidence": "colour literal #ffffff outside tokens (color on .smb-call)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1703,
+      "evidence": "colour literal rgba(255, 255, 255, 0.22) outside tokens (border on .smb-call)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1817,
+      "evidence": "inline-style colour literal rgba(255,210,0,0.25)",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1820,
+      "evidence": "inline-style colour literal #f8fafc",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2637,
+      "evidence": "inline-style colour literal #ffffff",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2638,
+      "evidence": "inline-style colour literal #cbd5e1",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2844,
+      "evidence": "inline-style colour literal #ffffff",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2845,
+      "evidence": "inline-style colour literal #cbd5e1",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2897,
+      "evidence": "inline-style colour literal #ffffff",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2898,
+      "evidence": "inline-style colour literal #2563eb",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2900,
+      "evidence": "inline-style colour literal #ffffff",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2901,
+      "evidence": "inline-style colour literal #f97316",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2903,
+      "evidence": "inline-style colour literal #ffffff",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2904,
+      "evidence": "inline-style colour literal #dc2626",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2906,
+      "evidence": "inline-style colour literal #ffffff",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2914,
+      "evidence": "inline-style colour literal #2563eb",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2922,
+      "evidence": "inline-style colour literal #2563eb",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2930,
+      "evidence": "inline-style colour literal #dc2626",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2938,
+      "evidence": "inline-style colour literal #9333ea",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2946,
+      "evidence": "inline-style colour literal #f97316",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2954,
+      "evidence": "inline-style colour literal #16a34a",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 3040,
+      "evidence": "inline-style colour literal #ffffff",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 3043,
+      "evidence": "inline-style colour literal #ffffff",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "48",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 3044,
+      "evidence": "inline-style colour literal #cbd5e1",
+      "fix": "Lift the value into the token block"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2068,
+      "evidence": "eyebrow \"Решаем любую проблему в день об…\" before <h2>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2248,
+      "evidence": "eyebrow \"Фиксируем сумму до начала ремон…\" before <h2>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2444,
+      "evidence": "eyebrow \"4 формата в СПб и ЛО\" before <h2>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2636,
+      "evidence": "eyebrow \"Уникальный формат «Ленремонта» …\" before <h2>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2743,
+      "evidence": "eyebrow \"Защита от «частников по объявле…\" before <h2>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2774,
+      "evidence": "eyebrow \"Директор компании «Ленремонт»\" before <h3>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2793,
+      "evidence": "eyebrow \"Стационарная лабораторная база\" before <h2>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2843,
+      "evidence": "eyebrow \"Корпоративное обслуживание в СП…\" before <h2>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2968,
+      "evidence": "eyebrow \"Честные ответы до обращения\" before <h2>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 3042,
+      "evidence": "eyebrow \"Бесплатная консультация мастера…\" before <h2>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "54",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 3080,
+      "evidence": "eyebrow \"Диагностика — 0 ₽ даже при отка…\" before <h3>",
+      "fix": "Cut it; the heading already says this (craft.md § 7 has twelve other openings)"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1728,
+      "evidence": "arrow glued to the label \"Условия для бизнеса →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1892,
+      "evidence": "arrow glued to the label \"›\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2074,
+      "evidence": "arrow glued to the label \"›\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2101,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2128,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2155,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2182,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2209,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2236,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2267,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2278,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2289,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2300,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2311,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2322,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2333,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2344,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2355,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2366,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2380,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2391,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2402,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2413,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2424,
+      "evidence": "arrow glued to the label \"Заказать →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2434,
+      "evidence": "arrow glued to the label \"Получить со скидкой →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2450,
+      "evidence": "arrow glued to the label \"›\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2492,
+      "evidence": "arrow glued to the label \"Вызвать мастера →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2536,
+      "evidence": "arrow glued to the label \"Записаться в филиал →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2579,
+      "evidence": "arrow glued to the label \"Вызвать мастерскую →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2621,
+      "evidence": "arrow glued to the label \"Вызвать курьера →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2654,
+      "evidence": "arrow glued to the label \"Вызвать мобильную мастерскую →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2728,
+      "evidence": "arrow glued to the label \"Ввести номер и узнать цену →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2781,
+      "evidence": "arrow glued to the label \"Обсудить ремонт ноутбука →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2799,
+      "evidence": "arrow glued to the label \"›\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2869,
+      "evidence": "arrow glued to the label \"Получить КП и счёт →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2917,
+      "evidence": "arrow glued to the label \"Записаться →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2925,
+      "evidence": "arrow glued to the label \"Записаться →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2933,
+      "evidence": "arrow glued to the label \"Записаться →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2941,
+      "evidence": "arrow glued to the label \"Записаться →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2949,
+      "evidence": "arrow glued to the label \"Записаться →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2957,
+      "evidence": "arrow glued to the label \"Записаться →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "63",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 3111,
+      "evidence": "arrow glued to the label \"Получить расчёт стоимости →\"",
+      "fix": "A verb as the label; the link already says it goes somewhere"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 533,
+      "evidence": ".section-eyebrow: uppercase tracked 0.07em at 12px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1362,
+      "evidence": ".director-eyebrow: uppercase tracked 0.06em at 11px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1550,
+      "evidence": ".modal-context-pill: uppercase tracked 0.06em at 12px in a label role",
+      "fix": "Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2120,
+      "evidence": "\"Сбойные HDD/SSD\" typed in capitals at 11px (<span class=\"wwf-mini-pill\">)",
+      "fix": "Sentence case in the body face; capitals survive only as a wordmark or as the display voice"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2295,
+      "evidence": "\"Восстановление данных с поврежд…\" typed in capitals at 15px (<div class=\"price-item-name\">)",
+      "fix": "Sentence case in the body face; capitals survive only as a wordmark or as the display voice"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2318,
+      "evidence": "\"40–60 мин • Оригинальные экраны…\" typed in capitals at 13px (<div class=\"price-item-time\">)",
+      "fix": "Sentence case in the body face; capitals survive only as a wordmark or as the display voice"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2431,
+      "evidence": "\"Подарок при любом аппаратном ре…\" typed in capitals at 14px (<div class=\"pbs-text\">)",
+      "fix": "Sentence case in the body face; capitals survive only as a wordmark or as the display voice"
+    },
+    {
+      "gate": "67",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2989,
+      "evidence": "\"Да, при любом аппаратном или пр…\" typed in capitals at 14px (<div class=\"faq-body\">)",
+      "fix": "Sentence case in the body face; capitals survive only as a wordmark or as the display voice"
+    },
+    {
+      "gate": "76",
+      "grade": "FAIL",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 3119,
+      "evidence": "an <img> with no source",
+      "fix": "Give it the real image, make it a data-slot placeholder, or remove it"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 121,
+      "evidence": "padding: 7px 0 (off the 4px scale) on .b2b-top-strip",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 173,
+      "evidence": "gap: 10px (off the 4px scale) on .brand-logo",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 218,
+      "evidence": "gap: 6px (off the 4px scale) on .header-phone",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 225,
+      "evidence": "padding: 8px 12px 8px 10px (off the 4px scale) on .header-phone",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 260,
+      "evidence": "margin-bottom: 10px (off the 4px scale) on .hero-video-stage",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 266,
+      "evidence": "margin-bottom: 22px (off the 4px scale) on .hero-video-stage",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 293,
+      "evidence": "padding: 3px 9px (off the 4px scale) on .hero-stage-pill",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 303,
+      "evidence": "margin-bottom: 5px (off the 4px scale) on .hero-seo-h1",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 338,
+      "evidence": "gap: 7px (off the 4px scale) on .hero-bullets",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 345,
+      "evidence": "padding: 8px 10px (off the 4px scale) on .hero-bullet-item",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 348,
+      "evidence": "gap: 3px (off the 4px scale) on .hero-bullet-item",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 356,
+      "evidence": "gap: 9px (off the 4px scale) on .hero-bullet-item.is-wide-bonus",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 357,
+      "evidence": "padding: 8px 11px (off the 4px scale) on .hero-bullet-item.is-wide-bonus",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 362,
+      "evidence": "gap: 6px (off the 4px scale) on .hb-top",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 392,
+      "evidence": "gap: 10px (off the 4px scale) on .hero-cta-grid",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 393,
+      "evidence": "margin-bottom: 14px (off the 4px scale) on .hero-cta-grid",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 399,
+      "evidence": "gap: 6px (off the 4px scale) on .btn-primary-gold",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 402,
+      "evidence": "padding: 10px 12px (off the 4px scale) on .btn-primary-gold",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 419,
+      "evidence": "gap: 6px (off the 4px scale) on .btn-secondary-glass",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 422,
+      "evidence": "padding: 10px 12px (off the 4px scale) on .btn-secondary-glass",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 449,
+      "evidence": "gap: 7px (off the 4px scale) on .hero-messengers-row",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 455,
+      "evidence": "gap: 5px (off the 4px scale) on .msg-btn",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 457,
+      "evidence": "padding: 6px 6px (off the 4px scale) on .msg-btn",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 475,
+      "evidence": "padding: 14px 0 (off the 4px scale) on .brands-top-bar",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 480,
+      "evidence": "gap: 10px (off the 4px scale) on .brands-track",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 500,
+      "evidence": "padding: 8px 14px (off the 4px scale) on .brand-pill",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 540,
+      "evidence": "margin-bottom: 6px (off the 4px scale) on .section-eyebrow",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 583,
+      "evidence": "padding: 2px 2px 10px (off the 4px scale) on .h-scroll-track",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 594,
+      "evidence": "gap: 10px (off the 4px scale) on .ratings-row-3col",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 595,
+      "evidence": "margin-bottom: 22px (off the 4px scale) on .ratings-row-3col",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 601,
+      "evidence": "padding: 14px 8px (off the 4px scale) on .rating-stat-card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 626,
+      "evidence": "margin-top: 5px (off the 4px scale) on .rating-source",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 642,
+      "evidence": "margin-bottom: 10px (off the 4px scale) on .awards-subhead",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 652,
+      "evidence": "padding: 12px 14px (off the 4px scale) on .award-card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 670,
+      "evidence": "padding: 6px 5px (off the 4px scale) on .award-doc-thumb",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 676,
+      "evidence": "gap: 3px (off the 4px scale) on .award-doc-lines",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 710,
+      "evidence": "padding: 18px (off the 4px scale) on .review-card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 721,
+      "evidence": "gap: 10px (off the 4px scale) on .review-top",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 722,
+      "evidence": "margin-bottom: 10px (off the 4px scale) on .review-top",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 724,
+      "evidence": "gap: 10px (off the 4px scale) on .review-author-group",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 727,
+      "evidence": "gap: 5px (off the 4px scale) on .review-meta-line",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 736,
+      "evidence": "padding: 4px 9px (off the 4px scale) on .review-task-tag",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 780,
+      "evidence": "padding: 4px 10px (off the 4px scale) on .review-photo-zoom-tag",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 814,
+      "evidence": "padding: 14px 18px (off the 4px scale) on .wwf-media-overlay",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 826,
+      "evidence": "padding: 4px 10px (off the 4px scale) on .wwf-tag",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 837,
+      "evidence": "padding: 16px 18px 18px (off the 4px scale) on .wwf-body",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 840,
+      "evidence": "gap: 14px (off the 4px scale) on .wwf-body",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 860,
+      "evidence": "padding: 7px 8px (off the 4px scale) on .wwf-mini-pill",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 864,
+      "evidence": "gap: 5px (off the 4px scale) on .wwf-mini-pill",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 899,
+      "evidence": "padding: 10px 16px (off the 4px scale) on .wwf-footer-btn",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 911,
+      "evidence": "gap: 6px (off the 4px scale) on .price-tabs",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 913,
+      "evidence": "padding: 5px (off the 4px scale) on .price-tabs",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 915,
+      "evidence": "margin-bottom: 18px (off the 4px scale) on .price-tabs",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 919,
+      "evidence": "padding: 10px 12px (off the 4px scale) on .price-tab-btn",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 945,
+      "evidence": "gap: 14px (off the 4px scale) on .price-row",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 947,
+      "evidence": "padding: 15px 18px (off the 4px scale) on .price-row",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 961,
+      "evidence": "gap: 6px (off the 4px scale) on .price-row-action",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 965,
+      "evidence": "gap: 14px (off the 4px scale) on .price-row-action",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 982,
+      "evidence": "padding: 6px 12px (off the 4px scale) on .price-order-btn",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 998,
+      "evidence": "padding: 14px 16px (off the 4px scale) on .price-bonus-strip",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1016,
+      "evidence": "padding: 2px 2px 10px (off the 4px scale) on .formats-track",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1051,
+      "evidence": "padding: 14px 18px (off the 4px scale) on .format-photo-overlay",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1065,
+      "evidence": "padding: 4px 10px (off the 4px scale) on .format-badge-top",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1069,
+      "evidence": "margin-top: 3px (off the 4px scale) on .format-short-usp",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1071,
+      "evidence": "padding: 16px 18px 18px (off the 4px scale) on .format-body",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1074,
+      "evidence": "gap: 14px (off the 4px scale) on .format-body",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1088,
+      "evidence": "padding: 10px 12px (off the 4px scale) on .spb-mini-map",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1103,
+      "evidence": "gap: 7px (off the 4px scale) on .spb-map-pin-badge",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1105,
+      "evidence": "padding: 6px 10px (off the 4px scale) on .spb-map-pin-badge",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1136,
+      "evidence": "margin-bottom: 6px (off the 4px scale) on .fmw-label",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1157,
+      "evidence": "gap: 6px (off the 4px scale) on .fmw-chips",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1170,
+      "evidence": "padding: 5px 11px (off the 4px scale) on .fmw-chip",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1232,
+      "evidence": "margin-bottom: 18px (off the 4px scale) on .lab-tags-row",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1239,
+      "evidence": "padding: 6px 11px (off the 4px scale) on .lab-tag-chip",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1259,
+      "evidence": "margin-bottom: 10px (off the 4px scale) on .quiz-progress-top",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1266,
+      "evidence": "padding: 5px 12px (off the 4px scale) on .quiz-step-pill",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1287,
+      "evidence": "margin-bottom: 14px (off the 4px scale) on .quiz-question-title",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1289,
+      "evidence": "gap: 10px (off the 4px scale) on .quiz-options-grid",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1295,
+      "evidence": "padding: 12px 14px (off the 4px scale) on .quiz-opt-label",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1325,
+      "evidence": "padding: 16px 14px (off the 4px scale) on .adv-stat-card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1328,
+      "evidence": "gap: 6px (off the 4px scale) on .adv-stat-card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1345,
+      "evidence": "padding: 20px 18px (off the 4px scale) on .director-card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1349,
+      "evidence": "gap: 14px (off the 4px scale) on .director-card",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1352,
+      "evidence": "gap: 14px (off the 4px scale) on .director-head-row",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1369,
+      "evidence": "margin-bottom: 3px (off the 4px scale) on .director-eyebrow",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1377,
+      "evidence": "padding: 12px 14px (off the 4px scale) on .director-quote",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1400,
+      "evidence": "padding: 16px 18px (off the 4px scale) on .wz-body",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1401,
+      "evidence": "margin-bottom: 6px (off the 4px scale) on .wz-title",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1418,
+      "evidence": "gap: 10px (off the 4px scale) on .b2b-perks-grid",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1419,
+      "evidence": "margin: 18px 0 20px (off the 4px scale) on .b2b-perks-grid",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1456,
+      "evidence": "padding: 14px 18px (off the 4px scale) on .branch-item",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1463,
+      "evidence": "gap: 6px (off the 4px scale) on .branch-metro",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1475,
+      "evidence": "padding: 16px 18px (off the 4px scale) on .faq-item",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1532,
+      "evidence": "padding: 20px 18px 24px (off the 4px scale) on .modal-sheet",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1558,
+      "evidence": "margin-bottom: 6px (off the 4px scale) on .modal-context-pill",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1568,
+      "evidence": "padding: 11px 10px (off the 4px scale) on .phone-display-field",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1583,
+      "evidence": "margin-bottom: 14px (off the 4px scale) on .dialpad-grid",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1611,
+      "evidence": "gap: 10px (off the 4px scale) on .consent-row",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1622,
+      "evidence": "padding: 9px 12px (off the 4px scale) on .form-status-msg",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1667,
+      "evidence": "margin-top: 14px (off the 4px scale) on .lightbox-caption",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1675,
+      "evidence": "padding: 10px 24px (off the 4px scale) on .lightbox-close",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1692,
+      "evidence": "gap: 10px (off the 4px scale) on .sticky-mobile-bar",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "24b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1698,
+      "evidence": "gap: 6px (off the 4px scale) on .smb-call",
+      "fix": "Use the 4px spacing scale"
+    },
+    {
+      "gate": "26b",
+      "grade": "REFLEX",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1,
+      "evidence": "no :active styling anywhere",
+      "fix": "All eight states; guard: not a form control, no aria-disabled anywhere"
+    },
+    {
+      "gate": "29",
+      "grade": "WARN",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 776,
+      "evidence": "glass panel: backdrop-filter blur over a translucent black on .review-photo-zoom-tag",
+      "fix": "Solid or grained surface; elevation by lightness"
+    },
+    {
+      "gate": "29",
+      "grade": "WARN",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 822,
+      "evidence": "glass panel: backdrop-filter blur over a translucent black on .wwf-tag",
+      "fix": "Solid or grained surface; elevation by lightness"
+    },
+    {
+      "gate": "29",
+      "grade": "WARN",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1516,
+      "evidence": "glass panel: backdrop-filter blur over a translucent black on .modal-backdrop",
+      "fix": "Solid or grained surface; elevation by lightness"
+    },
+    {
+      "gate": "29",
+      "grade": "WARN",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1687,
+      "evidence": "glass panel: backdrop-filter blur over a translucent black on .sticky-mobile-bar",
+      "fix": "Solid or grained surface; elevation by lightness"
+    },
+    {
+      "gate": "40",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1599,
+      "evidence": "3.95:1 < 4.5:1 on .dial-key.key-reset",
+      "fix": "Raise the contrast to threshold"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2654,
+      "evidence": "long clickable label \"Вызвать мобильную мастерскую →\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2728,
+      "evidence": "long clickable label \"Ввести номер и узнать цену →\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2781,
+      "evidence": "long clickable label \"Обсудить ремонт ноутбука →\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 2872,
+      "evidence": "long clickable label \"B2B-отдел: (812) 640-48-04\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "49",
+      "grade": "WARN",
+      "tier": "floor",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 3111,
+      "evidence": "long clickable label \"Получить расчёт стоимости →\" without nowrap",
+      "fix": "Shorten the label or set nowrap"
+    },
+    {
+      "gate": "74",
+      "grade": "WARN",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 45,
+      "evidence": "default Tailwind palette #0f172a on --text-primary",
+      "fix": "Mix the colour for this page in OKLCH; a stock swatch is the AI look"
+    },
+    {
+      "gate": "74",
+      "grade": "WARN",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 47,
+      "evidence": "default Tailwind palette #64748b on --text-tertiary",
+      "fix": "Mix the colour for this page in OKLCH; a stock swatch is the AI look"
+    },
+    {
+      "gate": "74",
+      "grade": "WARN",
+      "tier": "reflex",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 53,
+      "evidence": "default Tailwind palette #f8fafc on --surface-sunken",
+      "fix": "Mix the colour for this page in OKLCH; a stock swatch is the AI look"
+    },
+    {
+      "gate": "F4",
+      "grade": "WARN",
+      "tier": "finish",
+      "file": "artifacts\\landings-review-2026-11-03\\reference\\landings\\2026-10-30_lr-remont-noutbukov-v2.html",
+      "line": 1831,
+      "evidence": "two filled buttons side by side in the hero: \"Узнать стоимость\" and \"Оставить заявку\"",
+      "fix": "One filled primary per screen; the second action is outlined or a typographic link"
+    }
+  ]
+}

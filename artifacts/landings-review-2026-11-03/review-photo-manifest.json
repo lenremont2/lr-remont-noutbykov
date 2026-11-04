@@ -1,0 +1,146 @@
+[
+  {
+    "index": 3,
+    "id": "water",
+    "alt": "Диагностика ноутбука после залития",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-fb52f140-a3dd-4110-ae73-9f091f3e637c.png"
+  },
+  {
+    "index": 4,
+    "id": "tea",
+    "alt": "Замена клавиатуры после залития",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-4636ffeb-981e-455a-9a6c-d41acdd5f0e5.png"
+  },
+  {
+    "index": 5,
+    "id": "home",
+    "alt": "Чистка охлаждения на дому",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-e14777e8-2237-4bce-9277-0748f809d78d.png"
+  },
+  {
+    "index": 6,
+    "id": "diagnostics",
+    "alt": "Диагностика платы ноутбука",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-2c817bfc-6a2c-4173-9cd9-7958f075fc1c.png"
+  },
+  {
+    "index": 7,
+    "id": "asus-fan",
+    "alt": "Обслуживание системы охлаждения",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-45782d5f-9c82-434f-ba06-5bdffab0352e.png"
+  },
+  {
+    "index": 8,
+    "id": "power",
+    "alt": "Ремонт кнопки включения",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-17055a54-4f04-4ac5-a178-4f52dbee5f35.png"
+  },
+  {
+    "index": 9,
+    "id": "tea-board",
+    "alt": "Очистка платы после залития",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-aa82ccf1-c0dd-4fa1-9980-641c68c4c9ef.png"
+  },
+  {
+    "index": 10,
+    "id": "shutdown",
+    "alt": "Диагностика самопроизвольных выключений",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-ff796d78-6e11-41e5-a4ca-7f6dffb51727.png"
+  },
+  {
+    "index": 11,
+    "id": "testing",
+    "alt": "Проверка ноутбука",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-bfe5b8e8-ffa2-4a03-842a-a0e6ac9b9587.png"
+  },
+  {
+    "index": 12,
+    "id": "same-day",
+    "alt": "Сборка ноутбука после ремонта",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-3b252565-6472-4ece-9b5a-767a74bcfe3c.png"
+  },
+  {
+    "index": 13,
+    "id": "charge-port",
+    "alt": "Замена разъёма зарядки",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-f617105d-2f77-4b96-8250-1798d1a4f918.png"
+  },
+  {
+    "index": 14,
+    "id": "jack-solder",
+    "alt": "Пайка разъёма питания",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-8d92c705-a985-4a4b-998b-bff3d6eaff71.png"
+  },
+  {
+    "index": 15,
+    "id": "devices",
+    "alt": "Диагностика электроники",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-4b2bd987-7c62-47ac-b165-c73133fdef16.png"
+  },
+  {
+    "index": 16,
+    "id": "assembly",
+    "alt": "Подключение шлейфа ноутбука",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-c339b24d-8595-4882-9d30-98baa51fff3c.png"
+  },
+  {
+    "index": 17,
+    "id": "ssd",
+    "alt": "Установка SSD",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-67760fc5-0178-4118-bb75-f35a26c46763.png"
+  },
+  {
+    "index": 18,
+    "id": "performance",
+    "alt": "Проверка работы ноутбука",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-46a5e2ef-905c-4184-9dee-b4c2f9795b18.png"
+  },
+  {
+    "index": 19,
+    "id": "screen",
+    "alt": "Замена экрана ноутбука",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-3d620479-bf28-4aa9-adbb-c58a940eafee.png"
+  },
+  {
+    "index": 20,
+    "id": "two-laptops",
+    "alt": "Обслуживание ноутбуков",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-fe38479a-17fc-475a-af74-71f1b6708ae2.png"
+  },
+  {
+    "index": 21,
+    "id": "quick-fix",
+    "alt": "Настройка креплений ноутбука",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-eea35006-d14c-4c27-931c-b3bf19d889c9.png"
+  },
+  {
+    "index": 22,
+    "id": "inspection",
+    "alt": "Проверка состояния ноутбука",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-57688656-c080-4a0b-a2b5-5ff854f1f842.png"
+  },
+  {
+    "index": 23,
+    "id": "family",
+    "alt": "Обслуживание ноутбука на дому",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-d66fee0e-9258-4e42-bdd5-d8d126341e4c.png"
+  },
+  {
+    "index": 24,
+    "id": "screw",
+    "alt": "Извлечение повреждённого винта",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-0b1591e1-ecc7-48b5-adc9-e5a34942cf75.png"
+  },
+  {
+    "index": 25,
+    "id": "paste",
+    "alt": "Замена термопасты",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-f23d9fb1-4a96-45cf-9f26-719c021767df.png"
+  },
+  {
+    "index": 26,
+    "id": "laptop-pc",
+    "alt": "Диагностика ноутбука и компьютера",
+    "path": "C:\\Users\\User\\.codex\\generated_images\\01a1a090-f69b-7d61-9fae-c3736334a94c\\exec-3a79f4a9-3298-4d0c-ab38-2312c0df31e2.png"
+  }
+]

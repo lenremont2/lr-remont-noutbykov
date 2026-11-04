@@ -1,0 +1,10 @@
+
+> lr-remont-noutbykov@0.1.0 check
+> astro check --noSync
+
+15:43:49 [check] Getting diagnostics for Astro files in D:\works\projects\lr-remont-noutbykov...
+Result (107 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+

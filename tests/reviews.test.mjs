@@ -12,8 +12,8 @@ const html = readFileSync(
 const section = html.match(/<section id="lr-reviews"[\s\S]*?<\/section>/)?.[0];
 
 assert.ok(section, "Reviews section must be built");
-assert.equal(reviews.items.length, 26);
-assert.equal(new Set(reviews.items.map((review) => review.name)).size, 26);
+assert.equal(reviews.items.length, 27);
+assert.equal(new Set(reviews.items.map((review) => review.name)).size, 27);
 const avatarReviews = reviews.items.filter((review) => review.avatar);
 assert.equal(avatarReviews.length, 24);
 assert.deepEqual(
@@ -25,16 +25,30 @@ assert.deepEqual(
   ),
 );
 assert.equal((section.match(/<article class="lr-review">/g) || []).length, 26);
+assert.equal((section.match(/Оценка 1 из 5/g) || []).length, 0);
+assert.ok(!section.includes("Петр Перцев"));
 assert.equal((section.match(/Оценка 4 из 5/g) || []).length, 1);
 assert.equal((section.match(/Оценка 5 из 5/g) || []).length, 25);
 assert.match(section, /data-lr-review-track/);
 assert.match(section, /aria-roledescription="карусель"/);
-assert.match(section, /aria-controls="lr-review-track"/);
+assert.doesNotMatch(
+  section,
+  /data-lr-review-prev|data-lr-review-next|lr-review__date|lr-review__footer/,
+);
+for (const card of section.match(
+  /<article class="lr-review">[\s\S]*?<\/article>/g,
+) || []) {
+  assert.match(
+    card.match(/<header[\s\S]*?<\/header>/)?.[0] || "",
+    /lr-review__source/,
+  );
+}
 assert.doesNotMatch(section, /Показать ещё|lr-reviews__more/);
 
 for (const review of reviews.items) {
+  if (review.name === "Петр Перцев") continue;
   assert.ok(
-    Number.isInteger(review.rating) && review.rating >= 4 && review.rating <= 5,
+    Number.isInteger(review.rating) && review.rating >= 1 && review.rating <= 5,
     review.name,
   );
   assert.ok(review.text.trim() && review.date.trim(), review.name);
@@ -69,14 +83,14 @@ const photoBytes = readFileSync(
 assert.equal(photoBytes.readUInt16BE(0), 0xffd8, "Review photo must be JPEG");
 const photoCard = section
   .match(/<article class="lr-review">[\s\S]*?<\/article>/g)
-  ?.find((card) => card.includes(photo.src));
+  ?.find((card) => card.includes("/media/review-result-candid-imac.webp"));
 assert.ok(
   photoCard?.includes(photoReview.subject),
   "Photo subject must be explicit",
 );
-assert.ok(photoCard.includes(`href="${photo.src}"`));
-assert.ok(photoCard.includes('width="113" height="150"'));
-assert.ok(photoCard.includes(photoReview.reviewUrl));
+assert.ok(photoCard.includes('href="/media/review-result-candid-imac.webp"'));
+assert.ok(!photoCard.includes(photoReview.reviewUrl));
+assert.ok(photoCard.includes("Яндекс Карты"));
 const computerReview = reviews.items.find(
   (review) => review.name === "Егор Налимов",
 );
@@ -89,7 +103,7 @@ assert.ok(
   ),
 );
 assert.ok(section.includes(computerReview.subject));
-assert.ok(section.includes(computerReview.photos[0].src));
+assert.ok(section.includes("/media/review-result-candid-desktop.webp"));
 for (const rating of reviews.ratings) {
   assert.ok(reviews.sources[rating.source]);
   assert.ok(rating.rating > 0 && rating.rating <= 5);
@@ -97,7 +111,6 @@ for (const rating of reviews.ratings) {
   assert.match(rating.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);
 }
 for (const aggregator of reviews.aggregators) {
-  assert.ok(section.includes(aggregator.url));
   assert.ok(section.includes(aggregator.name));
   assert.ok(aggregator.rating > 0 && aggregator.rating <= 5);
   assert.ok(
@@ -105,31 +118,62 @@ for (const aggregator of reviews.aggregators) {
   );
 }
 assert.equal(reviews.aggregators.length, 3);
-const award = section.match(
-  /<div\b[^>]*class="[^"]*lr-reviews__award[^\"]*"[^>]*>[\s\S]*?<\/div>/,
-)?.[0];
+const award = section.match(/<ul class="lr-documents"[\s\S]*?<\/ul>/)?.[0];
 assert.ok(
   award,
-  "The brand-rating article is separate from three aggregator scores",
+  "The document gallery is separate from aggregator scores and client reviews",
 );
-assert.ok(award.includes("Рейтинг брендов") && award.includes("2026"));
-assert.doesNotMatch(award, /<a\b|href=|tabindex=|role="(?:button|link)"/);
+assert.ok(award.includes("Gazelle") && award.includes("2016"));
+assert.equal((award.match(/data-lr-photo-open/g) || []).length, 4);
+assert.ok(
+  section.indexOf("lr-reviews__documents") > section.lastIndexOf("</article>"),
+);
+assert.equal((award.match(/class="lr-document"/g) || []).length, 4);
+assert.doesNotMatch(
+  section,
+  /МАКЕТ|Ожидаем оригинал|оригиналы документов пока/,
+);
+for (const image of award.matchAll(/<img[^>]*src="([^"]+)"/g)) {
+  assert.ok(existsSync(new URL(`../public${image[1]}`, import.meta.url)));
+}
+assert.doesNotMatch(section, /lr-reviews__illustrations|repair-illustration-/);
+const illustrations = JSON.parse(
+  readFileSync(
+    new URL("../src/data/review-illustrations.json", import.meta.url),
+    "utf8",
+  ),
+);
+assert.equal(Object.keys(illustrations).length, 26);
+assert.equal(
+  (section.match(/class="lr-review__illustration-label"/g) || []).length,
+  0,
+);
+for (const review of reviews.items) {
+  if (review.name === "Петр Перцев") {
+    assert.equal(illustrations[review.name], undefined);
+    continue;
+  }
+  const photo = illustrations[review.name];
+  assert.ok(photo?.illustration && photo.alt.includes("создано с ИИ"));
+  assert.match(photo.src, /^\/media\/review-result-candid-[a-z-]+\.webp$/);
+  assert.ok(photo.width >= 900 && photo.height >= 675);
+  assert.ok(section.includes(photo.src));
+  assert.ok(existsSync(new URL(`../public${photo.src}`, import.meta.url)));
+}
 const ratings = section.match(
   /<ul class="lr-reviews__ratings"[\s\S]*?<\/ul>/,
 )?.[0];
 assert.equal(
   (ratings.match(/<div class="lr-reviews__rating-card\b/g) || []).length,
-  4,
+  3,
 );
 const ratingLinks = [
   ...ratings.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g),
 ];
-assert.deepEqual(
-  ratingLinks.map((link) => ({
-    url: link[1],
-    name: link[2].replace(/<[^>]+>/g, " ").trim(),
-  })),
-  reviews.aggregators.map(({ url, name }) => ({ url, name })),
+assert.equal(
+  ratingLinks.length,
+  0,
+  "Aggregator ratings must not contain links",
 );
 assert.doesNotMatch(award, /№\s*1|номер\s*один/i);
 assert.ok(!award.includes("lr-reviews__rating-stars"));
@@ -352,3 +396,55 @@ assert.equal(track.captured, null);
 console.log(
   "Review drag: held mouse, snapping, cancellation, native touch and source links passed.",
 );
+
+press("Home");
+reduceMotion = false;
+let actualLeft = track.scrollLeft;
+Object.defineProperty(track, "scrollLeft", {
+  configurable: true,
+  get() {
+    // Model browser snap when layout is read after snapping is re-enabled.
+    if (!this.dataset.lrDragging && !this.dataset.lrAnimating)
+      actualLeft = Math.round(actualLeft / step) * step;
+    return actualLeft;
+  },
+  set(left) {
+    actualLeft = left;
+  },
+});
+trackHandlers.get("pointerdown")(pointer());
+trackHandlers.get("pointermove")(pointer({ clientX: 420 }));
+assert.equal(track.scrollLeft, 180);
+trackHandlers.get("pointerup")(pointer({ clientX: 420, buttons: 0 }));
+assert.equal(
+  track.scrollLeft,
+  180,
+  "Release starts settling at the dragged position",
+);
+assert.equal(track.dataset.lrAnimating, "true");
+handlers.get("next:click")();
+assert.equal(
+  track.scrollLeft,
+  180,
+  "Retargeting keeps snap disabled between animations",
+);
+assert.equal(animationFrames.size, 1);
+finishAnimation();
+assert.equal(track.dataset.lrAnimating, undefined);
+assert.equal(track.scrollLeft, 1360);
+handlers.get("next:click")();
+track.scrollLeft = 1450;
+trackHandlers.get("pointerdown")(pointer());
+assert.equal(
+  track.scrollLeft,
+  1450,
+  "Grabbing an animation does not trigger native snap",
+);
+trackHandlers.get("pointerup")(pointer({ buttons: 0 }));
+assert.equal(
+  track.scrollLeft,
+  1450,
+  "Releasing without dragging resumes smooth settling",
+);
+finishAnimation();
+assert.equal(track.scrollLeft, 1360);

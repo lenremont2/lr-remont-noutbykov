@@ -1,0 +1,17 @@
+{
+  "taskId": "card-040",
+  "checkedAt": "2026-11-02",
+  "files": [
+    { "path": "result.json", "role": "Публичная сводка проверки и ограничения охвата" }
+  ],
+  "counts": {
+    "reportedReviews": 5,
+    "fullReviewsExamined": 0,
+    "matchingReviewsTotal": null,
+    "savedMatchingReviews": 0,
+    "savedPhotos": 0,
+    "availableThematicPhotos": null
+  },
+  "status": "partial",
+  "stopReason": "CAPTCHA Отзовика; не обходилась. Полные тексты и вложения не проверены."
+}

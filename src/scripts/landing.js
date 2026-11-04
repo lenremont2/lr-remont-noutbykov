@@ -63,8 +63,11 @@ export function initializePhoneMask(root) {
 }
 
 export function initializeReviewSlider(slider) {
-  const track = slider.querySelector("[data-lr-review-track]");
-  const frame = slider.querySelector("[data-lr-review-frame]");
+  const swipe = slider.hasAttribute?.("data-lr-swipe-slider");
+  const track =
+    slider.querySelector("[data-lr-review-track]") ||
+    slider.querySelector("[data-lr-swipe-track]");
+  const frame = slider.querySelector("[data-lr-review-frame]") || track;
   const cards = Array.from(track.children);
   if (!cards.length) return;
   const previous = slider.querySelector("[data-lr-review-prev]");
@@ -87,10 +90,11 @@ export function initializeReviewSlider(slider) {
     return { step, visible, start, end: track.scrollWidth - track.clientWidth };
   };
   const update = () => {
+    if (swipe) return;
     const { start, visible, end } = metrics();
     const currentLeft = destination ?? track.scrollLeft;
-    previous.disabled = currentLeft < 2;
-    next.disabled = currentLeft >= end - 2;
+    if (previous) previous.disabled = currentLeft < 2;
+    if (next) next.disabled = currentLeft >= end - 2;
     if (position)
       position.textContent = `${start + 1}–${Math.min(cards.length, start + visible)} / ${cards.length}`;
     cards.forEach((card, index) => {
@@ -101,22 +105,37 @@ export function initializeReviewSlider(slider) {
       }
     });
   };
-  const stop = () => {
+  const stop = (preserveSnap = false) => {
+    if (swipe && destination !== null)
+      track.scrollTo({ left: track.scrollLeft, behavior: "instant" });
     cancelAnimationFrame(animation);
     animation = undefined;
     destination = null;
-    delete track.dataset.lrAnimating;
+    if (!preserveSnap) delete track.dataset.lrAnimating;
+    if (!drag) track.classList?.remove("lr-swipe-track--moving");
   };
-  const goTo = (left) => {
-    stop();
+  const goTo = (left, instant = false) => {
+    stop(true);
     const from = track.scrollLeft;
     const to = Math.min(metrics().end, Math.max(0, left));
-    if (reducedMotion.matches || Math.abs(to - from) < 1) {
+    if (swipe) {
+      if (!instant && !reducedMotion.matches) destination = to;
+      track.scrollTo({
+        left: to,
+        behavior: instant || reducedMotion.matches ? "instant" : "smooth",
+      });
+      update();
+      return;
+    }
+    if (instant || reducedMotion.matches || Math.abs(to - from) < 1) {
       track.scrollTo({ left: to, behavior: "instant" });
+      delete track.dataset.lrAnimating;
+      update();
       return;
     }
     destination = to;
     track.dataset.lrAnimating = "true";
+    track.classList?.add("lr-swipe-track--moving");
     update();
     const began = performance.now();
     const tick = (now) => {
@@ -128,54 +147,84 @@ export function initializeReviewSlider(slider) {
         destination = null;
         animation = undefined;
         delete track.dataset.lrAnimating;
+        track.classList?.remove("lr-swipe-track--moving");
         update();
       }
     };
     animation = requestAnimationFrame(tick);
   };
-  const move = (direction) => {
+  const move = (direction, instant = false) => {
     const { visible, step } = metrics();
     const start = Math.round((destination ?? track.scrollLeft) / step);
-    goTo((start + direction * visible) * step);
+    goTo((start + direction * visible) * step, instant);
   };
-  previous.addEventListener("click", () => move(-1));
-  next.addEventListener("click", () => move(1));
-  track.addEventListener("scroll", update, { passive: true });
+  previous?.addEventListener("click", () => move(-1));
+  next?.addEventListener("click", () => move(1));
+  if (swipe)
+    track.addEventListener("scrollend", () => {
+      destination = null;
+    });
+  else track.addEventListener("scroll", update, { passive: true });
   let drag;
+  let suppressClick = false;
+  if (swipe)
+    track.addEventListener(
+      "click",
+      (event) => {
+        if (!suppressClick) return;
+        suppressClick = false;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+      },
+      true,
+    );
   track.addEventListener("pointerdown", (event) => {
-    stop();
+    suppressClick = false;
     if (
       event.pointerType !== "mouse" ||
       event.button !== 0 ||
-      event.target.closest("a, button, input, textarea, select")
-    )
+      event.target.closest(
+        swipe
+          ? "button, input, textarea, select, summary, details"
+          : "a, button, input, textarea, select, summary, details",
+      )
+    ) {
+      stop();
       return;
-    event.preventDefault();
+    }
+    // Disable snap before taking over an in-flight animation.
+    track.dataset.lrDragging = "true";
+    stop();
+    const link = swipe ? event.target.closest("a") : null;
+    if (!link) event.preventDefault();
     drag = {
       id: event.pointerId,
+      link,
       x: event.clientX,
       left: track.scrollLeft,
       moved: false,
     };
-    track.dataset.lrDragging = "true";
-    track.setPointerCapture(event.pointerId);
+    track.classList?.add("lr-swipe-track--moving");
+    if (!link) track.setPointerCapture(event.pointerId);
   });
   const finishDrag = (event) => {
     if (!drag || event.pointerId !== drag.id) return;
     const { id, left: startLeft, moved } = drag;
     drag = undefined;
-    delete track.dataset.lrDragging;
     if (track.hasPointerCapture(id)) track.releasePointerCapture(id);
-    if (moved) {
+    if (moved) suppressClick = true;
+    if (!swipe) {
       const { step } = metrics();
       const delta = track.scrollLeft - startLeft;
       const fromIndex = Math.round(startLeft / step);
       let targetIndex = Math.round(track.scrollLeft / step);
-      if (targetIndex === fromIndex && Math.abs(delta) >= 36) {
+      if (moved && targetIndex === fromIndex && Math.abs(delta) >= 36) {
         targetIndex = fromIndex + Math.sign(delta);
       }
       goTo(targetIndex * step);
     }
+    delete track.dataset.lrDragging;
+    if (destination === null) track.classList?.remove("lr-swipe-track--moving");
   };
   track.addEventListener("pointermove", (event) => {
     if (!drag || event.pointerId !== drag.id) return;
@@ -185,13 +234,21 @@ export function initializeReviewSlider(slider) {
     }
     const distance = event.clientX - drag.x;
     drag.moved ||= Math.abs(distance) > 5;
+    if (drag.moved && !track.hasPointerCapture(event.pointerId))
+      track.setPointerCapture(event.pointerId);
     event.preventDefault();
     track.scrollTo({ left: drag.left - distance, behavior: "instant" });
   });
   track.addEventListener("pointerup", finishDrag);
+  track.addEventListener("pointerleave", (event) => {
+    if (drag?.link && !drag.moved) finishDrag(event);
+  });
+  track.addEventListener("dragstart", (event) => {
+    if (drag?.link) event.preventDefault();
+  });
   track.addEventListener("pointercancel", finishDrag);
   track.addEventListener("lostpointercapture", finishDrag);
-  track.addEventListener("wheel", stop, { passive: true });
+  track.addEventListener("wheel", () => stop(), { passive: true });
   reducedMotion.addEventListener("change", () => {
     if (destination !== null) {
       const left = destination;
@@ -203,10 +260,10 @@ export function initializeReviewSlider(slider) {
     if (event.target !== track) return;
     if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
       event.preventDefault();
-      move(event.key === "ArrowLeft" ? -1 : 1);
+      move(event.key === "ArrowLeft" ? -1 : 1, true);
     } else if (event.key === "Home" || event.key === "End") {
       event.preventDefault();
-      goTo(event.key === "Home" ? 0 : track.scrollWidth);
+      goTo(event.key === "Home" ? 0 : track.scrollWidth, true);
     }
   });
   if (typeof ResizeObserver !== "undefined")
@@ -214,8 +271,84 @@ export function initializeReviewSlider(slider) {
       stop();
       update();
     }).observe(frame);
-  slider.querySelector("[data-lr-review-controls]").hidden = false;
+  const controls = slider.querySelector("[data-lr-review-controls]");
+  if (controls) controls.hidden = false;
   update();
+  if (slider.hasAttribute?.("data-lr-auto-swipe"))
+    initializeAutoSwipe(
+      slider,
+      () => {
+        const { end, step } = metrics();
+        if (track.scrollLeft >= end - 2) goTo(0);
+        else goTo(Math.min(end, track.scrollLeft + step));
+      },
+      () => {
+        stop();
+        update();
+      },
+      reducedMotion,
+    );
+}
+
+export function initializeAutoSwipe(slider, advance, stop, reducedMotion) {
+  const track = slider.querySelector("[data-lr-swipe-track]");
+  let timer;
+  let paused = false;
+  let visible = false;
+  let hovered = false;
+  const schedule = () => {
+    clearTimeout(timer);
+    if (
+      !paused &&
+      !hovered &&
+      visible &&
+      !document.hidden &&
+      !reducedMotion.matches
+    )
+      timer = setTimeout(() => {
+        advance();
+        schedule();
+      }, 4000);
+  };
+  const pauseByInteraction = () => {
+    paused = true;
+    stop();
+    schedule();
+  };
+  track.addEventListener("pointerdown", pauseByInteraction, { passive: true });
+  track.addEventListener("wheel", pauseByInteraction, { passive: true });
+  track.addEventListener("focusin", pauseByInteraction);
+  track.addEventListener("pointerenter", (event) => {
+    if (event.pointerType === "mouse") {
+      hovered = true;
+      stop();
+      schedule();
+    }
+  });
+  track.addEventListener("pointerleave", (event) => {
+    if (event.pointerType === "mouse") {
+      hovered = false;
+      schedule();
+    }
+  });
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) stop();
+    schedule();
+  });
+  reducedMotion.addEventListener("change", () => {
+    stop();
+    schedule();
+  });
+  if (typeof IntersectionObserver !== "undefined")
+    new IntersectionObserver(
+      ([entry]) => {
+        visible = entry.isIntersecting;
+        if (!visible) stop();
+        schedule();
+      },
+      { threshold: 0.5 },
+    ).observe(track);
+  schedule();
 }
 
 export function initializeRepairQuiz(quiz, updateContext) {
@@ -226,8 +359,16 @@ export function initializeRepairQuiz(quiz, updateContext) {
   const next = quiz.querySelector("[data-lr-quiz-next]");
   const progress = quiz.querySelector("[data-lr-quiz-progress]");
   const error = quiz.querySelector("[data-lr-quiz-error]");
+  const analysis = quiz.querySelector("[data-lr-quiz-analysis]");
+  const finishButton = quiz.querySelector("[data-lr-quiz-finish]");
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  let pending = null;
   let current = 0;
+  let keyboardChoice = false;
   const show = (focus = true) => {
+    analysis.hidden = true;
+    questions.hidden = false;
+    quiz.removeAttribute("aria-busy");
     steps.forEach((step, index) => {
       step.hidden = index !== current;
     });
@@ -239,26 +380,74 @@ export function initializeRepairQuiz(quiz, updateContext) {
     error.textContent = "";
     if (focus) steps[current].querySelector("legend, h3").focus();
   };
+  const finish = () => {
+    if (pending === null) return;
+    clearTimeout(pending);
+    pending = null;
+    current = steps.length - 1;
+    updateContext(form);
+    show(
+      typeof document === "undefined" || quiz.contains(document.activeElement),
+    );
+  };
   const forward = () => {
-    if (current === steps.length - 1) return;
+    if (pending !== null || current === steps.length - 1) return;
     if (!steps[current].querySelector("input:checked")) {
       error.textContent = "Выберите один из вариантов, чтобы продолжить.";
       steps[current].querySelector("input").focus();
       return;
     }
-    current += 1;
-    if (current === steps.length - 1) {
-      for (const name of ["device_category", "symptom", "service_format"]) {
+    if (current === steps.length - 2) {
+      const answeredNames = [
+        "device_category",
+        "symptom",
+        "service_format",
+      ].filter((name) =>
+        questions.querySelector(`input[name="${name}"]:checked`),
+      );
+      for (const name of answeredNames) {
         form.elements[name].value = questions.querySelector(
           `input[name="${name}"]:checked`,
         ).value;
       }
-      updateContext(form);
+      const answers = answeredNames.map((name) => {
+        const input = questions.querySelector(`input[name="${name}"]:checked`);
+        return (
+          input.closest?.("label")?.querySelector("strong")?.textContent ||
+          input.value
+        );
+      });
+      quiz.querySelector("[data-lr-quiz-summary]").textContent =
+        answers.join(" · ");
+      steps.forEach((step) => {
+        step.hidden = true;
+      });
+      questions.hidden = true;
+      analysis.hidden = false;
+      error.textContent = "";
+      quiz.setAttribute("aria-busy", "true");
+      progress.textContent = "Ответы сохранены";
+      previous.hidden = false;
+      next.hidden = true;
+      pending = setTimeout(
+        finish,
+        reducedMotion.matches || keyboardChoice ? 0 : 1000,
+      );
+      analysis.querySelector("h3").focus();
+      return;
     }
+    current += 1;
     show();
   };
+  finishButton.addEventListener("click", finish);
   next.addEventListener("click", forward);
   previous.addEventListener("click", () => {
+    if (pending !== null) {
+      clearTimeout(pending);
+      pending = null;
+      show();
+      return;
+    }
     if (current === 0) return;
     current -= 1;
     show();
@@ -267,14 +456,89 @@ export function initializeRepairQuiz(quiz, updateContext) {
     event.preventDefault();
     forward();
   });
-  questions.addEventListener("change", () => {
+  questions.addEventListener("pointerdown", () => {
+    keyboardChoice = false;
+  });
+  questions.addEventListener("keydown", () => {
+    keyboardChoice = true;
+  });
+  questions.addEventListener("click", (event) => {
+    if (
+      !keyboardChoice &&
+      event.target.matches('input[type="radio"]') &&
+      event.target.checked &&
+      event.target.closest("[data-lr-quiz-step]") === steps[current]
+    )
+      forward();
+  });
+  questions.addEventListener("change", (event) => {
     error.textContent = "";
+    if (
+      !keyboardChoice &&
+      event.target.closest("[data-lr-quiz-step]") === steps[current]
+    )
+      forward();
   });
   quiz.querySelector("[data-lr-quiz-navigation]").hidden = false;
   show(false);
 }
 
-export function initializeQuizModal(root, onToggle = () => {}) {
+export function initializeMapModal(root) {
+  const dialog = root.querySelector('[data-lr-modal="map"]');
+  if (!dialog) return;
+  let opener;
+  root.addEventListener("click", (event) => {
+    const trigger = event.target.closest?.("[data-lr-map-open]");
+    if (!trigger || dialog.open) return;
+    event.preventDefault();
+    opener = trigger;
+    const type = trigger.dataset.lrMapOpen;
+    const format = trigger.dataset.format;
+    dialog.dataset.format = format;
+    dialog.dataset.source = trigger.dataset.source;
+    dialog.querySelector("[data-lr-modal-title]").textContent = {
+      "at-home": "Выберите адрес для выезда мастера",
+      "mobile-lab": "Куда приехать мастерской на колёсах?",
+      workshop: "Выберите мастерскую",
+      courier: "Откуда забрать ноутбук?",
+    }[format];
+    dialog.querySelectorAll("[data-lr-map-view]").forEach((view) => {
+      view.hidden = view.dataset.lrMapView !== type;
+    });
+    dialog.showModal();
+    dialog.scrollTop = 0;
+  });
+  dialog.addEventListener("click", (event) => {
+    if (event.target !== dialog) return;
+    const box = dialog.getBoundingClientRect();
+    if (
+      event.clientX < box.left ||
+      event.clientX > box.right ||
+      event.clientY < box.top ||
+      event.clientY > box.bottom
+    )
+      dialog.close();
+  });
+  dialog.addEventListener("close", () => {
+    opener?.focus({ preventScroll: true });
+  });
+  root.addEventListener(
+    "wheel",
+    (event) => {
+      if (dialog.open && event.target === dialog) event.preventDefault();
+    },
+    { passive: false },
+  );
+  root.addEventListener(
+    "touchmove",
+    (event) => {
+      if (dialog.open && event.target === dialog) event.preventDefault();
+    },
+    { passive: false },
+  );
+}
+
+export function initializeQuizModal(root) {
   const dialog = root.querySelector("[data-lr-quiz-modal]");
   const home = root.querySelector("[data-lr-quiz-home]");
   const quiz = home?.querySelector("[data-lr-quiz]");
@@ -306,7 +570,6 @@ export function initializeQuizModal(root, onToggle = () => {}) {
         "[data-lr-quiz-step]:not([hidden]) legend, [data-lr-quiz-step]:not([hidden]) h3",
       )
       ?.focus({ preventScroll: true });
-    onToggle();
   });
   dialog.querySelector("[data-lr-quiz-close]").addEventListener("click", () => {
     dialog.close();
@@ -322,7 +585,6 @@ export function initializeQuizModal(root, onToggle = () => {}) {
     home.append(quiz);
     home.style.minHeight = originalMinHeight;
     opener?.focus({ preventScroll: true });
-    onToggle();
   });
   root.addEventListener(
     "wheel",
@@ -377,24 +639,55 @@ export function leadDeviceCategory(element) {
 }
 
 export function updateVisitFields(form) {
-  const active = ["mobile-lab", "at-home"].includes(
-    form.elements.service_format.value,
-  );
+  const active =
+    !form.hasAttribute?.("data-lr-compact-form") &&
+    ["mobile-lab", "at-home", "courier"].includes(
+      form.elements.service_format.value,
+    );
   form.querySelector("[data-lr-visit-fields]").hidden = !active;
   for (const name of ["visit_address", "requested_repair_place"]) {
     const field = form.elements[name];
-    field.disabled = !active;
-    field.required = active;
-    if (!active) field.removeAttribute("aria-invalid");
+    const enabled =
+      active &&
+      (name === "visit_address" ||
+        form.elements.service_format.value !== "courier");
+    field.disabled = !enabled;
+    field.required = enabled;
+    if (!enabled) field.removeAttribute("aria-invalid");
   }
   if (!active) {
     form.querySelector("[data-lr-visit-address-error]").textContent = "";
     form.querySelector("[data-lr-repair-place-error]").textContent = "";
   }
-  if (active && !form.elements.requested_repair_place.value) {
+  if (
+    active &&
+    !form.elements.requested_repair_place.disabled &&
+    !form.elements.requested_repair_place.value
+  ) {
     form.elements.requested_repair_place.value =
       form.elements.service_format.value === "at-home" ? "home" : "mobile-lab";
   }
+}
+
+export function updateFormReadiness(form) {
+  const phoneReady = !validatePhone(form.elements.phone.value).error;
+  const consentReady = form.elements.consent.checked;
+  const address = form.elements.visit_address;
+  const place = form.elements.requested_repair_place;
+  const visitReady =
+    (address.disabled || Boolean(address.value.trim())) &&
+    (place.disabled ||
+      ["home", "work", "mobile-lab", "consultation"].includes(place.value));
+  const submit = form.querySelector("[data-hop-lead-submit]");
+  submit.disabled = !(phoneReady && consentReady && visitReady);
+  form.querySelector("[data-lr-form-ready]").textContent = !phoneReady
+    ? "Введите номер телефона полностью."
+    : !visitReady
+      ? "Укажите адрес и место ремонта."
+      : !consentReady
+        ? "Подтвердите согласие, чтобы отправить заявку."
+        : "Всё готово — можно отправить заявку.";
+  return !submit.disabled;
 }
 
 export function validateVisitFields(form, editedField = null) {
@@ -428,30 +721,72 @@ export function validateVisitFields(form, editedField = null) {
 
 export function initializeHeroVideo(video) {
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
-  let visible = true;
+  const playButton = video.parentElement?.querySelector("[data-lr-hero-play]");
+  const preview = video.parentElement?.querySelector("[data-lr-hero-preview]");
+  const reveal = () => {
+    if (video.paused || video.readyState < 2) return;
+    video.dataset.lrPlaying = "true";
+    if (preview) preview.dataset.lrLoaded = "true";
+  };
+  const revealOnFrame = () => {
+    if (video.requestVideoFrameCallback)
+      video.requestVideoFrameCallback(reveal);
+    else reveal();
+  };
+  let attempt = 0;
   video.controls = false;
   video.muted = true;
   video.loop = true;
   video.playsInline = true;
   const updateVideo = () => {
-    video.autoplay =
-      !reducedMotion.matches &&
-      visible &&
-      (typeof document === "undefined" ||
-        document.visibilityState !== "hidden");
+    const currentAttempt = ++attempt;
+    video.autoplay = !reducedMotion.matches;
+    if (playButton) playButton.hidden = true;
     if (!video.autoplay) video.pause();
-    else video.play().catch(() => {});
+    else if (video.error || video.networkState === 3) {
+      if (playButton) playButton.hidden = false;
+      return;
+    } else if (video.paused)
+      video.play().catch(() => {
+        if (playButton && currentAttempt === attempt) playButton.hidden = false;
+      });
   };
+  playButton?.addEventListener("click", () => {
+    playButton.hidden = true;
+    // A failed <source> can report NETWORK_NO_SOURCE without setting video.error.
+    if (video.error || video.networkState === 3) video.load();
+    video
+      .play()
+      .then(() => {
+        playButton.hidden = true;
+      })
+      .catch(() => {
+        playButton.hidden = false;
+      });
+  });
+  video.addEventListener("playing", () => {
+    if (playButton) playButton.hidden = true;
+    revealOnFrame();
+  });
+  video.addEventListener("pause", () => {
+    if (
+      playButton &&
+      video.dataset.lrPlaying &&
+      video.readyState >= 2 &&
+      !reducedMotion.matches
+    )
+      playButton.hidden = false;
+  });
+  video.addEventListener("error", () => {
+    if (playButton) playButton.hidden = false;
+  });
   updateVideo();
+  if (!video.paused && video.readyState >= 2) revealOnFrame();
   reducedMotion.addEventListener("change", updateVideo);
-  if (typeof IntersectionObserver !== "undefined") {
-    new IntersectionObserver(([entry]) => {
-      visible = entry.isIntersecting;
-      updateVideo();
-    }).observe(video);
-  }
   if (typeof document !== "undefined")
-    document.addEventListener("visibilitychange", updateVideo);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") updateVideo();
+    });
 }
 
 export function initializeVideoPlayer(player) {
@@ -501,6 +836,43 @@ export function initializeSignature(signature) {
   observer.observe(signature);
 }
 
+export function initializePriceTabs(pricing) {
+  const tablist = pricing.querySelector("[data-lr-price-tabs]");
+  if (!tablist || pricing.dataset.lrPriceTabsReady) return;
+  const tabs = Array.from(tablist.querySelectorAll("[data-lr-price-tab]"));
+  const panels = Array.from(pricing.querySelectorAll("[data-lr-price-panel]"));
+  if (tabs.length < 2 || tabs.length !== panels.length) return;
+  const select = (index) => {
+    tabs.forEach((tab, i) => {
+      tab.setAttribute("aria-selected", String(i === index));
+      tab.tabIndex = i === index ? 0 : -1;
+      panels[i].hidden = i !== index;
+    });
+  };
+  tablist.setAttribute("role", "tablist");
+  tabs.forEach((tab, index) => {
+    tab.setAttribute("role", "tab");
+    panels[index].setAttribute("role", "tabpanel");
+    panels[index].setAttribute("aria-labelledby", tab.id);
+    tab.addEventListener("click", () => select(index));
+    tab.addEventListener("keydown", (event) => {
+      let next;
+      if (event.key === "ArrowRight") next = (index + 1) % tabs.length;
+      if (event.key === "ArrowLeft")
+        next = (index + tabs.length - 1) % tabs.length;
+      if (event.key === "Home") next = 0;
+      if (event.key === "End") next = tabs.length - 1;
+      if (next === undefined) return;
+      event.preventDefault();
+      select(next);
+      tabs[next].focus({ preventScroll: true });
+    });
+  });
+  select(0);
+  pricing.dataset.lrPriceTabsReady = "true";
+  tablist.hidden = false;
+}
+
 export function initializeLanding() {
   const root = document.querySelector("#hop-landing");
   if (!root || root.dataset.lrInitialized === "true") return;
@@ -511,23 +883,50 @@ export function initializeLanding() {
   root
     .querySelectorAll("[data-lr-review-slider]")
     .forEach(initializeReviewSlider);
+  root
+    .querySelectorAll("[data-lr-swipe-slider]")
+    .forEach(initializeReviewSlider);
+  root.querySelectorAll("[data-lr-review-photo]").forEach((dialog) => {
+    let photoOpener;
+    root.addEventListener("click", (event) => {
+      const link = event.target.closest?.("[data-lr-photo-open]");
+      if (!link || typeof dialog.showModal !== "function") return;
+      event.preventDefault();
+      photoOpener = link;
+      const original = link.querySelector("img");
+      const image = dialog.querySelector("[data-lr-photo-image]");
+      image.src = link.href;
+      image.alt = original.alt;
+      dialog.querySelector("[data-lr-photo-caption]").textContent =
+        original.alt;
+      dialog.showModal();
+    });
+    dialog
+      .querySelector("[data-lr-photo-close]")
+      .addEventListener("click", () => dialog.close());
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+    dialog.addEventListener("close", () =>
+      photoOpener?.focus({ preventScroll: true }),
+    );
+  });
   const heroVideo = root.querySelector("[data-lr-hero-video]");
   if (heroVideo) initializeHeroVideo(heroVideo);
   root
     .querySelectorAll("[data-lr-video-player]")
     .forEach(initializeVideoPlayer);
   root.querySelectorAll("[data-lr-signature]").forEach(initializeSignature);
+  root.querySelectorAll("[data-lr-pricing]").forEach(initializePriceTabs);
   const modal = root.querySelector("[data-lr-modal=lead]");
   // Editorial previews share this layout without the lead-form interface.
   if (!modal) return;
-  const quizModal = root.querySelector("[data-lr-quiz-modal]");
   const modalForm = modal.querySelector("[data-lr-form]");
   const mobile = matchMedia("(max-width: 1023px)");
-  const bar = root.querySelector("[data-lr-mobile-bar]");
+  const dialpadDevice = matchMedia(
+    "(max-width: 1023px), (hover: none) and (pointer: coarse)",
+  );
   let opener;
-  let heroGone = false;
-  let contactVisible = false;
-  let formFocused = false;
   let leadContext = {
     service_format: "consultation",
     symptom: "",
@@ -557,20 +956,12 @@ export function initializeLanding() {
     ],
     workshop: [
       "Найдём удобную мастерскую",
-      "Сообщите ближайшее метро или район. Поможем выбрать сервис для вашего ноутбука.",
+      "Выберите адрес. При звонке уточним возможность ремонта вашей модели.",
       "Подобрать мастерскую",
     ],
   };
-  const updateBar = () => {
-    bar.hidden =
-      !mobile.matches ||
-      !heroGone ||
-      contactVisible ||
-      modal.open ||
-      quizModal?.open ||
-      formFocused;
-  };
   const updateContext = (form) => {
+    const compact = form.hasAttribute("data-lr-compact-form");
     const symptom = form.elements.symptom.value;
     const category = form.elements.device_category.value;
     const format = form.elements.service_format.value;
@@ -589,7 +980,7 @@ export function initializeLanding() {
     form.querySelector("[data-lr-context-text]").textContent =
       labels.join(" · ");
     form.querySelector("[data-lr-context-change]").hidden = Boolean(
-      form.closest("[data-lr-quiz]"),
+      compact || form.closest("[data-lr-quiz]"),
     );
     const symptomSelect = form.querySelector("[data-lr-symptom-select]");
     if (
@@ -602,9 +993,20 @@ export function initializeLanding() {
     }
     form.querySelector("[data-lr-symptom-select]").value = symptom;
     form.querySelector("[data-lr-format-select]").value = format;
-    const workshop = format === "workshop";
-    form.querySelector("[data-lr-district]").hidden = !workshop;
-    form.elements.district.disabled = !workshop;
+    const workshop = !compact && format === "workshop";
+    form.querySelector("[data-lr-district]").hidden =
+      !workshop || Boolean(form.elements.workshop_id.value);
+    form.elements.district.disabled =
+      !workshop || Boolean(form.elements.workshop_id.value);
+    form.querySelector("[data-lr-workshop-picker]").hidden = !workshop;
+    form.elements.workshop_id.disabled = !workshop;
+    form.querySelector("[data-lr-address-label]").textContent =
+      format === "courier"
+        ? "Откуда забрать ноутбук?"
+        : "Куда приехать — к дому или работе";
+    form.querySelector("[data-lr-repair-place-field]").hidden =
+      format === "courier";
+    updateFormReadiness(form);
   };
   const shareContext = (context) => {
     leadContext = { ...leadContext, ...context };
@@ -615,22 +1017,41 @@ export function initializeLanding() {
     });
     const [title, intro, submit] = modes[leadContext.service_format];
     modal.querySelector("[data-lr-modal-title]").textContent = title;
-    modal.querySelector("[data-lr-modal-intro]").textContent = intro;
+    modal.querySelector("[data-lr-modal-intro]").textContent =
+      modalForm.hasAttribute("data-lr-compact-form")
+        ? "Диагностика — 0 ₽ даже при отказе. Адрес и детали уточним при звонке."
+        : intro;
     modalForm.querySelector("[data-hop-lead-submit]").textContent = submit;
   };
   const updatePhoneMode = (form) => {
     const phone = form.elements.phone;
-    phone.readOnly = mobile.matches && phone.dataset.lrNative !== "true";
+    const compact = form.hasAttribute("data-lr-compact-form");
+    phone.readOnly = compact ? dialpadDevice.matches : mobile.matches;
     phone.inputMode = phone.readOnly ? "none" : "tel";
     if (!mobile.matches) form.querySelector("[data-lr-dialpad]").hidden = true;
+    if (compact)
+      form.querySelector("[data-lr-dialpad]").hidden = !phone.readOnly;
   };
   root.querySelectorAll("[data-lr-form]").forEach((form) => {
-    form.querySelector("[data-hop-lead-submit]").disabled = false;
     updatePhoneMode(form);
     updateVisitFields(form);
+    updateFormReadiness(form);
     const recheckVisitField = (event) => {
+      if (
+        event.target === form.elements.phone &&
+        event.target.getAttribute("aria-invalid") === "true"
+      ) {
+        const error = validatePhone(event.target.value).error;
+        form.querySelector("[data-lr-phone-error]").textContent = error;
+        event.target.setAttribute("aria-invalid", String(Boolean(error)));
+      }
+      if (event.target === form.elements.consent && event.target.checked) {
+        form.querySelector("[data-lr-consent-error]").textContent = "";
+        event.target.removeAttribute("aria-invalid");
+      }
       if (event.target.matches("[data-lr-visit-field]"))
         validateVisitFields(form, event.target);
+      updateFormReadiness(form);
     };
     form.addEventListener("input", recheckVisitField);
     form.addEventListener("change", recheckVisitField);
@@ -673,14 +1094,15 @@ export function initializeLanding() {
   root
     .querySelectorAll("[data-lr-quiz]")
     .forEach((quiz) => initializeRepairQuiz(quiz, updateContext));
-  initializeQuizModal(root, updateBar);
+  initializeQuizModal(root);
+  initializeMapModal(root);
   mobile.addEventListener("change", () => {
     root.querySelectorAll("[data-lr-form]").forEach(updatePhoneMode);
     root.querySelectorAll("[data-lr-nav]").forEach((nav) => {
       nav.open = !mobile.matches;
     });
-    updateBar();
   });
+  dialpadDevice.addEventListener("change", () => updatePhoneMode(modalForm));
   root.addEventListener("click", (event) => {
     if (!(event.target instanceof Element)) return;
     const target = event.target.closest("a, button");
@@ -709,10 +1131,16 @@ export function initializeLanding() {
         .setAttribute("aria-expanded", "false");
       updateContext(modalForm);
       modal.showModal();
-      modalForm.elements.phone.focus();
-      updateBar();
+      (modalForm.hasAttribute("data-lr-compact-form")
+        ? modalForm.elements.phone
+        : modalForm.elements.service_format.value === "workshop"
+          ? modalForm.elements.workshop_id
+          : !modalForm.elements.visit_address.disabled
+            ? modalForm.elements.visit_address
+            : modalForm.elements.phone
+      ).focus();
     } else if (target.matches("[data-lr-modal-close]")) {
-      (target.closest("[data-lr-quiz-modal]") || modal).close();
+      target.closest("dialog")?.close();
     } else if (target.matches("[data-lr-context-change]")) {
       const picker = target
         .closest("form")
@@ -726,21 +1154,13 @@ export function initializeLanding() {
       const digit = target.dataset.lrDigit;
       if (digit === "⌫")
         phone.value = phone.value.replace(/\D/g, "").slice(0, -1);
-      else if (digit === "+") {
-        if (!phone.value) phone.value = "+";
+      else if (digit === "clear") {
+        phone.value = "";
+        form.querySelector("[data-lr-phone-error]").textContent = "";
+        phone.removeAttribute("aria-invalid");
       } else if (phone.value.replace(/\D/g, "").length < 11)
         phone.value += digit;
       phone.dispatchEvent(new Event("input", { bubbles: true }));
-    } else if (target.matches("[data-lr-native-phone]")) {
-      const form = target.closest("form");
-      form.elements.phone.dataset.lrNative = "true";
-      updatePhoneMode(form);
-      form.querySelector("[data-lr-dialpad]").hidden = true;
-      form.elements.phone.focus();
-    } else if (target.matches("[data-lr-phone-done]")) {
-      const form = target.closest("form");
-      form.querySelector("[data-lr-dialpad]").hidden = true;
-      form.elements.consent.focus();
     } else if (target.matches("[data-lr-question]")) {
       const form = root.querySelector("#lr-contact [data-lr-form]");
       form.elements.phone.focus({ preventScroll: true });
@@ -749,6 +1169,13 @@ export function initializeLanding() {
       root.querySelector("[data-lr-nav]").open = !mobile.matches;
   });
   root.addEventListener("change", (event) => {
+    if (event.target.name === "workshop_id") {
+      const form = event.target.closest("form");
+      form.querySelector("[data-lr-district]").hidden = Boolean(
+        event.target.value,
+      );
+      form.elements.district.disabled = Boolean(event.target.value);
+    }
     if (event.target.matches("[data-lr-service-format]")) {
       const value = event.target.value;
       shareContext({ service_format: normalizeServiceFormat(value) });
@@ -770,18 +1197,18 @@ export function initializeLanding() {
     }
   });
   root.addEventListener("focusin", (event) => {
-    formFocused = Boolean(event.target.closest("[data-lr-form]"));
+    const focusedForm = event.target.closest("[data-lr-form]");
+    if (
+      focusedForm &&
+      !focusedForm.hasAttribute("data-lr-compact-form") &&
+      !event.target.closest("[data-lr-dialpad]") &&
+      !event.target.matches("[data-lr-phone]")
+    )
+      focusedForm.querySelector("[data-lr-dialpad]").hidden = true;
     if (event.target.matches("[data-lr-phone]") && event.target.readOnly)
       event.target.closest("form").querySelector("[data-lr-dialpad]").hidden =
         false;
-    updateBar();
   });
-  root.addEventListener("focusout", () =>
-    queueMicrotask(() => {
-      formFocused = Boolean(root.querySelector("[data-lr-form]:focus-within"));
-      updateBar();
-    }),
-  );
   modal.addEventListener("click", (event) => {
     if (event.target === modal) {
       const box = modal.getBoundingClientRect();
@@ -835,21 +1262,7 @@ export function initializeLanding() {
   });
   modal.addEventListener("close", () => {
     opener?.focus();
-    updateBar();
   });
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.target.matches("[data-lr-hero-cta]"))
-          heroGone =
-            !entry.isIntersecting && entry.boundingClientRect.bottom < 0;
-        else contactVisible = entry.isIntersecting;
-      });
-      updateBar();
-    });
-    observer.observe(root.querySelector("[data-lr-hero-cta]"));
-    observer.observe(root.querySelector("#lr-contact"));
-  }
 }
 
 export function initializeHomeScroll(root) {

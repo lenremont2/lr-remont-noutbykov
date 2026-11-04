@@ -1,0 +1,200 @@
+[
+  {
+    "width": 320,
+    "paused": false,
+    "muted": true,
+    "loop": true,
+    "playsInline": true,
+    "controls": false,
+    "readyState": 4,
+    "error": null,
+    "time": 2.1896,
+    "duration": 14,
+    "natural": [
+      720,
+      662
+    ],
+    "box": [
+      278,
+      102
+    ],
+    "stage": [
+      280,
+      104
+    ],
+    "fit": "cover",
+    "position": "50% 45%",
+    "visibleFraction": 0.3990523593210024,
+    "overflow": 0,
+    "advancing": true,
+    "offscreenPaused": true,
+    "resumed": true,
+    "requests": [
+      {
+        "status": 206,
+        "type": "video/mp4"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "paused": false,
+    "muted": true,
+    "loop": true,
+    "playsInline": true,
+    "controls": false,
+    "readyState": 4,
+    "error": null,
+    "time": 2.1785,
+    "duration": 14,
+    "natural": [
+      720,
+      662
+    ],
+    "box": [
+      348,
+      102
+    ],
+    "stage": [
+      350,
+      104
+    ],
+    "fit": "cover",
+    "position": "50% 45%",
+    "visibleFraction": 0.3187832065840192,
+    "overflow": 0,
+    "advancing": true,
+    "offscreenPaused": true,
+    "resumed": true,
+    "requests": [
+      {
+        "status": 206,
+        "type": "video/mp4"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "paused": false,
+    "muted": true,
+    "loop": true,
+    "playsInline": true,
+    "controls": false,
+    "readyState": 4,
+    "error": null,
+    "time": 2.4747,
+    "duration": 14,
+    "natural": [
+      720,
+      662
+    ],
+    "box": [
+      638,
+      188
+    ],
+    "stage": [
+      640,
+      190
+    ],
+    "fit": "cover",
+    "position": "50% 45%",
+    "visibleFraction": 0.32048792961388023,
+    "overflow": 0,
+    "advancing": true,
+    "offscreenPaused": true,
+    "resumed": true,
+    "requests": [
+      {
+        "status": 206,
+        "type": "video/mp4"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "paused": false,
+    "muted": true,
+    "loop": true,
+    "playsInline": true,
+    "controls": false,
+    "readyState": 4,
+    "error": null,
+    "time": 2.2626,
+    "duration": 14,
+    "natural": [
+      720,
+      662
+    ],
+    "box": [
+      401.203125,
+      620.0625
+    ],
+    "stage": [
+      403.203125,
+      622.0625
+    ],
+    "fit": "cover",
+    "position": "50% 45%",
+    "visibleFraction": 0.5949141971575446,
+    "overflow": 0,
+    "advancing": true,
+    "offscreenPaused": true,
+    "resumed": true,
+    "requests": [
+      {
+        "status": 206,
+        "type": "video/mp4"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "paused": false,
+    "muted": true,
+    "loop": true,
+    "playsInline": true,
+    "controls": false,
+    "readyState": 4,
+    "error": null,
+    "time": 2.185,
+    "duration": 14,
+    "natural": [
+      720,
+      662
+    ],
+    "box": [
+      516.40625,
+      542.734375
+    ],
+    "stage": [
+      518.40625,
+      544.734375
+    ],
+    "fit": "cover",
+    "position": "50% 45%",
+    "visibleFraction": 0.8748420581226108,
+    "overflow": 0,
+    "advancing": true,
+    "offscreenPaused": true,
+    "resumed": true,
+    "requests": [
+      {
+        "status": 206,
+        "type": "video/mp4"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "reducedMotion": {
+      "paused": true,
+      "autoplay": false,
+      "time": 0,
+      "poster": "http://127.0.0.1:4322/media/mobile-lab-exterior.webp"
+    }
+  }
+]

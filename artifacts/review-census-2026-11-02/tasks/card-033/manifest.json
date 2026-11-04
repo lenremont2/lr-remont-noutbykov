@@ -1,0 +1,252 @@
+{
+  "taskId": "card-033",
+  "source": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_bely_kuna/reviews/",
+  "observedAt": "2026-11-02",
+  "publishedCount": 13,
+  "rejectedCount": 11,
+  "uniqueCount": 24,
+  "entries": [
+    {
+      "id": "69ea5d6db6c7862dac0401a7",
+      "author": "Ярослав Гарашин",
+      "date": "2026-04-23",
+      "rating": 5,
+      "section": "published",
+      "summary": "Посудомоечная машина",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "69ea0a9bd82e054a5f0938a6",
+      "author": "Павел",
+      "date": "2026-04-23",
+      "rating": 5,
+      "section": "published",
+      "summary": "Электроплита",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "63e5f2f16f92258b4f0fda7b",
+      "author": "Vera Tunina",
+      "date": "2023-02-10",
+      "rating": 5,
+      "section": "published",
+      "summary": "Стиральная машина Samsung",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "63e1da9f1a45c3efea08758c",
+      "author": "Максим",
+      "date": "2023-02-07",
+      "rating": 5,
+      "section": "published",
+      "summary": "ПК: замена диска на SSD; форм-фактор не уточнён",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "63daf2b5f86f5855580d608c",
+      "author": "Александр ЧЕРНОВ",
+      "date": "2023-02-02",
+      "rating": 5,
+      "section": "published",
+      "summary": "Духовой шкаф Miele",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "635c21d388358b0988026493",
+      "author": "Марина Соколова",
+      "date": "2022-10-28",
+      "rating": 5,
+      "section": "published",
+      "summary": "Ремонт клавиш ноутбука за два дня",
+      "laptopConfirmed": true,
+      "photoCount": 0
+    },
+    {
+      "id": "62480da54907ce48040cfe69",
+      "author": "Оксана",
+      "date": "2022-04-02",
+      "rating": 3,
+      "section": "published",
+      "summary": "Фен: провод и вилка",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "60e709eb5c756b5ea1221653",
+      "author": "Тимофей Нилов",
+      "date": "2021-07-08",
+      "rating": 5,
+      "section": "published",
+      "summary": "Бесплатная диагностика неопределённой бытовой техники",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "60ddcadeb8defc4dd6337506",
+      "author": "Alexey Kudrin",
+      "date": "2021-07-01",
+      "rating": 5,
+      "section": "published",
+      "summary": "Ремонт ноутбука с редкой деталью; почти соблюдён срок",
+      "laptopConfirmed": true,
+      "photoCount": 0
+    },
+    {
+      "id": "60d5b83178c91003b41bcb27",
+      "author": "Alex Potap",
+      "date": "2021-06-25",
+      "rating": 5,
+      "section": "published",
+      "summary": "Пылесос",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "5efb6cc3e4f95f74f920b495",
+      "author": "Анатолий",
+      "date": "2020-06-30",
+      "rating": 2,
+      "section": "published",
+      "summary": "Телевизор",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "5ee6579987fa3852033a2743",
+      "author": "Игорь Смирнов",
+      "date": "2020-06-14",
+      "rating": 4,
+      "section": "published",
+      "summary": "Чистка ноутбука и замена неназванной детали ускорили работу",
+      "laptopConfirmed": true,
+      "photoCount": 0
+    },
+    {
+      "id": "5e9054ecc35eda71454aaf5d",
+      "author": "Константин",
+      "date": "2020-04-10",
+      "rating": null,
+      "section": "published",
+      "summary": "Замена экрана ноутбука, бесплатная диагностика, год гарантии",
+      "laptopConfirmed": true,
+      "photoCount": 0
+    },
+    {
+      "id": "62c72824ddbba5cc780fd69f",
+      "author": "Игорь Ильин",
+      "date": "2022-07-07",
+      "rating": 5,
+      "section": "rejected",
+      "summary": "Общий отзыв о ремонте без устройства",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "62bd3bb4a7705e87f60721cc",
+      "author": "Артём Смолин",
+      "date": "2022-06-30",
+      "rating": 5,
+      "section": "rejected",
+      "summary": "Общий отзыв о ремонте без устройства",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "62b4324bd3f03398d4060b2b",
+      "author": "Инна Фемчук",
+      "date": "2022-06-23",
+      "rating": 5,
+      "section": "rejected",
+      "summary": "Диагностика и ожидание детали без устройства",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "60da0e53dda22e7db63c6f34",
+      "author": "Алиса александровна Александрова",
+      "date": "2021-06-28",
+      "rating": 5,
+      "section": "rejected",
+      "summary": "Замена динамика ноутбука и чистка; работа устроила автора",
+      "laptopConfirmed": true,
+      "photoCount": 0
+    },
+    {
+      "id": "60d745f99f91f42ce1422b36",
+      "author": "Николай",
+      "date": "2021-06-26",
+      "rating": 5,
+      "section": "rejected",
+      "summary": "Телефон после падения",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "60d7001da25de90d8b4ff96c",
+      "author": "Ольга Фомина",
+      "date": "2021-06-26",
+      "rating": 5,
+      "section": "rejected",
+      "summary": "Ремонт ноутбука после бесплатной диагностики; гарантия, небольшое опоздание",
+      "laptopConfirmed": true,
+      "photoCount": 0
+    },
+    {
+      "id": "60d2e13ef1913d319016ea86",
+      "author": "Ольга",
+      "date": "2021-06-23",
+      "rating": 5,
+      "section": "rejected",
+      "summary": "Холодильник Ariston",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "60c90d5a00484517aa574dd1",
+      "author": "Азнаура",
+      "date": "2021-06-15",
+      "rating": 5,
+      "section": "rejected",
+      "summary": "Телевизор",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "60bf790a91511903b9266b4d",
+      "author": "Анна",
+      "date": "2021-06-08",
+      "rating": 5,
+      "section": "rejected",
+      "summary": "Кофеварка",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "60bbf18e5010ce485c3a161d",
+      "author": "Антия",
+      "date": "2021-06-06",
+      "rating": 5,
+      "section": "rejected",
+      "summary": "Пылесос",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    },
+    {
+      "id": "5e96ce9f3f91a43d0e715ddf",
+      "author": "Игорь",
+      "date": "2020-04-15",
+      "rating": 5,
+      "section": "rejected",
+      "summary": "Пылесос",
+      "laptopConfirmed": false,
+      "photoCount": 0
+    }
+  ],
+  "photos": [],
+  "photoNote": "У всех 24 отзывов и вложенных ответов отсутствуют фото/видео; общая галерея 30 фото не связана с конкретными отзывами."
+}

@@ -1,0 +1,70 @@
+{
+  "taskId": "card-029",
+  "platform": "rting.ru",
+  "url": "https://rting.ru/sankt-peterburg/co/lenremont/2855827",
+  "branch": "проспект Елизарова, 36",
+  "city": "Санкт-Петербург",
+  "checkedDate": "2026-11-02",
+  "networkEvidence": {
+    "status": "verified",
+    "officialUrl": "https://www.lenremont.ru/contact.htm#elizarovskaya",
+    "summary": "Официальные контакты Ленремонта содержат мастерскую на проспекте Елизарова, 36. Телефон карточки +7 (812) 640-44-35 совпадает с телефоном этой мастерской на официальном сайте; WhatsApp +7 (812) 702-33-33 и ссылка vk.com/lenremont также совпадают.",
+    "cardPhone": "+78126404435",
+    "cardWhatsApp": "+78127023333",
+    "officialBranchHours": "пн-пт 10:00–18:30; сб 11:00–18:00; вс выходной",
+    "cardHours": "пн-пт 10:00–18:30"
+  },
+  "coverage": {
+    "status": "partial",
+    "reportedTotal": null,
+    "examinedCount": 0,
+    "endpointObserved": false,
+    "corpusStatus": "unknown",
+    "pageEndpointObserved": true,
+    "method": "Отдельная вкладка Chrome CUA. Прочитаны вся доступная страница и DOM, проверены контакты, описание, услуги, форма оценки, нижняя часть и футер. Прокрутка до конца подтверждена снимком и метриками scrollingElement: top 3543 + clientHeight 863 = scrollHeight 4406. Проверены ссылки, элементы управления и изображения; отзывной ленты, раскрытия текстов, сортировок, пагинации и загрузки продолжения нет. Официальный сайт проверен только для принадлежности сети.",
+    "stopReason": "Карточка показывает только агрегат 3,0 / 6 оценок и форму добавления оценки. Публичные отдельные отзывы, даты, авторы, ответы и вложения не представлены. Конец страницы подтвержден; конец неизвестного корпуса отзывов не подтвержден."
+  },
+  "aggregate": {
+    "rating": 3.0,
+    "ratingCount": 6,
+    "countLabel": "6 оценок",
+    "sourceUrl": "https://rting.ru/sankt-peterburg/co/lenremont/2855827",
+    "countedAsExaminedReviews": false
+  },
+  "reviews": [],
+  "candidateReviews": [],
+  "photos": [],
+  "discoveredSources": [
+    {
+      "platform": "rting.ru network directory",
+      "url": "https://rting.ru/sankt-peterburg/filial/lenremont/201215",
+      "address": null,
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Официальный сайт Ленремонта — контакты",
+      "url": "https://www.lenremont.ru/contact.htm#elizarovskaya",
+      "address": "проспект Елизарова, 36",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "ВКонтакте",
+      "url": "https://vk.com/lenremont",
+      "address": null,
+      "city": null
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://youtube.com/channel/UChZQrVGyddGxE515iZFY6uA",
+      "address": null,
+      "city": null
+    }
+  ],
+  "notes": [
+    "Ноль прочитанных отдельных отзывов означает отсутствие доступной ленты на исследованной странице, а не доказанное отсутствие отзывов или ноутбучных обращений.",
+    "6 оценок не преобразованы в 6 прочитанных отзывов; общее число текстовых отзывов неизвестно.",
+    "Подтвержденных ноутбучных отзывов 0, кандидатов 0, тематических фото 0. На странице нет элементов img и доступных отзывных вложений; уточнить устройство по ответам или фото невозможно.",
+    "Ссылка карты с подписью об открытии в Яндекс Картах не дала отдельного URL организации в DOM; он не придуман.",
+    "Полные тексты отзывов, аккаунт браузера, cookies и лишние снимки интерфейса не сохранены. Соседние результаты и общая очередь не изменялись."
+  ]
+}

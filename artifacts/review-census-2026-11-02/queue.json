@@ -1,0 +1,1857 @@
+[
+  {
+    "taskId": "yandex-zvezdnaya9",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/139175119866/reviews/",
+    "branch": "Звёздная улица, 9, корпус 1; историческая карточка, закрыто/переехало",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "otzovik-company",
+    "platform": "Отзовик",
+    "url": "https://otzovik.com/reviews/kompaniya_po_remontu_bitovoy_tehniki_lenremont_russia_sankt-peterburg/",
+    "branch": "company-wide",
+    "city": "Russia",
+    "status": "partial"
+  },
+  {
+    "taskId": "2gis-marshala",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001039113813/tab/reviews",
+    "branch": "проспект Маршала Жукова, 35 к3",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "otzyvru-company",
+    "platform": "Отзыв.ру",
+    "url": "https://www.otzyvru.com/lenremont",
+    "branch": "company-wide",
+    "city": "Russia",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-005",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/161275174491/reviews/",
+    "branch": "ул. Ушинского, 25, корп. 1",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-006",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@60.010909,30.2444107,17z/data=!4m8!3m7!1s0x46963433a96b46ad:0x839a075e7c5c7adc!8m2!3d60.010909!4d30.2444107!9m1!1b1!16s%2Fg%2F11cssykgqz?hl=ru",
+    "branch": "пр. Авиаконструкторов, 4к1, Санкт-Петербург, 197372",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-007",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@59.9038731,30.4840055,17z/data=!4m8!3m7!1s0x46962e5c5a2d1e3d:0x2b576a458503262f!8m2!3d59.9038731!4d30.4840055!9m1!1b1!16s%2Fg%2F1q6n2j3_d?hl=ru",
+    "branch": "проспект Большевиков, 25",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-008",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@59.9517875,30.2143552,17z/data=!4m8!3m7!1s0x469636dfea991871:0x4c5ba27d6d7ae9bf!8m2!3d59.9517875!4d30.2143552!9m1!1b1!16s%2Fg%2F11f40y9xym?hl=ru",
+    "branch": "ул. Кораблестроителей, 30",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-009",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@59.8445146,30.2471749,17z/data=!4m8!3m7!1s0x46963ae33e43faf7:0xc3666b90d7a7f71d!8m2!3d59.8445146!4d30.2471749!9m1!1b1!16s%2Fg%2F11b8v9kctp?hl=ru",
+    "branch": "проспект Ветеранов, 9, Санкт-Петербург, 198255",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-010",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@60.057051,30.3167345,17z/data=!4m8!3m7!1s0x469634dc4147ae21:0xa64234b5308140f9!8m2!3d60.057051!4d30.3167345!9m1!1b1!16s%2Fg%2F11cm_prq_7?hl=ru",
+    "branch": "проспект Просвещения, 20/25, Санкт-Петербург, 194355",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-011",
+    "platform": "Google Maps",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@59.8559015,30.2229499,17z/data=!4m8!3m7!1s0x46963b7db519f01b:0xa8371ea6aa2ab2ff!8m2!3d59.8559015!4d30.2229499!9m1!1b1!16s%2Fg%2F11hyn7nnvc?hl=ru",
+    "branch": "Ленремонт, пр. Маршала Жукова, 35, корпус 3",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-012",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_bolshevikov/",
+    "branch": "проспект Большевиков, 25",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-013",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/1775267878/reviews/",
+    "branch": "проспект Авиаконструкторов, 4, корп. 1",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-014",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/195356065526/reviews/",
+    "branch": "Ленремонт, улица Фрунзе, 3",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-015",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/114129606406/reviews/",
+    "branch": "Звёздная улица, 5, корпус 1",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-016",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/210656280325/reviews/",
+    "branch": "Ленремонт, улица Кораблестроителей, 30, цокольный этаж",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-017",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/1030067535/reviews/",
+    "branch": "Ленремонт, проспект Большевиков, 25",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-018",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/1599365044/reviews/",
+    "branch": "Ленремонт, проспект Просвещения, 20/25",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-019",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/1317216259/reviews/",
+    "branch": "Ленремонт, проспект Ветеранов, 9",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-020",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/171815838530/reviews/",
+    "branch": "Ленремонт, проспект Энгельса, 19",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-021",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/3295465178/reviews/",
+    "branch": "Минеральная улица, 13Ц",
+    "city": "Санкт-Петербург",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-022",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/81941462637/reviews/",
+    "branch": "Ленремонт, проспект Косыгина, 28, корп. 1",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-023",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/1401251799/reviews/",
+    "branch": "Ленремонт, улица Решетникова, 3",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-024",
+    "platform": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/lenremont/68341760403/reviews/",
+    "branch": "Ленремонт, проспект Науки, 8, корпус 1",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-025",
+    "platform": "rting.ru",
+    "url": "https://rting.ru/sankt-peterburg/co/lenremont/4911925",
+    "branch": "проспект Косыгина, 28, корпус 1, этаж 1",
+    "city": "Санкт-Петербург",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-026",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/87389556464/reviews/",
+    "branch": "Колпино, Тверская улица, 1/13",
+    "city": "Колпино",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-027",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/226292025159/reviews/",
+    "branch": "Ленремонт, улица Ярослава Гашека, 4, корп. 1",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-028",
+    "platform": "Rting (Каталог)",
+    "url": "https://rting.ru/sankt-peterburg/co/lenremont/4268803",
+    "branch": "Ленремонт — магазин бытовой техники с уценкой, ул. Ярослава Гашека, 4, корп. 1",
+    "city": "Санкт-Петербург",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-029",
+    "platform": "rting.ru",
+    "url": "https://rting.ru/sankt-peterburg/co/lenremont/2855827",
+    "branch": "проспект Елизарова, 36",
+    "city": "Санкт-Петербург",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-030",
+    "platform": "rting.ru",
+    "url": "https://rting.ru/sankt-peterburg/co/lenremont/2855844",
+    "branch": "Ленремонт, пункт выдачи, улица Решетникова, 3",
+    "city": "Санкт-Петербург",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-031",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_zvyozdnoj_ulitse/",
+    "branch": "Звёздная улица, 9к1 (историческая карточка; отдельно от Звёздной, 5к1)",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-032",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_moskovskom_prospekte_212/",
+    "branch": "Московский проспект, 212, БЦ Московский, офис 1124, 1 этаж",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-033",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_bely_kuna/",
+    "branch": "Белы Куна, 20 к1",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-034",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/108377671807/reviews/",
+    "branch": "Ленремонт, 1-й Верхний переулок, 10 (больше не работает)",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-035",
+    "platform": "RemKarta.ru",
+    "url": "https://nov.remkarta.ru/velikiy-novgorod/lenremont-954830/",
+    "branch": "Воскресенский бульвар, 10; магазин бытовой техники Ленремонт",
+    "city": "Великий Новгород",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-036",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/194503819445/reviews/",
+    "branch": "Москва, Садовая-Триумфальная улица, 16, стр. 3 (адрес официального сайта; текущая карточка Яндекса показывает только зону оказания услуг «Москва»)",
+    "city": "Москва",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-037",
+    "platform": "yandex",
+    "url": "https://yandex.ru/maps/org/lenremont/147829209306/reviews/",
+    "branch": "Ленремонт — проспект Юрия Гагарина, 15",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-038",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/2394177609/reviews/",
+    "branch": "Ленремонт — Полюстровский проспект, 47 (карточка закрыта)",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-039",
+    "platform": "2GIS",
+    "url": "https://2gis.ru/spb/firm/70000001045431574",
+    "branch": {
+      "name": "ЛенЗапчасти",
+      "type": "Пункт выдачи",
+      "address": "Улица Ушинского, 25 к1",
+      "status": "Филиал удалён из справочника; временно не работает",
+      "website": "http://lenzapchasti.ru/",
+      "phone": null
+    },
+    "city": "Санкт-Петербург",
+    "status": "blocked"
+  },
+  {
+    "taskId": "card-040",
+    "platform": "Отзовик",
+    "url": "https://otzovik.com/reviews/kompaniya_po_remontu_bitovoy_tehniki_lenremont_russia_gatchina/",
+    "branch": "company-wide; адрес на целевой карточке не установлен",
+    "city": "Гатчина",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-041",
+    "platform": "SPR",
+    "url": "https://szo.spr.ru/sankt-peterburg/remont-kompyuterov-orgtehniki-mobilnih-telefonov/reviews/lenremont.html",
+    "branch": "company-wide",
+    "city": null,
+    "status": "queued"
+  },
+  {
+    "taskId": "card-042",
+    "platform": "Klerk",
+    "url": "https://www.klerk.ru/company/4692/reviews/",
+    "branch": "company-wide; адрес профиля: 196135, Санкт-Петербург, ул. Фрунзе, д. 15, литер А, помещ. 6Н",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-043",
+    "platform": "Firmateka",
+    "url": "https://firmateka.com/company/lenremont/",
+    "branch": "company-wide; контакт карточки — Минеральная ул., 13Ц",
+    "city": "Санкт-Петербург",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-044",
+    "platform": "Companypage",
+    "url": "https://companypage.ru/servisyi/lenremont",
+    "branch": "Карточка ЛЕНРЕМОНТ с двумя московскими адресами: Нагорная, 23 к.1; Братиславская, 25",
+    "city": "Москва",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-045",
+    "platform": "Официальный сайт Ленремонт / Cackle",
+    "url": "https://www.lenremont.ru/remont-noutbukov-spb.htm",
+    "branch": "Общая страница услуги, несколько мастерских",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-046",
+    "platform": "Официальный сайт Ленремонта",
+    "url": "https://www.lenremont.ru/testimonials.htm",
+    "branch": "Общий раздел сети",
+    "city": "Санкт-Петербург",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-047",
+    "platform": "Зеркало (otzovikkrd23.ru)",
+    "url": "https://otzovikkrd23.ru/lenremont-otzyvy/",
+    "branch": "company-wide",
+    "city": null,
+    "status": "partial"
+  },
+  {
+    "taskId": "card-048",
+    "platform": "Зеркало (tv-press.ru)",
+    "url": "https://tv-press.ru/lenremont-otzyvy/",
+    "branch": "company-wide",
+    "city": null,
+    "status": "blocked"
+  },
+  {
+    "taskId": "card-049",
+    "platform": "Rem-rating",
+    "url": "https://rem-rating.ru/lenremont-otzyvy",
+    "branch": "company-wide",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-050",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/234880316037/reviews/",
+    "branch": "Ленремонт, Киевская улица, 32В",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-051",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/226732697387/reviews/",
+    "branch": "Воскресенский бульвар, 10",
+    "city": "Великий Новгород",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-052",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/26288651597/reviews/",
+    "branch": "Ленремонт, Московский проспект, 212, этаж 1, офис 1130",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-053",
+    "platform": "yandex",
+    "url": "https://yandex.ru/maps/org/lenremont/1905751304/reviews/",
+    "branch": "улица Жака Дюкло, 6, корп. 2",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-054",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001030609738",
+    "branch": "Кораблестроителей, 30",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-055",
+    "platform": "НайдиСервис",
+    "url": "https://naydiservis.ru/services/lenremont",
+    "branch": "Садовая-Триумфальная улица, 16, строение 3",
+    "city": "Москва",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-056",
+    "platform": "Spravka.City",
+    "url": "https://pskov.spravka.city/company/lenremont-18",
+    "branch": "улица Яна Фабрициуса, 8; магазин уценённой и восстановленной б/у техники",
+    "city": "Псков",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-057",
+    "platform": "Rting",
+    "url": "https://rting.ru/sankt-peterburg/co/lenremont/2855843",
+    "branch": "проспект Непокорённых, 2, этаж 1",
+    "city": "Санкт-Петербург",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-058",
+    "platform": "Rting",
+    "url": "https://rting.ru/sankt-peterburg/co/lenremont/2855830",
+    "branch": "проспект Наставников, 47, корпус 1, этаж 1",
+    "city": "Санкт-Петербург",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-059",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_pyatiletok/",
+    "branch": "проспект Пятилеток, 14 к1, цокольный этаж",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-060",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_elizarova/",
+    "branch": "Елизарова проспект, 36",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-061",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_kosygina/",
+    "branch": "проспект Косыгина, 28к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-062",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-moskovskom-prospekte-212_14448542/",
+    "branch": "Московский проспект, 212 — Yell указывает БЦ Московский, офис 1124, 1 этаж",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-063",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/lenremont_11538956/",
+    "branch": "проспект Ветеранов,9",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-064",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-marshala-zhukova_12060753/",
+    "branch": "Маршала Жукова,35к3",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-065",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/servisnyj-centr-lenremont_12206706/",
+    "branch": "Фрунзе,3",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-066",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/lenremont-ooo_11852552/",
+    "branch": "Звёздная,9к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-067",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-metro-komendantskij-prospekt_12061020/",
+    "branch": "Авиаконструкторов,4",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-068",
+    "platform": "Яндекс Карты — сеть",
+    "url": "https://yandex.ru/maps/2/saint-petersburg/chain/lenremont/3503425074/",
+    "branch": "Все филиалы сети — ссылка из обзорной карточки Ушинского25к1",
+    "city": "Санкт-Петербург",
+    "status": "discovery-only"
+  },
+  {
+    "taskId": "card-069",
+    "platform": "Отзовик",
+    "url": "https://otzovik.com/review_18242490.html",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург",
+    "status": "discovery-only"
+  },
+  {
+    "taskId": "card-070",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/24343010724/reviews/",
+    "branch": "проспект Маршала Жукова, 35, корп. 3",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-071",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/10031707827/reviews/",
+    "branch": "Санкт-Петербург, проспект Испытателей, 11, корп. 1В",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-072",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/142299563723/reviews/",
+    "branch": "проспект Луначарского, 56, корп. 1",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-073",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/87092134009/reviews/",
+    "branch": "проспект Пятилеток, 14, корп. 1",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-074",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/166250120114/reviews/",
+    "branch": "Санкт-Петербург, проспект Елизарова, 36",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-075",
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/242898370104/reviews/",
+    "branch": "Круговая улица, 47, территория Промзона Мягловская",
+    "city": "Ленинградская область, Всеволожский район, Колтушское городское поселение, территория Промзона Мягловская",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-076",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552840261007",
+    "branch": "Звёздная улица, 5 к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-077",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552840261005",
+    "branch": "проспект Просвещения, 20",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-078",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552839608766",
+    "branch": "улица Решетникова, 3",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-079",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001025261830",
+    "branch": "проспект Авиаконструкторов, 4",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-080",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001020122849",
+    "branch": "проспект Ветеранов, 9",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-081",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001047818597",
+    "branch": "улица Фрунзе, 3",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-082",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001007540186",
+    "branch": "Киевская улица, 32 лит В",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-083",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001048368935",
+    "branch": "проспект Пятилеток, 14 к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-084",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348553838710040",
+    "branch": "проспект Большевиков, 25",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-085",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001039113813",
+    "branch": "проспект Маршала Жукова, 35 к3",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-086",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001035088365",
+    "branch": "проспект Науки, 8 к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-087",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001093090102",
+    "branch": "проспект Энгельса, 19",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-088",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001044671839",
+    "branch": "проспект Испытателей, 11 к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-089",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001045109632",
+    "branch": "улица Ушинского, 25 к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-090",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001101432136",
+    "branch": "Круговая улица, 47",
+    "city": null,
+    "status": "queued"
+  },
+  {
+    "taskId": "card-091",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001058962565",
+    "branch": "Минеральная улица, 13 к5",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-092",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001035088361",
+    "branch": "проспект Луначарского, 56 к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-093",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001067809478",
+    "branch": "улица Ярослава Гашека, 4 к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-094",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001060840319",
+    "branch": "Московский проспект, 212",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-095",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001060449107",
+    "branch": "проспект Косыгина, 28 к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-096",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001030609751",
+    "branch": "проспект Елизарова, 36",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-097",
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552840261006",
+    "branch": "needs-address-verification",
+    "city": null,
+    "status": "queued"
+  },
+  {
+    "taskId": "card-098",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001007540186/tab/reviews",
+    "branch": "Киевская,32В",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-099",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001058962565/tab/reviews",
+    "branch": "Минеральная,13к5",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-100",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001030609738/tab/reviews",
+    "branch": "Кораблестроителей,30",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-101",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001093090102/tab/reviews",
+    "branch": "Энгельса,19",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-102",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001044671839/tab/reviews",
+    "branch": "Испытателей,11к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-103",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/5348552839608766/tab/reviews",
+    "branch": "Решетникова,3",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-104",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001048368935/tab/reviews",
+    "branch": "Пятилеток,14к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-105",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001025261830/tab/reviews",
+    "branch": "Авиаконструкторов,4",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-106",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001030609751/tab/reviews",
+    "branch": "Елизарова,36",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-107",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001047818597/tab/reviews",
+    "branch": "Фрунзе,3",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-108",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001035088365/tab/reviews",
+    "branch": "Науки,8к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-109",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001060840319/tab/reviews",
+    "branch": "Московский,212",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-110",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/5348553838710040/tab/reviews",
+    "branch": "Большевиков,25",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-111",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001060449107/tab/reviews",
+    "branch": "Косыгина,28к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-112",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/5348552840261007/tab/reviews",
+    "branch": "Звёздная,5к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-113",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001020122849/tab/reviews",
+    "branch": "Ветеранов,9",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-114",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001035088361/tab/reviews",
+    "branch": "Луначарского,56к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-115",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001045109632/tab/reviews",
+    "branch": "Ушинского,25к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-116",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/5348552840261005/tab/reviews",
+    "branch": "Просвещения,20",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-117",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001067809478/tab/reviews",
+    "branch": "Ярослава Гашека,4к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-118",
+    "platform": "2ГИС",
+    "url": "https://2gis.ru/spb/firm/70000001101432136/tab/reviews",
+    "branch": "Круговая,47",
+    "city": "Ленинградская область",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-119",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_yaroslava_gasheka/",
+    "branch": "Ярослава Гашека, 4 к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-120",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_yuriya_gagarina/",
+    "branch": "проспект Юрия Гагарина, 15",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-121",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_marshala_zhukova/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-122",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_aviakonstruktorov/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-123",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_prosvescheniya/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-124",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_ushinskogo/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-125",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_kievskoj_ulitse_32v/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-126",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_nauki/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-127",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_veteranov/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-128",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_korablestroitelej/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-129",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_kievskoj_ulitse/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-130",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_mineralnoj_ulitse/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-131",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_prosvescheniya_20_25/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-132",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_frunze/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-133",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_reshetnikova/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-134",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/remontnaya_masterskaya_lenremont_na_mineralnoj_ulitse/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-135",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_v_kolpino/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-136",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_ispytatelej_11_k_1/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-137",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_metro_ploschad_muzhestva/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-138",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_yunyh_pionerov/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-139",
+    "platform": "Zoon",
+    "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_krugovoj_ulitse_47/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург и ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-140",
+    "platform": "2GIS",
+    "url": "https://2gis.ru/pskov/firm/70000001094767445/tab/reviews",
+    "branch": "Ленремонт, магазин уценённой и восстановленной б/у техники, улица Яна Фабрициуса, 8",
+    "city": "Псков",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-141",
+    "platform": "Yandex Maps",
+    "url": "https://yandex.com/maps/org/tekhnika_s_utsenkoy/143153493696/",
+    "branch": "Техника с уценкой / Ленремонт, улица Яна Фабрициуса, 8",
+    "city": "Псков",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-142",
+    "platform": "Официальный сайт магазина — видеоотзывы",
+    "url": "https://pskov-bu-tekhnika.lenremont.ru/otzyvy/",
+    "branch": "улица Яна Фабрициуса, 8; store website, testimonial branch attribution unverified",
+    "city": "Псков",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-143",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/moscow/com/lenremont-remont-tehniki_11893264/",
+    "branch": "Москва, ул. Нагорная, д. 23 к. 1 (историческая карточка)",
+    "city": "Москва",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-144",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/",
+    "branch": "Ремонтная мастерская Ленремонт на Братиславской улице, Москва, ул. Братиславская, д. 25 (историческая карточка)",
+    "city": "Москва",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-145",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/moskva/lenremont/bratislavskaya-ul-25-51806",
+    "branch": "Братиславская,25; historical candidate",
+    "city": "Москва",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-146",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/moskva/lenremont/nagornaya-ul-23-korp-1-51805",
+    "branch": "Нагорная,23к1; historical candidate",
+    "city": "Москва",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-147",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/murino/lenremont/privokzalnaya-ploschad-3-korp-4-murino-147910",
+    "branch": "Привокзальная площадь,3к4; historical candidate",
+    "city": "Мурино",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-148",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/murino/lenremont/privokzalnaya-ploschad-3-korp-4-murino-147913",
+    "branch": "Привокзальная площадь,3к4; separate source card",
+    "city": "Мурино",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-149",
+    "platform": "Guidebook",
+    "url": "https://guidebook.ru/moskva/nagornaya-ulitsa/lenremont.html",
+    "branch": "Нагорная,23к1; historical candidate",
+    "city": "Москва",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-150",
+    "platform": "isfix",
+    "url": "https://isfix.ru/165466-lenremont-ooo-montazhno-remontnaya-firma.html",
+    "branch": "Нагорная23к1 and Братиславская25; combined card",
+    "city": "Москва",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-151",
+    "platform": "Rating.msk",
+    "url": "https://mail.rating.msk.ru/remont_holodilnik/lenremont",
+    "branch": "Нагорная,23к1; historical candidate",
+    "city": "Москва",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-152",
+    "platform": "YP",
+    "url": "https://www.yp.ru/detail/id/lenremont_1427505/",
+    "branch": "company-wide",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-153",
+    "platform": "Serviced",
+    "url": "https://serviced.ru/service/lenremont/",
+    "branch": "company-wide;22addresses",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-154",
+    "platform": "Spravochnika",
+    "url": "https://sankt-peterburg.spravochnika.ru/org/id-468567",
+    "branch": "Решетникова,3",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-155",
+    "platform": "Официальный сайт — видеоотзывы",
+    "url": "https://novgorod.lenremont.ru/",
+    "branch": "Воскресенский бульвар,10; testimonial branch attribution needs verification",
+    "city": "Великий Новгород",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-156",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-zhaka-dyuklo-6-korp-2-147907",
+    "branch": "Жака Дюкло,6к2",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-157",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-reshetnikova-3-147895",
+    "branch": "Решетникова,3",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-158",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-korablestroitelej-30-147893",
+    "branch": "Кораблестроителей,30",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-159",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-marshala-zhukova-35-korp-3-147906",
+    "branch": "Маршала Жукова,35к3",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-160",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/kievskaya-ul-32v-147897",
+    "branch": "Киевская,32В",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-161",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-belyi-kuna-20-korp-1-147916",
+    "branch": "Белы Куна,20к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-162",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-yuriya-gagarina-23-147912",
+    "branch": "Юрия Гагарина,23; historical candidate",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-163",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-frunze-15-147909",
+    "branch": "Фрунзе,15; historical candidate",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-164",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-nepokoryonnyih-2-147908",
+    "branch": "Непокорённых,2",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-165",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-bolshevikov-25-147905",
+    "branch": "Большевиков,25",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-166",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-nauki-8-korp-1-147902",
+    "branch": "Науки,8к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-167",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-prosvescheniya-2025-147896",
+    "branch": "Просвещения,20/25",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-168",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-lunacharskogo-56-korp-1-147900",
+    "branch": "Луначарского,56к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-169",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-nastavnikov-47-korp-1-147901",
+    "branch": "Наставников,47к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-170",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-veteranov-9-147894",
+    "branch": "Ветеранов,9",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-171",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-ispyitatelej-11-korp-1-147911",
+    "branch": "Испытателей,11к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-172",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-elizarova-36-147903",
+    "branch": "Елизарова,36",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-173",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-oleko-dundicha-36-korp-1-147904",
+    "branch": "Олеко Дундича,36к1; historical candidate",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-174",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-aviakonstruktorov-4-korp-1-147898",
+    "branch": "Авиаконструкторов,4к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-175",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-nastavnikov-47-korp-1-147918",
+    "branch": "Наставников,47к1; separate source card",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-176",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-veteranov-9-147899",
+    "branch": "Ветеранов,9; separate source card",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-177",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-marshala-zhukova-35-korp-3-147915",
+    "branch": "Маршала Жукова,35к3; separate source card",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-178",
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-ushinskogo-25-korp-1-147917",
+    "branch": "Ушинского,25к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-179",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46963aac51d9151f:0x405dec6efcfde4c7!8m2!3d59.8526934!4d30.3267895!16s%2Fg%2F11csrsr9ls!19sChIJHxXZUaw6lkYRx-T9_G7sXUA",
+    "branch": "Московский проспект, 212, Санкт-Петербург, 196066",
+    "city": "Санкт-Петербург",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-180",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469631ba422bc3d7:0xad44bcca44f87641!8m2!3d59.9042544!4d30.333828!16s%2Fg%2F11trhxzt9v!19sChIJ18MrQroxlkYRQXb4RMq8RK0",
+    "branch": "Киевская ул., 32",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-181",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46963b39765a0291:0xc8af33a81621f762!8m2!3d59.8613478!4d30.3154893!16s%2Fg%2F11n6rs7m3h!19sChIJkQJadjk7lkYRYvchFqgzr8g",
+    "branch": "ул. Фрунзе, 3",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-182",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46962f68f9c56f11:0xd02e91321fc3179f!8m2!3d59.8739974!4d30.385776!16s%2Fg%2F11fqzz0b1g!19sChIJEW_F-WgvlkYRnxfDHzKRLtA",
+    "branch": "ул. Белы Куна, 20, корпус 1",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-183",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46962f79bd84cf5f:0xe97f95913e0816d8!8m2!3d59.8916065!4d30.4059095!16s%2Fg%2F11smvg9bj7!19sChIJX8-EvXkvlkYR2BYIPpGVf-k",
+    "branch": "пр. Елизарова, 36",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-184",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x4696300c7bb95ed1:0x2a2bd1e4fd34931e!8m2!3d59.8677849!4d30.6756687!16s%2Fg%2F11nfr1ppxz!19sChIJ0V65ewwwlkYRHpM0_eTRKyo",
+    "branch": "Мяглово, земельный участок, 47",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-185",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46963aae5444ce83:0xfc6d481ef8012cbd!8m2!3d59.8336805!4d30.352745!16s%2Fg%2F11xb7hs9x!19sChIJg85EVK46lkYRvSwB-B5Ibfw",
+    "branch": "Звёздная ул., 5, корпус 1",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-186",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x4696317a662610bf:0x6419ed04ae235a0a!8m2!3d59.8324415!4d30.3883566!16s%2Fg%2F11k9jvrdfn!19sChIJvxAmZnoxlkYRClojrgTtGWQ",
+    "branch": "ул. Ярослава Гашека, 4",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-187",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469631f33dd59d1f:0x904e2f7a0e5f5d02!8m2!3d60.0018578!4d30.3285109!16s%2Fg%2F11wjmd4fcc!19sChIJH53VPfMxlkYRAl1fDnovTpA",
+    "branch": "пр-т. Энгельса, 19",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-188",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D1%83%D1%86%D0%B5%D0%BD%D0%BA%D0%BE%D0%B9+%D0%BE%D1%82+%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0/data=!4m7!3m6!1s0x46963186d2c3d303:0x1c76acaee18dc0b!8m2!3d59.8613515!4d30.3154549!16s%2Fg%2F11sc7jpsbh!19sChIJA9PD0oYxlkYRC9wY7spqxwE",
+    "branch": "ул. Фрунзе, 3 (магазин)",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-189",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469633284485756d:0xf6a5bddb92a8c188!8m2!3d59.9664811!4d30.372206!16s%2Fg%2F11zyk5h2l6!19sChIJbXWFRCgzlkYRiMGoktu9pfY",
+    "branch": "ул. Минеральная, 13ц (без отзывов)",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-190",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469633359f878e7d:0x9de24e95f442df47!8m2!3d60.0153406!4d30.3895613!16s%2Fg%2F11h7jcpw7_!19sChIJfY6HnzUzlkYRR99C9JVO4p0",
+    "branch": "пр. Науки, 8, корпус 1",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-191",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x4696312c5dfe05ff:0xa18f332d851bbbe1!8m2!3d59.9462687!4d30.4962268!16s%2Fg%2F11swcwr3nl!19sChIJ_wX-XSwxlkYR4bsbhS0zj6E",
+    "branch": "пр. Косыгина, 28",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-192",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D1%83%D1%86%D0%B5%D0%BD%D0%BA%D0%BE%D0%B9+%D0%BE%D1%82+%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0/data=!4m7!3m6!1s0x46963bd421494b13:0xc43721673a718ba9!8m2!3d59.8640025!4d30.3349269!16s%2Fg%2F11rd_4__mx!19sChIJE0tJIdQ7lkYRqYtxOmchN8Q",
+    "branch": "пр. Юрия Гагарина, 15 (магазин)",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-193",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x4696359e52835efb:0x44ff983bfa370a6f!8m2!3d60.0049437!4d30.291043!16s%2Fg%2F11rdvw73_l!19sChIJ-16DUp41lkYRbwo3-juY_0Q",
+    "branch": "пр. Испытателей, 11, корпус 1",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-194",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46962f06a47a5ff3:0x396dd739f5cbf268!8m2!3d60.0358632!4d30.4107421!16s%2Fg%2F11h94wvg9x!19sChIJ8196pAYvlkYRaPLL9TnXbTk",
+    "branch": "ул. Ушинского, 25, корпус 1",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-195",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469634522a369997:0xdfee5769623bedf6!8m2!3d60.0279721!4d30.273746!16s%2Fg%2F11gy3j38bp!19sChIJl5k2KlI0lkYR9u07YmlX7t8",
+    "branch": "Автобусная ул., д.3 (магазин)",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-196",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D1%83%D1%86%D0%B5%D0%BD%D0%BA%D0%BE%D0%B9+%D0%BE%D1%82+%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0/data=!4m7!3m6!1s0x469631a28b752a0f:0x431f4a3e2bac1fb3!8m2!3d59.9234895!4d30.4527617!16s%2Fg%2F11t5_0xj_m!19sChIJDyp1i6IxlkYRsx-sKz5KH0M",
+    "branch": "пр. Пятилеток, 14, корпус 1 (магазин)",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-197",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46963c007cae5555:0xa3331794d6b0c65f!8m2!3d59.8258877!4d30.0979275!16s%2Fg%2F11rq1ldb39!19sChIJVVWufAA8lkYRX8aw1pQXM6M",
+    "branch": "ул. Большевиков, 25 (координаты вне основного адреса; принадлежность не подтверждена)",
+    "city": "Санкт-Петербург / ЛО",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-198",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46b5359ca1382a69:0x40b4d1952946e701!8m2!3d55.787194!4d37.6766529!16s%2Fg%2F11gjj41bz3!19sChIJaSo4oZw1tUYRAedGKZXRtEA",
+    "branch": "Русаковская ул., 27",
+    "city": "Москва",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-199",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D1%83%D1%86%D0%B5%D0%BD%D0%BA%D0%BE%D0%B9+%D0%BE%D1%82+%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0/@58.526366,31.2551189,17z/data=!3m1!4b1!4m6!3m5!1s0x46bf0f92a8e34a91:0xbc759f00367f2a7c!8m2!3d58.526366!4d31.2551189!16s%2Fg%2F11y5ts02lr",
+    "branch": "Техника с уценкой от Ленремонта — Воскресенский бульвар, 10 (магазин)",
+    "city": "Великий Новгород",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-200",
+    "platform": "Google Карты",
+    "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82+%D0%B1%2F%D1%83+%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D0%B3%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D0%B8%D0%B5%D0%B9/@57.8074449,28.3445342,17z/data=!3m1!4b1!4m6!3m5!1s0x4697cd8d7ce0b415:0x827446421853ee8!8m2!3d57.8074449!4d28.3445342!16s%2Fg%2F11y99b4zm5",
+    "branch": "Ленремонт б/у техника с гарантией, ул. Яна Фабрициуса, 8 (магазин)",
+    "city": "Псков",
+    "status": "complete"
+  },
+  {
+    "taskId": "card-201",
+    "platform": "Справкер",
+    "url": "https://msk.spravker.ru/otdelochnye-raboty/lenremont.htm",
+    "branch": "Новочерёмушкинская улица, 66, корп. 1; исторический кандидат",
+    "city": "Москва",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-202",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/lenremont_11538957/",
+    "branch": "проспект Большевиков,25",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-203",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-nauki_12061016/",
+    "branch": "проспект Науки,8к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-204",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-elizarova_12755962/",
+    "branch": "проспект Елизарова,36",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-205",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/lenremont-ooo_9625417/",
+    "branch": "проспект Просвещения,20/25",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-206",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-ulice-bely-kuna_12060750/",
+    "branch": "Белы Куна,20к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-207",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-ulice-korablestroitelej_12061018/",
+    "branch": "Кораблестроителей,30",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-208",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-lunacharskogo_11978145/",
+    "branch": "Луначарского,56к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-209",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-nastavnikov_12061759/",
+    "branch": "Косыгина,28к1; название карточки — «на проспекте Наставников»",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-210",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-ispytatelej-11-k-1_12789105/",
+    "branch": "Испытателей,11к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-211",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/servisnyj-centr-lenremont-v-kolpino_14441597/",
+    "branch": "Колпино,Тверская,1/13",
+    "city": "Колпино",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-212",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-ulice-yaroslava-gasheka_14441589/",
+    "branch": "Ярослава Гашека,4к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-213",
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/chain/lenremont-ooo_9625417/",
+    "branch": "company-wide network page; own19review list, possible duplication of Просвещения card to check",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-214",
+    "platform": "ВКонтакте",
+    "url": "https://vk.com/lenremont",
+    "branch": "Общесетевое сообщество Ленремонт; без разделения по филиалам",
+    "city": null,
+    "status": "blocked"
+  },
+  {
+    "taskId": "card-215",
+    "platform": "Одноклассники",
+    "url": "https://ok.ru/group/59828513407178",
+    "branch": "Официальное сетевое сообщество Ленремонта; заявленный адрес — Санкт-Петербург, ул. Решетникова, 3",
+    "city": "Санкт-Петербург",
+    "status": "partial"
+  },
+  {
+    "taskId": "card-216",
+    "platform": "Официальный сайт Ленремонта — контакты",
+    "url": "https://www.lenremont.ru/contact.htm",
+    "branch": "ул. Решетникова, 3",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-217",
+    "platform": "rting.ru network directory",
+    "url": "https://rting.ru/sankt-peterburg/filial/lenremont/201215",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-218",
+    "platform": "Rting — список филиалов",
+    "url": "https://rting.ru/sankt-peterburg/filial/lenremont/298336",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-219",
+    "platform": "Официальный сайт магазина Ленремонт",
+    "url": "https://kupit-bu-tekhniku.lenremont.ru/",
+    "branch": "ул. Ярослава Гашека, д. 4, к. 1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-220",
+    "platform": "YouTube",
+    "url": "https://youtube.com/channel/UChZQrVGyddGxE515iZFY6uA",
+    "branch": "needs-address-verification",
+    "city": null,
+    "status": "queued"
+  },
+  {
+    "taskId": "card-221",
+    "platform": "rting.ru",
+    "url": "https://rting.ru/sankt-peterburg/co/lenremont/4916409",
+    "branch": "Кузнецовская, 52, корпус 15, этаж 2",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-222",
+    "platform": "rting.ru",
+    "url": "https://rting.ru/sankt-peterburg/co/lenremont/2837699",
+    "branch": "проспект Юрия Гагарина, 15",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-223",
+    "platform": "rting.ru",
+    "url": "https://rting.ru/sankt-peterburg/co/lenremont/2855819",
+    "branch": "улица Фрунзе, 3",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-224",
+    "platform": "Официальный сайт магазина Ленремонт — ссылка из RemKarta",
+    "url": "http://novgorod-bu-tekhnika.lenremont.ru/",
+    "branch": "Воскресенский бульвар, 10",
+    "city": "Великий Новгород",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-225",
+    "platform": "RemKarta — список сети в Великом Новгороде",
+    "url": "https://nov.remkarta.ru/velikiy-novgorod/tehnika-s-utsenkoy/all/",
+    "branch": "needs-address-verification",
+    "city": "Великий Новгород",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-226",
+    "platform": "Официальный сайт Ленремонта",
+    "url": "https://www.lenremont.ru/masterskaya-lenremonta-u-m-mezhdunarodnaya-ul-bely-kuna-d-20-k-1.htm",
+    "branch": "Белы Куна, 20 к1",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-227",
+    "platform": "Официальный сайт московского Ленремонта",
+    "url": "https://lenremont.moscow/",
+    "branch": "needs-address-verification",
+    "city": "Москва",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-228",
+    "platform": "ТОЧКА МНЕНИЯ (другое зеркало)",
+    "url": "https://tochka-mneniy.com/lenremont-otzyvy/",
+    "branch": "needs-address-verification",
+    "city": null,
+    "status": "queued"
+  },
+  {
+    "taskId": "card-229",
+    "platform": "Официальный сайт Ленремонта",
+    "url": "https://www.lenremont.ru/lenremont-na-muzhestva.htm",
+    "branch": "проспект Непокорённых, 2",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-230",
+    "platform": "Rting",
+    "url": "https://rting.ru/sankt-peterburg/co/lenremont/2855829",
+    "branch": "Жака Дюкло, 6к2",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  },
+  {
+    "taskId": "card-231",
+    "platform": "Zoon — сеть",
+    "url": "https://zoon.ru/spb/repair/network/lenremont/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург",
+    "status": "queued"
+  }
+]

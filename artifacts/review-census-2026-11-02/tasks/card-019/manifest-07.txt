@@ -1,0 +1,4 @@
+default 301-309; full texts; no additional notebook matches
+r2eg0th2f3nuymj2kgx281qn88 gkv78-98 [Елизавета-Е@2019-06-25] vn0gw43p25p574eu5ndbf45hzw 17aj4h1ygkrz8fgqma7jf2aj2c yk1m9e5wv2m2yy2xt7vpmc9ejw [627209-Ефимов@2023-11-07] [Mordaunt@2023-09-12] [Вячеслав@2023-12-17]
+Final: 309 records, 309 unique author/profile+date+exact-body keys. 0 remaining collapsed review bodies. Source counter 309 reviews, 479 ratings. Bottom repeated at scrollTop 89636.359375, scrollHeight 90420, clientHeight 785, no further reviews after repeated downward scroll.
+Review dates range 2016-03-17 to 2026-10-05. Star counts: 1=51;2=13;3=13;4=15;5=217 (sum309).

@@ -1,0 +1,2028 @@
+{
+ "url": "dist/index.html",
+ "at": "2026-11-03T08:45:08.416Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.28,
+    0.89,
+    0.93,
+    0.96,
+    0.96,
+    0.96,
+    0.89,
+    0.96,
+    0.61,
+    0.54,
+    0.56,
+    0.26
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 2,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 39857,
+     "screens": 44.3,
+     "words": 2452,
+     "img": 88,
+     "video": 2,
+     "canvas": 0,
+     "svg": 188,
+     "sections": 17,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 2,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [
+      "http://127.0.0.1:50152/media/lr-qr-vk.svg",
+      "http://127.0.0.1:50152/media/lr-qr-tg.svg",
+      "http://127.0.0.1:50152/media/lr-qr-max.svg",
+      "http://127.0.0.1:50152/media/lr-qr-whatsapp.svg",
+      "http://127.0.0.1:50152/media/failure-no-power.webp",
+      "http://127.0.0.1:50152/media/failure-software.webp",
+      "http://127.0.0.1:50152/media/laptop-board-diagnostics.webp",
+      "http://127.0.0.1:50152/media/failure-overheating.webp"
+     ],
+     "emoji": [
+      "✓"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Ремонт ноутбуков в Санкт-Петербурге и Ленинградской области",
+     "words": 7,
+     "chars": 59,
+     "lines": 1,
+     "size": 32,
+     "vw": 2.2,
+     "font": "Times New Roman",
+     "weight": 700,
+     "tracking": 0,
+     "leading": 1.2,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 1,
+     "top": 702,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Ремонт ноутбуков в Санкт-Петербурге и Ленинградской области",
+     "words": 7,
+     "lines": 1,
+     "size": 32,
+     "font": "Times New Roman"
+    },
+    "headings": [
+     {
+      "text": "Ремонт ноутбуков в Санкт-Петербурге и Ленинградской области",
+      "words": 7,
+      "chars": 59,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Times New Roman",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 702,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Times New Roman",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Arial",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      16,
+      19,
+      24,
+      32
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Times New Roman",
+      "size": 16,
+      "leading": 1.2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 21
+     },
+     "measureChars": 180,
+     "max": {
+      "size": 32,
+      "vw": 2.2,
+      "font": "Times New Roman",
+      "text": "Ремонт ноутбуков"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Затем ремонтируем.",
+      "above": "Ремонт ноутбуков в Санкт-Петербурге и Ле",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 16,
+      "top": 663
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#000000",
+       "share": 0.92
+      },
+      {
+       "color": "#0000ee",
+       "share": 0.08
+      },
+      {
+       "color": "#111111",
+       "share": 0
+      }
+     ],
+     "button": null,
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 0,
+     "inHero": 0,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 35,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "video",
+      "ratio": 0.24
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 2580,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 39857,
+    "margins": {
+     "left": 0,
+     "right": 83
+    },
+    "sections": [
+     {
+      "sel": "section#lr-hero.lr-hero.lr-section",
+      "tag": "section",
+      "top": 16,
+      "height": 7459,
+      "words": 73,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "Ремонт ноутбуков",
+       "size": 32,
+       "tag": "h1"
+      },
+      "left": 0,
+      "right": 501,
+      "textLeft": 0,
+      "textRight": 501,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-symptoms.lr-section.lr-symptoms",
+      "tag": "section",
+      "top": 7495,
+      "height": 2713,
+      "words": 61,
+      "media": 5,
+      "middle": 4,
+      "heading": {
+       "text": "Что случилось с ноутбуком?",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 231,
+      "textLeft": 0,
+      "textRight": 231,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-manufacturers.lr-section.lr-manufacturers",
+      "tag": "section",
+      "top": 10228,
+      "height": 635,
+      "words": 27,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ремонт ноутбуков разных производителей",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 934,
+      "textLeft": 0,
+      "textRight": 934,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-formats.lr-section.lr-formats",
+      "tag": "section",
+      "top": 10883,
+      "height": 613,
+      "words": 43,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Выберите способ ремонта",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 1152,
+      "textLeft": 0,
+      "textRight": 1152,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-reviews.lr-section.lr-section--compact",
+      "tag": "section",
+      "top": 11515,
+      "height": 5595,
+      "words": 926,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Отзывы клиентов Ленремонта",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 119,
+      "textLeft": 0,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-prices.lr-section.lr-prices",
+      "tag": "section",
+      "top": 17130,
+      "height": 806,
+      "words": 379,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Сколько стоит ремонт ноутбука",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 330,
+      "textLeft": 0,
+      "textRight": 330,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-quiz.lr-section.lr-quiz",
+      "tag": "section",
+      "top": 17952,
+      "height": 971,
+      "words": 207,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Поможем выбрать удобный способ ремонта",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 31,
+      "textLeft": 0,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-process.lr-section.lr-repair-journey",
+      "tag": "section",
+      "top": 18939,
+      "height": 5035,
+      "words": 123,
+      "media": 8,
+      "middle": 0,
+      "heading": {
+       "text": "Как проходит ремонт",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 160,
+      "textLeft": 0,
+      "textRight": 568,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-lab.lr-section.lr-lab",
+      "tag": "section",
+      "top": 23990,
+      "height": 1038,
+      "words": 64,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 0,
+      "right": 465,
+      "textLeft": 0,
+      "textRight": 465,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-workshop-gallery.lr-section.lr-workshop-gallery",
+      "tag": "section",
+      "top": 25048,
+      "height": 4579,
+      "words": 21,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "Рабочие зоны мастерской",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 120,
+      "textLeft": 0,
+      "textRight": 1162,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-business-trust.lr-section.lr-business-trust",
+      "tag": "section",
+      "top": 29647,
+      "height": 556,
+      "words": 32,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Ремонт для вашей компании",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 652,
+      "textLeft": 0,
+      "textRight": 652,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-director.lr-section.lr-director",
+      "tag": "section",
+      "top": 30219,
+      "height": 1638,
+      "words": 96,
+      "media": 2,
+      "middle": 0,
+      "heading": null,
+      "left": 0,
+      "right": 44,
+      "textLeft": 0,
+      "textRight": 44,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-guarantee.lr-section.lr-home-protection",
+      "tag": "section",
+      "top": 31876,
+      "height": 261,
+      "words": 32,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Гарантия и порядок ремонта",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 1067,
+      "textLeft": 0,
+      "textRight": 1067,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-locations.lr-section.lr-locations",
+      "tag": "section",
+      "top": 32157,
+      "height": 169,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Мастерские и выездной ремонт",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 904,
+      "textLeft": 0,
+      "textRight": 904,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-service-guide.lr-section.lr-service-guide",
+      "tag": "section",
+      "top": 32346,
+      "height": 913,
+      "words": 623,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Что важно знать о ремонте ноутбука",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 46,
+      "textLeft": 0,
+      "textRight": 8,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-faq.lr-section",
+      "tag": "section",
+      "top": 33278,
+      "height": 263,
+      "words": 453,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Что важно знать перед ремонтом ноутбука",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 65,
+      "textLeft": 0,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-contact.lr-section.lr-contact",
+      "tag": "section",
+      "top": 33561,
+      "height": 6280,
+      "words": 76,
+      "media": 8,
+      "middle": 0,
+      "heading": {
+       "text": "Узнайте стоимость ремонта вашего ноутбука",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 244,
+      "textLeft": 0,
+      "textRight": 244,
+      "fullBleed": true,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Ремонт ноутбуков в Санкт-Петербурге и Ленинградской области",
+      "size": 32,
+      "top": 702,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "Ремонт ноутбуков",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "Вернём ноутбук в работу.",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "На понятных вам условиях.",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "Диагностика — бесплатно, даже при отказе от ремонт",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "Узнать стоимость ремонта",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "В мастерской, у вас дома или с доставкой",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "Позвоните для бесплатной консультации",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "+7 (812) 344-44-44",
+      "side": "left",
+      "px": 0
+     }
+    ],
+    "edges": [
+     {
+      "x": 0,
+      "n": 136
+     },
+     {
+      "x": 40,
+      "n": 3
+     },
+     {
+      "x": 261,
+      "n": 2
+     },
+     {
+      "x": 82,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 142,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.38,
+    "voidBox": {
+     "x": 540,
+     "y": 120,
+     "w": 900,
+     "h": 540
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.56,
+    0.95,
+    0.96,
+    0.96,
+    0.88,
+    1,
+    1,
+    0.29,
+    0.27,
+    0.28,
+    0.19,
+    0.22
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 2,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 35608,
+     "screens": 34.8,
+     "words": 2452,
+     "img": 88,
+     "video": 2,
+     "canvas": 0,
+     "svg": 188,
+     "sections": 17,
+     "horizontalOverflow": 552,
+     "overflowCulprits": [
+      "img.lr-repair-journey__photo.lr-repair-journey__photo--first (+512px)",
+      "img.lr-repair-journey__photo (+512px)",
+      "img.lr-repair-journey__photo (+512px)"
+     ],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 2,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [
+      "http://127.0.0.1:50152/media/lr-qr-vk.svg",
+      "http://127.0.0.1:50152/media/lr-qr-tg.svg",
+      "http://127.0.0.1:50152/media/lr-qr-max.svg",
+      "http://127.0.0.1:50152/media/lr-qr-whatsapp.svg",
+      "http://127.0.0.1:50152/media/failure-no-power.webp",
+      "http://127.0.0.1:50152/media/failure-software.webp",
+      "http://127.0.0.1:50152/media/laptop-board-diagnostics.webp",
+      "http://127.0.0.1:50152/media/failure-overheating.webp"
+     ],
+     "emoji": [
+      "✓"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Ремонт ноутбуков в Санкт-Петербурге и Ленинградской области",
+     "words": 7,
+     "chars": 59,
+     "lines": 2,
+     "size": 32,
+     "vw": 4.2,
+     "font": "Times New Roman",
+     "weight": 700,
+     "tracking": 0,
+     "leading": 1.2,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 1,
+     "top": 702,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Ремонт ноутбуков в Санкт-Петербурге и Ленинградской области",
+     "words": 7,
+     "lines": 2,
+     "size": 32,
+     "font": "Times New Roman"
+    },
+    "headings": [
+     {
+      "text": "Ремонт ноутбуков в Санкт-Петербурге и Ленинградской области",
+      "words": 7,
+      "chars": 59,
+      "lines": 2,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Times New Roman",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 702,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Times New Roman",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Arial",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      16,
+      19,
+      24,
+      32
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Times New Roman",
+      "size": 16,
+      "leading": 1.2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 21
+     },
+     "measureChars": 96,
+     "max": {
+      "size": 32,
+      "vw": 4.2,
+      "font": "Times New Roman",
+      "text": "Ремонт ноутбуков"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Затем ремонтируем.",
+      "above": "Ремонт ноутбуков в Санкт-Петербурге и Ле",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 16,
+      "top": 663
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#000000",
+       "share": 0.92
+      },
+      {
+       "color": "#0000ee",
+       "share": 0.08
+      },
+      {
+       "color": "#111111",
+       "share": 0
+      }
+     ],
+     "button": null,
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 0,
+     "inHero": 0,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 35,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "video",
+      "ratio": 0.39
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 2670,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 35608,
+    "margins": {
+     "left": 0,
+     "right": 22
+    },
+    "sections": [
+     {
+      "sel": "section#lr-hero.lr-hero.lr-section",
+      "tag": "section",
+      "top": 16,
+      "height": 4499,
+      "words": 73,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "Ремонт ноутбуков",
+       "size": 32,
+       "tag": "h1"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 0,
+      "textRight": 210,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-symptoms.lr-section.lr-symptoms",
+      "tag": "section",
+      "top": 4535,
+      "height": 2803,
+      "words": 61,
+      "media": 5,
+      "middle": 0,
+      "heading": {
+       "text": "Что случилось с ноутбуком?",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 198,
+      "textLeft": 0,
+      "textRight": 198,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-manufacturers.lr-section.lr-manufacturers",
+      "tag": "section",
+      "top": 7357,
+      "height": 635,
+      "words": 27,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ремонт ноутбуков разных производителей",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 262,
+      "textLeft": 0,
+      "textRight": 262,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-formats.lr-section.lr-formats",
+      "tag": "section",
+      "top": 8012,
+      "height": 613,
+      "words": 43,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Выберите способ ремонта",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 480,
+      "textLeft": 0,
+      "textRight": 480,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-reviews.lr-section.lr-section--compact",
+      "tag": "section",
+      "top": 8645,
+      "height": 5773,
+      "words": 926,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Отзывы клиентов Ленремонта",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 8,
+      "textLeft": 0,
+      "textRight": 5,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-prices.lr-section.lr-prices",
+      "tag": "section",
+      "top": 14438,
+      "height": 1022,
+      "words": 379,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Сколько стоит ремонт ноутбука",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 22,
+      "textLeft": 0,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-quiz.lr-section.lr-quiz",
+      "tag": "section",
+      "top": 15476,
+      "height": 1237,
+      "words": 207,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Поможем выбрать удобный способ ремонта",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 31,
+      "textLeft": 0,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-process.lr-section.lr-repair-journey",
+      "tag": "section",
+      "top": 16729,
+      "height": 5125,
+      "words": 123,
+      "media": 8,
+      "middle": 0,
+      "heading": {
+       "text": "Как проходит ремонт",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 38,
+      "textLeft": 0,
+      "textRight": 38,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-lab.lr-section.lr-lab",
+      "tag": "section",
+      "top": 21869,
+      "height": 1056,
+      "words": 64,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 0,
+      "right": 8,
+      "textLeft": 0,
+      "textRight": 68,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-workshop-gallery.lr-section.lr-workshop-gallery",
+      "tag": "section",
+      "top": 22946,
+      "height": 4579,
+      "words": 21,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "Рабочие зоны мастерской",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 490,
+      "textLeft": 0,
+      "textRight": 490,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-business-trust.lr-section.lr-business-trust",
+      "tag": "section",
+      "top": 27544,
+      "height": 574,
+      "words": 32,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Ремонт для вашей компании",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 81,
+      "textLeft": 0,
+      "textRight": 81,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-director.lr-section.lr-director",
+      "tag": "section",
+      "top": 28135,
+      "height": 1456,
+      "words": 96,
+      "media": 2,
+      "middle": 0,
+      "heading": null,
+      "left": 0,
+      "right": 48,
+      "textLeft": 0,
+      "textRight": 48,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-guarantee.lr-section.lr-home-protection",
+      "tag": "section",
+      "top": 29611,
+      "height": 261,
+      "words": 32,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Гарантия и порядок ремонта",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 395,
+      "textLeft": 0,
+      "textRight": 395,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-locations.lr-section.lr-locations",
+      "tag": "section",
+      "top": 29891,
+      "height": 169,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Мастерские и выездной ремонт",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 232,
+      "textLeft": 0,
+      "textRight": 232,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-service-guide.lr-section.lr-service-guide",
+      "tag": "section",
+      "top": 30080,
+      "height": 1237,
+      "words": 623,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Что важно знать о ремонте ноутбука",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 28,
+      "textLeft": 0,
+      "textRight": 1,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-faq.lr-section",
+      "tag": "section",
+      "top": 31337,
+      "height": 263,
+      "words": 401,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Что важно знать перед ремонтом ноутбука",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 26,
+      "textLeft": 0,
+      "textRight": 3,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-contact.lr-section.lr-contact",
+      "tag": "section",
+      "top": 31619,
+      "height": 3973,
+      "words": 76,
+      "media": 8,
+      "middle": 0,
+      "heading": {
+       "text": "Узнайте стоимость ремонта вашего ноутбука",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 0,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Ремонт ноутбуков в Санкт-Петербурге и Ленинградской области",
+      "size": 32,
+      "top": 702,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "Ремонт ноутбуков",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "в Санкт-Петербурге и Ленинградской области",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "Вернём ноутбук в работу.",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "На понятных вам условиях.",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "Диагностика — бесплатно, даже при отказе от ремонт",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "Узнать стоимость ремонта",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "В мастерской, у вас дома или с доставкой",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "Позвоните для бесплатной консультации",
+      "side": "left",
+      "px": 0
+     }
+    ],
+    "edges": [
+     {
+      "x": 0,
+      "n": 137
+     },
+     {
+      "x": 40,
+      "n": 3
+     },
+     {
+      "x": 82,
+      "n": 1
+     },
+     {
+      "x": 179,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 142,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.27,
+    0.34,
+    0.41,
+    0.5,
+    0.47,
+    0.37,
+    0.17,
+    0.14,
+    0.14,
+    0.15,
+    0.11,
+    0.13
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 2,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1320,
+     "h": 2857
+    },
+    "page": {
+     "height": 35607,
+     "screens": 12.5,
+     "words": 2452,
+     "img": 88,
+     "video": 2,
+     "canvas": 0,
+     "svg": 188,
+     "sections": 17,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 2,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [
+      "http://127.0.0.1:50152/media/lr-qr-vk.svg",
+      "http://127.0.0.1:50152/media/lr-qr-tg.svg",
+      "http://127.0.0.1:50152/media/lr-qr-max.svg",
+      "http://127.0.0.1:50152/media/lr-qr-whatsapp.svg",
+      "http://127.0.0.1:50152/media/failure-no-power.webp",
+      "http://127.0.0.1:50152/media/failure-software.webp",
+      "http://127.0.0.1:50152/media/laptop-board-diagnostics.webp",
+      "http://127.0.0.1:50152/media/failure-overheating.webp"
+     ],
+     "emoji": [
+      "✓"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Ремонт ноутбуков в Санкт-Петербурге и Ленинградской области",
+     "words": 7,
+     "chars": 59,
+     "lines": 3,
+     "size": 32,
+     "vw": 2.4,
+     "font": "Times New Roman",
+     "weight": 700,
+     "tracking": 0,
+     "leading": 1.2,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.3,
+     "top": 702,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Ремонт ноутбуков в Санкт-Петербурге и Ленинградской области",
+     "words": 7,
+     "lines": 3,
+     "size": 32,
+     "font": "Times New Roman"
+    },
+    "headings": [
+     {
+      "text": "Ремонт ноутбуков в Санкт-Петербурге и Ленинградской области",
+      "words": 7,
+      "chars": 59,
+      "lines": 3,
+      "size": 32,
+      "vw": 2.4,
+      "font": "Times New Roman",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 702,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Times New Roman",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Arial",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      16,
+      19,
+      24,
+      32
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Times New Roman",
+      "size": 16,
+      "leading": 1.2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 21
+     },
+     "measureChars": 49,
+     "max": {
+      "size": 32,
+      "vw": 2.4,
+      "font": "Times New Roman",
+      "text": "Ремонт ноутбуков"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Затем ремонтируем.",
+      "above": "Ремонт ноутбуков в Санкт-Петербурге и Ле",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 16,
+      "top": 663
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#000000",
+       "share": 0.92
+      },
+      {
+       "color": "#0000ee",
+       "share": 0.08
+      },
+      {
+       "color": "#111111",
+       "share": 0
+      }
+     ],
+     "button": null,
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 0,
+     "inHero": 0,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 35,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 15544
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "video",
+      "ratio": 0.08
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 2724,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1320,
+     "h": 2857
+    },
+    "pageH": 35607,
+    "margins": {
+     "left": 0,
+     "right": 552
+    },
+    "sections": [],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Ремонт ноутбуков в Санкт-Петербурге и Ленинградской области",
+      "size": 32,
+      "top": 702,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "Ремонт ноутбуков",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "в Санкт-Петербурге и Ленинградской области",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "Вернём ноутбук в работу.",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "На понятных вам условиях.",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "Диагностика — бесплатно, даже при отказе от ремонт",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "Узнать стоимость ремонта",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "В мастерской, у вас дома или с доставкой",
+      "side": "left",
+      "px": 0
+     },
+     {
+      "text": "Ремонт для бизнеса →",
+      "side": "left",
+      "px": 0
+     }
+    ],
+    "edges": [
+     {
+      "x": 0,
+      "n": 139
+     },
+     {
+      "x": 40,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 142,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.54,
+    "voidBox": {
+     "x": 550,
+     "y": 190,
+     "w": 770,
+     "h": 2667
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "1 eyebrow/kicker label(s) above headings: \"Затем ремонтируем.\" above \"Ремонт ноутбуков в Санкт-Петербурге и Ле\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ✓",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "default-link",
+   "width": 1440,
+   "message": "Browser-default blue/purple link colour is showing.",
+   "fix": "Style every link: inherit the text colour and mark it with weight, underline offset, or the accent.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "first-action",
+   "width": 1440,
+   "message": "No visible button in the first screen.",
+   "fix": "Give the one primary action a real button in the first screen (a filled or solid-bordered control, 44px or taller), not only a link in the navigation.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 2 picture(s) on the page (2 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 180 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "broken-image",
+   "width": 1440,
+   "message": "Broken image(s): http://127.0.0.1:50152/media/lr-qr-vk.svg, http://127.0.0.1:50152/media/lr-qr-tg.svg, http://127.0.0.1:50152/media/lr-qr-max.svg, http://127.0.0.1:50152/media/lr-qr-whatsapp.svg",
+   "fix": "Fix the URL or replace the asset.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 32px (2.2vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 0px on the left, 83px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "lopsided",
+   "width": 1440,
+   "message": "4 sections keep all their content on one side and leave 80% of the width empty: \"Ремонт ноутбуков разных производителей\" (right 934px empty); \"Выберите способ ремонта\" (right 1152px empty); \"Ремонт для вашей компании\" (right 652px empty); \"Гарантия и порядок ремонта\" (right 1067px empty)",
+   "fix": "Use the whole width the page has set up: put the section's picture, its second column, its list or its figure in the empty half, or set the text larger across the grid. Empty space must be placed, with something on each side of it.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "untitled-section",
+   "width": 1440,
+   "message": "2 sections carry text but no heading: section#lr-lab.lr-section.lr-lab at 23990px (64 words); section#lr-director.lr-section.lr-director at 30219px (96 words)",
+   "fix": "Give each section a short heading that names what it holds (the menu, the rooms, how it works, the price), in the heading face at the section size.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "hero-void",
+   "width": 1440,
+   "message": "38% of the first screen is one empty block (900×540px at 540,120).",
+   "fix": "Place the void on purpose or fill it: move the picture, the film or one fact into it, grow the headline to meet it, or shrink the screen to its content. A void reads as placed only when something closes it on the far side and it is the screen's one rest."
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 1440,
+   "message": "8 text block(s) sit within 16px of the screen edge: \"Ремонт ноутбуков\" (0px from the left); \"Вернём ноутбук в работу.\" (0px from the left); \"На понятных вам условиях.\" (0px from the left); \"Диагностика — бесплатно, даже \" (0px from the left)",
+   "fix": "Keep text inside the page margin (16–32px or more). Only display type deliberately bled past the edge may touch it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 0 element(s) moved while the page loaded and scrolled (plus 1 playing video).",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "overflow",
+   "width": 768,
+   "message": "Page scrolls sideways by 552px at 768px. Widest offenders: img.lr-repair-journey__photo.lr-repair-journey__photo--first (+512px), img.lr-repair-journey__photo (+512px), img.lr-repair-journey__photo (+512px).",
+   "fix": "Constrain the element that is wider than the viewport (max-width: 100%, or overflow: clip on its section)."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "1 headline(s) wrap past two lines at 390px: \"Ремонт ноутбуков в Санкт-Петербурге и Ленинградс\" → 3 lines (7 words, 32px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "off-centre",
+   "width": 390,
+   "message": "The page sits off-centre: its content comes to 0px from the left edge but only to 552px from the right, at 390px.",
+   "fix": "Give the page one pair of equal margins. Check the wrapper for a max-width without margin-inline: auto, a grid with an empty last column, or padding on one side only. If one side is meant to hold air, it must still be closed by something that reaches the margin (a picture, the navigation's last item, a figure)."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-inspect\\desktop-fold.jpg",
+   "pages": [
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-inspect\\desktop-page-01.jpg",
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-inspect\\desktop-page-02.jpg",
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-inspect\\desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-inspect\\tablet-fold.jpg",
+   "pages": [
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-inspect\\tablet-page-01.jpg",
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-inspect\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-inspect\\mobile-fold.jpg",
+   "pages": [
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-inspect\\mobile-page-01.jpg",
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\current-inspect\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

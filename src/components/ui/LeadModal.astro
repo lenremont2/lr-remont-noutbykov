@@ -3,13 +3,14 @@ interface Props {
   id: string;
   title: string;
   closeLabel?: string;
+  compact?: boolean;
 }
 
-const { id, title, closeLabel = "Закрыть" } = Astro.props;
+const { id, title, closeLabel = "Закрыть", compact = false } = Astro.props;
 ---
 
 <dialog
-  class="lr-modal"
+  class:list={["lr-modal", { "lr-modal--compact": compact }]}
   aria-labelledby={`${id}-title`}
   data-lr-modal={id}
   aria-modal="true"

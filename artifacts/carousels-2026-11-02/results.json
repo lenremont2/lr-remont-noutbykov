@@ -1,0 +1,206 @@
+[
+  {
+    "width": 320,
+    "layouts": [
+      {
+        "id": "lr-symptoms",
+        "layout": {
+          "x": 0,
+          "width": 320,
+          "cardX": 20,
+          "contentX": 20,
+          "end": 880,
+          "inert": false,
+          "snap": "none"
+        },
+        "drag": 100,
+        "released": 100
+      },
+      {
+        "id": "lr-manufacturers",
+        "layout": {
+          "x": 0,
+          "width": 320,
+          "cardX": 20,
+          "contentX": 20,
+          "end": 1148,
+          "inert": false,
+          "snap": "none"
+        },
+        "drag": 100,
+        "released": 100
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "layouts": [
+      {
+        "id": "lr-symptoms",
+        "layout": {
+          "x": 0,
+          "width": 390,
+          "cardX": 20,
+          "contentX": 20,
+          "end": 1160,
+          "inert": false,
+          "snap": "none"
+        },
+        "drag": 100,
+        "released": 100
+      },
+      {
+        "id": "lr-manufacturers",
+        "layout": {
+          "x": 0,
+          "width": 390,
+          "cardX": 20,
+          "contentX": 20,
+          "end": 1078,
+          "inert": false,
+          "snap": "none"
+        },
+        "drag": 100,
+        "released": 100
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "layouts": [
+      {
+        "id": "lr-symptoms",
+        "layout": {
+          "x": 0,
+          "width": 768,
+          "cardX": 32,
+          "contentX": 32,
+          "end": 1086,
+          "inert": false,
+          "snap": "none"
+        },
+        "drag": 100,
+        "released": 100
+      },
+      {
+        "id": "lr-manufacturers",
+        "layout": {
+          "x": 0,
+          "width": 768,
+          "cardX": 32,
+          "contentX": 32,
+          "end": 724,
+          "inert": false,
+          "snap": "none"
+        },
+        "drag": 100,
+        "released": 100
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "layouts": [
+      {
+        "id": "lr-symptoms",
+        "layout": {
+          "x": 0,
+          "width": 1440,
+          "cardX": 86.40625,
+          "contentX": 86.40625,
+          "end": 858,
+          "inert": false,
+          "snap": "none"
+        },
+        "drag": 100,
+        "released": 100
+      },
+      {
+        "id": "lr-manufacturers",
+        "layout": {
+          "x": 0,
+          "width": 1440,
+          "cardX": 86.40625,
+          "contentX": 86.40625,
+          "end": 161,
+          "inert": false,
+          "snap": "none"
+        },
+        "drag": 100,
+        "released": 100
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "layouts": [
+      {
+        "id": "lr-symptoms",
+        "layout": {
+          "x": 0,
+          "width": 1920,
+          "cardX": 320,
+          "contentX": 320,
+          "end": 867,
+          "inert": false,
+          "snap": "none"
+        },
+        "drag": 100,
+        "released": 100
+      },
+      {
+        "id": "lr-manufacturers",
+        "layout": {
+          "x": 0,
+          "width": 1920,
+          "cardX": 320,
+          "contentX": 320,
+          "end": 148,
+          "inert": false,
+          "snap": "none"
+        },
+        "drag": 100,
+        "released": 100
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "lr-symptoms",
+    "nativeTouch": [
+      7, 29, 51, 73, 95, 117, 139, 161, 161, 161, 161, 161, 161, 161, 161, 161,
+      161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161,
+      161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161,
+      161, 161
+    ]
+  },
+  {
+    "id": "lr-manufacturers",
+    "nativeTouch": [
+      7, 29, 51, 73, 95, 117, 139, 161, 161, 161, 161, 161, 161, 161, 161, 161,
+      161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161,
+      161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161, 161,
+      161, 161
+    ]
+  },
+  {
+    "autoplay": [
+      3, 17, 59, 94, 113, 124, 132, 137, 140, 142, 144, 144, 144, 144, 144, 144,
+      144, 144, 144, 144, 144, 144, 144, 144, 144, 144, 144, 144, 144, 144, 144,
+      144, 144, 144, 144, 144, 144, 144, 144, 144, 144, 144, 144, 144, 144
+    ],
+    "returnFromEnd": [
+      1076, 1068, 1052, 1026, 984, 914, 805, 666, 542, 445, 371, 312, 263, 223,
+      189, 160, 135, 113, 95, 78, 64, 52, 42, 33, 25, 18, 13, 9, 5, 3, 1, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    ]
+  },
+  {
+    "reducedMotion": true,
+    "normalLinkNavigation": true
+  }
+]

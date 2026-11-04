@@ -1,0 +1,95 @@
+---
+interface Props {
+  format: string;
+}
+const { format } = Astro.props;
+const routes = {
+  "at-home": {
+    start: "Инженер",
+    end: "Дом / офис",
+    note: "Ремонт в вашем помещении",
+    description:
+      "Инженер приезжает к вам и ремонтирует ноутбук дома или в офисе.",
+  },
+  "mobile-lab": {
+    start: "Фургон",
+    end: "У дома",
+    note: "Ремонт внутри автомобиля",
+    description:
+      "Мобильная мастерская приезжает к дому. Ноутбук ремонтируют внутри автомобиля.",
+  },
+  workshop: {
+    start: "Вы",
+    end: "Сервис",
+    note: "Вы привозите ноутбук",
+    description:
+      "Вы самостоятельно привозите ноутбук в сервисный центр на ремонт.",
+  },
+  courier: {
+    start: "Ваш дом",
+    end: "Сервис",
+    note: "Заберём и привезём обратно",
+    description:
+      "Курьер забирает ноутбук, доставляет в сервисный центр и возвращает после ремонта.",
+  },
+};
+const route = routes[format as keyof typeof routes];
+---
+
+<figure
+  class="lr-format-route"
+  aria-label={route.description}
+  data-format-schema={format}
+>
+  <svg viewBox="0 0 300 104" fill="none" aria-hidden="true">
+    <path
+      class="lr-format-route__streets"
+      d="M0 25h300M0 72h300M95 0v104M205 0v104M0 96 300 5"></path>
+    <path class="lr-format-route__river" d="M0 43q75-28 150 0t150 0"></path>
+    <path
+      class="lr-format-route__path"
+      d={format === "courier"
+        ? "M80 43q70-43 140 0m-10-13 10 13-16 3"
+        : "M80 48h140m-12-10 12 10-12 10"}></path>
+    {
+      format === "courier" && (
+        <path
+          class="lr-format-route__return"
+          d="M220 61q-70 43-140 0m10 13L80 61l16-3"
+        />
+      )
+    }
+    <circle class="lr-format-route__node" cx="43" cy="48" r="27"></circle>
+    <circle class="lr-format-route__node" cx="257" cy="48" r="27"></circle>
+    <g class="lr-format-route__icon">
+      {
+        format === "courier" ? (
+          <path d="m28 47 15-13 15 13M32 44v19h22V44M40 63V51h7v12" />
+        ) : format === "mobile-lab" ? (
+          <>
+            <path d="M25 52V37h22l13 10v10H25v-5Zm22-15v13h13M30 43h10" />
+            <>
+              <circle cx="33" cy="58" r="4" />
+              <circle cx="53" cy="58" r="4" />
+            </>
+          </>
+        ) : (
+          <>
+            <circle cx="43" cy="37" r="6" />
+            <path d="M31 62v-7a12 12 0 0 1 24 0v7M37 53v9m12-9v9" />
+          </>
+        )
+      }
+      {
+        format === "at-home" || format === "mobile-lab" ? (
+          <path d="m242 47 15-13 15 13M246 44v19h22V44M254 63V51h7v12" />
+        ) : (
+          <path d="M244 62V35h26v27h-26Zm6-20h3m8 0h3m-14 7h3m8 0h3m-10 13V54h7v8" />
+        )
+      }
+    </g>
+    <text x="43" y="94">{route.start}</text>
+    <text x="288" y="94" class="lr-format-route__destination">{route.end}</text>
+  </svg>
+  <figcaption>{route.note}</figcaption>
+</figure>

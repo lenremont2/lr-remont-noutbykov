@@ -1,6 +1,7 @@
 ---
 interface Props {
   label: string;
+  ariaLabel?: string;
   source: string;
   format?: string;
   symptom?: string;
@@ -10,6 +11,7 @@ interface Props {
 }
 const {
   label,
+  ariaLabel,
   source,
   format,
   symptom,
@@ -21,6 +23,7 @@ const {
 
 <a
   href="#lr-contact"
+  aria-label={ariaLabel}
   class:list={[text ? "lr-text-action" : "lr-button", className]}
   data-lr-lead-open
   data-source={source}

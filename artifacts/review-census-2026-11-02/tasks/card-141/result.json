@@ -1,0 +1,96 @@
+{
+  "taskId": "card-141",
+  "platform": "Yandex Maps",
+  "url": "https://yandex.com/maps/org/tekhnika_s_utsenkoy/143153493696/reviews/",
+  "branch": "Техника с уценкой / Ленремонт, улица Яна Фабрициуса, 8",
+  "city": "Псков",
+  "networkEvidence": [
+    {
+      "url": "https://pskov-bu-tekhnika.lenremont.ru/",
+      "type": "official",
+      "summary": "Official Lenremont subdomain identifies the Pskov restored-appliance shop at Yana Fabritsiusa 8 and phone +7 (8112) 70-07-07; describes Lenremont restoration and service."
+    },
+    {
+      "url": "https://pskov.spravka.city/company/lenremont-18",
+      "type": "phone crosswalk",
+      "summary": "Public Lenremont listing at the same address links the official domain and lists both +7 (811) 270-07-07 and +7 (901) 634-72-38. Same digits as official and Yandex contacts."
+    },
+    {
+      "url": "https://m.ok.ru/group/57232284975244/topic/158281740461452",
+      "type": "corroborating public advertisement",
+      "summary": "Public Lenremont shop advertisement independently pairs address Yana Fabritsiusa 8 with both +7 (8112) 70-07-07 and 8-901-634-72-38."
+    },
+    {
+      "url": "https://yandex.com/maps/org/tekhnika_s_utsenkoy/143153493696/reviews/",
+      "type": "on-card corroboration",
+      "summary": "Company replies to appliance purchasers identify Lenremont and LenBytTekhnika. Review photo by Darya Tuchak shows Lenremont sale/warranty stickers. Multiple signals corroborate network identity beyond name/address alone."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 36,
+    "examinedCount": 36,
+    "endpointObserved": true,
+    "method": "CUA Chrome own tab 2080318428. Read all 36 rendered review blocks across 2024-2026 and ratings 2, 4, 5 without keyword/rating/date filters. Expanded both truncated review texts and all 35 published company replies. Reached scrollTop 17809 + clientHeight 863 = scrollHeight 18672; count remained36. Followed the observed page=2 URL: zero review blocks and no further page links. All three review attachments opened, downloaded in the largest displayed XXXL variant and visually checked. Composite author-profile/date dedup IDs recorded in id-manifest.json.",
+    "stopReason": "Observed end; all36 reported text reviews examined. Eight additional ratings have no text in the review counter. Alternate sorts not required because unique review count equals the reported text-review total."
+  },
+  "reviews": [],
+  "candidateReviews": [],
+  "discoveredSources": [
+    {
+      "platform": "Spravka.City",
+      "url": "https://pskov.spravka.city/company/lenremont-18",
+      "address": "улица Яна Фабрициуса, 8",
+      "city": "Псков",
+      "reportedReviews": 0
+    }
+  ],
+  "inspectedPhotos": [
+    {
+      "author": "Дарья Тучак",
+      "sourceUrl": "https://avatars.mds.yandex.net/get-altay/20963904/2a000001a075e634b60a4bd4c62f748e5ccc/XXXL",
+      "localPath": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\review-census-2026-11-02\\tasks\\card-141\\photos\\darya-tuchak.webp",
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "description": "White LG front-loading washing machine with Lenremont sale/warranty stickers; no laptop."
+    },
+    {
+      "author": "Никита Зотов",
+      "sourceUrl": "https://avatars.mds.yandex.net/get-altay/16329823/2a000001990404b88ef883bffa966040de49/XXXL",
+      "localPath": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\review-census-2026-11-02\\tasks\\card-141\\photos\\nikita-zotov.webp",
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "description": "Shop aisle with refrigerators on left and washing machines on right; no laptop."
+    },
+    {
+      "author": "Олег Степанов",
+      "sourceUrl": "https://avatars.mds.yandex.net/get-altay/16771051/2a0000019903ffb3f2a93ef1286ee55d2a42/XXXL",
+      "localPath": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\review-census-2026-11-02\\tasks\\card-141\\photos\\oleg-stepanov.webp",
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "description": "White Hotpoint Ariston refrigerator in an interior; no laptop."
+    }
+  ],
+  "notes": [
+    "Network identity confirmed by official domain plus phone crosswalk, public advertisement, replies and branded review photo. Official phone and Yandex mobile differ; both are paired in corroborating sources.",
+    "No confirmed or candidate laptop-repair reviews found. The sole laptop mention concerns absent inventory and is excluded.",
+    "All3 photos belong to reviews, not replies, avatars or general gallery. No images in expanded company replies. No laptops visible in any of the3 inspected attachments.",
+    "Largest directly observed public files were XXXL: 960x1280, 577x1280 and720x1280 respectively. These are downloaded displayed variants; an original-upload download control was not offered.",
+    "General gallery count62 includes separate organization media and was not substituted for review attachments. Avatars excluded.",
+    "Search index showed a stale31-review snapshot; live browser36-review counter and corpus were used. No CAPTCHA or login encountered.",
+    "Saved composite IDs are not claimed to be native review IDs. Full copyrighted review text was read but publication artifacts contain short topic paraphrases only."
+  ],
+  "excludedLaptopMention": {
+    "author": "ольга господарева",
+    "date": "2025-01-31",
+    "rating": 5,
+    "authorUrl": "https://yandex.com/maps/user/acxvgyux9nctx0p1w7ut4v8e6m",
+    "reviewUrl": "https://yandex.com/maps/org/tekhnika_s_utsenkoy/143153493696/reviews/",
+    "summary": "Author liked the shop but found no laptops in stock. Company reply dated2025-02-05 confirms no laptops available and discusses assortment expansion.",
+    "reason": "Inventory/sales topic; no laptop repair, diagnostics, cleaning or maintenance.",
+    "photos": []
+  }
+}

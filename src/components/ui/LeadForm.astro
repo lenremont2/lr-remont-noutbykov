@@ -1,16 +1,21 @@
 ---
 import copy from "../../data/laptop-service.json";
+import workshops from "../../data/workshops.json";
 interface Props {
   id: string;
   source: string;
   submitLabel: string;
   serviceName?: string;
+  requestTiming?: boolean;
+  compact?: boolean;
 }
 const {
   id,
   source,
   submitLabel,
   serviceName = "Ремонт ноутбуков",
+  requestTiming = false,
+  compact = false,
 } = Astro.props;
 ---
 
@@ -20,6 +25,7 @@ const {
     class="lr-form"
     data-hop-lead-form
     data-lr-form
+    data-lr-compact-form={compact || undefined}
     novalidate
   >
     <input type="hidden" name="contact_method" value="Телефон" />
@@ -28,6 +34,25 @@ const {
     <input type="hidden" name="service_format" value="consultation" />
     <input type="hidden" name="device_category" value="" />
     <input type="hidden" name="symptom" value="" />
+    {
+      requestTiming && (
+        <div class="lr-form__field">
+          <label for={`${id}-timing`}>Когда нужна помощь?</label>
+          <select id={`${id}-timing`} name="request_timing">
+            <option value="">Уточнить при звонке</option>
+            <option value="Срочно сегодня (за 1–2 часа)">
+              Срочно сегодня (за 1–2 часа)
+            </option>
+            <option value="Сегодня вечером или завтра">
+              Сегодня вечером или завтра
+            </option>
+            <option value="Сначала просто узнать точную цену">
+              Сначала просто узнать точную цену
+            </option>
+          </select>
+        </div>
+      )
+    }
     <div class="lr-form__context" data-lr-context hidden>
       <p data-lr-context-text></p>
       <button
@@ -87,27 +112,41 @@ const {
     <div class="lr-dialpad" data-lr-dialpad hidden>
       <div class="lr-dialpad__keys">
         {
-          ["1", "2", "3", "4", "5", "6", "7", "8", "9", "+", "0", "⌫"].map(
+          ["1", "2", "3", "4", "5", "6", "7", "8", "9", "clear", "0", "⌫"].map(
             (key) => (
               <button
                 type="button"
                 data-lr-digit={key}
-                aria-label={key === "⌫" ? "Удалить последнюю цифру" : key}
+                aria-label={
+                  key === "⌫"
+                    ? "Удалить последнюю цифру"
+                    : key === "clear"
+                      ? "Очистить номер полностью"
+                      : key
+                }
               >
-                {key}
+                {key === "clear" ? "Сброс" : key}
               </button>
             ),
           )
         }
       </div>
-      <div class="lr-dialpad__actions">
-        <button class="lr-text-action" type="button" data-lr-native-phone
-          >Ввести с клавиатуры</button
-        >
-        <button class="lr-text-action" type="button" data-lr-phone-done
-          >Готово</button
-        >
-      </div>
+    </div>
+    <div class="lr-form__field" data-lr-workshop-picker hidden>
+      <label for={`${id}-workshop`}>Выберите мастерскую</label>
+      <select id={`${id}-workshop`} name="workshop_id" disabled>
+        <option value="">Помогите выбрать при звонке</option>
+        {
+          workshops.workshops.map((workshop) => (
+            <option value={workshop.id}>
+              {workshop.metro} — {workshop.address}
+            </option>
+          ))
+        }
+      </select>
+      <span class="lr-caption"
+        >Уточним, принимает ли выбранная мастерская вашу модель.</span
+      >
     </div>
     <div class="lr-form__field" data-lr-district hidden>
       <label for={`${id}-district`}>Метро или район</label>
@@ -120,7 +159,7 @@ const {
     </div>
     <div class="lr-form__visit" data-lr-visit-fields hidden>
       <div class="lr-form__field">
-        <label for={`${id}-visit-address`}
+        <label for={`${id}-visit-address`} data-lr-address-label
           >Куда приехать — к дому или работе</label
         >
         <input
@@ -145,7 +184,7 @@ const {
         >
         </p>
       </div>
-      <div class="lr-form__field">
+      <div class="lr-form__field" data-lr-repair-place-field>
         <label for={`${id}-repair-place`}
           >Где вам удобнее провести ремонт?</label
         >
@@ -201,6 +240,9 @@ const {
       disabled
       >{submitLabel}
     </button>
+    <p class="lr-caption lr-form__ready" data-lr-form-ready aria-live="polite">
+      Введите номер телефона полностью.
+    </p>
     <p
       class="lr-form__message"
       role="status"

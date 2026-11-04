@@ -1,0 +1,1489 @@
+{
+  "taskId": "card-009",
+  "observedDate": "2026-11-02",
+  "source": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@59.8445146,30.2471749,17z/data=!4m8!3m7!1s0x46963ae33e43faf7:0xc3666b90d7a7f71d!8m2!3d59.8445146!4d30.2471749!9m1!1b1!16s%2Fg%2F11b8v9kctp?hl=ru",
+  "endpoint": {
+    "reported": 161,
+    "uniqueEntries": 161,
+    "scrollTop": 59789.33203125,
+    "clientHeight": 1015,
+    "scrollHeight": 60804,
+    "lastAuthor": "Владимир Соколов",
+    "remainingReviewerExpansionControls": 0
+  },
+  "ratingDistribution": {
+    "1": 31,
+    "2": 7,
+    "3": 9,
+    "4": 14,
+    "5": 100
+  },
+  "textCounts": {
+    "narrative": 107,
+    "attributesOnly": 1,
+    "ratingOnly": 53
+  },
+  "photoEvidence": {
+    "matchingReviewAttachmentButtons": 0,
+    "excludedAvatarButtons": 4,
+    "unrelatedReviewPhotoAuthors": [
+      "Ольга Геннадьевна",
+      "Tatyana Mayorova",
+      "Анастасия Архипова",
+      "Елена Соколова"
+    ],
+    "sergeevProfileAggregatePhotoCount": 1,
+    "sergeevReviewAttachmentCount": 0
+  },
+  "ledger": [
+    {
+      "sequence": 1,
+      "author": "Юлия Богданова",
+      "rating": 5,
+      "date": "6 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 2,
+      "author": "Давид Мушкудиани",
+      "rating": 5,
+      "date": "6 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 3,
+      "author": "Никита",
+      "rating": 5,
+      "date": "6 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 4,
+      "author": "Мухаммад",
+      "rating": 5,
+      "date": "5 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": true
+    },
+    {
+      "sequence": 5,
+      "author": "Татьяна Серова",
+      "rating": 1,
+      "date": "4 месяца назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 6,
+      "author": "Денис Коржов",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 7,
+      "author": "Руфина",
+      "rating": 5,
+      "date": "10 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": true
+    },
+    {
+      "sequence": 8,
+      "author": "Светлана Шавейко",
+      "rating": 5,
+      "date": "6 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 9,
+      "author": "Aleksey Korochkin (SeventyS?x)",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 10,
+      "author": "Иван Леванов",
+      "rating": 5,
+      "date": "6 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 11,
+      "author": "Errør Glich",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 12,
+      "author": "полина",
+      "rating": 5,
+      "date": "7 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 13,
+      "author": "Малика Ребенкова",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 14,
+      "author": "Ульяна Круглова",
+      "rating": 5,
+      "date": "11 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 15,
+      "author": "Любовь Чадина",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 16,
+      "author": "Светлана Казарина",
+      "rating": 5,
+      "date": "10 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 17,
+      "author": "Полина Брюхова",
+      "rating": 5,
+      "date": "7 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 18,
+      "author": "Серёга",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 19,
+      "author": "Алена Митьковских",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 20,
+      "author": "Ольга",
+      "rating": 1,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 21,
+      "author": "Рамазан Саидов",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": true
+    },
+    {
+      "sequence": 22,
+      "author": "Veronika Vyvuvuvuyvyux",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 23,
+      "author": "Даниил",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 24,
+      "author": "Калашян Сона",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 25,
+      "author": "Нонна Лукина",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 26,
+      "author": "Александр Седов",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 27,
+      "author": "anya",
+      "rating": 5,
+      "date": "9 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 28,
+      "author": "Анжела Томская",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 29,
+      "author": "Светлана Медведева",
+      "rating": 5,
+      "date": "10 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 30,
+      "author": "Mo Ro",
+      "rating": 1,
+      "date": "7 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 31,
+      "author": "Маргарита Юдина",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 32,
+      "author": "Людмила Колтуклу",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 33,
+      "author": "Яна Василькова",
+      "rating": 1,
+      "date": "6 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 34,
+      "author": "Елизавета Корсак",
+      "rating": 5,
+      "date": "6 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 35,
+      "author": "Ольга Геннадьевна",
+      "rating": 5,
+      "date": "6 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 36,
+      "author": "Сергей Сергеев",
+      "rating": 1,
+      "date": "7 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": true
+    },
+    {
+      "sequence": 37,
+      "author": "Lena Kot",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 38,
+      "author": "Анита Мисикова",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 39,
+      "author": "илья ломтев",
+      "rating": 5,
+      "date": "11 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 40,
+      "author": "Tatyana Mayorova",
+      "rating": 3,
+      "date": "3 года назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 41,
+      "author": "Камиль",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 42,
+      "author": "Domitori Hatsu",
+      "rating": 5,
+      "date": "Изменено 6 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 43,
+      "author": "Константин Волобуев",
+      "rating": 5,
+      "date": "9 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 44,
+      "author": "Ксения",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 45,
+      "author": "Arina",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 46,
+      "author": "Анастасия Архипова",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 47,
+      "author": "Захар",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 48,
+      "author": "Ekaterina Bogdanovich",
+      "rating": 1,
+      "date": "7 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 49,
+      "author": "Светлана Топалова",
+      "rating": 5,
+      "date": "4 года назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 50,
+      "author": "Денис С",
+      "rating": 1,
+      "date": "3 года назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 51,
+      "author": "Антон Виноградов",
+      "rating": 1,
+      "date": "Изменено 5 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 52,
+      "author": "Илья Петров",
+      "rating": 1,
+      "date": "6 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 53,
+      "author": "Aisha Chervaeva",
+      "rating": 5,
+      "date": "11 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 54,
+      "author": "Olga Resheten",
+      "rating": 2,
+      "date": "6 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 55,
+      "author": "Марк Благословенный",
+      "rating": 5,
+      "date": "год назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 56,
+      "author": "Александр Томашенко",
+      "rating": 1,
+      "date": "5 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 57,
+      "author": "Глеб Склярук",
+      "rating": 1,
+      "date": "5 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 58,
+      "author": "Максим Ярочкин",
+      "rating": 1,
+      "date": "5 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 59,
+      "author": "Александр л",
+      "rating": 1,
+      "date": "6 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 60,
+      "author": "Елена Соколова",
+      "rating": 5,
+      "date": "3 года назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 61,
+      "author": "Сергей Головастов",
+      "rating": 4,
+      "date": "6 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 62,
+      "author": "dodopizza ae",
+      "rating": 1,
+      "date": "6 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 63,
+      "author": "Rost Mikulchin",
+      "rating": 4,
+      "date": "7 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 64,
+      "author": "Alexander Elovkov",
+      "rating": 4,
+      "date": "5 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 65,
+      "author": "Дарья Кидо",
+      "rating": 5,
+      "date": "5 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 66,
+      "author": "Ксения Бровкова",
+      "rating": 5,
+      "date": "11 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 67,
+      "author": "Людмила Рябова",
+      "rating": 1,
+      "date": "5 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 68,
+      "author": "Татьяна Алексеева",
+      "rating": 2,
+      "date": "5 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 69,
+      "author": "Дмитрий Володавчик",
+      "rating": 1,
+      "date": "5 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 70,
+      "author": "Мария Ситникова",
+      "rating": 5,
+      "date": "11 месяцев назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 71,
+      "author": "Миша Киселев",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 72,
+      "author": "vladimir ushakov",
+      "rating": 1,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 73,
+      "author": "Служба ремонта ТВ",
+      "rating": 1,
+      "date": "9 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 74,
+      "author": "Руся Джокер",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 75,
+      "author": "Владимир Лазовский",
+      "rating": 5,
+      "date": "4 года назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 76,
+      "author": "Anna Boikova",
+      "rating": 1,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 77,
+      "author": "Pavel Efimov",
+      "rating": 4,
+      "date": "5 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 78,
+      "author": "Inga Malikova",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 79,
+      "author": "Amina Kairbekova",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 80,
+      "author": "Олег Урбанов",
+      "rating": 1,
+      "date": "7 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 81,
+      "author": "Nickolay Sporykhin",
+      "rating": 1,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 82,
+      "author": "Артем Иванов",
+      "rating": 3,
+      "date": "10 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 83,
+      "author": "Смирнов Станислав",
+      "rating": 5,
+      "date": "9 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 84,
+      "author": "Анна Анисимова",
+      "rating": 5,
+      "date": "Изменено 4 года назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 85,
+      "author": "РемКачество",
+      "rating": 1,
+      "date": "6 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 86,
+      "author": "Бэсс Тилли",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 87,
+      "author": "класны пк",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 88,
+      "author": "Наталия Фаррахова",
+      "rating": 5,
+      "date": "Изменено 7 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 89,
+      "author": "Abdualim Davlatov",
+      "rating": 1,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 90,
+      "author": "Max Gerax",
+      "rating": 1,
+      "date": "9 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 91,
+      "author": "Оксана Стародубцева",
+      "rating": 5,
+      "date": "6 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 92,
+      "author": "Елена Петрова",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 93,
+      "author": "Наталия Уварова",
+      "rating": 5,
+      "date": "5 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 94,
+      "author": "Valeriy Galkin",
+      "rating": 1,
+      "date": "7 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 95,
+      "author": "Дмитрий Яровой",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 96,
+      "author": "Сергей Красиков",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 97,
+      "author": "Евгений Яхимович",
+      "rating": 3,
+      "date": "6 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 98,
+      "author": "Серега Викторович",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 99,
+      "author": "Сергей Красиков",
+      "rating": 4,
+      "date": "7 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 100,
+      "author": "TAFFY Show",
+      "rating": 3,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 101,
+      "author": "Алекс Дратуйте",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 102,
+      "author": "Andrey Melnik",
+      "rating": 5,
+      "date": "6 лет назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 103,
+      "author": "Mqx1zzz",
+      "rating": 5,
+      "date": "месяц назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 104,
+      "author": "Дмитрий Кириллов",
+      "rating": 5,
+      "date": "месяц назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 105,
+      "author": "Карина Самадова",
+      "rating": 5,
+      "date": "2 месяца назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 106,
+      "author": "Марина Федорова",
+      "rating": 1,
+      "date": "2 месяца назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 107,
+      "author": "Pablou Har",
+      "rating": 5,
+      "date": "2 года назад",
+      "narrativeText": true,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 108,
+      "author": "Александр Яковлев",
+      "rating": 1,
+      "date": "3 года назад",
+      "narrativeText": false,
+      "attributesOnly": true,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 109,
+      "author": "Cyber Toumiette سيبار التوميات",
+      "rating": 5,
+      "date": "2 года назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 110,
+      "author": "Диана Травина",
+      "rating": 5,
+      "date": "3 года назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 111,
+      "author": "Yura Tkachev",
+      "rating": 5,
+      "date": "Изменено 4 года назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 112,
+      "author": "Константин Спиридонов",
+      "rating": 4,
+      "date": "4 года назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 113,
+      "author": "Виктор Смирнов",
+      "rating": 5,
+      "date": "Изменено 5 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 114,
+      "author": "Михаил Гришков",
+      "rating": 5,
+      "date": "5 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 115,
+      "author": "Mila Soboleva",
+      "rating": 5,
+      "date": "5 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 116,
+      "author": "Богданова Любовь",
+      "rating": 2,
+      "date": "5 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 117,
+      "author": "Надежда Похлебаева",
+      "rating": 1,
+      "date": "5 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 118,
+      "author": "Надежда Горбунова",
+      "rating": 3,
+      "date": "5 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 119,
+      "author": "Алексей Вождай",
+      "rating": 2,
+      "date": "5 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 120,
+      "author": "Алексей Патругин",
+      "rating": 5,
+      "date": "5 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 121,
+      "author": "Михаил Дмитриев",
+      "rating": 5,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 122,
+      "author": "Виталий Самусев",
+      "rating": 5,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 123,
+      "author": "ВАДИМ Пяртюляйнен",
+      "rating": 5,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 124,
+      "author": "Хорошая Связь",
+      "rating": 1,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 125,
+      "author": "Екатерина Голодова",
+      "rating": 3,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 126,
+      "author": "Олег",
+      "rating": 3,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 127,
+      "author": "Александр Сушенков",
+      "rating": 4,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 128,
+      "author": "Мама Мама",
+      "rating": 1,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 129,
+      "author": "Светлана Алексеевна",
+      "rating": 5,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 130,
+      "author": "Мария Астафьева",
+      "rating": 5,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 131,
+      "author": "Андрей Афанасьев",
+      "rating": 5,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 132,
+      "author": "Наталия Сагиян",
+      "rating": 4,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 133,
+      "author": "Рустам Амедов",
+      "rating": 4,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 134,
+      "author": "Анастасия Архипова",
+      "rating": 5,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 135,
+      "author": "Шутков Александр",
+      "rating": 2,
+      "date": "6 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 136,
+      "author": "Илья Петрукевич",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 137,
+      "author": "Татьяна Нилова",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 138,
+      "author": "Майя Кондакова",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 139,
+      "author": "Виктор Беляков",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 140,
+      "author": "Дмитрий Лысов",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 141,
+      "author": "Михаил Бушуев",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 142,
+      "author": "Anna Akpinar",
+      "rating": 3,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 143,
+      "author": "Myhailo K",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 144,
+      "author": "inna rybaķova",
+      "rating": 2,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 145,
+      "author": "Даниил Шахов",
+      "rating": 1,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 146,
+      "author": "Alexey Ivanov",
+      "rating": 4,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 147,
+      "author": "Анастасия Чуфистова",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 148,
+      "author": "Ай Маладца!",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 149,
+      "author": "Andrey Sednenko",
+      "rating": 4,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 150,
+      "author": "Вероника Ботина",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 151,
+      "author": "Анна Соколова",
+      "rating": 5,
+      "date": "7 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 152,
+      "author": "Avis White",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 153,
+      "author": "Виктор Баранов",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 154,
+      "author": "Lev Kaidalov",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 155,
+      "author": "valerii lapin",
+      "rating": 4,
+      "date": "8 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 156,
+      "author": "u lo",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 157,
+      "author": "Вячеслав Славкин",
+      "rating": 5,
+      "date": "8 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 158,
+      "author": "Александр Федоров",
+      "rating": 2,
+      "date": "8 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 159,
+      "author": "Лариночка Комаровская",
+      "rating": 4,
+      "date": "9 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 160,
+      "author": "Максим Наводников",
+      "rating": 4,
+      "date": "9 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    },
+    {
+      "sequence": 161,
+      "author": "Владимир Соколов",
+      "rating": 3,
+      "date": "9 лет назад",
+      "narrativeText": false,
+      "attributesOnly": false,
+      "laptopMatch": false
+    }
+  ]
+}

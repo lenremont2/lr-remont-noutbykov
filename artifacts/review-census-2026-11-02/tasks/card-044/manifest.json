@@ -1,0 +1,16 @@
+{
+  "taskId": "card-044",
+  "checkedAt": "2026-11-02",
+  "sourceUrl": "https://companypage.ru/servisyi/lenremont",
+  "status": "partial",
+  "reportedCombinedRatingsAndReviews": 277,
+  "conflictingFaqCombinedCount": 227,
+  "individualReviewsExamined": 0,
+  "confirmedTopicReviews": 0,
+  "candidateReviews": 0,
+  "downloadedOriginalPhotos": 0,
+  "visuallyVerifiedPhotos": 0,
+  "files": ["result.json", "manifest.json"],
+  "scope": "Whole available card, reviews anchor, brands disclosure, rating/contact FAQ, observed page bottom; no individual review list or media attachments.",
+  "limitation": "Aggregate counts without accessible review texts; exact network affiliation of the two addresses unconfirmed."
+}

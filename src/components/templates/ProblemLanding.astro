@@ -1,7 +1,7 @@
 ---
 import LandingLayout from "../../layouts/LandingLayout.astro";
 import RepairFormats from "../sections/RepairFormats.astro";
-import RepairProcess from "../sections/RepairProcess.astro";
+import HomeRepairJourney from "../sections/HomeRepairJourney.astro";
 import SecurityRules from "../sections/SecurityRules.astro";
 import HomeProtection from "../sections/HomeProtection.astro";
 import Reviews from "../sections/Reviews.astro";
@@ -13,6 +13,7 @@ import ServicePriceTable from "../ui/ServicePriceTable.astro";
 import ServiceFaq from "../ui/ServiceFaq.astro";
 import RelatedServices from "../ui/RelatedServices.astro";
 import copy from "../../data/laptop-service.json";
+import home from "../../data/home-copy.json";
 import {
   getSeo,
   pagePath,
@@ -25,7 +26,7 @@ interface Props {
 const { page } = Astro.props;
 const symptom = copy.symptoms.items.find((item) => item.slug === page.slug)!;
 const rows = standardPrices.filter(([work]) => page.priceWorks.includes(work));
-const usesHomeBlocks = page.slug === "noutbuk-ne-vklyuchaetsya";
+const isPowerProblem = page.slug === "noutbuk-ne-vklyuchaetsya";
 const powerRepairSteps = [
   {
     title: "Расскажите, как ноутбук перестал включаться",
@@ -37,7 +38,7 @@ const powerRepairSteps = [
   },
   {
     title: "Согласуйте работы и стоимость",
-    text: "Объясним причину неисправности и согласуем работы, детали и полную стоимость до ремонта. Обычная диагностика в мастерской бесплатна даже при отказе от ремонта.",
+    text: "Объясним причину неисправности и согласуем работы, детали и полную стоимость до ремонта. Диагностика бесплатна даже при отказе от ремонта.",
   },
   {
     title: "Проверьте запуск и получите гарантию",
@@ -60,7 +61,7 @@ const powerRepairSteps = [
       symptom={symptom.title}
       warning={page.warning}
     />
-    <Reviews />
+    <Reviews scrollScene title="Отзывы и награды" homeVariant />
     <section
       id="lr-problem-guide"
       class="lr-section lr-child-guide"
@@ -146,25 +147,29 @@ const powerRepairSteps = [
         </article>
       </div>
     </section>
-    <RepairFormats linkToLocations={false} />
+    <RepairFormats journey />
     <ServicePriceTable title="Какие работы могут понадобиться" rows={rows} />
     {
-      usesHomeBlocks ? (
-        <RepairProcess
-          layout="steps"
+      isPowerProblem ? (
+        <HomeRepairJourney
           title="Как пройдёт ремонт ноутбука, который не включается"
           lead="Найдём причину отсутствия питания или запуска, объясним результат диагностики и согласуем ремонт. Перед выдачей проверим ноутбук вместе с вами."
           items={powerRepairSteps}
         />
       ) : (
-        <RepairProcess />
+        <HomeRepairJourney />
       )
     }
     <SecurityRules />
-    <HomeProtection securityAnchor={false} />
+    <HomeProtection securityAnchor={false} withDirector />
     <ServiceFaq items={page.faq} />
     <RelatedServices current={pagePath(page)} />
     <LeadCapture
+      compactModal
+      compactChannels
+      scrollScene
+      eyebrow={home.contact.eyebrow}
+      messengerText={home.contact.messengerText}
       title={page.contactTitle}
       lead={page.contactLead}
       serviceName={"Ремонт ноутбука: " + page.label}

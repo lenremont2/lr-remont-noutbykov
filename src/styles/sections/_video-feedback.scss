@@ -1,0 +1,338 @@
+#hop-landing .lr-symptoms__all:not(:last-child) {
+  margin-block: 20px;
+}
+
+#hop-landing .lr-symptoms:not(.lr-symptoms--grouped) .lr-symptoms__all {
+  display: contents;
+}
+
+#hop-landing .lr-symptoms:not(.lr-symptoms--grouped) .lr-symptoms__all>summary {
+  display: none;
+}
+
+#hop-landing .lr-symptoms--grouped .lr-symptoms__catalog {
+  display: block;
+}
+
+#hop-landing .lr-symptoms--grouped .lr-symptoms__groups {
+  display: grid;
+  grid-template-columns: none;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(240px, 78%);
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 2px;
+  padding: 2px 2px 16px;
+}
+
+#hop-landing .lr-symptoms--grouped .lr-symptoms__group {
+  width: 100%;
+  aspect-ratio: auto;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  gap: 8px;
+  min-height: 230px;
+  scroll-snap-align: start;
+  white-space: normal;
+}
+
+#hop-landing .lr-symptoms--grouped .lr-symptoms__group span {
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--lr-color-muted-on-dark);
+}
+
+#hop-landing .lr-symptoms--grouped .lr-symptoms__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+#hop-landing .lr-symptoms--grouped .lr-symptom {
+  min-height: 160px;
+  padding: 14px;
+  aspect-ratio: auto;
+}
+
+#hop-landing .lr-symptoms--grouped .lr-symptom__body h3 {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+#hop-landing .lr-symptoms__all>summary,
+#hop-landing .lr-manufacturers__other>summary {
+  padding-block: 16px;
+  min-height: 48px;
+  cursor: pointer;
+  color: var(--lr-color-link);
+  font-weight: 600;
+}
+
+#hop-landing .lr-manufacturers--compact {
+  padding-block: 24px 40px;
+  background: var(--lr-color-surface);
+}
+
+#hop-landing .lr-manufacturers--compact .lr-section-heading h2 {
+  font-size: 24px;
+}
+
+#hop-landing .lr-manufacturers--compact .lr-manufacturers__list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: none;
+  grid-auto-columns: 132px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  padding-bottom: 16px;
+}
+
+#hop-landing .lr-manufacturers--compact .lr-manufacturers__list>li {
+  scroll-snap-align: start;
+}
+
+#hop-landing .lr-reviews__ratings {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+#hop-landing .lr-reviews__rating-card {
+  padding: 16px 8px;
+}
+
+#hop-landing .lr-reviews__rating-value {
+  font-size: 30px;
+}
+
+#hop-landing .lr-reviews__rating-stars svg {
+  width: 14px;
+  height: 14px;
+}
+
+#hop-landing .lr-reviews__frame {
+  background: transparent;
+  border: 0;
+}
+
+#hop-landing .lr-reviews__rating-source {
+  font-size: 12px;
+}
+
+#hop-landing .lr-reviews__awards {
+  margin-block: 24px;
+}
+
+#hop-landing .lr-reviews__awards h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+#hop-landing .lr-reviews__award {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 420px;
+  padding: 20px;
+  border-left: 4px solid var(--lr-color-accent);
+  background: var(--lr-color-surface-alt);
+  border-radius: 0 var(--lr-radius-small) var(--lr-radius-small) 0;
+  color: var(--lr-color-text);
+}
+
+#hop-landing .lr-reviews__award strong {
+  font-size: 32px;
+}
+
+#hop-landing .lr-reviews__award p {
+  margin: 0;
+  font-weight: 600;
+}
+
+#hop-landing .lr-reviews__award span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#hop-landing .lr-review {
+  align-self: start;
+  min-height: 0;
+}
+
+#hop-landing .lr-review__details summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#hop-landing .lr-review__details summary::-webkit-details-marker {
+  display: none;
+}
+
+#hop-landing .lr-review__read,
+#hop-landing .lr-review__collapse {
+  display: block;
+  width: fit-content;
+  padding-block: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--lr-color-link);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#hop-landing .lr-review__collapse,
+#hop-landing .lr-review__details[open] .lr-review__excerpt,
+#hop-landing .lr-review__details[open] .lr-review__read {
+  display: none;
+}
+
+#hop-landing .lr-review__details[open] .lr-review__collapse {
+  display: block;
+}
+
+#hop-landing .lr-review__photo {
+  width: 112px;
+  height: 112px;
+}
+
+#hop-landing .lr-photo-dialog {
+  width: min(90vw, 800px);
+  max-height: 90dvh;
+  padding: 56px 20px 20px;
+  margin: auto;
+  border: 0;
+  border-radius: var(--lr-radius);
+  background: var(--lr-color-surface);
+  color: var(--lr-color-text);
+  overscroll-behavior: contain;
+}
+
+#hop-landing .lr-photo-dialog::backdrop {
+  background: var(--lr-color-overlay);
+}
+
+#hop-landing .lr-photo-dialog img {
+  width: 100%;
+  max-height: 65dvh;
+  object-fit: contain;
+}
+
+#hop-landing .lr-photo-dialog__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  font-size: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--lr-color-surface-alt);
+  color: var(--lr-color-text);
+  cursor: pointer;
+}
+
+#hop-landing .lr-photo-dialog p {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+#hop-landing .lr-prices__action {
+  display: grid;
+  justify-items: start;
+  gap: 16px;
+  padding-top: 24px;
+}
+
+#hop-landing .lr-form__ready {
+  min-height: 40px;
+  margin-top: 8px;
+}
+
+#hop-landing .lr-business-trust__grid:has(> :only-child) {
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 767px) {
+
+  #hop-landing .lr-social-links__qr,
+  #hop-landing .lr-social-links__handle {
+    display: none;
+  }
+
+  #hop-landing .lr-social-links__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  #hop-landing .lr-hero--home .lr-quick-contacts__inner {
+    padding: 20px 0 0;
+  }
+
+  #hop-landing .lr-formats--compact .lr-format__features li:nth-child(n + 2) {
+    display: none;
+  }
+
+  #hop-landing .lr-repair-journey__visual {
+    display: none;
+  }
+
+  #hop-landing .lr-repair-journey__inline-photo,
+  #hop-landing .lr-repair-journey__detail {
+    display: none;
+  }
+
+  #hop-landing .lr-repair-journey__step {
+    min-height: 0;
+    padding-bottom: 24px;
+  }
+
+  #hop-landing .lr-repair-journey__heading {
+    margin-bottom: 28px;
+  }
+
+  #hop-landing .lr-repair-journey__heading h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  #hop-landing .lr-hero--home {
+    padding-block: 32px 48px;
+  }
+
+  #hop-landing .lr-hero--home .lr-hero__copy {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #hop-landing .lr-hero--home .lr-hero__media {
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: var(--lr-radius-large);
+  }
+
+  #hop-landing .lr-hero--home .lr-hero__video {
+    aspect-ratio: 3 / 4;
+    max-height: 620px;
+  }
+
+  #hop-landing .lr-hero--home .lr-quick-contacts {
+    grid-row: 2;
+  }
+
+  #hop-landing .lr-symptoms--grouped .lr-symptoms__groups {
+    grid-auto-columns: 260px;
+  }
+
+  #hop-landing .lr-symptoms--grouped .lr-symptoms__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #hop-landing .lr-hero--home .lr-actions {
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  }
+}

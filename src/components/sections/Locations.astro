@@ -1,26 +1,12 @@
 ---
 import SectionHeading from "../ui/SectionHeading.astro";
+import MapSlot from "../ui/MapSlot.astro";
+import home from "../../data/home-copy.json";
 ---
 
 <section id="lr-locations" class="lr-section lr-locations">
   <div class="lr-container">
-    <SectionHeading title="Мастерские и выездной ремонт" />
-    <div class="lr-location-maps">
-      <!-- Plugin integration slots; no plugin credentials or embed tokens belong here. -->
-      <article id="lr-map-workshops" data-lr-map-slot="workshops">
-        <h3>Карта всех мастерских</h3>
-        <div class="lr-location-map lr-location-map--pending">
-          <p>Здесь будет карта мастерских Ленремонта</p>
-          <p class="lr-caption">Подключается через плагин</p>
-        </div>
-      </article>
-      <article id="lr-map-address" data-lr-map-slot="address">
-        <h3>Выберите свой адрес</h3>
-        <div class="lr-location-map lr-location-map--pending">
-          <p>Здесь будет карта для выбора вашего адреса</p>
-          <p class="lr-caption">Подключается через плагин</p>
-        </div>
-      </article>
-    </div>
+    <SectionHeading title={home.locations.title} lead={home.locations.lead} />
+    <MapSlot id="lr-map-workshops" type="workshops" />
   </div>
 </section>

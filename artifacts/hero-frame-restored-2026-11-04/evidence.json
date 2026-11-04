@@ -1,0 +1,57 @@
+[
+  {
+    "viewport": 320,
+    "width": 280,
+    "height": 210,
+    "playing": true,
+    "controls": false,
+    "backplane": "rgb(16, 42, 82)",
+    "noteInside": true,
+    "stageHeight": 278,
+    "reviewBackground": "rgba(0, 0, 0, 0)"
+  },
+  {
+    "viewport": 390,
+    "width": 350,
+    "height": 262.5,
+    "playing": true,
+    "controls": false,
+    "backplane": "rgb(16, 42, 82)",
+    "noteInside": true,
+    "stageHeight": 330.5,
+    "reviewBackground": "rgba(0, 0, 0, 0)"
+  },
+  {
+    "viewport": 768,
+    "width": 640,
+    "height": 480,
+    "playing": true,
+    "controls": false,
+    "backplane": "rgb(16, 42, 82)",
+    "noteInside": true,
+    "stageHeight": 548,
+    "reviewBackground": "rgba(0, 0, 0, 0)"
+  },
+  {
+    "viewport": 1024,
+    "width": 399.1875,
+    "height": 532.25,
+    "playing": true,
+    "controls": false,
+    "backplane": "rgb(16, 42, 82)",
+    "noteInside": true,
+    "stageHeight": 600.25,
+    "reviewBackground": "rgba(0, 0, 0, 0)"
+  },
+  {
+    "viewport": 1440,
+    "width": 514.40625,
+    "height": 685.875,
+    "playing": true,
+    "controls": false,
+    "backplane": "rgb(16, 42, 82)",
+    "noteInside": true,
+    "stageHeight": 753.875,
+    "reviewBackground": "rgba(0, 0, 0, 0)"
+  }
+]

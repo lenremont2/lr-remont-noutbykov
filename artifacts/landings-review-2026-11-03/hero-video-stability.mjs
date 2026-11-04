@@ -1,0 +1,10 @@
+import {chromium} from 'file:///C:/Users/User/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs';
+import {writeFileSync} from 'node:fs';
+const b=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+const results=[];
+try{for(const width of [1024,1440,390]){
+const p=await b.newPage({viewport:{width,height:900},reducedMotion:'no-preference'});
+await p.addInitScript(()=>{window.__audit={sizes:[],events:[],frames:[]};const start=performance.now();const sample=()=>{const v=document.querySelector('[data-lr-hero-video]');if(v){const r=v.getBoundingClientRect(),s=v.parentElement.getBoundingClientRect();const row=[Math.round(r.y*100)/100,Math.round(r.height*100)/100,Math.round(s.height*100)/100];if(JSON.stringify(row)!==JSON.stringify(window.__audit.sizes.at(-1)?.rect))window.__audit.sizes.push({t:performance.now()-start,rect:row,time:v.currentTime});}if(performance.now()-start<8000)requestAnimationFrame(sample);};requestAnimationFrame(sample);document.addEventListener('DOMContentLoaded',()=>{const v=document.querySelector('[data-lr-hero-video]');for(const type of ['play','playing','pause','waiting','stalled','error','loadedmetadata','resize'])v.addEventListener(type,()=>window.__audit.events.push({type,t:performance.now()-start,time:v.currentTime}));if(v.requestVideoFrameCallback){const frame=(now,metadata)=>{window.__audit.frames.push({now,mediaTime:metadata.mediaTime,presented:metadata.presentedFrames});if(performance.now()-start<8000)v.requestVideoFrameCallback(frame);};v.requestVideoFrameCallback(frame);}});});
+await p.goto('http://127.0.0.1:4322/',{waitUntil:'domcontentloaded'});await p.waitForTimeout(8200);results.push({width,...await p.evaluate(()=>({...window.__audit,quality:document.querySelector('video').getVideoPlaybackQuality()}))});await p.close();}
+writeFileSync('artifacts/landings-review-2026-11-03/hero-video-check/stability.json',JSON.stringify(results,null,2));console.log(results.map(r=>({width:r.width,sizes:r.sizes,events:r.events,frames:r.frames.length,quality:r.quality})));
+}finally{await b.close();}

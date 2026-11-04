@@ -1,0 +1,13 @@
+{
+  "taskId": "card-058",
+  "files": ["result.json", "manifest.json"],
+  "sourceUrl": "https://rting.ru/sankt-peterburg/co/lenremont/2855830",
+  "status": "partial",
+  "examinedReviews": 0,
+  "matchedReviews": 0,
+  "photos": 0,
+  "reportedRatings": 21,
+  "reportedTotal": null,
+  "corpus": "unknown",
+  "evidence": "CUA Chrome: полный текст страницы и ссылки, счётчик div 21 оценка, конец страницы, отсутствие ленты/пагинации/img; официальный сайт подтверждает адрес и сетевой телефон."
+}

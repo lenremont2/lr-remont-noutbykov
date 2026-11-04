@@ -3,15 +3,12 @@ import LandingLayout from "../layouts/LandingLayout.astro";
 import Hero from "../components/sections/Hero.astro";
 import HomePricing from "../components/sections/HomePricing.astro";
 import RepairQuiz from "../components/sections/RepairQuiz.astro";
-import QuizCallout from "../components/sections/QuizCallout.astro";
 import QuizModal from "../components/sections/QuizModal.astro";
 import RepairFormats from "../components/sections/RepairFormats.astro";
 import MobileLab from "../components/sections/MobileLab.astro";
 import WorkshopGallery from "../components/sections/WorkshopGallery.astro";
 import HomeRepairJourney from "../components/sections/HomeRepairJourney.astro";
-import HomeExpertise from "../components/sections/HomeExpertise.astro";
 import BusinessTrust from "../components/sections/BusinessTrust.astro";
-import DirectorMessage from "../components/sections/DirectorMessage.astro";
 import HomeProtection from "../components/sections/HomeProtection.astro";
 import Reviews from "../components/sections/Reviews.astro";
 import Locations from "../components/sections/Locations.astro";
@@ -20,6 +17,7 @@ import Symptoms from "../components/sections/Symptoms.astro";
 import ManufacturerLinks from "../components/sections/ManufacturerLinks.astro";
 import Faq from "../components/sections/Faq.astro";
 import LeadCapture from "../components/sections/LeadCapture.astro";
+import home from "../data/home-copy.json";
 ---
 
 <LandingLayout
@@ -28,24 +26,40 @@ import LeadCapture from "../components/sections/LeadCapture.astro";
   description="Ремонт ноутбуков в Санкт-Петербурге: мастерская на колёсах, сервисные центры и доставка курьером. Согласуем стоимость до ремонта. Гарантия 1 год."
 >
   <Hero />
+  <Symptoms
+    compact
+    grouped
+    extraFaults
+    title={home.symptoms.title}
+    lead={home.symptoms.lead}
+  />
+  <ManufacturerLinks compact marquee />
   <RepairFormats journey />
-  <HomeRepairJourney />
-  <Reviews scrollScene />
-  <HomePricing />
-  <MobileLab />
+  <Reviews scrollScene title="Отзывы и награды" homeVariant />
+  <HomePricing
+    title={home.prices.title}
+    lead={`${home.prices.lead} Указана стоимость работы без запчастей.`}
+    groups={home.prices.groups}
+    bonus={home.prices.bonus}
+  />
   <RepairQuiz />
+  <HomeRepairJourney />
+  <MobileLab />
   <WorkshopGallery />
-  <HomeExpertise />
-  <BusinessTrust />
-  <DirectorMessage />
-  <HomeProtection />
-  <QuizCallout />
+  <BusinessTrust businessOnly />
+  <HomeProtection withDirector />
   <Locations />
   <!-- <RepairCases /> -->
   <HomeSeo />
-  <Symptoms compact />
-  <ManufacturerLinks />
-  <Faq showQuestion={false} />
-  <LeadCapture compactChannels scrollScene />
+  <Faq showQuestion={false} title={home.faq.title} items={home.faq.items} />
+  <LeadCapture
+    compactModal
+    eyebrow={home.contact.eyebrow}
+    title={home.contact.title}
+    lead={home.contact.lead}
+    messengerText={home.contact.messengerText}
+    compactChannels
+    scrollScene
+  />
   <QuizModal />
 </LandingLayout>

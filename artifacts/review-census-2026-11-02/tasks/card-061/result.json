@@ -1,0 +1,104 @@
+{
+  "taskId": "card-061",
+  "platform": "Zoon",
+  "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_kosygina/",
+  "branch": "проспект Косыгина, 28к1",
+  "city": "Санкт-Петербург",
+  "networkEvidence": {
+    "status": "confirmed",
+    "officialUrl": "https://www.lenremont.ru/contact.htm",
+    "officialBranchUrl": "https://www.lenremont.ru/lenremont-na-kosygina.htm",
+    "summary": "Официальные контакты Ленремонта перечисляют мастерскую у м. Ладожская: пр. Косыгина, д.28, к.1. Адрес точно совпадает с Zoon; на карточке есть ссылка на сеть Ленремонт из 28 заведений и официальный бот t.me/lenremont_bot.",
+    "cardPhone": "+7 (812) 380-88-41",
+    "cardWhatsAppPhone": "+7 (812) 702-33-33",
+    "officialContactPhones": ["+7 (812) 242-99-45", "+7 (812) 688-89-33", "+7 (812) 640-44-35", "8-800-555-45-10"],
+    "phoneExactMatch": false,
+    "phoneNote": "Телефон Zoon отличается от телефонов текущей официальной страницы; точное совпадение телефона не установлено. Принадлежность подтверждена точным адресом и явной сетевой связью. Отдельная официальная страница мастерской вернула проверку KillBot, без обхода."
+  },
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 10,
+    "examinedCount": 25,
+    "publishedExaminedCount": 10,
+    "rejectedExaminedCount": 15,
+    "companyRepliesExaminedCount": 8,
+    "ratingOnlyCount": 336,
+    "endpointObserved": true,
+    "method": "Собственная вкладка Chrome через CUA. Основная карточка и отдельная /reviews/; прочитаны все 10 опубликованных и 15 отклонённых отзывов всех оценок. Раскрыты длинный отзыв Савиной Дарьи, отклонённый отзыв Nigina Nurmatova и ответ компании. Прокрутка до конца; обе ленты имеют data-remain=0, data-has-more=false и data-count=10/15. Проверены все ответы и наличие привязанных вложений, включая записи с неопределённым устройством. Уникальность по стабильным data-id; пересечения между двумя разделами нет.",
+    "stopReason": "Оба доступных раздела закончились, кнопок продолжения нет, число основных отзывов равно заявленным 10. Другие сортировки не требовались для восполнения корпуса. 336 оценок не считаются текстовыми отзывами.",
+    "observedAt": "2026-11-02",
+    "manifestPath": "artifacts/review-census-2026-11-02/tasks/card-061/id-manifest.json"
+  },
+  "reviews": [
+    {
+      "author": "Юлия",
+      "date": "2020-07-15",
+      "rating": 4,
+      "summary": "Сообщает о ремонте сломавшегося ноутбука, хорошем обслуживании, гарантии на год и соблюдении санитарных мер.",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_kosygina/#comment5f0f48510bd0563a944d6ae0",
+      "topic": "ремонт ноутбука",
+      "photos": [],
+      "evidence": {
+        "reviewId": "5f0f48510bd0563a944d6ae0",
+        "section": "published",
+        "fullTextRead": true,
+        "companyReplyPresent": false,
+        "photoAttachmentCount": 0,
+        "normalizedTextSha256": "d0a4c2df2f8d621c8ea3963b4f08fe8ef68e442c825cd144677cfee50bd9651d",
+        "normalizedTextHashAlgorithm": "NFKC-lowercase-Unicode-words-v1",
+        "normalizedTextHashScope": "full itemprop=reviewBody; без автора, даты, достоинств/недостатков, ответа и UI"
+      }
+    },
+    {
+      "author": "Алена Бондарева",
+      "date": "2020-12-07",
+      "rating": 5,
+      "summary": "Описывает обращение со сломавшимся ноутбуком; хвалит объяснения, советы по предотвращению поломок, скидку и стоимость.",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_kosygina/#comment5fce06ea382a915abd5260e9",
+      "topic": "ремонт ноутбука",
+      "photos": [],
+      "evidence": {
+        "reviewId": "5fce06ea382a915abd5260e9",
+        "section": "rejected",
+        "platformWarning": "Администрация Зун считает данные отзывы сомнительными",
+        "fullTextRead": true,
+        "companyReplyPresent": false,
+        "photoAttachmentCount": 0,
+        "normalizedTextSha256": "0ac73b04e02ac04ad51a94bacd98cc9714c644dbf91eea65c5cfb9026b24f9c0",
+        "normalizedTextHashAlgorithm": "NFKC-lowercase-Unicode-words-v1",
+        "normalizedTextHashScope": "full itemprop=reviewBody; без автора, даты, достоинств/недостатков, ответа и UI"
+      }
+    },
+    {
+      "author": "Сергей Какубов",
+      "date": "2020-11-30",
+      "rating": 5,
+      "summary": "Сообщает о срочном ремонте ноутбука с важной информацией без потери данных; положительно оценивает скорость и качество.",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_kosygina/#comment5fc4de1445c32110c84c7409",
+      "topic": "срочный ремонт ноутбука с сохранением данных",
+      "photos": [],
+      "evidence": {
+        "reviewId": "5fc4de1445c32110c84c7409",
+        "section": "rejected",
+        "platformWarning": "Администрация Зун считает данные отзывы сомнительными",
+        "fullTextRead": true,
+        "companyReplyPresent": false,
+        "photoAttachmentCount": 0,
+        "normalizedTextSha256": "32e57bf3983e6f59e4fc89367de3665616e948871037ad3d4acece3e84113dc0",
+        "normalizedTextHashAlgorithm": "NFKC-lowercase-Unicode-words-v1",
+        "normalizedTextHashScope": "full itemprop=reviewBody; без автора, даты, достоинств/недостатков, ответа и UI"
+      }
+    }
+  ],
+  "candidateReviews": [],
+  "discoveredSources": [
+    {"platform": "Официальный сайт Ленремонта", "url": "https://www.lenremont.ru/lenremont-na-kosygina.htm", "address": "проспект Косыгина, 28к1", "city": "Санкт-Петербург"}
+  ],
+  "notes": [
+    "Подтверждены 3 тематических отзыва: 1 опубликованный, 2 отклонённых площадкой; содержание отзывов является утверждениями авторов.",
+    "У трёх тематических отзывов и записей с неопределённым устройством нет прикреплённых изображений или уточняющих ответов. Одно вложение отклонённого отзыва Nigina Nurmatova открыто: внутренность холодильника, исключено как нетематическое. Общая галерея 58 фото не приписывалась отзывам.",
+    "Записи без определённого устройства (включая Андрей и Григорий Жуков) не содержат уточняющих ответов или вложений; в ноутбучные не включены.",
+    "Полные тексты и оболочка аккаунта в публикуемые файлы не сохранены. В manifest только ID, дата, оценка, краткая классификация и ID ответов.",
+    "Отдельная официальная страница заблокирована KillBot; официальная страница contact.htm доступна и подтверждает точный адрес."
+  ]
+}

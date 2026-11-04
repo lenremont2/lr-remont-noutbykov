@@ -70,6 +70,10 @@ const html = readFileSync(
   new URL("../dist/index.html", import.meta.url),
   "utf8",
 );
+const homeCopy = JSON.parse(
+  readFileSync(new URL("../src/data/home-copy.json", import.meta.url), "utf8"),
+);
+const homePrices = homeCopy.prices.groups.flatMap((group) => group.rows);
 const main = html.match(
   /<main\b[^>]*id="hop-landing"[^>]*>([\s\S]*?)<\/main>/,
 )?.[1];
@@ -99,12 +103,11 @@ assert.equal((html.match(/<h1[ >]/g) || []).length, 1);
 assert.match(html, /<h1[^>]+id="lr-hero-title"/);
 const homeHero = html.match(/<section id="lr-hero"[\s\S]*?<\/section>/)?.[0];
 assert.ok(homeHero?.includes("lr-hero--home"));
+assert.match(homeHero, /class="lr-hero__film"/);
+assert.match(homeHero, /class="lr-hero__scene-note"/);
 const homeHeroText = homeHero.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
-assert.match(
-  homeHeroText,
-  /Обычная диагностика в мастерской — бесплатно, даже при отказе от ремонта\./,
-);
-assert.match(homeHeroText, /Стоимость согласуем до начала работ\./);
+assert.match(homeHeroText, /Диагностика 0 ₽ везде/);
+assert.match(homeHeroText, /Твёрдая смета до работ/);
 assert.ok(!homeHero.includes('class="lr-eyebrow"'));
 assert.equal((homeHero.match(/<video\b/g) || []).length, 1);
 const heroVideo = homeHero.match(/<video\b[^>]*>/)?.[0];
@@ -114,8 +117,9 @@ assert.match(heroVideo, /\bloop\b/);
 assert.match(heroVideo, /\bmuted\b/);
 assert.match(heroVideo, /\bplaysinline\b/);
 assert.match(heroVideo, /\bdata-lr-hero-video\b/);
-assert.match(heroVideo, /\bposter="\/media\/mobile-lab-exterior\.webp"/);
-assert.match(homeHero, /<source\b[^>]*src="\/media\/notebook-auto\.mp4"/);
+assert.match(heroVideo, /\bposter="\/media\/notebook-auto-poster\.webp"/);
+assert.match(heroVideo, /\bwidth="480" height="640"/);
+assert.match(homeHero, /<source\b[^>]*src="\/media\/notebook-auto-hero\.mp4"/);
 assert.ok(!homeHero.includes("data-lr-service-format"));
 assert.ok(!homeHero.includes("data-lr-format-view"));
 assert.ok(!homeHero.includes("data-lr-selected-format"));
@@ -128,7 +132,7 @@ const heroHeadingText = heroHeading
   .trim();
 assert.equal(
   heroHeadingText,
-  "Ремонт ноутбуков на дому или в сервисном центре в Санкт-Петербурге и Ленинградской области",
+  "Ремонт ноутбуков на дому или в сервисном центре в Санкт-Петербурге и ЛО",
 );
 assert.ok(!homeHeroText.includes("40–90"));
 assert.ok(homeHero.includes("data-lr-hero-cta"));
@@ -136,12 +140,12 @@ const heroPriceAction = homeHero.match(
   /<a\b[^>]*data-lr-quiz-open[^>]*>[\s\S]*?<\/a>/,
 )?.[0];
 assert.ok(heroPriceAction?.includes('href="#lr-quiz"'));
-assert.ok(heroPriceAction.includes("Узнать стоимость ремонта"));
+assert.ok(heroPriceAction.includes("Узнать стоимость"));
 assert.ok(!heroPriceAction.includes("data-lr-lead-open"));
 const heroRequestAction = homeHero.match(
   /<a\b[^>]*data-source="hero-request"[^>]*>[\s\S]*?<\/a>/,
 )?.[0];
-assert.ok(heroRequestAction?.includes("data-lr-lead-open"));
+assert.ok(heroRequestAction?.includes("lr-button"));
 assert.ok(heroRequestAction.includes("Оставить заявку"));
 assert.ok(!heroRequestAction.includes("data-lr-quiz-open"));
 assert.ok(
@@ -152,52 +156,36 @@ const brandHtml = readFileSync(
   new URL("../dist/remont-noutbukov-acer-spb.htm/index.html", import.meta.url),
   "utf8",
 );
-const benefitsSection = brandHtml.match(
-  /<section id="lr-benefits"[\s\S]*?<\/section>/,
+assert.ok(!brandHtml.includes('id="lr-benefits"'));
+const brandHero = brandHtml.match(
+  /<section id="lr-hero"[\s\S]*?<\/section>/,
 )?.[0];
-assert.ok(
-  benefitsSection,
-  "Brand pages must retain the six illustrated benefits",
-);
+assert.ok(brandHero);
 assert.equal(
-  (benefitsSection.match(/<article\b[^>]*data-benefit-row/g) || []).length,
-  6,
+  (brandHero.match(/class="lr-hero__benefit(?: |")/g) || []).length,
+  5,
 );
-for (const benefit of data.benefits.items) {
-  assert.ok(benefit.text.trim(), benefit.title);
-  assert.ok(benefitsSection.includes(benefit.title), benefit.title);
-  assert.ok(benefitsSection.includes(benefit.text), benefit.title);
-  if (benefit.image) {
-    assert.ok(benefitsSection.includes(benefit.image), benefit.title);
-    assert.ok(
-      existsSync(new URL(`../public${benefit.image}`, import.meta.url)),
-      benefit.image,
-    );
-  }
-}
 const casesEnabled = !readFileSync(
   new URL("../src/pages/index.astro", import.meta.url),
   "utf8",
 ).includes("<!-- <RepairCases /> -->");
 const ids = [
   "hero",
+  "symptoms",
+  "manufacturers",
   "formats",
-  "process",
   "reviews",
   "prices",
-  "lab",
   "quiz",
+  "process",
+  "lab",
   "workshop-gallery",
-  "expertise",
   "business-trust",
-  "director",
   "guarantee",
-  "quiz-callout",
+  "director",
   "locations",
   ...(casesEnabled ? ["repair-cases"] : []),
   "service-guide",
-  "symptoms",
-  "manufacturers",
   "faq",
   "contact",
 ];
@@ -212,14 +200,17 @@ const positions = ids.map((id) => html.indexOf(`id="lr-${id}"`));
 assert.ok(
   positions.every((pos, i) => pos >= 0 && (!i || pos > positions[i - 1])),
 );
-for (const key of ["formats", "lab", "process", "expertise", "faq"]) {
+for (const key of ["formats", "process"]) {
   for (const item of data[key].items)
     assert.ok(html.includes(item.title), `${key}: ${item.title}`);
 }
+assert.ok(!html.includes("lr-mobile-bar"));
+assert.ok(!html.includes("lr-swipe-pause"));
 const formatsSection = html.match(
   /<section id="lr-formats"[\s\S]*?<\/section>/,
 )?.[0];
 assert.ok(formatsSection);
+assert.doesNotMatch(formatsSection, /lr-format__eyebrow|Формат\s*0[1-4]/);
 assert.equal(
   (formatsSection.match(/<article class="lr-format\b/g) || []).length,
   4,
@@ -228,16 +219,19 @@ assert.deepEqual(
   data.formats.items.map((item) => item.format),
   ["at-home", "mobile-lab", "workshop", "courier"],
 );
-for (const format of ["at-home", "mobile-lab"])
+for (const format of ["at-home", "mobile-lab", "workshop", "courier"]) {
+  const action = formatsSection.match(
+    new RegExp(`<a\\b[^>]*data-format="${format}"[^>]*>`),
+  )?.[0];
   assert.ok(
-    formatsSection.includes(`data-source="formats" data-format="${format}"`),
+    action?.includes(
+      `data-lr-map-open="${format === "workshop" ? "workshops" : "address"}"`,
+    ),
   );
-assert.ok(formatsSection.includes('href="#lr-map-workshops"'));
-assert.ok(
-  formatsSection.includes(
-    'data-source="formats:courier" data-format="courier"',
-  ),
-);
+  assert.ok(action.includes(`data-source="formats:${format}"`));
+  assert.ok(action.includes('aria-haspopup="dialog"'));
+  assert.ok(!action.includes("data-lr-lead-open"));
+}
 assert.ok(!formatsSection.includes("lr-formats__trust"));
 for (const card of formatsSection.match(/<article\b[\s\S]*?<\/article>/g) ||
   []) {
@@ -288,8 +282,7 @@ assert.deepEqual(
   data.prices.tables.map((table) => table.length),
   [8, 4, 6],
 );
-for (const [, price] of data.prices.tables.flat())
-  assert.ok(html.includes(price));
+for (const [, price] of homePrices) assert.ok(html.includes(price));
 assert.ok(
   !html.includes('id="lr-repair-times"'),
   "Standalone times section must be removed",
@@ -301,21 +294,21 @@ assert.ok(priceSection);
 const firstPriceRow = priceSection.match(
   /<tbody\b[^>]*>\s*(<tr\b[\s\S]*?<\/tr>)/,
 )?.[1];
-assert.ok(firstPriceRow?.includes("Обычная диагностика"));
-assert.ok(firstPriceRow.includes("в мастерской"));
+assert.ok(firstPriceRow?.includes("Диагностика"));
+assert.ok(!firstPriceRow.includes("в мастерской"));
 assert.ok(firstPriceRow.includes("0 ₽"));
 assert.ok(firstPriceRow.includes("Бесплатно, даже при отказе от ремонта"));
 assert.equal((priceSection.match(/<table\b/g) || []).length, 2);
 assert.equal((priceSection.match(/<caption\b/g) || []).length, 2);
-assert.equal((priceSection.match(/scope="col"/g) || []).length, 6);
+assert.equal((priceSection.match(/scope="col"/g) || []).length, 4);
 for (const table of priceSection.match(/<table\b[\s\S]*?<\/table>/g) || []) {
   const headers = [
     ...table.matchAll(/<th\b([^>]*scope="col"[^>]*)>([\s\S]*?)<\/th>/g),
   ];
-  assert.equal(headers.length, 3);
+  assert.equal(headers.length, 2);
   assert.deepEqual(
     headers.map((header) => header[2].replace(/<[^>]+>/g, " ").trim()),
-    ["Работа", "Время работы", "Стоимость работы"],
+    ["Работа", "Стоимость работы"],
   );
   for (const header of headers) {
     assert.ok(header[2].includes('class="lr-visually-hidden"'));
@@ -324,11 +317,8 @@ for (const table of priceSection.match(/<table\b[\s\S]*?<\/table>/g) || []) {
 }
 assert.ok(priceSection.includes("Сколько стоит ремонт ноутбука"));
 assert.ok(priceSection.includes("Указана стоимость работы без запчастей"));
-assert.ok(priceSection.includes("срочная — 500 ₽"));
-assert.doesNotMatch(
-  priceSection,
-  /<details\b|data-lr-estimate|data-lr-lead-open/,
-);
+assert.ok(priceSection.includes(homeCopy.prices.lead));
+assert.doesNotMatch(priceSection, /<details\b|data-lr-estimate/);
 assert.doesNotMatch(priceSection, /lr-eyebrow|lr-prices__note|<time\b/);
 const protectionSection = html.match(
   /<section id="lr-guarantee"[\s\S]*?<\/section>/,
@@ -336,43 +326,17 @@ const protectionSection = html.match(
 assert.ok(protectionSection?.includes('id="lr-security"'));
 assert.doesNotMatch(protectionSection, /<details\b|lr-guarantee__support/);
 const protectionFacts = protectionSection;
-assert.equal((protectionFacts.match(/<article>/g) || []).length, 3);
-for (const text of [
-  data.guarantee.fields["Большой факт"],
-  "Смета до работ",
-  "Проверка до оплаты",
-])
-  assert.ok(protectionFacts.includes(text), text);
-for (const text of [
-  "Стоимость работ и деталей согласуем заранее",
-  "Покажем результат и проверим ноутбук вместе с вами",
-])
-  assert.ok(protectionFacts.includes(text), text);
+assert.equal((protectionFacts.match(/<article>/g) || []).length, 4);
+for (const fact of homeCopy.guarantees.items)
+  for (const text of [fact.value, fact.title, fact.text])
+    assert.ok(protectionFacts.includes(text), text);
 const director = html.match(
   /<section\b[^>]*id="lr-director"[\s\S]*?<\/section>/,
 )?.[0];
-assert.ok(director.includes("/media/director-sorokin-640.webp"));
-const directorMessage = director.match(
-  /<blockquote\b[\s\S]*?<\/blockquote>/,
-)?.[0];
-assert.equal((directorMessage.match(/<p\b/g) || []).length, 4);
-assert.ok(directorMessage.includes("до оплаты"));
-assert.ok(directorMessage.includes("до начала работ"));
-const portraitPosition = director.indexOf("<figure");
-const identityPosition = director.indexOf('class="lr-director__name"');
-const signaturePosition = director.indexOf("data-lr-signature");
-assert.ok(
-  portraitPosition < identityPosition && identityPosition < signaturePosition,
-);
-const signature = director.match(
-  /<svg\b[^>]*data-lr-signature[\s\S]*?<\/svg>/,
-)?.[0];
-assert.ok(signature?.includes('aria-hidden="true"'));
-assert.equal((signature.match(/<path\b/g) || []).length, 3);
-assert.doesNotMatch(
-  signature,
-  /data-lr-signature-revealed|style=|\shidden(?:\s|>)/,
-);
+assert.ok(director.includes("/media/director-sorokin-320.webp"));
+assert.ok(director.includes("lr-director--compact"));
+assert.ok(director.includes(homeCopy.director.quote));
+assert.ok(!director.includes("data-lr-signature"));
 assert.match(director, /<a\b[^>]*data-lr-lead-open[^>]*data-source="director"/);
 assert.ok(
   !html.includes('id="lr-timeline"'),
@@ -388,11 +352,13 @@ const manufacturerSection = html.match(
 )?.[0];
 assert.ok(manufacturerSection, "Manufacturer navigation must exist");
 const manufacturerCards = [
-  ...manufacturerSection.matchAll(
-    /<a\b[^>]*href="([^"]+)"[^>]*>[\s\S]*?<\/a>/g,
-  ),
+  ...manufacturerSection
+    .match(/<ul class="lr-marquee__list"[^>]*>[\s\S]*?<\/ul>/)[0]
+    .matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>[\s\S]*?<\/a>/g),
 ];
-assert.equal(manufacturerCards.length, 40);
+assert.equal(manufacturerCards.length, 41);
+assert.ok(manufacturerSection.includes("И другие бренды"));
+assert.ok(manufacturerSection.includes("data-lr-marquee-copy"));
 const servicePages = JSON.parse(
   readFileSync(
     new URL("../src/data/service-pages.json", import.meta.url),
@@ -403,10 +369,15 @@ const manufacturerRoutes = [...servicePages.brands, servicePages.macbook].map(
   ({ slug }) => `/${slug}.htm`,
 );
 assert.deepEqual(
-  manufacturerCards.map((match) => match[1]).sort(),
+  manufacturerCards
+    .filter((match) => match[1] !== "#lr-contact")
+    .map((match) => match[1])
+    .sort(),
   manufacturerRoutes.sort(),
 );
-for (const match of manufacturerCards)
+for (const match of manufacturerCards.filter(
+  (match) => match[1] !== "#lr-contact",
+))
   assert.ok(
     existsSync(new URL(`../dist${match[1]}/index.html`, import.meta.url)),
     match[1],
@@ -459,14 +430,14 @@ if (casesSection) {
 }
 assert.equal(
   (priceSection.match(/<td class="lr-price-table__duration">/g) || []).length,
-  18,
+  0,
 );
 assert.equal(
   (priceSection.match(/class="lr-price-table__time-inline"/g) || []).length,
-  18,
+  homePrices.length,
 );
 const priceRows = priceSection.match(/<tr>[\s\S]*?<\/tr>/g) || [];
-for (const [work, price, duration] of data.prices.tables.flat()) {
+for (const [work, price, duration] of homePrices) {
   assert.ok(duration?.trim(), "Missing repair duration: " + work);
   const row = priceRows.find((row) => row.includes(work));
   assert.ok(row?.includes(price), work);
@@ -517,13 +488,21 @@ assert.equal((html.match(/method="post"/g) || []).length, 3);
 console.log("CSS isolation and Lead Capture attributes: passed.");
 
 const homeFactList = homeHero.match(
-  /<ul class="lr-hero__facts"[\s\S]*?<\/ul>/,
+  /<ul class="lr-hero__benefits"[\s\S]*?<\/ul>/,
 )[0];
-const homeFacts = [...homeFactList.matchAll(/<h3>([\s\S]*?)<\/h3>/g)].map(
-  ([, title]) => title,
+const homeFacts = [
+  ...homeFactList.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/g),
+].map(([, title]) =>
+  title
+    .replace(/<[^>]*>/g, "")
+    .replace("✓", "")
+    .trim(),
 );
-assert.equal(homeFacts.length, 4);
-for (const fact of homeFacts) assert.ok(brandHtml.includes(fact), fact);
+assert.equal(homeFacts.length, 5);
+for (const fact of homeCopy.hero.bullets)
+  assert.ok(homeHeroText.includes(fact.title));
+for (const fact of homeCopy.hero.bullets)
+  assert.ok(brandHero.includes(fact.title), fact.title);
 
 assert.ok(
   html.includes('id="lr-symptoms"'),
@@ -531,7 +510,11 @@ assert.ok(
 );
 assert.equal(
   (html.match(/<a class="lr-symptom"[\s\S]*?<\/a>/g) || []).length,
-  8,
+  0,
+);
+assert.equal(
+  (html.match(/class="lr-symptoms__group-media"/g) || []).length,
+  12,
 );
 assert.equal(
   (html.match(/<a class="lr-symptoms__modern-card"[\s\S]*?<\/a>/g) || [])
@@ -539,8 +522,10 @@ assert.equal(
   0,
 );
 const symptomCards =
-  brandHtml.match(/<a class="lr-symptom"[\s\S]*?<\/a>/g) || [];
-assert.equal(symptomCards.length, 8);
+  brandHtml.match(
+    /<a\b[^>]*class="lr-symptoms__group(?: [^"]*)?"[\s\S]*?<\/a>/g,
+  ) || [];
+assert.equal(symptomCards.length, 12);
 assert.equal(
   (brandHtml.match(/<a class="lr-symptoms__modern-card"[\s\S]*?<\/a>/g) || [])
     .length,
@@ -560,37 +545,20 @@ assert.ok(
 );
 assert.ok(!symptomCards.join("").includes(secondarySymptom.slug));
 const symptomGroups = brandHtml.match(
-  /<nav class="lr-symptoms__groups"[\s\S]*?<\/nav>/,
+  /<nav class="lr-symptoms__groups[^"]*"[\s\S]*?<\/nav>/,
 )?.[0];
 assert.ok(symptomGroups);
 assert.equal(
-  (symptomGroups.match(/class="lr-symptoms__group"/g) || []).length,
-  4,
+  (symptomGroups.match(/class="lr-symptoms__group(?: [^"]*)?"/g) || []).length,
+  12,
 );
-for (const group of [
-  "Поломка",
-  "Программы и настройка",
-  "Ускорение и апгрейд",
-  "Чистка и перегрев",
-]) {
-  assert.ok(symptomGroups.includes(group));
+for (const group of homeCopy.symptoms.items) {
+  assert.ok(symptomGroups.includes(group.title), group.title);
+  assert.ok(symptomGroups.includes(group.image), group.title);
+  assert.ok(symptomGroups.includes(group.price), group.title);
+  assert.ok(symptomGroups.includes('href="' + group.href + '"'), group.title);
 }
-data.symptoms.items
-  .filter((item) => item !== secondarySymptom)
-  .forEach((item, i) => {
-    assert.ok(symptomCards[i].includes(item.image), item.title);
-    assert.ok(!symptomCards[i].includes("lr-symptom__price"), item.title);
-    assert.ok(symptomCards[i].includes(item.title), item.title);
-    assert.ok(!symptomCards[i].includes(item.text), item.title);
-    if (item.priceWork)
-      assert.ok(!symptomCards[i].includes(item.priceWork), item.title);
-    assert.ok(
-      symptomCards[i].includes('href="/' + item.slug + '.htm"'),
-      item.slug,
-    );
-    assert.match(symptomCards[i], /href="\/[a-z-]+\.htm"/);
-    assert.ok(!/<button[ >]/.test(symptomCards[i]), item.title);
-  });
+for (const card of symptomCards) assert.ok(!/<button\b/.test(card));
 const directory = JSON.parse(
   readFileSync(new URL("../src/data/workshops.json", import.meta.url), "utf8"),
 );
@@ -608,24 +576,25 @@ assert.equal(
 assert.equal(new URL(directory.sourceUrl).origin, "https://www.lenremont.ru");
 assert.match(directory.checkedAt, /^\d{4}-\d{2}-\d{2}$/);
 assert.match(directory.phone, /^\+7\d{10}$/);
-assert.ok(!locationsSection.includes("data-lr-map-placeholder"));
+assert.ok(locationsSection.includes("data-lr-map-placeholder"));
 assert.ok(!locationsSection.includes("lr-workshop-card"));
 assert.ok(!locationsSection.includes("lr-workshop-directory-more"));
-const mapSlots = [
-  ...locationsSection.matchAll(/<article\b([^>]*)>([\s\S]*?)<\/article>/g),
-];
-assert.equal(mapSlots.length, 2, "Two static map integration slots must exist");
-for (const [index, [slot, title]] of [
-  ["workshops", "Карта всех мастерских"],
-  ["address", "Выберите свой адрес"],
-].entries()) {
-  assert.ok(mapSlots[index][1].includes(`id="lr-map-${slot}"`));
-  assert.ok(mapSlots[index][1].includes(`data-lr-map-slot="${slot}"`));
-  const heading = mapSlots[index][2].match(/<h3\b[^>]*>([\s\S]*?)<\/h3>/)?.[1];
-  assert.equal(heading?.trim(), title);
-  assert.ok(mapSlots[index][2].includes("lr-location-map--pending"));
-  assert.ok(mapSlots[index][2].includes("Здесь будет карта"));
+assert.equal((locationsSection.match(/data-lr-map-slot=/g) || []).length, 1);
+assert.ok(locationsSection.includes('id="lr-map-workshops"'));
+assert.ok(locationsSection.includes('data-lr-map-slot="workshops"'));
+const mapModal = html.match(
+  /<dialog\b[^>]*data-lr-modal="map"[\s\S]*?<\/dialog>/,
+)?.[0];
+assert.ok(mapModal);
+for (const [id, type] of [
+  ["lr-map-workshops-modal", "workshops"],
+  ["lr-map-address", "address"],
+]) {
+  assert.ok(mapModal.includes(`id="${id}"`));
+  assert.ok(mapModal.includes(`data-lr-map-slot="${type}"`));
+  assert.ok(mapModal.includes(`data-lr-map-view="${type}"`));
 }
+assert.equal((mapModal.match(/data-lr-map-placeholder/g) || []).length, 2);
 assert.doesNotMatch(locationsSection, /<iframe\b|<input\b|<button\b|<select\b/);
 directory.workshops.forEach((workshop) => {
   assert.match(workshop.id, /^[a-z0-9-]+$/);
@@ -641,9 +610,8 @@ directory.workshops.forEach((workshop) => {
 });
 assert.ok(html.includes('id="lr-map-workshops"'));
 assert.ok(!html.includes('id="lr-map-pickup"'));
-assert.ok(!locationsSection.includes('data-source="locations"'));
 console.log(
-  "Brand symptom navigation, 24 source addresses and two static map integration slots: passed.",
+  "Brand symptom navigation, source addresses, inline map and two modal map slots: passed.",
 );
 
 for (const [, anchor] of html.matchAll(/href="#([^" ]+)"/g)) {
@@ -690,12 +658,12 @@ assert.equal(
   3,
 );
 assert.ok(!brandHtml.includes(data.symptoms.fields["Пояснение цены"]));
-assert.ok(html.includes('href="#lr-map-workshops"'));
+assert.ok(!locationsSection.includes("Все мастерские"));
 const homeFaq = html.match(/<section id="lr-faq"[\s\S]*?<\/section>/)?.[0];
 assert.ok(homeFaq && !homeFaq.includes("data-lr-question"));
 assert.equal(
   (homeFaq.match(/<details\b/g) || []).length,
-  data.faq.items.length,
+  homeCopy.faq.items.length,
 );
 const homeContact = html.match(
   /<section id="lr-contact"[\s\S]*?<\/section>/,
@@ -713,14 +681,14 @@ const businessSection = html.match(
   /<section id="lr-business-trust"[\s\S]*?<\/section>/,
 )?.[0];
 assert.ok(businessSection, "Corporate and parts conditions must exist");
-for (const target of ["tel:+78126404804", "mailto:lenremont@lenrem.ru"])
+for (const target of ["tel:+78126404804"])
   assert.ok(businessSection.includes(`href="${target}"`), target);
 assert.ok(
   !businessSection.includes(
     'href="https://www.lenremont.ru/juridicheskim-licam.htm"',
   ),
 );
-assert.ok(businessSection.includes('data-source="business-trust-parts"'));
+assert.ok(!businessSection.includes('data-source="business-trust-parts"'));
 assert.ok(!businessSection.includes("только оригинальные"));
 assert.ok(!businessSection.includes("сертифицированный сервис"));
 const seoSection = html.match(
@@ -730,11 +698,12 @@ assert.equal((seoSection.match(/<article\b/g) || []).length, 6);
 assert.deepEqual(
   [...seoSection.matchAll(/<a\b[^>]*href="([^"]+)"/g)].map((link) => link[1]),
   [
-    "#lr-expertise",
+    "#lr-symptoms",
     "#lr-prices",
     "#lr-locations",
     "#lr-formats",
     "#lr-guarantee",
+    "#lr-faq",
   ],
 );
 console.log(

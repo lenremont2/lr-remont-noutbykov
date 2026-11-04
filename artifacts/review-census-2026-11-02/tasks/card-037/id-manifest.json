@@ -1,0 +1,464 @@
+{
+  "taskId": "card-037",
+  "platform": "yandex",
+  "cardId": "147829209306",
+  "browserTabId": "2080318421",
+  "source": "https://yandex.ru/maps/org/lenremont/147829209306/reviews/",
+  "reportedTotal": 45,
+  "uniqueCount": 45,
+  "idType": "Local composite identifier: card ID + observed public profile ID (or author when unavailable) + UTC date; not a provider review ID.",
+  "fullTextRead": true,
+  "fullTextsRetained": false,
+  "records": [
+    {
+      "localId": "yandex-147829209306-cne23tn91hmar23hh83b56fmtr-2022-05-08",
+      "author": "Павел Гуляев",
+      "date": "2022-05-08T14:06:53.535Z",
+      "profile": "https://yandex.ru/maps/user/cne23tn91hmar23hh83b56fmtr",
+      "rating": 5,
+      "textHashFNV1a": "617fe7d7",
+      "photoCount": 2,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-fw7tvrgtbc6m2j88h0p2xpu7j8-2026-02-16",
+      "author": "Евгений Щербаков",
+      "date": "2026-02-16T11:29:35.252Z",
+      "profile": "https://yandex.ru/maps/user/fw7tvrgtbc6m2j88h0p2xpu7j8",
+      "rating": 1,
+      "textHashFNV1a": "f30c01a3",
+      "photoCount": 1,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-6cye4hf4001q4ub0upawdqgcrr-2025-04-22",
+      "author": "Мария К.",
+      "date": "2025-04-22T18:30:07.664Z",
+      "profile": "https://yandex.ru/maps/user/6cye4hf4001q4ub0upawdqgcrr",
+      "rating": 5,
+      "textHashFNV1a": "f891a84a",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-zbwbuhwa1c2n74b9vj36j547bm-2024-10-18",
+      "author": "Марта Санс",
+      "date": "2024-10-18T17:09:01.128Z",
+      "profile": "https://yandex.ru/maps/user/zbwbuhwa1c2n74b9vj36j547bm",
+      "rating": 5,
+      "textHashFNV1a": "6674d2b9",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-4j49gn9dr2f2v5p3cnnj4wnujc-2026-04-23",
+      "author": "Александр Сергеевич",
+      "date": "2026-04-23T13:13:22.401Z",
+      "profile": "https://yandex.ru/maps/user/4j49gn9dr2f2v5p3cnnj4wnujc",
+      "rating": 5,
+      "textHashFNV1a": "b04e6751",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-3qp35bpygd2u8y2v3vz725j32g-2025-03-27",
+      "author": "Алексей Константинов",
+      "date": "2025-03-27T07:16:10.495Z",
+      "profile": "https://yandex.ru/maps/user/3qp35bpygd2u8y2v3vz725j32g",
+      "rating": 5,
+      "textHashFNV1a": "ef2b52ef",
+      "photoCount": 2,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-jkzxn7nva734fgxj3v9vfv9kzg-2024-11-27",
+      "author": "Анжела Данилова",
+      "date": "2024-11-27T19:51:07.802Z",
+      "profile": "https://yandex.ru/maps/user/jkzxn7nva734fgxj3v9vfv9kzg",
+      "rating": 5,
+      "textHashFNV1a": "13a8f14e",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-8te3cc8b4exq00rffkgmhwrh44-2023-08-31",
+      "author": "Людмила",
+      "date": "2023-08-31T21:02:47.217Z",
+      "profile": "https://yandex.ru/maps/user/8te3cc8b4exq00rffkgmhwrh44",
+      "rating": 5,
+      "textHashFNV1a": "d35d0a11",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-Ольга Тылик-2026-09-11",
+      "author": "Ольга Тылик",
+      "date": "2026-09-11T08:40:34.249Z",
+      "profile": null,
+      "rating": 1,
+      "textHashFNV1a": "cd873cd",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-7bmgep2c828fq5daj4ejbtxcgr-2023-03-24",
+      "author": "В. Д.",
+      "date": "2023-03-24T09:49:25.513Z",
+      "profile": "https://yandex.ru/maps/user/7bmgep2c828fq5daj4ejbtxcgr",
+      "rating": 5,
+      "textHashFNV1a": "4020832c",
+      "photoCount": 1,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-9bzgzex68yc96cbp3j7xfj4868-2023-06-11",
+      "author": "Юлия С.",
+      "date": "2023-06-11T14:16:19.253Z",
+      "profile": "https://yandex.ru/maps/user/9bzgzex68yc96cbp3j7xfj4868",
+      "rating": 5,
+      "textHashFNV1a": "1f1da0f7",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-v84hwdqeatwaun9mkfjb814qf8-2024-05-05",
+      "author": "Александр Чернов",
+      "date": "2024-05-05T20:16:43.206Z",
+      "profile": "https://yandex.ru/maps/user/v84hwdqeatwaun9mkfjb814qf8",
+      "rating": 1,
+      "textHashFNV1a": "6730809d",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-zjpkw2222krdbyaun3tkt2j4pc-2022-11-24",
+      "author": "Игорь Другашов",
+      "date": "2022-11-24T14:40:37.461Z",
+      "profile": "https://yandex.ru/maps/user/zjpkw2222krdbyaun3tkt2j4pc",
+      "rating": 5,
+      "textHashFNV1a": "1f319eb0",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-kermakov-2023-02-28",
+      "author": "Константин Ермаков",
+      "date": "2023-02-28T14:38:43.442Z",
+      "profile": "https://yandex.ru/maps/user/kermakov",
+      "rating": 3,
+      "textHashFNV1a": "207702a3",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-n9cq3kyrfqd86vwndd1uxmj784-2024-09-23",
+      "author": "Жованный крот",
+      "date": "2024-09-23T10:04:07.236Z",
+      "profile": "https://yandex.ru/maps/user/n9cq3kyrfqd86vwndd1uxmj784",
+      "rating": 5,
+      "textHashFNV1a": "329e3ff5",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-8fa63dtc3n7jct0y7fbu28awdw-2025-08-09",
+      "author": "Виктория П.",
+      "date": "2025-08-09T17:11:27.640Z",
+      "profile": "https://yandex.ru/maps/user/8fa63dtc3n7jct0y7fbu28awdw",
+      "rating": 5,
+      "textHashFNV1a": "b55b18e5",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-48xt8ret84cqe0jn2n71mm3w10-2023-06-02",
+      "author": "Artem Kapustin",
+      "date": "2023-06-02T12:58:50.357Z",
+      "profile": "https://yandex.ru/maps/user/48xt8ret84cqe0jn2n71mm3w10",
+      "rating": 5,
+      "textHashFNV1a": "2015dbc3",
+      "photoCount": 1,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-mnrx4veu0khakd2mwtxv9vf3cc-2022-06-29",
+      "author": "мавжуда азизова",
+      "date": "2022-06-29T12:02:34.796Z",
+      "profile": "https://yandex.ru/maps/user/mnrx4veu0khakd2mwtxv9vf3cc",
+      "rating": 5,
+      "textHashFNV1a": "5c131818",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-qg3bmyh5ye8n4r06tdumzeh9w4-2025-11-04",
+      "author": "Виктория",
+      "date": "2025-11-04T16:55:48.778Z",
+      "profile": "https://yandex.ru/maps/user/qg3bmyh5ye8n4r06tdumzeh9w4",
+      "rating": 5,
+      "textHashFNV1a": "459b24a",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-fgezde7yr4kz0gctmqqxa27dv0-2023-03-10",
+      "author": "Ольга Л.",
+      "date": "2023-03-10T10:53:24.329Z",
+      "profile": "https://yandex.ru/maps/user/fgezde7yr4kz0gctmqqxa27dv0",
+      "rating": 5,
+      "textHashFNV1a": "79bdc226",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-h01m7nqzvfj852xxduf181gtfc-2024-12-24",
+      "author": "Александр Денисов",
+      "date": "2024-12-24T16:51:23.513Z",
+      "profile": "https://yandex.ru/maps/user/h01m7nqzvfj852xxduf181gtfc",
+      "rating": 3,
+      "textHashFNV1a": "32dccbb9",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-1vnw7e4wvd1z85j7ebj6vuyb6g-2024-09-08",
+      "author": "Виктор Липинский",
+      "date": "2024-09-08T05:37:05.620Z",
+      "profile": "https://yandex.ru/maps/user/1vnw7e4wvd1z85j7ebj6vuyb6g",
+      "rating": 5,
+      "textHashFNV1a": "6cf54275",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-ykg52e27fjh9ja4rd8y52guzmr-2022-08-29",
+      "author": "Дмитрий Булатов",
+      "date": "2022-08-29T12:03:52.018Z",
+      "profile": "https://yandex.ru/maps/user/ykg52e27fjh9ja4rd8y52guzmr",
+      "rating": 5,
+      "textHashFNV1a": "9a8dbcc9",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-9e33hcfeyu9gqnpw6gqzwm2uy8-2022-09-20",
+      "author": "Света К",
+      "date": "2022-09-20T09:52:18.035Z",
+      "profile": "https://yandex.ru/maps/user/9e33hcfeyu9gqnpw6gqzwm2uy8",
+      "rating": 5,
+      "textHashFNV1a": "100c669e",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-dzuw1tam28rhezfc7v0ktnrzr0-2023-07-22",
+      "author": "Наталья",
+      "date": "2023-07-22T12:29:19.219Z",
+      "profile": "https://yandex.ru/maps/user/dzuw1tam28rhezfc7v0ktnrzr0",
+      "rating": 5,
+      "textHashFNV1a": "b09d295f",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-cj3e384eqkb5tmkjk2gu04eh2w-2025-11-11",
+      "author": "Виктория К.",
+      "date": "2025-11-11T16:32:57.662Z",
+      "profile": "https://yandex.ru/maps/user/cj3e384eqkb5tmkjk2gu04eh2w",
+      "rating": 1,
+      "textHashFNV1a": "ab7f472a",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-Алена-2022-11-25",
+      "author": "Алена",
+      "date": "2022-11-25T17:04:20.273Z",
+      "profile": null,
+      "rating": 5,
+      "textHashFNV1a": "7f8b8376",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-jquwpt91geb11g8nyr00tb82kg-2023-02-10",
+      "author": "Сергей 7336",
+      "date": "2023-02-10T10:32:04.368Z",
+      "profile": "https://yandex.ru/maps/user/jquwpt91geb11g8nyr00tb82kg",
+      "rating": 3,
+      "textHashFNV1a": "c0858b87",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-Anastasia Vasileva-2023-06-08",
+      "author": "Anastasia Vasileva",
+      "date": "2023-06-08T10:29:02.797Z",
+      "profile": null,
+      "rating": 5,
+      "textHashFNV1a": "c38cc4e9",
+      "photoCount": 1,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-mjbj1jv3xnmmdwr91pathz4u94-2022-11-23",
+      "author": "Артем А.",
+      "date": "2022-11-23T15:35:26.913Z",
+      "profile": "https://yandex.ru/maps/user/mjbj1jv3xnmmdwr91pathz4u94",
+      "rating": 5,
+      "textHashFNV1a": "3205a236",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-kkjn0fqu8kuu3thq216kdwke7r-2022-09-17",
+      "author": "Сергей Репей",
+      "date": "2022-09-17T12:39:06.733Z",
+      "profile": "https://yandex.ru/maps/user/kkjn0fqu8kuu3thq216kdwke7r",
+      "rating": 4,
+      "textHashFNV1a": "6a14de18",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-29w1mk2rppm73tkvgh7u4t6t74-2023-07-13",
+      "author": "Anna Biteleva",
+      "date": "2023-07-13T18:57:40.413Z",
+      "profile": "https://yandex.ru/maps/user/29w1mk2rppm73tkvgh7u4t6t74",
+      "rating": 5,
+      "textHashFNV1a": "3391f542",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-Тамара И.-2023-03-24",
+      "author": "Тамара И.",
+      "date": "2023-03-24T08:18:07.785Z",
+      "profile": null,
+      "rating": 1,
+      "textHashFNV1a": "6561aafc",
+      "photoCount": 1,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-p6vbnqv6mr0ey40q7fhzcrza40-2023-07-21",
+      "author": "Devil Dog",
+      "date": "2023-07-21T11:35:14.840Z",
+      "profile": "https://yandex.ru/maps/user/p6vbnqv6mr0ey40q7fhzcrza40",
+      "rating": 5,
+      "textHashFNV1a": "f9181276",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-qagfgb6yefygkw07ftq2k0q688-2022-11-26",
+      "author": "Вова Егорушин",
+      "date": "2022-11-26T19:09:15.182Z",
+      "profile": "https://yandex.ru/maps/user/qagfgb6yefygkw07ftq2k0q688",
+      "rating": 5,
+      "textHashFNV1a": "5b5f82ba",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-katok.lomakin-2023-08-20",
+      "author": "Каток Ломакин",
+      "date": "2023-08-20T19:49:43.545Z",
+      "profile": "https://yandex.ru/maps/user/katok.lomakin",
+      "rating": 1,
+      "textHashFNV1a": "e9b2b2a2",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-y6p5mcj8jze9q8dxjr3cdn2p3m-2023-01-29",
+      "author": "Katerin Zh",
+      "date": "2023-01-29T13:08:58.969Z",
+      "profile": "https://yandex.ru/maps/user/y6p5mcj8jze9q8dxjr3cdn2p3m",
+      "rating": 1,
+      "textHashFNV1a": "82039f7d",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-429qextxbbpvgmgvhmf4624fdr-2022-11-30",
+      "author": "Дарья Чистякова",
+      "date": "2022-11-30T10:44:52.999Z",
+      "profile": "https://yandex.ru/maps/user/429qextxbbpvgmgvhmf4624fdr",
+      "rating": 5,
+      "textHashFNV1a": "6eb51e36",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-jwgj22d6553jfu0xw5gmkf92bm-2024-11-12",
+      "author": "Екатерина Калугина",
+      "date": "2024-11-12T12:00:26.204Z",
+      "profile": "https://yandex.ru/maps/user/jwgj22d6553jfu0xw5gmkf92bm",
+      "rating": 5,
+      "textHashFNV1a": "4ae4c8f4",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-wnx5z3xacf0580a2h2hevaatx4-2023-01-21",
+      "author": "Азиза Кабилова",
+      "date": "2023-01-21T16:47:59.290Z",
+      "profile": "https://yandex.ru/maps/user/wnx5z3xacf0580a2h2hevaatx4",
+      "rating": 5,
+      "textHashFNV1a": "bc32facf",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-uz22grvxr89eubb3hbdyd8d55w-2024-10-21",
+      "author": "иди в жопу",
+      "date": "2024-10-21T16:53:49.565Z",
+      "profile": "https://yandex.ru/maps/user/uz22grvxr89eubb3hbdyd8d55w",
+      "rating": 1,
+      "textHashFNV1a": "a514e8f7",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-141xf8m1mmq4ajkqxtkacf8f48-2025-10-04",
+      "author": "Ольга Л.",
+      "date": "2025-10-04T17:13:29.453Z",
+      "profile": "https://yandex.ru/maps/user/141xf8m1mmq4ajkqxtkacf8f48",
+      "rating": 5,
+      "textHashFNV1a": "4eb1c532",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-y56u6jta2mzk8bh77nmekv9h0g-2026-04-25",
+      "author": "Олег Иванов",
+      "date": "2026-04-25T17:16:24.583Z",
+      "profile": "https://yandex.ru/maps/user/y56u6jta2mzk8bh77nmekv9h0g",
+      "rating": 1,
+      "textHashFNV1a": "92c4a455",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-nah4287bvjp2echwb0ytgmpgc8-2022-11-15",
+      "author": "Людмила Неженцева",
+      "date": "2022-11-15T12:41:12.422Z",
+      "profile": "https://yandex.ru/maps/user/nah4287bvjp2echwb0ytgmpgc8",
+      "rating": 5,
+      "textHashFNV1a": "b8032af1",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    },
+    {
+      "localId": "yandex-147829209306-04nww9g68xbbwqbtt50408m6ar-2022-06-15",
+      "author": "Наталья Вавишина",
+      "date": "2022-06-15T11:53:48.015Z",
+      "profile": "https://yandex.ru/maps/user/04nww9g68xbbwqbtt50408m6ar",
+      "rating": 5,
+      "textHashFNV1a": "2ffd364a",
+      "photoCount": 0,
+      "classification": "not_laptop_repair"
+    }
+  ]
+}

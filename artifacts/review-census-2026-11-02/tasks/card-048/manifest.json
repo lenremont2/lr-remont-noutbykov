@@ -1,0 +1,16 @@
+{
+  "taskId": "card-048",
+  "observedDate": "2026-11-02",
+  "requestedUrl": "https://tv-press.ru/lenremont-otzyvy/",
+  "observedUrl": "https://tv-press.ru/lenremont-otzyvy/",
+  "pageTitle": "Сайт недоступен",
+  "evidenceType": "public visible page AX and read-only DOM",
+  "noticeSummary": "Публичная заглушка HostiMan сообщает о недоступности tv-press.ru. Возможные причины перечислены без установления конкретной.",
+  "reviewRecordsAccessible": false,
+  "examinedReviews": null,
+  "confirmedLaptopReviews": 0,
+  "savedPhotos": 0,
+  "photoFiles": [],
+  "result": "result.json",
+  "limitation": "Корпус закрыт заглушкой хостинга; отсутствие найденных отзывов и фото не означает их отсутствия на исходной странице."
+}

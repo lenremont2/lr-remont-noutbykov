@@ -1,0 +1,218 @@
+{
+  "taskId": "card-016",
+  "platform": "Яндекс Карты",
+  "url": "https://yandex.ru/maps/org/lenremont/210656280325/reviews/",
+  "branch": "Ленремонт, улица Кораблестроителей, 30, цокольный этаж",
+  "city": "Санкт-Петербург",
+  "networkEvidence": {
+    "sourceUrl": "https://yandex.ru/maps/org/lenremont/210656280325/",
+    "name": "Ленремонт",
+    "address": "Санкт-Петербург, улица Кораблестроителей, 30",
+    "website": "https://www.lenremont.ru/",
+    "phone": "+7 (812) 688-89-33",
+    "chainUrl": "https://yandex.ru/maps/2/saint-petersburg/chain/lenremont/3503425074/",
+    "verification": "Обзор карточки непосредственно показывает название, адрес, официальный сайт, телефон и ссылку Все филиалы сети."
+  },
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 481,
+    "examinedCount": 481,
+    "endpointObserved": true,
+    "method": "CUA Chrome, ownTabID 2080318398. В сортировке По умолчанию последовательно загружены 481 DOM-отзыв; каждое Ещё раскрыто, в конце таких кнопок 0. Проверены полные reviewBody, datePublished, ratingValue и прикреплённые к каждому кандидату business-review-media. Уникальность по URL автора + datePublished, для анонимных по имени + datePublished: 481 уникальных. Все даты и оценки без фильтра. Повторная нижняя прокрутка подтвердила конец: scrollTop 143209.09375, clientHeight785, scrollHeight143994. Дополнительные сортировки не требовались: доступный корпус равен счётчику.",
+    "stopReason": "Конец выдачи, 481 уникальный отзыв из 481 заявленного; свёрнутых текстов не осталось.",
+    "dateRange": [
+      "2017-12-26",
+      "2026-10-27"
+    ],
+    "reportedRatings": 685,
+    "matchedCount": 11,
+    "keywordCandidates": 12,
+    "reviewPhotoCount": 0
+  },
+  "reviews": [
+    {
+      "author": "содружество А.",
+      "date": "2025-04-14",
+      "rating": 1,
+      "summary": "После замены клавиатуры и обслуживания ноутбука автор сообщает о несменённой первоначально термопасте, неисправном тачпаде и выпадающих кнопках; ремонт стоил 9000 ₽.",
+      "reviewUrl": "https://yandex.ru/maps/org/210656280325/reviews?reviews%5BpublicId%5D=xde07dyyeunxqh8wtaqnz3hd7w&si=517v1r88kzgb3kpw65wkeevaq0&utm_source=review",
+      "topic": "ремонт клавиатуры; перегрев; термопаста; обслуживание ноутбука",
+      "photos": [],
+      "evidence": {
+        "profileUrl": "https://yandex.ru/maps/user/xde07dyyeunxqh8wtaqnz3hd7w",
+        "datePublished": "2025-04-14T18:26:21.692Z",
+        "fullTextExpanded": true,
+        "permalink": "Прочитан из окна Поделиться отзывом",
+        "mediaCount": 0
+      }
+    },
+    {
+      "author": "Эдуард Владимиров",
+      "date": "2022-03-02",
+      "rating": 5,
+      "summary": "Ноутбук HP перестал включаться после давнего залития колой. Автор сообщает о диагностике короткого замыкания и ремонте за 4000 ₽.",
+      "reviewUrl": "https://yandex.ru/maps/org/210656280325/reviews?reviews%5BpublicId%5D=q6kbgh0ebq51ktqg7bm6ndv6t0&si=517v1r88kzgb3kpw65wkeevaq0&utm_source=review",
+      "topic": "HP; диагностика; ремонт после залития",
+      "photos": [],
+      "evidence": {
+        "profileUrl": "https://yandex.ru/maps/user/q6kbgh0ebq51ktqg7bm6ndv6t0",
+        "datePublished": "2022-03-02T10:56:30.942Z",
+        "fullTextExpanded": true,
+        "permalink": "Прочитан из окна Поделиться отзывом",
+        "mediaCount": 0
+      }
+    },
+    {
+      "author": "Михаил Ларионов",
+      "date": "2022-06-06",
+      "rating": 5,
+      "summary": "Автор благодарит мастерскую на Кораблестроителей за бесплатную диагностику ноутбука, объяснение вариантов и ремонт с доставкой запчастей за пять дней.",
+      "reviewUrl": "https://yandex.ru/maps/org/210656280325/reviews?reviews%5BpublicId%5D=mvahd48wvbj5pfghhgz1wpwex0&si=517v1r88kzgb3kpw65wkeevaq0&utm_source=review",
+      "topic": "диагностика и ремонт ноутбука",
+      "photos": [],
+      "evidence": {
+        "profileUrl": "https://yandex.ru/maps/user/mvahd48wvbj5pfghhgz1wpwex0",
+        "datePublished": "2022-06-06T15:06:50.797Z",
+        "fullTextExpanded": true,
+        "permalink": "Прочитан из окна Поделиться отзывом",
+        "mediaCount": 0
+      }
+    },
+    {
+      "author": "Илья Electric",
+      "date": "2022-12-21",
+      "rating": 5,
+      "summary": "Автор сравнивает ремонт ноутбука: в Ленремонте стоимость составила 7000 ₽, диагностика была бесплатной, предоставили годовую гарантию.",
+      "reviewUrl": "https://yandex.ru/maps/org/210656280325/reviews?reviews%5BpublicId%5D=r8yw9hw44c6yd7ex4r5pp3r3xw&si=517v1r88kzgb3kpw65wkeevaq0&utm_source=review",
+      "topic": "ремонт ноутбука; диагностика; гарантия",
+      "photos": [],
+      "evidence": {
+        "profileUrl": "https://yandex.ru/maps/user/r8yw9hw44c6yd7ex4r5pp3r3xw",
+        "datePublished": "2022-12-21T10:42:14.408Z",
+        "fullTextExpanded": true,
+        "permalink": "Прочитан из окна Поделиться отзывом",
+        "mediaCount": 0
+      }
+    },
+    {
+      "author": "Алексей С.",
+      "date": "2022-04-05",
+      "rating": 5,
+      "summary": "Сообщает об успешном ремонте ноутбука, который перестал включаться после пролитого на клавиатуру кофе.",
+      "reviewUrl": "https://yandex.ru/maps/org/210656280325/reviews?reviews%5BpublicId%5D=pf01urnh04dmke5kmrqemqbd50&si=517v1r88kzgb3kpw65wkeevaq0&utm_source=review",
+      "topic": "ремонт ноутбука после залития",
+      "photos": [],
+      "evidence": {
+        "profileUrl": "https://yandex.ru/maps/user/pf01urnh04dmke5kmrqemqbd50",
+        "datePublished": "2022-04-05T17:19:45.916Z",
+        "fullTextExpanded": true,
+        "permalink": "Прочитан из окна Поделиться отзывом",
+        "mediaCount": 0
+      }
+    },
+    {
+      "author": "Валерия",
+      "date": "2022-03-02",
+      "rating": 5,
+      "summary": "Ноутбук приняли 28 февраля и вернули 2 марта, включая доставку аккумулятора из другого города. Автор довольна сроками и обслуживанием.",
+      "reviewUrl": "https://yandex.ru/maps/org/210656280325/reviews?reviews%5BpublicId%5D=nwxb6uaaum84y8nwrm89bmx56g&si=517v1r88kzgb3kpw65wkeevaq0&utm_source=review",
+      "topic": "ремонт ноутбука; аккумулятор",
+      "photos": [],
+      "evidence": {
+        "profileUrl": "https://yandex.ru/maps/user/nwxb6uaaum84y8nwrm89bmx56g",
+        "datePublished": "2022-03-02T14:34:58.946Z",
+        "fullTextExpanded": true,
+        "permalink": "Прочитан из окна Поделиться отзывом",
+        "mediaCount": 0
+      }
+    },
+    {
+      "author": "Дарина Х.",
+      "date": "2022-03-25",
+      "rating": 5,
+      "summary": "Автор довольна диагностикой и ремонтом ноутбука: мастер объяснил поломку и необходимые замены, после ремонта устройство работает.",
+      "reviewUrl": "https://yandex.ru/maps/org/210656280325/reviews?reviews%5BpublicId%5D=90x6tpa2zhdrc7hjgu9w61ca08&si=517v1r88kzgb3kpw65wkeevaq0&utm_source=review",
+      "topic": "диагностика и ремонт ноутбука",
+      "photos": [],
+      "evidence": {
+        "profileUrl": "https://yandex.ru/maps/user/90x6tpa2zhdrc7hjgu9w61ca08",
+        "datePublished": "2022-03-25T21:28:41.768Z",
+        "fullTextExpanded": true,
+        "permalink": "Прочитан из окна Поделиться отзывом",
+        "mediaCount": 0
+      }
+    },
+    {
+      "author": "Elena A.",
+      "date": "2022-03-23",
+      "rating": 5,
+      "summary": "Компьютерный мастер Александр помог с новым ноутбуком: установил программы и объяснил работу. Указан заказ 5219173.",
+      "reviewUrl": "https://yandex.ru/maps/org/210656280325/reviews?reviews%5BpublicId%5D=0g6a0qdqn9yd8jhq41w54b2910&si=517v1r88kzgb3kpw65wkeevaq0&utm_source=review",
+      "topic": "настройка и обслуживание ноутбука",
+      "photos": [],
+      "evidence": {
+        "profileUrl": "https://yandex.ru/maps/user/0g6a0qdqn9yd8jhq41w54b2910",
+        "datePublished": "2022-03-23T17:46:49.664Z",
+        "fullTextExpanded": true,
+        "permalink": "Прочитан из окна Поделиться отзывом",
+        "mediaCount": 0
+      }
+    },
+    {
+      "author": "Анонимный отзыв",
+      "date": "2020-04-14",
+      "rating": 5,
+      "summary": "Положительный отзыв о ремонте телефона после попадания воды; автор также сообщает, что ранее обращалась сюда с ноутбуком, без деталей того ремонта.",
+      "reviewUrl": "https://yandex.ru/maps/org/lenremont/210656280325/reviews/",
+      "topic": "предыдущее обращение с ноутбуком",
+      "photos": [],
+      "evidence": {
+        "profileUrl": null,
+        "datePublished": "2020-04-13T21:04:41.09Z",
+        "fullTextExpanded": true,
+        "permalink": "Профиль и кнопка Поделиться отсутствуют; идентификация по карточке, имени, точной UTC-дате и содержанию; отображаемая локальная дата 14 апреля 2020",
+        "mediaCount": 0
+      }
+    },
+    {
+      "author": "Мирослав Рожков",
+      "date": "2022-03-24",
+      "rating": 5,
+      "summary": "После залития ноутбука мастер, по словам автора, перезвонил через час и сообщил о просушке без последствий.",
+      "reviewUrl": "https://yandex.ru/maps/org/lenremont/210656280325/reviews/",
+      "topic": "ноутбук; залитие; просушка",
+      "photos": [],
+      "evidence": {
+        "profileUrl": null,
+        "datePublished": "2022-03-24T15:28:04.35Z",
+        "fullTextExpanded": true,
+        "permalink": "Профиль и кнопка Поделиться отсутствуют; идентификация по карточке, имени, точной дате и содержанию",
+        "mediaCount": 0
+      }
+    },
+    {
+      "author": "Евгений Краснов",
+      "date": "2022-07-23",
+      "rating": 1,
+      "summary": "Автор отказался от предложенной стоимости ремонта ноутбука Sony; после возврата заявил об обнаруженной замене памяти на меньшую.",
+      "reviewUrl": "https://yandex.ru/maps/org/210656280325/reviews?reviews%5BpublicId%5D=h0hzbxz08j0ne6yrg3cyabhhwr&si=517v1r88kzgb3kpw65wkeevaq0&utm_source=review",
+      "topic": "Sony; стоимость ремонта; претензия к памяти",
+      "photos": [],
+      "evidence": {
+        "profileUrl": "https://yandex.ru/maps/user/h0hzbxz08j0ne6yrg3cyabhhwr",
+        "datePublished": "2022-07-23T14:20:36.564Z",
+        "fullTextExpanded": true,
+        "permalink": "Прочитан из окна Поделиться отзывом",
+        "mediaCount": 0
+      }
+    }
+  ],
+  "discoveredSources": [],
+  "notes": [
+    "Дата исследования 2026-11-02. Отзывы являются сообщениями авторов; утверждения о качестве и поломках независимо не подтверждались.",
+    "Исключён keyword-кандидат Маргарита Марго, 2026-04-20: предмет ремонта — графический планшет; чистка ноутбуков относится к другой компании.",
+    "Дополнительно проверены компьютер, ПК, Apple, Sony, Samsung и другие бренды: неуточнённые компьютеры, телевизоры, бытовая техника исключены из ноутбучного набора.",
+    "Все11 целевых отзывов без прикреплённых business-review-media. Аватары не считались фотографиями отзывов. Ответы организации и общая галерея61 фото не смешивались с авторскими вложениями.",
+    "После завершённого полного обхода при сборе индивидуальных ссылок возникали CDP/DOMSnapshot таймауты. Вкладка восстановлена; девять ссылок прочитаны из UI Поделиться. У Анонимного отзыва и Мирослава Рожкова отсутствуют профиль и кнопка Поделиться. Их точная идентификация сохранена через дату и содержание."
+  ]
+}

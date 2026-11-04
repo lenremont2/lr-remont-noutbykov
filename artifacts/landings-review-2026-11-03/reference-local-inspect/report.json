@@ -1,0 +1,3841 @@
+{
+ "url": "artifacts/landings-review-2026-11-03/local-preview/index.html",
+ "at": "2026-11-03T08:47:15.343Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    1,
+    0.62,
+    0.93,
+    0.66,
+    0.75,
+    1,
+    0.53,
+    0.78,
+    0.84,
+    0.59,
+    1
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 2,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 11201,
+     "screens": 12.4,
+     "words": 2020,
+     "img": 34,
+     "video": 2,
+     "canvas": 0,
+     "svg": 17,
+     "sections": 13,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 21,
+     "videoCount": 2,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "review-egor-computer-2026.jpg",
+      "review-ds-imac-2023.jpg",
+      "workshop-v4-diagnostics-1280.webp",
+      "workshop-v4-testing-1280.webp",
+      "failure-liquid.webp",
+      "laptop-board-diagnostics.webp",
+      "failure-impact.webp",
+      "failure-software.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 3,
+     "brokenImages": [],
+     "emoji": [
+      "★"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Починим ноутбук сегодня от 40 минут — диагностика бесплатно (0 ₽) даже при отказе",
+     "words": 14,
+     "chars": 81,
+     "lines": 4,
+     "size": 42,
+     "vw": 2.9,
+     "font": "Manrope",
+     "weight": 800,
+     "tracking": -0.025,
+     "leading": 1.13,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.44,
+     "top": 337,
+     "tag": "h2",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Ремонт ноутбуков на дому или в сервисном центре в Санкт-Петербурге и ЛО",
+     "words": 12,
+     "lines": 1,
+     "size": 12,
+     "font": "Golos Text"
+    },
+    "headings": [
+     {
+      "text": "Починим ноутбук сегодня от 40 минут — диагностика бесплатно (0 ₽) даже при отказе",
+      "words": 14,
+      "chars": 81,
+      "lines": 4,
+      "size": 42,
+      "vw": 2.9,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.13,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.44,
+      "top": 337,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Отзывы и награды",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 1148,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Что мы чиним и настраиваем",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 2061,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Сколько стоит ремонт ноутбука",
+      "words": 4,
+      "chars": 29,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 2851,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Способы ремонта и карта",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 4094,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Мобильная мастерская у вашего дома",
+      "words": 5,
+      "chars": 34,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.7,
+      "top": 5382,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Гарантии и личная ответственность",
+      "words": 4,
+      "chars": 33,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 7126,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Где и на чём мы чиним ноутбуки",
+      "words": 7,
+      "chars": 30,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 7927,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ремонт ноутбуков и компьютерного парка для бизнеса",
+      "words": 7,
+      "chars": 50,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.7,
+      "top": 8636,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Карта и адреса сервисных центров в СПб",
+      "words": 7,
+      "chars": 38,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 9221,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Частые вопросы о ремонте ноутбуков",
+      "words": 5,
+      "chars": 34,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 9960,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Узнайте точную стоимость ремонта до выезда мастера",
+      "words": 7,
+      "chars": 50,
+      "lines": 2,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.44,
+      "top": 10733,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 4,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Golos Text",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "Manrope",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      8,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      22,
+      24,
+      34,
+      42
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Golos Text",
+      "size": 13.5,
+      "leading": 1.42,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 12.5
+     },
+     "measureChars": 42,
+     "max": {
+      "size": 42,
+      "vw": 2.9,
+      "font": "Manrope",
+      "text": "Починим ноутбук сегодня от 40 минут — ди"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 12,
+     "microLabelShare": 0.029,
+     "microSamples": [
+      "4 783 проверенных отзыва",
+      "Решаем любую проблему в день обращения",
+      "Фиксируем сумму до начала ремонта",
+      "4 формата в СПб и ЛО",
+      "Уникальный формат «Ленремонта» в СПб",
+      "Защита от «частников по объявлению»"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0.06,
+     "smallText": 152
+    },
+    "eyebrows": [
+     {
+      "text": "4 783 проверенных отзыва",
+      "above": "Отзывы и награды",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 1125
+     },
+     {
+      "text": "Решаем любую проблему в день обращения",
+      "above": "Что мы чиним и настраиваем",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 2038
+     },
+     {
+      "text": "Фиксируем сумму до начала ремонта",
+      "above": "Сколько стоит ремонт ноутбука",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 2828
+     },
+     {
+      "text": "4 формата в СПб и ЛО",
+      "above": "Способы ремонта и карта",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 4071
+     },
+     {
+      "text": "Уникальный формат «Ленремонта» в СПб",
+      "above": "Мобильная мастерская у вашего дома",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 5359
+     },
+     {
+      "text": "Защита от «частников по объявлению»",
+      "above": "Гарантии и личная ответственность",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 7102
+     },
+     {
+      "text": "Стационарная лабораторная база",
+      "above": "Где и на чём мы чиним ноутбуки",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 7904
+     },
+     {
+      "text": "Корпоративное обслуживание в СПб и ЛО",
+      "above": "Ремонт ноутбуков и компьютерного парка д",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 8612
+     },
+     {
+      "text": "25 филиалов рядом с метро во всех районах",
+      "above": "Карта и адреса сервисных центров в СПб",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 9198
+     },
+     {
+      "text": "Честные ответы до обращения",
+      "above": "Частые вопросы о ремонте ноутбуков",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 9937
+     },
+     {
+      "text": "Бесплатная консультация мастера за 3 минуты",
+      "above": "Узнайте точную стоимость ремонта до выез",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 10710
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f4f7fb",
+     "bodyBgHsl": {
+      "h": 214,
+      "s": 0.47,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#071326",
+       "top": 92,
+       "hsl": {
+        "h": 217,
+        "s": 0.69,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 1036,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f4f7fb",
+       "top": 1950,
+       "hsl": {
+        "h": 214,
+        "s": 0.47,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#475569",
+       "share": 0.41
+      },
+      {
+       "color": "#0f172a",
+       "share": 0.21
+      },
+      {
+       "color": "#cbd5e1",
+       "share": 0.09
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#64748b",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#f8fafc",
+      "hsl": {
+       "h": 210,
+       "s": 0.4,
+       "l": 0.98
+      },
+      "fg": "#0046a8"
+     },
+     "lowContrast": [
+      {
+       "text": "★★★★★",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#f59e0b",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#f59e0b",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#f59e0b",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#f59e0b",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 74,
+     "inHero": 5,
+     "radius": 12,
+     "height": 38,
+     "withShadow": 5,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "(812) 344-44-44",
+      "Узнать стоимость",
+      "Оставить заявку",
+      "Позвонить",
+      "Узнать стоимость"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 50,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "div.hero-video-stage → rgba(0, 0, 0, 0.5) 0px 12px 28px -8px",
+      "button.btn-primary-gold → rgba(255, 210, 0, 0.35) 0px 8px 20px -4px",
+      "div.award-doc-thumb → rgba(15, 23, 42, 0.08) 0px 2px 5px 0px",
+      "div.award-doc-thumb → rgba(15, 23, 42, 0.08) 0px 2px 5px 0px"
+     ],
+     "gradients": 12,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.hero-stage-gradient → linear-gradient(rgba(7, 19, 38, 0.1) 0%, rgba(7, 19, 38, 0.32) 52%, rgba(7, 19, 38, 0.88) 100%)",
+      "div.wwf-media-overlay → linear-gradient(rgba(7, 19, 38, 0.08) 0%, rgba(7, 19, 38, 0.88) 100%)",
+      "div.wwf-media-overlay → linear-gradient(rgba(7, 19, 38, 0.08) 0%, rgba(7, 19, 38, 0.88) 100%)",
+      "div.wwf-media-overlay → linear-gradient(rgba(7, 19, 38, 0.08) 0%, rgba(7, 19, 38, 0.88) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 40,
+     "hairlineSamples": [
+      "div.b2b-top-strip 1440px",
+      "header.site-header 1440px",
+      "div.hero-messengers-block 640px",
+      "div.brands-top-bar 1440px",
+      "section#lr-reviews.section.section-white 1440px"
+     ],
+     "outlinedBoxes": 40,
+     "dashed": 0,
+     "blurred": 12,
+     "roundedBoxes": 45,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 17,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 1228
+      },
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 1501
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2195
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4251
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 7205
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 8062
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.09
+     },
+     {
+      "type": "video",
+      "ratio": 0.09
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 59,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "golos text",
+     "manrope"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 11201,
+    "margins": {
+     "left": 180,
+     "right": 180
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero-section",
+      "tag": "section",
+      "top": 92,
+      "height": 878,
+      "words": 147,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Починим ноутбук сегодня от 40 минут — диагностика",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 400,
+      "right": 400,
+      "textLeft": 400,
+      "textRight": 422,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-reviews.section.section-white",
+      "tag": "section",
+      "top": 1036,
+      "height": 914,
+      "words": 325,
+      "media": 4,
+      "middle": 29,
+      "heading": {
+       "text": "Отзывы и награды",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 180,
+      "right": 0,
+      "textLeft": 180,
+      "textRight": 180,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-what-we-fix.section.section-tinted",
+      "tag": "section",
+      "top": 1950,
+      "height": 789,
+      "words": 171,
+      "media": 6,
+      "middle": 727,
+      "heading": {
+       "text": "Что мы чиним и настраиваем",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 180,
+      "right": 0,
+      "textLeft": 180,
+      "textRight": 247,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-prices.section.section-white",
+      "tag": "section",
+      "top": 2739,
+      "height": 1244,
+      "words": 292,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Сколько стоит ремонт ноутбука",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 180,
+      "right": 199,
+      "textLeft": 180,
+      "textRight": 212,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-formats.section.section-tinted",
+      "tag": "section",
+      "top": 3983,
+      "height": 1251,
+      "words": 177,
+      "media": 8,
+      "middle": 22,
+      "heading": {
+       "text": "Способы ремонта и карта",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 180,
+      "right": 92,
+      "textLeft": 180,
+      "textRight": 201,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-lab.section.section-white",
+      "tag": "section",
+      "top": 5234,
+      "height": 1122,
+      "words": 59,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Мобильная мастерская у вашего дома",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 216,
+      "right": 216,
+      "textLeft": 216,
+      "textRight": 287,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-quiz.section.section-tinted",
+      "tag": "section",
+      "top": 6356,
+      "height": 657,
+      "words": 48,
+      "media": 0,
+      "middle": 175,
+      "heading": {
+       "text": "1. Что случилось с ноутбуком?",
+       "size": 19,
+       "tag": "h3"
+      },
+      "left": 401,
+      "right": 401,
+      "textLeft": 401,
+      "textRight": 401,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-advantages.section.section-white",
+      "tag": "section",
+      "top": 7013,
+      "height": 803,
+      "words": 131,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Гарантии и личная ответственность",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 180,
+      "right": 208,
+      "textLeft": 180,
+      "textRight": 225,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-equipment.section.section-tinted",
+      "tag": "section",
+      "top": 7816,
+      "height": 671,
+      "words": 111,
+      "media": 4,
+      "middle": 22,
+      "heading": {
+       "text": "Где и на чём мы чиним ноутбуки",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 180,
+      "right": 0,
+      "textLeft": 180,
+      "textRight": 180,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-b2b.section.section-white",
+      "tag": "section",
+      "top": 8487,
+      "height": 623,
+      "words": 106,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ремонт ноутбуков и компьютерного парка для бизнеса",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 216,
+      "right": 249,
+      "textLeft": 216,
+      "textRight": 249,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-all-workshops.section.section-tinted",
+      "tag": "section",
+      "top": 9110,
+      "height": 738,
+      "words": 126,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Карта и адреса сервисных центров в СПб",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 180,
+      "right": 181,
+      "textLeft": 180,
+      "textRight": 212,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-faq.section.section-white",
+      "tag": "section",
+      "top": 9848,
+      "height": 774,
+      "words": 313,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Частые вопросы о ремонте ноутбуков",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 180,
+      "right": 202,
+      "textLeft": 180,
+      "textRight": 202,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-contact.section",
+      "tag": "section",
+      "top": 10622,
+      "height": 491,
+      "words": 57,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Узнайте точную стоимость ремонта до выезда мастера",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 400,
+      "right": 402,
+      "textLeft": 400,
+      "textRight": 402,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Ремонт ноутбуков на дому или в сервисном центре в Санкт-Петербурге и ЛО",
+      "size": 12,
+      "top": 316,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 180,
+      "n": 13
+     },
+     {
+      "x": 195,
+      "n": 7
+     },
+     {
+      "x": 400,
+      "n": 6
+     },
+     {
+      "x": 216,
+      "n": 5
+     },
+     {
+      "x": 741,
+      "n": 4
+     },
+     {
+      "x": 551,
+      "n": 2
+     },
+     {
+      "x": 903,
+      "n": 2
+     },
+     {
+      "x": 290,
+      "n": 1
+     },
+     {
+      "x": 534,
+      "n": 1
+     },
+     {
+      "x": 869,
+      "n": 1
+     },
+     {
+      "x": 1204,
+      "n": 1
+     },
+     {
+      "x": 1255,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 44,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.2,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 360,
+     "h": 720
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    1,
+    1,
+    0.8,
+    0.93,
+    0.85,
+    0.87,
+    0.76,
+    0.85,
+    0.76,
+    0.82,
+    1
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 2,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 11262,
+     "screens": 11,
+     "words": 2020,
+     "img": 34,
+     "video": 2,
+     "canvas": 0,
+     "svg": 17,
+     "sections": 13,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 21,
+     "videoCount": 2,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "review-egor-computer-2026.jpg",
+      "review-ds-imac-2023.jpg",
+      "workshop-v4-diagnostics-1280.webp",
+      "workshop-v4-testing-1280.webp",
+      "failure-liquid.webp",
+      "laptop-board-diagnostics.webp",
+      "failure-impact.webp",
+      "failure-software.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 4,
+     "brokenImages": [],
+     "emoji": [
+      "★"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Починим ноутбук сегодня от 40 минут — диагностика бесплатно (0 ₽) даже при отказе",
+     "words": 14,
+     "chars": 81,
+     "lines": 4,
+     "size": 42,
+     "vw": 5.5,
+     "font": "Manrope",
+     "weight": 800,
+     "tracking": -0.025,
+     "leading": 1.13,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.83,
+     "top": 337,
+     "tag": "h2",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Ремонт ноутбуков на дому или в сервисном центре в Санкт-Петербурге и ЛО",
+     "words": 12,
+     "lines": 1,
+     "size": 12,
+     "font": "Golos Text"
+    },
+    "headings": [
+     {
+      "text": "Починим ноутбук сегодня от 40 минут — диагностика бесплатно (0 ₽) даже при отказе",
+      "words": 14,
+      "chars": 81,
+      "lines": 4,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.13,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 337,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Отзывы и награды",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 1148,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Что мы чиним и настраиваем",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.73,
+      "top": 2061,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Сколько стоит ремонт ноутбука",
+      "words": 4,
+      "chars": 29,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 2851,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Способы ремонта и карта",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.73,
+      "top": 4094,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Мобильная мастерская у вашего дома",
+      "words": 5,
+      "chars": 34,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 5382,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Гарантии и личная ответственность",
+      "words": 4,
+      "chars": 33,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 6946,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Где и на чём мы чиним ноутбуки",
+      "words": 7,
+      "chars": 30,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.73,
+      "top": 7807,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ремонт ноутбуков и компьютерного парка для бизнеса",
+      "words": 7,
+      "chars": 50,
+      "lines": 2,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 8515,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Карта и адреса сервисных центров в СПб",
+      "words": 7,
+      "chars": 38,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 9140,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Частые вопросы о ремонте ноутбуков",
+      "words": 5,
+      "chars": 34,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 10000,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Узнайте точную стоимость ремонта до выезда мастера",
+      "words": 7,
+      "chars": 50,
+      "lines": 2,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 10794,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 4,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Golos Text",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "Manrope",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      8,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      22,
+      24,
+      34,
+      42
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Golos Text",
+      "size": 13.5,
+      "leading": 1.42,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 12.5
+     },
+     "measureChars": 42,
+     "max": {
+      "size": 42,
+      "vw": 5.5,
+      "font": "Manrope",
+      "text": "Починим ноутбук сегодня от 40 минут — ди"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 12,
+     "microLabelShare": 0.029,
+     "microSamples": [
+      "4 783 проверенных отзыва",
+      "Решаем любую проблему в день обращения",
+      "Фиксируем сумму до начала ремонта",
+      "4 формата в СПб и ЛО",
+      "Уникальный формат «Ленремонта» в СПб",
+      "Защита от «частников по объявлению»"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0.06,
+     "smallText": 152
+    },
+    "eyebrows": [
+     {
+      "text": "4 783 проверенных отзыва",
+      "above": "Отзывы и награды",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 1125
+     },
+     {
+      "text": "Решаем любую проблему в день обращения",
+      "above": "Что мы чиним и настраиваем",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 2038
+     },
+     {
+      "text": "Фиксируем сумму до начала ремонта",
+      "above": "Сколько стоит ремонт ноутбука",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 2828
+     },
+     {
+      "text": "4 формата в СПб и ЛО",
+      "above": "Способы ремонта и карта",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 4071
+     },
+     {
+      "text": "Уникальный формат «Ленремонта» в СПб",
+      "above": "Мобильная мастерская у вашего дома",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 5359
+     },
+     {
+      "text": "Защита от «частников по объявлению»",
+      "above": "Гарантии и личная ответственность",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 6923
+     },
+     {
+      "text": "Стационарная лабораторная база",
+      "above": "Где и на чём мы чиним ноутбуки",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 7784
+     },
+     {
+      "text": "Корпоративное обслуживание в СПб и ЛО",
+      "above": "Ремонт ноутбуков и компьютерного парка д",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 8492
+     },
+     {
+      "text": "25 филиалов рядом с метро во всех районах",
+      "above": "Карта и адреса сервисных центров в СПб",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 9116
+     },
+     {
+      "text": "Честные ответы до обращения",
+      "above": "Частые вопросы о ремонте ноутбуков",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 9977
+     },
+     {
+      "text": "Бесплатная консультация мастера за 3 минуты",
+      "above": "Узнайте точную стоимость ремонта до выез",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 10771
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f4f7fb",
+     "bodyBgHsl": {
+      "h": 214,
+      "s": 0.47,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#071326",
+       "top": 92,
+       "hsl": {
+        "h": 217,
+        "s": 0.69,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 1036,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f4f7fb",
+       "top": 1950,
+       "hsl": {
+        "h": 214,
+        "s": 0.47,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#475569",
+       "share": 0.41
+      },
+      {
+       "color": "#0f172a",
+       "share": 0.21
+      },
+      {
+       "color": "#cbd5e1",
+       "share": 0.09
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#64748b",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#f8fafc",
+      "hsl": {
+       "h": 210,
+       "s": 0.4,
+       "l": 0.98
+      },
+      "fg": "#071326"
+     },
+     "lowContrast": [
+      {
+       "text": "★★★★★",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#f59e0b",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#f59e0b",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#f59e0b",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#f59e0b",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 76,
+     "inHero": 21,
+     "radius": 12,
+     "height": 38,
+     "withShadow": 7,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "(812) 344-44-44",
+      "Узнать стоимость",
+      "Оставить заявку",
+      "ВКонтакте",
+      "Telegram"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 50,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "div.hero-video-stage → rgba(0, 0, 0, 0.5) 0px 12px 28px -8px",
+      "button.btn-primary-gold → rgba(255, 210, 0, 0.35) 0px 8px 20px -4px",
+      "div.award-doc-thumb → rgba(15, 23, 42, 0.08) 0px 2px 5px 0px",
+      "div.award-doc-thumb → rgba(15, 23, 42, 0.08) 0px 2px 5px 0px"
+     ],
+     "gradients": 12,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.hero-stage-gradient → linear-gradient(rgba(7, 19, 38, 0.1) 0%, rgba(7, 19, 38, 0.32) 52%, rgba(7, 19, 38, 0.88) 100%)",
+      "div.wwf-media-overlay → linear-gradient(rgba(7, 19, 38, 0.08) 0%, rgba(7, 19, 38, 0.88) 100%)",
+      "div.wwf-media-overlay → linear-gradient(rgba(7, 19, 38, 0.08) 0%, rgba(7, 19, 38, 0.88) 100%)",
+      "div.wwf-media-overlay → linear-gradient(rgba(7, 19, 38, 0.08) 0%, rgba(7, 19, 38, 0.88) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 40,
+     "hairlineSamples": [
+      "div.b2b-top-strip 768px",
+      "header.site-header 768px",
+      "div.hero-messengers-block 640px",
+      "div.brands-top-bar 768px",
+      "section#lr-reviews.section.section-white 768px"
+     ],
+     "outlinedBoxes": 40,
+     "dashed": 0,
+     "blurred": 12,
+     "roundedBoxes": 46,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 17,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 1228
+      },
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 1501
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2195
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4251
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 7025
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 7941
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.15
+     },
+     {
+      "type": "video",
+      "ratio": 0.15
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 59,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "golos text",
+     "manrope"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 11262,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero-section",
+      "tag": "section",
+      "top": 92,
+      "height": 878,
+      "words": 147,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Починим ноутбук сегодня от 40 минут — диагностика",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 64,
+      "right": 64,
+      "textLeft": 64,
+      "textRight": 86,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-reviews.section.section-white",
+      "tag": "section",
+      "top": 1036,
+      "height": 914,
+      "words": 248,
+      "media": 4,
+      "middle": 327,
+      "heading": {
+       "text": "Отзывы и награды",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-what-we-fix.section.section-tinted",
+      "tag": "section",
+      "top": 1950,
+      "height": 789,
+      "words": 124,
+      "media": 6,
+      "middle": 1239,
+      "heading": {
+       "text": "Что мы чиним и настраиваем",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": 91,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-prices.section.section-white",
+      "tag": "section",
+      "top": 2739,
+      "height": 1244,
+      "words": 292,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Сколько стоит ремонт ноутбука",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 39,
+      "textLeft": 20,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-formats.section.section-tinted",
+      "tag": "section",
+      "top": 3983,
+      "height": 1251,
+      "words": 174,
+      "media": 8,
+      "middle": 153,
+      "heading": {
+       "text": "Способы ремонта и карта",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-lab.section.section-white",
+      "tag": "section",
+      "top": 5234,
+      "height": 943,
+      "words": 59,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Мобильная мастерская у вашего дома",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 56,
+      "right": 56,
+      "textLeft": 56,
+      "textRight": 79,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-quiz.section.section-tinted",
+      "tag": "section",
+      "top": 6177,
+      "height": 657,
+      "words": 48,
+      "media": 0,
+      "middle": 175,
+      "heading": {
+       "text": "1. Что случилось с ноутбуком?",
+       "size": 19,
+       "tag": "h3"
+      },
+      "left": 65,
+      "right": 65,
+      "textLeft": 65,
+      "textRight": 65,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-advantages.section.section-white",
+      "tag": "section",
+      "top": 6834,
+      "height": 862,
+      "words": 131,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Гарантии и личная ответственность",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 48,
+      "textLeft": 20,
+      "textRight": 65,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-equipment.section.section-tinted",
+      "tag": "section",
+      "top": 7696,
+      "height": 671,
+      "words": 89,
+      "media": 4,
+      "middle": 258,
+      "heading": {
+       "text": "Где и на чём мы чиним ноутбуки",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-b2b.section.section-white",
+      "tag": "section",
+      "top": 8367,
+      "height": 662,
+      "words": 106,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ремонт ноутбуков и компьютерного парка для бизнеса",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 56,
+      "right": 71,
+      "textLeft": 56,
+      "textRight": 71,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-all-workshops.section.section-tinted",
+      "tag": "section",
+      "top": 9028,
+      "height": 859,
+      "words": 126,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Карта и адреса сервисных центров в СПб",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-faq.section.section-white",
+      "tag": "section",
+      "top": 9888,
+      "height": 795,
+      "words": 308,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Частые вопросы о ремонте ноутбуков",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 42,
+      "textLeft": 20,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-contact.section",
+      "tag": "section",
+      "top": 10683,
+      "height": 491,
+      "words": 57,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Узнайте точную стоимость ремонта до выезда мастера",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 64,
+      "right": 66,
+      "textLeft": 64,
+      "textRight": 66,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Ремонт ноутбуков на дому или в сервисном центре в Санкт-Петербурге и ЛО",
+      "size": 12,
+      "top": 316,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 13
+     },
+     {
+      "x": 56,
+      "n": 10
+     },
+     {
+      "x": 35,
+      "n": 7
+     },
+     {
+      "x": 405,
+      "n": 4
+     },
+     {
+      "x": 391,
+      "n": 2
+     },
+     {
+      "x": 72,
+      "n": 1
+     },
+     {
+      "x": 130,
+      "n": 1
+     },
+     {
+      "x": 374,
+      "n": 1
+     },
+     {
+      "x": 709,
+      "n": 1
+     },
+     {
+      "x": 743,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 41,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    1,
+    0.87,
+    1,
+    1,
+    0.75,
+    0.93,
+    0.81,
+    1,
+    0.68,
+    0.92,
+    0.86
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 2,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 11724,
+     "screens": 13.9,
+     "words": 2020,
+     "img": 34,
+     "video": 2,
+     "canvas": 0,
+     "svg": 17,
+     "sections": 13,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 21,
+     "videoCount": 2,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "review-egor-computer-2026.jpg",
+      "review-ds-imac-2023.jpg",
+      "workshop-v4-diagnostics-1280.webp",
+      "workshop-v4-testing-1280.webp",
+      "failure-liquid.webp",
+      "laptop-board-diagnostics.webp",
+      "failure-impact.webp",
+      "failure-software.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 5,
+     "brokenImages": [],
+     "emoji": [
+      "★"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Починим ноутбук сегодня от 40 минут — диагностика бесплатно (0 ₽) даже при отказе",
+     "words": 14,
+     "chars": 81,
+     "lines": 4,
+     "size": 22.6,
+     "vw": 5.8,
+     "font": "Manrope",
+     "weight": 800,
+     "tracking": -0.025,
+     "leading": 1.13,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 255,
+     "tag": "h2",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Ремонт ноутбуков на дому или в сервисном центре в Санкт-Петербурге и ЛО",
+     "words": 12,
+     "lines": 2,
+     "size": 12,
+     "font": "Golos Text"
+    },
+    "headings": [
+     {
+      "text": "Починим ноутбук сегодня от 40 минут — диагностика бесплатно (0 ₽) даже при отказе",
+      "words": 14,
+      "chars": 81,
+      "lines": 4,
+      "size": 22.6,
+      "vw": 5.8,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.025,
+      "leading": 1.13,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 255,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Отзывы и награды",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 1062,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "5,0",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.09,
+      "top": 1131,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "4,9",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.09,
+      "top": 1131,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "4,9",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.09,
+      "top": 1131,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Что мы чиним и настраиваем",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 1906,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Сколько стоит ремонт ноутбука",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2629,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Способы ремонта и карта",
+      "words": 4,
+      "chars": 23,
+      "lines": 2,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 4470,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Мобильная мастерская у вашего дома",
+      "words": 5,
+      "chars": 34,
+      "lines": 2,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 5295,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Гарантии и личная ответственность",
+      "words": 4,
+      "chars": 33,
+      "lines": 2,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6699,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "0 ₽",
+      "words": 2,
+      "chars": 3,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 6797,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "365 дней",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.36,
+      "top": 6797,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "25 СЦ",
+      "words": 2,
+      "chars": 5,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 6983,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "100%",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.36,
+      "top": 6983,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Где и на чём мы чиним ноутбуки",
+      "words": 7,
+      "chars": 30,
+      "lines": 2,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.66,
+      "top": 7697,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ремонт ноутбуков и компьютерного парка для бизнеса",
+      "words": 7,
+      "chars": 50,
+      "lines": 3,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 8376,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Карта и адреса сервисных центров в СПб",
+      "words": 7,
+      "chars": 38,
+      "lines": 2,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 9177,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Частые вопросы о ремонте ноутбуков",
+      "words": 5,
+      "chars": 34,
+      "lines": 2,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 10312,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Узнайте точную стоимость ремонта до выезда мастера",
+      "words": 7,
+      "chars": 50,
+      "lines": 2,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Manrope",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 11250,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 19,
+     "maxLines": 4,
+     "over2Lines": 2,
+     "statements": 0,
+     "centered": 3,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Golos Text",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "Manrope",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      8,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      22,
+      23,
+      24
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Golos Text",
+      "size": 13.5,
+      "leading": 1.42,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 12.5
+     },
+     "measureChars": 37,
+     "max": {
+      "size": 24,
+      "vw": 6.2,
+      "font": "Manrope",
+      "text": "5,0"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 12,
+     "microLabelShare": 0.029,
+     "microSamples": [
+      "4 783 проверенных отзыва",
+      "Решаем любую проблему в день обращения",
+      "Фиксируем сумму до начала ремонта",
+      "4 формата в СПб и ЛО",
+      "Уникальный формат «Ленремонта» в СПб",
+      "Защита от «частников по объявлению»"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0.06,
+     "smallText": 152
+    },
+    "eyebrows": [
+     {
+      "text": "Выезд 60 мин",
+      "above": "Починим ноутбук сегодня от 40 минут — ди",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 11,
+      "top": 177
+     },
+     {
+      "text": "4 783 проверенных отзыва",
+      "above": "Отзывы и награды",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 1038
+     },
+     {
+      "text": "Решаем любую проблему в день обращения",
+      "above": "Что мы чиним и настраиваем",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 1882
+     },
+     {
+      "text": "Фиксируем сумму до начала ремонта",
+      "above": "Сколько стоит ремонт ноутбука",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 2606
+     },
+     {
+      "text": "4 формата в СПб и ЛО",
+      "above": "Способы ремонта и карта",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 4446
+     },
+     {
+      "text": "Уникальный формат «Ленремонта» в СПб",
+      "above": "Мобильная мастерская у вашего дома",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 5272
+     },
+     {
+      "text": "Защита от «частников по объявлению»",
+      "above": "Гарантии и личная ответственность",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 6676
+     },
+     {
+      "text": "Стационарная лабораторная база",
+      "above": "Где и на чём мы чиним ноутбуки",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 7674
+     },
+     {
+      "text": "Корпоративное обслуживание в СПб и ЛО",
+      "above": "Ремонт ноутбуков и компьютерного парка д",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 8353
+     },
+     {
+      "text": "25 филиалов рядом с метро во всех районах",
+      "above": "Карта и адреса сервисных центров в СПб",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 9154
+     },
+     {
+      "text": "Честные ответы до обращения",
+      "above": "Частые вопросы о ремонте ноутбуков",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 10288
+     },
+     {
+      "text": "Бесплатная консультация мастера за 3 минуты",
+      "above": "Узнайте точную стоимость ремонта до выез",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11.5,
+      "top": 11227
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f4f7fb",
+     "bodyBgHsl": {
+      "h": 214,
+      "s": 0.47,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#071326",
+       "top": 92,
+       "hsl": {
+        "h": 217,
+        "s": 0.69,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 981,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f4f7fb",
+       "top": 1826,
+       "hsl": {
+        "h": 214,
+        "s": 0.47,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#475569",
+       "share": 0.41
+      },
+      {
+       "color": "#0f172a",
+       "share": 0.21
+      },
+      {
+       "color": "#cbd5e1",
+       "share": 0.09
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#64748b",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#f8fafc",
+      "hsl": {
+       "h": 210,
+       "s": 0.4,
+       "l": 0.98
+      },
+      "fg": "#071326"
+     },
+     "lowContrast": [
+      {
+       "text": "★★★★★",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#f59e0b",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#f59e0b",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#f59e0b",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "★★★★★",
+       "ratio": 2.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#f59e0b",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 76,
+     "inHero": 5,
+     "radius": 12,
+     "height": 38,
+     "withShadow": 7,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "(812) 344-44-44",
+      "Узнать стоимость",
+      "Оставить заявку",
+      "Позвонить",
+      "Узнать стоимость"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 50,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "div.hero-video-stage → rgba(0, 0, 0, 0.5) 0px 12px 28px -8px",
+      "button.btn-primary-gold → rgba(255, 210, 0, 0.35) 0px 8px 20px -4px",
+      "div.award-doc-thumb → rgba(15, 23, 42, 0.08) 0px 2px 5px 0px",
+      "div.award-doc-thumb → rgba(15, 23, 42, 0.08) 0px 2px 5px 0px"
+     ],
+     "gradients": 12,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.hero-stage-gradient → linear-gradient(rgba(7, 19, 38, 0.1) 0%, rgba(7, 19, 38, 0.32) 52%, rgba(7, 19, 38, 0.88) 100%)",
+      "div.wwf-media-overlay → linear-gradient(rgba(7, 19, 38, 0.08) 0%, rgba(7, 19, 38, 0.88) 100%)",
+      "div.wwf-media-overlay → linear-gradient(rgba(7, 19, 38, 0.08) 0%, rgba(7, 19, 38, 0.88) 100%)",
+      "div.wwf-media-overlay → linear-gradient(rgba(7, 19, 38, 0.08) 0%, rgba(7, 19, 38, 0.88) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 40,
+     "hairlineSamples": [
+      "div.b2b-top-strip 390px",
+      "header.site-header 390px",
+      "div.hero-messengers-block 350px",
+      "div.brands-top-bar 390px",
+      "section#lr-reviews.section.section-white 390px"
+     ],
+     "outlinedBoxes": 43,
+     "dashed": 0,
+     "blurred": 12,
+     "roundedBoxes": 50,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 15,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 1410
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2038
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4673
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 6780
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 7878
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 8567
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 10393
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.11
+     },
+     {
+      "type": "video",
+      "ratio": 0.11
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 59,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "golos text",
+     "manrope"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 11724,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero-section",
+      "tag": "section",
+      "top": 92,
+      "height": 823,
+      "words": 147,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Починим ноутбук сегодня от 40 минут — диагностика",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-reviews.section.section-white",
+      "tag": "section",
+      "top": 981,
+      "height": 845,
+      "words": 176,
+      "media": 4,
+      "middle": 590,
+      "heading": {
+       "text": "5,0",
+       "size": 24,
+       "tag": "span"
+      },
+      "left": 20,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-what-we-fix.section.section-tinted",
+      "tag": "section",
+      "top": 1826,
+      "height": 723,
+      "words": 111,
+      "media": 6,
+      "middle": 1366,
+      "heading": {
+       "text": "Что мы чиним и настраиваем",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-prices.section.section-white",
+      "tag": "section",
+      "top": 2549,
+      "height": 1841,
+      "words": 292,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Сколько стоит ремонт ноутбука",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 25,
+      "textLeft": 20,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-formats.section.section-tinted",
+      "tag": "section",
+      "top": 4390,
+      "height": 800,
+      "words": 92,
+      "media": 4,
+      "middle": 803,
+      "heading": {
+       "text": "Способы ремонта и карта",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-lab.section.section-white",
+      "tag": "section",
+      "top": 5191,
+      "height": 757,
+      "words": 59,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Мобильная мастерская у вашего дома",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-quiz.section.section-tinted",
+      "tag": "section",
+      "top": 5948,
+      "height": 671,
+      "words": 48,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "1. Что случилось с ноутбуком?",
+       "size": 19,
+       "tag": "h3"
+      },
+      "left": 41,
+      "right": 41,
+      "textLeft": 41,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-advantages.section.section-white",
+      "tag": "section",
+      "top": 6619,
+      "height": 999,
+      "words": 131,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Гарантии и личная ответственность",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 36,
+      "textLeft": 20,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-equipment.section.section-tinted",
+      "tag": "section",
+      "top": 7618,
+      "height": 654,
+      "words": 66,
+      "media": 4,
+      "middle": 551,
+      "heading": {
+       "text": "Где и на чём мы чиним ноутбуки",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-b2b.section.section-white",
+      "tag": "section",
+      "top": 8272,
+      "height": 826,
+      "words": 106,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ремонт ноутбуков и компьютерного парка для бизнеса",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 39,
+      "textLeft": 40,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-all-workshops.section.section-tinted",
+      "tag": "section",
+      "top": 9098,
+      "height": 1134,
+      "words": 126,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Карта и адреса сервисных центров в СПб",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-faq.section.section-white",
+      "tag": "section",
+      "top": 10231,
+      "height": 939,
+      "words": 245,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Частые вопросы о ремонте ноутбуков",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 43,
+      "textLeft": 20,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#lr-contact.section",
+      "tag": "section",
+      "top": 11171,
+      "height": 465,
+      "words": 57,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Узнайте точную стоимость ремонта до выезда мастера",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 11,
+      "textLeft": 20,
+      "textRight": 11,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Ремонт ноутбуков на дому или в сервисном центре в Санкт-Петербурге и ЛО",
+      "size": 12,
+      "top": 218,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "Бесплатная консультация мастера за 3 минуты",
+      "side": "right",
+      "px": 11
+     }
+    ],
+    "edges": [
+     {
+      "x": 20,
+      "n": 18
+     },
+     {
+      "x": 35,
+      "n": 11
+     },
+     {
+      "x": 346,
+      "n": 3
+     },
+     {
+      "x": 216,
+      "n": 2
+     },
+     {
+      "x": 52,
+      "n": 1
+     },
+     {
+      "x": 120,
+      "n": 1
+     },
+     {
+      "x": 359,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 37,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "1 headline(s) wrap past two lines at 1440px: \"Починим ноутбук сегодня от 40 минут — диагностик\" → 4 lines (14 words, 42px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "hero-words",
+   "width": 1440,
+   "message": "Hero headline is 14 words (\"Починим ноутбук сегодня от 40 минут — диагностика бесплатно \"). Gallery median is 5.",
+   "fix": "Say the one thing. Move the rest to the supporting line.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "11 eyebrow/kicker label(s) above headings: \"4 783 проверенных отзыва\" above \"Отзывы и награды\"; \"Решаем любую проблему в день обращения\" above \"Что мы чиним и настраиваем\"; \"Фиксируем сумму до начала ремонта\" above \"Сколько стоит ремонт ноутбука\"; \"4 формата в СПб и ЛО\" above \"Способы ремонта и карта\"; \"Уникальный формат «Ленремонта» в СПб\" above \"Мобильная мастерская у вашего дома\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "12 tiny uppercase letter-spaced labels (e.g. \"4 783 проверенных отзыва\", \"Решаем любую проблему в день обращения\", \"Фиксируем сумму до начала ремонта\", \"4 формата в СПб и ЛО\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ★",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "12 gradient fill(s): div.hero-stage-gradient → linear-gradient(rgba(7, 19, 38, 0.1) 0%, rgba(7, 19, 38, 0.32) 52%, rgba(7, 19, 38, 0.88) 100%) | div.wwf-media-overlay → linear-gradient(rgba(7, 19, 38, 0.08) 0%, rgba(7, 19, 38, 0.88) 100%) | div.wwf-media-overlay → linear-gradient(rgba(7, 19, 38, 0.08) 0%, rgba(7, 19, 38, 0.88) 100%)",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "50 box-shadow(s) on elements at rest: div.hero-video-stage → rgba(0, 0, 0, 0.5) 0px 12px 28px -8px | button.btn-primary-gold → rgba(255, 210, 0, 0.35) 0px 8px 20px -4px | div.award-doc-thumb → rgba(15, 23, 42, 0.08) 0px 2px 5px 0px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 1440,
+   "message": "Buttons with shadow/glow.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "40 thin rule(s)/divider line(s): div.b2b-top-strip 1440px | header.site-header 1440px | div.hero-messengers-block 640px | div.brands-top-bar 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "40 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "glass",
+   "width": 1440,
+   "message": "12 backdrop-blur surfaces.",
+   "fix": "One blurred sticky bar at most; glass cards are a tell.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "2 row(s) of identical cards each topped with a small icon (3, 4 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Unreadable text: \"★★★★★\" 2.1:1 (#f59e0b on #ffffff); \"★★★★★\" 2.1:1 (#f59e0b on #ffffff); \"★★★★★\" 2.1:1 (#f59e0b on #ffffff); \"★★★★★\" 2.1:1 (#f59e0b on #ffffff)",
+   "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "14 different font sizes (8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 22, 24, 34, 42).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 13.5px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 1440,
+   "message": "3 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "152 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 42px (2.9vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw."
+  },
+  {
+   "level": "WARN",
+   "id": "empty-middle",
+   "width": 1440,
+   "message": "1 section(s) have content at both edges and 727px of nothing between: \"Что мы чиним и настраиваем\"",
+   "fix": "Bring the two parts together on the grid, or put the picture or figure of the section in the middle. An empty middle third reads as a hole, the same as an empty half.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "small-title",
+   "width": 1440,
+   "message": "The h1 is 12px (\"Ремонт ноутбуков на дому или в сервисном центре в \").",
+   "fix": "Set the title at display size, or make the large text of the first screen the h1.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 1440,
+   "message": "Left-aligned text starts at 12 different lines (180px, 195px, 400px, 216px, 741px, 551px, 903px); the three most used hold only 59% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 1440,
+   "message": "Large text lies under another element at some scroll position: \"Мобильная мастерская у вашего дома\" (screen 6, 100% hidden); \"Гарантии и личная ответственность\" (screen 8, 50% hidden); \"Узнайте точную стоимость ремонта до выезда масте\" (screen 12, 100% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 0 element(s) moved while the page loaded and scrolled (plus 1 playing video).",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 768,
+   "message": "1 headline(s) wrap past two lines at 768px: \"Починим ноутбук сегодня от 40 минут — диагностик\" → 4 lines (14 words, 42px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "2 headline(s) wrap past two lines at 390px: \"Починим ноутбук сегодня от 40 минут — диагностик\" → 4 lines (14 words, 22.6px); \"Ремонт ноутбуков и компьютерного парка для бизне\" → 3 lines (7 words, 23px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 390,
+   "message": "1 text block(s) sit within 12px of the screen edge: \"Бесплатная консультация мастер\" (11px from the right)",
+   "fix": "Keep text inside the page margin (16–20px). Only display type deliberately bled past the edge may touch it."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\desktop-fold.jpg",
+   "pages": [
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\desktop-page-01.jpg",
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\desktop-page-02.jpg",
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\tablet-fold.jpg",
+   "pages": [
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\tablet-page-01.jpg",
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\mobile-fold.jpg",
+   "pages": [
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\mobile-page-01.jpg",
+    "D:\\works\\projects\\lr-remont-noutbykov\\artifacts\\landings-review-2026-11-03\\reference-local-inspect\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

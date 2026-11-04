@@ -1,6 +1,10 @@
 ---
 import SocialLinks from "./SocialLinks.astro";
 import copy from "../../data/laptop-service.json";
+interface Props {
+  messengerText?: string;
+}
+const { messengerText = "" } = Astro.props;
 ---
 
 <div
@@ -25,6 +29,6 @@ import copy from "../../data/laptop-service.json";
       >
       {copy.contact.fields["Телефон"]}
     </a>
-    <SocialLinks title="Или напишите нам в мессенджере" text="" />
+    <SocialLinks title="Или напишите нам в мессенджере" text={messengerText} />
   </div>
 </div>

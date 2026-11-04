@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-02",
+  "checks": [
+    {
+      "taskId": "card-037",
+      "sourceUrl": "https://yandex.ru/maps/org/lenremont/147829209306/reviews/",
+      "purpose": "Independent check that zero laptop findings were not just a keyword-only rejection of ambiguous photo reviews.",
+      "reviewCardsWithMedia": 7,
+      "attachedImagePreviews": 9,
+      "findings": "Coordinator read the seven actual review containers that contain business-review-media images. Six explicitly describe refrigerators (purchase or repair); one describes plumbing work. There are no device-ambiguous text/photo candidates in these seven. No images from the general gallery were attributed to reviews. This check did not re-open the nine non-laptop originals and does not assert their detailed visual content.",
+      "ambiguousLaptopPhotoCandidates": 0
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "taskId": "card-047",
+  "checkedAt": "2026-11-02",
+  "browser": {
+    "ownTabId": "2080318507",
+    "result": "net::ERR_CERT_AUTHORITY_INVALID",
+    "warningBypassed": false
+  },
+  "observations": [
+    {
+      "source": "https://otzovikkrd23.ru/lenremont-otzyvy/",
+      "method": "independent search index",
+      "pagePublished": "2025-05-22",
+      "observed": "Индекс показывает оглавление до 26 и тематические разделы 11 и 25; это не точный размер корпуса и не доказанный конец."
+    },
+    {
+      "source": "https://www.otzyvru.com/lenremont/review-2017163",
+      "method": "separate search result",
+      "observed": "Наблюдён ID оригинала; совпадают текст, дата, заголовок и ответ. Ссылка с зеркала не наблюдалась."
+    },
+    {
+      "source": "https://www.otzyvru.com/lenremont/review-1951259",
+      "method": "coordinator provided",
+      "observed": "Не наблюдался в индексе зеркала; связь сообщена координатором."
+    }
+  ],
+  "counts": {
+    "reportedTotal": null,
+    "examinedReviews": null,
+    "confirmedThematicRecords": 2,
+    "downloadedPhotos": 0,
+    "visuallyVerifiedPhotos": 0,
+    "photoMentionCandidates": 1
+  },
+  "photos": {
+    "files": [],
+    "visualDescription": null,
+    "candidate": "Ответ компании к записи 20.01.2025: упоминание до/после. Один кандидат вложений; не четыре новых фото. Оригиналы в этом задании недоступны."
+  },
+  "limitations": [
+    "Сертификат Chrome не принят; обходов и HTTP нет.",
+    "web.open и web.find: Cache miss.",
+    "Нет живого DOM, раскрытий, сортировок или доказанного конца.",
+    "Нет полных копий отзывов, cookies, ключей, данных аккаунта."
+  ]
+}

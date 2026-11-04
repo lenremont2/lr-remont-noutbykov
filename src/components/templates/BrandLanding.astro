@@ -2,24 +2,23 @@
 import LandingLayout from "../../layouts/LandingLayout.astro";
 import Hero from "../sections/Hero.astro";
 import Symptoms from "../sections/Symptoms.astro";
-import RepairTimeline from "../sections/RepairTimeline.astro";
-import Benefits from "../sections/Benefits.astro";
 import RepairFormats from "../sections/RepairFormats.astro";
-import RepairProcess from "../sections/RepairProcess.astro";
-import SecurityRules from "../sections/SecurityRules.astro";
+import HomePricing from "../sections/HomePricing.astro";
+import RepairQuiz from "../sections/RepairQuiz.astro";
+import QuizModal from "../sections/QuizModal.astro";
+import HomeRepairJourney from "../sections/HomeRepairJourney.astro";
+import MobileLab from "../sections/MobileLab.astro";
+import WorkshopGallery from "../sections/WorkshopGallery.astro";
+import BusinessTrust from "../sections/BusinessTrust.astro";
+import Locations from "../sections/Locations.astro";
 import HomeProtection from "../sections/HomeProtection.astro";
 import Reviews from "../sections/Reviews.astro";
 import LeadCapture from "../sections/LeadCapture.astro";
 import Breadcrumbs from "../ui/Breadcrumbs.astro";
-import ServicePriceTable from "../ui/ServicePriceTable.astro";
-import ServiceFaq from "../ui/ServiceFaq.astro";
+import Faq from "../sections/Faq.astro";
 import RelatedServices from "../ui/RelatedServices.astro";
-import {
-  getSeo,
-  pagePath,
-  standardPrices,
-  type BrandPage,
-} from "../../data/service-pages";
+import home from "../../data/home-copy.json";
+import { getSeo, pagePath, type BrandPage } from "../../data/service-pages";
 interface Props {
   page: BrandPage;
 }
@@ -29,19 +28,29 @@ const { page } = Astro.props;
 <LandingLayout {...getSeo(page)}>
   <div class="lr-brand-page">
     <Breadcrumbs current={page.label} />
-    <Hero brand={page} />
-    <Reviews />
-    <Symptoms compact />
-    <RepairTimeline />
-    <Benefits />
-    <RepairFormats linkToLocations={false} />
-    <RepairProcess />
-    <SecurityRules />
-    <HomeProtection securityAnchor={false} />
-    <ServicePriceTable
-      title={"Стоимость работ по ремонту " + page.label}
-      rows={standardPrices}
+    <Hero brand={page} variant="home" />
+    <Symptoms
+      compact
+      grouped
+      extraFaults
+      title={`Неисправности ноутбуков ${page.label}`}
+      lead={home.symptoms.lead}
     />
+    <RepairFormats journey />
+    <Reviews scrollScene title="Отзывы и награды" homeVariant />
+    <HomePricing
+      title={`Сколько стоит ремонт ноутбука ${page.label}`}
+      lead={`${home.prices.lead} Указана стоимость работы без запчастей.`}
+      groups={[{ ...home.prices.groups[0], title: `Ноутбуки ${page.label}` }]}
+      bonus={home.prices.bonus}
+    />
+    <RepairQuiz brand={page} />
+    <HomeRepairJourney />
+    <MobileLab />
+    <WorkshopGallery />
+    <BusinessTrust businessOnly />
+    <HomeProtection withDirector />
+    <Locations />
     <section
       id="lr-brand-guide"
       class="lr-section lr-brand-guide"
@@ -70,14 +79,27 @@ const { page } = Astro.props;
         </details>
       </div>
     </section>
-    <ServiceFaq items={page.faq} />
+    <Faq
+      showQuestion={false}
+      title={`Вопросы о ремонте ноутбуков ${page.label}`}
+      items={page.faq.map(({ question, answer }) => ({
+        title: question,
+        text: answer,
+      }))}
+    />
     <RelatedServices current={pagePath(page)} />
     <LeadCapture
+      compactModal
+      compactChannels
+      scrollScene
+      eyebrow={home.contact.eyebrow}
+      messengerText={home.contact.messengerText}
       title={page.contactTitle ??
         "Обсудим неисправность и стоимость ремонта " + page.label}
       lead={page.contactLead ??
         "Назовите модель и симптомы. Уточним удобный способ передачи ноутбука, а после диагностики согласуем работы и полную стоимость."}
       serviceName={"Ремонт ноутбуков " + page.label}
     />
+    <QuizModal />
   </div>
 </LandingLayout>

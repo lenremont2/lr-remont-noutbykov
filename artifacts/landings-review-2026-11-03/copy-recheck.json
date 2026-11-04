@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-11-03",
+  "punctuationAdaptation": {
+    "Бесплатно — даже при отказе от ремонта": "Бесплатно, даже при отказе от ремонта"
+  },
+  "results": [
+    {
+      "sourceId": "top",
+      "targetId": "lr-hero",
+      "checked": 12,
+      "missing": []
+    },
+    {
+      "sourceId": "lr-what-we-fix",
+      "targetId": "lr-symptoms",
+      "checked": 56,
+      "missing": []
+    },
+    {
+      "sourceId": "lr-prices",
+      "targetId": "lr-prices",
+      "checked": 48,
+      "missing": []
+    },
+    {
+      "sourceId": "lr-formats",
+      "targetId": "lr-formats",
+      "checked": 13,
+      "missing": []
+    },
+    {
+      "sourceId": "lr-lab",
+      "targetId": "lr-lab",
+      "checked": 5,
+      "missing": []
+    },
+    {
+      "sourceId": "lr-quiz",
+      "targetId": "lr-quiz",
+      "checked": 8,
+      "missing": []
+    },
+    {
+      "sourceId": "lr-advantages",
+      "targetId": "lr-guarantee",
+      "checked": 14,
+      "missing": []
+    },
+    {
+      "sourceId": "lr-equipment",
+      "targetId": "lr-workshop-gallery",
+      "checked": 10,
+      "missing": []
+    },
+    {
+      "sourceId": "lr-b2b",
+      "targetId": "lr-business-trust",
+      "checked": 10,
+      "missing": []
+    },
+    {
+      "sourceId": "lr-all-workshops",
+      "targetId": "lr-locations",
+      "checked": 2,
+      "missing": []
+    },
+    {
+      "sourceId": "lr-faq",
+      "targetId": "lr-faq",
+      "checked": 33,
+      "missing": []
+    },
+    {
+      "sourceId": "lr-contact",
+      "targetId": "lr-contact",
+      "checked": 3,
+      "missing": []
+    }
+  ],
+  "checkedFragments": 214,
+  "missingFragments": []
+}

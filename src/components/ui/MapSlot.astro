@@ -1,0 +1,24 @@
+---
+interface Props {
+  id: string;
+  type: "workshops" | "address";
+}
+const { id, type } = Astro.props;
+// shortcut: карты остаются заглушками до подключения шорткодов плагина.
+const label = type === "workshops" ? "Карта мастерских" : "Выбор адреса";
+---
+
+<div id={id} class="lr-map-slot" data-lr-map-slot={type} aria-label={label}>
+  <div class="lr-location-map lr-location-map--pending" data-lr-map-placeholder>
+    <span class="lr-map-slot__pin" aria-hidden="true">⌖</span>
+    <strong>{label}</strong>
+    <p>
+      {
+        type === "workshops"
+          ? "Здесь появятся адреса сервисов"
+          : "Здесь можно будет выбрать адрес выезда или доставки"
+      }
+    </p>
+    <p class="lr-caption">Карта пока не подключена</p>
+  </div>
+</div>

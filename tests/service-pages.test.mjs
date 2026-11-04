@@ -17,6 +17,9 @@ const source = JSON.parse(
   ),
 );
 const pages = [...content.brands, ...content.problems, content.macbook];
+const homeCopy = JSON.parse(
+  readFileSync(new URL("../src/data/home-copy.json", import.meta.url), "utf8"),
+);
 assert.equal(content.brands.length, 39);
 const originalBrands = content.brands.slice(0, 9);
 assert.equal(new Set(originalBrands.map((page) => page.heroImage)).size, 9);
@@ -123,8 +126,8 @@ for (const page of pages) {
   const serviceHeroText = serviceHero
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ");
-  assert.match(serviceHeroText, /диагностика в мастерской/i, page.slug);
-  assert.match(serviceHeroText, /0 ₽/, page.slug);
+  assert.match(serviceHeroText, /диагностика/i, page.slug);
+  assert.match(serviceHeroText, /0 ₽|бесплатн/, page.slug);
   assert.match(serviceHeroText, /даже при отказе от ремонта/i, page.slug);
   assert.ok(
     html.includes('href="whatsapp://send?phone=78127023333"'),
@@ -142,26 +145,13 @@ for (const page of pages) {
       page.h1,
       page.slug,
     );
-    assert.ok(
-      hero.indexOf("data-lr-hero-cta") < hero.indexOf('class="lr-hero__photo"'),
-      `The service action must precede the photograph in reading order: ${page.slug}`,
-    );
+    assert.ok(hero.includes("lr-hero--reference"), page.slug);
     assert.ok(hero.includes(page.lead), page.slug);
-    assert.ok(hero.includes("lr-hero__brand-time"), page.slug);
-    assert.ok(
-      hero.includes(
-        page.repairTimeNote ??
-          source.hero.fields["Срок ремонта"].split(" всего за ")[1],
-      ),
-      page.slug,
-    );
-    for (const fact of [
-      "Диагностика ноутбука — 0 ₽ в мастерской",
-      "Восстанавливаем платы ноутбуков",
-      "Гарантия на ремонт — 1 год",
-      "Проверяете ноутбук до оплаты",
-    ])
-      assert.ok(hero.includes(fact), page.slug);
+    for (const fact of homeCopy.hero.bullets)
+      assert.ok(
+        hero.includes(fact.title) && hero.includes(fact.text),
+        page.slug,
+      );
     for (const channel of ["ВКонтакте", "Telegram", "MAX", "WhatsApp"]) {
       assert.ok(hero.includes(channel), page.slug);
     }
@@ -178,10 +168,10 @@ for (const page of pages) {
       hero.includes('data-source="brand:' + page.label + '"'),
       page.slug,
     );
-    assert.ok(hero.includes('href="#lr-formats"'), page.slug);
+    assert.ok(hero.includes('href="#lr-quiz"'), page.slug);
     assert.ok(
       !hero.includes("<video") &&
-        hero.includes("lr-hero__facts") &&
+        hero.includes("lr-hero__benefits") &&
         hero.includes("lr-quick-contacts"),
       page.slug,
     );
@@ -243,30 +233,47 @@ for (const page of pages) {
   const guideId = content.problems.includes(page)
     ? "lr-problem-guide"
     : "lr-brand-guide";
-  const sections = !content.problems.includes(page)
+  const sections = content.brands.includes(page)
     ? [
         "lr-hero",
-        "lr-reviews",
         "lr-symptoms",
-        "lr-timeline",
-        "lr-benefits",
         "lr-formats",
-        "lr-process",
-        "lr-security",
-        "lr-guarantee",
+        "lr-reviews",
         "lr-prices",
+        "lr-quiz",
+        "lr-process",
+        "lr-lab",
+        "lr-workshop-gallery",
+        "lr-business-trust",
+        "lr-guarantee",
+        "lr-locations",
         guideId,
         "lr-faq",
       ]
-    : [
-        "lr-hero",
-        "lr-reviews",
-        guideId,
-        "lr-formats",
-        "lr-prices",
-        "lr-guarantee",
-        "lr-faq",
-      ];
+    : !content.problems.includes(page)
+      ? [
+          "lr-hero",
+          "lr-reviews",
+          "lr-symptoms",
+          "lr-timeline",
+          "lr-benefits",
+          "lr-formats",
+          "lr-process",
+          "lr-security",
+          "lr-guarantee",
+          "lr-prices",
+          guideId,
+          "lr-faq",
+        ]
+      : [
+          "lr-hero",
+          "lr-reviews",
+          guideId,
+          "lr-formats",
+          "lr-prices",
+          "lr-guarantee",
+          "lr-faq",
+        ];
   const positions = sections.map((id) => html.indexOf('id="' + id + '"'));
   assert.ok(
     positions.every(
@@ -278,10 +285,40 @@ for (const page of pages) {
     html.indexOf('class="lr-section lr-related"') > positions.at(-1),
     page.slug,
   );
-  assert.ok(!html.includes('id="lr-locations"'), page.slug);
+  assert.equal(
+    html.includes('id="lr-locations"'),
+    content.brands.includes(page),
+    page.slug,
+  );
+  if (content.brands.includes(page)) {
+    assert.ok(!html.includes('id="lr-manufacturers"'), page.slug);
+    assert.ok(!html.includes('id="lr-timeline"'), page.slug);
+    assert.ok(!html.includes('id="lr-benefits"'), page.slug);
+    const related = html.slice(html.indexOf('class="lr-section lr-related"'));
+    assert.ok(related.includes('href="/remont-macbook-spb.htm"'), page.slug);
+    assert.ok(!related.includes(`href="/${page.slug}.htm"`), page.slug);
+    assert.ok(
+      html.indexOf('id="lr-contact"') >
+        html.indexOf('class="lr-section lr-related"'),
+      page.slug,
+    );
+    const quiz = html.match(/<section id="lr-quiz"[\s\S]*?<\/section>/)?.[0];
+    assert.equal((quiz.match(/data-lr-quiz-step/g) || []).length, 3, page.slug);
+    assert.ok(
+      !quiz.includes('name="device_category" value="standard"'),
+      page.slug,
+    );
+    assert.ok(
+      !quiz.includes('name="device_category" value="premium"'),
+      page.slug,
+    );
+    assert.ok(!quiz.includes("MacBook") && !quiz.includes("macOS"), page.slug);
+  }
   for (const format of ["mobile-lab", "workshop", "courier"])
     assert.ok(
-      html.includes('data-source="formats" data-format="' + format + '"'),
+      html.includes(
+        'data-format="' + format + '" data-source="formats:' + format + '"',
+      ),
       page.slug,
     );
   for (const item of page.faq)
@@ -345,7 +382,8 @@ for (const page of pages) {
   for (const [, media] of html.matchAll(/(?:src|poster)="(\/media\/[^"]+)"/g)) {
     assert.ok(existsSync(new URL("../public" + media, import.meta.url)), media);
   }
-  assert.equal((html.match(/data-hop-lead-form/g) || []).length, 2);
+  const formCount = content.brands.includes(page) ? 3 : 2;
+  assert.equal((html.match(/data-hop-lead-form/g) || []).length, formCount);
   const serviceName = content.brands.includes(page)
     ? `Ремонт ноутбуков ${page.label}`
     : content.problems.includes(page)
@@ -355,24 +393,36 @@ for (const page of pages) {
     [...html.matchAll(/name="quiz_service" value="([^"]+)"/g)].map(
       ([, value]) => value,
     ),
-    [serviceName, serviceName],
+    Array(formCount).fill(serviceName),
     `Form context: ${page.slug}`,
   );
   assert.ok(
     !/<p[^>]*>\s*<(?:h[1-6]|div|table|section)\b/.test(html),
     page.slug,
   );
-  assert.ok(!/<a[^>]*>[^<]*<(?:a|button|input)\b/.test(html), page.slug);
+  assert.ok(!/<a\b[^>]*>[^<]*<(?:a|button|input)\b/.test(html), page.slug);
   const priceSection = html.match(
     /<section id="lr-prices"[\s\S]*?<\/section>/,
   )?.[0];
   assert.ok(priceSection, page.slug);
+  if (content.brands.includes(page)) {
+    assert.equal((priceSection.match(/<table\b/g) || []).length, 1, page.slug);
+    assert.ok(!priceSection.includes("MacBook"), page.slug);
+    assert.ok(!priceSection.includes("data-device-category="), page.slug);
+    for (const [work, price, duration] of homeCopy.prices.groups[0].rows)
+      assert.ok(
+        priceSection.includes(work) &&
+          priceSection.includes(price) &&
+          priceSection.includes(duration),
+        page.slug,
+      );
+  }
   {
     const firstPriceRow = priceSection.match(
       /<tbody\b[^>]*>\s*(<tr\b[\s\S]*?<\/tr>)/,
     )?.[1];
-    assert.ok(firstPriceRow?.includes("Обычная диагностика"), page.slug);
-    assert.ok(firstPriceRow.includes("в мастерской"), page.slug);
+    assert.ok(firstPriceRow?.includes("Диагностика"), page.slug);
+    assert.ok(!firstPriceRow.includes("в мастерской"), page.slug);
     assert.ok(firstPriceRow.includes("0 ₽"), page.slug);
     assert.ok(
       firstPriceRow.includes("Бесплатно, даже при отказе от ремонта"),

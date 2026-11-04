@@ -2,33 +2,63 @@
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
 import PriceVerification from "../ui/PriceVerification.astro";
+import LeadButton from "../ui/LeadButton.astro";
 
 const c = copy.prices;
-const defaultGroups = [
+const defaultGroups: NonNullable<Props["groups"]> = [
   { title: c.fields["Категория 1"], rows: [...c.tables[0], ...c.tables[1]] },
   { title: c.fields["Категория 2"], rows: c.tables[2] },
 ];
 interface Props {
   title?: string;
   lead?: string;
-  groups?: { title?: string; rows: string[][] }[];
+  groups?: { title?: string; rows: string[][]; diagnostic?: string }[];
   verification?: boolean;
+  bonus?: string;
 }
 const {
   title = "Сколько стоит ремонт ноутбука",
-  lead = "Указана стоимость работы без запчастей. Итоговую смету и срок согласуем до ремонта. Обычная диагностика в мастерской — бесплатно, даже при отказе от ремонта; срочная — 500 ₽.",
+  lead = "Указана стоимость работы без запчастей. Итоговую смету и срок согласуем до ремонта. Диагностика — бесплатно, даже при отказе от ремонта; срочная — 500 ₽.",
   groups = defaultGroups,
   verification = false,
+  bonus,
 } = Astro.props;
 ---
 
-<section id="lr-prices" class="lr-section lr-prices lr-home-pricing">
+<section
+  id="lr-prices"
+  class="lr-section lr-prices lr-home-pricing lr-home-pricing--reference"
+  data-lr-pricing
+>
   <div class="lr-container">
     <SectionHeading title={title} lead={lead} />
+    {
+      groups.length > 1 && (
+        <div
+          class="lr-price-tabs"
+          data-lr-price-tabs
+          hidden
+          aria-label="Категории ремонта"
+        >
+          {groups.map((group, index) => (
+            <button
+              type="button"
+              id={`lr-price-tab-${index}`}
+              data-lr-price-tab
+              aria-controls={`lr-price-panel-${index}`}
+            >
+              {group.title} <span>({group.rows.length + 1})</span>
+            </button>
+          ))}
+        </div>
+      )
+    }
     <div id="lr-full-price" class="lr-home-pricing__groups">
       {
         groups.map((group, index) => (
           <div
+            id={`lr-price-panel-${index}`}
+            data-lr-price-panel
             class:list={[
               "lr-home-pricing__group",
               { "lr-home-pricing__group--premium": index === 1 },
@@ -49,37 +79,48 @@ const {
                       <th scope="col">
                         <span class="lr-visually-hidden">Работа</span>
                       </th>
-                      <th scope="col" class="lr-price-table__duration">
-                        <span class="lr-visually-hidden">Время работы</span>
-                      </th>
                       <th scope="col">
                         <span class="lr-visually-hidden">Стоимость работы</span>
                       </th>
                     </>
                   </tr>
                 </thead>
-                {index === 0 && (
+                {
                   <tbody>
                     <tr class="lr-home-pricing__diagnostic">
-                      <th scope="row" colspan="3">
+                      <th scope="row" colspan="2">
                         <div class="lr-home-pricing__diagnostic-content">
                           <div>
-                            Обычная диагностика в мастерской
+                            {group.diagnostic ?? "Диагностика"}
                             <span class="lr-home-pricing__diagnostic-note">
                               Бесплатно, даже при отказе от ремонта
                             </span>
                           </div>
-                          <span class="lr-home-pricing__diagnostic-duration">
-                            Срок уточним при обращении
-                          </span>
-                          <strong class="lr-home-pricing__diagnostic-price">
-                            0 ₽
-                          </strong>
+                          {!group.diagnostic && (
+                            <span class="lr-home-pricing__diagnostic-duration">
+                              Срок уточним при обращении
+                            </span>
+                          )}
+                          <LeadButton
+                            label="0 ₽"
+                            ariaLabel="Заказать бесплатную диагностику"
+                            source="price-row"
+                            symptom="Диагностика"
+                            deviceCategory={
+                              groups.length > 1
+                                ? index === 1
+                                  ? "premium"
+                                  : "standard"
+                                : undefined
+                            }
+                            text
+                            class="lr-home-pricing__diagnostic-price"
+                          />
                         </div>
                       </th>
                     </tr>
                   </tbody>
-                )}
+                }
                 <tbody>
                   {group.rows.map(([work, price, duration]) => (
                     <tr>
@@ -89,9 +130,27 @@ const {
                           Время: {duration}
                         </span>
                       </th>
-                      <td class="lr-price-table__duration">{duration}</td>
                       <td class="lr-home-pricing__price">
-                        <strong>{price}</strong>
+                        <a
+                          href="#lr-contact"
+                          aria-label={`Уточнить стоимость: ${work}, ${price}`}
+                          data-lr-lead-open
+                          data-source="price-row"
+                          data-symptom={work}
+                          data-device-category={
+                            groups.length > 1
+                              ? index === 1
+                                ? "premium"
+                                : "standard"
+                              : undefined
+                          }
+                          class="lr-price-row__action"
+                        >
+                          <span class="lr-price-row__value">{price}</span>
+                          <span class="lr-price-row__order" aria-hidden="true">
+                            Заказать <span>→</span>
+                          </span>
+                        </a>
                       </td>
                     </tr>
                   ))}
@@ -102,6 +161,26 @@ const {
         ))
       }
     </div>
+    {
+      bonus && (
+        <aside class="lr-prices__bonus">
+          <>
+            <p>{bonus}</p>
+            <LeadButton
+              label="Получить со скидкой"
+              source="prices-bonus"
+              text
+            />
+          </>
+        </aside>
+      )
+    }
     {verification && <PriceVerification />}
+    <div class="lr-prices__action">
+      <p>Не нашли вашу проблему в прайсе?</p><LeadButton
+        label="Узнать стоимость ремонта"
+        source="prices"
+      />
+    </div>
   </div>
 </section>

@@ -1,0 +1,124 @@
+{
+  "taskId": "card-059",
+  "platform": "Zoon",
+  "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_pyatiletok/",
+  "branch": "проспект Пятилеток, 14 к1, цокольный этаж",
+  "city": "Санкт-Петербург",
+  "networkEvidence": {
+    "status": "confirmed",
+    "sources": [
+      {
+        "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_pyatiletok/",
+        "summary": "Карточка Ленремонта: адрес Пятилеток, 14 к1; ссылка на сеть из 28 заведений; телефон в публичном tel href +7 (812) 380-88-41."
+      },
+      {
+        "url": "https://www.lenremont.ru/contact.htm",
+        "summary": "Официальный сайт перечисляет мастерскую у метро Пр. Большевиков, Пятилеток, 14 к1; график совпадает с Zoon. Для филиала указаны +7 (812) 242-99-45, 688-89-33, 640-44-35. Общая линия 344-44-44 совпадает с линией в ответах компании на Zoon."
+      }
+    ],
+    "phoneComparison": "Прямой номер карточки +7 (812) 380-88-41 не совпадает с текущими филиальными номерами официального сайта; принадлежность подтверждена совпадением названия, точного адреса, графика, сетевой связью и общей линией в ответах компании. Равенство прямых номеров не утверждается."
+  },
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 13,
+    "examinedCount": 17,
+    "endpointObserved": true,
+    "method": "Собственная вкладка Chrome через CUA. На главной раскрыты 5+8 отзывов. Отдельная наблюдаемая ссылка /reviews/ открыла 13 опубликованных и 4 отклонённых. Прочитаны все отзывы и ответы компании; два свёрнутых текста раскрыты UI-кликами. Проверены DOM ID и медиа всех 17 пользовательских записей, включая записи без определённого устройства. Конец обоих списков наблюдался без кнопок продолжения; 13 опубликованных совпадают с заявленным числом.",
+    "stopReason": "Достигнут конец опубликованного и отклонённого списков; все 17 уникальных отзывов и доступные ответы прочитаны полностью. Дополнительная сортировка не требуется: опубликованный корпус равен заявленным 13.",
+    "publishedExaminedCount": 13,
+    "rejectedExaminedCount": 4,
+    "matchedCount": 4,
+    "matchedPublishedCount": 1,
+    "matchedRejectedCount": 3
+  },
+  "reviews": [
+    {
+      "author": "Борис Масловский",
+      "date": "2022-01-20",
+      "rating": 5,
+      "summary": "Чистка ноутбука, замена термопасты и бесплатная диагностика.",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_pyatiletok/reviews/#comment61e8905c16696b085f0940ea",
+      "topic": "Чистка / термопаста / диагностика ноутбука",
+      "photos": [],
+      "evidence": {
+        "reviewId": "61e8905c16696b085f0940ea",
+        "moderationStatus": "published",
+        "binding": "Стабильный data-id и id пользовательского li.js-comment на назначенной карточке.",
+        "fullTextExpanded": true,
+        "photoCheck": "У этого отзыва и его ответов нет прикреплённых изображений или иных медиа.",
+        "companyReply": "Ответ от 17.03.2022 раскрыт полностью; компания поясняет бесплатную диагностику, новых сведений об устройстве нет."
+      }
+    },
+    {
+      "author": "Сергей Лошкарев",
+      "date": "2022-10-21",
+      "rating": 5,
+      "summary": "Краткая положительная оценка быстрого и качественного ремонта ноутбука.",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_pyatiletok/reviews/#comment635209cf11d1427d64031a03",
+      "topic": "Ремонт ноутбука",
+      "photos": [],
+      "evidence": {
+        "reviewId": "635209cf11d1427d64031a03",
+        "moderationStatus": "rejected",
+        "binding": "Стабильный data-id и id пользовательского li.js-comment на назначенной карточке.",
+        "fullTextExpanded": true,
+        "photoCheck": "У этого отзыва и его ответов нет прикреплённых изображений или иных медиа.",
+        "companyReply": null
+      }
+    },
+    {
+      "author": "Аркадий Михайлов",
+      "date": "2022-01-15",
+      "rating": 5,
+      "summary": "У ноутбука погас экран; описаны приём, бесплатная диагностика и готовность ремонта через несколько дней.",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_pyatiletok/reviews/#comment61e2b4d7e3537c4abe1f921b",
+      "topic": "Ремонт ноутбука",
+      "photos": [],
+      "evidence": {
+        "reviewId": "61e2b4d7e3537c4abe1f921b",
+        "moderationStatus": "rejected",
+        "binding": "Стабильный data-id и id пользовательского li.js-comment на назначенной карточке.",
+        "fullTextExpanded": true,
+        "photoCheck": "У этого отзыва и его ответов нет прикреплённых изображений или иных медиа.",
+        "companyReply": null
+      }
+    },
+    {
+      "author": "Илья",
+      "date": "2021-07-09",
+      "rating": 5,
+      "summary": "Восстановление USB-разъёмов ноутбука выездным мастером примерно за 30 минут.",
+      "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_pyatiletok/reviews/#comment60e81e3b366a9c448f6d363d",
+      "topic": "Ремонт ноутбука",
+      "photos": [],
+      "evidence": {
+        "reviewId": "60e81e3b366a9c448f6d363d",
+        "moderationStatus": "rejected",
+        "binding": "Стабильный data-id и id пользовательского li.js-comment на назначенной карточке.",
+        "fullTextExpanded": true,
+        "photoCheck": "У этого отзыва и его ответов нет прикреплённых изображений или иных медиа.",
+        "companyReply": null
+      }
+    }
+  ],
+  "discoveredSources": [
+    {
+      "platform": "Официальный сайт Ленремонта",
+      "url": "https://www.lenremont.ru/contact.htm",
+      "address": "проспект Пятилеток, 14 к1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Zoon — сеть",
+      "url": "https://zoon.ru/spb/repair/network/lenremont/",
+      "address": null,
+      "city": "Санкт-Петербург"
+    }
+  ],
+  "notes": [
+    "Оценки (442) не равны текстовым отзывам (13). Ещё 4 пользовательских отзыва находятся в разделе отклонённых; это отмечено у тематических записей.",
+    "Общие отзывы Дениса Карпова и Вадима проверены вместе с ответами компании и отсутствующими вложениями: подтверждения ноутбука нет.",
+    "В пользовательских отзывах и ответах не обнаружено img, video, фоновых URL или ссылок на вложения; 33 фото общей галереи не подменяют фотографии к отзывам. Тематических фото и упоминаний недоступных фото нет.",
+    "Отзывы пересказаны; полные копии текста и данные аккаунта не сохранялись. Проверка выполнена 2026-11-02."
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "other": {
+    "tag": "DETAILS",
+    "display": "block",
+    "visibility": "visible",
+    "height": 56,
+    "top": 2369.90625,
+    "html": "<details class=\"lr-manufacturers__other\" data-astro-source-file=\"D:/works/projects/lr-remont-noutbykov/src/components/sections/ManufacturerLinks.astro\" data-astro-source-loc=\"62:66\"> <summary id=\"lr-other-manufacturers-title\" data-astro-source-file=\"D:/works/projects/lr-remont-noutbykov/src/components/sections/ManufacturerLinks.astro\" data-astro-source-loc=\"63:54\">\nДругие производители\n</summary> "
+  },
+  "summary": {
+    "tag": "SUMMARY",
+    "display": "list-item",
+    "visibility": "visible",
+    "height": 56,
+    "top": 2369.90625,
+    "html": "<summary id=\"lr-other-manufacturers-title\" data-astro-source-file=\"D:/works/projects/lr-remont-noutbykov/src/components/sections/ManufacturerLinks.astro\" data-astro-source-loc=\"63:54\">\nДругие производители\n</summary>"
+  },
+  "title": {
+    "tag": "SUMMARY",
+    "display": "list-item",
+    "visibility": "visible",
+    "height": 56,
+    "top": 2369.90625,
+    "html": "<summary id=\"lr-other-manufacturers-title\" data-astro-source-file=\"D:/works/projects/lr-remont-noutbykov/src/components/sections/ManufacturerLinks.astro\" data-astro-source-loc=\"63:54\">\nДругие производители\n</summary>"
+  },
+  "navs": [
+    {
+      "class": "lr-symptoms__groups",
+      "label": "Направления помощи с ноутбуком"
+    }
+  ],
+  "hints": [
+    " Куда вам перезвонить? \nУточним неисправность и обсудим стоимость ремонта. Марку и модель\n            можно добавить ниже.\n           Изменить    Формат обслуживания  Помогите выбрать формат Мастерская в автомобиле у дома Инженер в вашем помещении В сервисном центре С доставкой курьером    Неисправность  Другая неисправностьНе включаетсяГреется и выключаетсяЗалит водой, чаем или кофеРазбит экран или пропало изображениеНе заряжаетсяТормозит или не загружаетсяНеисправный CD-ROMНеисправности клавиатурыПоломки разъёмов питания и наушников    Ваш телефон  Перезвоним и уточним вашу задачу      1  2  3  4  5  6  7  8  9  Сброс  0  ⌫    Ввести с клавиатуры    Выберите мастерскую  Помогите выбрать при звонке  Проспект Просвещения — пр. Просвещения, д. 20  Комендантский проспект — пр. Авиаконструкторов, д. 4  Улица Дыбенко — пр. Большевиков, д. 25  Приморская — ул. Кораблестроителей, д. 30  Проспект Ветеранов — пр. Ветеранов, д. 9  Парк Победы / Московская — ул. Фрунзе, д. 3  Удельная — пр. Энгельса, д. 19  Проспект Большевиков — пр. Пятилеток, д. 14, к. 1  Звёздная — ул. Звёздная, д. 5, к. 1  Ладожская — пр. Косыгина, д. 28, к. 1  Озерки / Проспект Просвещения — пр. Луначарского, д. 56, к. 1  Академическая — пр. Науки, д. 8, к. 1  Автово — пр. Маршала Жукова, д. 35, к. 3  Пионерская — пр. Испытателей, д. 11, к. 1  Гражданский проспект — ул. Ушинского, д. 25, к. 1  Фрунзенская — ул. Киевская, д. 32В  Купчино — ул. Ярослава Гашека, д. 4, к. 1  Железнодорожная станция Колпино — ул. Тверская, д. 1/13  Елизаровская — пр. Елизарова, д. 36  Выборгская — ул. Минеральная, д. 13Ц  Парк Победы — пр. Юрия Гагарина, д. 15  Московская — Московский пр., д. 212, Дом Советов  Электросила — ул. Решетникова, д. 3  Всеволожский район, Ленинградская область — ул. Круговая, д. 47   Уточним, принимает ли выбранная мастерская вашу модель.   Метро или район     Куда приехать — к дому или работе  \nТочный адрес и время согласуем до приезда. Квартиру и код домофона\n          можно сообщить при звонке.\n    Где вам удобнее провести ремонт?  Выберите место Дома На работе В мастерской на колёсах Уточнить при звонке  \nЭто ваше пожелание. Возможность ремонта в выбранном месте согласуем с учётом неисправности и необходимого оборудования.\n      Даю согласие на обработку персональных данных.\nПолитика обработки данных    Получить консультацию  Введите номер телефона полностью.    Спасибо, ваше обращение получили Свяжемся с вами, уточним детали и согласуем следующий шаг. Вернуться на страницу   "
+  ],
+  "buttons": [
+    {
+      "text": "Позвонить",
+      "height": 0
+    },
+    {
+      "text": "Узнать стоимость",
+      "height": 0
+    }
+  ],
+  "heroVideo": {
+    "poster": "http://localhost:4322/media/mobile-lab-exterior.webp",
+    "controls": false
+  },
+  "homeForm": {
+    "format": "at-home",
+    "place": "home",
+    "fields": [
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "select-one",
+        "required": false,
+        "tag": "SELECT"
+      },
+      {
+        "name": "",
+        "type": "select-one",
+        "required": false,
+        "tag": "SELECT"
+      },
+      {
+        "name": "phone",
+        "type": "tel",
+        "required": true,
+        "tag": "INPUT"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "",
+        "type": "button",
+        "tag": "BUTTON"
+      },
+      {
+        "name": "visit_address",
+        "type": "text",
+        "required": true,
+        "tag": "INPUT"
+      },
+      {
+        "name": "requested_repair_place",
+        "type": "select-one",
+        "required": true,
+        "tag": "SELECT"
+      },
+      {
+        "name": "consent",
+        "type": "checkbox",
+        "required": true,
+        "tag": "INPUT"
+      }
+    ]
+  },
+  "afterChangingQuiz": {
+    "format": "courier",
+    "symptom": "",
+    "addressRequired": true
+  }
+}

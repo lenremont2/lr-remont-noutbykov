@@ -1,0 +1,153 @@
+{
+  "widths": [
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "photos": [
+        {
+          "width": 320,
+          "height": 200
+        },
+        {
+          "width": 320,
+          "height": 200
+        },
+        {
+          "width": 320,
+          "height": 200
+        },
+        {
+          "width": 320,
+          "height": 200
+        }
+      ],
+      "tracks": [
+        {
+          "width": 320,
+          "scrollWidth": 1344,
+          "scrollbar": "none"
+        },
+        {
+          "width": 320,
+          "scrollWidth": 1428,
+          "scrollbar": "none"
+        }
+      ]
+    },
+    {
+      "width": 564,
+      "scrollWidth": 564,
+      "photos": [
+        {
+          "width": 524,
+          "height": 280
+        },
+        {
+          "width": 524,
+          "height": 280
+        },
+        {
+          "width": 524,
+          "height": 280
+        },
+        {
+          "width": 524,
+          "height": 280
+        }
+      ],
+      "tracks": [
+        {
+          "width": 524,
+          "scrollWidth": 2364,
+          "scrollbar": "none"
+        },
+        {
+          "width": 524,
+          "scrollWidth": 1428,
+          "scrollbar": "none"
+        }
+      ]
+    },
+    {
+      "width": 603,
+      "scrollWidth": 603,
+      "photos": [
+        {
+          "width": 563,
+          "height": 280
+        },
+        {
+          "width": 563,
+          "height": 280
+        },
+        {
+          "width": 563,
+          "height": 280
+        },
+        {
+          "width": 563,
+          "height": 280
+        }
+      ],
+      "tracks": [
+        {
+          "width": 563,
+          "scrollWidth": 2559,
+          "scrollbar": "none"
+        },
+        {
+          "width": 563,
+          "scrollWidth": 1428,
+          "scrollbar": "none"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "photos": [
+        {
+          "width": 301.796875,
+          "height": 190
+        },
+        {
+          "width": 301.796875,
+          "height": 190
+        },
+        {
+          "width": 301.796875,
+          "height": 190
+        },
+        {
+          "width": 301.796875,
+          "height": 190
+        }
+      ],
+      "tracks": [
+        {
+          "width": 1267,
+          "scrollWidth": 2123,
+          "scrollbar": "none"
+        },
+        {
+          "width": 1267,
+          "scrollWidth": 1428,
+          "scrollbar": "none"
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    "price action visible on touch and work passed to form",
+    "analysis screen, automatic finish, skip and Back cancellation",
+    "symptom slider keyboard paging and endpoints",
+    "native touch swipe advances problem cards",
+    "brands autoSwipe and explicit pause",
+    "brands autoplay wraps from the last card to the start",
+    "reduced motion disables autoplay and preserves manual paging",
+    "desktop price hover and keyboard focus reveal the action",
+    "mouse drag on category links scrolls without navigation",
+    "a single category click keeps normal navigation"
+  ],
+  "errors": []
+}

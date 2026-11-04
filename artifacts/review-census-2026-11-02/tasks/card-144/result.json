@@ -1,0 +1,172 @@
+{
+  "taskId": "card-144",
+  "platform": "Yell",
+  "url": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/",
+  "branch": "Ремонтная мастерская Ленремонт на Братиславской улице, Москва, ул. Братиславская, д. 25 (историческая карточка)",
+  "city": "Москва",
+  "networkEvidence": [
+    {
+      "url": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/",
+      "observation": "Карточка прямо указывает адрес Братиславская 25, телефон +7 499 371-11-11, сайт www.lenremont.ru и ссылку vk.com/lenremont."
+    },
+    {
+      "url": "https://lenremont.moscow/contact",
+      "observation": "Официальная московская страница показывает тот же телефон 8 (499) 371-11-11, email info@lenremont.ru и ссылку на Санкт-Петербург www.lenremont.ru. Реквизиты ООО ЛЕНРЕМОНТ; текущий адрес на странице Садовая-Триумфальная 16 стр.3. Принадлежность сети подтверждена совпадением телефона и официальных доменов, адрес Братиславская 25 является историческим, а не подтвержденным текущим филиалом."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 9,
+    "examinedCount": 9,
+    "endpointObserved": true,
+    "method": "В собственной Chrome CUA вкладке открыта главная карточка, затем её публичная /reviews/. Прочитаны все 9 полных текстов и 9 ответов компании. Все рейтинги 5; даты извлечены из DOM datePublished, тексты не свёрнуты. Страница прокручена до футера: scrollY 3799 + innerHeight 863 = scrollHeight 4662. Стабильные reviewId уникальны. После девятого отзыва раздел других организаций и футер, загрузки/страниц нет. Фильтр «Все источники», сортировки и признаки импортов не представлены ни на главной, ни на /reviews/; доступных дополнительных корпусов не обнаружено. Галерея 7 фото проверена отдельно и не отнесена к отзывам.",
+    "stopReason": "Проверен конец всего доступного публичного корпуса, 9 записей совпали с заявленными 9."
+  },
+  "reviews": [],
+  "candidateReviews": [],
+  "discoveredSources": [],
+  "notes": [
+    "Светлана Орлова, 2020-08-12, reviewId 3527434: диагностика и ремонт неуказанного устройства. Никаких признаков ноутбука/компьютера в тексте нет; ответ компании общий, фото устройства отсутствует. Отзыв оставлен среди examinedReviews как неопределённый по устройству, не включён в тематические кандидаты. Общая галерея к нему не привязана.",
+    "Все 9 отзывов датированы августом–октябрём 2020 года. Подтверждённых отзывов о ремонте/диагностике/чистке/обслуживании ноутбуков, нетбуков, ультрабуков или MacBook: 0.",
+    "Вложений отзывов или ответов: 0. Общая галерея 7 фото не является отзывными вложениями. Семь миниатюр визуально просмотрены, фото 3 открыто увеличенно: мастер с открытым AV-устройством, ноутбук не подтверждается. Остальные — вывеска, помещения, полки/витрины и приёмка. Нет тематических фото для скачивания; аватары и нетематическая галерея не скачивались.",
+    "Историческую карточку не склеивали с иными московскими адресами. Исследовалась только назначенная карточка."
+  ],
+  "examinedReviews": [
+    {
+      "id": "3559215",
+      "author": "Елена Алехина",
+      "date": "2020-10-12",
+      "rating": 5,
+      "summary": "Диагностика телефона и замена батареи.",
+      "reviewUrl": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/reviews/?reviewId=3559215",
+      "fullTextRead": true,
+      "companyReplyRead": true,
+      "reviewAttachmentCount": 0,
+      "replyAttachmentCount": 0,
+      "imageClassification": "Только аватар автора и аватар представителя компании; не вложения."
+    },
+    {
+      "id": "3539327",
+      "author": "Юрий Францишко",
+      "date": "2020-09-04",
+      "rating": 5,
+      "summary": "Ремонт iPhone 7, замена контроллера питания.",
+      "reviewUrl": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/reviews/?reviewId=3539327",
+      "fullTextRead": true,
+      "companyReplyRead": true,
+      "reviewAttachmentCount": 0,
+      "replyAttachmentCount": 0,
+      "imageClassification": "Только аватар автора и аватар представителя компании; не вложения."
+    },
+    {
+      "id": "3535641",
+      "author": "Игорь",
+      "date": "2020-08-28",
+      "rating": 5,
+      "summary": "Ремонт телефона Redmi.",
+      "reviewUrl": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/reviews/?reviewId=3535641",
+      "fullTextRead": true,
+      "companyReplyRead": true,
+      "reviewAttachmentCount": 0,
+      "replyAttachmentCount": 0,
+      "imageClassification": "Только аватар автора и аватар представителя компании; не вложения."
+    },
+    {
+      "id": "3532534",
+      "author": "ellenavisova",
+      "date": "2020-08-21",
+      "rating": 5,
+      "summary": "Ремонт электроплиты.",
+      "reviewUrl": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/reviews/?reviewId=3532534",
+      "fullTextRead": true,
+      "companyReplyRead": true,
+      "reviewAttachmentCount": 0,
+      "replyAttachmentCount": 0,
+      "imageClassification": "Только аватар автора и аватар представителя компании; не вложения."
+    },
+    {
+      "id": "3531257",
+      "author": "Ivan Loginov",
+      "date": "2020-08-19",
+      "rating": 5,
+      "summary": "Ремонт миксера.",
+      "reviewUrl": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/reviews/?reviewId=3531257",
+      "fullTextRead": true,
+      "companyReplyRead": true,
+      "reviewAttachmentCount": 0,
+      "replyAttachmentCount": 0,
+      "imageClassification": "Только аватар автора и аватар представителя компании; не вложения."
+    },
+    {
+      "id": "3529974",
+      "author": "Игорь Линдстрём",
+      "date": "2020-08-17",
+      "rating": 5,
+      "summary": "Диагностика и ремонт микроволновой печи.",
+      "reviewUrl": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/reviews/?reviewId=3529974",
+      "fullTextRead": true,
+      "companyReplyRead": true,
+      "reviewAttachmentCount": 0,
+      "replyAttachmentCount": 0,
+      "imageClassification": "Только аватар автора и аватар представителя компании; не вложения."
+    },
+    {
+      "id": "3529957",
+      "author": "Яна Малая",
+      "date": "2020-08-17",
+      "rating": 5,
+      "summary": "Определение причины поломки и ремонт телефона.",
+      "reviewUrl": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/reviews/?reviewId=3529957",
+      "fullTextRead": true,
+      "companyReplyRead": true,
+      "reviewAttachmentCount": 0,
+      "replyAttachmentCount": 0,
+      "imageClassification": "Только аватар автора и аватар представителя компании; не вложения."
+    },
+    {
+      "id": "3527434",
+      "author": "Светлана Орлова",
+      "date": "2020-08-12",
+      "rating": 5,
+      "summary": "Быстрая диагностика и ремонт устройства без его названия; отмечены санитарные меры и неудобство дороги.",
+      "reviewUrl": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/reviews/?reviewId=3527434",
+      "fullTextRead": true,
+      "companyReplyRead": true,
+      "reviewAttachmentCount": 0,
+      "replyAttachmentCount": 0,
+      "imageClassification": "Только аватар автора и аватар представителя компании; не вложения."
+    },
+    {
+      "id": "3526291",
+      "author": "Виктория Широких",
+      "date": "2020-08-10",
+      "rating": 5,
+      "summary": "Ремонт динамика iPhone 8.",
+      "reviewUrl": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/reviews/?reviewId=3526291",
+      "fullTextRead": true,
+      "companyReplyRead": true,
+      "reviewAttachmentCount": 0,
+      "replyAttachmentCount": 0,
+      "imageClassification": "Только аватар автора и аватар представителя компании; не вложения."
+    }
+  ],
+  "galleryEvidence": {
+    "url": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/photos/",
+    "reportedTotal": 7,
+    "attachment": "gallery",
+    "bindingVerified": true,
+    "reviewBindingVerified": false,
+    "visualMethod": "Все 7 миниатюр на странице галереи, дополнительно увеличенное фото 3.",
+    "uploader": "anastasia_fedorenko",
+    "photoIds": [
+      "3754747",
+      "3754748",
+      "3754749",
+      "3754750",
+      "3754751",
+      "3754752",
+      "3754753"
+    ],
+    "relevantLaptopPhotos": 0
+  }
+}

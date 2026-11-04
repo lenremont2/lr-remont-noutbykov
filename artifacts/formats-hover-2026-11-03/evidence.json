@@ -1,0 +1,32 @@
+[
+  {
+    "width": 390,
+    "touch": true,
+    "labelRemoved": true,
+    "stableDimensions": true,
+    "hover": "none",
+    "keyboardFocus": true
+  },
+  {
+    "width": 768,
+    "labelRemoved": true,
+    "stableDimensions": true,
+    "hover": "matrix(1.025, 0, 0, 1.025, 0, 0)",
+    "keyboardFocus": true
+  },
+  {
+    "width": 1435,
+    "labelRemoved": true,
+    "stableDimensions": true,
+    "hover": "matrix(1.025, 0, 0, 1.025, 0, 0)",
+    "keyboardFocus": true
+  },
+  {
+    "width": 1435,
+    "reduced": true,
+    "labelRemoved": true,
+    "stableDimensions": true,
+    "hover": "none",
+    "keyboardFocus": true
+  }
+]

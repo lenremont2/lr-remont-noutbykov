@@ -1,0 +1,112 @@
+{
+  "taskId": "card-006",
+  "platform": "Google Карты",
+  "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/@60.010909,30.2444107,17z/data=!4m8!3m7!1s0x46963433a96b46ad:0x839a075e7c5c7adc!8m2!3d60.010909!4d30.2444107!9m1!1b1!16s%2Fg%2F11cssykgqz?hl=ru",
+  "branch": "пр. Авиаконструкторов, 4к1, Санкт-Петербург, 197372",
+  "city": "Санкт-Петербург",
+  "networkEvidence": {
+    "name": "Ленремонт",
+    "addressObserved": "пр. Авиаконструкторов, 4к1, Санкт-Петербург, 197372",
+    "websiteObserved": "https://lenremont.ru/",
+    "phoneObserved": "8 (812) 344-44-44",
+    "verification": "Все три признака прочитаны в разделе Обзор назначенной Google-карточки; карточка соответствует филиалу из очереди.",
+    "googlePlaceIdObserved": "0x46963433a96b46ad:0x839a075e7c5c7adc"
+  },
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 291,
+    "examinedCount": 291,
+    "endpointObserved": true,
+    "method": "CUA Chrome, собственная вкладка. Полная прокрутка вкладки Отзывы в сортировке Самые релевантные: DOM вырос до 291 уникального data-review-id. Дополнительная прокрутка не добавила отзывов. Раскрыты все 75 изначально сокращенных пользовательских текстов; итоговое число кнопок раскрытия внутри .MyEned равно 0. Все тексты и пользовательские поля проверены по темам ноутбук/ноут/нетбук/ультрабук/MacBook/макбук/laptop/notebook и брендам на русском и латинице с проверкой контекста. Встроенный поисковый индекс Google не заменял полный просмотр.",
+    "stopReason": "Достигнут конец доступной ленты: 291/291 уникальных записей, последний автор Елена Григорьева; полные пользовательские тексты раскрыты. 230 записей содержат пользовательский текст, 61 — оценку/поля без основного текста.",
+    "ratingDistributionObserved": {"1":83,"2":8,"3":18,"4":16,"5":166},
+    "matchingCount": 7,
+    "matchingRatingDistribution": {"1":1,"5":6},
+    "collapsedUserTextsRemaining": 0,
+    "observedAt": "2026-11-02",
+    "dateBoundsDisplayed": "Самая свежая видимая дата: 17 часов назад; самая старая: 9 лет назад. Google показывает относительные даты.",
+    "matchingDateBoundsDisplayed": "От месяца назад до 6 лет назад"
+  },
+  "reviews": [
+    {
+      "author": "Warfece 5ш6ш8",
+      "date": "8 месяцев назад",
+      "rating": 5,
+      "summary": "После залития чаем ноутбук не включался. Автор сообщает о чистке материнской платы и клавиатуры; спустя месяц техника работает, стоимость оказалась ниже ожидаемой.",
+      "reviewUrl": "https://maps.app.goo.gl/Kc6PPohFVFZYXuYUA",
+      "topic": "ноутбук; залитие; чистка платы и клавиатуры; положительный",
+      "photos": [],
+      "evidence": {"reviewId":"Ci9DQUlRQUNvZENodHljRjlvT21wVE5HRnhYMUozYkhWT1ZGVlRZV2xCVVdZeU5VRRAB","profileUrl":"https://www.google.com/maps/contrib/101388978961753911143/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0}
+    },
+    {
+      "author": "Александра Поварницина",
+      "date": "месяц назад",
+      "rating": 5,
+      "summary": "Автор довольна ремонтом ноутбука за один день, понятными объяснениями мастера и стоимостью.",
+      "reviewUrl": "https://maps.app.goo.gl/eBryaXXHNSWaFzag9",
+      "topic": "ноутбук; ремонт; сроки и цена; положительный",
+      "photos": [],
+      "evidence": {"reviewId":"Ci9DQUlRQUNvZENodHljRjlvT21aS1lUVlJiM0Y1TTNwalFucHlTRFZYWm5GQllVRRAB","profileUrl":"https://www.google.com/maps/contrib/110964551855246812737/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0}
+    },
+    {
+      "author": "AMJAD DHUDDI",
+      "date": "год назад",
+      "rating": 5,
+      "summary": "При самопроизвольных выключениях ноутбука автор сообщает о чистке системы охлаждения, замене термопасты и кулера за два дня; затем ноутбук стал тише и перестал выключаться. В тексте указано обращение на Восстания, хотя публикация находится в карточке Авиаконструкторов.",
+      "reviewUrl": "https://maps.app.goo.gl/AnNEW7TqUAQ8EcHF6",
+      "topic": "ноутбук; перегрев; чистка; термопаста; кулер; положительный; неоднозначность филиала",
+      "photos": [],
+      "evidence": {"reviewId":"ChdDSUhNMG9nS0VJQ0FnTUNvN3N5VW13RRAB","profileUrl":"https://www.google.com/maps/contrib/108405985089693072960/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0,"branchAttribution":"Публикация в назначенной карточке подтверждена; обслуживание именно на Авиаконструкторов не подтверждено из-за упоминания Восстания."}
+    },
+    {
+      "author": "Виктория Суворова",
+      "date": "год назад",
+      "rating": 5,
+      "summary": "После залития чаем автор сообщает о сохранении данных, замене клавиатуры и материнской платы ноутбука; результатом довольна.",
+      "reviewUrl": "https://maps.app.goo.gl/DgQzKWX5GyepRX35A",
+      "topic": "ноутбук; залитие; данные; клавиатура; материнская плата; положительный",
+      "photos": [],
+      "evidence": {"reviewId":"Ci9DQUlRQUNvZENodHljRjlvT21sNlRrUXRMVlpyUkVjMWVpMUNTMHM0TVZkaVNHYxAB","profileUrl":"https://www.google.com/maps/contrib/113140864190716005848/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0}
+    },
+    {
+      "author": "Артемий",
+      "date": "год назад",
+      "rating": 5,
+      "summary": "MacBook перестал заряжаться. Автор описывает бесплатную диагностику, ремонт платы за несколько дней и положительный результат.",
+      "reviewUrl": "https://maps.app.goo.gl/LitvYsD8UctnTAjs5",
+      "topic": "MacBook; зарядка; диагностика; плата; положительный",
+      "photos": [],
+      "evidence": {"reviewId":"Ci9DQUlRQUNvZENodHljRjlvT21SRFZrRk5YMVUyV1UxRlh6aHhjMmwzYlZab2VHYxAB","profileUrl":"https://www.google.com/maps/contrib/116384378310439026127/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0}
+    },
+    {
+      "author": "kami",
+      "date": "год назад",
+      "rating": 5,
+      "summary": "Автор положительно оценивает скорость, качество и стоимость ремонта ноутбука.",
+      "reviewUrl": "https://maps.app.goo.gl/FD4nwz59FPAzY7fS9",
+      "topic": "ноутбук; ремонт; сроки и цена; положительный",
+      "photos": [],
+      "evidence": {"reviewId":"Ci9DQUlRQUNvZENodHljRjlvT2tGTFdUTkRiR1E0WW5abE5qRldNVEZYVW5CRE9HYxAB","profileUrl":"https://www.google.com/maps/contrib/116528002616580280910/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0}
+    },
+    {
+      "author": "Александр Овчаренко",
+      "date": "6 лет назад",
+      "rating": 1,
+      "summary": "Автор жалуется на стоимость ремонта около половины цены ноутбука, задержки готовности и общение оператора по телефону.",
+      "reviewUrl": "https://maps.app.goo.gl/i1m3sXyN651etKTh6",
+      "topic": "ноутбук; стоимость; задержки; общение; отрицательный",
+      "photos": [],
+      "evidence": {"reviewId":"ChdDSUhNMG9nS0VJQ0FnSUNzc1lqY3V3RRAB","profileUrl":"https://www.google.com/maps/contrib/101407941655722272159/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0}
+    }
+  ],
+  "discoveredSources": [],
+  "notes": [
+    "Объект охвата — только назначенная карточка Google, не вся сеть. Сортировка включала все оценки; распределение загруженных записей совпало с показанной Google гистограммой.",
+    "Точные календарные даты не подставлялись вместо относительных дат Google.",
+    "Фото: у всех 7 тематических отзывов отсутствуют кнопки вложений Фото N в отзыве. Кнопки Автор: фото и изображения профиля являются аватарами; их не считаем вложениями отзывов. Профильные суммарные числа фото также не являются количеством вложений данного отзыва.",
+    "В общей ленте у 6 других авторов есть фото: Олег p (стиральная машина), smirnova olga (душ), A P (почтовый замок), Олеся Позитив (гироскутер), Дмитрий Позин (холодильник), Mac Leod (педаль швейной машины). Это фото иных тем; не скачаны и не заявлены визуально проверенными. Упоминания Samsung у Андрея Савина и ShpitS mf относятся к стиральной машине и телевизору, не ноутбукам.",
+    "Галерея места, фото от владельца и аватары не включены в тематические photos. Подтвержденных фото ноутбучных отзывов: 0; скачанных оригиналов: 0; визуально проверенных вложений: 0.",
+    "Ответы владельца не считались пользовательскими отзывами и не использовались как основание ноутбучной темы. Полные пользовательские тексты раскрыты; полное раскрытие всех ответов владельца не требовалось и не проводилось.",
+    "Наличие публикации подтверждено, истинность описанного автором опыта независимо не устанавливалась. AMJAD DHUDDI явно упоминает Восстания: не использовать как однозначное свидетельство обслуживания на Авиаконструкторов."
+  ]
+}

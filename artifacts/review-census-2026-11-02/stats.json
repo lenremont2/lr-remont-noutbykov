@@ -1,0 +1,16 @@
+{
+  "queued": 231,
+  "finished": 75,
+  "complete": 56,
+  "partial": 16,
+  "blocked": 3,
+  "reviewRecords": 150,
+  "photos": 23,
+  "verifiedReviewPhotos": 19,
+  "contentGroups": 146,
+  "candidateRecords": 29,
+  "examinedSourceEntries": 10108,
+  "sourcesWithUnknownExaminedCount": 4,
+  "uniquePhotoFiles": 23,
+  "uniqueAuthorPhotoFiles": 19
+}

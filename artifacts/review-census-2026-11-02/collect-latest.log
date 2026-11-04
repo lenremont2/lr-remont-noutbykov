@@ -1,0 +1,789 @@
+{
+  "stats": {
+    "queued": 231,
+    "finished": 75,
+    "complete": 56,
+    "partial": 16,
+    "blocked": 3,
+    "reviewRecords": 150,
+    "photos": 23,
+    "verifiedReviewPhotos": 19,
+    "contentGroups": 146,
+    "candidateRecords": 29,
+    "examinedSourceEntries": 10108,
+    "sourcesWithUnknownExaminedCount": 4
+  },
+  "next": [
+    {
+      "taskId": "card-041",
+      "platform": "SPR",
+      "url": "https://szo.spr.ru/sankt-peterburg/remont-kompyuterov-orgtehniki-mobilnih-telefonov/reviews/lenremont.html"
+    },
+    {
+      "taskId": "card-061",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_kosygina/"
+    },
+    {
+      "taskId": "card-063",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/lenremont_11538956/"
+    },
+    {
+      "taskId": "card-064",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-marshala-zhukova_12060753/"
+    },
+    {
+      "taskId": "card-065",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/servisnyj-centr-lenremont_12206706/"
+    },
+    {
+      "taskId": "card-066",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/lenremont-ooo_11852552/"
+    },
+    {
+      "taskId": "card-067",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-metro-komendantskij-prospekt_12061020/"
+    },
+    {
+      "taskId": "card-076",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552840261007"
+    },
+    {
+      "taskId": "card-077",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552840261005"
+    },
+    {
+      "taskId": "card-078",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552839608766"
+    },
+    {
+      "taskId": "card-079",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001025261830"
+    },
+    {
+      "taskId": "card-080",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001020122849"
+    },
+    {
+      "taskId": "card-081",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001047818597"
+    },
+    {
+      "taskId": "card-082",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001007540186"
+    },
+    {
+      "taskId": "card-083",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001048368935"
+    },
+    {
+      "taskId": "card-084",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348553838710040"
+    },
+    {
+      "taskId": "card-085",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001039113813"
+    },
+    {
+      "taskId": "card-086",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001035088365"
+    },
+    {
+      "taskId": "card-087",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001093090102"
+    },
+    {
+      "taskId": "card-088",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001044671839"
+    },
+    {
+      "taskId": "card-089",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001045109632"
+    },
+    {
+      "taskId": "card-090",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001101432136"
+    },
+    {
+      "taskId": "card-091",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001058962565"
+    },
+    {
+      "taskId": "card-092",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001035088361"
+    },
+    {
+      "taskId": "card-093",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001067809478"
+    },
+    {
+      "taskId": "card-094",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001060840319"
+    },
+    {
+      "taskId": "card-095",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001060449107"
+    },
+    {
+      "taskId": "card-096",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001030609751"
+    },
+    {
+      "taskId": "card-097",
+      "platform": "Flamp",
+      "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-5348552840261006"
+    },
+    {
+      "taskId": "card-098",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001007540186/tab/reviews"
+    },
+    {
+      "taskId": "card-099",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001058962565/tab/reviews"
+    },
+    {
+      "taskId": "card-100",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001030609738/tab/reviews"
+    },
+    {
+      "taskId": "card-101",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001093090102/tab/reviews"
+    },
+    {
+      "taskId": "card-102",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001044671839/tab/reviews"
+    },
+    {
+      "taskId": "card-103",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/5348552839608766/tab/reviews"
+    },
+    {
+      "taskId": "card-104",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001048368935/tab/reviews"
+    },
+    {
+      "taskId": "card-105",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001025261830/tab/reviews"
+    },
+    {
+      "taskId": "card-106",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001030609751/tab/reviews"
+    },
+    {
+      "taskId": "card-107",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001047818597/tab/reviews"
+    },
+    {
+      "taskId": "card-108",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001035088365/tab/reviews"
+    },
+    {
+      "taskId": "card-109",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001060840319/tab/reviews"
+    },
+    {
+      "taskId": "card-110",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/5348553838710040/tab/reviews"
+    },
+    {
+      "taskId": "card-111",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001060449107/tab/reviews"
+    },
+    {
+      "taskId": "card-112",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/5348552840261007/tab/reviews"
+    },
+    {
+      "taskId": "card-113",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001020122849/tab/reviews"
+    },
+    {
+      "taskId": "card-114",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001035088361/tab/reviews"
+    },
+    {
+      "taskId": "card-115",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001045109632/tab/reviews"
+    },
+    {
+      "taskId": "card-116",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/5348552840261005/tab/reviews"
+    },
+    {
+      "taskId": "card-117",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001067809478/tab/reviews"
+    },
+    {
+      "taskId": "card-118",
+      "platform": "2ГИС",
+      "url": "https://2gis.ru/spb/firm/70000001101432136/tab/reviews"
+    },
+    {
+      "taskId": "card-119",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_yaroslava_gasheka/"
+    },
+    {
+      "taskId": "card-120",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_yuriya_gagarina/"
+    },
+    {
+      "taskId": "card-121",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_marshala_zhukova/"
+    },
+    {
+      "taskId": "card-122",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_aviakonstruktorov/"
+    },
+    {
+      "taskId": "card-123",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_prosvescheniya/"
+    },
+    {
+      "taskId": "card-124",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_ushinskogo/"
+    },
+    {
+      "taskId": "card-125",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_kievskoj_ulitse_32v/"
+    },
+    {
+      "taskId": "card-126",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_nauki/"
+    },
+    {
+      "taskId": "card-127",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_veteranov/"
+    },
+    {
+      "taskId": "card-128",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_korablestroitelej/"
+    },
+    {
+      "taskId": "card-129",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_kievskoj_ulitse/"
+    },
+    {
+      "taskId": "card-130",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_mineralnoj_ulitse/"
+    },
+    {
+      "taskId": "card-131",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_prosvescheniya_20_25/"
+    },
+    {
+      "taskId": "card-132",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_frunze/"
+    },
+    {
+      "taskId": "card-133",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_reshetnikova/"
+    },
+    {
+      "taskId": "card-134",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/remontnaya_masterskaya_lenremont_na_mineralnoj_ulitse/"
+    },
+    {
+      "taskId": "card-135",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_v_kolpino/"
+    },
+    {
+      "taskId": "card-136",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_ispytatelej_11_k_1/"
+    },
+    {
+      "taskId": "card-137",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_metro_ploschad_muzhestva/"
+    },
+    {
+      "taskId": "card-138",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_yunyh_pionerov/"
+    },
+    {
+      "taskId": "card-139",
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_krugovoj_ulitse_47/"
+    },
+    {
+      "taskId": "card-142",
+      "platform": "Официальный сайт магазина — видеоотзывы",
+      "url": "https://pskov-bu-tekhnika.lenremont.ru/otzyvy/"
+    },
+    {
+      "taskId": "card-145",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/moskva/lenremont/bratislavskaya-ul-25-51806"
+    },
+    {
+      "taskId": "card-146",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/moskva/lenremont/nagornaya-ul-23-korp-1-51805"
+    },
+    {
+      "taskId": "card-147",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/murino/lenremont/privokzalnaya-ploschad-3-korp-4-murino-147910"
+    },
+    {
+      "taskId": "card-148",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/murino/lenremont/privokzalnaya-ploschad-3-korp-4-murino-147913"
+    },
+    {
+      "taskId": "card-149",
+      "platform": "Guidebook",
+      "url": "https://guidebook.ru/moskva/nagornaya-ulitsa/lenremont.html"
+    },
+    {
+      "taskId": "card-150",
+      "platform": "isfix",
+      "url": "https://isfix.ru/165466-lenremont-ooo-montazhno-remontnaya-firma.html"
+    },
+    {
+      "taskId": "card-151",
+      "platform": "Rating.msk",
+      "url": "https://mail.rating.msk.ru/remont_holodilnik/lenremont"
+    },
+    {
+      "taskId": "card-152",
+      "platform": "YP",
+      "url": "https://www.yp.ru/detail/id/lenremont_1427505/"
+    },
+    {
+      "taskId": "card-153",
+      "platform": "Serviced",
+      "url": "https://serviced.ru/service/lenremont/"
+    },
+    {
+      "taskId": "card-154",
+      "platform": "Spravochnika",
+      "url": "https://sankt-peterburg.spravochnika.ru/org/id-468567"
+    },
+    {
+      "taskId": "card-155",
+      "platform": "Официальный сайт — видеоотзывы",
+      "url": "https://novgorod.lenremont.ru/"
+    },
+    {
+      "taskId": "card-156",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-zhaka-dyuklo-6-korp-2-147907"
+    },
+    {
+      "taskId": "card-157",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-reshetnikova-3-147895"
+    },
+    {
+      "taskId": "card-158",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-korablestroitelej-30-147893"
+    },
+    {
+      "taskId": "card-159",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-marshala-zhukova-35-korp-3-147906"
+    },
+    {
+      "taskId": "card-160",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/kievskaya-ul-32v-147897"
+    },
+    {
+      "taskId": "card-161",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-belyi-kuna-20-korp-1-147916"
+    },
+    {
+      "taskId": "card-162",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-yuriya-gagarina-23-147912"
+    },
+    {
+      "taskId": "card-163",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-frunze-15-147909"
+    },
+    {
+      "taskId": "card-164",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-nepokoryonnyih-2-147908"
+    },
+    {
+      "taskId": "card-165",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-bolshevikov-25-147905"
+    },
+    {
+      "taskId": "card-166",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-nauki-8-korp-1-147902"
+    },
+    {
+      "taskId": "card-167",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-prosvescheniya-2025-147896"
+    },
+    {
+      "taskId": "card-168",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-lunacharskogo-56-korp-1-147900"
+    },
+    {
+      "taskId": "card-169",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-nastavnikov-47-korp-1-147901"
+    },
+    {
+      "taskId": "card-170",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-veteranov-9-147894"
+    },
+    {
+      "taskId": "card-171",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-ispyitatelej-11-korp-1-147911"
+    },
+    {
+      "taskId": "card-172",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-elizarova-36-147903"
+    },
+    {
+      "taskId": "card-173",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-oleko-dundicha-36-korp-1-147904"
+    },
+    {
+      "taskId": "card-174",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-aviakonstruktorov-4-korp-1-147898"
+    },
+    {
+      "taskId": "card-175",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-nastavnikov-47-korp-1-147918"
+    },
+    {
+      "taskId": "card-176",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-veteranov-9-147899"
+    },
+    {
+      "taskId": "card-177",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-marshala-zhukova-35-korp-3-147915"
+    },
+    {
+      "taskId": "card-178",
+      "platform": "Redmap",
+      "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-ushinskogo-25-korp-1-147917"
+    },
+    {
+      "taskId": "card-180",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469631ba422bc3d7:0xad44bcca44f87641!8m2!3d59.9042544!4d30.333828!16s%2Fg%2F11trhxzt9v!19sChIJ18MrQroxlkYRQXb4RMq8RK0"
+    },
+    {
+      "taskId": "card-181",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46963b39765a0291:0xc8af33a81621f762!8m2!3d59.8613478!4d30.3154893!16s%2Fg%2F11n6rs7m3h!19sChIJkQJadjk7lkYRYvchFqgzr8g"
+    },
+    {
+      "taskId": "card-182",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46962f68f9c56f11:0xd02e91321fc3179f!8m2!3d59.8739974!4d30.385776!16s%2Fg%2F11fqzz0b1g!19sChIJEW_F-WgvlkYRnxfDHzKRLtA"
+    },
+    {
+      "taskId": "card-183",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46962f79bd84cf5f:0xe97f95913e0816d8!8m2!3d59.8916065!4d30.4059095!16s%2Fg%2F11smvg9bj7!19sChIJX8-EvXkvlkYR2BYIPpGVf-k"
+    },
+    {
+      "taskId": "card-184",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x4696300c7bb95ed1:0x2a2bd1e4fd34931e!8m2!3d59.8677849!4d30.6756687!16s%2Fg%2F11nfr1ppxz!19sChIJ0V65ewwwlkYRHpM0_eTRKyo"
+    },
+    {
+      "taskId": "card-185",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46963aae5444ce83:0xfc6d481ef8012cbd!8m2!3d59.8336805!4d30.352745!16s%2Fg%2F11xb7hs9x!19sChIJg85EVK46lkYRvSwB-B5Ibfw"
+    },
+    {
+      "taskId": "card-186",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x4696317a662610bf:0x6419ed04ae235a0a!8m2!3d59.8324415!4d30.3883566!16s%2Fg%2F11k9jvrdfn!19sChIJvxAmZnoxlkYRClojrgTtGWQ"
+    },
+    {
+      "taskId": "card-187",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469631f33dd59d1f:0x904e2f7a0e5f5d02!8m2!3d60.0018578!4d30.3285109!16s%2Fg%2F11wjmd4fcc!19sChIJH53VPfMxlkYRAl1fDnovTpA"
+    },
+    {
+      "taskId": "card-188",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D1%83%D1%86%D0%B5%D0%BD%D0%BA%D0%BE%D0%B9+%D0%BE%D1%82+%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0/data=!4m7!3m6!1s0x46963186d2c3d303:0x1c76acaee18dc0b!8m2!3d59.8613515!4d30.3154549!16s%2Fg%2F11sc7jpsbh!19sChIJA9PD0oYxlkYRC9wY7spqxwE"
+    },
+    {
+      "taskId": "card-189",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469633284485756d:0xf6a5bddb92a8c188!8m2!3d59.9664811!4d30.372206!16s%2Fg%2F11zyk5h2l6!19sChIJbXWFRCgzlkYRiMGoktu9pfY"
+    },
+    {
+      "taskId": "card-190",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469633359f878e7d:0x9de24e95f442df47!8m2!3d60.0153406!4d30.3895613!16s%2Fg%2F11h7jcpw7_!19sChIJfY6HnzUzlkYRR99C9JVO4p0"
+    },
+    {
+      "taskId": "card-191",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x4696312c5dfe05ff:0xa18f332d851bbbe1!8m2!3d59.9462687!4d30.4962268!16s%2Fg%2F11swcwr3nl!19sChIJ_wX-XSwxlkYR4bsbhS0zj6E"
+    },
+    {
+      "taskId": "card-192",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D1%83%D1%86%D0%B5%D0%BD%D0%BA%D0%BE%D0%B9+%D0%BE%D1%82+%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0/data=!4m7!3m6!1s0x46963bd421494b13:0xc43721673a718ba9!8m2!3d59.8640025!4d30.3349269!16s%2Fg%2F11rd_4__mx!19sChIJE0tJIdQ7lkYRqYtxOmchN8Q"
+    },
+    {
+      "taskId": "card-193",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x4696359e52835efb:0x44ff983bfa370a6f!8m2!3d60.0049437!4d30.291043!16s%2Fg%2F11rdvw73_l!19sChIJ-16DUp41lkYRbwo3-juY_0Q"
+    },
+    {
+      "taskId": "card-194",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46962f06a47a5ff3:0x396dd739f5cbf268!8m2!3d60.0358632!4d30.4107421!16s%2Fg%2F11h94wvg9x!19sChIJ8196pAYvlkYRaPLL9TnXbTk"
+    },
+    {
+      "taskId": "card-195",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x469634522a369997:0xdfee5769623bedf6!8m2!3d60.0279721!4d30.273746!16s%2Fg%2F11gy3j38bp!19sChIJl5k2KlI0lkYR9u07YmlX7t8"
+    },
+    {
+      "taskId": "card-196",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0+%D1%81+%D1%83%D1%86%D0%B5%D0%BD%D0%BA%D0%BE%D0%B9+%D0%BE%D1%82+%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B0/data=!4m7!3m6!1s0x469631a28b752a0f:0x431f4a3e2bac1fb3!8m2!3d59.9234895!4d30.4527617!16s%2Fg%2F11t5_0xj_m!19sChIJDyp1i6IxlkYRsx-sKz5KH0M"
+    },
+    {
+      "taskId": "card-197",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46963c007cae5555:0xa3331794d6b0c65f!8m2!3d59.8258877!4d30.0979275!16s%2Fg%2F11rq1ldb39!19sChIJVVWufAA8lkYRX8aw1pQXM6M"
+    },
+    {
+      "taskId": "card-198",
+      "platform": "Google Карты",
+      "url": "https://www.google.com/maps/place/%D0%9B%D0%B5%D0%BD%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82/data=!4m7!3m6!1s0x46b5359ca1382a69:0x40b4d1952946e701!8m2!3d55.787194!4d37.6766529!16s%2Fg%2F11gjj41bz3!19sChIJaSo4oZw1tUYRAedGKZXRtEA"
+    },
+    {
+      "taskId": "card-201",
+      "platform": "Справкер",
+      "url": "https://msk.spravker.ru/otdelochnye-raboty/lenremont.htm"
+    },
+    {
+      "taskId": "card-202",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/lenremont_11538957/"
+    },
+    {
+      "taskId": "card-203",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-nauki_12061016/"
+    },
+    {
+      "taskId": "card-204",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-elizarova_12755962/"
+    },
+    {
+      "taskId": "card-205",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/lenremont-ooo_9625417/"
+    },
+    {
+      "taskId": "card-206",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-ulice-bely-kuna_12060750/"
+    },
+    {
+      "taskId": "card-207",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-ulice-korablestroitelej_12061018/"
+    },
+    {
+      "taskId": "card-208",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-lunacharskogo_11978145/"
+    },
+    {
+      "taskId": "card-209",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-nastavnikov_12061759/"
+    },
+    {
+      "taskId": "card-210",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-ispytatelej-11-k-1_12789105/"
+    },
+    {
+      "taskId": "card-211",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/servisnyj-centr-lenremont-v-kolpino_14441597/"
+    },
+    {
+      "taskId": "card-212",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-ulice-yaroslava-gasheka_14441589/"
+    },
+    {
+      "taskId": "card-213",
+      "platform": "Yell",
+      "url": "https://www.yell.ru/spb/chain/lenremont-ooo_9625417/"
+    },
+    {
+      "taskId": "card-216",
+      "platform": "Официальный сайт Ленремонта — контакты",
+      "url": "https://www.lenremont.ru/contact.htm"
+    },
+    {
+      "taskId": "card-217",
+      "platform": "rting.ru network directory",
+      "url": "https://rting.ru/sankt-peterburg/filial/lenremont/201215"
+    },
+    {
+      "taskId": "card-218",
+      "platform": "Rting — список филиалов",
+      "url": "https://rting.ru/sankt-peterburg/filial/lenremont/298336"
+    },
+    {
+      "taskId": "card-219",
+      "platform": "Официальный сайт магазина Ленремонт",
+      "url": "https://kupit-bu-tekhniku.lenremont.ru/"
+    },
+    {
+      "taskId": "card-220",
+      "platform": "YouTube",
+      "url": "https://youtube.com/channel/UChZQrVGyddGxE515iZFY6uA"
+    },
+    {
+      "taskId": "card-221",
+      "platform": "rting.ru",
+      "url": "https://rting.ru/sankt-peterburg/co/lenremont/4916409"
+    },
+    {
+      "taskId": "card-222",
+      "platform": "rting.ru",
+      "url": "https://rting.ru/sankt-peterburg/co/lenremont/2837699"
+    },
+    {
+      "taskId": "card-223",
+      "platform": "rting.ru",
+      "url": "https://rting.ru/sankt-peterburg/co/lenremont/2855819"
+    },
+    {
+      "taskId": "card-224",
+      "platform": "Официальный сайт магазина Ленремонт — ссылка из RemKarta",
+      "url": "http://novgorod-bu-tekhnika.lenremont.ru/"
+    },
+    {
+      "taskId": "card-225",
+      "platform": "RemKarta — список сети в Великом Новгороде",
+      "url": "https://nov.remkarta.ru/velikiy-novgorod/tehnika-s-utsenkoy/all/"
+    },
+    {
+      "taskId": "card-226",
+      "platform": "Официальный сайт Ленремонта",
+      "url": "https://www.lenremont.ru/masterskaya-lenremonta-u-m-mezhdunarodnaya-ul-bely-kuna-d-20-k-1.htm"
+    },
+    {
+      "taskId": "card-227",
+      "platform": "Официальный сайт московского Ленремонта",
+      "url": "https://lenremont.moscow/"
+    },
+    {
+      "taskId": "card-228",
+      "platform": "ТОЧКА МНЕНИЯ (другое зеркало)",
+      "url": "https://tochka-mneniy.com/lenremont-otzyvy/"
+    },
+    {
+      "taskId": "card-229",
+      "platform": "Официальный сайт Ленремонта",
+      "url": "https://www.lenremont.ru/lenremont-na-muzhestva.htm"
+    },
+    {
+      "taskId": "card-230",
+      "platform": "Rting",
+      "url": "https://rting.ru/sankt-peterburg/co/lenremont/2855829"
+    },
+    {
+      "taskId": "card-231",
+      "platform": "Zoon — сеть",
+      "url": "https://zoon.ru/spb/repair/network/lenremont/"
+    }
+  ]
+}
+{"photoFiles":23,"reviewRecords":150,"pending":154,"filesValidated":true}

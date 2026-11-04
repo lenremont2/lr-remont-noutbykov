@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-02",
+  "groups": [
+    {
+      "groupId": "duplicate-guest-laptop-2017163",
+      "recordIds": ["review-b2c5569920bd", "review-d825dccaba50"],
+      "status": "confirmed_same_review_text",
+      "sources": ["https://www.otzyvru.com/lenremont/review-2017163", "https://otzovikkrd23.ru/lenremont-otzyvy/"],
+      "evidence": "Coordinator independently retrieved the mirror's public search-index representation using a focused query; the certificate warning on the live mirror was not bypassed. The indexed complete body was compared with the original opened in Chrome. They match in narrative wording after typographic punctuation changes: same14April2025 title, preceding competitor diagnosis3200, quoted additional connector price, Lenremont cleaning/connector work5500, ending gratitude, and same company reply17April2025. The index repeats an abbreviated prefix before its full body; this is not another review. Mirror rating remains null, not copied from the original. A literal primary-source hyperlink was not observed on the mirror; provenance is independently established by complete text and event details."
+    },
+    {
+      "groupId": "duplicate-orlova-1951259",
+      "recordIds": ["review-103f98b6752c", "review-2be169a1a0ba"],
+      "status": "confirmed_same_review_text",
+      "sources": ["https://www.otzyvru.com/lenremont/review-1951259", "https://otzovikkrd23.ru/lenremont-otzyvy/"],
+      "evidence": "Coordinator independently read the complete mirror body and reply in the public search index, then reopened the original in Chrome. The complaint wording,20January2025 date/title, unique order8292175 dated22December2024, nearly20000 amount, author's difficulty reading the act and described daughter/calls match. The23January2025 company reply matches too, including laptop-case repair and before/after claim. Mirror file URLs and live image binding remain unavailable: four placeholders are not counted as four new photographs. Existing verified photographs belong only to the original company reply. No primary hyperlink/ID was observed in the mirror index; the match is from full text and specific order details, not author name alone."
+    },
+    {
+      "groupId": "duplicate-viktoria-dragunova-2023-02-01",
+      "recordIds": ["review-255b85ac6938", "review-092f4d5c89e3"],
+      "status": "confirmed_same_review_text",
+      "sources": [
+        "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_moskovskom_prospekte_212/#comment63da226e4bc4f5703f060555",
+        "https://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-moskovskom-prospekte-212_14448542/reviews/?reviewId=4956098"
+      ],
+      "evidence": "Coordinator independently read the complete Zoon review container63da226e4bc4f5703f060555, author Viktoria Dragunova, date metadata2023-02-01T11:27:21+03:00, no service rating. Its own text (excluding the nested company reply) was compared in memory with Yell data-review4956098.text. The full bodies are equal after NFKC and whitespace normalization. Worker exact hashes independently confirm that replacing only NBSP with ordinary space changes the Zoon SHA256518317eb293464defd16b5b2397ee0949bbd05db59b7a2f2014b7b52c3d7f82a into the exact Yell SHA2562f1931a42aa4b205aa916cb56aabc1e4bbbadef779c145dada9d3357bd2a9490. Coordinator selected the Zoon.ru(3) source filter on Yell and verified that4956098 remains one of its three review IDs. The company response wording differs between publications; preserve source-specific evidence and both URLs. This confirms syndicated review content, not an additional independent customer."
+    },
+    {
+      "groupId": "duplicate-elena-space-master-2022-05-21",
+      "recordIds": ["review-3a09111dcb12", "review-d231d53aada7"],
+      "status": "confirmed_same_review_text",
+      "sources": [
+        "https://yandex.ru/maps/user/9x9de2h5a8gvwxnanu0ah2w21w",
+        "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_zvyozdnoj_ulitse/reviews/#comment6288e01b4aafc5a04c06f937"
+      ],
+      "evidence": "Coordinator independently opened both publications and expanded the Yandex text. The complete complaint body, over 2000 characters, matches after Unicode NFKC normalization, case-folding and replacement of punctuation/whitespace with word separators. The dates (21 May 2022), 2-star rating, chronology of calls, 20 April transfer to Zvezdnaya and named technician Vadim also match. Author names differ (Space master versus Elena); the decision is based on the full text and event details, not the author name. Zoon has additional structured advantages text and a company response dated 30 May; preserve these source-specific fields and both URLs. This proves repeated review content, not the identity of the account holders."
+    }
+  ]
+}

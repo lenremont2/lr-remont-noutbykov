@@ -5,3 +5,6 @@ package-lock.json
 docs/MASTER_DEVELOPMENT_PROMPT.md
 scrollcraft/builds/home-2026-10-31/engine/
 scrollcraft/builds/*/lab/
+artifacts/video-feedback-2026-11-02/
+artifacts/mobile-feedback-2026-11-02/*.json
+artifacts/landings-review-2026-11-03/

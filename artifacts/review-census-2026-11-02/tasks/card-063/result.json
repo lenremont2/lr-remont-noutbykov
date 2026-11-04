@@ -1,0 +1,100 @@
+{
+  "taskId": "card-063",
+  "platform": "Yell",
+  "url": "https://www.yell.ru/spb/com/lenremont_11538956/",
+  "branch": "проспект Ветеранов, 9",
+  "city": "Санкт-Петербург",
+  "networkEvidence": {
+    "confirmed": true,
+    "officialUrl": "https://www.lenremont.ru/lenremont-na-veteranov.htm",
+    "summary": "Официальный сайт называет мастерскую по адресу пр. Ветеранов, 9 своей; Yell указывает тот же адрес и прямую ссылку на сеть Ленремонт. Ответы компании подписаны ООО ЛЕНРЕМОНТ и содержат общесетевой телефон 344-44-44.",
+    "chainUrl": "https://www.yell.ru/spb/chain/lenremont-ooo_9625417/",
+    "yellPhone": "+7 962 710-70-36",
+    "officialBranchPhones": ["+7 812 242-99-45", "+7 812 688-89-33", "+7 812 640-44-35"],
+    "phoneNote": "Внешний номер Yell отличается от номеров филиала на официальной странице; совпадение телефонов не заявляется. Принадлежность подтверждают точный адрес, сетевой переход и общесетевой номер в ответах."
+  },
+  "coverage": {
+    "status": "complete",
+    "reportedTotal": 29,
+    "examinedCount": 29,
+    "endpointObserved": true,
+    "method": "Собственная Chrome-вкладка через CUA. С основной карточки открыт раздел отзывов. Явно выбран фильтр Все источники: 29 уникальных ID, включая 9 Yell.ru и 20 Zoon.ru. Раскрыт 21 сокращённый текст/ответ, затем проверено отсутствие оставшихся раскрытий. Прочитаны все основные тексты и ответы, проверены изображения внутри всех 29 отзывов. Фильтр Zoon.ru отдельно показал ровно 20 записей и подтвердил источник обоих целевых отзывов. Полный список заканчивается Натальей Т., далее карта/футер, пагинации и загрузки ещё нет. Дополнительно просмотрены миниатюры всех 27 фотографий отдельной галереи, фото 7 открыто крупно.",
+    "stopReason": "Достигнут конец доступного корпуса 29/29; число совпало с заявленным. Предел относится к этой карточке Yell и её опубликованным импортам; первичные страницы отдельных отзывов Zoon в ней не опубликованы."
+  },
+  "reviews": [
+    {
+      "author": "Виктория Драгунова",
+      "date": "2021-09-19T18:28:09+0300",
+      "rating": 5,
+      "summary": "Обращалась за ремонтом ноутбука; положительно оценивает мастера и исправную работу после ремонта.",
+      "reviewUrl": "http://www.yell.ru/spb/com/lenremont_11538956/reviews/?reviewId=4175107",
+      "topic": "ремонт ноутбука",
+      "photos": [],
+      "evidence": {
+        "sourceReviewId": "4175107",
+        "displayedSource": "Zoon.ru",
+        "sourceType": "import",
+        "originalSourceUrl": null,
+        "originalSourceReviewId": null,
+        "sourceVerification": "Отзыв присутствует при фильтре Zoon.ru (20); ссылки на исходный отзыв Zoon в карточке нет.",
+        "fullTextObserved": true,
+        "normalizedTextSha256": "c7445af9008c4cf071ff095bb69da62fb2ff2a221c8b2510af8a8b921c63f7a9",
+        "normalizedTextAlgorithm": "NFKC-lowercase-Unicode-words-v1",
+        "replyChecked": true,
+        "replySummary": "Компания благодарит за отзыв и сообщает о готовности помочь; дополнительной модели устройства не указано.",
+        "photoNote": "Вложений отзыва и ответа нет; изображения в этих блоках являются аватарами."
+      }
+    },
+    {
+      "author": "Наталья Т.",
+      "date": "2019-12-26T12:39:05+0300",
+      "rating": 5,
+      "summary": "Сдавала ноутбук в ремонт, довольна обслуживанием; отмечает гарантию и исправную работу устройства.",
+      "reviewUrl": "http://www.yell.ru/spb/com/lenremont_11538956/reviews/?reviewId=4175115",
+      "topic": "ремонт ноутбука",
+      "photos": [],
+      "evidence": {
+        "sourceReviewId": "4175115",
+        "displayedSource": "Zoon.ru",
+        "sourceType": "import",
+        "originalSourceUrl": null,
+        "originalSourceReviewId": null,
+        "sourceVerification": "Отзыв присутствует при фильтре Zoon.ru (20); ссылки на исходный отзыв Zoon в карточке нет.",
+        "fullTextObserved": true,
+        "normalizedTextSha256": "e075f5e3e5d8046c5dae684e0dc6a17908c826556ba0e6e5d0e03adfba268722",
+        "normalizedTextAlgorithm": "NFKC-lowercase-Unicode-words-v1",
+        "replyChecked": true,
+        "replySummary": "Компания предлагает обращаться снова; дополнительных сведений об устройстве нет.",
+        "photoNote": "Вложений отзыва и ответа нет; изображения в этих блоках являются аватарами."
+      }
+    }
+  ],
+  "galleryPhotos": [
+    {
+      "sourceUrl": "https://image2.yell.ru/imager/NTYxN2ZjNmUwNDRhNWU4MDgyY/700x000/responses/1/9/7/r_5b96is4mylr30p8j_1669128825.jpg",
+      "localPath": "artifacts/review-census-2026-11-02/tasks/card-063/photos/gallery-11143733.jpg",
+      "attachment": "gallery",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "description": "Мастер в форме Ленремонт работает с извлечённой электронной платой за столом; слева открыт ноутбук, сзади лежит техника и инструмент. По фото нельзя доказать, что ремонтируют именно этот ноутбук, или связать работу с одним из двух отзывов.",
+      "photoId": "11143733",
+      "galleryIndex": 7,
+      "galleryUrl": "https://www.yell.ru/spb/com/lenremont_11538956/photos/",
+      "displayedUploader": "Аделина Волк",
+      "originalUrl": null,
+      "originalDownloaded": false,
+      "downloadNote": "Скачан опубликованный увеличенный файл 700x000 через downloadMedia; ссылка на оригинал полного разрешения в наблюдаемом DOM отсутствует. Галерейный снимок не считается фото целевого отзыва."
+    }
+  ],
+  "discoveredSources": [
+    {"platform": "Официальный сайт Ленремонта", "url": "https://www.lenremont.ru/lenremont-na-veteranov.htm", "address": "проспект Ветеранов, 9", "city": "Санкт-Петербург"},
+    {"platform": "Yell — сеть", "url": "https://www.yell.ru/spb/chain/lenremont-ooo_9625417/", "address": null, "city": "Санкт-Петербург"}
+  ],
+  "notes": [
+    "Проверка 2026-11-02. Даты и оценки взяты из DOM разметки соответствующих отзывов, а не вычислены из относительного возраста.",
+    "Оба целевых отзыва — импорты Zoon и не считаются независимыми от их оригиналов; для сопоставления сохранены hash полных основных текстов и наблюдённые Yell ID/URL.",
+    "Три отзыва без определённого устройства: Альбина 5388440, yrok_pupok 4706390, Александр 3400450. Вложения отсутствуют, ответы не уточняют ноутбук; в целевые не включены.",
+    "У всех 29 отзывов найдены только аватары автора/ответов, тематических вложений нет. Общая галерея просмотрена отдельно: ремонт плат/бытовой техники/телефонов, интерьеры и вход; единственный явно видимый ноутбук отмечен отдельной записью galleryPhotos.",
+    "Полные тексты отзывов, cookies, сведения аккаунта и оболочка браузера в файлы не сохранены."
+  ]
+}

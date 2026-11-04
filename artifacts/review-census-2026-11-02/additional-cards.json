@@ -1,0 +1,338 @@
+[
+  {
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/234880316037/reviews/",
+    "branch": "Киевская,32В",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/226732697387/reviews/",
+    "branch": "Воскресенский бульвар,10",
+    "city": "Великий Новгород"
+  },
+  {
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/26288651597/reviews/",
+    "branch": "needs-address-verification",
+    "city": "Гатчина"
+  },
+  {
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/1905751304/reviews/",
+    "branch": "Жака Дюкло,6к2",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Flamp",
+    "url": "https://spb.flamp.ru/firm/lenremont_remontnoe_gorodskoe_predpriyatie-70000001030609738",
+    "branch": "Кораблестроителей,30",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Каталог",
+    "url": "https://naydiservis.ru/services/lenremont",
+    "branch": "Садовая-Триумфальная,16стр3",
+    "city": "Москва"
+  },
+  {
+    "platform": "Каталог",
+    "url": "https://pskov.spravka.city/company/lenremont-18",
+    "branch": "Яна Фабрициуса,8",
+    "city": "Псков"
+  },
+  {
+    "platform": "Каталог",
+    "url": "https://rting.ru/sankt-peterburg/co/lenremont/2855843",
+    "branch": "Непокорённых,2",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Каталог",
+    "url": "https://rting.ru/sankt-peterburg/co/lenremont/2855830",
+    "branch": "Наставников,47к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-moskovskom-prospekte-212_14448542/",
+    "branch": "Московский,212",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/lenremont_11538956/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-marshala-zhukova_12060753/",
+    "branch": "Маршала Жукова,35к3",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/servisnyj-centr-lenremont_12206706/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/lenremont-ooo_11852552/",
+    "branch": "needs-address-verification",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "https://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-metro-komendantskij-prospekt_12061020/",
+    "branch": "Авиаконструкторов,4",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Yell",
+    "url": "https://www.yell.ru/moscow/com/lenremont-remont-tehniki_11893264/",
+    "branch": "Нагорная,23к1; historical candidate",
+    "city": "Москва"
+  },
+  {
+    "platform": "Yell",
+    "url": "https://www.yell.ru/moscow/com/remontnaya-masterskaya-lenremont_12061145/",
+    "branch": "Братиславская,25; historical candidate",
+    "city": "Москва"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/moskva/lenremont/bratislavskaya-ul-25-51806",
+    "branch": "Братиславская,25; historical candidate",
+    "city": "Москва"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/moskva/lenremont/nagornaya-ul-23-korp-1-51805",
+    "branch": "Нагорная,23к1; historical candidate",
+    "city": "Москва"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/murino/lenremont/privokzalnaya-ploschad-3-korp-4-murino-147910",
+    "branch": "Привокзальная площадь,3к4; historical candidate",
+    "city": "Мурино"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/murino/lenremont/privokzalnaya-ploschad-3-korp-4-murino-147913",
+    "branch": "Привокзальная площадь,3к4; separate source card",
+    "city": "Мурино"
+  },
+  {
+    "platform": "Guidebook",
+    "url": "https://guidebook.ru/moskva/nagornaya-ulitsa/lenremont.html",
+    "branch": "Нагорная,23к1; historical candidate",
+    "city": "Москва"
+  },
+  {
+    "platform": "isfix",
+    "url": "https://isfix.ru/165466-lenremont-ooo-montazhno-remontnaya-firma.html",
+    "branch": "Нагорная23к1 and Братиславская25; combined card",
+    "city": "Москва"
+  },
+  {
+    "platform": "Rating.msk",
+    "url": "https://mail.rating.msk.ru/remont_holodilnik/lenremont",
+    "branch": "Нагорная,23к1; historical candidate",
+    "city": "Москва"
+  },
+  {
+    "platform": "YP",
+    "url": "https://www.yp.ru/detail/id/lenremont_1427505/",
+    "branch": "company-wide",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Serviced",
+    "url": "https://serviced.ru/service/lenremont/",
+    "branch": "company-wide;22addresses",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Spravochnika",
+    "url": "https://sankt-peterburg.spravochnika.ru/org/id-468567",
+    "branch": "Решетникова,3",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Официальный сайт — видеоотзывы",
+    "url": "https://novgorod.lenremont.ru/",
+    "branch": "Воскресенский бульвар,10; testimonial branch attribution needs verification",
+    "city": "Великий Новгород"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-zhaka-dyuklo-6-korp-2-147907",
+    "address": "Жака Дюкло,6к2",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-reshetnikova-3-147895",
+    "address": "Решетникова,3",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-korablestroitelej-30-147893",
+    "address": "Кораблестроителей,30",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-marshala-zhukova-35-korp-3-147906",
+    "address": "Маршала Жукова,35к3",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/kievskaya-ul-32v-147897",
+    "address": "Киевская,32В",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-belyi-kuna-20-korp-1-147916",
+    "address": "Белы Куна,20к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-yuriya-gagarina-23-147912",
+    "address": "Юрия Гагарина,23; historical candidate",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-frunze-15-147909",
+    "address": "Фрунзе,15; historical candidate",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-nepokoryonnyih-2-147908",
+    "address": "Непокорённых,2",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-bolshevikov-25-147905",
+    "address": "Большевиков,25",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-nauki-8-korp-1-147902",
+    "address": "Науки,8к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-prosvescheniya-2025-147896",
+    "address": "Просвещения,20/25",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-lunacharskogo-56-korp-1-147900",
+    "address": "Луначарского,56к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-nastavnikov-47-korp-1-147901",
+    "address": "Наставников,47к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-veteranov-9-147894",
+    "address": "Ветеранов,9",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-ispyitatelej-11-korp-1-147911",
+    "address": "Испытателей,11к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-elizarova-36-147903",
+    "address": "Елизарова,36",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-oleko-dundicha-36-korp-1-147904",
+    "address": "Олеко Дундича,36к1; historical candidate",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-aviakonstruktorov-4-korp-1-147898",
+    "address": "Авиаконструкторов,4к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-nastavnikov-47-korp-1-147918",
+    "address": "Наставников,47к1; separate source card",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-veteranov-9-147899",
+    "address": "Ветеранов,9; separate source card",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/prosp-marshala-zhukova-35-korp-3-147915",
+    "address": "Маршала Жукова,35к3; separate source card",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Redmap",
+    "url": "https://redmap.ru/sanktpeterburg/lenremont/ul-ushinskogo-25-korp-1-147917",
+    "address": "Ушинского,25к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Справкер",
+    "url": "https://msk.spravker.ru/otdelochnye-raboty/lenremont.htm",
+    "address": "Новочерёмушкинская улица, 66, корп. 1; исторический кандидат",
+    "city": "Москва"
+  },
+  {
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/226292025159/reviews/",
+    "address": "улица Ярослава Гашека, 4к1",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/108377671807/reviews/",
+    "address": "1-й Верхний переулок, 10; карточка закрыта",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/2394177609/reviews/",
+    "address": "Полюстровский проспект, 47; карточка закрыта",
+    "city": "Санкт-Петербург"
+  },
+  {
+    "platform": "Яндекс Карты",
+    "url": "https://yandex.ru/maps/org/lenremont/1905751304/reviews/",
+    "address": "улица Жака Дюкло, 6к2; карточка закрыта",
+    "city": "Санкт-Петербург"
+  }
+]

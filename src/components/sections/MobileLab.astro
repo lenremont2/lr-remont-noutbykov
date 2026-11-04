@@ -2,6 +2,7 @@
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
 import LeadButton from "../ui/LeadButton.astro";
+import home from "../../data/home-copy.json";
 const c = copy.lab;
 const f = c.items[2].fields;
 ---
@@ -41,27 +42,15 @@ const f = c.items[2].fields;
         </button>
       </figure>
       <div class="lr-lab__copy">
-        <SectionHeading title="Мобильная мастерская у вашего дома" />
-        <h3>{c.items[0].title}</h3>
-        <p>
-          Инструменты и диагностика — внутри автомобиля. Готовить рабочее место
-          дома не нужно.
-        </p>
+        <SectionHeading title={home.lab.title} lead={home.lab.lead} />
         <ul class="lr-lab__facts" role="list">
-          <li>
-            <h3>{c.items[1].title}</h3>
-            <p>
-              Модель, симптомы, подъезд и возможные работы обсудим до выезда.
-              Если нужен стационарный ремонт — согласуем передачу в сервис.
-            </p>
-          </li>
-          <li>
-            <h3>{c.items[2].title}</h3>
-            <p>
-              Покажем работу ноутбука. Работы и условия гарантии зафиксируем в
-              документах.
-            </p>
-          </li>
+          {
+            home.lab.benefits.map((benefit) => (
+              <li>
+                <h3>{benefit}</h3>
+              </li>
+            ))
+          }
         </ul>
         <LeadButton label={f.CTA!} source="lab" format="mobile-lab" />
       </div>

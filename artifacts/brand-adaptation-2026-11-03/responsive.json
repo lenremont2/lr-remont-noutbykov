@@ -1,0 +1,200 @@
+[
+  {
+    "brand": "asus",
+    "requestedWidth": 320,
+    "documentWidth": 320,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 320,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "asus",
+    "requestedWidth": 360,
+    "documentWidth": 360,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 360,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "asus",
+    "requestedWidth": 390,
+    "documentWidth": 390,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 390,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "asus",
+    "requestedWidth": 768,
+    "documentWidth": 768,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 768,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "asus",
+    "requestedWidth": 1280,
+    "documentWidth": 1261,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 1280,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "asus",
+    "requestedWidth": 1440,
+    "documentWidth": 1421,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 1440,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "huawei",
+    "requestedWidth": 320,
+    "documentWidth": 320,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 320,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "huawei",
+    "requestedWidth": 360,
+    "documentWidth": 360,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 360,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "huawei",
+    "requestedWidth": 390,
+    "documentWidth": 390,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 390,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "huawei",
+    "requestedWidth": 768,
+    "documentWidth": 768,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 768,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "huawei",
+    "requestedWidth": 1280,
+    "documentWidth": 1261,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 1280,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "huawei",
+    "requestedWidth": 1440,
+    "documentWidth": 1421,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 1440,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "packard-bell",
+    "requestedWidth": 320,
+    "documentWidth": 320,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 320,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "packard-bell",
+    "requestedWidth": 360,
+    "documentWidth": 360,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 360,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "packard-bell",
+    "requestedWidth": 390,
+    "documentWidth": 390,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 390,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "packard-bell",
+    "requestedWidth": 768,
+    "documentWidth": 768,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 768,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "packard-bell",
+    "requestedWidth": 1280,
+    "documentWidth": 1261,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 1280,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  },
+  {
+    "brand": "packard-bell",
+    "requestedWidth": 1440,
+    "documentWidth": 1421,
+    "headingOverflow": [],
+    "heroImageLoaded": true,
+    "macLink": true,
+    "quizSteps": 3,
+    "width": 1440,
+    "formContextVerification": "Static regression tests cover all forms; browser hides input values."
+  }
+]

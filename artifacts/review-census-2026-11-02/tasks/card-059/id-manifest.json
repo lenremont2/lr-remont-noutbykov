@@ -1,0 +1,166 @@
+{
+  "taskId": "card-059",
+  "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_pyatiletok/reviews/",
+  "observedOn": "2026-11-02",
+  "published": 13,
+  "rejected": 4,
+  "uniqueReviews": 17,
+  "mediaAttachments": 0,
+  "remainingVisibleExpanders": 0,
+  "continuationControl": false,
+  "rows": [
+    {
+      "id": "69ef31ae6304c534aa0b4fac",
+      "author": "Александра Бурлакова",
+      "date": "2026-04-27",
+      "rating": 1,
+      "section": "published",
+      "decision": "exclude",
+      "reason": "Диагностика торцовочной пилы."
+    },
+    {
+      "id": "6553546568777521dc07a656",
+      "author": "Денис Карпов",
+      "date": "2023-11-14",
+      "rating": 5,
+      "section": "published",
+      "decision": "exclude",
+      "reason": "Общее обслуживание без указания устройства; ответ компании также не уточняет устройство; вложений нет."
+    },
+    {
+      "id": "654c3af5ab5d3f6de10645c0",
+      "author": "Борис",
+      "date": "2023-11-09",
+      "rating": 5,
+      "section": "published",
+      "decision": "exclude",
+      "reason": "Ремонт отдельного монитора Acer Predator XB253QGWbmiiprzx."
+    },
+    {
+      "id": "6543477cd7e64af20d0c472d",
+      "author": "Алла Дуброва",
+      "date": "2023-11-02",
+      "rating": 5,
+      "section": "published",
+      "decision": "exclude",
+      "reason": "Стиральная машина."
+    },
+    {
+      "id": "63b87d24accc5c0a4a0564ce",
+      "author": "Алина Хохлова",
+      "date": "2023-01-06",
+      "rating": 5,
+      "section": "published",
+      "decision": "exclude",
+      "reason": "Смартфон Samsung."
+    },
+    {
+      "id": "634114b63acfe190730580eb",
+      "author": "Алексей Дмитреев",
+      "date": "2022-10-08",
+      "rating": 5,
+      "section": "published",
+      "decision": "exclude",
+      "reason": "Аккумулятор смартфона Honor 10."
+    },
+    {
+      "id": "628c7b54d5ce8d18d6097842",
+      "author": "Ирина",
+      "date": "2022-05-24",
+      "rating": 5,
+      "section": "published",
+      "decision": "exclude",
+      "reason": "Музыкальный центр."
+    },
+    {
+      "id": "61e8905c16696b085f0940ea",
+      "author": "Борис Масловский",
+      "date": "2022-01-20",
+      "rating": 5,
+      "section": "published",
+      "decision": "include",
+      "reason": "Чистка ноутбука, замена термопасты и бесплатная диагностика."
+    },
+    {
+      "id": "61d5c9189d27325c2935e73f",
+      "author": "Вадим",
+      "date": "2022-01-05",
+      "rating": 5,
+      "section": "published",
+      "decision": "exclude",
+      "reason": "Общие бытовые приборы без уточнения; ответ компании общий; вложений нет."
+    },
+    {
+      "id": "60ea29697b4fba65966f2c9c",
+      "author": "Татьяна",
+      "date": "2021-07-11",
+      "rating": 5,
+      "section": "published",
+      "decision": "exclude",
+      "reason": "Блендер."
+    },
+    {
+      "id": "60dd8676dadb1c401f30c209",
+      "author": "Лиза",
+      "date": "2021-07-01",
+      "rating": 5,
+      "section": "published",
+      "decision": "exclude",
+      "reason": "Соковыжималка."
+    },
+    {
+      "id": "60ca109e3e17342da64e6a2f",
+      "author": "Анна",
+      "date": "2021-06-16",
+      "rating": 5,
+      "section": "published",
+      "decision": "exclude",
+      "reason": "Кофеварка."
+    },
+    {
+      "id": "60bf83e9b68cd634732ac27d",
+      "author": "Юлия Бородинова",
+      "date": "2021-06-08",
+      "rating": 5,
+      "section": "published",
+      "decision": "exclude",
+      "reason": "Кофемашина."
+    },
+    {
+      "id": "635209cf11d1427d64031a03",
+      "author": "Сергей Лошкарев",
+      "date": "2022-10-21",
+      "rating": 5,
+      "section": "rejected",
+      "decision": "include",
+      "reason": "Краткая положительная оценка быстрого и качественного ремонта ноутбука."
+    },
+    {
+      "id": "61e2b4d7e3537c4abe1f921b",
+      "author": "Аркадий Михайлов",
+      "date": "2022-01-15",
+      "rating": 5,
+      "section": "rejected",
+      "decision": "include",
+      "reason": "У ноутбука погас экран; описаны приём, бесплатная диагностика и готовность ремонта через несколько дней."
+    },
+    {
+      "id": "61c6bbf20e6ac4466137d84a",
+      "author": "Кристина",
+      "date": "2021-12-25",
+      "rating": 5,
+      "section": "rejected",
+      "decision": "exclude",
+      "reason": "Телевизор."
+    },
+    {
+      "id": "60e81e3b366a9c448f6d363d",
+      "author": "Илья",
+      "date": "2021-07-09",
+      "rating": 5,
+      "section": "rejected",
+      "decision": "include",
+      "reason": "Восстановление USB-разъёмов ноутбука выездным мастером примерно за 30 минут."
+    }
+  ]
+}
