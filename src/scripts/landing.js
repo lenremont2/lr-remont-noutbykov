@@ -1270,10 +1270,6 @@ export function initializeHomeScroll(root) {
   const journey = root.querySelector("[data-lr-repair-journey]");
   if (!journey) return;
   const steps = Array.from(journey.querySelectorAll("[data-lr-journey-step]"));
-  const photos = Array.from(
-    journey.querySelectorAll("[data-lr-journey-photo]"),
-  );
-  const caption = journey.querySelector("[data-lr-journey-caption]");
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
   let frame;
   let current = -1;
@@ -1301,11 +1297,6 @@ export function initializeHomeScroll(root) {
     steps.forEach((step, i) => {
       step.dataset.lrCurrent = String(i === index);
     });
-    photos.forEach((photo, i) => {
-      photo.dataset.lrCurrent = String(i === index);
-    });
-    // This caption supplements the complete static steps; it is not a live region.
-    caption.textContent = steps[index].dataset.stepCaption;
   };
   const schedule = () => {
     if (!frame) frame = requestAnimationFrame(update);

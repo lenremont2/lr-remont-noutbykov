@@ -42,10 +42,10 @@ try {
   events.scroll();
   nextFrame();
   assert.equal(journey.dataset.lrActiveStep, "2");
-  assert.equal(caption.textContent, "Step 2");
+  assert.equal(caption.textContent, "");
   for (const [index, step] of steps.entries()) {
     assert.equal(step.dataset.lrCurrent, String(index === 2));
-    assert.equal(photos[index].dataset.lrCurrent, String(index === 2));
+    assert.deepEqual(photos[index].dataset, {});
   }
   initializeHomeScroll({ querySelector: () => null });
 } finally {

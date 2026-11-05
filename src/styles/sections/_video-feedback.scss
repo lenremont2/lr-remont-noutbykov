@@ -184,12 +184,14 @@
   text-underline-offset: 4px;
 }
 
+#hop-landing .lr-review__full,
 #hop-landing .lr-review__collapse,
 #hop-landing .lr-review__details[open] .lr-review__excerpt,
 #hop-landing .lr-review__details[open] .lr-review__read {
   display: none;
 }
 
+#hop-landing .lr-review__details[open] .lr-review__full,
 #hop-landing .lr-review__details[open] .lr-review__collapse {
   display: block;
 }
@@ -276,16 +278,7 @@
     display: none;
   }
 
-  #hop-landing .lr-repair-journey__visual {
-    display: none;
-  }
-
-  #hop-landing .lr-repair-journey__inline-photo,
-  #hop-landing .lr-repair-journey__detail {
-    display: none;
-  }
-
-  #hop-landing .lr-repair-journey__step {
+#hop-landing .lr-repair-journey__step {
     min-height: 0;
     padding-bottom: 24px;
   }

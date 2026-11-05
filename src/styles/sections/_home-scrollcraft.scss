@@ -207,14 +207,9 @@
 
 #hop-landing .lr-repair-journey__heading {
   max-width: 900px;
+  margin-inline: auto;
   margin-bottom: 40px;
-}
-
-#hop-landing .lr-repair-journey__kicker {
-  margin: 0 0 20px;
-  color: var(--lr-color-accent);
-  font-size: 14px;
-  font-weight: 500;
+  text-align: center;
 }
 
 #hop-landing .lr-repair-journey h2 {
@@ -227,74 +222,12 @@
   text-wrap: balance;
 }
 
-#hop-landing .lr-repair-journey__heading > p:last-child {
-  max-width: 56ch;
-  margin: 24px 0 0;
-  color: var(--lr-color-muted-on-dark);
-  font-size: 18px;
-  line-height: 1.6;
-}
-
 #hop-landing .lr-repair-journey__layout {
+  max-width: 1040px;
+  margin-inline: auto;
   display: grid;
   align-items: start;
   gap: 40px;
-}
-
-#hop-landing .lr-repair-journey__photos {
-  position: relative;
-  overflow: hidden;
-  aspect-ratio: 16 / 10;
-  border-radius: var(--lr-radius);
-  background: var(--lr-graphite-900);
-}
-
-#hop-landing .lr-repair-journey__photo {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  clip-path: inset(0 100% 0 0);
-}
-
-#hop-landing .lr-repair-journey__photo--first,
-#hop-landing .lr-repair-journey__photo[data-lr-current="true"] {
-  clip-path: inset(0);
-}
-
-#hop-landing .lr-repair-journey__aperture {
-  position: absolute;
-  inset: 20%;
-  border: 1px solid rgb(255 255 255 / 75%);
-  opacity: 0;
-  transform: scale(1.06);
-  pointer-events: none;
-}
-
-#hop-landing
-  .lr-repair-journey[data-lr-active-step="1"]
-  .lr-repair-journey__aperture {
-  opacity: 1;
-  transform: scale(1);
-}
-
-#hop-landing .lr-repair-journey__caption {
-  margin: 20px 0 0;
-  color: var(--lr-color-on-dark);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-#hop-landing .lr-repair-journey__illustration {
-  margin: 6px 0 0;
-  color: var(--lr-color-muted-on-dark);
-  font-size: 12px;
-}
-
-#hop-landing .lr-repair-journey__visual > .lr-button {
-  margin-top: 24px;
 }
 
 #hop-landing .lr-repair-journey__steps {
@@ -306,42 +239,9 @@
 #hop-landing .lr-repair-journey__step {
   position: relative;
   display: grid;
-  grid-template-columns: 36px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
   padding: 0 0 40px;
-}
-
-#hop-landing .lr-repair-journey__step::before {
-  content: "";
-  position: absolute;
-  left: 17px;
-  top: 44px;
-  bottom: 8px;
-  width: 1px;
-  background: rgb(255 255 255 / 22%);
-}
-
-#hop-landing .lr-repair-journey__step:last-child::before {
-  display: none;
-}
-
-#hop-landing .lr-repair-journey__node {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border: 1px solid var(--lr-color-muted-on-dark);
-  border-radius: 50%;
-  color: var(--lr-color-muted-on-dark);
-  font-size: 14px;
-}
-
-#hop-landing
-  .lr-repair-journey__step[data-lr-current="true"]
-  .lr-repair-journey__node {
-  border-color: var(--lr-color-accent);
-  background: var(--lr-color-accent);
-  color: var(--lr-color-accent-contrast);
 }
 
 #hop-landing .lr-repair-journey__step h3 {
@@ -361,32 +261,19 @@
   line-height: 1.65;
 }
 
-#hop-landing .lr-repair-journey__detail {
-  display: block;
-  margin-top: 20px;
-  color: var(--lr-color-accent);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.6;
-}
-
 #hop-landing .lr-repair-journey__inline-photo {
-  margin-top: 24px;
+  margin-top: 4px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   width: 100%;
   border-radius: var(--lr-radius-small);
 }
 
-@media (max-width: 767px) {
-  #hop-landing .lr-repair-journey__photos,
-  #hop-landing .lr-repair-journey__caption,
-  #hop-landing .lr-repair-journey__illustration {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
   #hop-landing .lr-repair-journey__inline-photo {
-    display: none;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0;
   }
   #hop-landing .lr-hero--home .lr-hero__media {
     grid-column: 2;
@@ -406,23 +293,31 @@
     margin-bottom: 64px;
   }
 
-  #hop-landing .lr-repair-journey__layout {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: clamp(32px, 6vw, 88px);
-  }
-
-  #hop-landing .lr-repair-journey__visual {
-    position: sticky;
-    top: 32px;
-  }
-
   #hop-landing .lr-repair-journey__step {
-    min-height: 300px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 32px;
     padding-bottom: 64px;
   }
 
+  #hop-landing .lr-repair-journey__copy {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #hop-landing
+    .lr-repair-journey__step:nth-child(even)
+    .lr-repair-journey__copy {
+    grid-column: 2;
+  }
+
+  #hop-landing
+    .lr-repair-journey__step:nth-child(even)
+    .lr-repair-journey__inline-photo {
+    grid-column: 1;
+  }
+
   #hop-landing .lr-repair-journey__step:last-child {
-    min-height: 260px;
     padding-bottom: 0;
   }
 }
@@ -450,23 +345,7 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  #hop-landing .lr-repair-journey__photo {
-    transition: clip-path 420ms ease-out;
-  }
-
-  #hop-landing .lr-repair-journey__aperture {
-    transition:
-      opacity 200ms,
-      transform 400ms;
-  }
-}
-
 @media (prefers-reduced-motion: reduce), (max-height: 650px) {
-  #hop-landing .lr-repair-journey__visual {
-    position: static;
-  }
-
   #hop-landing .lr-repair-journey__step {
     min-height: 0;
     padding-bottom: 40px;

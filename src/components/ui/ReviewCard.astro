@@ -126,11 +126,11 @@ const excerpt = review.text.slice(0, 105).replace(/\s+\S*$/, "") + "…";
         <summary>
           <>
             <span class="lr-review__excerpt">{excerpt}</span>
+            <span class="lr-review__text lr-review__full">{review.text}</span>
             <span class="lr-review__read">Читать далее</span>
             <span class="lr-review__collapse">Свернуть отзыв</span>
           </>
         </summary>
-        <p class="lr-review__text">{review.text}</p>
       </details>
     ) : (
       <p class="lr-review__text">{review.text}</p>

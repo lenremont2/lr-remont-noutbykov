@@ -13,16 +13,46 @@ const marks: Record<string, string> = {
   Dell: "dell",
   HP: "hp",
   Lenovo: "lenovo",
-  MSI: "msi",
   Samsung: "samsung",
   "Sony VAIO": "sony",
   Toshiba: "toshiba",
-  MacBook: "apple",
+  MSI: "msi",
+  Huawei: "huawei",
+  HONOR: "honor",
+  Xiaomi: "xiaomi",
+  Redmi: "redmi",
+  Gigabyte: "gigabyte",
+  AORUS: "aorus",
+  Fujitsu: "fujitsu",
+  Panasonic: "panasonic",
+  LG: "lg",
+  Microsoft: "microsoft",
+  Razer: "razer",
+  Alienware: "alienware",
+  "Packard Bell": "packard-bell",
+  eMachines: "emachines",
+  Haier: "haier",
+  DEXP: "dexp",
+  Digma: "digma",
+  Irbis: "irbis",
+  Prestigio: "prestigio",
+  Chuwi: "chuwi",
+  Teclast: "teclast",
+  Maibenben: "maibenben",
+  Machenike: "machenike",
+  Thunderobot: "thunderobot",
+  Infinix: "infinix",
+  TECNO: "tecno",
+  realme: "realme",
+  Hasee: "hasee",
+  Medion: "medion",
+  Clevo: "clevo",
+  MacBook: "macbook",
 };
 const manufacturers = [...brands, macbook];
-const featuredManufacturers = manufacturers.filter((page) => marks[page.label]);
+const featuredManufacturers = manufacturers.slice(0, 9).concat(macbook);
 const otherManufacturers = manufacturers
-  .filter((page) => !marks[page.label])
+  .filter((page) => !featuredManufacturers.includes(page))
   .sort((a, b) =>
     a.label.localeCompare(b.label, "ru", { sensitivity: "base" }),
   );
@@ -63,16 +93,14 @@ const otherManufacturers = manufacturers
                         href={pagePath(page)}
                         tabindex={duplicate ? -1 : undefined}
                       >
-                        {marks[page.label] && (
-                          <img
-                            src={`/media/manufacturer-${marks[page.label]}.svg`}
-                            alt=""
-                            width="128"
-                            height="48"
-                            loading="lazy"
-                          />
-                        )}
-                        <span>{page.label}</span>
+                        <img
+                          src={`/media/manufacturer-${marks[page.label]}.svg`}
+                          alt=""
+                          width="128"
+                          height="48"
+                          loading="lazy"
+                        />
+                        <span class="lr-visually-hidden">{page.label}</span>
                       </a>
                     </li>
                   ))}
@@ -117,7 +145,7 @@ const otherManufacturers = manufacturers
                     height="48"
                     loading="lazy"
                   />
-                  <span>{page.label}</span>
+                  <span class="lr-visually-hidden">{page.label}</span>
                 </a>
               </li>
             ))}
@@ -137,7 +165,13 @@ const otherManufacturers = manufacturers
                       class="lr-manufacturers__text-link"
                       href={pagePath(page)}
                     >
-                      {page.label}
+                      <img
+                        src={`/media/manufacturer-${marks[page.label]}.svg`}
+                        alt={page.label}
+                        width="128"
+                        height="48"
+                        loading="lazy"
+                      />
                     </a>
                   </li>
                 ))}

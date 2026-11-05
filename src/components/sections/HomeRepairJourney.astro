@@ -1,45 +1,35 @@
 ---
-import LeadButton from "../ui/LeadButton.astro";
 import copy from "../../data/laptop-service.json";
 
 interface Props {
   title?: string;
-  lead?: string;
   items?: { title: string; text: string }[];
 }
-const {
-  title = "Как проходит ремонт",
-  lead = "Бесплатная диагностика, твёрдая смета до работ и оплата после вашей проверки.",
-  items,
-} = Astro.props;
+const { title = "Как проходит ремонт", items } = Astro.props;
 const steps = [
   {
     title: copy.process.items[0].title,
     text: "Опишите симптомы по телефону или в мессенджере. Назовём предварительную стоимость и подберём один из четырёх форматов: на дому, в фургоне, в сервисном центре или с курьером.",
-    image: "/media/workshop-v4-reception-1280.webp",
-    caption: "Обращение начинается с вашей ситуации",
-    detail: "Модель и симптомы",
+    image: "/media/journey-process-reception-1280.webp",
+    caption: "Мастер принимает ноутбук и обсуждает неисправность с клиентом",
   },
   {
     title: copy.process.items[1].title,
     text: "Мастер бесплатно проверит ноутбук на дому, в мобильной мастерской или сервисном центре. Диагностика — 0 ₽, даже если после расчёта сметы вы откажетесь от ремонта.",
-    image: "/media/workshop-v4-diagnostics-1280.webp",
-    caption: "Сначала выясняем причину неисправности",
-    detail: "Диагностика: 0 ₽",
+    image: "/media/journey-process-diagnostics-1280.webp",
+    caption: "Мастер проверяет плату ноутбука мультиметром",
   },
   {
     title: copy.process.items[2].title,
     text: "Назовём полную фиксированную сумму за работу и детали. До вашего согласия ремонт не начинаем: никаких скрытых доплат за драйверы или сборку-разборку.",
-    image: "/media/workshop-v4-soldering-1280.webp",
-    caption: "Работаем после согласования сметы",
-    detail: "Сначала смета, затем ремонт",
+    image: "/media/journey-process-estimate-1280.webp",
+    caption: "Мастер и клиент согласуют смету до начала ремонта",
   },
   {
     title: copy.process.items[3].title,
     text: "Включим ноутбук и проверим его под нагрузкой вместе с вами до оплаты. Вы получите чек, договор, гарантийный талон на 1 год и все заменённые детали.",
-    image: "/media/workshop-v4-testing-1280.webp",
-    caption: "Проверяем результат вместе с вами",
-    detail: "Проверка до оплаты. Гарантия 1 год",
+    image: "/media/journey-process-handover-1280.webp",
+    caption: "Клиент проверяет отремонтированный ноутбук вместе с мастером",
   },
 ].map((step, index) => ({ ...step, ...items?.[index] }));
 ---
@@ -53,65 +43,28 @@ const steps = [
 >
   <div class="lr-container">
     <div class="lr-repair-journey__heading">
-      <p class="lr-repair-journey__kicker">Понятно на каждом этапе</p>
       <h2 id="lr-journey-title">{title}</h2>
-      <p>{lead}</p>
     </div>
     <div class="lr-repair-journey__layout">
-      <div class="lr-repair-journey__visual">
-        <div class="lr-repair-journey__photos" aria-hidden="true">
-          {
-            steps.map((step, index) => (
-              <img
-                class:list={[
-                  "lr-repair-journey__photo",
-                  { "lr-repair-journey__photo--first": index === 0 },
-                ]}
-                src={step.image}
-                width="1280"
-                height="720"
-                alt=""
-                loading="lazy"
-                decoding="async"
-                data-lr-journey-photo={index}
-              />
-            ))
-          }
-          <div class="lr-repair-journey__aperture" aria-hidden="true"></div>
-        </div>
-        <p class="lr-repair-journey__caption" data-lr-journey-caption>
-          {steps[0].caption}
-        </p>
-        <p class="lr-repair-journey__illustration">
-          Иллюстрации этапов ремонта
-        </p>
-        <LeadButton label="Узнать стоимость ремонта" source="repair-journey" />
-      </div>
       <ol class="lr-repair-journey__steps" role="list">
         {
-          steps.map((step, index) => (
-            <li
-              class="lr-repair-journey__step"
-              data-lr-journey-step
-              data-step-caption={step.caption}
-            >
-              <span class="lr-repair-journey__node" aria-hidden="true">
-                {index + 1}
-              </span>
-              <div>
+          steps.map((step) => (
+            <li class="lr-repair-journey__step" data-lr-journey-step>
+              <div class="lr-repair-journey__copy">
                 <h3>{step.title}</h3>
                 <p>{step.text}</p>
-                <strong class="lr-repair-journey__detail">{step.detail}</strong>
-                <img
-                  class="lr-repair-journey__inline-photo"
-                  src={step.image.replace("1280", "640")}
-                  width="640"
-                  height="360"
-                  alt={`Иллюстрация: ${step.caption.toLocaleLowerCase("ru-RU")}`}
-                  loading="lazy"
-                  decoding="async"
-                />
               </div>
+              <img
+                class="lr-repair-journey__inline-photo"
+                src={step.image.replace("1280", "640")}
+                srcset={`${step.image.replace("1280", "640")} 640w, ${step.image} 1280w`}
+                sizes="(min-width: 768px) 40vw, 80vw"
+                width="640"
+                height="360"
+                alt={`Иллюстрация: ${step.caption.toLocaleLowerCase("ru-RU")}`}
+                loading="lazy"
+                decoding="async"
+              />
             </li>
           ))
         }

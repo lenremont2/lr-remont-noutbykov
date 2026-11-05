@@ -411,17 +411,6 @@
     transform: none;
   }
 
-  .lr-hero__stage-video,
-  .lr-hero__video-preview,
-  .lr-hero__stage-photo {
-    mask-image: linear-gradient(
-      to bottom,
-      #000 55%,
-      rgb(0 0 0 / 85%) 70%,
-      transparent 100%
-    );
-  }
-
   .lr-hero__scene-note {
     right: auto;
     bottom: 24px;
@@ -596,6 +585,17 @@
 @media (max-width: 1023px) {
   #hop-landing .lr-hero.lr-hero--reference {
     background: #0b2340;
+
+    .lr-hero__stage-video,
+    .lr-hero__video-preview,
+    .lr-hero__stage-photo {
+      mask-image: linear-gradient(
+        to bottom,
+        #000 55%,
+        rgb(0 0 0 / 85%) 70%,
+        transparent 100%
+      );
+    }
 
     .lr-hero__reference {
       max-width: none;

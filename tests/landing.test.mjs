@@ -274,7 +274,12 @@ for (const item of data.process.items) {
 }
 assert.ok(processSection.includes("до оплаты"));
 assert.ok(processSection.includes("согласования сметы"));
-assert.equal((processSection.match(/data-lr-journey-photo=/g) || []).length, 4);
+assert.equal(
+  (processSection.match(/class="lr-repair-journey__inline-photo"/g) || [])
+    .length,
+  4,
+);
+assert.ok(!processSection.includes("lr-repair-journey__visual"));
 assert.ok(!processSection.includes("data-lr-route-name"));
 assert.ok(!formatsSection.includes("data-lr-route-choice"));
 assert.equal((formatsSection.match(/<a\b/g) || []).length, 4);
