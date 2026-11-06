@@ -1,11 +1,12 @@
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
-import { writeFile, readdir } from "node:fs/promises";
+import { writeFile, readdir, mkdir } from "node:fs/promises";
 import { wp } from "./local-wp.mjs";
 const { chromium } = createRequire("D:/works/lenremont-gutenberg/package.json")(
   "playwright",
 );
-const out = "artifacts/gutenberg-2026-11-06/maps-forms/";
+const out = "artifacts/gutenberg-2026-11-06/stock/maps-forms/";
+await mkdir(out, { recursive: true });
 const cookies = JSON.parse(
   await wp([
     "eval",

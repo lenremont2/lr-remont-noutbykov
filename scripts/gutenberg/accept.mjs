@@ -6,7 +6,7 @@ import path from "node:path";
 import { wp } from "./local-wp.mjs";
 const require = createRequire("D:/works/lenremont-gutenberg/package.json");
 const { chromium } = require("playwright");
-const out = path.resolve("artifacts/gutenberg-2026-11-06");
+const out = path.resolve("artifacts/gutenberg-2026-11-06/stock");
 const sourceRows = JSON.parse(
   await readFile(path.join(out, "source-map.json"), "utf8"),
 );
@@ -147,7 +147,7 @@ try {
     row.editorSaveReopen = true;
     const canvas =
       page.frames().find((frame) => frame.name() === "editor-canvas") || page;
-    const editorRoot = canvas.locator('[data-lr-original-id="hop-landing"]');
+    const editorRoot = canvas.locator(".lr-gutenberg-root");
     await editorRoot.waitFor();
     row.editorFont = await editorRoot.evaluate(
       (e) => getComputedStyle(e).fontFamily,
@@ -180,7 +180,7 @@ try {
       saved.key + ": hero SVG/position",
     );
     assert.equal(
-      await page.locator('script[src*="/resources/page.js"]').count(),
+      await page.locator('script[src*="/resources/page-bootstrap.js"]').count(),
       0,
       "Frontend JS loaded in editor",
     );

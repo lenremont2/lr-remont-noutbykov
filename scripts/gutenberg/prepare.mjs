@@ -8,6 +8,7 @@ import {
 } from "node:fs/promises";
 import { createRequire } from "node:module";
 import path from "node:path";
+import { initializePageControls } from "./page-controls.js";
 const require = createRequire("D:/works/lenremont-gutenberg/package.json");
 const { chromium } = require("playwright");
 const out = path.resolve("artifacts/gutenberg-2026-11-06/stock");
@@ -66,7 +67,7 @@ try {
     const slug = entry.slug;
     const html = await readFile("dist/" + slug + ".htm/index.html", "utf8");
     const result = await page.evaluate(
-      ({ html, slug, paths }) => {
+      ({ html, slug, paths, controlsSource }) => {
         const doc = new DOMParser().parseFromString(html, "text/html");
         const root = doc.querySelector("#hop-landing");
         if (!root) throw new Error("Missing landing root");
@@ -265,6 +266,8 @@ try {
             e,
             tag === "select" || tag === "time" ? tag : undefined,
           );
+          if (e.localName === "b")
+            a.class = [a.class || "", "lr-gutenberg-bold"].join(" ").trim();
           if (tag === "select")
             return create(
               "lenremont/element",
@@ -283,6 +286,7 @@ try {
                   tag: "span",
                   text: option.innerHTML.replace(/[\t\n\f\r ]+/g, " "),
                   attributes: {
+                    ...attrs(option),
                     role: "option",
                     "data-name": option.value,
                     "aria-selected": String(option.selected),
@@ -407,9 +411,11 @@ try {
           "text/html",
         );
         const sourceText = root.textContent.replace(/\s+/g, " ").trim();
-        rendered.querySelectorAll("[data-lr-map-surface]").forEach((el) => {
-          if (el.textContent.trim() === "[dmap]") el.textContent = "";
-        });
+        rendered
+          .querySelectorAll("[data-lr-map-surface],.lr-gb-data-lr-map-surface")
+          .forEach((el) => {
+            if (el.textContent.trim() === "[dmap]") el.textContent = "";
+          });
         const outputText = rendered
           .querySelector("#hop-landing")
           .textContent.replace(/\s+/g, " ")
@@ -448,6 +454,58 @@ try {
           throw new Error(
             "Select option values changed during Gutenberg serialization",
           );
+        const enhance = new Function("return (" + controlsSource + ")")();
+        const renderedRoot = rendered.querySelector("#hop-landing");
+        enhance(renderedRoot);
+        enhance(renderedRoot); // Repeated initialization must preserve values and avoid duplicates.
+        const enhancedOptions = [
+          ...renderedRoot.querySelectorAll("option"),
+        ].map((option) => [option.getAttribute("value"), option.textContent]);
+        if (JSON.stringify(sourceOptions) !== JSON.stringify(enhancedOptions))
+          throw new Error("Page controls changed option values");
+        [...root.querySelectorAll("option")].forEach((option, index) => {
+          const saved = renderedRoot.querySelectorAll("option")[index];
+          for (const { name, value } of option.attributes)
+            if (
+              name !== "class" &&
+              name !== "style" &&
+              saved.getAttribute(name) !== value
+            )
+              throw new Error("Option attribute changed: " + name);
+        });
+        const originalForms = [...root.querySelectorAll("form")];
+        const enhancedForms = [...renderedRoot.querySelectorAll("form")];
+        if (originalForms.length !== enhancedForms.length)
+          throw new Error("Form count changed");
+        originalForms.forEach((form, index) => {
+          if (
+            [...form.classList].some(
+              (name) => !enhancedForms[index].classList.contains(name),
+            )
+          )
+            throw new Error("Form classes changed");
+          for (const { name, value } of form.attributes)
+            if (
+              name !== "style" &&
+              name !== "class" &&
+              enhancedForms[index].getAttribute(name) !== value
+            )
+              throw new Error("Form attribute changed: " + name);
+          const fields = (el) =>
+            [...el.querySelectorAll("input,select")].map((input) => [
+              input.localName,
+              input.name,
+              input.getAttribute("value"),
+              input.type,
+              input.disabled,
+              input.required,
+            ]);
+          if (
+            JSON.stringify(fields(form)) !==
+            JSON.stringify(fields(enhancedForms[index]))
+          )
+            throw new Error("Form controls changed");
+        });
         if (
           rendered.querySelectorAll("br").length !==
           root.querySelectorAll("br").length
@@ -487,7 +545,7 @@ try {
           })(),
         };
       },
-      { html, slug, paths },
+      { html, slug, paths, controlsSource: initializePageControls.toString() },
     );
     inline.push(...result.styles);
     const artName = "resources/art-" + slug + ".json";
@@ -550,6 +608,15 @@ try {
   const js = built.find((f) => /^LandingLayout.*\.js$/.test(f));
   assert(css && js);
   let styles = await readFile("dist/_astro/" + css, "utf8");
+  // The stock text block uses strong for the source's standalone bold price labels.
+  for (const selector of [
+    ".lr-symptoms__group-overlay",
+    ".lr-symptoms__group-price",
+  ])
+    styles = styles.replaceAll(
+      selector + " b",
+      selector + " :is(b,strong.lr-gutenberg-bold)",
+    );
   styles = styles.replaceAll("/media/", "./media/");
   const fontFiles = [...styles.matchAll(/\.\/media\/([^\s)"']+)/g)].map(
     (m) => m[1],
@@ -571,7 +638,7 @@ try {
         /\[(data-(?:lr|hop|sc)-[a-z0-9-]+|data-(?:format|format-schema|format-illustration|device-category|symptom))(?:=["']?([a-z0-9-]+)["']?)?\]/gi,
         (_, name, value) => ".lr-gb-" + name + (value ? "--" + value : ""),
       ) +
-    "\n.lr-gutenberg-root .block-editor-inner-blocks,.lr-gutenberg-root .lr-art-editor{display:contents}.lr-gutenberg-root .lr-gutenberg-video>.wp-block-video{display:block}.lr-gutenberg-root .lr-gutenberg-video video{width:100%;height:100%;object-fit:cover}\n";
+    "\n.lr-gutenberg-root .block-editor-inner-blocks,.lr-gutenberg-root .lr-art-editor{display:contents}.lr-gutenberg-root .lr-gutenberg-video>.wp-block-video{display:block}.lr-gutenberg-root .lr-gutenberg-video video{width:100%;height:100%;object-fit:cover}.lr-gutenberg-root .lr-gutenberg-select:is(.is-selected,.has-child-selected,:focus-within) [role=option]{display:block}\n";
   await writeFile(path.join(pack, "resources/editor.css"), editorCss);
   await copyFile("dist/_astro/" + js, path.join(pack, "resources/page.js"));
   await copyFile(

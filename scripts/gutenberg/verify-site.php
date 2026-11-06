@@ -1,7 +1,7 @@
 <?php
 // Read-only checks of our imported pages. Never saves or deletes existing pages.
 if (!defined('ABSPATH') || home_url() !== 'http://testing-gutenberg.local' || wp_get_current_user()->user_login !== 'admin') throw new RuntimeException('Wrong test site/user');
-$directory = dirname(__DIR__, 2) . '/artifacts/gutenberg-2026-11-06';
+$directory = dirname(__DIR__, 2) . '/artifacts/gutenberg-2026-11-06/stock';
 $manifest = json_decode(file_get_contents($directory . '/project/project.json'), true);
 $result = array('site' => home_url(), 'pages' => array(), 'failures' => array(), 'checkedAt' => gmdate('c'));
 $main = get_page_by_path('remont-noutbukov-spb', OBJECT, 'page');
@@ -30,7 +30,7 @@ foreach ($manifest['pages'] as $index => $expected) {
         'parentId' => get_post_meta($id, 'on_parent_page_search', true), 'nativeParent' => (int) $post->post_parent,
         'revision' => Lenremont\PageImporter\PageSpec::snapshot($id)['revision'], 'seo' => Lenremont\PageImporter\PageSeo::snapshot($id), 'content' => $post->post_content);
 }
-$before = json_decode(file_get_contents($directory . '/backup/page-hashes.json'), true);
+$before = json_decode(file_get_contents(dirname($directory) . '/backup/page-hashes.json'), true);
 global $wpdb;
 $after = $wpdb->get_results("SELECT ID,post_status,post_author,post_parent,SHA2(post_content,256) AS hash FROM {$wpdb->posts} WHERE post_type=0x70616765 ORDER BY ID", ARRAY_A);
 if (count($after) !== count($before) + 50) $result['failures'][] = 'Unexpected page count after repeated import';

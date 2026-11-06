@@ -5,15 +5,15 @@ use Lenremont\PageImporter\ProjectImport;
 use Lenremont\PageImporter\PageResources;
 use Lenremont\PageImporter\PageSpec;
 if (home_url() !== 'http://testing-gutenberg.local' || get_current_user_id() !== 1) throw new RuntimeException('Wrong local target');
-$root = dirname(__DIR__, 2) . '/artifacts/gutenberg-2026-11-06';
-$zip = $root . '/lr-remont-noutbykov-gutenberg-v4-quality.zip';
+$root = dirname(__DIR__, 2) . '/artifacts/gutenberg-2026-11-06/stock';
+$zip = $root . '/lr-remont-noutbykov-gutenberg-v4-stock-0.31.0-webm-final-v2.zip';
 $package = new ProjectPackage($zip);
-$state_file = $root . '/hero-audit/import-state-' . substr($package->fingerprint,0,16) . '.json';
+$state_file = $root . '/import-state-' . substr($package->fingerprint,0,16) . '.json';
 if (file_exists($state_file)) {
     $state = json_decode(file_get_contents($state_file), true);
     if ($state['fingerprint'] !== $package->fingerprint) throw new RuntimeException('Package changed during update');
 } else {
-    $before = json_decode(file_get_contents($root . '/hero-audit/before.json'), true);
+    $before = json_decode(file_get_contents($root . '/before.json'), true);
     foreach ($before['pages'] as $row) PageSpec::unchanged($row['id'], $row['revision']);
     $state = array('user'=>1,'manifest'=>$package->manifest,'fingerprint'=>$package->fingerprint,'file'=>$zip,'operation'=>'update','media_sync'=>true,'media_scan'=>false);
     ProjectImport::prepare_structure($state);
