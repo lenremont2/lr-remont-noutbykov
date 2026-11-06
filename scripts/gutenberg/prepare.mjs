@@ -10,7 +10,7 @@ import { createRequire } from "node:module";
 import path from "node:path";
 const require = createRequire("D:/works/lenremont-gutenberg/package.json");
 const { chromium } = require("playwright");
-const out = path.resolve("artifacts/gutenberg-2026-11-06");
+const out = path.resolve("artifacts/gutenberg-2026-11-06/stock");
 const pack = path.join(out, "project");
 await mkdir(path.join(pack, "pages"), { recursive: true });
 await mkdir(path.join(pack, "resources/media/fonts"), { recursive: true });
@@ -31,6 +31,14 @@ const runtime = JSON.parse(
   await readFile(path.join(out, "runtime.json"), "utf8"),
 );
 assert.equal(runtime.config.site, "http://testing-gutenberg.local/");
+const preflight = JSON.parse(
+  await readFile(path.join(out, "preflight.json"), "utf8"),
+);
+assert.equal(
+  preflight.plugin,
+  "0.31.0",
+  "Build against the unchanged installed plugin",
+);
 const browser = await chromium.launch({ channel: "chromium" });
 const resources = {},
   media = {},
@@ -62,8 +70,30 @@ try {
         const doc = new DOMParser().parseFromString(html, "text/html");
         const root = doc.querySelector("#hop-landing");
         if (!root) throw new Error("Missing landing root");
+        root.classList.add("lr-gutenberg-root");
         root.querySelector("[data-lr-theme-switch]")?.remove();
         root.removeAttribute("data-lr-themeable");
+        root
+          .querySelectorAll('[fill-rule="evenodd"],[clip-rule="evenodd"]')
+          .forEach((el) => el.classList.add("lr-gutenberg-evenodd"));
+        // SVG labels remain editable text instead of extending the plugin's SVG sanitizer.
+        for (const svg of root.querySelectorAll(".lr-format-route svg")) {
+          const wrapper = doc.createElement("div");
+          wrapper.className = "lr-gutenberg-route-svg";
+          svg.replaceWith(wrapper);
+          wrapper.append(svg);
+          for (const label of svg.querySelectorAll("text")) {
+            const span = doc.createElement("span");
+            span.className =
+              "lr-gutenberg-route-label" +
+              (label.classList.contains("lr-format-route__destination")
+                ? " lr-gutenberg-route-label--end"
+                : "");
+            span.textContent = label.textContent;
+            wrapper.append(span);
+            label.remove();
+          }
+        }
         if (!root.querySelector("[data-lr-workshop-map]")) {
           const surface = root.querySelector(
             '[data-lr-map-slot="workshops"] [data-lr-map-surface]',
@@ -83,6 +113,10 @@ try {
         const link = (value) => {
           if (value.startsWith("/media/")) {
             used.add(value.slice(7));
+            if (/\.webm$/i.test(value))
+              return (
+                "/wp-content/uploads/lr-remont-noutbykov/" + value.slice(7)
+              );
             return /\.(webp|png|jpe?g|gif)$/i.test(value)
               ? "https://assets.invalid/" +
                   value
@@ -99,7 +133,7 @@ try {
                 (anchor ? "#" + anchor : "")
             : value;
         };
-        const attrs = (e) => {
+        const attrs = (e, kind) => {
           const original = Object.fromEntries(
             [...e.attributes].map((a) => [a.name, a.value]),
           );
@@ -127,9 +161,34 @@ try {
               })
               .join(", ");
           const clean = LenremontReferenceBlocks.cleanAttributes(original);
+          const settings = {};
           for (const name of Object.keys(original))
-            if (!(name in clean))
-              lost.push({ tag: e.tagName, name, value: original[name] });
+            if (!(name in clean)) {
+              if (
+                !/^(?:data-(?:lr|hop|sc)-[a-z0-9-]+|data-(?:format|format-schema|format-illustration|device-category|symptom)|srcset|sizes|colspan|rowspan|novalidate|checked|open|datetime)$/.test(
+                  name,
+                )
+              )
+                lost.push({ tag: e.tagName, name, value: original[name] });
+              else {
+                settings[name] = original[name];
+                if (name.startsWith("data-")) {
+                  const hooks = ["lr-gb-" + name];
+                  if (/^[a-z0-9-]+$/i.test(original[name]))
+                    hooks.push("lr-gb-" + name + "--" + original[name]);
+                  clean.class = [clean.class || "", ...hooks].join(" ").trim();
+                }
+              }
+            }
+          if (kind || Object.keys(settings).length) {
+            if (original["data-ui"])
+              throw new Error("Existing UI configuration");
+            clean["data-ui"] = JSON.stringify({
+              lenremontPage: 1,
+              kind: kind || "attributes",
+              attributes: settings,
+            });
+          }
           return clean;
         };
         const create = wp.blocks.createBlock;
@@ -142,7 +201,7 @@ try {
             return [convert(node)];
           });
         function convert(e) {
-          const tag = e.localName;
+          const tag = e.localName === "b" ? "strong" : e.localName;
           if (e.hasAttribute("data-lr-workshop-map"))
             return create("core/shortcode", { text: "[dmap]" });
           if (tag === "svg") {
@@ -150,7 +209,93 @@ try {
             art[key] = e.outerHTML;
             return create("lenremont/art", { asset: key });
           }
-          const a = attrs(e);
+          if (tag === "video") {
+            const attributes = Object.fromEntries(
+              [...e.attributes]
+                .filter(
+                  (a) =>
+                    ![
+                      "src",
+                      "poster",
+                      "class",
+                      "controls",
+                      "autoplay",
+                      "muted",
+                      "loop",
+                      "playsinline",
+                      "preload",
+                    ].includes(a.name),
+                )
+                .map((a) => [a.name, a.value]),
+            );
+            const block = create("core/video", {
+              src: link(
+                e.getAttribute("src") ||
+                  e.querySelector("source").getAttribute("src"),
+              ),
+              poster: e.hasAttribute("poster")
+                ? link(e.getAttribute("poster"))
+                : undefined,
+              className: e.className,
+              controls: e.hasAttribute("controls"),
+              autoplay: e.hasAttribute("autoplay"),
+              muted: e.hasAttribute("muted"),
+              loop: e.hasAttribute("loop"),
+              playsInline: e.hasAttribute("playsinline"),
+              preload: e.getAttribute("preload") || "metadata",
+            });
+            e.textContent = "";
+            return create(
+              "lenremont/element",
+              {
+                tag: "div",
+                attributes: {
+                  class: "lr-gutenberg-video",
+                  "data-ui": JSON.stringify({
+                    lenremontPage: 1,
+                    kind: "video",
+                    attributes,
+                  }),
+                },
+              },
+              [block],
+            );
+          }
+          const a = attrs(
+            e,
+            tag === "select" || tag === "time" ? tag : undefined,
+          );
+          if (tag === "select")
+            return create(
+              "lenremont/element",
+              {
+                tag: "div",
+                attributes: {
+                  ...a,
+                  class: [a.class || "", "lr-gutenberg-select"]
+                    .join(" ")
+                    .trim(),
+                  role: "listbox",
+                },
+              },
+              [...e.options].map((option) =>
+                create("lenremont/text", {
+                  tag: "span",
+                  text: option.innerHTML.replace(/[\t\n\f\r ]+/g, " "),
+                  attributes: {
+                    role: "option",
+                    "data-name": option.value,
+                    "aria-selected": String(option.selected),
+                  },
+                }),
+              ),
+            );
+          if (tag === "time")
+            return create("lenremont/text", {
+              tag: "span",
+              text: e.innerHTML,
+              attributes: a,
+            });
           if (tag === "img")
             return create("lenremont/picture", { attributes: a });
           // RichText keeps inline formatting, links and line breaks as one editable text block.
@@ -168,7 +313,6 @@ try {
               "small",
               "summary",
               "figcaption",
-              "option",
             ].includes(tag) &&
             !e.querySelector("svg,img,input,button,select") &&
             !e.querySelector("[data-lr-photo-open]")
@@ -294,9 +438,12 @@ try {
             option.textContent.replace(/[\t\n\f\r ]+/g, " "),
           ],
         );
-        const savedOptions = [...rendered.querySelectorAll("option")].map(
-          (option) => [option.getAttribute("value"), option.textContent],
-        );
+        const savedOptions = [
+          ...rendered.querySelectorAll('[role="option"]'),
+        ].map((option) => [
+          option.getAttribute("data-name"),
+          option.textContent,
+        ]);
         if (JSON.stringify(sourceOptions) !== JSON.stringify(savedOptions))
           throw new Error(
             "Select option values changed during Gutenberg serialization",
@@ -363,6 +510,17 @@ try {
           await copyFile("public/media/" + file, path.join(pack, dest));
           media[key] = { file: dest };
         }
+      } else if (/\.webm$/i.test(file)) {
+        const directory = path.join(
+          out,
+          "media-transfer/wp-content/uploads/lr-remont-noutbykov",
+          path.dirname(file),
+        );
+        await mkdir(directory, { recursive: true });
+        await copyFile(
+          "public/media/" + file,
+          path.join(directory, path.basename(file)),
+        );
       } else await addResource("public/media/" + file, "media/" + file);
     }
     await writeFile(
@@ -402,13 +560,30 @@ try {
     "\n" +
     inline.join("\n") +
     "\n#hop-landing .lr-gutenberg-section{display:contents}#hop-landing .wp-block-group__inner-container{display:contents}\n";
+  styles +=
+    "#hop-landing .lr-gutenberg-video,#hop-landing .lr-gutenberg-video>.wp-block-video{display:contents}#hop-landing .lr-gutenberg-evenodd{fill-rule:evenodd;clip-rule:evenodd}#hop-landing .lr-gutenberg-select{min-height:42px;padding:10px;border:1px solid var(--lr-color-border);border-radius:6px}#hop-landing .lr-gutenberg-select [role=option]{display:none}#hop-landing .lr-gutenberg-select [aria-selected=true]{display:block}#hop-landing .lr-gutenberg-route-svg{position:relative;container-type:inline-size}#hop-landing .lr-gutenberg-route-label{position:absolute;top:90.38%;left:14.333%;transform:translate(-50%,-78%);font-size:6cqw;font-weight:500;line-height:1;white-space:nowrap}#hop-landing .lr-gutenberg-route-label--end{left:96%;transform:translate(-100%,-78%)}\n";
   await writeFile(path.join(pack, "resources/page.css"), styles);
   const editorCss =
-    '[data-lr-original-id="hop-landing"] .wp-block{margin:0;max-width:none;position:static}\n' +
-    styles.replaceAll("#hop-landing", '[data-lr-original-id="hop-landing"]') +
-    '\n[data-lr-original-id="hop-landing"] .block-editor-inner-blocks,[data-lr-original-id="hop-landing"] .lr-art-editor{display:contents}\n';
+    ".lr-gutenberg-root .wp-block{margin:0;max-width:none;position:static}\n" +
+    styles
+      .replaceAll("#hop-landing", ".lr-gutenberg-root")
+      .replace(
+        /\[(data-(?:lr|hop|sc)-[a-z0-9-]+|data-(?:format|format-schema|format-illustration|device-category|symptom))(?:=["']?([a-z0-9-]+)["']?)?\]/gi,
+        (_, name, value) => ".lr-gb-" + name + (value ? "--" + value : ""),
+      ) +
+    "\n.lr-gutenberg-root .block-editor-inner-blocks,.lr-gutenberg-root .lr-art-editor{display:contents}.lr-gutenberg-root .lr-gutenberg-video>.wp-block-video{display:block}.lr-gutenberg-root .lr-gutenberg-video video{width:100%;height:100%;object-fit:cover}\n";
   await writeFile(path.join(pack, "resources/editor.css"), editorCss);
   await copyFile("dist/_astro/" + js, path.join(pack, "resources/page.js"));
+  await copyFile(
+    "scripts/gutenberg/page-controls.js",
+    path.join(pack, "resources/page-controls.js"),
+  );
+  await writeFile(
+    path.join(pack, "resources/page-bootstrap.js"),
+    'import {initializePageControls} from "./page-controls.js";\ninitializePageControls(document.querySelector("#hop-landing"));\nawait import("./page.js");\n',
+  );
+  resources["resources/page-controls.js"] = {};
+  resources["resources/page-bootstrap.js"] = {};
   resources["resources/page.css"] = {};
   resources["resources/editor.css"] = {};
   resources["resources/page.js"] = {};
@@ -465,7 +640,7 @@ try {
         editorStyles: ["resources/editor.css"],
         scripts: [
           { file: "resources/glightbox.min.js", type: "classic" },
-          { file: "resources/page.js", type: "module" },
+          { file: "resources/page-bootstrap.js", type: "module" },
         ],
         data: { "legacy-art": r.artName },
       },
