@@ -1,0 +1,138 @@
+[
+  {
+    "key": "home",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 353,
+    "complex": 31,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "key": "home",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 381,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 66.66667175292969
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "key": "brand",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 349,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "key": "brand",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 373,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 66.66667175292969
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "key": "problem",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 297,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "key": "problem",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 297,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 66.66667175292969
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "key": "macbook",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 394,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "key": "macbook",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 384,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 66.66667175292969
+    },
+    "theme": "dark",
+    "width": 390
+  }
+]

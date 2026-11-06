@@ -1,0 +1,103 @@
+✔ tests\auto-swipe.test.mjs (56.601ms)
+✔ Compact form keeps visit context without requiring or submitting address fields (1.3296ms)
+✔ lab selection shows one frame and synchronizes pressed states (2.2518ms)
+✔ each format keeps its image and description synchronized (0.3783ms)
+✔ unrelated interactions and pages without a concept are left alone (0.2269ms)
+✔ tests\form-readiness.test.mjs (74.4056ms)
+Hero video: muted autoplay, loop and reduced motion without controls passed.
+✔ tests\hero-video.test.mjs (62.9954ms)
+✔ tests\home-copy.test.mjs (76.1021ms)
+Repair journey updates without the homepage hero: passed.
+✔ tests\home-scroll.test.mjs (75.9501ms)
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(processSection.includes("согласования сметы"))
+
+    at file:///D:/works/projects/lr-remont-noutbykov/tests/landing.test.mjs:276:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.14.1
+✖ tests\landing.test.mjs (181.4704ms)
+✔ The four preview formats map to the existing lead contract (1.5321ms)
+✔ MacBook category comes from explicit markup and survives format changes (0.3094ms)
+✔ Symptom and generic CTA updates preserve the selected format and entered contact (0.2323ms)
+✔ Changing format preserves the symptom; clearing a symptom is explicit (0.1619ms)
+Phone deletion, selection, retyping, paste and dialpad: passed.
+✔ tests\phone.test.mjs (76.5436ms)
+✔ tests\price-actions.test.mjs (75.786ms)
+✔ tests\price-tabs.test.mjs (80.7607ms)
+Quiz: automatic pointer/keyboard choices, saved-answer clicks, Back/loading cancellation, summary/payload, preserved phone/consent, brand and reduced-motion flows passed.
+Quiz modal: same form and step, reopening during loading, button/Escape/backdrop close, focus restoration and dialog fallback passed.
+✔ tests\quiz.test.mjs (80.6891ms)
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(award.includes("Gazelle") && award.includes("2016"))
+
+    at file:///D:/works/projects/lr-remont-noutbykov/tests/reviews.test.mjs:126:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.14.1
+✖ tests\reviews.test.mjs (80.7628ms)
+49 pages: unique SEO fields, one H1/root, JSON-LD, links, prices, media, forms and CSS isolation passed.
+✔ tests\service-pages.test.mjs (606.6359ms)
+✔ All 49 child pages use the homepage service components (135.1181ms)
+✔ Signature stays static until first intersection, then stops observing (1.6148ms)
+✔ Reduced motion keeps the signature static without an observer (0.7257ms)
+✔ Missing IntersectionObserver preserves the static signature (0.2758ms)
+Swipe carousels: native motion, continuous drag/release, links, keyboard and reduced motion passed.
+✔ tests\swipe-slider.test.mjs (79.8516ms)
+✔ Theme tokens keep text and input borders above their contrast thresholds (56.2456ms)
+✔ Theme preview follows the host attribute and preserves existing attributes (1.0241ms)
+✔ All working routes include theme support, historical previews opt out (77.0947ms)
+✔ Russian text keeps short words and units together (1.6331ms)
+✔ Typography preserves phones, URLs, attributes, code and schema (0.6103ms)
+✔ Player exposes preview/play and returns native controls after play (1.6232ms)
+✔ Ended playback restores the preview button (0.1721ms)
+✔ Rejected play and media errors retain native controls (0.3428ms)
+✔ Missing video or play button leaves native markup untouched (0.1941ms)
+Visit fields: conditional validation, disabled state and preserved values passed.
+✔ tests\visit.test.mjs (66.2393ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 33
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 778.4957
+
+✖ failing tests:
+
+test at tests\landing.test.mjs:1:1
+✖ tests\landing.test.mjs (181.4704ms)
+  'test failed'
+
+test at tests\reviews.test.mjs:1:1
+✖ tests\reviews.test.mjs (80.7628ms)
+  'test failed'

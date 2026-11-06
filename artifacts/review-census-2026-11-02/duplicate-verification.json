@@ -5,14 +5,20 @@
       "groupId": "duplicate-guest-laptop-2017163",
       "recordIds": ["review-b2c5569920bd", "review-d825dccaba50"],
       "status": "confirmed_same_review_text",
-      "sources": ["https://www.otzyvru.com/lenremont/review-2017163", "https://otzovikkrd23.ru/lenremont-otzyvy/"],
+      "sources": [
+        "https://www.otzyvru.com/lenremont/review-2017163",
+        "https://otzovikkrd23.ru/lenremont-otzyvy/"
+      ],
       "evidence": "Coordinator independently retrieved the mirror's public search-index representation using a focused query; the certificate warning on the live mirror was not bypassed. The indexed complete body was compared with the original opened in Chrome. They match in narrative wording after typographic punctuation changes: same14April2025 title, preceding competitor diagnosis3200, quoted additional connector price, Lenremont cleaning/connector work5500, ending gratitude, and same company reply17April2025. The index repeats an abbreviated prefix before its full body; this is not another review. Mirror rating remains null, not copied from the original. A literal primary-source hyperlink was not observed on the mirror; provenance is independently established by complete text and event details."
     },
     {
       "groupId": "duplicate-orlova-1951259",
       "recordIds": ["review-103f98b6752c", "review-2be169a1a0ba"],
       "status": "confirmed_same_review_text",
-      "sources": ["https://www.otzyvru.com/lenremont/review-1951259", "https://otzovikkrd23.ru/lenremont-otzyvy/"],
+      "sources": [
+        "https://www.otzyvru.com/lenremont/review-1951259",
+        "https://otzovikkrd23.ru/lenremont-otzyvy/"
+      ],
       "evidence": "Coordinator independently read the complete mirror body and reply in the public search index, then reopened the original in Chrome. The complaint wording,20January2025 date/title, unique order8292175 dated22December2024, nearly20000 amount, author's difficulty reading the act and described daughter/calls match. The23January2025 company reply matches too, including laptop-case repair and before/after claim. Mirror file URLs and live image binding remain unavailable: four placeholders are not counted as four new photographs. Existing verified photographs belong only to the original company reply. No primary hyperlink/ID was observed in the mirror index; the match is from full text and specific order details, not author name alone."
     },
     {

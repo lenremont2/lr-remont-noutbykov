@@ -30,6 +30,7 @@
   background: var(--lr-color-surface);
   color: var(--lr-color-text);
   font-weight: 600;
+  box-shadow: inset 0 -3px 0 var(--lr-color-tab-indicator);
 }
 #hop-landing
   .lr-home-pricing--reference[data-lr-price-tabs-ready]
@@ -80,7 +81,7 @@
   padding-block: 0;
 }
 #hop-landing .lr-home-pricing--reference .lr-home-pricing__diagnostic {
-  background: var(--lr-color-success-soft);
+  background: var(--lr-color-diagnostic-bg);
 }
 #hop-landing
   .lr-home-pricing--reference
@@ -99,7 +100,7 @@
   display: none;
 }
 #hop-landing .lr-home-pricing--reference .lr-home-pricing__diagnostic-price {
-  color: var(--lr-color-success);
+  color: var(--lr-color-diagnostic-price);
   font-size: 24px;
   font-weight: 600;
 }

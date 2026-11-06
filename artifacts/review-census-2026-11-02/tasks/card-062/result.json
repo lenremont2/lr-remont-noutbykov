@@ -5,8 +5,14 @@
   "branch": "Московский проспект, 212 — Yell указывает БЦ Московский, офис 1124, 1 этаж",
   "city": "Санкт-Петербург",
   "networkEvidence": [
-    {"url":"https://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-moskovskom-prospekte-212_14448542/","evidence":"Карточка ссылается на сеть ремонтных мастерских Ленремонт https://www.yell.ru/spb/chain/lenremont-ooo_9625417/ и vk.com/lenremont. В DOM телефон карточки +7 962 716-89-41, структурированный телефон организации +7 812 380-88-41."},
-    {"url":"https://www.lenremont.ru/lenremont-na-prospekt-moskovskij-212-dom-sovetov.htm","evidence":"Официальная страница открыта в Chrome: Ленремонт, пр. Московский, 212, Дом Советов, 1 этаж, кабинет 1130; принимают бытовую и цифровую технику. Телефоны +7 812 242-99-45, +7 812 688-89-33, +7 812 640-44-35. Совпадают сеть и адрес здания; номера кабинетов и телефоны Yell отличаются, это различие сохранено."}
+    {
+      "url": "https://www.yell.ru/spb/com/servisnyj-centr-lenremont-na-moskovskom-prospekte-212_14448542/",
+      "evidence": "Карточка ссылается на сеть ремонтных мастерских Ленремонт https://www.yell.ru/spb/chain/lenremont-ooo_9625417/ и vk.com/lenremont. В DOM телефон карточки +7 962 716-89-41, структурированный телефон организации +7 812 380-88-41."
+    },
+    {
+      "url": "https://www.lenremont.ru/lenremont-na-prospekt-moskovskij-212-dom-sovetov.htm",
+      "evidence": "Официальная страница открыта в Chrome: Ленремонт, пр. Московский, 212, Дом Советов, 1 этаж, кабинет 1130; принимают бытовую и цифровую технику. Телефоны +7 812 242-99-45, +7 812 688-89-33, +7 812 640-44-35. Совпадают сеть и адрес здания; номера кабинетов и телефоны Yell отличаются, это различие сохранено."
+    }
   ],
   "coverage": {
     "status": "complete",

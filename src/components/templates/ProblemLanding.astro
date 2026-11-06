@@ -148,7 +148,11 @@ const powerRepairSteps = [
       </div>
     </section>
     <RepairFormats journey />
-    <ServicePriceTable title="Какие работы могут понадобиться" rows={rows} />
+    <ServicePriceTable
+      title="Какие работы могут понадобиться"
+      rows={rows}
+      verification={false}
+    />
     {
       isPowerProblem ? (
         <HomeRepairJourney

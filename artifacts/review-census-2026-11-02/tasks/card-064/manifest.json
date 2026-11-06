@@ -8,29 +8,200 @@
   "reviewAttachments": 0,
   "companyReplyAttachments": 0,
   "mediaInspection": "All descendants inspected for img/src, data-src and computed background-image. Only reviewer avatars/placeholders, company reply avatars and rating SVG backgrounds were observed.",
-  "sourceCounts": {"Yell.ru": 1, "Zoon.ru": 18},
+  "sourceCounts": { "Yell.ru": 1, "Zoon.ru": 18 },
   "reviewUrlTemplate": "http://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-marshala-zhukova_12060753/reviews/?reviewId={id}",
   "sourceUrlNote": "Observed Yell review URLs use this exact published template. Imported Zoon source URLs and IDs were not exposed, recorded as null.",
   "rating": 5,
   "records": [
-    {"id":"6384816","author":"Александр Зислин","date":"2026-04-24T07:22:53+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Ремонт амортизаторов и насоса стиральной машины.","target":false},
-    {"id":"6384817","author":"Ева Преферансова","date":"2026-04-24T01:44:48+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Ремонт нагревательного блока кофемашины Delonghi.","target":false},
-    {"id":"6384818","author":"Дмитрий Гараев","date":"2026-04-23T20:12:47+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Подшипник и ТЭН стиральной машины Siemens.","target":false},
-    {"id":"6384819","author":"Мария","date":"2026-04-23T15:11:53+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Выездной ремонт стиральной машины.","target":false},
-    {"id":"5251137","author":"Елена Твердохлебова","date":"2024-01-10T19:23:26+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Компрессор и освещение холодильника Норд.","target":false},
-    {"id":"5251138","author":"Виктор","date":"2024-01-09T08:50:46+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Ремонт телевизора и стиральной машины.","target":false},
-    {"id":"5251139","author":"Лидия Кузнецова","date":"2024-01-07T09:14:16+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Ремонт посудомоечной машины, замена фильтра.","target":false},
-    {"id":"5150977","author":"Роман Андрианов","date":"2023-12-03T12:41:43+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Ремонт холодильника с перегревом компрессора.","target":false},
-    {"id":"5150978","author":"Борис Набоков","date":"2023-11-30T21:36:25+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Ремонт холодильника Fagor; предыдущий ремонт стиральной машины.","target":false},
-    {"id":"5150979","author":"Лариса Проничева","date":"2023-11-28T11:47:18+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Ремонт холодильника и микроволновой печи.","target":false},
-    {"id":"4754597","author":"Вадим","date":"2023-02-22T08:51:47+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Замена стекла смартфона и ремонт стиральной машины.","target":false},
-    {"id":"4745885","author":"Зарема","date":"2023-02-15T08:17:43+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Ремонт фена и диагностика пылесоса.","target":false},
-    {"id":"4735300","author":"Лера","date":"2023-02-11T05:42:16+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Замена кабеля питания кофемашины.","target":false},
-    {"id":"4735302","author":"Ксения","date":"2023-02-09T04:08:50+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Выездной ремонт стиральной машины.","target":false},
-    {"id":"4722990","author":"Андрей Жуков","date":"2023-02-02T10:02:56+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Похвала диагностике и гарантии, устройство не указано. Ответ компании не уточняет, вложений нет.","target":false},
-    {"id":"4711587","author":"Юлиана Чурляева","date":"2023-01-29T15:43:53+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Ремонт планшета.","target":false},
-    {"id":"4280081","author":"Марина1234","date":"2022-03-31T23:12:04+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Общая благодарность без названия устройства. Ответ компании не уточняет, вложений нет.","target":false},
-    {"id":"4151410","author":"Руслан Устинский","date":"2021-06-20T15:58:45+0300","source":"Zoon.ru","sourceUrl":null,"sourceId":null,"summary":"Замена дисплея планшета.","target":false},
-    {"id":"3744472","author":"Маратовна!!","date":"2021-06-20T10:02:04+0300","source":"Yell.ru","sourceUrl":"http://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-marshala-zhukova_12060753/reviews/?reviewId=3744472","sourceId":"3744472","summary":"Общая рекомендация без названия устройства. Ответ компании не уточняет, вложений нет.","target":false}
+    {
+      "id": "6384816",
+      "author": "Александр Зислин",
+      "date": "2026-04-24T07:22:53+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Ремонт амортизаторов и насоса стиральной машины.",
+      "target": false
+    },
+    {
+      "id": "6384817",
+      "author": "Ева Преферансова",
+      "date": "2026-04-24T01:44:48+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Ремонт нагревательного блока кофемашины Delonghi.",
+      "target": false
+    },
+    {
+      "id": "6384818",
+      "author": "Дмитрий Гараев",
+      "date": "2026-04-23T20:12:47+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Подшипник и ТЭН стиральной машины Siemens.",
+      "target": false
+    },
+    {
+      "id": "6384819",
+      "author": "Мария",
+      "date": "2026-04-23T15:11:53+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Выездной ремонт стиральной машины.",
+      "target": false
+    },
+    {
+      "id": "5251137",
+      "author": "Елена Твердохлебова",
+      "date": "2024-01-10T19:23:26+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Компрессор и освещение холодильника Норд.",
+      "target": false
+    },
+    {
+      "id": "5251138",
+      "author": "Виктор",
+      "date": "2024-01-09T08:50:46+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Ремонт телевизора и стиральной машины.",
+      "target": false
+    },
+    {
+      "id": "5251139",
+      "author": "Лидия Кузнецова",
+      "date": "2024-01-07T09:14:16+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Ремонт посудомоечной машины, замена фильтра.",
+      "target": false
+    },
+    {
+      "id": "5150977",
+      "author": "Роман Андрианов",
+      "date": "2023-12-03T12:41:43+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Ремонт холодильника с перегревом компрессора.",
+      "target": false
+    },
+    {
+      "id": "5150978",
+      "author": "Борис Набоков",
+      "date": "2023-11-30T21:36:25+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Ремонт холодильника Fagor; предыдущий ремонт стиральной машины.",
+      "target": false
+    },
+    {
+      "id": "5150979",
+      "author": "Лариса Проничева",
+      "date": "2023-11-28T11:47:18+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Ремонт холодильника и микроволновой печи.",
+      "target": false
+    },
+    {
+      "id": "4754597",
+      "author": "Вадим",
+      "date": "2023-02-22T08:51:47+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Замена стекла смартфона и ремонт стиральной машины.",
+      "target": false
+    },
+    {
+      "id": "4745885",
+      "author": "Зарема",
+      "date": "2023-02-15T08:17:43+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Ремонт фена и диагностика пылесоса.",
+      "target": false
+    },
+    {
+      "id": "4735300",
+      "author": "Лера",
+      "date": "2023-02-11T05:42:16+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Замена кабеля питания кофемашины.",
+      "target": false
+    },
+    {
+      "id": "4735302",
+      "author": "Ксения",
+      "date": "2023-02-09T04:08:50+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Выездной ремонт стиральной машины.",
+      "target": false
+    },
+    {
+      "id": "4722990",
+      "author": "Андрей Жуков",
+      "date": "2023-02-02T10:02:56+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Похвала диагностике и гарантии, устройство не указано. Ответ компании не уточняет, вложений нет.",
+      "target": false
+    },
+    {
+      "id": "4711587",
+      "author": "Юлиана Чурляева",
+      "date": "2023-01-29T15:43:53+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Ремонт планшета.",
+      "target": false
+    },
+    {
+      "id": "4280081",
+      "author": "Марина1234",
+      "date": "2022-03-31T23:12:04+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Общая благодарность без названия устройства. Ответ компании не уточняет, вложений нет.",
+      "target": false
+    },
+    {
+      "id": "4151410",
+      "author": "Руслан Устинский",
+      "date": "2021-06-20T15:58:45+0300",
+      "source": "Zoon.ru",
+      "sourceUrl": null,
+      "sourceId": null,
+      "summary": "Замена дисплея планшета.",
+      "target": false
+    },
+    {
+      "id": "3744472",
+      "author": "Маратовна!!",
+      "date": "2021-06-20T10:02:04+0300",
+      "source": "Yell.ru",
+      "sourceUrl": "http://www.yell.ru/spb/com/remontnaya-masterskaya-lenremont-na-prospekte-marshala-zhukova_12060753/reviews/?reviewId=3744472",
+      "sourceId": "3744472",
+      "summary": "Общая рекомендация без названия устройства. Ответ компании не уточняет, вложений нет.",
+      "target": false
+    }
   ]
 }

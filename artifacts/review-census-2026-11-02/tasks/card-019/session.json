@@ -1,1 +1,9 @@
-{"taskId":"card-019","tabId":"2080318405","url":"https://yandex.ru/maps/org/lenremont/1317216259/reviews/","reportedTotal":309,"reportedRatings":479,"initialBatchCount":50,"deduplication":"author profile URL + source date; exact full text when author profile is absent"}
+{
+  "taskId": "card-019",
+  "tabId": "2080318405",
+  "url": "https://yandex.ru/maps/org/lenremont/1317216259/reviews/",
+  "reportedTotal": 309,
+  "reportedRatings": 479,
+  "initialBatchCount": 50,
+  "deduplication": "author profile URL + source date; exact full text when author profile is absent"
+}

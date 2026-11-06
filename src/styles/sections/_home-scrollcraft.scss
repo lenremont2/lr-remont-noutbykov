@@ -223,7 +223,6 @@
 }
 
 #hop-landing .lr-repair-journey__layout {
-  max-width: 1040px;
   margin-inline: auto;
   display: grid;
   align-items: start;
@@ -275,6 +274,7 @@
     grid-row: 1;
     margin-top: 0;
   }
+
   #hop-landing .lr-hero--home .lr-hero__media {
     grid-column: 2;
     grid-row: 1;

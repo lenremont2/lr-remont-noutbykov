@@ -10,7 +10,11 @@
     "officialAddressMatches": true,
     "directoryChainUrl": "https://www.yell.ru/spb/chain/lenremont-ooo_9625417/",
     "directoryPhone": "+7 962 718-50-92",
-    "officialPhones": ["+7 812 665-21-19", "+7 812 688-89-33", "+7 812 640-44-35"],
+    "officialPhones": [
+      "+7 812 665-21-19",
+      "+7 812 688-89-33",
+      "+7 812 640-44-35"
+    ],
     "phoneMatch": false,
     "basis": "Совпадают название и точный адрес, карточка явно входит в сеть Ленремонт и ссылается на vk.com/lenremont. Публичный номер Yell отличается от номеров официального контакта; совпадение телефона не заявляется."
   },

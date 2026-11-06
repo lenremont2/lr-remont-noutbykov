@@ -9,36 +9,234 @@
   "allFullTextsRead": true,
   "imageAttachmentsTotal": 1,
   "targetImageAttachmentsTotal": 0,
-  "excludedMedia": [{"reviewId":"65c4ed63fbd884a1830b6b0f","attachment":"review","bindingVerified":true,"visuallyVerified":true,"sourceUrl":"https://p2.zoon.ru/preview/dtIq-azrwZ_lvc15Bkg7Bw/600x800x85/1/f/a/original_65c4ed02ef6b6ffb2a0d34e4_65c4ed03289105.76037906.jpg","localPath":null,"description":"Внутренность открытого пустого холодильника со стеклянными полками, ящиками и дверными контейнерами.","reason":"Отзыв о покупке холодильника; ноутбука нет. Нетематическое фото не скачивалось."}],
+  "excludedMedia": [
+    {
+      "reviewId": "65c4ed63fbd884a1830b6b0f",
+      "attachment": "review",
+      "bindingVerified": true,
+      "visuallyVerified": true,
+      "sourceUrl": "https://p2.zoon.ru/preview/dtIq-azrwZ_lvc15Bkg7Bw/600x800x85/1/f/a/original_65c4ed02ef6b6ffb2a0d34e4_65c4ed03289105.76037906.jpg",
+      "localPath": null,
+      "description": "Внутренность открытого пустого холодильника со стеклянными полками, ящиками и дверными контейнерами.",
+      "reason": "Отзыв о покупке холодильника; ноутбука нет. Нетематическое фото не скачивалось."
+    }
+  ],
   "endpointEvidence": [
-    {"section": "published", "count": 10, "remain": 0, "hasMore": false, "lastId": "5d3ffdc10aedb7587b153b02"},
-    {"section": "rejected", "count": 15, "remain": 0, "hasMore": false, "lastId": "5ef8579ae20f35402e21bc57"}
+    {
+      "section": "published",
+      "count": 10,
+      "remain": 0,
+      "hasMore": false,
+      "lastId": "5d3ffdc10aedb7587b153b02"
+    },
+    {
+      "section": "rejected",
+      "count": 15,
+      "remain": 0,
+      "hasMore": false,
+      "lastId": "5ef8579ae20f35402e21bc57"
+    }
   ],
   "rows": [
-    {"id":"60bf3a8480130b427769c6cd","section":"published","date":"2021-06-08","rating":5,"classification":"швейная машина","replyIds":["60dd9e410e40ed1e6725a84c"]},
-    {"id":"600b1fd9991e9964247abf8e","section":"published","date":"2021-01-22","rating":5,"classification":"телевизор","replyIds":[]},
-    {"id":"5ff21c2d1631ae655548c615","section":"published","date":"2021-01-03","rating":5,"classification":"iPhone","replyIds":[]},
-    {"id":"5f0f48510bd0563a944d6ae0","section":"published","date":"2020-07-15","rating":4,"classification":"ноутбук; included","replyIds":[]},
-    {"id":"5ef43d18e81c8c49a2153ca2","section":"published","date":"2020-06-25","rating":5,"classification":"обувь","replyIds":["5ef59ee3f044be74c3465f78"]},
-    {"id":"5ebe528681767e13fa0bc550","section":"published","date":"2020-05-15","rating":5,"classification":"пылесос","replyIds":["5ecb8795e81f9501144291fd"]},
-    {"id":"5ebd9cf4203cc6733a2797ac","section":"published","date":"2020-05-14","rating":5,"classification":"посудомойка","replyIds":["5ecb87782553ce7aed5d4456"]},
-    {"id":"5eb2ecb0f362ff0d823a7e6a","section":"published","date":"2020-05-06","rating":5,"classification":"газовая колонка; expanded","replyIds":["5ecb872ea0b1451fb9590bcc"]},
-    {"id":"5e399241baabc93ff55ecd9c","section":"published","date":"2020-02-04","rating":5,"classification":"стиральная машина","replyIds":["5e3ad60b975ac6058f7cd28e"]},
-    {"id":"5d3ffdc10aedb7587b153b02","section":"published","date":"2019-07-30","rating":null,"classification":"микроволновая печь","replyIds":["5daebde64561d663315a17e4"]},
-    {"id":"66d8d2646f694c381807707b","section":"rejected","date":"2024-09-05","rating":5,"classification":"нет предметного содержания; no attachments/reply","replyIds":[]},
-    {"id":"66b44cc8aa7c97daa10ffeae","section":"rejected","date":"2024-08-08","rating":5,"classification":"нет предметного содержания; no attachments/reply","replyIds":[]},
-    {"id":"66b0282b0e11bd9eec0ec5c7","section":"rejected","date":"2024-08-05","rating":5,"classification":"нет предметного содержания; no attachments/reply","replyIds":[]},
-    {"id":"65c4ed63fbd884a1830b6b0f","section":"rejected","date":"2024-02-08","rating":1,"classification":"покупка холодильника; review and reply expanded","replyIds":["65d323e941014e247a095242"]},
-    {"id":"5ffa0c39f3fdfa68556ecd46","section":"rejected","date":"2021-01-09","rating":5,"classification":"кондиционер","replyIds":[]},
-    {"id":"5fe318b5d3710633c027d253","section":"rejected","date":"2020-12-23","rating":5,"classification":"заточка маникюрного набора","replyIds":[]},
-    {"id":"5fce06ea382a915abd5260e9","section":"rejected","date":"2020-12-07","rating":5,"classification":"ноутбук; included","replyIds":[]},
-    {"id":"5fc4de1445c32110c84c7409","section":"rejected","date":"2020-11-30","rating":5,"classification":"ноутбук; included","replyIds":[]},
-    {"id":"5fad483bd65c4603f214ba80","section":"rejected","date":"2020-11-12","rating":5,"classification":"общий отзыв об ассортименте; no attachments/reply","replyIds":[]},
-    {"id":"5f8d2af1ad0e301cd8537f24","section":"rejected","date":"2020-10-19","rating":5,"classification":"неопределённые работы; no attachments/reply","replyIds":[]},
-    {"id":"5f221186151db9537b771970","section":"rejected","date":"2020-07-30","rating":5,"classification":"стиральная машина","replyIds":[]},
-    {"id":"5f1ee8d598d26433b4695083","section":"rejected","date":"2020-07-27","rating":5,"classification":"обувь и сумки","replyIds":[]},
-    {"id":"5efc33fd10ea7f1c6b48b1b3","section":"rejected","date":"2020-07-01","rating":5,"classification":"плойка, фен, обувь","replyIds":[]},
-    {"id":"5ef8e17bb5f8751ed92cb49e","section":"rejected","date":"2020-06-28","rating":5,"classification":"мебель и телефон","replyIds":[]},
-    {"id":"5ef8579ae20f35402e21bc57","section":"rejected","date":"2020-06-28","rating":4,"classification":"iPhone","replyIds":[]}
+    {
+      "id": "60bf3a8480130b427769c6cd",
+      "section": "published",
+      "date": "2021-06-08",
+      "rating": 5,
+      "classification": "швейная машина",
+      "replyIds": ["60dd9e410e40ed1e6725a84c"]
+    },
+    {
+      "id": "600b1fd9991e9964247abf8e",
+      "section": "published",
+      "date": "2021-01-22",
+      "rating": 5,
+      "classification": "телевизор",
+      "replyIds": []
+    },
+    {
+      "id": "5ff21c2d1631ae655548c615",
+      "section": "published",
+      "date": "2021-01-03",
+      "rating": 5,
+      "classification": "iPhone",
+      "replyIds": []
+    },
+    {
+      "id": "5f0f48510bd0563a944d6ae0",
+      "section": "published",
+      "date": "2020-07-15",
+      "rating": 4,
+      "classification": "ноутбук; included",
+      "replyIds": []
+    },
+    {
+      "id": "5ef43d18e81c8c49a2153ca2",
+      "section": "published",
+      "date": "2020-06-25",
+      "rating": 5,
+      "classification": "обувь",
+      "replyIds": ["5ef59ee3f044be74c3465f78"]
+    },
+    {
+      "id": "5ebe528681767e13fa0bc550",
+      "section": "published",
+      "date": "2020-05-15",
+      "rating": 5,
+      "classification": "пылесос",
+      "replyIds": ["5ecb8795e81f9501144291fd"]
+    },
+    {
+      "id": "5ebd9cf4203cc6733a2797ac",
+      "section": "published",
+      "date": "2020-05-14",
+      "rating": 5,
+      "classification": "посудомойка",
+      "replyIds": ["5ecb87782553ce7aed5d4456"]
+    },
+    {
+      "id": "5eb2ecb0f362ff0d823a7e6a",
+      "section": "published",
+      "date": "2020-05-06",
+      "rating": 5,
+      "classification": "газовая колонка; expanded",
+      "replyIds": ["5ecb872ea0b1451fb9590bcc"]
+    },
+    {
+      "id": "5e399241baabc93ff55ecd9c",
+      "section": "published",
+      "date": "2020-02-04",
+      "rating": 5,
+      "classification": "стиральная машина",
+      "replyIds": ["5e3ad60b975ac6058f7cd28e"]
+    },
+    {
+      "id": "5d3ffdc10aedb7587b153b02",
+      "section": "published",
+      "date": "2019-07-30",
+      "rating": null,
+      "classification": "микроволновая печь",
+      "replyIds": ["5daebde64561d663315a17e4"]
+    },
+    {
+      "id": "66d8d2646f694c381807707b",
+      "section": "rejected",
+      "date": "2024-09-05",
+      "rating": 5,
+      "classification": "нет предметного содержания; no attachments/reply",
+      "replyIds": []
+    },
+    {
+      "id": "66b44cc8aa7c97daa10ffeae",
+      "section": "rejected",
+      "date": "2024-08-08",
+      "rating": 5,
+      "classification": "нет предметного содержания; no attachments/reply",
+      "replyIds": []
+    },
+    {
+      "id": "66b0282b0e11bd9eec0ec5c7",
+      "section": "rejected",
+      "date": "2024-08-05",
+      "rating": 5,
+      "classification": "нет предметного содержания; no attachments/reply",
+      "replyIds": []
+    },
+    {
+      "id": "65c4ed63fbd884a1830b6b0f",
+      "section": "rejected",
+      "date": "2024-02-08",
+      "rating": 1,
+      "classification": "покупка холодильника; review and reply expanded",
+      "replyIds": ["65d323e941014e247a095242"]
+    },
+    {
+      "id": "5ffa0c39f3fdfa68556ecd46",
+      "section": "rejected",
+      "date": "2021-01-09",
+      "rating": 5,
+      "classification": "кондиционер",
+      "replyIds": []
+    },
+    {
+      "id": "5fe318b5d3710633c027d253",
+      "section": "rejected",
+      "date": "2020-12-23",
+      "rating": 5,
+      "classification": "заточка маникюрного набора",
+      "replyIds": []
+    },
+    {
+      "id": "5fce06ea382a915abd5260e9",
+      "section": "rejected",
+      "date": "2020-12-07",
+      "rating": 5,
+      "classification": "ноутбук; included",
+      "replyIds": []
+    },
+    {
+      "id": "5fc4de1445c32110c84c7409",
+      "section": "rejected",
+      "date": "2020-11-30",
+      "rating": 5,
+      "classification": "ноутбук; included",
+      "replyIds": []
+    },
+    {
+      "id": "5fad483bd65c4603f214ba80",
+      "section": "rejected",
+      "date": "2020-11-12",
+      "rating": 5,
+      "classification": "общий отзыв об ассортименте; no attachments/reply",
+      "replyIds": []
+    },
+    {
+      "id": "5f8d2af1ad0e301cd8537f24",
+      "section": "rejected",
+      "date": "2020-10-19",
+      "rating": 5,
+      "classification": "неопределённые работы; no attachments/reply",
+      "replyIds": []
+    },
+    {
+      "id": "5f221186151db9537b771970",
+      "section": "rejected",
+      "date": "2020-07-30",
+      "rating": 5,
+      "classification": "стиральная машина",
+      "replyIds": []
+    },
+    {
+      "id": "5f1ee8d598d26433b4695083",
+      "section": "rejected",
+      "date": "2020-07-27",
+      "rating": 5,
+      "classification": "обувь и сумки",
+      "replyIds": []
+    },
+    {
+      "id": "5efc33fd10ea7f1c6b48b1b3",
+      "section": "rejected",
+      "date": "2020-07-01",
+      "rating": 5,
+      "classification": "плойка, фен, обувь",
+      "replyIds": []
+    },
+    {
+      "id": "5ef8e17bb5f8751ed92cb49e",
+      "section": "rejected",
+      "date": "2020-06-28",
+      "rating": 5,
+      "classification": "мебель и телефон",
+      "replyIds": []
+    },
+    {
+      "id": "5ef8579ae20f35402e21bc57",
+      "section": "rejected",
+      "date": "2020-06-28",
+      "rating": 4,
+      "classification": "iPhone",
+      "replyIds": []
+    }
   ]
 }

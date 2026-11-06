@@ -8,6 +8,7 @@ interface Props {
   compact?: boolean;
   grouped?: boolean;
   extraFaults?: boolean;
+  informational?: boolean;
   title?: string;
   lead?: string;
   items?: { title: string; image: string; imageAlt: string; href: string }[];
@@ -16,6 +17,7 @@ const {
   compact = false,
   grouped = false,
   extraFaults = false,
+  informational = false,
   title,
   lead,
   items,
@@ -217,10 +219,13 @@ const modernFaults = [
 
 <section
   id="lr-symptoms"
-  data-lr-swipe-slider={grouped || undefined}
+  data-lr-swipe-slider={(grouped && !informational) || undefined}
   class:list={[
     "lr-section lr-symptoms",
-    { "lr-symptoms--compact": compact, "lr-symptoms--grouped": grouped },
+    {
+      "lr-symptoms--compact": compact,
+      "lr-symptoms--grouped": grouped,
+    },
   ]}
 >
   <div class="lr-container">
@@ -228,106 +233,115 @@ const modernFaults = [
       title={title ?? c.fields.H2}
       lead={lead ?? c.fields["Лид"]}
     />
-    <div class="lr-symptoms__catalog">
-      <nav
-        class:list={["lr-symptoms__groups", { "lr-swipe-track": grouped }]}
-        data-lr-swipe-track={grouped || undefined}
-        tabindex={grouped ? "0" : undefined}
-        aria-roledescription={grouped ? "карусель" : undefined}
-        aria-label="Направления помощи с ноутбуком"
-        hidden={Boolean(items)}
-      >
-        {
-          !items &&
-            serviceGroups.map((group) => (
-              <a
-                class:list={[
-                  "lr-symptoms__group",
-                  { "lr-symptoms__group--copy": grouped },
-                ]}
-                href={group.href}
-                data-lr-lead-open={group.href === "#lr-contact" || undefined}
-                data-symptom={
-                  group.href === "#lr-contact" ? group.title : undefined
-                }
-                data-source={
-                  group.href === "#lr-contact" ? "data-recovery" : undefined
-                }
-              >
-                {compact && !grouped && (
-                  <img
-                    src={group.image}
-                    alt=""
-                    width="768"
-                    height="512"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                )}
-                {grouped && group.price ? (
-                  <>
-                    <div class="lr-symptoms__group-media">
-                      <img
-                        src={group.image}
-                        alt=""
-                        width="768"
-                        height="512"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      <div class="lr-symptoms__group-overlay">
-                        <strong>{group.title}</strong>
-                        <b>{group.price}</b>
+    {
+      informational && (
+        <ul class="lr-symptoms__list">
+          {serviceGroups.map((group) => (
+            <li>{group.title}</li>
+          ))}
+        </ul>
+      )
+    }
+    {
+      !informational && (
+        <div class="lr-symptoms__catalog">
+          <nav
+            class:list={["lr-symptoms__groups", { "lr-swipe-track": grouped }]}
+            data-lr-swipe-track={grouped || undefined}
+            tabindex={grouped ? "0" : undefined}
+            aria-roledescription={grouped ? "карусель" : undefined}
+            aria-label="Направления помощи с ноутбуком"
+            hidden={Boolean(items)}
+          >
+            {!items &&
+              serviceGroups.map((group) => (
+                <a
+                  class:list={[
+                    "lr-symptoms__group",
+                    { "lr-symptoms__group--copy": grouped },
+                  ]}
+                  href={group.href}
+                  data-lr-lead-open={group.href === "#lr-contact" || undefined}
+                  data-symptom={
+                    group.href === "#lr-contact" ? group.title : undefined
+                  }
+                  data-source={
+                    group.href === "#lr-contact" ? "data-recovery" : undefined
+                  }
+                >
+                  {compact && !grouped && (
+                    <img
+                      src={group.image}
+                      alt=""
+                      width="768"
+                      height="512"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  )}
+                  {grouped && group.price ? (
+                    <>
+                      <div class="lr-symptoms__group-media">
+                        <img
+                          src={group.image}
+                          alt=""
+                          width="768"
+                          height="512"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <div class="lr-symptoms__group-overlay">
+                          <strong>{group.title}</strong>
+                          <b>{group.price}</b>
+                        </div>
                       </div>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <strong>{group.title}</strong>
-                    {!compact && <span>{group.detail}</span>}
-                  </>
-                )}
-              </a>
-            ))
-        }
-      </nav>
-      {
-        !grouped && (
-          <details class="lr-symptoms__all" open>
-            <summary>Все неисправности ноутбука</summary>
-            <div class="lr-symptoms__grid">
-              {cards.map((item) => (
-                <a class="lr-symptom" href={item.href}>
-                  <img
-                    class="lr-symptom__image"
-                    src={item.image}
-                    alt={item.imageAlt}
-                    width="768"
-                    height="512"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div class="lr-symptom__body">
-                    <h3>{item.title}</h3>
-                    {!compact && (
-                      <p class="lr-symptom__price">
-                        {priceByWork(
-                          "priceWork" in item
-                            ? (item.priceWork as string | null)
-                            : null,
-                        )}
-                      </p>
-                    )}
-                  </div>
+                    </>
+                  ) : (
+                    <>
+                      <strong>{group.title}</strong>
+                      {!compact && <span>{group.detail}</span>}
+                    </>
+                  )}
                 </a>
               ))}
-            </div>
-          </details>
-        )
-      }
-    </div>
+          </nav>
+          {!grouped && (
+            <details class="lr-symptoms__all" open>
+              <summary>Все неисправности ноутбука</summary>
+              <div class="lr-symptoms__grid">
+                {cards.map((item) => (
+                  <a class="lr-symptom" href={item.href}>
+                    <img
+                      class="lr-symptom__image"
+                      src={item.image}
+                      alt={item.imageAlt}
+                      width="768"
+                      height="512"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div class="lr-symptom__body">
+                      <h3>{item.title}</h3>
+                      {!compact && (
+                        <p class="lr-symptom__price">
+                          {priceByWork(
+                            "priceWork" in item
+                              ? (item.priceWork as string | null)
+                              : null,
+                          )}
+                        </p>
+                      )}
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </details>
+          )}
+        </div>
+      )
+    }
     {
-      !compact && (
+      !informational && !compact && (
         <div class="lr-symptoms__modern">
           <div class="lr-symptoms__modern-header">
             <h3>Актуальные неисправности современных ноутбуков</h3>
@@ -360,7 +374,7 @@ const modernFaults = [
       )
     }
     {
-      !items && secondarySymptom && (
+      !informational && !items && secondarySymptom && (
         <p class="lr-symptoms__secondary">
           Для ноутбуков с дисководом:{" "}
           <a href={pagePath(secondarySymptom)}>ремонт CD/DVD-привода</a>.
@@ -368,7 +382,7 @@ const modernFaults = [
       )
     }
     {
-      !compact && (
+      !informational && !compact && (
         <div class="lr-section-note">
           <p>{c.fields["Пояснение цены"]}</p>
           <LeadButton

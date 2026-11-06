@@ -10,7 +10,7 @@
   "matchingReviews": 0,
   "candidateReviews": 0,
   "savedPhotos": 0,
-  "aggregate": {"rating": 3.0, "ratingCount": 6},
+  "aggregate": { "rating": 3.0, "ratingCount": 6 },
   "evidence": [
     "Вся публичная карточка просмотрена до футера; scrollTop 3543 + clientHeight 863 = scrollHeight 4406.",
     "Отзывной ленты, сортировок, пагинации, раскрываемых текстов и изображений нет; есть агрегат и форма оценки.",

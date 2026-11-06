@@ -2,7 +2,10 @@
   "taskId": "card-040",
   "checkedAt": "2026-11-02",
   "files": [
-    { "path": "result.json", "role": "Публичная сводка проверки и ограничения охвата" }
+    {
+      "path": "result.json",
+      "role": "Публичная сводка проверки и ограничения охвата"
+    }
   ],
   "counts": {
     "reportedReviews": 5,

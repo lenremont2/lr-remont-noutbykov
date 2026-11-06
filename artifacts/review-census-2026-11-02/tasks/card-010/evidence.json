@@ -8,12 +8,21 @@
     "withUserText": 151,
     "ratingOnly": 55,
     "collapsedUserTextsRemaining": 0,
-    "ratingHistogram": {"5":135,"4":18,"3":7,"2":7,"1":39},
-    "endRepeatedScrollCounts": [198,206,206,206],
+    "ratingHistogram": { "5": 135, "4": 18, "3": 7, "2": 7, "1": 39 },
+    "endRepeatedScrollCounts": [198, 206, 206, 206],
     "finalEndScrollTop": 72188,
     "finalEndScrollHeight": 73202,
-    "lastRecord": {"author":"Elena Rotaru","date":"8 лет назад","text":""},
-    "photoBearingReviewAuthors": ["Сергей О.","Константин паплавный","ON Vas","Максим Лихачев"]
+    "lastRecord": {
+      "author": "Elena Rotaru",
+      "date": "8 лет назад",
+      "text": ""
+    },
+    "photoBearingReviewAuthors": [
+      "Сергей О.",
+      "Константин паплавный",
+      "ON Vas",
+      "Максим Лихачев"
+    ]
   },
   "matchedWorkingTexts": [
     {
@@ -53,5 +62,8 @@
     "officialBranchAddress": "м. Пр. Просвещения, пр. Просвещения, д.20",
     "officialEvidenceLocation": "Официальная главная: телефон около строк 320, 355, 376; мастерская около строк 2499–2527 в текстовом представлении web.open."
   },
-  "limitations": ["Относительные даты оставлены как показано Google.","У подходящих отзывов не было вложенных фотографий; аватары и профильный счётчик фото вложениями не считались."]
+  "limitations": [
+    "Относительные даты оставлены как показано Google.",
+    "У подходящих отзывов не было вложенных фотографий; аватары и профильный счётчик фото вложениями не считались."
+  ]
 }

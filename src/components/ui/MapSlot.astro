@@ -1,24 +1,66 @@
 ---
+import workshops from "../../data/workshops.json";
 interface Props {
   id: string;
   type: "workshops" | "address";
 }
 const { id, type } = Astro.props;
-// shortcut: карты остаются заглушками до подключения шорткодов плагина.
 const label = type === "workshops" ? "Карта мастерских" : "Выбор адреса";
+const modal = id.endsWith("modal") || id === "lr-map-address";
 ---
 
 <div id={id} class="lr-map-slot" data-lr-map-slot={type} aria-label={label}>
-  <div class="lr-location-map lr-location-map--pending" data-lr-map-placeholder>
-    <span class="lr-map-slot__pin" aria-hidden="true">⌖</span>
-    <strong>{label}</strong>
-    <p>
-      {
-        type === "workshops"
-          ? "Здесь появятся адреса сервисов"
-          : "Здесь можно будет выбрать адрес выезда или доставки"
-      }
-    </p>
-    <p class="lr-caption">Карта пока не подключена</p>
+  <div class="lr-location-map" data-lr-map-surface>
+    {id === "lr-map-workshops" && <div data-lr-workshop-map />}
+    {type === "address" && <div data-lr-address-map />}
   </div>
+  {
+    type === "address" && (
+      <>
+        <p class="lr-caption" data-lr-map-status role="status">
+          Загружаем карту…
+        </p>
+        <button type="button" class="lr-text-action" data-lr-map-retry hidden>
+          Повторить загрузку карты
+        </button>
+      </>
+    )
+  }
+  {
+    modal && (
+      <>
+        <div class="lr-form__field">
+          <label for={`${id}-choice`}>
+            {type === "workshops"
+              ? "Мастерская"
+              : "Населённый пункт, улица и дом"}
+          </label>
+          {type === "workshops" ? (
+            <select id={`${id}-choice`} data-lr-map-workshop>
+              <option value="">Выберите мастерскую</option>
+              {workshops.workshops.map((workshop) => (
+                <option
+                  value={workshop.id}
+                  data-lr-workshop-address={workshop.address}
+                >
+                  {workshop.metro} — {workshop.address}
+                </option>
+              ))}
+            </select>
+          ) : (
+            <input
+              id={`${id}-choice`}
+              data-lr-map-address
+              autocomplete="street-address"
+              maxlength="240"
+            />
+          )}
+        </div>
+        <button type="button" class="lr-button" data-lr-map-confirm>
+          Продолжить с выбранным адресом
+        </button>
+        <p class="lr-field-error" data-lr-map-error role="status" />
+      </>
+    )
+  }
 </div>

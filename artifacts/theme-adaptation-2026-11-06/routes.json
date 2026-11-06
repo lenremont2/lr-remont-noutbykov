@@ -1,0 +1,3470 @@
+[
+  {
+    "route": "/",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 354,
+    "complex": 31,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 354,
+    "complex": 31,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 382,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 382,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 354,
+    "complex": 30,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 354,
+    "complex": 31,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 382,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 382,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-macbook-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 395,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-macbook-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 395,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-macbook-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 385,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-macbook-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 385,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-acer-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-acer-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-acer-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-acer-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-asus-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-asus-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-asus-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-asus-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-dell-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-dell-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-dell-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-dell-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-hp-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-hp-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-hp-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-hp-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-lenovo-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-lenovo-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-lenovo-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-lenovo-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-msi-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-msi-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-msi-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-msi-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-samsung-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-samsung-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-samsung-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-samsung-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-sony-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-sony-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-sony-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-sony-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-toshiba-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-toshiba-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 350,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-toshiba-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-toshiba-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 374,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-huawei-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-huawei-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-huawei-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-huawei-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-honor-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-honor-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-honor-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-honor-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-xiaomi-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-xiaomi-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-xiaomi-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-xiaomi-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-redmi-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-redmi-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-redmi-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-redmi-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-gigabyte-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-gigabyte-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-gigabyte-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-gigabyte-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-aorus-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-aorus-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-aorus-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-aorus-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-fujitsu-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-fujitsu-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-fujitsu-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-fujitsu-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-panasonic-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-panasonic-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-panasonic-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-panasonic-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-lg-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-lg-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-lg-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-lg-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-microsoft-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-microsoft-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-microsoft-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-microsoft-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-razer-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-razer-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-razer-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-razer-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-alienware-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-alienware-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-alienware-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-alienware-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-packard-bell-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-packard-bell-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-packard-bell-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-packard-bell-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-emachines-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-emachines-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-emachines-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-emachines-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-haier-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-haier-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-haier-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-haier-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-dexp-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-dexp-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-dexp-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-dexp-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-digma-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-digma-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-digma-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-digma-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-irbis-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-irbis-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-irbis-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-irbis-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-prestigio-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-prestigio-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-prestigio-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-prestigio-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-chuwi-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-chuwi-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-chuwi-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-chuwi-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-teclast-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-teclast-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-teclast-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-teclast-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-maibenben-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-maibenben-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-maibenben-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-maibenben-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-machenike-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-machenike-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-machenike-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-machenike-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-thunderobot-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-thunderobot-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-thunderobot-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-thunderobot-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-infinix-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-infinix-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-infinix-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-infinix-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-tecno-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-tecno-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-tecno-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-tecno-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-realme-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-realme-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-realme-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-realme-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-hasee-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-hasee-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-hasee-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-hasee-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-medion-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-medion-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-medion-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-medion-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-clevo-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-clevo-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 348,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbukov-clevo-spb.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbukov-clevo-spb.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 372,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/noutbuk-ne-vklyuchaetsya.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 298,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/noutbuk-ne-vklyuchaetsya.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 298,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/noutbuk-ne-vklyuchaetsya.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 298,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/noutbuk-ne-vklyuchaetsya.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 298,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/noutbuk-peregrevaetsya.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/noutbuk-peregrevaetsya.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/noutbuk-peregrevaetsya.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/noutbuk-peregrevaetsya.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbuka-posle-zalitiya.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 298,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbuka-posle-zalitiya.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 298,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-noutbuka-posle-zalitiya.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 298,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-noutbuka-posle-zalitiya.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 298,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-ekrana-noutbuka.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-ekrana-noutbuka.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-ekrana-noutbuka.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-ekrana-noutbuka.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/noutbuk-ne-zaryazhaetsya.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 298,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/noutbuk-ne-zaryazhaetsya.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 298,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/noutbuk-ne-zaryazhaetsya.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 298,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/noutbuk-ne-zaryazhaetsya.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 298,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/noutbuk-tormozit-ne-zagruzhaetsya.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 301,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/noutbuk-tormozit-ne-zagruzhaetsya.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 301,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/noutbuk-tormozit-ne-zagruzhaetsya.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 301,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/noutbuk-tormozit-ne-zagruzhaetsya.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 301,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-cd-dvd-privoda-noutbuka.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 292,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-cd-dvd-privoda-noutbuka.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 292,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-cd-dvd-privoda-noutbuka.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 292,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-cd-dvd-privoda-noutbuka.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 292,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-klaviatury-noutbuka.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-klaviatury-noutbuka.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-klaviatury-noutbuka.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-klaviatury-noutbuka.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "route": "/remont-razemov-noutbuka.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "route": "/remont-razemov-noutbuka.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.99995422363281,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "route": "/remont-razemov-noutbuka.htm",
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "false",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "route": "/remont-razemov-noutbuka.htm",
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 295,
+    "complex": 0,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.999958038330078,
+      "checked": "true",
+      "height": 44.66666793823242,
+      "right": 35.33332824707031,
+      "width": 163.4791717529297
+    },
+    "theme": "dark",
+    "width": 390
+  }
+]

@@ -123,7 +123,14 @@ assert.ok(
   award,
   "The document gallery is separate from aggregator scores and client reviews",
 );
-assert.ok(award.includes("Gazelle") && award.includes("2016"));
+for (const title of [
+  "Премия «Знак качества»",
+  "«Личный бренд — 2025»",
+  "Благодарственное письмо",
+  "За вклад в развитие Санкт-Петербурга",
+]) {
+  assert.ok(award.includes(title), title);
+}
 assert.equal((award.match(/data-lr-photo-open/g) || []).length, 4);
 assert.ok(
   section.indexOf("lr-reviews__documents") > section.lastIndexOf("</article>"),

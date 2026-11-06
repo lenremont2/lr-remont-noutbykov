@@ -1,0 +1,17 @@
+{
+  "surfaces": {
+    "award": "rgb(7, 19, 38)",
+    "diagnostic": "rgb(23, 49, 83)",
+    "diagnosticPrice": "rgb(255, 208, 0)",
+    "director": "rgb(23, 49, 83)",
+    "directorParent": "rgba(0, 0, 0, 0)",
+    "qr": "rgb(255, 255, 255)"
+  },
+  "photo": {
+    "opened": true,
+    "closed": true,
+    "focus": "Открыть: «Личный бренд — 2025»",
+    "outline": "rgb(255, 208, 0)",
+    "visible": true
+  }
+}

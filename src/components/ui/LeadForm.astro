@@ -30,29 +30,13 @@ const {
   >
     <input type="hidden" name="contact_method" value="Телефон" />
     <input type="hidden" name="quiz_service" value={serviceName} />
+    <input type="hidden" name="service_name" value={serviceName} />
+    <input type="hidden" name="cta_source" value={source} />
+    <input type="hidden" name="page_path" value="" />
     <input type="hidden" name="source" value={source} />
     <input type="hidden" name="service_format" value="consultation" />
     <input type="hidden" name="device_category" value="" />
     <input type="hidden" name="symptom" value="" />
-    {
-      requestTiming && (
-        <div class="lr-form__field">
-          <label for={`${id}-timing`}>Когда нужна помощь?</label>
-          <select id={`${id}-timing`} name="request_timing">
-            <option value="">Уточнить при звонке</option>
-            <option value="Срочно сегодня (за 1–2 часа)">
-              Срочно сегодня (за 1–2 часа)
-            </option>
-            <option value="Сегодня вечером или завтра">
-              Сегодня вечером или завтра
-            </option>
-            <option value="Сначала просто узнать точную цену">
-              Сначала просто узнать точную цену
-            </option>
-          </select>
-        </div>
-      )
-    }
     <div class="lr-form__context" data-lr-context hidden>
       <p data-lr-context-text></p>
       <button
@@ -132,7 +116,30 @@ const {
         }
       </div>
     </div>
-    <div class="lr-form__field" data-lr-workshop-picker hidden>
+    {
+      requestTiming && (
+        <div class="lr-form__field">
+          <label for={`${id}-timing`}>Когда нужна помощь?</label>
+          <select id={`${id}-timing`} name="request_timing">
+            <option value="">Уточнить при звонке</option>
+            <option value="Срочно сегодня (за 1–2 часа)">
+              Срочно сегодня (за 1–2 часа)
+            </option>
+            <option value="Сегодня вечером или завтра">
+              Сегодня вечером или завтра
+            </option>
+            <option value="Сначала просто узнать точную цену">
+              Сначала просто узнать точную цену
+            </option>
+          </select>
+        </div>
+      )
+    }
+    <div
+      class="lr-form__field lr-form__workshop"
+      data-lr-workshop-picker
+      hidden
+    >
       <label for={`${id}-workshop`}>Выберите мастерскую</label>
       <select id={`${id}-workshop`} name="workshop_id" disabled>
         <option value="">Помогите выбрать при звонке</option>
@@ -148,7 +155,7 @@ const {
         >Уточним, принимает ли выбранная мастерская вашу модель.</span
       >
     </div>
-    <div class="lr-form__field" data-lr-district hidden>
+    <div class="lr-form__field lr-form__district" data-lr-district hidden>
       <label for={`${id}-district`}>Метро или район</label>
       <input
         id={`${id}-district`}

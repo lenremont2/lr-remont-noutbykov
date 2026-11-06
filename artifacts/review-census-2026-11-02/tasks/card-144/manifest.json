@@ -14,10 +14,7 @@
   "total": 9,
   "fullTextsRead": 9,
   "repliesRead": 9,
-  "dateRange": [
-    "2020-08-10",
-    "2020-10-12"
-  ],
+  "dateRange": ["2020-08-10", "2020-10-12"],
   "ratings": {
     "5": 9
   },

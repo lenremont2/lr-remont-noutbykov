@@ -1,0 +1,141 @@
+[
+  {
+    "scenario": "desktop lead",
+    "incomplete": {
+      "disabled": true,
+      "error": ""
+    },
+    "preserved": true,
+    "open": true,
+    "enabled": true,
+    "darkIssues": [],
+    "lightIssues": []
+  },
+  {
+    "scenario": "lead keyboard",
+    "tab": {
+      "inside": true,
+      "label": null
+    },
+    "escape": {
+      "closed": true,
+      "focus": "Оставить заявку"
+    }
+  },
+  {
+    "scenario": "mobile dialpad",
+    "before": {
+      "consent": true,
+      "ready": true,
+      "value": "+7 (999) 123-45-67"
+    },
+    "preserved": true,
+    "darkIssues": [],
+    "lightIssues": []
+  },
+  {
+    "scenario": "quiz selected answers",
+    "preserved": true,
+    "darkIssues": []
+  },
+  {
+    "scenario": "quiz required workshop",
+    "darkIssues": [],
+    "lightIssues": []
+  },
+  {
+    "scenario": "quiz result and selects",
+    "darkIssues": [],
+    "lightIssues": []
+  },
+  {
+    "scenario": "quiz contact and return",
+    "preserved": true,
+    "darkIssues": [],
+    "lightIssues": [],
+    "escape": {
+      "closed": true,
+      "focus": "Узнать стоимость",
+      "inline": true
+    },
+    "reopenedPhone": "+7 (999) 123-45-67"
+  },
+  {
+    "scenario": "photo dialog",
+    "darkIssues": [],
+    "lightIssues": [],
+    "escape": {
+      "closed": true,
+      "focus": "Открыть иллюстрацию: Исправный iMac на домашнем рабочем столе (создано с ИИ)"
+    }
+  },
+  {
+    "scenario": "invalid lead after contrast correction",
+    "state": {
+      "error": "Проверьте номер телефона: не хватает цифр.",
+      "message": "",
+      "value": "+7 (12"
+    },
+    "darkIssues": [],
+    "lightIssues": []
+  },
+  {
+    "scenario": "Themes without JavaScript",
+    "light": "rgb(244, 247, 251)",
+    "dark": "rgb(7, 19, 38)",
+    "restored": "rgb(244, 247, 251)"
+  },
+  {
+    "scenario": "WordPress shell isolation",
+    "unchanged": true,
+    "styles": ["rgb(18, 52, 86)", "rgb(254, 220, 186)", "normal", ""]
+  },
+  {
+    "scenario": "keyboard switch and price tabs with reduced motion",
+    "switch": {
+      "checked": "true",
+      "dark": true,
+      "focusVisible": true,
+      "name": "Тёмная тема",
+      "outline": "solid",
+      "outlineWidth": "2.66667px",
+      "tabIndicator": "rgb(255, 208, 0) 0px -3px 0px 0px inset"
+    },
+    "priceTab": {
+      "indicator": "rgb(255, 208, 0) 0px -3px 0px 0px inset",
+      "selected": "Apple MacBook (5)"
+    }
+  },
+  {
+    "scenario": "consent error",
+    "message": "Подтвердите согласие на обработку персональных данных.",
+    "darkIssues": [],
+    "lightIssues": []
+  },
+  {
+    "scenario": "forced autofill",
+    "styles": [
+      {
+        "name": "color-scheme",
+        "value": "dark"
+      },
+      {
+        "name": "box-shadow",
+        "value": "rgb(16, 35, 63) 0px 0px 0px 1000px inset"
+      },
+      {
+        "name": "caret-color",
+        "value": "rgb(244, 247, 251)"
+      },
+      {
+        "name": "-webkit-text-fill-color",
+        "value": "rgb(244, 247, 251)"
+      }
+    ]
+  },
+  {
+    "scenario": "success markup (render only)",
+    "darkIssues": [],
+    "lightIssues": []
+  }
+]

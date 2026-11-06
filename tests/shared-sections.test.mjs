@@ -43,9 +43,28 @@ test("All 49 child pages use the homepage service components", () => {
     const isProblem = content.problems.includes(page);
     const usesHomeVisuals = isBrand || isProblem;
     if (isBrand) {
-      const symptomCards = (text) =>
-        section(text, "lr-symptoms").match(/<nav\b[\s\S]*?<\/nav>/)?.[0];
-      assert.equal(symptomCards(html), symptomCards(home), page.slug);
+      const symptoms = section(html, "lr-symptoms");
+      assert.match(symptoms, /<ul class="lr-symptoms__list">/, page.slug);
+      assert.equal((symptoms.match(/<li>/g) || []).length, 12, page.slug);
+      assert.doesNotMatch(
+        symptoms,
+        /<a\b|<button\b|data-lr-swipe-slider|data-lr-lead-open/,
+        page.slug,
+      );
+      assert.deepEqual(
+        [...html.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)]
+          .slice(0, 6)
+          .map((match) => match[1]),
+        [
+          "lr-hero",
+          "lr-reviews",
+          "lr-quiz",
+          "lr-formats",
+          "lr-symptoms",
+          "lr-prices",
+        ],
+        page.slug,
+      );
     }
     if (usesHomeVisuals) {
       assert.equal(formats, section(home, "lr-formats"), page.slug);

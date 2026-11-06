@@ -83,30 +83,6 @@
 #hop-landing .lr-home-pricing__price {
   vertical-align: top;
 }
-#hop-landing .lr-quiz__analysis {
-  display: grid;
-  justify-items: start;
-  gap: 20px;
-  padding-block: 24px;
-}
-#hop-landing .lr-quiz__analysis h3,
-#hop-landing .lr-quiz__analysis p {
-  margin: 0;
-}
-#hop-landing .lr-quiz__spinner {
-  display: block;
-  width: 44px;
-  height: 44px;
-  border: 4px solid var(--lr-color-border);
-  border-top-color: var(--lr-color-link);
-  border-radius: 50%;
-  animation: lr-quiz-pending 800ms linear infinite;
-}
-@keyframes lr-quiz-pending {
-  to {
-    transform: rotate(360deg);
-  }
-}
 #hop-landing .lr-swipe-track {
   scrollbar-width: none;
   overscroll-behavior-x: contain;
@@ -153,10 +129,5 @@
   #hop-landing .lr-symptoms--grouped .lr-symptoms__groups,
   #hop-landing .lr-equipment-reference .lr-equipment-reference__track {
     grid-auto-columns: calc((100% - 40px) / 3);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  #hop-landing .lr-quiz__spinner {
-    animation: none;
   }
 }

@@ -5,8 +5,14 @@
   "branch": "Ленремонт, улица Решетникова, 3",
   "city": "Санкт-Петербург",
   "networkEvidence": [
-    {"url":"https://yandex.ru/maps/org/lenremont/1401251799/","observed":"Обзор карточки: Ленремонт, ул. Решетникова, 3, Санкт-Петербург; +7 (812) 344-44-44; ссылка www.lenremont.ru и Все филиалы сети."},
-    {"url":"https://www.lenremont.ru/contact.htm","observed":"Официальная страница контактов перечисляет мастерскую у м. Электросила, ул. Решетникова, д.3; телефон сети 8 (812) 344-44-44 совпадает с карточкой."}
+    {
+      "url": "https://yandex.ru/maps/org/lenremont/1401251799/",
+      "observed": "Обзор карточки: Ленремонт, ул. Решетникова, 3, Санкт-Петербург; +7 (812) 344-44-44; ссылка www.lenremont.ru и Все филиалы сети."
+    },
+    {
+      "url": "https://www.lenremont.ru/contact.htm",
+      "observed": "Официальная страница контактов перечисляет мастерскую у м. Электросила, ул. Решетникова, д.3; телефон сети 8 (812) 344-44-44 совпадает с карточкой."
+    }
   ],
   "coverage": {
     "status": "complete",
@@ -25,7 +31,21 @@
       "reviewUrl": "https://yandex.ru/maps/org/1401251799/reviews?reviews%5BpublicId%5D=arpekevrb4nrudgvv11n9vn6d0",
       "topic": "Срочная диагностика ноутбука, обращение до сдачи устройства",
       "photos": [],
-      "evidence": {"profileUrl":"https://yandex.ru/maps/user/arpekevrb4nrudgvv11n9vn6d0","datePublished":"2025-08-26T12:57:23.887Z","sourceDateDisplay":"26 августа 2025","fullTextExpanded":true,"shareObserved":true,"publicId":"arpekevrb4nrudgvv11n9vn6d0","reviewAttachmentCheck":"В контейнере отзыва нет изображений и фото-вложений; единственный URL изображения относится к аватару get-yapic.","companyReply":{"opened":true,"sourceDateDisplay":"27 августа 2025","summary":"Компания извиняется за общение сотрудника точки, отмечает работу менеджера и просит сведения обращения для проверки отделом контроля качества.","photosFound":false}}
+      "evidence": {
+        "profileUrl": "https://yandex.ru/maps/user/arpekevrb4nrudgvv11n9vn6d0",
+        "datePublished": "2025-08-26T12:57:23.887Z",
+        "sourceDateDisplay": "26 августа 2025",
+        "fullTextExpanded": true,
+        "shareObserved": true,
+        "publicId": "arpekevrb4nrudgvv11n9vn6d0",
+        "reviewAttachmentCheck": "В контейнере отзыва нет изображений и фото-вложений; единственный URL изображения относится к аватару get-yapic.",
+        "companyReply": {
+          "opened": true,
+          "sourceDateDisplay": "27 августа 2025",
+          "summary": "Компания извиняется за общение сотрудника точки, отмечает работу менеджера и просит сведения обращения для проверки отделом контроля качества.",
+          "photosFound": false
+        }
+      }
     },
     {
       "author": "Виктория Кутузова",
@@ -35,7 +55,21 @@
       "reviewUrl": "https://yandex.ru/maps/org/1401251799/reviews?reviews%5BpublicId%5D=qcynf8ubc4up005rte92t4rq2c",
       "topic": "Ремонт и диагностика ноутбука",
       "photos": [],
-      "evidence": {"profileUrl":"https://yandex.ru/maps/user/qcynf8ubc4up005rte92t4rq2c","datePublished":"2026-07-09T16:05:05.433Z","sourceDateDisplay":"9 июля","fullTextExpanded":true,"shareObserved":true,"publicId":"qcynf8ubc4up005rte92t4rq2c","reviewAttachmentCheck":"Фото-вложений нет; наблюдаемый URL get-yapic является аватаром автора.","companyReply":{"opened":true,"sourceDateDisplay":"10 июля","summary":"Компания благодарит за выбор сервиса и положительный отзыв.","photosFound":false}}
+      "evidence": {
+        "profileUrl": "https://yandex.ru/maps/user/qcynf8ubc4up005rte92t4rq2c",
+        "datePublished": "2026-07-09T16:05:05.433Z",
+        "sourceDateDisplay": "9 июля",
+        "fullTextExpanded": true,
+        "shareObserved": true,
+        "publicId": "qcynf8ubc4up005rte92t4rq2c",
+        "reviewAttachmentCheck": "Фото-вложений нет; наблюдаемый URL get-yapic является аватаром автора.",
+        "companyReply": {
+          "opened": true,
+          "sourceDateDisplay": "10 июля",
+          "summary": "Компания благодарит за выбор сервиса и положительный отзыв.",
+          "photosFound": false
+        }
+      }
     },
     {
       "author": "rashal",
@@ -45,11 +79,37 @@
       "reviewUrl": "https://yandex.ru/maps/org/1401251799/reviews?reviews%5BpublicId%5D=fz9f7vtqj3ra8fcxzfmphp4xem",
       "topic": "Ожидание диагностики ноутбука без выполненного осмотра",
       "photos": [],
-      "evidence": {"profileUrl":"https://yandex.ru/maps/user/fz9f7vtqj3ra8fcxzfmphp4xem","datePublished":"2019-04-28T08:51:50.390Z","sourceDateDisplay":"28 апреля 2019","fullTextExpanded":true,"shareObserved":true,"publicId":"fz9f7vtqj3ra8fcxzfmphp4xem","verifiedAt":"https://yandex.ru/maps/org/lenremont/1401251799/reviews/?page=10","reviewAttachmentCheck":"Фото-вложений нет; единственный фон с URL изображения относится к аватару get-yapic.","companyReply":{"opened":true,"sourceDateDisplay":"15 мая 2019","summary":"Компания просит номер заказа для решения вопроса.","photosFound":false}}
+      "evidence": {
+        "profileUrl": "https://yandex.ru/maps/user/fz9f7vtqj3ra8fcxzfmphp4xem",
+        "datePublished": "2019-04-28T08:51:50.390Z",
+        "sourceDateDisplay": "28 апреля 2019",
+        "fullTextExpanded": true,
+        "shareObserved": true,
+        "publicId": "fz9f7vtqj3ra8fcxzfmphp4xem",
+        "verifiedAt": "https://yandex.ru/maps/org/lenremont/1401251799/reviews/?page=10",
+        "reviewAttachmentCheck": "Фото-вложений нет; единственный фон с URL изображения относится к аватару get-yapic.",
+        "companyReply": {
+          "opened": true,
+          "sourceDateDisplay": "15 мая 2019",
+          "summary": "Компания просит номер заказа для решения вопроса.",
+          "photosFound": false
+        }
+      }
     }
   ],
   "candidateReviews": [
-    {"author":"Анастасия Л.","date":"2023-11-17","rating":1,"summary":"Оставила заявку на подключение принтера к ноутбуку; за сутки, по ее словам, не получила обратного звонка.","reviewUrl":"https://yandex.ru/maps/user/dxcrn87trh55z96g5z9znhn4e8","cardUrl":"https://yandex.ru/maps/org/lenremont/1401251799/reviews/","datePublished":"2023-11-17T08:04:14.585Z","reason":"Пограничное упоминание ноутбука как устройства для подключения принтера; нет явного ремонта или обслуживания самого ноутбука. В основной список не включено.","photos":[],"fullTextRead":true}
+    {
+      "author": "Анастасия Л.",
+      "date": "2023-11-17",
+      "rating": 1,
+      "summary": "Оставила заявку на подключение принтера к ноутбуку; за сутки, по ее словам, не получила обратного звонка.",
+      "reviewUrl": "https://yandex.ru/maps/user/dxcrn87trh55z96g5z9znhn4e8",
+      "cardUrl": "https://yandex.ru/maps/org/lenremont/1401251799/reviews/",
+      "datePublished": "2023-11-17T08:04:14.585Z",
+      "reason": "Пограничное упоминание ноутбука как устройства для подключения принтера; нет явного ремонта или обслуживания самого ноутбука. В основной список не включено.",
+      "photos": [],
+      "fullTextRead": true
+    }
   ],
   "discoveredSources": [],
   "notes": [

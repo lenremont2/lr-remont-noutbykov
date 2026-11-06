@@ -9,7 +9,11 @@
     "officialAddressEvidence": "Совпадает с официальным реестром координатора artifacts/review-census-2026-11-02/workshops.json: пр. Большевиков, д. 25, official-listed.",
     "cardAddress": "Санкт-Петербург, проспект Большевиков, 25",
     "cardPhone": "+78123808841",
-    "otherSignals": ["Zoon связывает карточку с сетью Ленремонт из 28 заведений", "WhatsApp +78127023333", "Telegram t.me/lenremont_bot"],
+    "otherSignals": [
+      "Zoon связывает карточку с сетью Ленремонт из 28 заведений",
+      "WhatsApp +78127023333",
+      "Telegram t.me/lenremont_bot"
+    ],
     "limitation": "Телефон карточки прочитан из видимого контактного tel-ссылки; его отдельное совпадение с официальным сайтом не проверено."
   },
   "coverage": {
@@ -28,14 +32,16 @@
       "summary": "Сообщает о ремонте кнопки питания ноутбука Asus в течение рабочего дня.",
       "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_bolshevikov/#comment6570fe4dc1512617f3000577",
       "topic": "ноутбук Asus — кнопка питания",
-      "photos": [{
-        "sourceUrl": "https://p2.zoon.ru/preview/QBIxDV7S27wwgFai4xMO0Q/564x846x85/1/d/9/original_6570fe493b4c42784a040360_6570fe49f1f9c3.12068726.jpg",
-        "localPath": "artifacts/review-census-2026-11-02/tasks/card-012/photos/artur-pshukov.avif",
-        "attachment": "review",
-        "bindingVerified": true,
-        "visuallyVerified": true,
-        "description": "Открытый тёмный ноутбук с логотипом ASUS, включённым экраном и браузером/мессенджером на столе у окна. Фотография находится внутри контейнера отзыва Артура, до вложенного ответа компании; это не аватар и не общая галерея. Открыта в фотопросмотрщике и скачана доступная полноразмерная версия 564×846, сервер выдал AVIF."
-      }],
+      "photos": [
+        {
+          "sourceUrl": "https://p2.zoon.ru/preview/QBIxDV7S27wwgFai4xMO0Q/564x846x85/1/d/9/original_6570fe493b4c42784a040360_6570fe49f1f9c3.12068726.jpg",
+          "localPath": "artifacts/review-census-2026-11-02/tasks/card-012/photos/artur-pshukov.avif",
+          "attachment": "review",
+          "bindingVerified": true,
+          "visuallyVerified": true,
+          "description": "Открытый тёмный ноутбук с логотипом ASUS, включённым экраном и браузером/мессенджером на столе у окна. Фотография находится внутри контейнера отзыва Артура, до вложенного ответа компании; это не аватар и не общая галерея. Открыта в фотопросмотрщике и скачана доступная полноразмерная версия 564×846, сервер выдал AVIF."
+        }
+      ],
       "evidence": "Основная выдача; DOM id comment6570fe4dc1512617f3000577, дата в datePublished 2023-12-07, ratingValue 5.0. Официальный ответ от 11 декабря 2023 отделён вложенным комментарием."
     },
     {
@@ -55,14 +61,16 @@
       "summary": "Сообщает о замене расшатанного гнезда зарядки ноутбука Samsung за полчаса и сравнительно низкой цене. Zoon поместил отзыв в отклонённые.",
       "reviewUrl": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_bolshevikov/reviews/#comment658c0467492d23e8610ddec9",
       "topic": "ноутбук Samsung — разъём зарядки; отклонённый отзыв",
-      "photos": [{
-        "sourceUrl": "https://p0.zoon.ru/preview/phjq9dTMC0uxeH9JWyltGw/564x564x85/1/7/b/original_658c0465d0e890446b0fea8c_658c04651e2c41.13146151.jpg",
-        "localPath": "artifacts/review-census-2026-11-02/tasks/card-012/photos/albina-apsheva.avif",
-        "attachment": "review",
-        "bindingVerified": true,
-        "visuallyVerified": true,
-        "description": "Светлый открытый ноутбук с включённым экраном блокировки Windows у окна; внизу справа наклейки Intel. Марка Samsung по фото не подтверждается. Изображение внутри контейнера отзыва Альбины под его текстом, не аватар и не ответ компании; открыто в фотопросмотрщике. Скачана доступная версия 564×564, сервер выдал AVIF."
-      }],
+      "photos": [
+        {
+          "sourceUrl": "https://p0.zoon.ru/preview/phjq9dTMC0uxeH9JWyltGw/564x564x85/1/7/b/original_658c0465d0e890446b0fea8c_658c04651e2c41.13146151.jpg",
+          "localPath": "artifacts/review-census-2026-11-02/tasks/card-012/photos/albina-apsheva.avif",
+          "attachment": "review",
+          "bindingVerified": true,
+          "visuallyVerified": true,
+          "description": "Светлый открытый ноутбук с включённым экраном блокировки Windows у окна; внизу справа наклейки Intel. Марка Samsung по фото не подтверждается. Изображение внутри контейнера отзыва Альбины под его текстом, не аватар и не ответ компании; открыто в фотопросмотрщике. Скачана доступная версия 564×564, сервер выдал AVIF."
+        }
+      ],
       "evidence": "Раздел «Отклоненные отзывы» с предупреждением Zoon о сомнительности. DOM id comment658c0467492d23e8610ddec9, datePublished 2023-12-27, ratingValue 5.0. Фото привязано .js-comment-photoview-item внутри карточки."
     },
     {
@@ -77,9 +85,24 @@
     }
   ],
   "discoveredSources": [
-    {"platform":"Zoon","url":"https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_pyatiletok/","address":"проспект Пятилеток, 14 к1","city":"Санкт-Петербург"},
-    {"platform":"Zoon","url":"https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_elizarova/","address":"Елизарова проспект, 36","city":"Санкт-Петербург"},
-    {"platform":"Zoon","url":"https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_kosygina/","address":"проспект Косыгина, 28к1","city":"Санкт-Петербург"}
+    {
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_pyatiletok/",
+      "address": "проспект Пятилеток, 14 к1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_elizarova/",
+      "address": "Елизарова проспект, 36",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_kosygina/",
+      "address": "проспект Косыгина, 28к1",
+      "city": "Санкт-Петербург"
+    }
   ],
   "notes": [
     "Четыре релевантных отзыва: два основных и два отклонённых. Отклонённые не объединять с основными и не использовать без явной пометки статуса.",

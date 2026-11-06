@@ -1,5 +1,5 @@
 {
   "extends": "astro/tsconfigs/strict",
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist", "scrollcraft"]
+  "exclude": ["dist", "scrollcraft", "artifacts/gutenberg-2026-11-06"]
 }

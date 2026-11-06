@@ -255,10 +255,7 @@
     "https://yandex.ru/maps/user/9w1wpzw1739fk7fucp3entnwem|2023-10-08T20:10:36.225Z",
     "https://yandex.ru/maps/user/ry4nnmfypjkxyp11pf7g7yf0n8|2023-12-21T14:24:05.016Z"
   ],
-  "batches": [
-    150,
-    100
-  ],
+  "batches": [150, 100],
   "endpoint": {
     "loaded": 100,
     "scrollTop": 25376,

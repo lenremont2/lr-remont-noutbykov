@@ -25,9 +25,17 @@
     },
     {
       "recordId": "review-ad2808b2ab9e",
-      "photoIds": ["review-ad2808b2ab9e-1", "review-ad2808b2ab9e-2", "review-ad2808b2ab9e-3"],
+      "photoIds": [
+        "review-ad2808b2ab9e-1",
+        "review-ad2808b2ab9e-2",
+        "review-ad2808b2ab9e-3"
+      ],
       "sourcePage": "https://yandex.ru/maps/org/142299563723/reviews?reviews%5BpublicId%5D=2p5k9vp7u9gmjd21rka1g50d74",
-      "sourceImageIds": ["2a0000019fff98afce9476ef6a1215363573", "2a0000019fff98bf43cf71dd1e2aba02ba12", "2a0000019fff98cdaf94ac7b12bc6581f16c"],
+      "sourceImageIds": [
+        "2a0000019fff98afce9476ef6a1215363573",
+        "2a0000019fff98bf43cf71dd1e2aba02ba12",
+        "2a0000019fff98cdaf94ac7b12bc6581f16c"
+      ],
       "attachment": "review",
       "bindingVerified": true,
       "visuallyVerified": true,
@@ -96,9 +104,19 @@
     },
     {
       "recordId": "review-103f98b6752c",
-      "photoIds": ["review-103f98b6752c-1", "review-103f98b6752c-2", "review-103f98b6752c-3", "review-103f98b6752c-4"],
+      "photoIds": [
+        "review-103f98b6752c-1",
+        "review-103f98b6752c-2",
+        "review-103f98b6752c-3",
+        "review-103f98b6752c-4"
+      ],
       "sourcePage": "https://www.otzyvru.com/lenremont/review-1951259",
-      "sourceImageIds": ["lenremont_6791f826192bd.jpeg", "lenremont_6791f8269ac72.jpeg", "lenremont_6791f82708b64.jpeg", "lenremont_6791f827684d3.jpeg"],
+      "sourceImageIds": [
+        "lenremont_6791f826192bd.jpeg",
+        "lenremont_6791f8269ac72.jpeg",
+        "lenremont_6791f82708b64.jpeg",
+        "lenremont_6791f827684d3.jpeg"
+      ],
       "attachment": "company_reply",
       "bindingVerified": true,
       "visuallyVerified": true,
@@ -116,9 +134,17 @@
     },
     {
       "recordId": "review-3df21c81a136",
-      "photoIds": ["review-3df21c81a136-1", "review-3df21c81a136-2", "review-3df21c81a136-3"],
+      "photoIds": [
+        "review-3df21c81a136-1",
+        "review-3df21c81a136-2",
+        "review-3df21c81a136-3"
+      ],
       "sourcePage": "https://yandex.ru/maps/org/3295465178/reviews?reviews%5BpublicId%5D=xve3dmrvnzakmufvv68quuj5hr",
-      "sourceImageIds": ["2a0000018e7551e84acb5c1ed7e8587cfa4c", "2a0000018e7551e8102d77b7a33e4d881986", "2a0000018e7551e848706efff13c6d2ee505"],
+      "sourceImageIds": [
+        "2a0000018e7551e84acb5c1ed7e8587cfa4c",
+        "2a0000018e7551e8102d77b7a33e4d881986",
+        "2a0000018e7551e848706efff13c6d2ee505"
+      ],
       "attachment": "review",
       "bindingVerified": true,
       "visuallyVerified": true,
@@ -126,9 +152,19 @@
     },
     {
       "recordId": "review-d20bdcdeeedb",
-      "photoIds": ["review-d20bdcdeeedb-1", "review-d20bdcdeeedb-2", "review-d20bdcdeeedb-3", "review-d20bdcdeeedb-4"],
+      "photoIds": [
+        "review-d20bdcdeeedb-1",
+        "review-d20bdcdeeedb-2",
+        "review-d20bdcdeeedb-3",
+        "review-d20bdcdeeedb-4"
+      ],
       "sourcePage": "https://yandex.ru/maps/org/87389556464/reviews?reviews%5BpublicId%5D=2ua2x62f2xxypxavf2e1pk5mpc&si=517v1r88kzgb3kpw65wkeevaq0&utm_source=review",
-      "sourceImageIds": ["2a00000198d25204cebd49f8421bf27c7054", "2a00000198d252036eacdd0f4a0eb2caf3ee", "2a00000198d25206c0cf7613f070450bddf2", "2a00000198d251ff8a5aa59ee35a1bee1986"],
+      "sourceImageIds": [
+        "2a00000198d25204cebd49f8421bf27c7054",
+        "2a00000198d252036eacdd0f4a0eb2caf3ee",
+        "2a00000198d25206c0cf7613f070450bddf2",
+        "2a00000198d251ff8a5aa59ee35a1bee1986"
+      ],
       "attachment": "review",
       "bindingVerified": true,
       "visuallyVerified": true,

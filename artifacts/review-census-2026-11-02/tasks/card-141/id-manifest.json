@@ -7,44 +7,277 @@
   "reportedRatings": 44,
   "sort": "По умолчанию",
   "uniqueCount": 36,
-  "endpoint": {"scrollTop":17809,"clientHeight":863,"scrollHeight":18672,"lastAuthor":"Галина Михайлова","lastDate":"2025-02-04","moreTextButtonsRemaining":0,"companyRepliesExpanded":35,"reviewAttachments":3},
-  "paginationCheck": {"url":"https://yandex.com/maps/org/tekhnika_s_utsenkoy/143153493696/reviews/?page=2","reviewBlocks":0,"headingReviews":36,"furtherPageLinks":0},
+  "endpoint": {
+    "scrollTop": 17809,
+    "clientHeight": 863,
+    "scrollHeight": 18672,
+    "lastAuthor": "Галина Михайлова",
+    "lastDate": "2025-02-04",
+    "moreTextButtonsRemaining": 0,
+    "companyRepliesExpanded": 35,
+    "reviewAttachments": 3
+  },
+  "paginationCheck": {
+    "url": "https://yandex.com/maps/org/tekhnika_s_utsenkoy/143153493696/reviews/?page=2",
+    "reviewBlocks": 0,
+    "headingReviews": 36,
+    "furtherPageLinks": 0
+  },
   "records": [
-    {"id":"9592vbmruze184zu139f8k377m|2025-10-19","author":"Денис Денисов","date":"2025-10-19","rating":5,"topic":"selection, sales consultation and delivery"},
-    {"id":"bz8q43kuqx1u97jjuf2pef84rc|2025-08-24","author":"Александра Зотова","date":"2025-08-24","rating":5,"topic":"refrigerator and washing machine selection"},
-    {"id":"2rezb07yy3xf284bjrj53fy9z0|2025-10-15","author":"Сабир Холов","date":"2025-10-15","rating":5,"topic":"washing machine purchase and delivery; full text expanded"},
-    {"id":"wedrafube84m5d960rdbk64hjm|2026-09-06","author":"Дарья Тучак","date":"2026-09-06","rating":5,"topic":"washing machine purchase","reviewPhotos":1},
-    {"id":"jer736ejn88h6u09xvg7m1zer8|2025-09-01","author":"Никита Зотов","date":"2025-09-01","rating":5,"topic":"selection, warranty and delivery","reviewPhotos":1},
-    {"id":"n1pv7uy89c5wne9e9zrm9fyzgg|2024-12-19","author":"Pro Vkus","date":"2024-12-19","rating":5,"topic":"appliances purchased for rental apartment; full text expanded"},
-    {"id":"meca6xknftwc74pmhzuaqu9ck0|2026-04-14","author":"Елена Никулина","date":"2026-04-14","rating":5,"topic":"refrigerator purchase and delivery"},
-    {"id":"avgc235fq3gg5utpgzzb0dgucw|2025-09-01","author":"Sladkpuknul","date":"2025-09-01","rating":5,"topic":"washing machine purchase"},
-    {"id":"qjzu3ef6ny15kuzh6j7k11manw|2026-09-06","author":"Инкогнито 9786","date":"2026-09-06","rating":5,"topic":"unspecified appliance selection; no attachment or repair evidence"},
-    {"id":"ktun3hgkn1jgjxt1jncj9nhuy4|2026-09-06","author":"Катерина А.","date":"2026-09-06","rating":5,"topic":"shop selection and consultation; no attachment or repair evidence"},
-    {"id":"4dr5tm0t8rcuq48krfcjhbzfhr|2024-12-19","author":"Аня Т.","date":"2024-12-19","rating":5,"topic":"refrigerator and washing machine purchase"},
-    {"id":"98txh4dk1f0mmvjhc7kvav3au0|2026-09-06","author":"Владимир Авдонин","date":"2026-09-06","rating":5,"topic":"shop choice, warranty and sellers; no attachment or repair evidence"},
-    {"id":"t84venfc9aj3nr74089cyqper4|2025-10-19","author":"Анатолий Гарда","date":"2025-10-19","rating":5,"topic":"appliance selection and warranty"},
-    {"id":"vjd7ue9g3b3v8bga7txmv7h20c|2024-11-24","author":"Олег Филаткин","date":"2024-11-24","rating":5,"topic":"refrigerator and washing machine purchase"},
-    {"id":"tmah5reme3d8dmqrqhnuyr1cxw|2024-11-24","author":"Алексей Л.","date":"2024-11-24","rating":5,"topic":"washing machine purchase"},
-    {"id":"gvc2xnc5hcx8b2qqmf4vdmtu98|2024-11-23","author":"ольга п.","date":"2024-11-23","rating":5,"topic":"refrigerator and washing machine purchase"},
-    {"id":"xzqmq5xf1cueuzwm68z1pu99ug|2024-11-26","author":"Екатерина Б.","date":"2024-11-26","rating":5,"topic":"washing machine purchase"},
-    {"id":"z6bakx31h952ubz0hwvtevyvn0|2024-11-25","author":"Никита Шаритдинов","date":"2024-11-25","rating":5,"topic":"restored washing machine purchase"},
-    {"id":"p60an4zx1gu3e2ex8me9kzpd3c|2024-12-20","author":"мария б.","date":"2024-12-20","rating":5,"topic":"washing machine purchase"},
-    {"id":"gc1at0e25tqdbm9wn3nmqym8pc|2024-11-26","author":"Александр С.","date":"2024-11-26","rating":5,"topic":"replacement appliance purchase and disposal; unspecified device; no attachment"},
-    {"id":"6rtmr00gdc869vuec8az9dznk8|2024-11-27","author":"Екатерина М.","date":"2024-11-27","rating":5,"topic":"Bosch refrigerator purchase"},
-    {"id":"rc3qhe3mkve102p8keb843mn1c|2024-12-19","author":"Михаил Ильяшов","date":"2024-12-19","rating":5,"topic":"refrigerator and washing machine purchase"},
-    {"id":"elena.subbotlna|2025-09-03","author":"Елена Субботина","date":"2025-09-03","rating":2,"topic":"shop prices and delivery cost"},
-    {"id":"ftxntn5jtvbpfx5xfwz6eqfkr0|2024-12-21","author":"Олег Ю.","date":"2024-12-21","rating":5,"topic":"refrigerator purchase"},
-    {"id":"m4vfevrw6mrau0kjmweguvdy5r|2025-09-01","author":"Олег Степанов","date":"2025-09-01","rating":5,"topic":"refrigerator purchase and delivery","reviewPhotos":1},
-    {"id":"j46nxar4d77xnyve8eb4x8j3xm|2024-12-21","author":"Александр Вербанович","date":"2024-12-21","rating":5,"topic":"appliance shop and sellers"},
-    {"id":"31u9r9urfdfcc3bxq8xwxnvqpr|2025-01-28","author":"Андрей Редькин","date":"2025-01-28","rating":5,"topic":"washing machine purchase"},
-    {"id":"fcxp4qn6hwtx709pb6aw1wnefc|2024-12-20","author":"Валуйский Валерий","date":"2024-12-20","rating":5,"topic":"shop purchase consultation"},
-    {"id":"jje09nepnmej8bxw6qbbxb6wd8|2025-09-01","author":"Николай","date":"2025-09-01","rating":5,"topic":"shop choice and service; no attachment or repair evidence"},
-    {"id":"va8br1rbr5rvp48zj1dumqv35r|2024-12-19","author":"виталий т.","date":"2024-12-19","rating":5,"topic":"washing machine purchase"},
-    {"id":"fgv267175kw4nu8be287kjcvk8|2024-12-19","author":"Анастасия Тихонова","date":"2024-12-19","rating":5,"topic":"shop price, goods and consultation"},
-    {"id":"03qu8d67e812410zyz9d7u2yqw|2024-12-26","author":"Valdemario's Home Cook","date":"2024-12-26","rating":5,"topic":"Siemens washing machine and LG refrigerator purchase"},
-    {"id":"rg0pyqda1ud9k44fx8tu8z7w94|2026-08-26","author":"сергей к.","date":"2026-08-26","rating":4,"topic":"appliance warranty; no reply or attachment"},
-    {"id":"Федор Трескунов|2025-09-01","author":"Федор Трескунов","date":"2025-09-01","rating":5,"topic":"shop goods and service; no attachment or repair evidence"},
-    {"id":"acxvgyux9nctx0p1w7ut4v8e6m|2025-01-31","author":"ольга господарева","date":"2025-01-31","rating":5,"topic":"laptops absent from stock; reply confirms inventory, not repair"},
-    {"id":"q9kqp24n8vtfkcp1v8ag8du6x8|2025-02-04","author":"Галина Михайлова","date":"2025-02-04","rating":5,"topic":"shop general praise; no attachment or repair evidence"}
+    {
+      "id": "9592vbmruze184zu139f8k377m|2025-10-19",
+      "author": "Денис Денисов",
+      "date": "2025-10-19",
+      "rating": 5,
+      "topic": "selection, sales consultation and delivery"
+    },
+    {
+      "id": "bz8q43kuqx1u97jjuf2pef84rc|2025-08-24",
+      "author": "Александра Зотова",
+      "date": "2025-08-24",
+      "rating": 5,
+      "topic": "refrigerator and washing machine selection"
+    },
+    {
+      "id": "2rezb07yy3xf284bjrj53fy9z0|2025-10-15",
+      "author": "Сабир Холов",
+      "date": "2025-10-15",
+      "rating": 5,
+      "topic": "washing machine purchase and delivery; full text expanded"
+    },
+    {
+      "id": "wedrafube84m5d960rdbk64hjm|2026-09-06",
+      "author": "Дарья Тучак",
+      "date": "2026-09-06",
+      "rating": 5,
+      "topic": "washing machine purchase",
+      "reviewPhotos": 1
+    },
+    {
+      "id": "jer736ejn88h6u09xvg7m1zer8|2025-09-01",
+      "author": "Никита Зотов",
+      "date": "2025-09-01",
+      "rating": 5,
+      "topic": "selection, warranty and delivery",
+      "reviewPhotos": 1
+    },
+    {
+      "id": "n1pv7uy89c5wne9e9zrm9fyzgg|2024-12-19",
+      "author": "Pro Vkus",
+      "date": "2024-12-19",
+      "rating": 5,
+      "topic": "appliances purchased for rental apartment; full text expanded"
+    },
+    {
+      "id": "meca6xknftwc74pmhzuaqu9ck0|2026-04-14",
+      "author": "Елена Никулина",
+      "date": "2026-04-14",
+      "rating": 5,
+      "topic": "refrigerator purchase and delivery"
+    },
+    {
+      "id": "avgc235fq3gg5utpgzzb0dgucw|2025-09-01",
+      "author": "Sladkpuknul",
+      "date": "2025-09-01",
+      "rating": 5,
+      "topic": "washing machine purchase"
+    },
+    {
+      "id": "qjzu3ef6ny15kuzh6j7k11manw|2026-09-06",
+      "author": "Инкогнито 9786",
+      "date": "2026-09-06",
+      "rating": 5,
+      "topic": "unspecified appliance selection; no attachment or repair evidence"
+    },
+    {
+      "id": "ktun3hgkn1jgjxt1jncj9nhuy4|2026-09-06",
+      "author": "Катерина А.",
+      "date": "2026-09-06",
+      "rating": 5,
+      "topic": "shop selection and consultation; no attachment or repair evidence"
+    },
+    {
+      "id": "4dr5tm0t8rcuq48krfcjhbzfhr|2024-12-19",
+      "author": "Аня Т.",
+      "date": "2024-12-19",
+      "rating": 5,
+      "topic": "refrigerator and washing machine purchase"
+    },
+    {
+      "id": "98txh4dk1f0mmvjhc7kvav3au0|2026-09-06",
+      "author": "Владимир Авдонин",
+      "date": "2026-09-06",
+      "rating": 5,
+      "topic": "shop choice, warranty and sellers; no attachment or repair evidence"
+    },
+    {
+      "id": "t84venfc9aj3nr74089cyqper4|2025-10-19",
+      "author": "Анатолий Гарда",
+      "date": "2025-10-19",
+      "rating": 5,
+      "topic": "appliance selection and warranty"
+    },
+    {
+      "id": "vjd7ue9g3b3v8bga7txmv7h20c|2024-11-24",
+      "author": "Олег Филаткин",
+      "date": "2024-11-24",
+      "rating": 5,
+      "topic": "refrigerator and washing machine purchase"
+    },
+    {
+      "id": "tmah5reme3d8dmqrqhnuyr1cxw|2024-11-24",
+      "author": "Алексей Л.",
+      "date": "2024-11-24",
+      "rating": 5,
+      "topic": "washing machine purchase"
+    },
+    {
+      "id": "gvc2xnc5hcx8b2qqmf4vdmtu98|2024-11-23",
+      "author": "ольга п.",
+      "date": "2024-11-23",
+      "rating": 5,
+      "topic": "refrigerator and washing machine purchase"
+    },
+    {
+      "id": "xzqmq5xf1cueuzwm68z1pu99ug|2024-11-26",
+      "author": "Екатерина Б.",
+      "date": "2024-11-26",
+      "rating": 5,
+      "topic": "washing machine purchase"
+    },
+    {
+      "id": "z6bakx31h952ubz0hwvtevyvn0|2024-11-25",
+      "author": "Никита Шаритдинов",
+      "date": "2024-11-25",
+      "rating": 5,
+      "topic": "restored washing machine purchase"
+    },
+    {
+      "id": "p60an4zx1gu3e2ex8me9kzpd3c|2024-12-20",
+      "author": "мария б.",
+      "date": "2024-12-20",
+      "rating": 5,
+      "topic": "washing machine purchase"
+    },
+    {
+      "id": "gc1at0e25tqdbm9wn3nmqym8pc|2024-11-26",
+      "author": "Александр С.",
+      "date": "2024-11-26",
+      "rating": 5,
+      "topic": "replacement appliance purchase and disposal; unspecified device; no attachment"
+    },
+    {
+      "id": "6rtmr00gdc869vuec8az9dznk8|2024-11-27",
+      "author": "Екатерина М.",
+      "date": "2024-11-27",
+      "rating": 5,
+      "topic": "Bosch refrigerator purchase"
+    },
+    {
+      "id": "rc3qhe3mkve102p8keb843mn1c|2024-12-19",
+      "author": "Михаил Ильяшов",
+      "date": "2024-12-19",
+      "rating": 5,
+      "topic": "refrigerator and washing machine purchase"
+    },
+    {
+      "id": "elena.subbotlna|2025-09-03",
+      "author": "Елена Субботина",
+      "date": "2025-09-03",
+      "rating": 2,
+      "topic": "shop prices and delivery cost"
+    },
+    {
+      "id": "ftxntn5jtvbpfx5xfwz6eqfkr0|2024-12-21",
+      "author": "Олег Ю.",
+      "date": "2024-12-21",
+      "rating": 5,
+      "topic": "refrigerator purchase"
+    },
+    {
+      "id": "m4vfevrw6mrau0kjmweguvdy5r|2025-09-01",
+      "author": "Олег Степанов",
+      "date": "2025-09-01",
+      "rating": 5,
+      "topic": "refrigerator purchase and delivery",
+      "reviewPhotos": 1
+    },
+    {
+      "id": "j46nxar4d77xnyve8eb4x8j3xm|2024-12-21",
+      "author": "Александр Вербанович",
+      "date": "2024-12-21",
+      "rating": 5,
+      "topic": "appliance shop and sellers"
+    },
+    {
+      "id": "31u9r9urfdfcc3bxq8xwxnvqpr|2025-01-28",
+      "author": "Андрей Редькин",
+      "date": "2025-01-28",
+      "rating": 5,
+      "topic": "washing machine purchase"
+    },
+    {
+      "id": "fcxp4qn6hwtx709pb6aw1wnefc|2024-12-20",
+      "author": "Валуйский Валерий",
+      "date": "2024-12-20",
+      "rating": 5,
+      "topic": "shop purchase consultation"
+    },
+    {
+      "id": "jje09nepnmej8bxw6qbbxb6wd8|2025-09-01",
+      "author": "Николай",
+      "date": "2025-09-01",
+      "rating": 5,
+      "topic": "shop choice and service; no attachment or repair evidence"
+    },
+    {
+      "id": "va8br1rbr5rvp48zj1dumqv35r|2024-12-19",
+      "author": "виталий т.",
+      "date": "2024-12-19",
+      "rating": 5,
+      "topic": "washing machine purchase"
+    },
+    {
+      "id": "fgv267175kw4nu8be287kjcvk8|2024-12-19",
+      "author": "Анастасия Тихонова",
+      "date": "2024-12-19",
+      "rating": 5,
+      "topic": "shop price, goods and consultation"
+    },
+    {
+      "id": "03qu8d67e812410zyz9d7u2yqw|2024-12-26",
+      "author": "Valdemario's Home Cook",
+      "date": "2024-12-26",
+      "rating": 5,
+      "topic": "Siemens washing machine and LG refrigerator purchase"
+    },
+    {
+      "id": "rg0pyqda1ud9k44fx8tu8z7w94|2026-08-26",
+      "author": "сергей к.",
+      "date": "2026-08-26",
+      "rating": 4,
+      "topic": "appliance warranty; no reply or attachment"
+    },
+    {
+      "id": "Федор Трескунов|2025-09-01",
+      "author": "Федор Трескунов",
+      "date": "2025-09-01",
+      "rating": 5,
+      "topic": "shop goods and service; no attachment or repair evidence"
+    },
+    {
+      "id": "acxvgyux9nctx0p1w7ut4v8e6m|2025-01-31",
+      "author": "ольга господарева",
+      "date": "2025-01-31",
+      "rating": 5,
+      "topic": "laptops absent from stock; reply confirms inventory, not repair"
+    },
+    {
+      "id": "q9kqp24n8vtfkcp1v8ag8du6x8|2025-02-04",
+      "author": "Галина Михайлова",
+      "date": "2025-02-04",
+      "rating": 5,
+      "topic": "shop general praise; no attachment or repair evidence"
+    }
   ]
 }

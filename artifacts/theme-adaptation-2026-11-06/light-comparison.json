@@ -1,0 +1,2266 @@
+[
+  {
+    "key": "home",
+    "width": 1440,
+    "before": 2427,
+    "after": 2427,
+    "changes": 16,
+    "visibleChanges": 0,
+    "details": [
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-quiz__error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-quiz__error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      }
+    ]
+  },
+  {
+    "key": "home",
+    "width": 390,
+    "before": 2427,
+    "after": 2427,
+    "changes": 16,
+    "visibleChanges": 0,
+    "details": [
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-quiz__error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-quiz__error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      }
+    ]
+  },
+  {
+    "key": "brand",
+    "width": 1440,
+    "before": 2013,
+    "after": 2013,
+    "changes": 16,
+    "visibleChanges": 0,
+    "details": [
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-quiz__error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-quiz__error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      }
+    ]
+  },
+  {
+    "key": "brand",
+    "width": 390,
+    "before": 2013,
+    "after": 2013,
+    "changes": 16,
+    "visibleChanges": 0,
+    "details": [
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-quiz__error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-quiz__error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      }
+    ]
+  },
+  {
+    "key": "problem",
+    "width": 1440,
+    "before": 1475,
+    "after": 1475,
+    "changes": 10,
+    "visibleChanges": 0,
+    "details": [
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      }
+    ]
+  },
+  {
+    "key": "problem",
+    "width": 390,
+    "before": 1475,
+    "after": 1475,
+    "changes": 10,
+    "visibleChanges": 0,
+    "details": [
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      }
+    ]
+  },
+  {
+    "key": "macbook",
+    "width": 1440,
+    "before": 1744,
+    "after": 1744,
+    "changes": 10,
+    "visibleChanges": 0,
+    "details": [
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      }
+    ]
+  },
+  {
+    "key": "macbook",
+    "width": 390,
+    "before": 1744,
+    "after": 1744,
+    "changes": 10,
+    "visibleChanges": 0,
+    "details": [
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-field-error",
+          "rgb(230, 39, 39)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-field-error",
+          "rgb(198, 30, 30)",
+          "rgba(0, 0, 0, 0)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      },
+      {
+        "before": [
+          "P",
+          "lr-form__message",
+          "rgb(230, 39, 39)",
+          "rgb(250, 236, 238)",
+          "rgb(230, 39, 39)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "after": [
+          "P",
+          "lr-form__message",
+          "rgb(198, 30, 30)",
+          "rgb(250, 236, 238)",
+          "rgb(198, 30, 30)",
+          "rgb(0, 0, 0)",
+          "none"
+        ],
+        "visible": false
+      }
+    ]
+  }
+]

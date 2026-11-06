@@ -59,9 +59,24 @@
     }
   ],
   "discoveredSources": [
-    {"platform":"Zoon","url":"https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_yaroslava_gasheka/","address":"Ярослава Гашека, 4 к1","city":"Санкт-Петербург"},
-    {"platform":"Zoon","url":"https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_moskovskom_prospekte_212/","address":"Московский проспект, 212","city":"Санкт-Петербург"},
-    {"platform":"Zoon","url":"https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_yuriya_gagarina/","address":"проспект Юрия Гагарина, 15","city":"Санкт-Петербург"}
+    {
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_ulitse_yaroslava_gasheka/",
+      "address": "Ярослава Гашека, 4 к1",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_moskovskom_prospekte_212/",
+      "address": "Московский проспект, 212",
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "Zoon",
+      "url": "https://zoon.ru/spb/repair/servisnyj_tsentr_lenremont_na_prospekte_yuriya_gagarina/",
+      "address": "проспект Юрия Гагарина, 15",
+      "city": "Санкт-Петербург"
+    }
   ],
   "notes": [
     "Исследовано 2026-11-02. Основные отзывы: 8 (2019-12-26—2024-04-26); отклонённые: 4 (2022-06-09—2024-10-01). Подходят 2: один основной негативный, один отклонённый положительный. MacBook отдельно не найден.",

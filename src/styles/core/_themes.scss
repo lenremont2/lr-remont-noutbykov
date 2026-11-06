@@ -1,0 +1,61 @@
+#hop-landing[data-lr-themeable] {
+  color-scheme: light;
+}
+
+#hop-landing[data-lr-themeable]:where(html[data-wp-dark-mode-active] *) {
+  color-scheme: dark;
+  --lr-color-bg: #071326;
+  --lr-color-surface: #10233f;
+  --lr-color-surface-alt: #173153;
+  --lr-color-text: #f4f7fb;
+  --lr-color-muted: #b9c8dc;
+  --lr-color-border: #334b68;
+  --lr-color-control-border: #7b92ad;
+  --lr-color-accent-soft: #3a3219;
+  --lr-color-focus: #ffd000;
+  --lr-color-danger: #ff9696;
+  --lr-color-danger-soft: #3d222d;
+  --lr-color-success: #69d5a0;
+  --lr-color-success-soft: #173b30;
+  --lr-color-overlay: rgb(0 0 0 / 75%);
+  --lr-color-link: #79b8ff;
+  --lr-color-link-hover: #a8d2ff;
+  --lr-color-surface-subtle: var(--lr-color-surface);
+  --lr-color-media-surface: var(--lr-color-surface-alt);
+  --lr-color-border-soft: var(--lr-color-border);
+  --lr-color-card-text: var(--lr-color-text);
+  --lr-color-card-muted: var(--lr-color-muted);
+  --lr-color-caption: var(--lr-color-muted);
+  --lr-color-info: var(--lr-color-link);
+  --lr-color-info-soft: var(--lr-color-surface-alt);
+  --lr-color-field-surface: var(--lr-color-bg);
+  --lr-color-field-border: var(--lr-color-control-border);
+  --lr-color-key-text: var(--lr-color-text);
+  --lr-color-disabled: var(--lr-color-muted);
+  --lr-color-disabled-bg: var(--lr-color-surface-alt);
+  --lr-color-choice: var(--lr-color-accent);
+  --lr-color-choice-bg: var(--lr-color-surface-alt);
+  --lr-color-choice-text: var(--lr-color-text);
+  --lr-color-choice-border: var(--lr-color-accent);
+  --lr-color-tab-indicator: var(--lr-color-accent);
+  --lr-color-logo-bg: var(--lr-white);
+  --lr-color-logo-hover: var(--lr-white);
+  --lr-color-logo-text: var(--lr-graphite-900);
+  --lr-color-document-bg: var(--lr-color-bg);
+  --lr-color-document-text: var(--lr-color-muted);
+  --lr-color-document-border: var(--lr-color-border);
+  --lr-color-diagnostic-bg: var(--lr-color-surface-alt);
+  --lr-color-diagnostic-price: var(--lr-color-accent);
+  --lr-color-director-bg: var(--lr-color-surface-alt);
+  --lr-color-director-border: var(--lr-color-accent);
+  --lr-color-quiz-panel: var(--lr-color-surface-alt);
+  --lr-color-quiz-option-border: var(--lr-color-border);
+}
+
+#hop-landing[data-lr-themeable] .lr-form input:autofill,
+#hop-landing[data-lr-themeable] .lr-form textarea:autofill,
+#hop-landing[data-lr-themeable] .lr-form select:autofill {
+  -webkit-text-fill-color: var(--lr-color-text);
+  box-shadow: inset 0 0 0 1000px var(--lr-input-bg);
+  caret-color: var(--lr-color-text);
+}

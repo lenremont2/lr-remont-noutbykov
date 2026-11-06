@@ -22,14 +22,16 @@
       "summary": "Жалуется на ухудшение конфигурации ноутбука после замены процессора, длительность и стоимость ремонта.",
       "reviewUrl": "https://yandex.ru/maps/user/bfjkuhbpgygcywp268awg1v500",
       "topic": "Замена процессора ноутбука",
-      "photos": [{
-        "sourceUrl": "https://avatars.mds.yandex.net/get-altay/19647201/2a0000019ba7e37c7b12de5d48174f822c28/S",
-        "localPath": "photos/maxim-antonov-2026.webp",
-        "attachment": "review",
-        "bindingVerified": true,
-        "visuallyVerified": true,
-        "description": "Небольшое превью: тёмная крышка ноутбука HP с логотипом и бумажной маркировкой заказа. Не изображение экрана характеристик; заявленную конфигурацию фото не доказывает."
-      }],
+      "photos": [
+        {
+          "sourceUrl": "https://avatars.mds.yandex.net/get-altay/19647201/2a0000019ba7e37c7b12de5d48174f822c28/S",
+          "localPath": "photos/maxim-antonov-2026.webp",
+          "attachment": "review",
+          "bindingVerified": true,
+          "visuallyVerified": true,
+          "description": "Небольшое превью: тёмная крышка ноутбука HP с логотипом и бумажной маркировкой заказа. Не изображение экрана характеристик; заявленную конфигурацию фото не доказывает."
+        }
+      ],
       "evidence": "Оценка ratingValue=1.0 и datePublished прочитаны из метаданных того же business-review-view. Фото находится в business-review-view__carousel этой карточки. Изображение скачано через downloadMedia и просмотрено view_image."
     },
     {

@@ -16,8 +16,10 @@ import HomeSeo from "../components/sections/HomeSeo.astro";
 import Symptoms from "../components/sections/Symptoms.astro";
 import ManufacturerLinks from "../components/sections/ManufacturerLinks.astro";
 import Faq from "../components/sections/Faq.astro";
+import RelatedServices from "../components/ui/RelatedServices.astro";
 import LeadCapture from "../components/sections/LeadCapture.astro";
 import home from "../data/home-copy.json";
+import { homePath } from "../data/service-pages";
 ---
 
 <LandingLayout
@@ -52,6 +54,7 @@ import home from "../data/home-copy.json";
   <!-- <RepairCases /> -->
   <HomeSeo />
   <Faq showQuestion={false} title={home.faq.title} items={home.faq.items} />
+  <RelatedServices current={homePath} />
   <LeadCapture
     compactModal
     eyebrow={home.contact.eyebrow}

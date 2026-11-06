@@ -4,8 +4,14 @@ interface Props {
   title: string;
   lead?: string;
   rows: string[][];
+  verification?: boolean;
 }
-const { title, lead, rows } = Astro.props;
+const { title, lead, rows, verification = true } = Astro.props;
 ---
 
-<HomePricing title={title} lead={lead} groups={[{ rows }]} verification />
+<HomePricing
+  title={title}
+  lead={lead}
+  groups={[{ rows }]}
+  verification={verification}
+/>

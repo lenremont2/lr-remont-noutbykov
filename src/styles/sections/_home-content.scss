@@ -267,8 +267,8 @@
   padding: var(--lr-space-16) var(--lr-space-8);
   border: 1px solid var(--lr-color-border);
   border-radius: var(--lr-radius);
-  background: var(--lr-color-bg);
-  color: var(--lr-color-text);
+  background: var(--lr-color-logo-bg);
+  color: var(--lr-color-logo-text);
   font-size: 16px;
   line-height: 22px;
   text-decoration: none;
@@ -285,8 +285,8 @@
 }
 
 #hop-landing .lr-manufacturers__link:hover {
-  background: var(--lr-color-surface);
-  border-color: var(--lr-color-dark);
+  background: var(--lr-color-logo-hover);
+  border-color: var(--lr-color-choice-border);
 }
 
 #hop-landing .lr-manufacturers__link:focus-visible {
@@ -316,8 +316,8 @@
   padding: 10px 14px;
   border: 1px solid var(--lr-color-border);
   border-radius: var(--lr-radius-small);
-  background: var(--lr-color-bg);
-  color: var(--lr-color-text);
+  background: var(--lr-color-logo-bg);
+  color: var(--lr-color-logo-text);
   font-size: 16px;
   line-height: 22px;
   text-decoration: none;
@@ -330,9 +330,9 @@
 }
 
 #hop-landing .lr-manufacturers__text-link:hover {
-  border-color: var(--lr-color-dark);
-  background: var(--lr-color-surface);
-  color: var(--lr-color-text);
+  border-color: var(--lr-color-choice-border);
+  background: var(--lr-color-logo-hover);
+  color: var(--lr-color-logo-text);
 }
 
 #hop-landing .lr-manufacturers__text-link:focus-visible {

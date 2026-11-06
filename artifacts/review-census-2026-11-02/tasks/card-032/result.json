@@ -40,12 +40,23 @@
         "datePublished": "2023-02-01T11:27:21+03:00",
         "fullTextRead": true,
         "ratingNote": "Оценка отсутствует, карточка включает этот отзыв в категорию «Без оценки».",
-        "companyReply": {"id":"645386e809ea0fa5ca0ab27c","date":"2023-05-04","summary":"Компания благодарит автора и отмечает положительную оценку качества ремонта.","photos":[]},
+        "companyReply": {
+          "id": "645386e809ea0fa5ca0ab27c",
+          "date": "2023-05-04",
+          "summary": "Компания благодарит автора и отмечает положительную оценку качества ремонта.",
+          "photos": []
+        },
         "textSha256": "518317eb293464defd16b5b2397ee0949bbd05db59b7a2f2014b7b52c3d7f82a",
         "textHashMethod": "SHA256 UTF-8 точного textContent .js-comment-content, без нормализации, неразрывные пробелы U+00A0 сохранены.",
         "spaceNormalizedTextSha256": "2f1931a42aa4b205aa916cb56aabc1e4bbbadef779c145dada9d3357bd2a9490",
         "spaceNormalization": "Только замена U+00A0 на U+0020 перед SHA256 UTF-8.",
-        "deduplication": {"relatedTaskId":"card-062","platform":"Yell","status":"same_text_after_nbsp_to_space","providedYellExactTextSha256":"2f1931a42aa4b205aa916cb56aabc1e4bbbadef779c145dada9d3357bd2a9490","note":"Совпадают полный текст после единственной замены неразрывных пробелов, автор и дата; найден реальный Zoon ID. Решение об объединении передано координатору. Не объединять другие отзывы с тем же именем."},
+        "deduplication": {
+          "relatedTaskId": "card-062",
+          "platform": "Yell",
+          "status": "same_text_after_nbsp_to_space",
+          "providedYellExactTextSha256": "2f1931a42aa4b205aa916cb56aabc1e4bbbadef779c145dada9d3357bd2a9490",
+          "note": "Совпадают полный текст после единственной замены неразрывных пробелов, автор и дата; найден реальный Zoon ID. Решение об объединении передано координатору. Не объединять другие отзывы с тем же именем."
+        },
         "localWorkingEvidence": "artifacts/review-census-2026-11-02/tasks/card-032/working-evidence.json",
         "photoNote": "У отзыва и ответа компании публичных вложений нет; общая галерея организации не использована как фото отзыва."
       }

@@ -216,18 +216,4 @@ const documents = [
       </div>
     )
   }
-  <dialog
-    class:list={["lr-photo-dialog", { "lr-photo-dialog--wide": homeVariant }]}
-    data-lr-review-photo
-    aria-label={homeVariant ? "Просмотр фотографии" : "Фотография из отзыва"}
-  >
-    <button
-      type="button"
-      class="lr-photo-dialog__close"
-      data-lr-photo-close
-      aria-label="Закрыть фотографию">×</button
-    >
-    <img data-lr-photo-image alt="" />
-    <p data-lr-photo-caption></p>
-  </dialog>
 </section>

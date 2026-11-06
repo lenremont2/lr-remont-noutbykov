@@ -13,16 +13,11 @@
     "phone": "+78112700707"
   },
   "reviewState": {
-    "tabs": [
-      "Обзор",
-      "Информация"
-    ],
+    "tabs": ["Обзор", "Информация"],
     "reviewsTabPresent": false,
     "ratingDisplayed": false,
     "reviewCounterDisplayed": false,
-    "reviewButtons": [
-      "Оставить отзыв"
-    ],
+    "reviewButtons": ["Оставить отзыв"],
     "reviewElementsWithDataReviewId": 0,
     "publishedReviewCards": 0,
     "sortingControlsPresent": false

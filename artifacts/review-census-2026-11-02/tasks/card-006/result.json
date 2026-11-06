@@ -19,9 +19,15 @@
     "endpointObserved": true,
     "method": "CUA Chrome, собственная вкладка. Полная прокрутка вкладки Отзывы в сортировке Самые релевантные: DOM вырос до 291 уникального data-review-id. Дополнительная прокрутка не добавила отзывов. Раскрыты все 75 изначально сокращенных пользовательских текстов; итоговое число кнопок раскрытия внутри .MyEned равно 0. Все тексты и пользовательские поля проверены по темам ноутбук/ноут/нетбук/ультрабук/MacBook/макбук/laptop/notebook и брендам на русском и латинице с проверкой контекста. Встроенный поисковый индекс Google не заменял полный просмотр.",
     "stopReason": "Достигнут конец доступной ленты: 291/291 уникальных записей, последний автор Елена Григорьева; полные пользовательские тексты раскрыты. 230 записей содержат пользовательский текст, 61 — оценку/поля без основного текста.",
-    "ratingDistributionObserved": {"1":83,"2":8,"3":18,"4":16,"5":166},
+    "ratingDistributionObserved": {
+      "1": 83,
+      "2": 8,
+      "3": 18,
+      "4": 16,
+      "5": 166
+    },
     "matchingCount": 7,
-    "matchingRatingDistribution": {"1":1,"5":6},
+    "matchingRatingDistribution": { "1": 1, "5": 6 },
     "collapsedUserTextsRemaining": 0,
     "observedAt": "2026-11-02",
     "dateBoundsDisplayed": "Самая свежая видимая дата: 17 часов назад; самая старая: 9 лет назад. Google показывает относительные даты.",
@@ -36,7 +42,13 @@
       "reviewUrl": "https://maps.app.goo.gl/Kc6PPohFVFZYXuYUA",
       "topic": "ноутбук; залитие; чистка платы и клавиатуры; положительный",
       "photos": [],
-      "evidence": {"reviewId":"Ci9DQUlRQUNvZENodHljRjlvT21wVE5HRnhYMUozYkhWT1ZGVlRZV2xCVVdZeU5VRRAB","profileUrl":"https://www.google.com/maps/contrib/101388978961753911143/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0}
+      "evidence": {
+        "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21wVE5HRnhYMUozYkhWT1ZGVlRZV2xCVVdZeU5VRRAB",
+        "profileUrl": "https://www.google.com/maps/contrib/101388978961753911143/reviews?hl=ru",
+        "fullTextRead": true,
+        "linkSource": "Share dialog → Copy Link",
+        "reviewPhotoButtonsObserved": 0
+      }
     },
     {
       "author": "Александра Поварницина",
@@ -46,7 +58,13 @@
       "reviewUrl": "https://maps.app.goo.gl/eBryaXXHNSWaFzag9",
       "topic": "ноутбук; ремонт; сроки и цена; положительный",
       "photos": [],
-      "evidence": {"reviewId":"Ci9DQUlRQUNvZENodHljRjlvT21aS1lUVlJiM0Y1TTNwalFucHlTRFZYWm5GQllVRRAB","profileUrl":"https://www.google.com/maps/contrib/110964551855246812737/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0}
+      "evidence": {
+        "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aS1lUVlJiM0Y1TTNwalFucHlTRFZYWm5GQllVRRAB",
+        "profileUrl": "https://www.google.com/maps/contrib/110964551855246812737/reviews?hl=ru",
+        "fullTextRead": true,
+        "linkSource": "Share dialog → Copy Link",
+        "reviewPhotoButtonsObserved": 0
+      }
     },
     {
       "author": "AMJAD DHUDDI",
@@ -56,7 +74,14 @@
       "reviewUrl": "https://maps.app.goo.gl/AnNEW7TqUAQ8EcHF6",
       "topic": "ноутбук; перегрев; чистка; термопаста; кулер; положительный; неоднозначность филиала",
       "photos": [],
-      "evidence": {"reviewId":"ChdDSUhNMG9nS0VJQ0FnTUNvN3N5VW13RRAB","profileUrl":"https://www.google.com/maps/contrib/108405985089693072960/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0,"branchAttribution":"Публикация в назначенной карточке подтверждена; обслуживание именно на Авиаконструкторов не подтверждено из-за упоминания Восстания."}
+      "evidence": {
+        "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNvN3N5VW13RRAB",
+        "profileUrl": "https://www.google.com/maps/contrib/108405985089693072960/reviews?hl=ru",
+        "fullTextRead": true,
+        "linkSource": "Share dialog → Copy Link",
+        "reviewPhotoButtonsObserved": 0,
+        "branchAttribution": "Публикация в назначенной карточке подтверждена; обслуживание именно на Авиаконструкторов не подтверждено из-за упоминания Восстания."
+      }
     },
     {
       "author": "Виктория Суворова",
@@ -66,7 +91,13 @@
       "reviewUrl": "https://maps.app.goo.gl/DgQzKWX5GyepRX35A",
       "topic": "ноутбук; залитие; данные; клавиатура; материнская плата; положительный",
       "photos": [],
-      "evidence": {"reviewId":"Ci9DQUlRQUNvZENodHljRjlvT21sNlRrUXRMVlpyUkVjMWVpMUNTMHM0TVZkaVNHYxAB","profileUrl":"https://www.google.com/maps/contrib/113140864190716005848/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0}
+      "evidence": {
+        "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sNlRrUXRMVlpyUkVjMWVpMUNTMHM0TVZkaVNHYxAB",
+        "profileUrl": "https://www.google.com/maps/contrib/113140864190716005848/reviews?hl=ru",
+        "fullTextRead": true,
+        "linkSource": "Share dialog → Copy Link",
+        "reviewPhotoButtonsObserved": 0
+      }
     },
     {
       "author": "Артемий",
@@ -76,7 +107,13 @@
       "reviewUrl": "https://maps.app.goo.gl/LitvYsD8UctnTAjs5",
       "topic": "MacBook; зарядка; диагностика; плата; положительный",
       "photos": [],
-      "evidence": {"reviewId":"Ci9DQUlRQUNvZENodHljRjlvT21SRFZrRk5YMVUyV1UxRlh6aHhjMmwzYlZab2VHYxAB","profileUrl":"https://www.google.com/maps/contrib/116384378310439026127/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0}
+      "evidence": {
+        "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21SRFZrRk5YMVUyV1UxRlh6aHhjMmwzYlZab2VHYxAB",
+        "profileUrl": "https://www.google.com/maps/contrib/116384378310439026127/reviews?hl=ru",
+        "fullTextRead": true,
+        "linkSource": "Share dialog → Copy Link",
+        "reviewPhotoButtonsObserved": 0
+      }
     },
     {
       "author": "kami",
@@ -86,7 +123,13 @@
       "reviewUrl": "https://maps.app.goo.gl/FD4nwz59FPAzY7fS9",
       "topic": "ноутбук; ремонт; сроки и цена; положительный",
       "photos": [],
-      "evidence": {"reviewId":"Ci9DQUlRQUNvZENodHljRjlvT2tGTFdUTkRiR1E0WW5abE5qRldNVEZYVW5CRE9HYxAB","profileUrl":"https://www.google.com/maps/contrib/116528002616580280910/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0}
+      "evidence": {
+        "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tGTFdUTkRiR1E0WW5abE5qRldNVEZYVW5CRE9HYxAB",
+        "profileUrl": "https://www.google.com/maps/contrib/116528002616580280910/reviews?hl=ru",
+        "fullTextRead": true,
+        "linkSource": "Share dialog → Copy Link",
+        "reviewPhotoButtonsObserved": 0
+      }
     },
     {
       "author": "Александр Овчаренко",
@@ -96,7 +139,13 @@
       "reviewUrl": "https://maps.app.goo.gl/i1m3sXyN651etKTh6",
       "topic": "ноутбук; стоимость; задержки; общение; отрицательный",
       "photos": [],
-      "evidence": {"reviewId":"ChdDSUhNMG9nS0VJQ0FnSUNzc1lqY3V3RRAB","profileUrl":"https://www.google.com/maps/contrib/101407941655722272159/reviews?hl=ru","fullTextRead":true,"linkSource":"Share dialog → Copy Link","reviewPhotoButtonsObserved":0}
+      "evidence": {
+        "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNzc1lqY3V3RRAB",
+        "profileUrl": "https://www.google.com/maps/contrib/101407941655722272159/reviews?hl=ru",
+        "fullTextRead": true,
+        "linkSource": "Share dialog → Copy Link",
+        "reviewPhotoButtonsObserved": 0
+      }
     }
   ],
   "discoveredSources": [],

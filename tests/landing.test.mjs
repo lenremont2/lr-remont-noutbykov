@@ -273,7 +273,7 @@ for (const item of data.process.items) {
   assert.ok(processSection.includes(item.title), item.title);
 }
 assert.ok(processSection.includes("до оплаты"));
-assert.ok(processSection.includes("согласования сметы"));
+assert.ok(processSection.includes("До вашего согласия ремонт не начинаем"));
 assert.equal(
   (processSection.match(/class="lr-repair-journey__inline-photo"/g) || [])
     .length,
@@ -387,14 +387,14 @@ for (const match of manufacturerCards.filter(
     existsSync(new URL(`../dist${match[1]}/index.html`, import.meta.url)),
     match[1],
   );
-const featuredManufacturerCards = manufacturerCards.filter((match) =>
+const manufacturerLogoCards = manufacturerCards.filter((match) =>
   match[0].includes("<img"),
 );
-assert.equal(featuredManufacturerCards.length, 10);
+assert.equal(manufacturerLogoCards.length, manufacturerRoutes.length);
 assert.ok(!manufacturerSection.includes("manufacturer-undefined"));
-const manufacturerImages = featuredManufacturerCards.map((match) => {
+const manufacturerImages = manufacturerLogoCards.map((match) => {
   const path = match[0].match(/<img\b[^>]*src="(\/media\/[^" ]+\.svg)"/)?.[1];
-  assert.ok(path, "Every featured manufacturer must use a local SVG");
+  assert.ok(path, "Every manufacturer must use a local SVG");
   assert.ok(
     readFileSync(new URL(`../public${path}`, import.meta.url), "utf8").includes(
       "<svg",
@@ -403,7 +403,7 @@ const manufacturerImages = featuredManufacturerCards.map((match) => {
   );
   return path;
 });
-assert.equal(new Set(manufacturerImages).size, 10);
+assert.equal(new Set(manufacturerImages).size, manufacturerRoutes.length);
 const repairCases = JSON.parse(
   readFileSync(
     new URL("../src/data/repair-cases.json", import.meta.url),
@@ -527,9 +527,8 @@ assert.equal(
   0,
 );
 const symptomCards =
-  brandHtml.match(
-    /<a\b[^>]*class="lr-symptoms__group(?: [^"]*)?"[\s\S]*?<\/a>/g,
-  ) || [];
+  html.match(/<a\b[^>]*class="lr-symptoms__group(?: [^"]*)?"[\s\S]*?<\/a>/g) ||
+  [];
 assert.equal(symptomCards.length, 12);
 assert.equal(
   (brandHtml.match(/<a class="lr-symptoms__modern-card"[\s\S]*?<\/a>/g) || [])
@@ -542,14 +541,14 @@ const secondarySymptom = data.symptoms.items.find(
   (item) => item.slug === "remont-cd-dvd-privoda-noutbuka",
 );
 assert.ok(secondarySymptom);
-const secondarySymptomLink = brandHtml.match(
+const secondarySymptomLink = html.match(
   /<p class="lr-symptoms__secondary">[\s\S]*?<\/p>/,
 )?.[0];
 assert.ok(
   secondarySymptomLink?.includes('href="/' + secondarySymptom.slug + '.htm"'),
 );
 assert.ok(!symptomCards.join("").includes(secondarySymptom.slug));
-const symptomGroups = brandHtml.match(
+const symptomGroups = html.match(
   /<nav class="lr-symptoms__groups[^"]*"[\s\S]*?<\/nav>/,
 )?.[0];
 assert.ok(symptomGroups);
@@ -581,7 +580,7 @@ assert.equal(
 assert.equal(new URL(directory.sourceUrl).origin, "https://www.lenremont.ru");
 assert.match(directory.checkedAt, /^\d{4}-\d{2}-\d{2}$/);
 assert.match(directory.phone, /^\+7\d{10}$/);
-assert.ok(locationsSection.includes("data-lr-map-placeholder"));
+assert.ok(locationsSection.includes("data-lr-workshop-map"));
 assert.ok(!locationsSection.includes("lr-workshop-card"));
 assert.ok(!locationsSection.includes("lr-workshop-directory-more"));
 assert.equal((locationsSection.match(/data-lr-map-slot=/g) || []).length, 1);
@@ -599,7 +598,8 @@ for (const [id, type] of [
   assert.ok(mapModal.includes(`data-lr-map-slot="${type}"`));
   assert.ok(mapModal.includes(`data-lr-map-view="${type}"`));
 }
-assert.equal((mapModal.match(/data-lr-map-placeholder/g) || []).length, 2);
+assert.ok(mapModal.includes("data-lr-address-map"));
+assert.equal((mapModal.match(/data-lr-map-confirm/g) || []).length, 2);
 assert.doesNotMatch(locationsSection, /<iframe\b|<input\b|<button\b|<select\b/);
 directory.workshops.forEach((workshop) => {
   assert.match(workshop.id, /^[a-z0-9-]+$/);
@@ -616,7 +616,7 @@ directory.workshops.forEach((workshop) => {
 assert.ok(html.includes('id="lr-map-workshops"'));
 assert.ok(!html.includes('id="lr-map-pickup"'));
 console.log(
-  "Brand symptom navigation, source addresses, inline map and two modal map slots: passed.",
+  "Home symptom navigation, source addresses, inline map and two modal map slots: passed.",
 );
 
 for (const [, anchor] of html.matchAll(/href="#([^" ]+)"/g)) {

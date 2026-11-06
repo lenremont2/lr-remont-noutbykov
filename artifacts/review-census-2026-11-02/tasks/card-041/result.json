@@ -10,7 +10,11 @@
     "officialUrl": "https://www.lenremont.ru/contact.htm",
     "websiteOnCard": "www.lenremont.ru",
     "matchingAddress": "Санкт-Петербург, улица Решетникова, 3",
-    "matchingPhones": ["+7 812 344-44-44", "+7 812 242-99-45", "+7 800 555-45-10"],
+    "matchingPhones": [
+      "+7 812 344-44-44",
+      "+7 812 242-99-45",
+      "+7 800 555-45-10"
+    ],
     "summary": "Контакты SPR указывают официальный домен, адрес и три телефона сети; официальный раздел контактов содержит те же номера и мастерскую на Решетникова, 3. Связь с сетью подтверждена."
   },
   "coverage": {
@@ -117,11 +121,40 @@
     }
   ],
   "discoveredSources": [
-    {"platform": "SPR — отдельный сетевой список", "url": "https://szo.spr.ru/branches/lenremont/reviews/", "address": null, "city": "Санкт-Петербург", "note": "Контактная карточка показывает ссылку с 287 отзывами. Этот корпус не проверялся в рамках card-041."},
-    {"platform": "SPR — каталог филиалов", "url": "https://szo.spr.ru/sankt-peterburg/branches/lenremont/", "address": null, "city": "Санкт-Петербург", "note": "Ссылка на 14 филиалов в контактной карточке."},
-    {"platform": "SPR — филиалы", "url": "https://szo.spr.ru/branches/lenremont/", "address": null, "city": "Санкт-Петербург"},
-    {"platform": "SPR", "url": "https://szo.spr.ru/sankt-peterburg/lenremont-5800235.html", "address": null, "city": "Санкт-Петербург", "note": "Карточка показана в блоке других отзывов площадки, отдельно не исследовалась."},
-    {"platform": "SPR", "url": "https://szo.spr.ru/sankt-peterburg/lenremont-5059298.html", "address": null, "city": "Санкт-Петербург", "note": "Карточка показана в блоке других отзывов площадки, отдельно не исследовалась."}
+    {
+      "platform": "SPR — отдельный сетевой список",
+      "url": "https://szo.spr.ru/branches/lenremont/reviews/",
+      "address": null,
+      "city": "Санкт-Петербург",
+      "note": "Контактная карточка показывает ссылку с 287 отзывами. Этот корпус не проверялся в рамках card-041."
+    },
+    {
+      "platform": "SPR — каталог филиалов",
+      "url": "https://szo.spr.ru/sankt-peterburg/branches/lenremont/",
+      "address": null,
+      "city": "Санкт-Петербург",
+      "note": "Ссылка на 14 филиалов в контактной карточке."
+    },
+    {
+      "platform": "SPR — филиалы",
+      "url": "https://szo.spr.ru/branches/lenremont/",
+      "address": null,
+      "city": "Санкт-Петербург"
+    },
+    {
+      "platform": "SPR",
+      "url": "https://szo.spr.ru/sankt-peterburg/lenremont-5800235.html",
+      "address": null,
+      "city": "Санкт-Петербург",
+      "note": "Карточка показана в блоке других отзывов площадки, отдельно не исследовалась."
+    },
+    {
+      "platform": "SPR",
+      "url": "https://szo.spr.ru/sankt-peterburg/lenremont-5059298.html",
+      "address": null,
+      "city": "Санкт-Петербург",
+      "note": "Карточка показана в блоке других отзывов площадки, отдельно не исследовалась."
+    }
   ],
   "notes": [
     "В queue.json карточка обозначена company-wide; её собственные контакты и заголовок задают Решетникова, 3. Отзывы при этом содержат разные филиалы. Отдельный сетевой список с 287 отзывами не объединён с 234 записями этой карточки.",

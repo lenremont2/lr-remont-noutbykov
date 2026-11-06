@@ -1,1 +1,17 @@
-{"taskId":"card-016","ownTabID":"2080318398","reportedTotal":481,"uniqueAtCheckpoint":481,"expandedClicks":169,"checkpoint":"2026-11-02","status":"complete","method":"CUA Chrome; user URL + datePublished stable composite identity, fallback author + date; all 481 texts expanded","firstId":"https://yandex.ru/maps/user/nec2rrggmyjtna70zeeu74b04w|2026-05-21T08:55:41.126Z","lastHash":"97b6f988","fullIdManifest":"corpus-manifest.json","targetReviews":11,"targetPhotos":0,"individualPermalinks":9,"unavailablePermalinks":2}
+{
+  "taskId": "card-016",
+  "ownTabID": "2080318398",
+  "reportedTotal": 481,
+  "uniqueAtCheckpoint": 481,
+  "expandedClicks": 169,
+  "checkpoint": "2026-11-02",
+  "status": "complete",
+  "method": "CUA Chrome; user URL + datePublished stable composite identity, fallback author + date; all 481 texts expanded",
+  "firstId": "https://yandex.ru/maps/user/nec2rrggmyjtna70zeeu74b04w|2026-05-21T08:55:41.126Z",
+  "lastHash": "97b6f988",
+  "fullIdManifest": "corpus-manifest.json",
+  "targetReviews": 11,
+  "targetPhotos": 0,
+  "individualPermalinks": 9,
+  "unavailablePermalinks": 2
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "key": "home",
+    "requestedWidth": 360,
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 381,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "false",
+      "height": 44.218753814697266,
+      "right": 32.65623474121094,
+      "width": 66.19792175292969
+    },
+    "theme": "light",
+    "width": 360
+  },
+  {
+    "key": "home",
+    "requestedWidth": 360,
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 381,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "true",
+      "height": 44.218753814697266,
+      "right": 32.65623474121094,
+      "width": 66.19792175292969
+    },
+    "theme": "dark",
+    "width": 360
+  },
+  {
+    "key": "home",
+    "requestedWidth": 390,
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 381,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "false",
+      "height": 44.218753814697266,
+      "right": 32.65623474121094,
+      "width": 66.19792175292969
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "key": "home",
+    "requestedWidth": 390,
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 381,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "true",
+      "height": 44.218753814697266,
+      "right": 32.65623474121094,
+      "width": 66.19792175292969
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "key": "home",
+    "requestedWidth": 480,
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 381,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "false",
+      "height": 44.218753814697266,
+      "right": 32.65623474121094,
+      "width": 66.19792175292969
+    },
+    "theme": "light",
+    "width": 480
+  },
+  {
+    "key": "home",
+    "requestedWidth": 480,
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 381,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "true",
+      "height": 44.218753814697266,
+      "right": 32.65623474121094,
+      "width": 66.19792175292969
+    },
+    "theme": "dark",
+    "width": 480
+  },
+  {
+    "key": "home",
+    "requestedWidth": 768,
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 381,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "false",
+      "height": 44.218753814697266,
+      "right": 31.767333984375,
+      "width": 163.00347900390625
+    },
+    "theme": "light",
+    "width": 768
+  },
+  {
+    "key": "home",
+    "requestedWidth": 768,
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 381,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "true",
+      "height": 44.218753814697266,
+      "right": 31.767333984375,
+      "width": 163.00347900390625
+    },
+    "theme": "dark",
+    "width": 768
+  },
+  {
+    "key": "home",
+    "requestedWidth": 1232,
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 353,
+    "complex": 31,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "false",
+      "height": 44.218753814697266,
+      "right": 32.43402099609375,
+      "width": 163.00347900390625
+    },
+    "theme": "light",
+    "width": 1232
+  },
+  {
+    "key": "home",
+    "requestedWidth": 1232,
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 353,
+    "complex": 31,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "true",
+      "height": 44.218753814697266,
+      "right": 32.43402099609375,
+      "width": 163.00347900390625
+    },
+    "theme": "dark",
+    "width": 1232
+  },
+  {
+    "key": "xiaomi",
+    "requestedWidth": 360,
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 357,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "false",
+      "height": 44.218753814697266,
+      "right": 32.65623474121094,
+      "width": 66.19792175292969
+    },
+    "theme": "light",
+    "width": 360
+  },
+  {
+    "key": "xiaomi",
+    "requestedWidth": 360,
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 357,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "true",
+      "height": 44.218753814697266,
+      "right": 32.65623474121094,
+      "width": 66.19792175292969
+    },
+    "theme": "dark",
+    "width": 360
+  },
+  {
+    "key": "xiaomi",
+    "requestedWidth": 390,
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 357,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "false",
+      "height": 44.218753814697266,
+      "right": 32.65623474121094,
+      "width": 66.19792175292969
+    },
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "key": "xiaomi",
+    "requestedWidth": 390,
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 357,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "true",
+      "height": 44.218753814697266,
+      "right": 32.65623474121094,
+      "width": 66.19792175292969
+    },
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "key": "xiaomi",
+    "requestedWidth": 480,
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 357,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "false",
+      "height": 44.218753814697266,
+      "right": 32.65623474121094,
+      "width": 66.19792175292969
+    },
+    "theme": "light",
+    "width": 480
+  },
+  {
+    "key": "xiaomi",
+    "requestedWidth": 480,
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 357,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "true",
+      "height": 44.218753814697266,
+      "right": 32.65623474121094,
+      "width": 66.19792175292969
+    },
+    "theme": "dark",
+    "width": 480
+  },
+  {
+    "key": "xiaomi",
+    "requestedWidth": 768,
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 357,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "false",
+      "height": 44.218753814697266,
+      "right": 31.767333984375,
+      "width": 163.00347900390625
+    },
+    "theme": "light",
+    "width": 768
+  },
+  {
+    "key": "xiaomi",
+    "requestedWidth": 768,
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 357,
+    "complex": 3,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "true",
+      "height": 44.218753814697266,
+      "right": 31.767333984375,
+      "width": 163.00347900390625
+    },
+    "theme": "dark",
+    "width": 768
+  },
+  {
+    "key": "xiaomi",
+    "requestedWidth": 1232,
+    "background": "rgb(244, 247, 251)",
+    "bad": [],
+    "checked": 333,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "false",
+      "height": 44.218753814697266,
+      "right": 32.43402099609375,
+      "width": 163.00347900390625
+    },
+    "theme": "light",
+    "width": 1232
+  },
+  {
+    "key": "xiaomi",
+    "requestedWidth": 1232,
+    "background": "rgb(7, 19, 38)",
+    "bad": [],
+    "checked": 333,
+    "complex": 27,
+    "overflow": false,
+    "switch": {
+      "bottom": 15.878414154052734,
+      "checked": "true",
+      "height": 44.218753814697266,
+      "right": 32.43402099609375,
+      "width": 163.00347900390625
+    },
+    "theme": "dark",
+    "width": 1232
+  }
+]

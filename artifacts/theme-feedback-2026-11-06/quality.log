@@ -1,0 +1,121 @@
+
+> lr-remont-noutbykov@0.1.0 quality
+> npm run check && npm run format:check && npm run build
+
+
+> lr-remont-noutbykov@0.1.0 check
+> astro check
+
+12:59:49 [types] Generated 74ms
+12:59:49 [check] Getting diagnostics for Astro files in D:\works\projects\lr-remont-noutbykov...
+[96martifacts/landings-review-2026-11-03/build-design-review.mjs[0m:[93m3[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'evidence' is declared but its value is never read.
+
+[7m3[0m const evidence=JSON.parse(readFileSync(new URL("evidence.json",root),"utf8"));
+[7m [0m [93m      ~~~~~~~~[0m
+
+[96martifacts/landings-review-2026-11-03/build-feedback-v2.mjs[0m:[93m11[0m:[93m393[0m - [93mwarning[0m[90m ts(6133): [0m'id' is declared but its value is never read.
+
+[7m11[0m const html=`<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Правки по ОС — блоки 01–05</title><style>${css}</style><main><small>3 ноября 2026 · Текущая локальная версия</small><h1>Правки по ОС: блоки 01–05</h1><p><a href="http://127.0.0.1:4322/">Открыть работающую главную страницу →</a></p><nav>${blocks.map(([n,id,title])=>`<a href="#block-${n}">${n}. ${title}</a>`).join('')}</nav><p class="note">В галерее документов пока макеты: в предоставленном архиве отсутствуют оригинальные сканы. Иллюстративные кадры ремонта не подменяют фотографии клиентов.</p><p>Проверены 320, 390, 768, 1024 и 1440 px: без горизонтального переполнения и ошибок JavaScript. Проверены увеличение фотографий, Escape и возврат фокуса; движение ленты при наведении и фокусе, кликабельность её видимых копий.</p>${blocks.map(([n,id,title,text])=>`<section id="block-${n}"><h2>${n}. ${title}</h2><p>${text}</p>${pairs(id,1440)}${pairs(id,390)}</section>`).join('')}<footer>Astro check: 0 ошибок и предупреждений. Сборка: 56 страниц. Общий quality останавливается на прежних 88 файлах форматирования в artifacts/review-census-2026-11-02. Реальные заявки не отправлялись.</footer></main></html>`;
+[7m  [0m [93m                                                                                                                                                                                                                                                                                                                                                                                                        ~~[0m
+
+Result (118 files): 
+- 0 errors
+- 0 warnings
+- 2 hints
+
+
+> lr-remont-noutbykov@0.1.0 format:check
+> prettier --check .
+
+Checking formatting...
+[warn] artifacts/review-census-2026-11-02/bootstrap.mjs
+[warn] artifacts/review-census-2026-11-02/collect.mjs
+[warn] artifacts/review-census-2026-11-02/coordinator-verification.json
+[warn] artifacts/review-census-2026-11-02/coverage.json
+[warn] artifacts/review-census-2026-11-02/discovery/redmap-cards.json
+[warn] artifacts/review-census-2026-11-02/duplicate-verification.json
+[warn] artifacts/review-census-2026-11-02/HANDOVER.md
+[warn] artifacts/review-census-2026-11-02/make-report.mjs
+[warn] artifacts/review-census-2026-11-02/photos-index.html
+[warn] artifacts/review-census-2026-11-02/REPORT.md
+[warn] artifacts/review-census-2026-11-02/review-groups.json
+[warn] artifacts/review-census-2026-11-02/reviews.json
+[warn] artifacts/review-census-2026-11-02/tasks/2gis-marshala/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-006/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-010/evidence.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-011/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-011/working-evidence.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-012/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-015/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-016/corpus-manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-016/progress.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-016/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-017/progress.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-017/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-018/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-018/progress.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-019/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-019/session.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-021/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-021/sort-coverage.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-022/default-150.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-022/default-page4.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-022/default-pages4-5.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-022/id-manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-022/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-023/ids-checkpoint.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-023/ids-final-addition.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-023/progress.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-023/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-024/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-024/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-026/id-manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-026/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-027/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-027/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-029/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-031/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-032/id-manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-032/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-032/working-evidence.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-034/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-034/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-038/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-038/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-040/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-041/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-041/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-043/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-046/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-049/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-049/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-050/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-053/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-053/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-061/id-manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-061/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-062/evidence.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-062/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-063/id-manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-063/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-064/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-064/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-070/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-071/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-072/id-manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-073/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-074/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-140/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-141/id-manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-141/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-143/examined-manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-143/result.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-144/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-199/manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-200/evidence.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-215/discussed-manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/card-215/topic-manifest.json
+[warn] artifacts/review-census-2026-11-02/tasks/yandex-zvezdnaya9/result.json
+[warn] src/styles/sections/_home-scrollcraft.scss
+[warn] src/styles/sections/_video-feedback.scss
+[warn] Code style issues found in 90 files. Run Prettier with --write to fix.

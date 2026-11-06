@@ -1,41 +1,254 @@
-import { csv } from './collect.mjs';
-import { readFileSync, writeFileSync, existsSync, mkdirSync, copyFileSync, readdirSync, unlinkSync } from 'node:fs';
-import { createHash } from 'node:crypto';
-import { fileURLToPath } from 'node:url';
-import { relative, resolve, extname } from 'node:path';
-import assert from 'node:assert/strict';
-const base=new URL('./',import.meta.url), basePath=fileURLToPath(base);
-const read=name=>JSON.parse(readFileSync(new URL(name,base),'utf8'));
-const reviews=read('reviews.json'), photos=read('photos.json'), queue=read('queue.json'), stats=read('stats.json'), workshops=read('workshops.json'), candidates=read('candidates.json');
-const coordinatorChecks=existsSync(new URL('coordinator-verification.json',base))?read('coordinator-verification.json').checks:[];
-const secondCheckedPhotoIds=new Set(coordinatorChecks.flatMap(c=>c.photoIds??[]));
-const secondCheckedReviews=photos.filter(p=>p.attachment==='review'&&secondCheckedPhotoIds.has(p.photoId)).length;
-const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const photoDir=new URL('photos/',base);mkdirSync(photoDir,{recursive:true});
-for(const name of readdirSync(photoDir)){if(/^review-\d{4}-\d+\.(?:jpe?g|webp|avif|png)$/.test(name))unlinkSync(new URL(name,photoDir));}
-const hashes=new Map();
-for(const p of photos){if(!p.localPath)continue;const source=resolve(p.localPath);assert.ok(!relative(basePath,source).startsWith('..'),'Photo path outside research directory');assert.ok(existsSync(source),'Missing '+source);const bytes=readFileSync(source),hash=createHash('sha256').update(bytes).digest('hex');let target=hashes.get(hash);if(!target){target='photos/'+hash.slice(0,16)+extname(source);copyFileSync(source,new URL(target,base));hashes.set(hash,target);}p.bundlePath=target;p.sha256=hash;}
-writeFileSync(new URL('photos.json',base),JSON.stringify(photos,null,2)+'\n');
-writeFileSync(new URL('photos.csv',base),csv(photos,['photoId','recordId','author','reviewUrl','sourceUrl','bundlePath','sha256','localPath','attachment','bindingVerified','visuallyVerified','description']));
-stats.uniquePhotoFiles=hashes.size;
-stats.uniqueAuthorPhotoFiles=new Set(photos.filter(p=>p.attachment==='review'&&p.sha256).map(p=>p.sha256)).size;
-writeFileSync(new URL('stats.json',base),JSON.stringify(stats,null,2)+'\n');
-const lookup=new Map(reviews.map(r=>[r.recordId,r]));
-const pending=queue.filter(q=>q.status==='queued');
-const header=`# Отзывы Ленремонта о ремонте ноутбуков\n\nДата исследования: 2 ноября 2026. Охват: вся обнаруженная сеть России, действующие и исторические адреса.\n\n**Состояние: ${pending.length?'исследование продолжается; '+pending.length+' источников в очереди':'обнаруженная очередь обработана'}.** Обработано ${stats.finished} карточек: ${stats.complete} полностью, ${stats.partial} частично, ${stats.blocked} недоступны. В реестре мастерских ${workshops.length} адресных/городских записей, включая непроверенных кандидатов. Эти числа не означают полноту всей сети.\n\nВ данных ${reviews.length} исходных записей по ноутбукам, ${photos.length} вложений (${stats.verifiedReviewPhotos} привязанных и просмотренных фото в отзывах; остальные типы отражены отдельно). Исходные записи разных карточек могут дублировать друг друга; не считать это числом уникальных клиентов.\n\n## Файлы\n\n- [Отзывы CSV](reviews.csv), [JSON](reviews.json) — краткие пересказы и исходные ссылки.\n- [Охват источников](coverage.csv), [очередь](queue.json), [мастерские и кандидаты](workshops.json).\n- [Фотографии с подписями](photos-index.html), [метаданные фото](photos.json), [папка фото](photos/).\n- Папка tasks содержит независимые результаты субагентов и ограничения каждого обхода.\n\n## Ограничения\n\nОценки относятся к конкретным отзывам и не являются рейтингом ноутбучного ремонта сети. Заявления клиентов пересказаны как их опыт, а не как установленные факты. Полнота отмечена только для отдельных карточек с наблюдавшимся концом выдачи. Отзовик: CAPTCHA после восьмой страницы; 320 просмотров превью не равны 320 прочитанным полным отзывам. Яндекс может переносить отзывы между адресами. У Zoon есть отдельно отклонённые отзывы: их статус сохранён. Аватары, общая галерея и фотографии настольных компьютеров не считаются фото ноутбучного ремонта.\n\n## Подборка с фотографиями\n\n`;
-const items=reviews.filter(r=>r.photos.length).map(r=>`- **${r.author}**, ${r.date}, ${r.rating??'оценка неизвестна'}/5, ${r.platform}. ${r.summary} [Источник](${r.reviewUrl??r.sourceCards[0]}). Вложения: ${r.photos.map(p=>p.attachment).join(', ')}.`).join('\n');
-const table='\n\n## Проверка карточек\n\n| Карточка | Площадка | Состояние |\n| --- | --- | --- |\n'+queue.map(t=>`| [${t.taskId}](${t.url}) | ${t.platform} | ${t.status} |`).join('\n')+'\n';
-const verification='\n\n## Независимая проверка фото\n\n[Свидетельства координатора](coordinator-verification.json): '+secondCheckedReviews+' текущих вложений к отзывам прошли повторную проверку. Флаги работников и повторная проверка учитываются отдельно; новые фото без записи координатора ожидают её. Отклонённый площадкой отзыв Альбины сохранён с этим статусом.\n';
-const grouping='\n\n## Повторы текста\n\n[Группы содержания JSON](review-groups.json), [CSV](review-groups.csv): '+stats.contentGroups+' групп после объединения только подтверждённых повторов по [свидетельствам проверки](duplicate-verification.json). Все публикации и ссылки сохранены внутри каждой группы; исходные CSV/JSON остаются реестром появлений на площадках. Разные имена авторов не устанавливают личность владельцев аккаунтов. Группы без подтверждённого повтора не означают доказанно уникальных клиентов.\n';
-const coverageSummary='\n\n## Число просмотренных записей\n\nСумма известных счётчиков отдельных карточек: '+stats.examinedSourceEntries+' записей. У '+stats.sourcesWithUnknownExaminedCount+' обработанных источников точный счётчик неизвестен. Это сумма просмотров по источникам, включая повторные публикации, оценки без текста и отдельно описанные превью Отзовика; она не означает число уникальных клиентов или полностью прочитанных текстов. Метод, конец выдачи и причина остановки для каждой карточки сохранены в [таблице охвата](coverage.csv).\n';
-const candidateSection='\n\n## Кандидаты и недоступные вложения\n\n[Кандидаты CSV](candidates.csv), [JSON](candidates.json): '+candidates.length+' записей. Пограничные темы не включены в подтверждённые отзывы о ремонте ноутбука; упоминание фото без доступного вложения не считается найденной фотографией.\n\n'+candidates.map(c=>'- **'+(c.author??'Автор не указан')+'**, '+(c.date??'дата не указана')+': '+c.reason+' [Источник]('+c.reviewUrl+').').join('\n')+'\n\n[Реестр мастерских CSV](workshops.csv), [JSON](workshops.json) отдельно содержит непроверенные адреса и варианты написания.\n';
-const platformRows=[...new Set(queue.filter(t=>t.status!=='discovery-only').map(t=>t.platform))].map(platform=>{const cards=queue.filter(t=>t.platform===platform&&t.status!=='discovery-only');return {platform,cards:cards.length,complete:cards.filter(t=>t.status==='complete').length,partial:cards.filter(t=>t.status==='partial').length,blocked:cards.filter(t=>t.status==='blocked').length,pending:cards.filter(t=>t.status==='queued').length,reviews:reviews.filter(r=>r.platform===platform).length};});
-assert.equal(platformRows.reduce((n,r)=>n+r.cards,0),queue.filter(t=>t.status!=='discovery-only').length);
-assert.equal(platformRows.reduce((n,r)=>n+r.reviews,0),reviews.length);
-const platformCoverage='\n\n## Охват площадок\n\n| Площадка | Карточек | Полностью | Частично | Недоступны | В очереди | Записей по теме |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n'+platformRows.map(r=>'| '+[r.platform,r.cards,r.complete,r.partial,r.blocked,r.pending,r.reviews].join(' | ')+' |').join('\n')+'\n\nУникальных файлов по SHA256: '+stats.uniquePhotoFiles+', из них авторских: '+stats.uniqueAuthorPhotoFiles+'. Одинаковые байты из нескольких источников хранятся одним файлом; разные версии изображений могут иметь разные контрольные суммы.\n';
-const limitedSources=queue.filter(t=>t.status==='partial'||t.status==='blocked');
-const sourceLimits='\n\n## Частично проверенные и недоступные источники\n\n'+(limitedSources.length?limitedSources.map(t=>{const c=read('tasks/'+t.taskId+'/result.json').coverage;return'- ['+t.taskId+' — '+t.platform+']('+t.url+'): просмотрено '+(c.examinedCount??'неизвестно')+', заявленный размер '+(c.reportedTotal??'не указан')+'. '+c.stopReason;}).join('\n\n'):'Таких источников среди обработанных карточек нет.')+'\n';
-writeFileSync(new URL('REPORT.md',base),header+items+grouping+verification+coverageSummary+candidateSection+platformCoverage+sourceLimits+table);
-const blocks=photos.map(p=>{const r=lookup.get(p.recordId);return `<article><h2>${escape(p.author)} — ${escape(r?.date)}</h2><p>${escape(r?.summary)}</p><p><strong>${escape(p.attachment)}</strong> · привязка: ${p.bindingVerified?'проверена':'не проверена'} · изображение: ${p.visuallyVerified?'просмотрено':'не просмотрено'}</p>${p.bundlePath?`<a href="${escape(p.bundlePath)}"><img loading="lazy" src="${escape(p.bundlePath)}" alt="${escape(p.description)}"></a>`:''}<p>${escape(p.description)}</p><p><a href="${escape(p.reviewUrl)}">Отзыв</a> · <a href="${escape(p.sourceUrl)}">Исходное изображение</a></p></article>`;}).join('\n');
-writeFileSync(new URL('photos-index.html',base),`<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Ленремонт: фотографии к отзывам о ноутбуках</title><style>body{font:16px/1.5 system-ui,sans-serif;max-width:960px;margin:40px auto;padding:0 20px;color:#222}article{border-top:1px solid #ccc;padding:24px 0}img{display:block;max-width:100%;max-height:560px;height:auto}h2{font-size:22px}a{color:#075aa3}</style><h1>Фотографии к отзывам о ноутбуках</h1><p>Исследовательская подборка. Возможны повторы между карточками; отклонённые отзывы и ответы компании подписаны отдельно.</p>${blocks}</html>`);
-console.log(JSON.stringify({photoFiles:hashes.size,reviewRecords:reviews.length,pending:pending.length,filesValidated:true}));
+import { csv } from "./collect.mjs";
+import {
+  readFileSync,
+  writeFileSync,
+  existsSync,
+  mkdirSync,
+  copyFileSync,
+  readdirSync,
+  unlinkSync,
+} from "node:fs";
+import { createHash } from "node:crypto";
+import { fileURLToPath } from "node:url";
+import { relative, resolve, extname } from "node:path";
+import assert from "node:assert/strict";
+const base = new URL("./", import.meta.url),
+  basePath = fileURLToPath(base);
+const read = (name) => JSON.parse(readFileSync(new URL(name, base), "utf8"));
+const reviews = read("reviews.json"),
+  photos = read("photos.json"),
+  queue = read("queue.json"),
+  stats = read("stats.json"),
+  workshops = read("workshops.json"),
+  candidates = read("candidates.json");
+const coordinatorChecks = existsSync(
+  new URL("coordinator-verification.json", base),
+)
+  ? read("coordinator-verification.json").checks
+  : [];
+const secondCheckedPhotoIds = new Set(
+  coordinatorChecks.flatMap((c) => c.photoIds ?? []),
+);
+const secondCheckedReviews = photos.filter(
+  (p) => p.attachment === "review" && secondCheckedPhotoIds.has(p.photoId),
+).length;
+const escape = (s) =>
+  String(s ?? "").replace(
+    /[&<>"']/g,
+    (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
+        c
+      ],
+  );
+const photoDir = new URL("photos/", base);
+mkdirSync(photoDir, { recursive: true });
+for (const name of readdirSync(photoDir)) {
+  if (/^review-\d{4}-\d+\.(?:jpe?g|webp|avif|png)$/.test(name))
+    unlinkSync(new URL(name, photoDir));
+}
+const hashes = new Map();
+for (const p of photos) {
+  if (!p.localPath) continue;
+  const source = resolve(p.localPath);
+  assert.ok(
+    !relative(basePath, source).startsWith(".."),
+    "Photo path outside research directory",
+  );
+  assert.ok(existsSync(source), "Missing " + source);
+  const bytes = readFileSync(source),
+    hash = createHash("sha256").update(bytes).digest("hex");
+  let target = hashes.get(hash);
+  if (!target) {
+    target = "photos/" + hash.slice(0, 16) + extname(source);
+    copyFileSync(source, new URL(target, base));
+    hashes.set(hash, target);
+  }
+  p.bundlePath = target;
+  p.sha256 = hash;
+}
+writeFileSync(
+  new URL("photos.json", base),
+  JSON.stringify(photos, null, 2) + "\n",
+);
+writeFileSync(
+  new URL("photos.csv", base),
+  csv(photos, [
+    "photoId",
+    "recordId",
+    "author",
+    "reviewUrl",
+    "sourceUrl",
+    "bundlePath",
+    "sha256",
+    "localPath",
+    "attachment",
+    "bindingVerified",
+    "visuallyVerified",
+    "description",
+  ]),
+);
+stats.uniquePhotoFiles = hashes.size;
+stats.uniqueAuthorPhotoFiles = new Set(
+  photos
+    .filter((p) => p.attachment === "review" && p.sha256)
+    .map((p) => p.sha256),
+).size;
+writeFileSync(
+  new URL("stats.json", base),
+  JSON.stringify(stats, null, 2) + "\n",
+);
+const lookup = new Map(reviews.map((r) => [r.recordId, r]));
+const pending = queue.filter((q) => q.status === "queued");
+const header = `# Отзывы Ленремонта о ремонте ноутбуков\n\nДата исследования: 2 ноября 2026. Охват: вся обнаруженная сеть России, действующие и исторические адреса.\n\n**Состояние: ${pending.length ? "исследование продолжается; " + pending.length + " источников в очереди" : "обнаруженная очередь обработана"}.** Обработано ${stats.finished} карточек: ${stats.complete} полностью, ${stats.partial} частично, ${stats.blocked} недоступны. В реестре мастерских ${workshops.length} адресных/городских записей, включая непроверенных кандидатов. Эти числа не означают полноту всей сети.\n\nВ данных ${reviews.length} исходных записей по ноутбукам, ${photos.length} вложений (${stats.verifiedReviewPhotos} привязанных и просмотренных фото в отзывах; остальные типы отражены отдельно). Исходные записи разных карточек могут дублировать друг друга; не считать это числом уникальных клиентов.\n\n## Файлы\n\n- [Отзывы CSV](reviews.csv), [JSON](reviews.json) — краткие пересказы и исходные ссылки.\n- [Охват источников](coverage.csv), [очередь](queue.json), [мастерские и кандидаты](workshops.json).\n- [Фотографии с подписями](photos-index.html), [метаданные фото](photos.json), [папка фото](photos/).\n- Папка tasks содержит независимые результаты субагентов и ограничения каждого обхода.\n\n## Ограничения\n\nОценки относятся к конкретным отзывам и не являются рейтингом ноутбучного ремонта сети. Заявления клиентов пересказаны как их опыт, а не как установленные факты. Полнота отмечена только для отдельных карточек с наблюдавшимся концом выдачи. Отзовик: CAPTCHA после восьмой страницы; 320 просмотров превью не равны 320 прочитанным полным отзывам. Яндекс может переносить отзывы между адресами. У Zoon есть отдельно отклонённые отзывы: их статус сохранён. Аватары, общая галерея и фотографии настольных компьютеров не считаются фото ноутбучного ремонта.\n\n## Подборка с фотографиями\n\n`;
+const items = reviews
+  .filter((r) => r.photos.length)
+  .map(
+    (r) =>
+      `- **${r.author}**, ${r.date}, ${r.rating ?? "оценка неизвестна"}/5, ${r.platform}. ${r.summary} [Источник](${r.reviewUrl ?? r.sourceCards[0]}). Вложения: ${r.photos.map((p) => p.attachment).join(", ")}.`,
+  )
+  .join("\n");
+const table =
+  "\n\n## Проверка карточек\n\n| Карточка | Площадка | Состояние |\n| --- | --- | --- |\n" +
+  queue
+    .map((t) => `| [${t.taskId}](${t.url}) | ${t.platform} | ${t.status} |`)
+    .join("\n") +
+  "\n";
+const verification =
+  "\n\n## Независимая проверка фото\n\n[Свидетельства координатора](coordinator-verification.json): " +
+  secondCheckedReviews +
+  " текущих вложений к отзывам прошли повторную проверку. Флаги работников и повторная проверка учитываются отдельно; новые фото без записи координатора ожидают её. Отклонённый площадкой отзыв Альбины сохранён с этим статусом.\n";
+const grouping =
+  "\n\n## Повторы текста\n\n[Группы содержания JSON](review-groups.json), [CSV](review-groups.csv): " +
+  stats.contentGroups +
+  " групп после объединения только подтверждённых повторов по [свидетельствам проверки](duplicate-verification.json). Все публикации и ссылки сохранены внутри каждой группы; исходные CSV/JSON остаются реестром появлений на площадках. Разные имена авторов не устанавливают личность владельцев аккаунтов. Группы без подтверждённого повтора не означают доказанно уникальных клиентов.\n";
+const coverageSummary =
+  "\n\n## Число просмотренных записей\n\nСумма известных счётчиков отдельных карточек: " +
+  stats.examinedSourceEntries +
+  " записей. У " +
+  stats.sourcesWithUnknownExaminedCount +
+  " обработанных источников точный счётчик неизвестен. Это сумма просмотров по источникам, включая повторные публикации, оценки без текста и отдельно описанные превью Отзовика; она не означает число уникальных клиентов или полностью прочитанных текстов. Метод, конец выдачи и причина остановки для каждой карточки сохранены в [таблице охвата](coverage.csv).\n";
+const candidateSection =
+  "\n\n## Кандидаты и недоступные вложения\n\n[Кандидаты CSV](candidates.csv), [JSON](candidates.json): " +
+  candidates.length +
+  " записей. Пограничные темы не включены в подтверждённые отзывы о ремонте ноутбука; упоминание фото без доступного вложения не считается найденной фотографией.\n\n" +
+  candidates
+    .map(
+      (c) =>
+        "- **" +
+        (c.author ?? "Автор не указан") +
+        "**, " +
+        (c.date ?? "дата не указана") +
+        ": " +
+        c.reason +
+        " [Источник](" +
+        c.reviewUrl +
+        ").",
+    )
+    .join("\n") +
+  "\n\n[Реестр мастерских CSV](workshops.csv), [JSON](workshops.json) отдельно содержит непроверенные адреса и варианты написания.\n";
+const platformRows = [
+  ...new Set(
+    queue.filter((t) => t.status !== "discovery-only").map((t) => t.platform),
+  ),
+].map((platform) => {
+  const cards = queue.filter(
+    (t) => t.platform === platform && t.status !== "discovery-only",
+  );
+  return {
+    platform,
+    cards: cards.length,
+    complete: cards.filter((t) => t.status === "complete").length,
+    partial: cards.filter((t) => t.status === "partial").length,
+    blocked: cards.filter((t) => t.status === "blocked").length,
+    pending: cards.filter((t) => t.status === "queued").length,
+    reviews: reviews.filter((r) => r.platform === platform).length,
+  };
+});
+assert.equal(
+  platformRows.reduce((n, r) => n + r.cards, 0),
+  queue.filter((t) => t.status !== "discovery-only").length,
+);
+assert.equal(
+  platformRows.reduce((n, r) => n + r.reviews, 0),
+  reviews.length,
+);
+const platformCoverage =
+  "\n\n## Охват площадок\n\n| Площадка | Карточек | Полностью | Частично | Недоступны | В очереди | Записей по теме |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n" +
+  platformRows
+    .map(
+      (r) =>
+        "| " +
+        [
+          r.platform,
+          r.cards,
+          r.complete,
+          r.partial,
+          r.blocked,
+          r.pending,
+          r.reviews,
+        ].join(" | ") +
+        " |",
+    )
+    .join("\n") +
+  "\n\nУникальных файлов по SHA256: " +
+  stats.uniquePhotoFiles +
+  ", из них авторских: " +
+  stats.uniqueAuthorPhotoFiles +
+  ". Одинаковые байты из нескольких источников хранятся одним файлом; разные версии изображений могут иметь разные контрольные суммы.\n";
+const limitedSources = queue.filter(
+  (t) => t.status === "partial" || t.status === "blocked",
+);
+const sourceLimits =
+  "\n\n## Частично проверенные и недоступные источники\n\n" +
+  (limitedSources.length
+    ? limitedSources
+        .map((t) => {
+          const c = read("tasks/" + t.taskId + "/result.json").coverage;
+          return (
+            "- [" +
+            t.taskId +
+            " — " +
+            t.platform +
+            "](" +
+            t.url +
+            "): просмотрено " +
+            (c.examinedCount ?? "неизвестно") +
+            ", заявленный размер " +
+            (c.reportedTotal ?? "не указан") +
+            ". " +
+            c.stopReason
+          );
+        })
+        .join("\n\n")
+    : "Таких источников среди обработанных карточек нет.") +
+  "\n";
+writeFileSync(
+  new URL("REPORT.md", base),
+  header +
+    items +
+    grouping +
+    verification +
+    coverageSummary +
+    candidateSection +
+    platformCoverage +
+    sourceLimits +
+    table,
+);
+const blocks = photos
+  .map((p) => {
+    const r = lookup.get(p.recordId);
+    return `<article><h2>${escape(p.author)} — ${escape(r?.date)}</h2><p>${escape(r?.summary)}</p><p><strong>${escape(p.attachment)}</strong> · привязка: ${p.bindingVerified ? "проверена" : "не проверена"} · изображение: ${p.visuallyVerified ? "просмотрено" : "не просмотрено"}</p>${p.bundlePath ? `<a href="${escape(p.bundlePath)}"><img loading="lazy" src="${escape(p.bundlePath)}" alt="${escape(p.description)}"></a>` : ""}<p>${escape(p.description)}</p><p><a href="${escape(p.reviewUrl)}">Отзыв</a> · <a href="${escape(p.sourceUrl)}">Исходное изображение</a></p></article>`;
+  })
+  .join("\n");
+writeFileSync(
+  new URL("photos-index.html", base),
+  `<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Ленремонт: фотографии к отзывам о ноутбуках</title><style>body{font:16px/1.5 system-ui,sans-serif;max-width:960px;margin:40px auto;padding:0 20px;color:#222}article{border-top:1px solid #ccc;padding:24px 0}img{display:block;max-width:100%;max-height:560px;height:auto}h2{font-size:22px}a{color:#075aa3}</style><h1>Фотографии к отзывам о ноутбуках</h1><p>Исследовательская подборка. Возможны повторы между карточками; отклонённые отзывы и ответы компании подписаны отдельно.</p>${blocks}</html>`,
+);
+console.log(
+  JSON.stringify({
+    photoFiles: hashes.size,
+    reviewRecords: reviews.length,
+    pending: pending.length,
+    filesValidated: true,
+  }),
+);

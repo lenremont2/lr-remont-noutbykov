@@ -1,6 +1,8 @@
 ---
 import copy from "../../data/laptop-service.json";
 import LeadForm from "../ui/LeadForm.astro";
+import MapSlot from "../ui/MapSlot.astro";
+import workshops from "../../data/workshops.json";
 import type { BrandPage } from "../../data/service-pages";
 interface Props {
   brand?: Pick<BrandPage, "label">;
@@ -45,11 +47,13 @@ const questions: { name: string; title: string; options: QuizOption[] }[] = [
         value: "Залит водой, чаем или кофе",
         label: "Залит водой, чаем или кофе",
         detail: "Не включайте ноутбук и не сушите феном",
+        image: "/media/quiz-spill.webp",
       },
       {
         value: "Восстановление данных",
         label: "Нужно восстановить данные и файлы",
         detail: "Фото, документы, базы 1С и рабочие проекты",
+        image: "/media/quiz-lost-files.webp",
       },
       {
         value: "Программы и настройка",
@@ -73,6 +77,7 @@ const questions: { name: string; title: string; options: QuizOption[] }[] = [
         value: "Другая неисправность",
         label: "Другая проблема или не знаю причину",
         detail: "Расскажете подробнее при звонке",
+        image: "/media/quiz-unknown-fault.webp",
       },
     ],
   },
@@ -91,23 +96,25 @@ const questions: { name: string; title: string; options: QuizOption[] }[] = [
         value: "at-home",
         label: "Ремонт дома или в офисе",
         detail: "Мастер приедет по адресу — возможность работ согласуем",
+        image: "/media/quiz-home-handoff.webp",
       },
       {
         value: "workshop",
         label: "Привезу в сервисный центр",
         detail: "Поможем выбрать мастерскую",
-        image: "/media/laptop-engineer-hero.webp",
+        image: "/media/quiz-workshop-handoff.webp",
       },
       {
         value: "courier",
         label: "Передам курьеру",
         detail: "Заберём и привезём курьером по акту",
-        image: "/media/laptop-courier.webp",
+        image: "/media/quiz-courier-handoff.webp",
       },
       {
         value: "consultation",
         label: "Пока не решил",
         detail: "Подберём удобный вариант",
+        image: "/media/quiz-consultation.webp",
       },
     ],
   },
@@ -145,19 +152,31 @@ const pageQuestions = brand
             <a href="tel:+78123444444">{copy.contact.fields["Телефон"]}</a>.
           </p>
         </noscript>
-        <p
-          class="lr-quiz__progress"
-          data-lr-quiz-progress
-          role="status"
-          aria-live="polite"
-        >
-          {
-            brand
-              ? "Два вопроса и контактный шаг"
-              : "Три вопроса и контактный шаг"
-          }
+        <div class="lr-quiz__toolbar" data-lr-quiz-toolbar hidden>
+          <button
+            type="button"
+            class="lr-text-action lr-quiz__back"
+            data-lr-quiz-prev
+            hidden><span aria-hidden="true">←</span> Назад</button
+          >
+          <p class="lr-quiz__progress" data-lr-quiz-progress role="status"></p>
+        </div>
+        <progress
+          class="lr-quiz__meter"
+          data-lr-quiz-meter
+          value="1"
+          max={pageQuestions.length + 2}
+          aria-hidden="true"
+          hidden></progress>
+        <p id="lr-quiz-hint" class="lr-quiz__hint" data-lr-quiz-hint hidden>
+          Выберите вариант — следующий шаг откроется автоматически.
         </p>
-        <form data-lr-quiz-questions data-hop-lead-ignore novalidate>
+        <form
+          data-lr-quiz-questions
+          data-hop-lead-ignore
+          aria-describedby="lr-quiz-hint"
+          novalidate
+        >
           {
             pageQuestions.map((question) => (
               <fieldset class="lr-quiz__step" data-lr-quiz-step>
@@ -211,25 +230,152 @@ const pageQuestions = brand
             ))
           }
         </form>
-        <div class="lr-quiz__analysis" data-lr-quiz-analysis hidden>
-          <span class="lr-quiz__spinner" aria-hidden="true"></span>
-          <h3 tabindex="-1">Подготовим расчёт со скидкой до 15%</h3>
-          <p role="status">Ваши ответы сохранены.</p>
-          <p class="lr-caption" data-lr-quiz-summary></p>
-          <p class="lr-caption">
-            Оставьте номер, чтобы получить стоимость ремонта с учётом ваших
-            ответов.
-          </p>
-          <button type="button" class="lr-button" data-lr-quiz-finish
-            >Перейти к контактам</button
+        <div
+          class="lr-quiz__step lr-quiz__location"
+          data-lr-quiz-step
+          data-lr-quiz-location
+        >
+          <h3
+            class="lr-quiz__question"
+            tabindex="-1"
+            data-lr-quiz-location-title
+          >
+            Уточните место ремонта
+          </h3>
+          <div
+            class="lr-quiz__location-view"
+            data-lr-quiz-location-view="workshops"
+          >
+            <p class="lr-caption">
+              Выберите мастерскую, в которую вам удобно привезти ноутбук.
+            </p>
+            <MapSlot id="lr-quiz-map-workshops" type="workshops" />
+            <div class="lr-form__field">
+              <label for="lr-quiz-workshop">Мастерская</label>
+              <select
+                id="lr-quiz-workshop"
+                data-lr-quiz-workshop
+                aria-describedby="lr-quiz-error"
+              >
+                <option value="">Выберите мастерскую</option>
+                {
+                  workshops.workshops.map((workshop) => (
+                    <option
+                      value={workshop.id}
+                      data-lr-workshop-address={workshop.address}
+                    >
+                      {workshop.city}, {workshop.address} — {workshop.metro}
+                    </option>
+                  ))
+                }
+              </select>
+            </div>
+          </div>
+          <div
+            class="lr-quiz__location-view"
+            data-lr-quiz-location-view="address"
+            hidden
+          >
+            <p class="lr-caption">
+              Укажите населённый пункт, улицу и дом. Квартиру и код домофона
+              можно сообщить при звонке.
+            </p>
+            <MapSlot id="lr-quiz-map-address" type="address" />
+            <div class="lr-form__field">
+              <label for="lr-quiz-address" data-lr-quiz-address-label
+                >Куда приехать?</label
+              >
+              <input
+                id="lr-quiz-address"
+                data-lr-quiz-address
+                type="text"
+                autocomplete="street-address"
+                placeholder="Населённый пункт, улица и дом"
+                maxlength="240"
+                aria-describedby="lr-quiz-error"
+              />
+            </div>
+            <div class="lr-form__field" data-lr-quiz-place-field>
+              <label for="lr-quiz-place">Где удобнее провести ремонт?</label>
+              <select id="lr-quiz-place" data-lr-quiz-place>
+                <option value="home">Дома</option>
+                <option value="work">На работе</option>
+                <option value="mobile-lab">В мастерской на колёсах</option>
+                <option value="consultation">Уточнить при звонке</option>
+              </select>
+            </div>
+          </div>
+          <button type="button" class="lr-button" data-lr-quiz-location-confirm
+            >Подтвердить адрес</button
           >
         </div>
-        <div class="lr-quiz__step" data-lr-quiz-step>
-          <h3 class="lr-quiz__question" tabindex="-1">Куда вам перезвонить?</h3>
-          <p class="lr-caption">
-            Уточним неисправность и обсудим стоимость ремонта. Марку и модель
-            можно добавить ниже.
+        <div class="lr-quiz__analysis" data-lr-quiz-analysis hidden>
+          <div class="lr-quiz__analysis-visual" aria-hidden="true">
+            <span class="lr-quiz__spinner"></span>
+            <svg viewBox="0 0 48 48" width="48" height="48" fill="none">
+              <path
+                d="M14 5h15l8 8v30H11V5h3Zm15 0v9h8M18 23h12M18 30h7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path
+                d="m27 35 4 4 8-9"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <h3 tabindex="-1">Готовим ваш запрос на ремонт</h3>
+          <p role="status">
+            Неисправность и способ ремонта выбраны. Переносим ответы в заявку.
           </p>
+          <p class="lr-quiz__analysis-note">Следующий шаг — номер для связи</p>
+        </div>
+        <div class="lr-quiz__step lr-quiz__result" data-lr-quiz-step>
+          <div class="lr-quiz__result-offer">
+            <p class="lr-quiz__result-label">
+              Остался один шаг · скидка до 15%
+            </p>
+            <h3 class="lr-quiz__question" tabindex="-1">
+              Узнайте стоимость ремонта
+            </h3>
+            <p>
+              Оставьте телефон — обсудим стоимость ремонта и условия скидки.
+            </p>
+            <div class="lr-quiz__result-facts">
+              <p>
+                <strong>0 ₽</strong> диагностика, даже при отказе
+              </p>
+              <p>
+                Полную стоимость согласуем <strong>до ремонта</strong>
+              </p>
+            </div>
+          </div>
+          <details class="lr-quiz__answers">
+            <summary>Ваши ответы сохранены <span>Проверить</span></summary>
+            <dl class="lr-quiz__summary">
+              <div>
+                <dt>Ноутбук</dt>
+                <dd data-lr-quiz-answer="device_category">
+                  {brand?.label || "—"}
+                </dd>
+              </div>
+              <div>
+                <dt>Неисправность</dt>
+                <dd data-lr-quiz-answer="symptom">—</dd>
+              </div>
+              <div>
+                <dt>Способ ремонта</dt>
+                <dd data-lr-quiz-answer="service_format">—</dd>
+              </div>
+              <div data-lr-quiz-location-summary hidden>
+                <dt data-lr-quiz-location-label>Адрес</dt>
+                <dd data-lr-quiz-location-value></dd>
+              </div>
+            </dl>
+          </details>
           <LeadForm
             id="lr-quiz-form"
             source="quiz"
@@ -238,15 +384,13 @@ const pageQuestions = brand
             requestTiming
           />
         </div>
-        <p class="lr-quiz__error" data-lr-quiz-error role="alert"></p>
-        <div class="lr-quiz__navigation" data-lr-quiz-navigation hidden>
-          <button type="button" class="lr-text-action" data-lr-quiz-prev
-            >Назад</button
-          >
-          <button type="button" class="lr-button" data-lr-quiz-next
-            >Далее</button
-          >
-        </div>
+        <p
+          id="lr-quiz-error"
+          class="lr-quiz__error"
+          data-lr-quiz-error
+          role="alert"
+        >
+        </p>
       </div>
     </div>
   </div>

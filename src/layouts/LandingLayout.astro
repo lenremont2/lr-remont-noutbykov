@@ -8,6 +8,7 @@ interface Props {
   canonical?: string;
   structuredData?: Record<string, unknown>;
   noindex?: boolean;
+  themeable?: boolean;
 }
 
 const {
@@ -16,7 +17,10 @@ const {
   canonical,
   structuredData,
   noindex = false,
+  themeable = true,
 } = Astro.props;
+// Temporary preview control; disable before handing the fragment to WordPress.
+const SHOW_THEME_PREVIEW = true;
 const content = typographHtml(await Astro.slots.render("default"));
 ---
 
@@ -29,6 +33,14 @@ const content = typographHtml(await Astro.slots.render("default"));
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <title>{title}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/css/glightbox.min.css"
+    />
+    <script
+      is:inline
+      src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"
+    ></script>
     {canonical && <link rel="canonical" href={canonical} />}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -54,8 +66,26 @@ const content = typographHtml(await Astro.slots.render("default"));
     />
   </head>
   <body style="margin: 0">
-    <main id="hop-landing">
+    <main id="hop-landing" data-lr-themeable={themeable || undefined}>
       <Fragment set:html={content} />
+      {
+        themeable && SHOW_THEME_PREVIEW && (
+          <button
+            class="lr-theme-switch"
+            type="button"
+            aria-label="Тёмная тема"
+            role="switch"
+            aria-checked="false"
+            data-lr-theme-switch
+            hidden
+          >
+            <span class="lr-theme-switch__track" aria-hidden="true" />
+            <span class="lr-theme-switch__label" aria-hidden="true">
+              Тёмная тема
+            </span>
+          </button>
+        )
+      }
     </main>
 
     <script>

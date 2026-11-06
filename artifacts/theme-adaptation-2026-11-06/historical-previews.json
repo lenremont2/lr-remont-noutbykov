@@ -1,0 +1,32 @@
+[
+  {
+    "route": "/style-review/",
+    "unchanged": true,
+    "switches": 0,
+    "marker": false
+  },
+  {
+    "route": "/design-directions/",
+    "unchanged": true,
+    "switches": 0,
+    "marker": false
+  },
+  {
+    "route": "/design-directions/focus/",
+    "unchanged": true,
+    "switches": 0,
+    "marker": false
+  },
+  {
+    "route": "/design-directions/lab/",
+    "unchanged": true,
+    "switches": 0,
+    "marker": false
+  },
+  {
+    "route": "/design-directions/service/",
+    "unchanged": true,
+    "switches": 0,
+    "marker": false
+  }
+]

@@ -1,1 +1,37 @@
-{"taskId":"card-023","tabId":"2080318410","reportedTotal":506,"default":{"examinedCount":506,"fullTextsExpanded":true,"endpointObserved":true,"segments":[{"url":"https://yandex.ru/maps/org/lenremont/1401251799/reviews/","offset":0,"retainedCount":150},{"url":"https://yandex.ru/maps/org/lenremont/1401251799/reviews/?page=4","offset":150,"retainedCount":100},{"url":"https://yandex.ru/maps/org/lenremont/1401251799/reviews/?page=6","offset":250,"retainedCount":256}],"endpoint":{"scrollTop":80848.1796875,"scrollHeight":81633,"clientHeight":785},"uniqueKeyCount":506,"hashCollisionCount":0,"unexpandedCount":0},"identityKey":"public author profile URL or displayed author, plus datePublished metadata; matching publicId separately verified for selected reviews by Share dialogs","status":"complete"}
+{
+  "taskId": "card-023",
+  "tabId": "2080318410",
+  "reportedTotal": 506,
+  "default": {
+    "examinedCount": 506,
+    "fullTextsExpanded": true,
+    "endpointObserved": true,
+    "segments": [
+      {
+        "url": "https://yandex.ru/maps/org/lenremont/1401251799/reviews/",
+        "offset": 0,
+        "retainedCount": 150
+      },
+      {
+        "url": "https://yandex.ru/maps/org/lenremont/1401251799/reviews/?page=4",
+        "offset": 150,
+        "retainedCount": 100
+      },
+      {
+        "url": "https://yandex.ru/maps/org/lenremont/1401251799/reviews/?page=6",
+        "offset": 250,
+        "retainedCount": 256
+      }
+    ],
+    "endpoint": {
+      "scrollTop": 80848.1796875,
+      "scrollHeight": 81633,
+      "clientHeight": 785
+    },
+    "uniqueKeyCount": 506,
+    "hashCollisionCount": 0,
+    "unexpandedCount": 0
+  },
+  "identityKey": "public author profile URL or displayed author, plus datePublished metadata; matching publicId separately verified for selected reviews by Share dialogs",
+  "status": "complete"
+}

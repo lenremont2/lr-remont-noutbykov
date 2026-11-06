@@ -236,11 +236,11 @@ for (const page of pages) {
   const sections = content.brands.includes(page)
     ? [
         "lr-hero",
-        "lr-symptoms",
-        "lr-formats",
         "lr-reviews",
-        "lr-prices",
         "lr-quiz",
+        "lr-formats",
+        "lr-symptoms",
+        "lr-prices",
         "lr-process",
         "lr-lab",
         "lr-workshop-gallery",
@@ -303,7 +303,7 @@ for (const page of pages) {
       page.slug,
     );
     const quiz = html.match(/<section id="lr-quiz"[\s\S]*?<\/section>/)?.[0];
-    assert.equal((quiz.match(/data-lr-quiz-step/g) || []).length, 3, page.slug);
+    assert.equal((quiz.match(/data-lr-quiz-step/g) || []).length, 4, page.slug);
     assert.ok(
       !quiz.includes('name="device_category" value="standard"'),
       page.slug,
