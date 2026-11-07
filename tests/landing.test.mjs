@@ -329,7 +329,10 @@ const protectionSection = html.match(
   /<section id="lr-guarantee"[\s\S]*?<\/section>/,
 )?.[0];
 assert.ok(protectionSection?.includes('id="lr-security"'));
-assert.doesNotMatch(protectionSection, /<details\b|lr-guarantee__support/);
+assert.doesNotMatch(protectionSection, /<details\b|id="lr-director"/);
+assert.ok(protectionSection.includes("Если неисправность появилась снова"));
+assert.ok(protectionSection.includes('href="tel:+78123444444"'));
+assert.match(protectionSection, /<article>\s*<span[^>]*>365 дней<\/span>/);
 const protectionFacts = protectionSection;
 assert.equal((protectionFacts.match(/<article>/g) || []).length, 4);
 for (const fact of homeCopy.guarantees.items)
@@ -338,10 +341,17 @@ for (const fact of homeCopy.guarantees.items)
 const director = html.match(
   /<section\b[^>]*id="lr-director"[\s\S]*?<\/section>/,
 )?.[0];
-assert.ok(director.includes("/media/director-sorokin-320.webp"));
-assert.ok(director.includes("lr-director--compact"));
-assert.ok(director.includes(homeCopy.director.quote));
-assert.ok(!director.includes("data-lr-signature"));
+assert.ok(director.includes('src="/media/director-sorokin-640.webp"'));
+assert.doesNotMatch(director, /lr-director--compact/);
+assert.match(director, /<h2 id="lr-director-title"/);
+assert.ok(director.includes("Обращение директора"));
+for (const paragraph of homeCopy.director.quote.split(/(?<=\.)\s+/))
+  assert.ok(director.includes(paragraph));
+assert.ok(
+  html.indexOf(director) >=
+    html.indexOf(protectionSection) + protectionSection.length,
+  "The director message must follow the complete guarantee section",
+);
 assert.match(director, /<a\b[^>]*data-lr-lead-open[^>]*data-source="director"/);
 assert.ok(
   !html.includes('id="lr-timeline"'),
@@ -686,6 +696,10 @@ const businessSection = html.match(
   /<section id="lr-business-trust"[\s\S]*?<\/section>/,
 )?.[0];
 assert.ok(businessSection, "Corporate and parts conditions must exist");
+assert.match(
+  businessSection,
+  /<p class="lr-business-card__eyebrow">\s*Если вы представляете бизнес\s*<\/p>\s*<h2/,
+);
 for (const target of ["tel:+78126404804"])
   assert.ok(businessSection.includes(`href="${target}"`), target);
 assert.ok(
@@ -708,6 +722,7 @@ assert.deepEqual(
     "#lr-locations",
     "#lr-formats",
     "#lr-guarantee",
+    "#lr-director",
     "#lr-faq",
   ],
 );

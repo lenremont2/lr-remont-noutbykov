@@ -24,7 +24,7 @@ const macGuarantee = section(
 assert.equal((macGuarantee.match(/<article>/g) || []).length, 3);
 assert.ok(macGuarantee.includes("Гарантия и порядок ремонта"));
 assert.ok(
-  section(home, "lr-guarantee").includes("lr-home-protection--combined"),
+  section(home, "lr-guarantee").includes("lr-home-protection--detailed"),
 );
 
 test("All 49 child pages use the homepage service components", () => {
@@ -126,6 +126,11 @@ test("All 49 child pages use the homepage service components", () => {
       page.slug,
     );
     if (usesHomeVisuals) {
+      assert.equal(
+        section(html, "lr-director"),
+        section(home, "lr-director"),
+        page.slug,
+      );
       assert.match(
         html,
         /<dialog class="lr-modal lr-modal--compact"[^>]*data-lr-modal="lead"/,

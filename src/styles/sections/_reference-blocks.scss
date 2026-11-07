@@ -225,59 +225,69 @@
   line-height: 1.4;
   text-align: center;
 }
-#hop-landing .lr-home-protection--combined .lr-home-protection__facts {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+#hop-landing .lr-home-protection--detailed {
+  background: var(--lr-color-surface-alt);
 }
-#hop-landing .lr-home-protection--combined .lr-home-protection__facts article,
-#hop-landing
-  .lr-home-protection--combined
-  .lr-home-protection__facts
-  article:first-child {
-  display: block;
-  grid-row: auto;
-  grid-column: auto;
-  align-content: start;
-  padding: 24px;
-  border: 0;
+#hop-landing .lr-home-protection--detailed .lr-home-protection__facts {
+  gap: var(--lr-space-24);
+}
+#hop-landing .lr-home-protection--detailed .lr-home-protection__facts article {
+  padding: var(--lr-space-24);
+  border: 1px solid var(--lr-color-border);
   border-radius: var(--lr-radius);
   background: var(--lr-color-surface);
 }
-#hop-landing
-  .lr-home-protection--combined
-  .lr-home-protection__facts
-  article
-  h3 {
-  margin: 0 0 12px;
-  color: var(--lr-color-text);
-  font-size: 24px;
-  line-height: 1.2;
+#hop-landing .lr-home-protection--detailed .lr-home-protection__facts h3 {
+  margin: 0 0 var(--lr-space-8);
+  font-size: 22px;
+  line-height: 1.3;
+}
+#hop-landing .lr-home-protection--detailed .lr-home-protection__facts p {
+  max-width: 48ch;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
 }
 #hop-landing
-  .lr-home-protection--combined
+  .lr-home-protection--detailed
+  .lr-home-protection__facts
+  article:first-child {
+  gap: var(--lr-space-16);
+  background: var(--lr-color-dark);
+}
+#hop-landing
+  .lr-home-protection--detailed
   .lr-home-protection__facts
   article:first-child
   h3 {
-  color: var(--lr-color-text);
-  font-size: 24px;
+  color: var(--lr-color-on-dark);
+  font-size: 28px;
 }
 #hop-landing
-  .lr-home-protection--combined
+  .lr-home-protection--detailed
   .lr-home-protection__facts
-  article
+  article:first-child
   p {
-  color: var(--lr-color-muted);
-  font-size: 16px;
-  line-height: 1.5;
+  color: var(--lr-color-muted-on-dark);
 }
-#hop-landing .lr-home-protection--combined .lr-director {
-  padding: 0;
-  margin-top: 32px;
-  background: transparent;
+#hop-landing
+  .lr-home-protection--detailed
+  .lr-home-protection__facts
+  article:first-child
+  .lr-home-protection__value {
+  margin: 0;
+  color: var(--lr-color-accent);
+  font-size: clamp(48px, 6vw, 80px);
+  line-height: 1.1;
 }
-#hop-landing .lr-home-protection--combined .lr-director > .lr-container {
-  width: 100%;
-  max-width: none;
+@media (min-width: 768px) {
+  #hop-landing
+    .lr-home-protection--detailed
+    .lr-home-protection__facts
+    article:first-child {
+    grid-row: 1 / 4;
+    padding: var(--lr-space-40);
+  }
 }
 @media (min-width: 1200px) {
   #hop-landing .lr-formats--journey .lr-format__media {
@@ -325,19 +335,6 @@
   }
   #hop-landing .lr-price-row__order > span {
     display: none;
-  }
-  #hop-landing
-    .lr-home-protection--combined
-    .lr-home-protection__facts
-    article {
-    padding: 16px;
-  }
-  #hop-landing
-    .lr-home-protection--combined
-    .lr-home-protection__facts
-    article
-    h3 {
-    font-size: 20px;
   }
 }
 #hop-landing .lr-hero__offer-lead {

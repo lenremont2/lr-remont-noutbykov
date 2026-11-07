@@ -431,23 +431,14 @@
   }
 
   .lr-equipment-reference,
-  .lr-business-trust--reference,
-  .lr-home-protection--combined {
+  .lr-business-trust--reference {
     padding-block: 56px;
   }
 
-  .lr-business-trust--reference > .lr-container,
-  .lr-home-protection--combined > .lr-container {
+  .lr-business-trust--reference > .lr-container {
     width: 100%;
     max-width: 1120px;
     padding-inline: 20px;
-  }
-
-  .lr-home-protection--combined > .lr-container > .lr-section-heading h2 {
-    font-family: "LR Manrope", "LR Golos Text", sans-serif;
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 1.2;
   }
 
   .lr-equipment-reference__track {
@@ -499,7 +490,8 @@
   }
 
   .lr-business-card__eyebrow {
-    font-size: 11px;
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: 1.4;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 700;
@@ -559,8 +551,7 @@
     gap: 10px;
   }
 
-  .lr-business-card__actions .lr-button,
-  .lr-director--compact > .lr-button {
+  .lr-business-card__actions .lr-button {
     min-height: 46px;
     padding: 10px 12px;
     border-radius: 12px;
@@ -578,105 +569,6 @@
     background: rgb(255 255 255 / 10%);
     color: var(--lr-color-on-dark);
     font-size: 13px;
-  }
-
-  .lr-home-protection--combined .lr-home-protection__facts {
-    gap: 12px;
-    margin-bottom: 20px;
-  }
-
-  .lr-home-protection--combined .lr-home-protection__facts article {
-    padding: 16px;
-    border: 1px solid var(--lr-color-disabled-bg);
-    border-radius: 16px;
-    background: var(--lr-color-surface-subtle);
-  }
-
-  .lr-home-protection--combined .lr-home-protection__facts article h3 {
-    font-size: 14px;
-    line-height: 1.35;
-    margin: 0 0 6px;
-  }
-
-  .lr-home-protection--combined
-    .lr-home-protection__facts
-    article:first-child
-    h3 {
-    font-size: 14px;
-    line-height: 1.35;
-  }
-
-  .lr-home-protection--combined .lr-home-protection__facts article:first-child {
-    background: var(--lr-color-surface-subtle);
-  }
-
-  .lr-home-protection--combined .lr-home-protection__facts article p {
-    max-width: none;
-    font-size: 13px;
-    line-height: 1.5;
-    margin: 0;
-  }
-
-  .lr-home-protection--combined .lr-home-protection__value {
-    font-size: 24px;
-    line-height: 1.3;
-    margin: 0 0 4px;
-  }
-
-  .lr-director--compact {
-    padding: 24px 20px;
-    background: var(--lr-color-director-bg);
-    box-shadow:
-      inset 4px 0 var(--lr-color-director-border),
-      inset 0 0 0 1px var(--lr-color-director-border);
-    color: var(--lr-color-on-dark);
-    border-radius: 20px;
-  }
-
-  .lr-director--compact__heading {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-  }
-
-  .lr-director--compact__heading img {
-    width: 68px;
-    height: 68px;
-    flex: none;
-    object-fit: cover;
-    object-position: center 20%;
-    border: 2px solid var(--lr-color-highlight);
-    border-radius: 14px;
-  }
-
-  .lr-director--compact__heading p {
-    color: var(--lr-color-highlight-bright);
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0 0 5px;
-  }
-
-  .lr-director--compact__heading h3 {
-    color: var(--lr-color-on-dark);
-    font-size: clamp(20px, 2vw, 24px);
-    line-height: 1.25;
-    margin: 0;
-  }
-
-  .lr-director--compact blockquote {
-    margin: 14px 0;
-    padding: 14px;
-    background: rgb(255 255 255 / 6%);
-    border: 0;
-    border-radius: 12px;
-    color: #f8fafc;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .lr-director--compact > .lr-button {
-    width: 100%;
   }
 
   .lr-modal--compact {
@@ -880,26 +772,16 @@
   }
 
   #hop-landing .lr-equipment-reference,
-  #hop-landing .lr-business-trust--reference,
-  #hop-landing .lr-home-protection--combined {
+  #hop-landing .lr-business-trust--reference {
     padding-block: 88px;
   }
 
-  #hop-landing .lr-business-card h2,
-  #hop-landing
-    .lr-home-protection--combined
-    > .lr-container
-    > .lr-section-heading
-    h2 {
+  #hop-landing .lr-business-card h2 {
     font-size: 32px;
   }
 
   #hop-landing .lr-business-card {
     padding: 56px;
-  }
-
-  #hop-landing .lr-director--compact {
-    padding: 28px;
   }
 }
 

@@ -2,6 +2,7 @@
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
 import DirectorMessage from "./DirectorMessage.astro";
+import GuaranteeSupport from "../ui/GuaranteeSupport.astro";
 import home from "../../data/home-copy.json";
 
 interface Props {
@@ -11,7 +12,11 @@ interface Props {
 const { securityAnchor = true, withDirector = false } = Astro.props;
 const g = copy.guarantee;
 const facts = withDirector
-  ? home.guarantees.items
+  ? [
+      home.guarantees.items[1],
+      home.guarantees.items[0],
+      ...home.guarantees.items.slice(2),
+    ]
   : [
       {
         value: "",
@@ -35,14 +40,19 @@ const facts = withDirector
   id="lr-guarantee"
   class:list={[
     "lr-section lr-home-protection",
-    { "lr-home-protection--combined": withDirector },
+    { "lr-home-protection--detailed": withDirector },
   ]}
+  aria-labelledby="lr-guarantee-title"
 >
   <div class="lr-container">
     <SectionHeading
+      id="lr-guarantee-title"
       title={withDirector
         ? home.guarantees.title
         : "Гарантия и порядок ремонта"}
+      lead={withDirector
+        ? "Условия ремонта и гарантии фиксируем в документах. Вы получаете кассовый чек, договор и гарантийный талон."
+        : undefined}
     />
     <div
       id={securityAnchor ? "lr-security" : undefined}
@@ -60,6 +70,8 @@ const facts = withDirector
         ))
       }
     </div>
-    {withDirector && <DirectorMessage compact />}
+    {withDirector && <GuaranteeSupport />}
   </div>
 </section>
+
+{withDirector && <DirectorMessage />}

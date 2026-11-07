@@ -246,6 +246,7 @@ for (const page of pages) {
         "lr-workshop-gallery",
         "lr-business-trust",
         "lr-guarantee",
+        "lr-director",
         "lr-locations",
         guideId,
         "lr-faq",
@@ -272,6 +273,7 @@ for (const page of pages) {
           "lr-formats",
           "lr-prices",
           "lr-guarantee",
+          "lr-director",
           "lr-faq",
         ];
   const positions = sections.map((id) => html.indexOf('id="' + id + '"'));
