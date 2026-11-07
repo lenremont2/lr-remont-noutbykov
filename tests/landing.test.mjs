@@ -529,7 +529,7 @@ assert.equal(
 );
 assert.equal(
   (html.match(/class="lr-symptoms__group-media"/g) || []).length,
-  12,
+  15,
 );
 assert.equal(
   (html.match(/<a class="lr-symptoms__modern-card"[\s\S]*?<\/a>/g) || [])
@@ -539,7 +539,7 @@ assert.equal(
 const symptomCards =
   html.match(/<a\b[^>]*class="lr-symptoms__group(?: [^"]*)?"[\s\S]*?<\/a>/g) ||
   [];
-assert.equal(symptomCards.length, 12);
+assert.equal(symptomCards.length, 15);
 assert.equal(
   (brandHtml.match(/<a class="lr-symptoms__modern-card"[\s\S]*?<\/a>/g) || [])
     .length,
@@ -551,28 +551,32 @@ const secondarySymptom = data.symptoms.items.find(
   (item) => item.slug === "remont-cd-dvd-privoda-noutbuka",
 );
 assert.ok(secondarySymptom);
-const secondarySymptomLink = html.match(
-  /<p class="lr-symptoms__secondary">[\s\S]*?<\/p>/,
-)?.[0];
-assert.ok(
-  secondarySymptomLink?.includes('href="/' + secondarySymptom.slug + '.htm"'),
-);
-assert.ok(!symptomCards.join("").includes(secondarySymptom.slug));
+assert.ok(symptomCards.some((card) => card.includes("Не читает диски CD/DVD")));
 const symptomGroups = html.match(
   /<nav class="lr-symptoms__groups[^"]*"[\s\S]*?<\/nav>/,
 )?.[0];
 assert.ok(symptomGroups);
 assert.equal(
   (symptomGroups.match(/class="lr-symptoms__group(?: [^"]*)?"/g) || []).length,
-  12,
+  15,
 );
 for (const group of homeCopy.symptoms.items) {
   assert.ok(symptomGroups.includes(group.title), group.title);
   assert.ok(symptomGroups.includes(group.image), group.title);
   assert.ok(symptomGroups.includes(group.price), group.title);
-  assert.ok(symptomGroups.includes('href="' + group.href + '"'), group.title);
+  assert.ok(
+    symptomGroups.includes('data-symptom="' + group.title + '"'),
+    group.title,
+  );
 }
-for (const card of symptomCards) assert.ok(!/<button\b/.test(card));
+for (const card of symptomCards) {
+  assert.ok(!/<button\b/.test(card));
+  assert.match(card, /href="#lr-contact"/);
+  assert.match(card, /data-lr-lead-open/);
+  assert.match(card, /data-source="symptom-card"/);
+  assert.match(card, /aria-label="Оставить заявку: [^"]+"/);
+  assert.match(card, /data-symptom="[^"]+"/);
+}
 const directory = JSON.parse(
   readFileSync(new URL("../src/data/workshops.json", import.meta.url), "utf8"),
 );

@@ -113,6 +113,27 @@ const serviceGroups: ServiceGroup[] = grouped
               detail: "",
               price: "Бесплатная диагностика",
             },
+            {
+              title: "Чёрный экран после обновления BIOS",
+              image: "/media/symptom-no-power.webp",
+              href: "/noutbuk-ne-vklyuchaetsya.htm",
+              detail: "",
+              price: priceByWork("Восстановление прошивки BIOS"),
+            },
+            {
+              title: "Не работает тачпад",
+              image: "/media/symptom-slow.webp",
+              href: "#lr-contact",
+              detail: "",
+              price: "Бесплатная диагностика",
+            },
+            {
+              title: "Не читает диски CD/DVD",
+              image: "/media/failure-optical-drive.webp",
+              href: "#lr-contact",
+              detail: "",
+              price: "Бесплатная диагностика",
+            },
           ]
         : []),
     ]
@@ -260,13 +281,24 @@ const modernFaults = [
                     "lr-symptoms__group",
                     { "lr-symptoms__group--copy": grouped },
                   ]}
-                  href={group.href}
-                  data-lr-lead-open={group.href === "#lr-contact" || undefined}
+                  href={grouped ? "#lr-contact" : group.href}
+                  aria-label={
+                    grouped ? `Оставить заявку: ${group.title}` : undefined
+                  }
+                  data-lr-lead-open={
+                    grouped || group.href === "#lr-contact" || undefined
+                  }
                   data-symptom={
-                    group.href === "#lr-contact" ? group.title : undefined
+                    grouped || group.href === "#lr-contact"
+                      ? group.title
+                      : undefined
                   }
                   data-source={
-                    group.href === "#lr-contact" ? "data-recovery" : undefined
+                    grouped
+                      ? "symptom-card"
+                      : group.href === "#lr-contact"
+                        ? "data-recovery"
+                        : undefined
                   }
                 >
                   {compact && !grouped && (
@@ -374,11 +406,18 @@ const modernFaults = [
       )
     }
     {
-      !informational && !items && secondarySymptom && (
+      !informational && !items && !extraFaults && secondarySymptom && (
         <p class="lr-symptoms__secondary">
           Для ноутбуков с дисководом:{" "}
           <a href={pagePath(secondarySymptom)}>ремонт CD/DVD-привода</a>.
         </p>
+      )
+    }
+    {
+      !informational && grouped && !items && (
+        <div class="lr-section-note">
+          <LeadButton label="Заказать ремонт ноутбука" source="symptoms" />
+        </div>
       )
     }
     {

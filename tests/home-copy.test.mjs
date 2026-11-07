@@ -89,7 +89,7 @@ assert.equal(
 const symptoms = html.match(/<section id="lr-symptoms"[\s\S]*?<\/section>/)[0];
 assert.equal(
   (symptoms.match(/class="lr-symptoms__group-media"/g) || []).length,
-  12,
+  15,
 );
 assert.doesNotMatch(
   symptoms,
@@ -102,12 +102,20 @@ for (const title of [
   "Поломки разъёмов питания и наушников",
   "Быстро разряжается или вздулся аккумулятор",
   "Пропадает Wi-Fi и Bluetooth",
+  "Чёрный экран после обновления BIOS",
+  "Не работает тачпад",
+  "Не читает диски CD/DVD",
 ])
   assert.ok(symptoms.includes(title));
 for (const item of home.symptoms.items) {
   assert.ok(symptoms.includes(item.title) && symptoms.includes(item.price));
-  assert.ok(symptoms.includes(`href="${item.href}"`));
+  assert.ok(symptoms.includes(`data-symptom="${item.title}"`));
 }
+assert.doesNotMatch(
+  symptoms,
+  /href="[^#][^"]*"|Выберите|lr-symptoms__secondary/,
+);
+assert.ok(symptoms.includes("Заказать ремонт ноутбука"));
 for (const group of home.prices.groups) {
   check(group.diagnostic);
   for (const row of group.rows) for (const value of row) check(value);

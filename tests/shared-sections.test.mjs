@@ -45,7 +45,7 @@ test("All 49 child pages use the homepage service components", () => {
     if (isBrand) {
       const symptoms = section(html, "lr-symptoms");
       assert.match(symptoms, /<ul class="lr-symptoms__list">/, page.slug);
-      assert.equal((symptoms.match(/<li>/g) || []).length, 12, page.slug);
+      assert.equal((symptoms.match(/<li>/g) || []).length, 15, page.slug);
       assert.doesNotMatch(
         symptoms,
         /<a\b|<button\b|data-lr-swipe-slider|data-lr-lead-open/,
