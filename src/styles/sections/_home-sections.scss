@@ -1,38 +1,41 @@
 #hop-landing.lr-home-page,
-#hop-landing .lr-brand-page {
-  > .lr-hero {
+#hop-landing .lr-brand-page,
+#hop-landing .lr-problem-page,
+#hop-landing .lr-mac-page {
+  > .lr-hero,
+  > .lr-repair-journey {
     background-color: var(--lr-color-hero);
   }
 
-  > .lr-symptoms,
-  > .lr-formats,
-  > .lr-quiz,
-  > .lr-equipment-reference,
-  > .lr-home-protection,
-  > .lr-locations,
-  > .lr-faq-section {
+  > .lr-section:where(:not(.lr-hero):not(.lr-repair-journey)) {
+    --lr-color-link: var(--lr-color-link-on-tint);
     background: var(--lr-color-surface);
   }
 
-  > .lr-manufacturers,
-  > .lr-reviews--wide-photos,
-  > .lr-lab,
-  > .lr-business-trust,
-  > .lr-director,
-  > .lr-service-guide,
-  > .lr-brand-guide,
-  > .lr-related {
-    --lr-color-link: var(--lr-color-link-on-tint);
-    background: var(--lr-color-surface-alt);
+  > .lr-section:where(
+      :nth-of-type(even):not(.lr-hero):not(.lr-repair-journey)
+    ) {
+    background: var(--lr-color-section-tint);
   }
 
-  > .lr-home-pricing {
-    --lr-color-link: var(--lr-color-link-on-tint);
-    background: var(--lr-color-bg);
+  > .lr-section.lr-home-pricing {
+    background: var(--lr-color-section-muted);
   }
 
-  > .lr-contact {
-    --lr-color-link: var(--lr-color-link-on-tint);
-    background: var(--lr-color-accent-soft);
+  > .lr-section.lr-contact {
+    background: var(--lr-color-section-accent);
+  }
+}
+
+// The article follows reviews directly; keep the first four sections distinct.
+#hop-landing .lr-problem-page {
+  > .lr-section.lr-child-hero,
+  > .lr-section.lr-child-guide {
+    background: var(--lr-color-section-tint);
+  }
+
+  > .lr-section.lr-reviews--wide-photos,
+  > .lr-section.lr-formats {
+    background: var(--lr-color-surface);
   }
 }
