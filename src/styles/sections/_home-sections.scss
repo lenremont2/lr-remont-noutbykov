@@ -24,7 +24,11 @@
     background: var(--lr-color-surface-alt);
   }
 
-  > .lr-home-pricing,
+  > .lr-home-pricing {
+    --lr-color-link: var(--lr-color-link-on-tint);
+    background: var(--lr-color-bg);
+  }
+
   > .lr-contact {
     --lr-color-link: var(--lr-color-link-on-tint);
     background: var(--lr-color-accent-soft);

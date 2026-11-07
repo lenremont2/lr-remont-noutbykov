@@ -269,10 +269,10 @@ assert.equal(
 assert.doesNotMatch(processSection, /<details\b|data-source="process"/);
 for (const title of [
   "От Вашего звонка до исправного ноутбука",
-  "Вы звоните — мастер приезжает",
-  "Мастер проводит диагностику — бесплатно",
-  "Вы соглашаетесь — мастер ремонтирует",
-  "Вы проверяете ноутбук и получаете гарантию",
+  "Поступила заявка",
+  "Бесплатная диагностика",
+  "Согласование сметы",
+  "Финальная проверка",
 ])
   assert.ok(processSection.includes(title), title);
 assert.ok(processSection.includes("оплачиваете ремонт после проверки"));
