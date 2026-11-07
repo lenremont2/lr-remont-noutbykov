@@ -236,11 +236,11 @@ for (const page of pages) {
   const sections = content.brands.includes(page)
     ? [
         "lr-hero",
-        "lr-reviews",
-        "lr-quiz",
-        "lr-formats",
         "lr-symptoms",
+        "lr-formats",
+        "lr-reviews",
         "lr-prices",
+        "lr-quiz",
         "lr-process",
         "lr-lab",
         "lr-workshop-gallery",

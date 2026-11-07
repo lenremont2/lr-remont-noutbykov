@@ -29,23 +29,22 @@ const { page } = Astro.props;
   <div class="lr-brand-page">
     <Breadcrumbs current={page.label} />
     <Hero brand={page} variant="home" />
-    <Reviews scrollScene title="Отзывы наших клиентов" homeVariant />
-    <RepairQuiz brand={page} />
-    <RepairFormats journey />
     <Symptoms
       compact
       grouped
       extraFaults
-      informational
       title={`Неисправности ноутбуков ${page.label}`}
-      lead="Не включается, перегревается или работает со сбоями? Поможем с ремонтом, настройкой и обслуживанием. Причину и необходимые работы определим после диагностики."
+      lead={home.symptoms.lead}
     />
+    <RepairFormats journey />
+    <Reviews scrollScene title="Отзывы наших клиентов" homeVariant />
     <HomePricing
       title={`Сколько стоит ремонт ноутбука ${page.label}`}
       lead={`${home.prices.lead} Указана стоимость работы без запчастей.`}
       groups={[{ ...home.prices.groups[0], title: `Ноутбуки ${page.label}` }]}
       bonus={home.prices.bonus}
     />
+    <RepairQuiz brand={page} />
     <HomeRepairJourney />
     <MobileLab />
     <WorkshopGallery />

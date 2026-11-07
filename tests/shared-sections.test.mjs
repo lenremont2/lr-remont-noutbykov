@@ -44,25 +44,21 @@ test("All 49 child pages use the homepage service components", () => {
     const usesHomeVisuals = isBrand || isProblem;
     if (isBrand) {
       const symptoms = section(html, "lr-symptoms");
-      assert.match(symptoms, /<ul class="lr-symptoms__list">/, page.slug);
-      assert.equal((symptoms.match(/<li>/g) || []).length, 15, page.slug);
-      assert.doesNotMatch(
-        symptoms,
-        /<a\b|<button\b|data-lr-swipe-slider|data-lr-lead-open/,
+      assert.match(symptoms, /data-lr-swipe-slider/, page.slug);
+      assert.deepEqual(
+        symptoms.match(/<nav\b[\s\S]*?<\/nav>/)?.[0],
+        section(home, "lr-symptoms").match(/<nav\b[\s\S]*?<\/nav>/)?.[0],
         page.slug,
       );
       assert.deepEqual(
         [...html.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)]
-          .slice(0, 6)
-          .map((match) => match[1]),
-        [
-          "lr-hero",
-          "lr-reviews",
-          "lr-quiz",
-          "lr-formats",
-          "lr-symptoms",
-          "lr-prices",
-        ],
+          .map((match) => match[1])
+          .filter((id) => id !== "lr-brand-guide"),
+        [...home.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)]
+          .map((match) => match[1])
+          .filter(
+            (id) => !["lr-manufacturers", "lr-service-guide"].includes(id),
+          ),
         page.slug,
       );
     }

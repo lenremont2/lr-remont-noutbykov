@@ -1,4 +1,5 @@
-#hop-landing.lr-home-page {
+#hop-landing.lr-home-page,
+#hop-landing .lr-brand-page {
   > .lr-hero {
     background-color: var(--lr-color-hero);
   }
@@ -19,6 +20,7 @@
   > .lr-business-trust,
   > .lr-director,
   > .lr-service-guide,
+  > .lr-brand-guide,
   > .lr-related {
     --lr-color-link: var(--lr-color-link-on-tint);
     background: var(--lr-color-surface-alt);
