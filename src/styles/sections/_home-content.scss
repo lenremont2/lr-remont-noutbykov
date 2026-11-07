@@ -17,14 +17,23 @@
 #hop-landing .lr-director__identity {
   display: flex;
   flex-direction: column;
-  align-self: start;
   min-width: 0;
   background: var(--lr-color-hero);
   color: var(--lr-color-on-dark);
 }
 
 #hop-landing .lr-director__caption {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(64px, 28%);
+  align-items: center;
+  gap: 12px;
   padding: 24px 28px 28px;
+}
+
+#hop-landing .lr-director__caption .lr-signature {
+  width: 100%;
+  margin: 0;
+  color: var(--lr-color-on-dark);
 }
 
 #hop-landing .lr-director__caption .lr-caption {
@@ -96,29 +105,9 @@
 
 #hop-landing .lr-director__name {
   margin: 0;
-  font-size: 24px;
+  font-size: clamp(18px, 2.1vw, 24px);
   line-height: 1.25;
   font-weight: 600;
-}
-
-#hop-landing .lr-director__action {
-  display: grid;
-  align-items: center;
-  gap: 24px;
-  margin-top: 28px;
-  padding-top: 24px;
-  border-top: 1px solid var(--lr-color-border);
-}
-
-#hop-landing .lr-director__action .lr-signature {
-  width: 144px;
-  margin: 0;
-}
-
-#hop-landing .lr-director__action .lr-button {
-  width: 100%;
-  white-space: normal;
-  text-align: center;
 }
 
 #hop-landing .lr-signature {
@@ -174,7 +163,7 @@
 }
 
 #hop-landing .lr-director__photo {
-  flex: none;
+  flex: 1;
   min-height: 0;
   margin: 0;
   overflow: hidden;
@@ -182,7 +171,7 @@
 
 #hop-landing .lr-director__photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center 24%;
@@ -438,16 +427,6 @@
 
   #hop-landing .lr-director__copy {
     padding: 48px;
-  }
-
-  #hop-landing .lr-director__action {
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: 20px;
-  }
-
-  #hop-landing .lr-director__action .lr-button {
-    width: auto;
-    justify-self: end;
   }
 
   #hop-landing .lr-manufacturers__other-list {

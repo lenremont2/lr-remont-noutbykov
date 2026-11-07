@@ -357,6 +357,7 @@ assert.ok(director.includes('src="/media/director-sorokin-640.webp"'));
 assert.doesNotMatch(director, /lr-director--compact/);
 assert.match(director, /<h2 id="lr-director-title"/);
 assert.ok(director.includes("Обращение директора"));
+assert.equal(homeCopy.director.quote.split(/\n\s*\n/).length, 2);
 for (const paragraph of homeCopy.director.quote.split(/\n\s*\n/))
   assert.ok(director.includes(paragraph));
 assert.ok(
@@ -364,7 +365,7 @@ assert.ok(
     html.indexOf(protectionSection) + protectionSection.length,
   "The director message must follow the complete guarantee section",
 );
-assert.match(director, /<a\b[^>]*data-lr-lead-open[^>]*data-source="director"/);
+assert.doesNotMatch(director, /data-lr-lead-open|lr-director__action/);
 assert.ok(
   !html.includes('id="lr-timeline"'),
   "Times must be integrated into pricing",

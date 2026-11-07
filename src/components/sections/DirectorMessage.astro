@@ -1,6 +1,5 @@
 ---
 import SectionHeading from "../ui/SectionHeading.astro";
-import LeadButton from "../ui/LeadButton.astro";
 import DirectorSignature from "../ui/DirectorSignature.astro";
 import home from "../../data/home-copy.json";
 const paragraphs = home.director.quote.split(/\n\s*\n/);
@@ -26,8 +25,11 @@ const paragraphs = home.director.quote.split(/\n\s*\n/);
         />
       </figure>
       <div class="lr-director__caption">
-        <p class="lr-director__name">Денис Сорокин</p>
-        <p class="lr-caption">Директор Ленремонта</p>
+        <div class="lr-director__author">
+          <p class="lr-director__name">Денис Сорокин</p>
+          <p class="lr-caption">Директор Ленремонта</p>
+        </div>
+        <DirectorSignature />
       </div>
     </div>
     <div class="lr-director__copy">
@@ -49,10 +51,6 @@ const paragraphs = home.director.quote.split(/\n\s*\n/);
           ))
         }
       </blockquote>
-      <div class="lr-director__action">
-        <DirectorSignature />
-        <LeadButton label="Обсудить ремонт ноутбука" source="director" />
-      </div>
     </div>
   </div>
 </section>
