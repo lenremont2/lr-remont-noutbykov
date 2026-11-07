@@ -140,9 +140,13 @@ assert.doesNotMatch(
   section,
   /МАКЕТ|Ожидаем оригинал|оригиналы документов пока/,
 );
-for (const image of award.matchAll(/<img[^>]*src="([^"]+)"/g)) {
-  assert.ok(existsSync(new URL(`../public${image[1]}`, import.meta.url)));
-}
+assert.equal((award.match(/class="lr-document__emblem"/g) || []).length, 4);
+assert.doesNotMatch(award, /<img\b/);
+const awardProofs = [...award.matchAll(/href="([^"]+)"/g)];
+assert.equal(awardProofs.length, 4);
+for (const [, href] of awardProofs)
+  assert.ok(existsSync(new URL(`../public${href}`, import.meta.url)));
+assert.match(section, /lr-review__source--yandex/);
 assert.doesNotMatch(section, /lr-reviews__illustrations|repair-illustration-/);
 const illustrations = JSON.parse(
   readFileSync(
@@ -174,6 +178,7 @@ assert.equal(
   (ratings.match(/<div class="lr-reviews__rating-card\b/g) || []).length,
   3,
 );
+assert.equal((ratings.match(/lr-reviews__rating-platform/g) || []).length, 3);
 const ratingLinks = [
   ...ratings.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g),
 ];

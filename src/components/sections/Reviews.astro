@@ -4,6 +4,7 @@ import reviews from "../../data/reviews.json";
 import homePhotos from "../../data/review-illustrations.json";
 import ReviewCard from "../ui/ReviewCard.astro";
 import SectionHeading from "../ui/SectionHeading.astro";
+import AwardLaurel from "../ui/AwardLaurel.astro";
 const c = copy.reviews.fields;
 interface Props {
   scrollScene?: boolean;
@@ -35,34 +36,34 @@ const documents = [
   {
     image: "/media/lenremont-award-quality-2025.webp",
     title: "Премия «Знак качества»",
+    mark: ["ЗНАК", "КАЧЕСТВА"],
+    distinction: "1-е место",
     description:
       "1-е место — лучшее предприятие в сфере услуг Санкт-Петербурга.",
-    width: 1376,
-    height: 768,
   },
   {
     image: "/media/lenremont-award-personal-brand-2025.webp",
     title: "«Личный бренд — 2025»",
+    mark: ["ЛИЧНЫЙ", "БРЕНД"],
+    distinction: "2025",
     description:
       "Денис Сорокин — победитель рейтинга брендов «Делового Петербурга» в номинации «Личный бренд».",
-    width: 1489,
-    height: 881,
   },
   {
     image: "/media/lenremont-gratitude-2025.jpg",
     title: "Благодарственное письмо",
+    mark: ["ЗА", "ПОМОЩЬ"],
+    distinction: "2025",
     description:
       "От командования войсковой части 34497 за оказанную помощь. 25 сентября 2025 года.",
-    width: 1280,
-    height: 960,
   },
   {
     image: "/media/lenremont-award-city-contribution.jpg",
     title: "За вклад в развитие Санкт-Петербурга",
+    mark: ["САНКТ-", "ПЕТЕРБУРГ"],
+    distinction: "За вклад",
     description:
       "Денис Сорокин получает награду за значительный вклад в развитие города из рук Сергея Миронова.",
-    width: 1200,
-    height: 710,
   },
 ];
 ---
@@ -86,6 +87,9 @@ const documents = [
           {aggregators.map((item) => (
             <li>
               <div class="lr-reviews__rating-card">
+                {homeVariant && (
+                  <span class="lr-reviews__rating-platform">{item.name}</span>
+                )}
                 <strong class="lr-reviews__rating-value">
                   <span class="lr-visually-hidden">Рейтинг </span>
                   {ratingValue(item.rating)}
@@ -104,8 +108,12 @@ const documents = [
                   ))}
                 </span>
                 <span class="lr-reviews__rating-source">
-                  <span>{item.name}</span>
-                  <span aria-hidden="true"> · </span>
+                  {!homeVariant && (
+                    <>
+                      <span>{item.name}</span>
+                      <span aria-hidden="true"> · </span>
+                    </>
+                  )}
                   <span class="lr-reviews__rating-count">
                     {item.ratingCount.toLocaleString("ru-RU")}{" "}
                     {countLabel(item.ratingCount)}
@@ -180,39 +188,44 @@ const documents = [
   </div>
   {
     homeVariant && (
-      <div class="lr-container lr-reviews__documents">
-        <div class="lr-reviews__subhead">
-          <h3>Награды и благодарности</h3>
+      <div class="lr-reviews__documents">
+        <div class="lr-container">
+          <div class="lr-reviews__subhead">
+            <p class="lr-eyebrow">Репутация Ленремонта</p>
+            <h3>Награды компании — признание города и клиентов</h3>
+          </div>
+          <ul
+            class="lr-documents"
+            aria-label="Награды и благодарности компании"
+          >
+            {documents.map((document) => (
+              <li class="lr-document">
+                <a
+                  class="lr-document__preview"
+                  href={document.image}
+                  data-lr-photo-open
+                  aria-label={`Открыть: ${document.title}`}
+                >
+                  <span class="lr-document__emblem" aria-hidden="true">
+                    <AwardLaurel />
+                    <span class="lr-document__emblem-copy">
+                      <strong>
+                        {document.mark.map((line) => (
+                          <span>{line}</span>
+                        ))}
+                      </strong>
+                      <span>{document.distinction}</span>
+                    </span>
+                  </span>
+                </a>
+                <div class="lr-document__copy">
+                  <h4>{document.title}</h4>
+                  <p>{document.description}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
-        <ul
-          class="lr-documents"
-          tabindex="0"
-          aria-label="Награды и благодарности компании"
-        >
-          {documents.map((document) => (
-            <li class="lr-document">
-              <a
-                class="lr-document__preview"
-                href={document.image}
-                data-lr-photo-open
-                aria-label={`Открыть: ${document.title}`}
-              >
-                <img
-                  src={document.image}
-                  alt={document.title}
-                  width={document.width}
-                  height={document.height}
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
-              <div class="lr-document__copy">
-                <h4>{document.title}</h4>
-                <p>{document.description}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
       </div>
     )
   }
