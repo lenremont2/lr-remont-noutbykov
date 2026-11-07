@@ -166,7 +166,7 @@ const documents = [
           .filter((review) => !homeVariant || review.name !== "Петр Перцев")
           .map((review) => (
             <ReviewCard
-              hideYandexLinks={homeVariant}
+              plainSource={homeVariant}
               review={
                 homeVariant &&
                 homePhotos[review.name as keyof typeof homePhotos]

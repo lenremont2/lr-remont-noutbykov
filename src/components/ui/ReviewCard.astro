@@ -1,13 +1,12 @@
 ---
 interface Props {
-  hideYandexLinks?: boolean;
+  plainSource?: boolean;
   review: {
     name: string;
     avatar?: string;
     rating: number;
     date: string;
     text: string;
-    subject?: string;
     reviewUrl?: string;
     photos?: {
       src: string;
@@ -19,11 +18,7 @@ interface Props {
   };
   source: { name: string; url: string; branch: string };
 }
-const { review, source, hideYandexLinks = false } = Astro.props;
-const yandexSource = /yandex|Яндекс/i.test(
-  source.name + source.url + (review.reviewUrl ?? ""),
-);
-const hideSourceLink = hideYandexLinks && yandexSource;
+const { review, source, plainSource = false } = Astro.props;
 const nameParts = review.name.trim().split(/\s+/);
 const initials = (
   nameParts.length > 1
@@ -86,21 +81,11 @@ const excerpt = review.text.slice(0, 105).replace(/\s+\S*$/, "") + "…";
       </div>
     </div>
     {
-      hideSourceLink ? (
-        <span
-          class:list={[
-            "lr-review__source",
-            { "lr-review__source--yandex": yandexSource },
-          ]}
-        >
-          {source.name}
-        </span>
+      plainSource ? (
+        <span class="lr-review__source">{source.name}</span>
       ) : (
         <a
-          class:list={[
-            "lr-review__source",
-            { "lr-review__source--yandex": yandexSource },
-          ]}
+          class="lr-review__source"
           href={review.reviewUrl ?? source.url}
           target="_blank"
           rel="noopener noreferrer"
@@ -126,11 +111,6 @@ const excerpt = review.text.slice(0, 105).replace(/\s+\S*$/, "") + "…";
       )
     }
   </header>
-  {
-    review.subject && (
-      <p class="lr-caption lr-review__subject">{review.subject}</p>
-    )
-  }
   {
     longReview ? (
       <details class="lr-review__details">

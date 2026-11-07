@@ -33,15 +33,14 @@ assert.match(section, /data-lr-review-track/);
 assert.match(section, /aria-roledescription="карусель"/);
 assert.doesNotMatch(
   section,
-  /data-lr-review-prev|data-lr-review-next|lr-review__date|lr-review__footer/,
+  /data-lr-review-prev|data-lr-review-next|lr-review__date|lr-review__footer|lr-review__subject/,
 );
 for (const card of section.match(
   /<article class="lr-review">[\s\S]*?<\/article>/g,
 ) || []) {
-  assert.match(
-    card.match(/<header[\s\S]*?<\/header>/)?.[0] || "",
-    /lr-review__source/,
-  );
+  const header = card.match(/<header[\s\S]*?<\/header>/)?.[0] || "";
+  assert.match(header, /<span class="lr-review__source">[^<]+<\/span>/);
+  assert.doesNotMatch(header, /<a\b/);
 }
 assert.doesNotMatch(section, /Показать ещё|lr-reviews__more/);
 
@@ -84,10 +83,7 @@ assert.equal(photoBytes.readUInt16BE(0), 0xffd8, "Review photo must be JPEG");
 const photoCard = section
   .match(/<article class="lr-review">[\s\S]*?<\/article>/g)
   ?.find((card) => card.includes("/media/review-result-candid-imac.webp"));
-assert.ok(
-  photoCard?.includes(photoReview.subject),
-  "Photo subject must be explicit",
-);
+assert.ok(photoCard);
 assert.ok(photoCard.includes('href="/media/review-result-candid-imac.webp"'));
 assert.ok(!photoCard.includes(photoReview.reviewUrl));
 assert.ok(photoCard.includes("Яндекс Карты"));
@@ -102,7 +98,6 @@ assert.ok(
     new URL(`../public${computerReview.photos[0].src}`, import.meta.url),
   ),
 );
-assert.ok(section.includes(computerReview.subject));
 assert.ok(section.includes("/media/review-result-candid-desktop.webp"));
 for (const rating of reviews.ratings) {
   assert.ok(reviews.sources[rating.source]);
@@ -146,7 +141,7 @@ const awardProofs = [...award.matchAll(/href="([^"]+)"/g)];
 assert.equal(awardProofs.length, 4);
 for (const [, href] of awardProofs)
   assert.ok(existsSync(new URL(`../public${href}`, import.meta.url)));
-assert.match(section, /lr-review__source--yandex/);
+assert.doesNotMatch(section, /lr-review__source--yandex/);
 assert.doesNotMatch(section, /lr-reviews__illustrations|repair-illustration-/);
 const illustrations = JSON.parse(
   readFileSync(
@@ -191,9 +186,7 @@ assert.doesNotMatch(award, /№\s*1|номер\s*один/i);
 assert.ok(!award.includes("lr-reviews__rating-stars"));
 assert.doesNotMatch(section, /lr-reviews__ratings-reference|lr-reviews-hint/);
 assert.doesNotMatch(section, /data-lr-review-position/);
-console.log(
-  "24 laptop reviews and two explicitly labelled computer photo reviews: passed.",
-);
+console.log("24 laptop reviews and two computer photo reviews: passed.");
 
 const { initializeReviewSlider } = await import("../src/scripts/landing.js");
 const handlers = new Map();
