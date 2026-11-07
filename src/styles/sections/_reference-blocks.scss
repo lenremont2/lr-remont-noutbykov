@@ -346,17 +346,6 @@
     margin: 0;
   }
 }
-#hop-landing
-  .lr-home-protection--detailed
-  .lr-home-protection__facts
-  h3:first-child,
-#hop-landing
-  .lr-home-protection--detailed
-  .lr-home-protection__facts
-  h3:first-child
-  + p {
-  grid-column: 1 / -1;
-}
 @media (min-width: 900px) {
   #hop-landing .lr-home-protection--detailed .lr-section-heading {
     display: grid;

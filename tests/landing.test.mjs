@@ -341,10 +341,13 @@ assert.doesNotMatch(
 );
 assert.match(protectionSection, /<article>\s*<span[^>]*>365 дней<\/span>/);
 const protectionFacts = protectionSection;
-assert.doesNotMatch(protectionFacts, /25 СЦ|Свой склад/);
+assert.doesNotMatch(
+  protectionFacts,
+  /25 СЦ|Свой склад|Возвращаем заменённые детали/,
+);
 assert.equal(
   (protectionFacts.match(/class="lr-home-protection__value"/g) || []).length,
-  3,
+  4,
 );
 assert.equal((protectionFacts.match(/<article>/g) || []).length, 4);
 for (const fact of homeCopy.guarantees.items)
