@@ -1,0 +1,32 @@
+#hop-landing.lr-home-page {
+  > .lr-hero {
+    background-color: var(--lr-color-hero);
+  }
+
+  > .lr-symptoms,
+  > .lr-formats,
+  > .lr-quiz,
+  > .lr-equipment-reference,
+  > .lr-home-protection,
+  > .lr-locations,
+  > .lr-faq-section {
+    background: var(--lr-color-surface);
+  }
+
+  > .lr-manufacturers,
+  > .lr-reviews--wide-photos,
+  > .lr-lab,
+  > .lr-business-trust,
+  > .lr-director,
+  > .lr-service-guide,
+  > .lr-related {
+    --lr-color-link: var(--lr-color-link-on-tint);
+    background: var(--lr-color-surface-alt);
+  }
+
+  > .lr-home-pricing,
+  > .lr-contact {
+    --lr-color-link: var(--lr-color-link-on-tint);
+    background: var(--lr-color-accent-soft);
+  }
+}
