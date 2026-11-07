@@ -30,11 +30,14 @@ const facts = [
 ];
 const [homeLead, homeProtection] = home.hero.lead.split(/(?=Называем)/);
 const bulletIcons = [
+  "M16.403 12.652a3 3 0 000-5.304 3 3 0 00-3.75-3.751 3 3 0 00-5.305 0 3 3 0 00-3.751 3.75 3 3 0 000 5.305 3 3 0 003.75 3.751 3 3 0 005.305 0 3 3 0 003.751-3.75zm-2.546-4.46a.75.75 0 00-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z",
   "M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z",
   "M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z",
   "M2 4.75C2 3.784 2.784 3 3.75 3h4.836c.464 0 .909.184 1.237.513l1.414 1.414a.25.25 0 00.177.073h4.836c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0116.25 17H3.75A1.75 1.75 0 012 15.25V4.75z",
-  "M16.403 12.652a3 3 0 000-5.304 3 3 0 00-3.75-3.751 3 3 0 00-5.305 0 3 3 0 00-3.751 3.75 3 3 0 000 5.305 3 3 0 003.75 3.751 3 3 0 005.305 0 3 3 0 003.751-3.75zm-2.546-4.46a.75.75 0 00-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z",
+  "M2 6a2 2 0 012-2h12a2 2 0 012 2v1H2V6zm0 3h16v5a2 2 0 01-2 2H4a2 2 0 01-2-2V9zm3 3a1 1 0 100 2h3a1 1 0 100-2H5z",
+  "M7.707 3.293a1 1 0 010 1.414L5.414 7H12a6 6 0 010 12H9a1 1 0 110-2h3a4 4 0 000-8H5.414l2.293 2.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z",
   "M5.5 3A2.5 2.5 0 003 5.5v2.879a2.5 2.5 0 00.732 1.767l6.5 6.5a2.5 2.5 0 003.536 0l2.878-2.878a2.5 2.5 0 000-3.536l-6.5-6.5A2.5 2.5 0 008.38 3H5.5zM6 7a1 1 0 100-2 1 1 0 000 2z",
+  "M12 2a3 3 0 013 3 3 3 0 01-3 3H3a1 1 0 010-2h9a1 1 0 10-1-1 1 1 0 01-2 0 3 3 0 013-3zm3 7a3 3 0 110 6 1 1 0 010-2 1 1 0 100-2H2a1 1 0 010-2h13zM3 13h6a3 3 0 11-3 3 1 1 0 012 0 1 1 0 101-1H3a1 1 0 010-2z",
 ];
 ---
 
@@ -140,46 +143,20 @@ const bulletIcons = [
           </p>
           <ul class="lr-hero__benefits" aria-label="Условия ремонта">
             {home.hero.bullets.map((fact, index) => (
-              <li
-                class:list={[
-                  "lr-hero__benefit",
-                  { "lr-hero__benefit--bonus": index === 4 },
-                ]}
-              >
-                {index === 4 ? (
-                  <>
-                    <span class="lr-hero__benefit-icon" aria-hidden="true">
-                      <svg viewBox="0 0 20 20" fill="currentColor">
-                        <path
-                          d={bulletIcons[index]}
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </span>
-                    <div class="lr-hero__bonus-copy">
-                      <strong>{fact.title}</strong> <span>{fact.text}</span>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div class="lr-hero__benefit-top">
-                      <span class="lr-hero__benefit-icon" aria-hidden="true">
-                        <svg viewBox="0 0 20 20" fill="currentColor">
-                          <path
-                            d={bulletIcons[index]}
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </span>
-                      <strong>{fact.title}</strong>
-                    </div>
-                    <span class="lr-hero__benefit-description">
-                      {fact.text}
-                    </span>
-                  </>
-                )}
+              <li class="lr-hero__benefit">
+                <div class="lr-hero__benefit-top">
+                  <span class="lr-hero__benefit-icon" aria-hidden="true">
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        d={bulletIcons[index]}
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <strong>{fact.title}</strong>
+                </div>
+                <span class="lr-hero__benefit-description">{fact.text}</span>
               </li>
             ))}
           </ul>

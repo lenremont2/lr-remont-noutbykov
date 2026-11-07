@@ -58,8 +58,17 @@ for (const items of [
 }
 for (const value of home.lab.benefits) check(value);
 const hero = html.match(/<section id="lr-hero"[\s\S]*?<\/section>/)[0];
-assert.equal((hero.match(/class="lr-hero__benefit(?: |")/g) || []).length, 5);
-assert.equal((hero.match(/lr-hero__benefit--bonus/g) || []).length, 1);
+assert.equal((hero.match(/class="lr-hero__benefit(?: |")/g) || []).length, 8);
+assert.doesNotMatch(html, /БСО|бланк[а-я ]*строгой отчётности/iu);
+assert.equal(home.hero.bullets[0].title, "Официальная гарантия — 1 год");
+assert.match(home.hero.bullets[0].text, /договор, чек и гарантийный талон/);
+for (const title of [
+  "Оплата после проверки",
+  "Возврат старых деталей",
+  "Скидка до 15%",
+  "Продувка от пыли в подарок",
+])
+  assert.ok(home.hero.bullets.some((bullet) => bullet.title === title));
 assert.ok(hero.indexOf("lr-hero__benefits") < hero.indexOf("data-lr-hero-cta"));
 const prices = html.match(/<section id="lr-prices"[\s\S]*?<\/section>/)[0];
 assert.equal((prices.match(/data-lr-price-tab(?:\s|>)/g) || []).length, 2);

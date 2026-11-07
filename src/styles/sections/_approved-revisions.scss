@@ -81,11 +81,6 @@
     color: var(--lr-color-on-dark);
   }
 
-  .lr-hero__bonus-copy strong::after {
-    content: " ";
-    white-space: pre;
-  }
-
   .lr-symptoms--grouped .lr-symptoms__group--copy .lr-symptoms__group-media {
     position: relative;
     isolation: isolate;

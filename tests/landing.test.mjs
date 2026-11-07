@@ -163,7 +163,7 @@ const brandHero = brandHtml.match(
 assert.ok(brandHero);
 assert.equal(
   (brandHero.match(/class="lr-hero__benefit(?: |")/g) || []).length,
-  5,
+  8,
 );
 const casesEnabled = !readFileSync(
   new URL("../src/pages/index.astro", import.meta.url),
@@ -513,7 +513,7 @@ const homeFacts = [
     .replace("✓", "")
     .trim(),
 );
-assert.equal(homeFacts.length, 5);
+assert.equal(homeFacts.length, 8);
 for (const fact of homeCopy.hero.bullets)
   assert.ok(homeHeroText.includes(fact.title));
 for (const fact of homeCopy.hero.bullets)
