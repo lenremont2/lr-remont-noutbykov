@@ -160,8 +160,8 @@
 }
 
 #hop-landing .lr-hero__benefit-icon svg {
-  width: 18px;
-  height: 18px;
+  width: 32px;
+  height: 32px;
 }
 
 #hop-landing .lr-hero__benefit-top strong {
@@ -480,19 +480,19 @@
 
   .lr-hero__benefits {
     grid-template-columns: minmax(0, 1fr);
-    gap: 20px 24px;
+    gap: 24px 28px;
     margin: 0 0 28px;
   }
 
   .lr-hero__benefit {
     position: relative;
     display: block;
-    padding: 0 0 0 34px;
+    padding: 0 0 0 44px;
     border: 0;
     border-radius: 0;
     background: none;
     color: #dfedfe;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
   }
 
@@ -502,24 +502,20 @@
 
   .lr-hero__benefit-icon {
     position: absolute;
-    top: 1px;
+    top: -2px;
     left: 0;
-    width: 24px;
-    height: 24px;
-    border-radius: 4px;
-    background: rgb(28 150 84 / 30%);
+    width: 32px;
+    height: 32px;
+    border-radius: 0;
+    background: none;
     color: #70e49c;
   }
 
   .lr-hero__benefit-top strong {
     display: block;
     color: var(--lr-color-on-dark);
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.35;
-  }
-
-  .lr-hero__benefit:first-child .lr-hero__benefit-top strong {
-    color: var(--lr-hero-gold);
   }
 
   .lr-hero__benefit-description {
