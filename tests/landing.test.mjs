@@ -200,10 +200,8 @@ const positions = ids.map((id) => html.indexOf(`id="lr-${id}"`));
 assert.ok(
   positions.every((pos, i) => pos >= 0 && (!i || pos > positions[i - 1])),
 );
-for (const key of ["formats", "process"]) {
-  for (const item of data[key].items)
-    assert.ok(html.includes(item.title), `${key}: ${item.title}`);
-}
+for (const item of data.formats.items)
+  assert.ok(html.includes(item.title), `formats: ${item.title}`);
 assert.ok(!html.includes("lr-mobile-bar"));
 assert.ok(!html.includes("lr-swipe-pause"));
 const formatsSection = html.match(
@@ -269,11 +267,18 @@ assert.equal(
   data.process.items.length,
 );
 assert.doesNotMatch(processSection, /<details\b|data-source="process"/);
-for (const item of data.process.items) {
-  assert.ok(processSection.includes(item.title), item.title);
-}
-assert.ok(processSection.includes("до оплаты"));
-assert.ok(processSection.includes("До вашего согласия ремонт не начинаем"));
+for (const title of [
+  "От Вашего звонка до исправного ноутбука",
+  "Вы звоните — мастер приезжает",
+  "Мастер проводит диагностику — бесплатно",
+  "Вы соглашаетесь — мастер ремонтирует",
+  "Вы проверяете ноутбук и получаете гарантию",
+])
+  assert.ok(processSection.includes(title), title);
+assert.ok(processSection.includes("оплачиваете ремонт после проверки"));
+assert.ok(processSection.includes("Без Вашего согласия ремонт не начинается"));
+assert.ok(processSection.includes("полную диагностику Вашего ноутбука"));
+assert.doesNotMatch(processSection, /Расскажите|Передайте|Согласуйте|Опишите/);
 assert.equal(
   (processSection.match(/class="lr-repair-journey__inline-photo"/g) || [])
     .length,

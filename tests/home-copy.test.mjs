@@ -58,6 +58,14 @@ for (const items of [
 }
 for (const value of home.lab.benefits) check(value);
 const hero = html.match(/<section id="lr-hero"[\s\S]*?<\/section>/)[0];
+const quizIntro = plain(
+  html.match(/<div class="lr-quiz__intro">[\s\S]*?<\/div>/)[0],
+);
+assert.ok(quizIntro.includes("Пройдите онлайн-диагностику"));
+assert.ok(quizIntro.includes("Ответьте на несколько вопросов"));
+assert.ok(quizIntro.includes("предварительную стоимость"));
+assert.ok(quizIntro.includes("после бесплатной диагностики ноутбука"));
+assert.doesNotMatch(quizIntro, /Начнём с вашей ситуации|скидку до 15%/);
 assert.equal((hero.match(/class="lr-hero__benefit(?: |")/g) || []).length, 8);
 assert.doesNotMatch(html, /БСО|бланк[а-я ]*строгой отчётности/iu);
 assert.equal(home.hero.bullets[0].title, "Официальная гарантия — 1 год");
