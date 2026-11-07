@@ -27,6 +27,19 @@
   }
 }
 
+// Brand pages omit the manufacturer strip, so their background rhythm is reversed.
+#hop-landing .lr-brand-page {
+  > .lr-section:where(
+      :nth-of-type(even):not(.lr-hero):not(.lr-repair-journey)
+    ) {
+    background: var(--lr-color-surface);
+  }
+
+  > .lr-section:where(:nth-of-type(odd):not(.lr-hero):not(.lr-repair-journey)) {
+    background: var(--lr-color-section-tint);
+  }
+}
+
 // The article follows reviews directly; keep the first four sections distinct.
 #hop-landing .lr-problem-page {
   > .lr-section.lr-child-hero,
