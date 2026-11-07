@@ -71,7 +71,7 @@
   margin: 0;
   max-width: 62ch;
   color: var(--lr-color-muted);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.65;
 }
@@ -87,7 +87,7 @@
   padding-left: 20px;
   border-left: 2px solid var(--lr-color-accent);
   color: var(--lr-color-text);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.45;
   letter-spacing: -0.015em;
@@ -417,7 +417,7 @@
   }
 
   #hop-landing .lr-director__principle {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   #hop-landing .lr-manufacturers__list {
@@ -431,7 +431,7 @@
 
 @media (min-width: 1024px) {
   #hop-landing .lr-director__message {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
   }
 
