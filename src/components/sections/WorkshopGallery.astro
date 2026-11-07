@@ -1,7 +1,12 @@
 ---
 import SectionHeading from "../ui/SectionHeading.astro";
 import home from "../../data/home-copy.json";
-const photos = ["soldering", "diagnostics", "parts", "testing"];
+const photos = [
+  "workshop-v5-soldering-1280.webp",
+  "workshop-v4-diagnostics-1280.webp",
+  "workshop-v4-parts-1280.webp",
+  "workshop-v4-testing-1280.webp",
+];
 ---
 
 <section
@@ -27,12 +32,12 @@ const photos = ["soldering", "diagnostics", "parts", "testing"];
         home.equipment.items.map((item, index) => (
           <article class="lr-equipment-reference__card">
             <a
-              href={"/media/workshop-v4-" + photos[index] + "-1280.webp"}
+              href={"/media/" + photos[index]}
               data-lr-photo-open
               aria-label={"Увеличить фото: " + item.title}
             >
               <img
-                src={"/media/workshop-v4-" + photos[index] + "-1280.webp"}
+                src={"/media/" + photos[index]}
                 alt={item.title}
                 width="1280"
                 height="720"
