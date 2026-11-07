@@ -335,8 +335,10 @@ const protectionSection = html.match(
 )?.[0];
 assert.ok(protectionSection?.includes('id="lr-security"'));
 assert.doesNotMatch(protectionSection, /<details\b|id="lr-director"/);
-assert.ok(protectionSection.includes("Если неисправность появилась снова"));
-assert.ok(protectionSection.includes('href="tel:+78123444444"'));
+assert.doesNotMatch(
+  protectionSection,
+  /lr-guarantee__support|Если неисправность появилась снова/,
+);
 assert.match(protectionSection, /<article>\s*<span[^>]*>365 дней<\/span>/);
 const protectionFacts = protectionSection;
 assert.equal((protectionFacts.match(/<article>/g) || []).length, 4);

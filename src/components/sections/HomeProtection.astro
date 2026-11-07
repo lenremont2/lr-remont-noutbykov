@@ -2,7 +2,6 @@
 import copy from "../../data/laptop-service.json";
 import SectionHeading from "../ui/SectionHeading.astro";
 import DirectorMessage from "./DirectorMessage.astro";
-import GuaranteeSupport from "../ui/GuaranteeSupport.astro";
 import home from "../../data/home-copy.json";
 
 interface Props {
@@ -70,7 +69,6 @@ const facts = withDirector
         ))
       }
     </div>
-    {withDirector && <GuaranteeSupport />}
   </div>
 </section>
 
