@@ -3,7 +3,7 @@ import SectionHeading from "../ui/SectionHeading.astro";
 import LeadButton from "../ui/LeadButton.astro";
 import DirectorSignature from "../ui/DirectorSignature.astro";
 import home from "../../data/home-copy.json";
-const paragraphs = home.director.quote.split(/(?<=\.)\s+/);
+const paragraphs = home.director.quote.split(/\n\s*\n/);
 ---
 
 <section

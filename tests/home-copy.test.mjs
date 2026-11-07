@@ -33,7 +33,6 @@ for (const value of [
   home.business.title,
   home.business.lead,
   home.guarantees.title,
-  home.director.quote,
   home.locations.title,
   home.locations.lead,
   home.faq.title,
@@ -43,6 +42,7 @@ for (const value of [
   home.contact.messengerText,
 ])
   check(value);
+for (const paragraph of home.director.quote.split(/\n\s*\n/)) check(paragraph);
 for (const items of [
   home.hero.bullets,
   home.formats.items,
