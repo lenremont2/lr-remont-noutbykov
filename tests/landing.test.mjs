@@ -357,7 +357,7 @@ assert.ok(director.includes('src="/media/director-sorokin-640.webp"'));
 assert.doesNotMatch(director, /lr-director--compact/);
 assert.match(director, /<h2 id="lr-director-title"/);
 assert.ok(director.includes("Обращение директора"));
-assert.equal(homeCopy.director.quote.split(/\n\s*\n/).length, 2);
+assert.equal(homeCopy.director.quote.split(/\n\s*\n/).length, 3);
 for (const paragraph of homeCopy.director.quote.split(/\n\s*\n/))
   assert.ok(director.includes(paragraph));
 assert.ok(
