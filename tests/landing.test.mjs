@@ -709,6 +709,7 @@ const homeContact = html.match(
 )?.[0];
 assert.ok(homeContact.includes("Позвоните нам по телефону"));
 assert.ok(homeContact.includes("Или напишите нам в мессенджере"));
+assert.doesNotMatch(homeContact, /Связь в мессенджерах без ожидания/);
 assert.ok(!homeContact.includes(data.contact.fields["Подпись режима"]));
 assert.ok(
   !homeContact.includes("Пришлите модель ноутбука и описание проблемы."),
