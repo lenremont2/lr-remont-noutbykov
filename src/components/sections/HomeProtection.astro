@@ -60,7 +60,7 @@ const facts = withDirector
       {
         facts.map((fact) => (
           <article>
-            {withDirector && (
+            {withDirector && fact.value && (
               <span class="lr-home-protection__value">{fact.value}</span>
             )}
             <h3>{fact.title}</h3>
