@@ -2,7 +2,6 @@
 import copy from "../../data/laptop-service.json";
 import home from "../../data/home-copy.json";
 import SectionHeading from "../ui/SectionHeading.astro";
-import LeadButton from "../ui/LeadButton.astro";
 import { pagePath } from "../../data/service-pages";
 interface Props {
   compact?: boolean;
@@ -411,24 +410,6 @@ const modernFaults = [
           Для ноутбуков с дисководом:{" "}
           <a href={pagePath(secondarySymptom)}>ремонт CD/DVD-привода</a>.
         </p>
-      )
-    }
-    {
-      !informational && grouped && !items && (
-        <div class="lr-section-note">
-          <LeadButton label="Заказать ремонт ноутбука" source="symptoms" />
-        </div>
-      )
-    }
-    {
-      !informational && !compact && (
-        <div class="lr-section-note">
-          <p>{c.fields["Пояснение цены"]}</p>
-          <LeadButton
-            label="Узнать стоимость ремонта"
-            source="symptoms-other"
-          />
-        </div>
       )
     }
   </div>

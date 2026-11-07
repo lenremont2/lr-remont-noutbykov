@@ -421,24 +421,6 @@
     margin-top: 24px;
   }
 
-  .lr-section-note {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 32px;
-    padding-top: 24px;
-    border-top: 1px solid var(--lr-color-border);
-  }
-
-  .lr-section-note p {
-    max-width: 62ch;
-    color: var(--lr-color-muted);
-  }
-
-  .lr-section-note h3 {
-    margin-bottom: 8px;
-  }
-
   .lr-prices {
     background: var(--lr-color-surface-alt);
   }
@@ -1572,17 +1554,6 @@
   #hop-landing .lr-symptoms__modern-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--lr-space-24);
-  }
-
-  #hop-landing .lr-section-note {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  #hop-landing .lr-section-note .lr-button,
-  #hop-landing .lr-section-note .lr-text-action {
-    flex: none;
   }
 
   #hop-landing .lr-expertise__grid {

@@ -123,7 +123,7 @@ assert.doesNotMatch(
   symptoms,
   /href="[^#][^"]*"|Выберите|lr-symptoms__secondary/,
 );
-assert.ok(symptoms.includes("Заказать ремонт ноутбука"));
+assert.ok(!symptoms.includes("lr-section-note"));
 for (const group of home.prices.groups) {
   check(group.diagnostic);
   for (const row of group.rows) for (const value of row) check(value);
