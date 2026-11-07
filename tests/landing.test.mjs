@@ -347,11 +347,15 @@ assert.doesNotMatch(
 );
 assert.equal(
   (protectionFacts.match(/class="lr-home-protection__value"/g) || []).length,
-  4,
+  1,
+);
+assert.equal(
+  (protectionFacts.match(/class="lr-home-protection__icon"/g) || []).length,
+  3,
 );
 assert.equal((protectionFacts.match(/<article>/g) || []).length, 4);
 for (const fact of homeCopy.guarantees.items)
-  for (const text of [fact.value, fact.title, fact.text])
+  for (const text of [fact.title, fact.text])
     assert.ok(protectionFacts.includes(text), text);
 const director = html.match(
   /<section\b[^>]*id="lr-director"[\s\S]*?<\/section>/,

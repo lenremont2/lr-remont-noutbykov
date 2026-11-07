@@ -329,6 +329,20 @@
   font-weight: 500;
   line-height: 1.1;
 }
+#hop-landing .lr-home-protection__icon {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 8px;
+  border-radius: var(--lr-radius);
+  background: var(--lr-color-bg);
+  color: var(--lr-color-text);
+}
+#hop-landing .lr-home-protection__icon svg {
+  width: 48px;
+  height: 48px;
+}
 @media (min-width: 600px) {
   #hop-landing
     .lr-home-protection--detailed
@@ -341,7 +355,7 @@
     .lr-home-protection--detailed
     .lr-home-protection__facts
     article:not(:first-child)
-    .lr-home-protection__value {
+    .lr-home-protection__icon {
     grid-row: 1 / 3;
     margin: 0;
   }
