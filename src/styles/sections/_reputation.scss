@@ -8,36 +8,39 @@
 }
 
 #hop-landing .lr-reviews--wide-photos .lr-reviews__rating-card {
-  gap: 10px;
-  padding: 24px 12px;
-  border: 1px solid var(--lr-color-border);
-  border-radius: var(--lr-radius);
+  gap: 8px;
+  padding: 18px 8px;
+  border: 1px solid var(--lr-color-border-soft);
+  border-radius: 16px;
   background: var(--lr-color-surface);
   color: var(--lr-color-text);
+  box-shadow: 0 6px 20px rgb(12 35 75 / 5%);
 }
 
 #hop-landing .lr-reviews--wide-photos .lr-reviews__rating-platform {
   display: grid;
   place-items: center;
-  min-height: 40px;
-  color: var(--lr-color-text);
-  font-size: clamp(14px, 2.3vw, 28px);
-  font-weight: 700;
+  min-height: 32px;
+  color: var(--lr-color-muted);
+  font-size: clamp(12px, 1.4vw, 16px);
+  font-weight: 600;
   line-height: 1.25;
 }
 
 #hop-landing .lr-reviews--wide-photos .lr-reviews__rating-value {
   color: var(--lr-color-text);
-  font-size: clamp(32px, 4vw, 52px);
+  font-size: clamp(30px, 3.4vw, 44px);
+  font-weight: 700;
 }
 
 #hop-landing .lr-reviews--wide-photos .lr-reviews__rating-stars {
   color: var(--lr-reputation-gold);
+  gap: 3px;
 }
 
 #hop-landing .lr-reviews--wide-photos .lr-reviews__rating-source {
   color: var(--lr-color-muted);
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #hop-landing .lr-reviews--wide-photos .lr-reviews__rating-count {

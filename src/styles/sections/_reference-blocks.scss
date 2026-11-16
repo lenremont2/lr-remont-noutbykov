@@ -394,6 +394,31 @@
   }
 }
 @media (max-width: 767px) {
+  #hop-landing .lr-home-pricing--reference .lr-price-table,
+  #hop-landing .lr-home-pricing--reference .lr-price-table tbody {
+    display: block;
+    width: 100%;
+  }
+  #hop-landing .lr-home-pricing--reference .lr-price-table tbody:last-child tr {
+    position: relative;
+    display: block;
+  }
+  #hop-landing .lr-home-pricing--reference .lr-price-table tbody:last-child th {
+    display: block;
+  }
+  #hop-landing .lr-home-pricing--reference .lr-price-table__work {
+    display: block;
+    padding-right: 42%;
+  }
+  #hop-landing
+    .lr-home-pricing--reference
+    .lr-price-table
+    .lr-home-pricing__price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+  }
   #hop-landing .lr-price-tabs button {
     padding: 10px 8px;
     font-size: 14px;

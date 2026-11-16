@@ -199,6 +199,11 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     padding-bottom: 16px;
+    scrollbar-width: none;
+  }
+
+  .lr-formats--journey .lr-formats__grid::-webkit-scrollbar {
+    display: none;
   }
 
   .lr-formats--journey .lr-format {
