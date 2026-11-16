@@ -201,6 +201,11 @@ assert.equal(
   3,
 );
 assert.equal((ratings.match(/lr-reviews__rating-platform/g) || []).length, 3);
+for (const count of ["2 500+", "1 500+"]) {
+  assert.ok(ratings.includes(count), count);
+}
+assert.equal((ratings.match(/lr-reviews__rating-stars/g) || []).length, 3);
+assert.equal((ratings.match(/Рейтинг /g) || []).length, 3);
 const ratingLinks = [
   ...ratings.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g),
 ];

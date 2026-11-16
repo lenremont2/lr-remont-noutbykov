@@ -1192,7 +1192,8 @@
   }
 
   .lr-field-error:empty,
-  .lr-form__message:empty {
+  .lr-form__message:empty,
+  .lr-form__ready:empty {
     display: none;
   }
 
@@ -1273,6 +1274,8 @@
   }
 
   .lr-dialpad__keys button {
+    display: grid;
+    place-items: center;
     min-height: 48px;
     border: 1px solid var(--lr-color-control-border);
     border-radius: var(--lr-radius-small);
@@ -1416,6 +1419,27 @@
     height: auto;
     background: var(--lr-white);
     border-radius: 12px;
+  }
+}
+
+@media (max-width: 1023px) {
+  #hop-landing .lr-contact {
+    text-align: center;
+  }
+
+  #hop-landing .lr-contact p {
+    margin-inline: auto;
+  }
+
+  #hop-landing .lr-contact .lr-form__consent {
+    justify-content: center;
+  }
+
+  #hop-landing .lr-contact #lr-contact-form-phone {
+    font-size: 24px;
+    line-height: 1.3;
+    font-variant-numeric: tabular-nums;
+    text-align: center;
   }
 }
 

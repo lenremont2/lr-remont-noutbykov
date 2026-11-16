@@ -823,7 +823,9 @@ export function updateFormReadiness(form) {
     form.getAttribute?.("aria-busy") === "true" ||
     !(phoneReady && consentReady && visitReady);
   form.querySelector("[data-lr-form-ready]").textContent = !phoneReady
-    ? "Введите номер телефона полностью."
+    ? form.elements.phone.value.trim()
+      ? "Введите номер телефона полностью."
+      : ""
     : !visitReady
       ? "Укажите адрес и место ремонта."
       : !consentReady
@@ -1291,8 +1293,6 @@ export function initializeLanding() {
     if (!form.matches("#hop-landing [data-lr-form]") || event.defaultPrevented)
       return;
     event.preventDefault();
-    form.querySelector("[data-lr-form-message]").textContent =
-      "Отправка временно недоступна. Позвоните по телефону на странице или повторите попытку позже.";
   });
   mobile.addEventListener("change", () => {
     root.querySelectorAll("[data-lr-form]").forEach(updatePhoneMode);

@@ -79,18 +79,21 @@
     {
       "name": "Яндекс Карты",
       "url": "https://yandex.ru/maps/-/CLs1j84s",
+      "summaryCount": "2 500+",
       "rating": 5,
       "ratingCount": 2818
     },
     {
       "name": "2ГИС",
       "url": "https://go.2gis.com/dBctd",
+      "summaryCount": "1 500+",
       "rating": 4.9,
       "ratingCount": 273
     },
     {
       "name": "Google",
       "url": "https://www.google.com/maps/search/ленремонт/@59.9449329,30.2798636,11z",
+      "summaryCount": "1 500+",
       "rating": 4.9,
       "ratingCount": 1692
     }

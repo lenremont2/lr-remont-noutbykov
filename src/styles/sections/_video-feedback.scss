@@ -107,12 +107,13 @@
 }
 
 #hop-landing .lr-reviews__rating-value {
-  font-size: 30px;
+  font-size: clamp(20px, 4vw, 44px);
+  white-space: nowrap;
 }
 
 #hop-landing .lr-reviews__rating-stars svg {
-  width: 14px;
-  height: 14px;
+  width: 22px;
+  height: 22px;
 }
 
 #hop-landing .lr-reviews__frame {
@@ -121,7 +122,7 @@
 }
 
 #hop-landing .lr-reviews__rating-source {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #hop-landing .lr-reviews__awards {

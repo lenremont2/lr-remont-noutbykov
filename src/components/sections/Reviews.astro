@@ -18,20 +18,10 @@ interface Aggregator {
   url: string;
   rating: number;
   ratingCount: number;
+  summaryCount: string;
 }
 const { aggregators = [] } = reviews as typeof reviews & {
   aggregators?: Aggregator[];
-};
-const ratingValue = (rating: number) =>
-  rating.toLocaleString("ru-RU", {
-    minimumFractionDigits: 1,
-    maximumFractionDigits: 1,
-  });
-const countLabel = (count: number) => {
-  const last = count % 10;
-  const lastTwo = count % 100;
-  if (lastTwo >= 11 && lastTwo <= 14) return "оценок";
-  return last === 1 ? "оценка" : last >= 2 && last <= 4 ? "оценки" : "оценок";
 };
 ---
 
@@ -54,12 +44,13 @@ const countLabel = (count: number) => {
           {aggregators.map((item) => (
             <li>
               <div class="lr-reviews__rating-card">
-                {homeVariant && (
-                  <span class="lr-reviews__rating-platform">{item.name}</span>
-                )}
+                <span class="lr-reviews__rating-platform">{item.name}</span>
                 <strong class="lr-reviews__rating-value">
                   <span class="lr-visually-hidden">Рейтинг </span>
-                  {ratingValue(item.rating)}
+                  {item.rating.toLocaleString("ru-RU", {
+                    minimumFractionDigits: 1,
+                    maximumFractionDigits: 1,
+                  })}
                   <span class="lr-visually-hidden"> из 5</span>
                 </strong>
                 <span class="lr-reviews__rating-stars" aria-hidden="true">
@@ -75,15 +66,8 @@ const countLabel = (count: number) => {
                   ))}
                 </span>
                 <span class="lr-reviews__rating-source">
-                  {!homeVariant && (
-                    <>
-                      <span>{item.name}</span>
-                      <span aria-hidden="true"> · </span>
-                    </>
-                  )}
                   <span class="lr-reviews__rating-count">
-                    {item.ratingCount.toLocaleString("ru-RU")}{" "}
-                    {countLabel(item.ratingCount)}
+                    {item.summaryCount} оценок
                   </span>
                 </span>
               </div>
