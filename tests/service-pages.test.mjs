@@ -197,8 +197,8 @@ for (const page of pages) {
       `Warning must not be duplicated: ${page.slug}`,
     );
     assert.ok(
-      serviceHero.includes('href="#lr-first-aid"'),
-      `First actions must be reachable from the hero: ${page.slug}`,
+      !serviceHero.includes('href="#lr-first-aid"'),
+      `First actions link must not appear in the hero: ${page.slug}`,
     );
     assert.ok(html.includes(`src="${page.heroImage}"`), page.slug);
     assert.ok(html.includes('href="#lr-first-aid"'), page.slug);
@@ -403,6 +403,22 @@ for (const page of pages) {
     /<section id="lr-prices"[\s\S]*?<\/section>/,
   )?.[0];
   assert.ok(priceSection, page.slug);
+  if (content.problems.includes(page)) {
+    assert.ok(
+      priceSection.includes("Диагностика и стоимость ремонта"),
+      page.slug,
+    );
+    assert.ok(
+      priceSection.includes(
+        page.priceWorks.length
+          ? "Запчасти оплачиваются отдельно"
+          : "После проверки определим причину неисправности",
+      ),
+      page.slug,
+    );
+    for (const work of page.priceWorks)
+      assert.ok(priceSection.includes(work), page.slug);
+  }
   if (content.brands.includes(page)) {
     assert.equal((priceSection.match(/<table\b/g) || []).length, 1, page.slug);
     assert.ok(!priceSection.includes("MacBook"), page.slug);

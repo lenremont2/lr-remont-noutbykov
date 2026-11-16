@@ -131,11 +131,11 @@
   --lr-shadow-modal: 0 24px 80px rgb(0 0 0 / 24%);
   --lr-duration-fast: 160ms;
   --lr-duration-normal: 240ms;
-  --lr-font-size-h1: clamp(1.875rem, 8vw, 2.25rem);
-  --lr-font-size-h2: clamp(2rem, 8.7vw, 2.25rem);
+  --lr-font-size-h1: clamp(30px, 8vw, 32px);
+  --lr-font-size-h2: clamp(28px, 7.5vw, 30px);
   --lr-font-size-h3: 1.25rem;
-  --lr-font-size-body: 1rem;
-  --lr-font-size-lead: 1.125rem;
+  --lr-font-size-body: 15px;
+  --lr-font-size-lead: 17px;
   --lr-font-size-caption: 0.875rem;
   @each $space in 4, 8, 12, 16, 20, 24, 28, 32, 40, 48, 56, 64, 72, 96, 112, 144
   {

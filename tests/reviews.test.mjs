@@ -43,6 +43,14 @@ for (const card of section.match(
   assert.doesNotMatch(header, /<a\b/);
 }
 assert.doesNotMatch(section, /Показать ещё|lr-reviews__more/);
+assert.match(
+  section,
+  /class="lr-review__excerpt"|class="lr-review__text lr-review__excerpt"/,
+);
+assert.match(
+  section,
+  /<details class="lr-review__details">\s*<summary>\s*<span class="lr-review__read">Читать далее<\/span>/,
+);
 
 for (const review of reviews.items) {
   if (review.name === "Петр Перцев") continue;
@@ -388,6 +396,18 @@ const pointer = (overrides = {}) => ({
   ...overrides,
 });
 press("Home");
+trackHandlers.get("pointerdown")(
+  pointer({
+    target: {
+      closest: (selector) => {
+        assert.ok(selector.includes("details:not(.lr-review__details)"));
+        return null;
+      },
+    },
+  }),
+);
+assert.equal(track.dataset.lrDragging, "true", "Review text allows dragging");
+trackHandlers.get("pointerup")(pointer({ buttons: 0 }));
 trackHandlers.get("pointerdown")(pointer());
 assert.equal(track.dataset.lrDragging, "true");
 assert.equal(track.captured, 7);

@@ -28,8 +28,6 @@ const initials = (
         .join("")
     : review.name.trim().slice(0, 2)
 ).toLocaleUpperCase("ru-RU");
-const longReview = review.text.length > 145;
-const excerpt = review.text.slice(0, 105).replace(/\s+\S*$/, "") + "…";
 ---
 
 <article class="lr-review">
@@ -111,22 +109,16 @@ const excerpt = review.text.slice(0, 105).replace(/\s+\S*$/, "") + "…";
       )
     }
   </header>
-  {
-    longReview ? (
-      <details class="lr-review__details">
-        <summary>
-          <>
-            <span class="lr-review__excerpt">{excerpt}</span>
-            <span class="lr-review__text lr-review__full">{review.text}</span>
-            <span class="lr-review__read">Читать далее</span>
-            <span class="lr-review__collapse">Свернуть отзыв</span>
-          </>
-        </summary>
-      </details>
-    ) : (
-      <p class="lr-review__text">{review.text}</p>
-    )
-  }
+  <div class="lr-review__body" data-lr-review-body>
+    <p class="lr-review__text lr-review__excerpt">{review.text}</p>
+    <details class="lr-review__details">
+      <summary>
+        <span class="lr-review__read">Читать далее</span>
+        <span class="lr-review__collapse">Свернуть отзыв</span>
+      </summary>
+      <p class="lr-review__text lr-review__full">{review.text}</p>
+    </details>
+  </div>
   {
     review.photos?.length ? (
       <div

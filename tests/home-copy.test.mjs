@@ -66,17 +66,17 @@ assert.ok(quizIntro.includes("Ответьте на несколько вопр�
 assert.ok(quizIntro.includes("предварительную стоимость"));
 assert.ok(quizIntro.includes("после бесплатной диагностики ноутбука"));
 assert.doesNotMatch(quizIntro, /Начнём с вашей ситуации|скидку до 15%/);
-assert.equal((hero.match(/class="lr-hero__benefit(?: |")/g) || []).length, 8);
+assert.equal((hero.match(/class="lr-hero__benefit(?: |")/g) || []).length, 6);
 assert.doesNotMatch(html, /БСО|бланк[а-я ]*строгой отчётности/iu);
 assert.equal(home.hero.bullets[0].title, "Официальная гарантия — 1 год");
 assert.match(home.hero.bullets[0].text, /договор, чек и гарантийный талон/);
 for (const title of [
-  "Оплата после проверки",
-  "Возврат старых деталей",
+  "Бесплатная диагностика",
   "Скидка до 15%",
   "Продувка от пыли в подарок",
 ])
   assert.ok(home.hero.bullets.some((bullet) => bullet.title === title));
+assert.doesNotMatch(hero, /Оплата после проверки|Возврат старых деталей/);
 assert.ok(hero.indexOf("lr-hero__benefits") < hero.indexOf("data-lr-hero-cta"));
 const prices = html.match(/<section id="lr-prices"[\s\S]*?<\/section>/)[0];
 assert.equal((prices.match(/data-lr-price-tab(?:\s|>)/g) || []).length, 2);

@@ -106,7 +106,7 @@ assert.ok(homeHero?.includes("lr-hero--home"));
 assert.match(homeHero, /class="lr-hero__film"/);
 assert.match(homeHero, /class="lr-hero__scene-note"/);
 const homeHeroText = homeHero.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
-assert.match(homeHeroText, /Диагностика 0 ₽ везде/);
+assert.match(homeHeroText, /Бесплатная диагностика/);
 assert.match(homeHeroText, /Твёрдая смета до работ/);
 assert.ok(!homeHero.includes('class="lr-eyebrow"'));
 assert.equal((homeHero.match(/<video\b/g) || []).length, 1);
@@ -163,7 +163,7 @@ const brandHero = brandHtml.match(
 assert.ok(brandHero);
 assert.equal(
   (brandHero.match(/class="lr-hero__benefit(?: |")/g) || []).length,
-  8,
+  6,
 );
 const casesEnabled = !readFileSync(
   new URL("../src/pages/index.astro", import.meta.url),
@@ -533,7 +533,7 @@ const homeFacts = [
     .replace("✓", "")
     .trim(),
 );
-assert.equal(homeFacts.length, 8);
+assert.equal(homeFacts.length, 6);
 for (const fact of homeCopy.hero.bullets)
   assert.ok(homeHeroText.includes(fact.title));
 for (const fact of homeCopy.hero.bullets)

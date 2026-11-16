@@ -202,7 +202,7 @@
 
 #hop-landing .lr-reviews--wide-photos .lr-document__copy p {
   color: var(--lr-color-hero-muted, #94a3b8);
-  font-size: 12.5px;
+  font-size: 13px;
   line-height: 1.35;
   margin: 4px 0 0;
   white-space: pre-line;
@@ -387,6 +387,12 @@
 }
 
 /* Tablet: 600px - 1023px */
+@media (min-width: 600px) {
+  #hop-landing .lr-reviews--wide-photos .lr-reviews__documents .lr-documents {
+    cursor: default;
+  }
+}
+
 @media (min-width: 600px) and (max-width: 1023px) {
   #hop-landing .lr-reviews--wide-photos .lr-reviews__documents .lr-documents {
     grid-template-columns: repeat(3, minmax(0, 1fr));

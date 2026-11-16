@@ -52,3 +52,55 @@
     background: var(--lr-color-surface);
   }
 }
+
+@media (max-width: 767px) {
+  #hop-landing .lr-quiz__intro h2,
+  #hop-landing .lr-lab__copy .lr-section-heading h2,
+  #hop-landing .lr-home-protection--detailed .lr-section-heading h2,
+  #hop-landing .lr-director .lr-section-heading h2 {
+    font-size: var(--lr-font-size-h2);
+  }
+
+  #hop-landing .lr-repair-journey__step h3,
+  #hop-landing .lr-home-protection__facts h3 {
+    font-size: 20px;
+  }
+
+  #hop-landing .lr-symptoms--grouped .lr-symptoms__group-overlay strong,
+  #hop-landing .lr-symptoms__group-overlay b,
+  #hop-landing .lr-quiz__question,
+  #hop-landing .lr-director__principle,
+  #hop-landing .lr-child-page .lr-problem-decisions dt,
+  #hop-landing .lr-faq__item summary,
+  #hop-landing .lr-contact__phone,
+  #hop-landing .lr-quick-contacts__phone {
+    font-size: 17px;
+  }
+
+  #hop-landing .lr-director .lr-eyebrow {
+    font-size: 13px;
+  }
+
+  #hop-landing .lr-review__text,
+  #hop-landing .lr-repair-journey__copy p,
+  #hop-landing .lr-security-card__text,
+  #hop-landing .lr-director__message p,
+  #hop-landing .lr-home-protection__facts p,
+  #hop-landing .lr-home-protection__facts article:first-child p,
+  #hop-landing .lr-home-protection--detailed .lr-home-protection__facts p,
+  #hop-landing
+    .lr-home-protection--detailed
+    .lr-home-protection__facts
+    article:first-child
+    p {
+    font-size: 15px;
+  }
+
+  #hop-landing .lr-home-protection--detailed .lr-section-heading .lr-lead {
+    font-size: 17px;
+  }
+
+  #hop-landing .lr-home-protection__facts article:first-child h3 {
+    font-size: 44px;
+  }
+}

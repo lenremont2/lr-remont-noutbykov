@@ -64,6 +64,34 @@ export function initializePhoneMask(root) {
   });
 }
 
+export function initializeReviewText(root) {
+  root.querySelectorAll("[data-lr-review-body]").forEach((body) => {
+    const text = body.querySelector(".lr-review__excerpt");
+    const details = body.querySelector(".lr-review__details");
+    const measure = () => {
+      const wasOpen = details.open;
+      details.open = false;
+      delete body.dataset.lrTruncated;
+      const lineHeight = parseFloat(getComputedStyle(text).lineHeight);
+      const truncated = text.scrollHeight > lineHeight * 4 + 1;
+      if (truncated) body.dataset.lrTruncated = "true";
+      details.open = truncated && wasOpen;
+    };
+    let width = 0;
+    if (typeof ResizeObserver !== "undefined") {
+      new ResizeObserver(([entry]) => {
+        if (width === entry.contentRect.width) return;
+        width = entry.contentRect.width;
+        measure();
+      }).observe(body);
+    } else {
+      window.addEventListener("resize", measure);
+    }
+    measure();
+    document.fonts?.ready.then(measure);
+  });
+}
+
 export function initializeReviewSlider(slider) {
   const swipe = slider.hasAttribute?.("data-lr-swipe-slider");
   const track =
@@ -187,8 +215,8 @@ export function initializeReviewSlider(slider) {
       event.button !== 0 ||
       event.target.closest(
         swipe
-          ? "button, input, textarea, select, summary, details"
-          : "a, button, input, textarea, select, summary, details",
+          ? "button, input, textarea, select, summary, details:not(.lr-review__details)"
+          : "a, button, input, textarea, select, summary, details:not(.lr-review__details)",
       )
     ) {
       stop();
@@ -1057,6 +1085,7 @@ export function initializeLanding() {
   initializeDesignConcept(root);
   initializeHomeScroll(root);
   initializePhoneMask(root);
+  initializeReviewText(root);
   root
     .querySelectorAll("[data-lr-review-slider]")
     .forEach(initializeReviewSlider);
@@ -1184,7 +1213,7 @@ export function initializeLanding() {
     phone.readOnly = compact ? dialpadDevice.matches : mobile.matches;
     phone.inputMode = phone.readOnly ? "none" : "tel";
     if (!mobile.matches) form.querySelector("[data-lr-dialpad]").hidden = true;
-    if (compact)
+    if (compact || phone.id === "lr-contact-form-phone")
       form.querySelector("[data-lr-dialpad]").hidden = !phone.readOnly;
   };
   root.querySelectorAll("[data-lr-form]").forEach((form) => {
