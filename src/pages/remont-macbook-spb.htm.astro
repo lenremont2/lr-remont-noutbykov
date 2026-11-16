@@ -9,7 +9,6 @@ import RepairFormats from "../components/sections/RepairFormats.astro";
 import RepairProcess from "../components/sections/RepairProcess.astro";
 import Symptoms from "../components/sections/Symptoms.astro";
 import ServicePriceTable from "../components/ui/ServicePriceTable.astro";
-import Breadcrumbs from "../components/ui/Breadcrumbs.astro";
 import ServiceFaq from "../components/ui/ServiceFaq.astro";
 import RelatedServices from "../components/ui/RelatedServices.astro";
 import {
@@ -183,7 +182,6 @@ const macModels = [
 <LandingLayout {...getSeo(macbook)}>
   <div class="lr-mac-page" data-lr-page-context data-device-category="premium">
     <div class="lr-mac-topbar">
-      <Breadcrumbs current={macbook.label} />
       <details class="lr-container lr-mac-subnav" data-lr-nav open>
         <summary>Разделы страницы</summary>
         <nav

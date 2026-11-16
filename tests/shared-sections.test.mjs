@@ -14,6 +14,13 @@ const home = readFileSync(
 );
 const section = (html, id) =>
   html.match(new RegExp(`<section id="${id}"[\\s\\S]*?</section>`))?.[0];
+const symptomNav = (html) =>
+  section(html, "lr-symptoms").match(/<nav\b[\s\S]*?<\/nav>/)[0];
+const articleTitles = ["Не работает тачпад", "Не читает диски CD/DVD"];
+const withoutArticleCards = (nav) =>
+  nav.replace(/<a\b[^>]*>[\s\S]*?<\/a>/g, (link) =>
+    articleTitles.some((title) => link.includes(title)) ? "" : link,
+  );
 const macGuarantee = section(
   readFileSync(
     new URL(`../dist/${content.macbook.slug}.htm/index.html`, import.meta.url),
@@ -27,7 +34,7 @@ assert.ok(
   section(home, "lr-guarantee").includes("lr-home-protection--detailed"),
 );
 
-test("All 49 child pages use the homepage service components", () => {
+test("All child pages use the homepage service components", () => {
   for (const page of [
     ...content.brands,
     ...content.problems,
@@ -45,9 +52,19 @@ test("All 49 child pages use the homepage service components", () => {
     if (isBrand) {
       const symptoms = section(html, "lr-symptoms");
       assert.match(symptoms, /data-lr-swipe-slider/, page.slug);
+      const brandNav = symptomNav(html);
+      for (const title of articleTitles) {
+        const card = brandNav
+          .match(/<a\b[^>]*>[\s\S]*?<\/a>/g)
+          .find((link) => link.includes(title));
+        assert.ok(card, `${page.slug}: ${title}`);
+        assert.match(card, /href="#lr-contact"[^>]*data-lr-lead-open/);
+        assert.ok(card.includes(`data-symptom="${title}"`), title);
+        assert.doesNotMatch(card, /Читать статью/);
+      }
       assert.deepEqual(
-        symptoms.match(/<nav\b[\s\S]*?<\/nav>/)?.[0],
-        section(home, "lr-symptoms").match(/<nav\b[\s\S]*?<\/nav>/)?.[0],
+        withoutArticleCards(brandNav),
+        withoutArticleCards(symptomNav(home)),
         page.slug,
       );
       assert.deepEqual(

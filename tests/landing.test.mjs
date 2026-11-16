@@ -566,12 +566,11 @@ assert.equal(
   0,
 );
 assert.ok(!html.includes('id="lr-laptop-failures"'));
-assert.equal(new Set(data.symptoms.items.map((item) => item.slug)).size, 9);
+assert.equal(new Set(data.symptoms.items.map((item) => item.slug)).size, 10);
 const secondarySymptom = data.symptoms.items.find(
   (item) => item.slug === "remont-cd-dvd-privoda-noutbuka",
 );
 assert.ok(secondarySymptom);
-assert.ok(symptomCards.some((card) => card.includes("Не читает диски CD/DVD")));
 const symptomGroups = html.match(
   /<nav class="lr-symptoms__groups[^"]*"[\s\S]*?<\/nav>/,
 )?.[0];
@@ -589,8 +588,24 @@ for (const group of homeCopy.symptoms.items) {
     group.title,
   );
 }
+const articleCards = new Map([
+  ["Не работает тачпад", "/ne-rabotaet-tachpad-noutbuka.htm"],
+  ["Не читает диски CD/DVD", "/remont-cd-dvd-privoda-noutbuka.htm"],
+]);
+for (const [title, href] of articleCards) {
+  const card = symptomCards.find((link) => link.includes(title));
+  assert.ok(card?.includes(`href="${href}"`), title);
+  assert.doesNotMatch(card, /data-lr-lead-open|Оставить заявку/);
+  assert.match(card, /Читать статью/);
+}
 for (const card of symptomCards) {
   assert.ok(!/<button\b/.test(card));
+  if (
+    Array.from(articleCards.values()).some((href) =>
+      card.includes(`href="${href}"`),
+    )
+  )
+    continue;
   assert.match(card, /href="#lr-contact"/);
   assert.match(card, /data-lr-lead-open/);
   assert.match(card, /data-source="symptom-card"/);

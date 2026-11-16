@@ -113,34 +113,53 @@ for (const aggregator of reviews.aggregators) {
   );
 }
 assert.equal(reviews.aggregators.length, 3);
-const award = section.match(/<ul class="lr-documents"[\s\S]*?<\/ul>/)?.[0];
+const award = section.match(
+  /<ul class="lr-documents lr-swipe-track"[\s\S]*?<\/ul>/,
+)?.[0];
 assert.ok(
   award,
   "The document gallery is separate from aggregator scores and client reviews",
 );
 for (const title of [
+  "Премия газеты «Деловой Петербург»",
+  "Премия газеты «Аргументы и Факты»",
   "Премия «Знак качества»",
-  "«Личный бренд — 2025»",
+  "Быстрорастущая креативная компания",
+  "Фонтанка.ру — признание и влияние",
+  "Диплом Gazelle Бизнеса",
   "Благодарственное письмо",
-  "За вклад в развитие Санкт-Петербурга",
+  "Личный бренд — 2025",
 ]) {
   assert.ok(award.includes(title), title);
 }
-assert.equal((award.match(/data-lr-photo-open/g) || []).length, 4);
+assert.doesNotMatch(award, /data-lr-photo-open|<a\b/);
 assert.ok(
   section.indexOf("lr-reviews__documents") > section.lastIndexOf("</article>"),
 );
-assert.equal((award.match(/class="lr-document"/g) || []).length, 4);
+assert.equal((award.match(/class="lr-document"/g) || []).length, 8);
 assert.doesNotMatch(
   section,
   /МАКЕТ|Ожидаем оригинал|оригиналы документов пока/,
 );
-assert.equal((award.match(/class="lr-document__emblem"/g) || []).length, 4);
-assert.doesNotMatch(award, /<img\b/);
-const awardProofs = [...award.matchAll(/href="([^"]+)"/g)];
-assert.equal(awardProofs.length, 4);
-for (const [, href] of awardProofs)
-  assert.ok(existsSync(new URL(`../public${href}`, import.meta.url)));
+assert.equal((award.match(/class="lr-document__emblem"/g) || []).length, 8);
+assert.equal((award.match(/<img\b/g) || []).length, 8);
+assert.match(award, /lenremont-award-.*\.png/);
+for (const preview of [
+  "lenremont-award-gazelle-emblem.png",
+  "lenremont-award-gratitude-emblem.png",
+  "lenremont-award-personal-brand-emblem.png",
+]) {
+  assert.ok(award.includes(preview));
+  assert.ok(existsSync(new URL(`../public/media/${preview}`, import.meta.url)));
+}
+assert.match(award, /data-lr-swipe-track/);
+assert.ok(section.includes("— А можно ли доверять Вашей фирме?"));
+assert.ok(
+  section.includes("— ВЗГЛЯНИТЕ, КАКУЮ РЕПУТАЦИЮ МЫ ЗАСЛУЖИЛИ В ГОРОДЕ:"),
+);
+assert.ok(section.includes("lr-reviews__ratings"));
+assert.ok(!section.includes("lr-reputation-ratings"));
+assert.ok(!section.includes("lr-reputation-stats"));
 assert.doesNotMatch(section, /lr-review__source--yandex/);
 assert.doesNotMatch(section, /lr-reviews__illustrations|repair-illustration-/);
 const illustrations = JSON.parse(

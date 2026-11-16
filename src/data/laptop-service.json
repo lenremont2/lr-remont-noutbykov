@@ -121,14 +121,25 @@
         "slug": "noutbuk-tormozit-ne-zagruzhaetsya"
       },
       {
-        "title": "Неисправный CD-ROM",
-        "text": "Дисковод не читает диски или шумит? Восстановим привод или заменим его на переходник со скоростным SSD-накопителем.",
+        "title": "Не работает тачпад",
+        "text": "Тачпад не двигает курсор, не нажимается или перестал работать после обновления? Проверьте настройки и узнайте, когда нужен осмотр.",
         "fields": {
-          "CTA": "Узнать стоимость"
+          "CTA": "Читать статью"
+        },
+        "priceWork": null,
+        "image": "/media/mac-symptom-keyboard.webp",
+        "imageAlt": "Тачпад и клавиатура ноутбука на рабочем столе",
+        "slug": "ne-rabotaet-tachpad-noutbuka"
+      },
+      {
+        "title": "Не читает диски CD/DVD",
+        "text": "Привод не видит диск, пропал из Windows или не открывает лоток? Разберитесь, с чего начать проверку.",
+        "fields": {
+          "CTA": "Читать статью"
         },
         "priceWork": null,
         "image": "/media/failure-optical-drive.webp",
-        "imageAlt": "Повреждённый оптический привод ноутбука",
+        "imageAlt": "Оптический CD/DVD-привод ноутбука",
         "slug": "remont-cd-dvd-privoda-noutbuka"
       },
       {

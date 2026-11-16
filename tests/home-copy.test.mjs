@@ -119,9 +119,10 @@ for (const item of home.symptoms.items) {
   assert.ok(symptoms.includes(item.title) && symptoms.includes(item.price));
   assert.ok(symptoms.includes(`data-symptom="${item.title}"`));
 }
-assert.doesNotMatch(
-  symptoms,
-  /href="[^#][^"]*"|Выберите|lr-symptoms__secondary/,
+assert.doesNotMatch(symptoms, /Выберите|lr-symptoms__secondary/);
+assert.deepEqual(
+  [...symptoms.matchAll(/href="([^#][^"]*)"/g)].map(([, href]) => href),
+  ["/ne-rabotaet-tachpad-noutbuka.htm", "/remont-cd-dvd-privoda-noutbuka.htm"],
 );
 assert.ok(!symptoms.includes("lr-section-note"));
 for (const group of home.prices.groups) {

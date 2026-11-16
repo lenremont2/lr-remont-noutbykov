@@ -101,21 +101,9 @@ const {
                               Срок уточним при обращении
                             </span>
                           )}
-                          <LeadButton
-                            label="0 ₽"
-                            ariaLabel="Заказать бесплатную диагностику"
-                            source="price-row"
-                            symptom="Диагностика"
-                            deviceCategory={
-                              groups.length > 1
-                                ? index === 1
-                                  ? "premium"
-                                  : "standard"
-                                : undefined
-                            }
-                            text
-                            class="lr-home-pricing__diagnostic-price"
-                          />
+                          <span class="lr-home-pricing__diagnostic-price">
+                            0 ₽
+                          </span>
                         </div>
                       </th>
                     </tr>
@@ -130,28 +118,7 @@ const {
                           Время: {duration}
                         </span>
                       </th>
-                      <td class="lr-home-pricing__price">
-                        <a
-                          href="#lr-contact"
-                          aria-label={`Уточнить стоимость: ${work}, ${price}`}
-                          data-lr-lead-open
-                          data-source="price-row"
-                          data-symptom={work}
-                          data-device-category={
-                            groups.length > 1
-                              ? index === 1
-                                ? "premium"
-                                : "standard"
-                              : undefined
-                          }
-                          class="lr-price-row__action"
-                        >
-                          <span class="lr-price-row__value">{price}</span>
-                          <span class="lr-price-row__order" aria-hidden="true">
-                            Заказать <span>→</span>
-                          </span>
-                        </a>
-                      </td>
+                      <td class="lr-home-pricing__price">{price}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -175,12 +142,5 @@ const {
         </aside>
       )
     }
-    {verification && <PriceVerification />}
-    <div class="lr-prices__action">
-      <p>Не нашли вашу проблему в прайсе?</p><LeadButton
-        label="Узнать стоимость ремонта"
-        source="prices"
-      />
-    </div>
   </div>
 </section>

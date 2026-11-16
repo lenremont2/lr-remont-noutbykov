@@ -41,26 +41,6 @@
     border-bottom: 1px solid var(--lr-color-border);
   }
 
-  .lr-mac-topbar .lr-breadcrumbs {
-    padding-block: 14px 10px;
-    color: var(--lr-color-muted);
-    font-size: 14px;
-  }
-
-  .lr-mac-topbar .lr-breadcrumbs a {
-    color: var(--lr-color-muted);
-    text-decoration: none;
-  }
-
-  .lr-mac-topbar .lr-breadcrumbs a:hover {
-    color: var(--lr-color-text);
-  }
-
-  .lr-mac-topbar .lr-breadcrumbs [aria-current] {
-    color: var(--lr-color-text);
-    font-weight: 500;
-  }
-
   .lr-mac-subnav {
     padding-block: 8px 12px;
     border-top: 1px solid var(--lr-color-border);

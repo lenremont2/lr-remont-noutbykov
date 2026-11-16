@@ -10,22 +10,9 @@ interface Props {
   height: number;
   symptom?: string;
   warning?: string;
-  secondaryHref?: string;
-  secondaryLabel?: string;
 }
-const {
-  title,
-  lead,
-  source,
-  image,
-  alt,
-  width,
-  height,
-  symptom,
-  warning,
-  secondaryHref = "#lr-first-aid",
-  secondaryLabel = "Что сделать сейчас",
-} = Astro.props;
+const { title, lead, source, image, alt, width, height, symptom, warning } =
+  Astro.props;
 ---
 
 <section
@@ -49,11 +36,10 @@ const {
       }
       <div class="lr-actions" data-lr-hero-cta>
         <LeadButton
-          label="Узнать стоимость ремонта"
+          label="Обсудить неисправность"
           source={source}
           symptom={symptom}
         />
-        <a class="lr-text-action" href={secondaryHref}>{secondaryLabel}</a>
       </div>
       <ul class="lr-child-facts">
         <li>Диагностика — 0 ₽ даже при отказе от ремонта</li>

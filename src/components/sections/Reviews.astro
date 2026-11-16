@@ -2,9 +2,10 @@
 import copy from "../../data/laptop-service.json";
 import reviews from "../../data/reviews.json";
 import homePhotos from "../../data/review-illustrations.json";
+import repData from "../../data/reputation-awards.json";
 import ReviewCard from "../ui/ReviewCard.astro";
 import SectionHeading from "../ui/SectionHeading.astro";
-import AwardLaurel from "../ui/AwardLaurel.astro";
+
 const c = copy.reviews.fields;
 interface Props {
   scrollScene?: boolean;
@@ -32,40 +33,6 @@ const countLabel = (count: number) => {
   if (lastTwo >= 11 && lastTwo <= 14) return "оценок";
   return last === 1 ? "оценка" : last >= 2 && last <= 4 ? "оценки" : "оценок";
 };
-const documents = [
-  {
-    image: "/media/lenremont-award-quality-2025.webp",
-    title: "Премия «Знак качества»",
-    mark: ["ЗНАК", "КАЧЕСТВА"],
-    distinction: "1-е место",
-    description:
-      "1-е место — лучшее предприятие в сфере услуг Санкт-Петербурга.",
-  },
-  {
-    image: "/media/lenremont-award-personal-brand-2025.webp",
-    title: "«Личный бренд — 2025»",
-    mark: ["ЛИЧНЫЙ", "БРЕНД"],
-    distinction: "2025",
-    description:
-      "Денис Сорокин — победитель рейтинга брендов «Делового Петербурга» в номинации «Личный бренд».",
-  },
-  {
-    image: "/media/lenremont-gratitude-2025.jpg",
-    title: "Благодарственное письмо",
-    mark: ["ЗА", "ПОМОЩЬ"],
-    distinction: "2025",
-    description:
-      "От командования войсковой части 34497 за оказанную помощь. 25 сентября 2025 года.",
-  },
-  {
-    image: "/media/lenremont-award-city-contribution.jpg",
-    title: "За вклад в развитие Санкт-Петербурга",
-    mark: ["САНКТ-", "ПЕТЕРБУРГ"],
-    distinction: "За вклад",
-    description:
-      "Денис Сорокин получает награду за значительный вклад в развитие города из рук Сергея Миронова.",
-  },
-];
 ---
 
 <section
@@ -190,41 +157,40 @@ const documents = [
     homeVariant && (
       <div class="lr-reviews__documents">
         <div class="lr-container">
-          <div class="lr-reviews__subhead">
-            <p class="lr-eyebrow">Репутация Ленремонта</p>
-            <h3>Награды и благодарности за нашу работу</h3>
+          <div class="lr-reviews__reputation-heading">
+            <p class="lr-reviews__dialogue-q">{repData.heading.question}</p>
+            <h3 class="lr-reviews__dialogue-a">{repData.heading.answer}</h3>
           </div>
-          <ul
-            class="lr-documents"
-            aria-label="Награды и благодарности компании"
-          >
-            {documents.map((document) => (
-              <li class="lr-document">
-                <a
-                  class="lr-document__preview"
-                  href={document.image}
-                  data-lr-photo-open
-                  aria-label={`Открыть: ${document.title}`}
-                >
-                  <span class="lr-document__emblem" aria-hidden="true">
-                    <AwardLaurel />
-                    <span class="lr-document__emblem-copy">
-                      <strong>
-                        {document.mark.map((line) => (
-                          <span>{line}</span>
-                        ))}
-                      </strong>
-                      <span>{document.distinction}</span>
+          <div data-lr-swipe-slider>
+            <ul
+              class="lr-documents lr-swipe-track"
+              data-lr-swipe-track
+              tabindex="0"
+              aria-label="Награды и благодарности компании"
+            >
+              {repData.awards.map((award) => (
+                <li class="lr-document">
+                  <div class="lr-document__preview">
+                    <span class="lr-document__emblem" aria-hidden="true">
+                      <img
+                        src={award.preview}
+                        alt=""
+                        width="400"
+                        height="340"
+                        loading="lazy"
+                        decoding="async"
+                        class="lr-document__emblem-img"
+                      />
                     </span>
-                  </span>
-                </a>
-                <div class="lr-document__copy">
-                  <h4>{document.title}</h4>
-                  <p>{document.description}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
+                  </div>
+                  <div class="lr-document__copy">
+                    <h4>{award.title}</h4>
+                    {award.description && <p>{award.description}</p>}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     )

@@ -45,7 +45,6 @@ export function getSeo(page: {
           description: page.description,
           inLanguage: "ru-RU",
           mainEntity: { "@id": canonical + "#service" },
-          breadcrumb: { "@id": canonical + "#breadcrumbs" },
         },
         {
           "@type": "Service",
@@ -57,30 +56,6 @@ export function getSeo(page: {
           areaServed: [
             { "@type": "City", name: "Санкт-Петербург" },
             { "@type": "AdministrativeArea", name: "Ленинградская область" },
-          ],
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": canonical + "#breadcrumbs",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Ленремонт",
-              item: origin + "/",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Ремонт ноутбуков",
-              item: origin + homePath,
-            },
-            {
-              "@type": "ListItem",
-              position: 3,
-              name: page.label,
-              item: canonical,
-            },
           ],
         },
       ],

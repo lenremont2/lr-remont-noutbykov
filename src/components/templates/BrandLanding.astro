@@ -14,7 +14,6 @@ import Locations from "../sections/Locations.astro";
 import HomeProtection from "../sections/HomeProtection.astro";
 import Reviews from "../sections/Reviews.astro";
 import LeadCapture from "../sections/LeadCapture.astro";
-import Breadcrumbs from "../ui/Breadcrumbs.astro";
 import Faq from "../sections/Faq.astro";
 import RelatedServices from "../ui/RelatedServices.astro";
 import home from "../../data/home-copy.json";
@@ -27,7 +26,6 @@ const { page } = Astro.props;
 
 <LandingLayout {...getSeo(page)}>
   <div class="lr-brand-page">
-    <Breadcrumbs current={page.label} />
     <Hero brand={page} variant="home" />
     <Symptoms
       compact

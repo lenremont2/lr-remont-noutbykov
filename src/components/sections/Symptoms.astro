@@ -7,6 +7,7 @@ interface Props {
   compact?: boolean;
   grouped?: boolean;
   extraFaults?: boolean;
+  linkFaultArticles?: boolean;
   informational?: boolean;
   title?: string;
   lead?: string;
@@ -16,6 +17,7 @@ const {
   compact = false,
   grouped = false,
   extraFaults = false,
+  linkFaultArticles = false,
   informational = false,
   title,
   lead,
@@ -30,7 +32,13 @@ const priceByWork = (
 const secondarySymptom = c.items.find(
   (item) => item.slug === "remont-cd-dvd-privoda-noutbuka",
 );
-const primarySymptoms = c.items.filter((item) => item !== secondarySymptom);
+const articleSymptoms = c.items.filter(
+  (item) =>
+    item === secondarySymptom || item.slug === "ne-rabotaet-tachpad-noutbuka",
+);
+const primarySymptoms = c.items.filter(
+  (item) => !articleSymptoms.includes(item),
+);
 const cards =
   items ??
   primarySymptoms.map((item) => ({
@@ -78,6 +86,7 @@ interface ServiceGroup {
   tags?: string[];
   note?: string;
   badge?: string;
+  article?: boolean;
 }
 const serviceGroups: ServiceGroup[] = grouped
   ? [
@@ -119,20 +128,14 @@ const serviceGroups: ServiceGroup[] = grouped
               detail: "",
               price: priceByWork("Восстановление прошивки BIOS"),
             },
-            {
-              title: "Не работает тачпад",
-              image: "/media/symptom-slow.webp",
-              href: "#lr-contact",
-              detail: "",
-              price: "Бесплатная диагностика",
-            },
-            {
-              title: "Не читает диски CD/DVD",
-              image: "/media/failure-optical-drive.webp",
-              href: "#lr-contact",
-              detail: "",
-              price: "Бесплатная диагностика",
-            },
+            ...articleSymptoms.map((item) => ({
+              title: item.title,
+              image: item.image,
+              href: pagePath(item),
+              detail: item.text,
+              price: linkFaultArticles ? item.fields.CTA : priceByWork(null),
+              article: linkFaultArticles,
+            })),
           ]
         : []),
     ]
@@ -274,67 +277,67 @@ const modernFaults = [
             hidden={Boolean(items)}
           >
             {!items &&
-              serviceGroups.map((group) => (
-                <a
-                  class:list={[
-                    "lr-symptoms__group",
-                    { "lr-symptoms__group--copy": grouped },
-                  ]}
-                  href={grouped ? "#lr-contact" : group.href}
-                  aria-label={
-                    grouped ? `Оставить заявку: ${group.title}` : undefined
-                  }
-                  data-lr-lead-open={
-                    grouped || group.href === "#lr-contact" || undefined
-                  }
-                  data-symptom={
-                    grouped || group.href === "#lr-contact"
-                      ? group.title
-                      : undefined
-                  }
-                  data-source={
-                    grouped
-                      ? "symptom-card"
-                      : group.href === "#lr-contact"
-                        ? "data-recovery"
+              serviceGroups.map((group) => {
+                const opensLead =
+                  !group.article && (grouped || group.href === "#lr-contact");
+                return (
+                  <a
+                    class:list={[
+                      "lr-symptoms__group",
+                      { "lr-symptoms__group--copy": grouped },
+                    ]}
+                    href={opensLead ? "#lr-contact" : group.href}
+                    aria-label={
+                      grouped && opensLead
+                        ? `Оставить заявку: ${group.title}`
                         : undefined
-                  }
-                >
-                  {compact && !grouped && (
-                    <img
-                      src={group.image}
-                      alt=""
-                      width="768"
-                      height="512"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  )}
-                  {grouped && group.price ? (
-                    <>
-                      <div class="lr-symptoms__group-media">
-                        <img
-                          src={group.image}
-                          alt=""
-                          width="768"
-                          height="512"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                        <div class="lr-symptoms__group-overlay">
-                          <strong>{group.title}</strong>
-                          <b>{group.price}</b>
+                    }
+                    data-lr-lead-open={opensLead || undefined}
+                    data-symptom={opensLead ? group.title : undefined}
+                    data-source={
+                      opensLead
+                        ? grouped
+                          ? "symptom-card"
+                          : "data-recovery"
+                        : undefined
+                    }
+                  >
+                    {compact && !grouped && (
+                      <img
+                        src={group.image}
+                        alt=""
+                        width="768"
+                        height="512"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
+                    {grouped && group.price ? (
+                      <>
+                        <div class="lr-symptoms__group-media">
+                          <img
+                            src={group.image}
+                            alt=""
+                            width="768"
+                            height="512"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                          <div class="lr-symptoms__group-overlay">
+                            <strong>{group.title}</strong>
+                            <b>{group.price}</b>
+                          </div>
                         </div>
-                      </div>
-                    </>
-                  ) : (
-                    <>
-                      <strong>{group.title}</strong>
-                      {!compact && <span>{group.detail}</span>}
-                    </>
-                  )}
-                </a>
-              ))}
+                      </>
+                    ) : (
+                      <>
+                        <strong>{group.title}</strong>
+                        {!compact && <span>{group.detail}</span>}
+                      </>
+                    )}
+                  </a>
+                );
+              })}
           </nav>
           {!grouped && (
             <details class="lr-symptoms__all" open>

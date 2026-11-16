@@ -25,9 +25,9 @@ const originalBrands = content.brands.slice(0, 9);
 assert.equal(new Set(originalBrands.map((page) => page.heroImage)).size, 9);
 for (const page of content.brands.slice(9))
   assert.equal(page.heroImage, "/media/laptop-engineer-hero.webp", page.slug);
-assert.equal(content.problems.length, 9);
-assert.equal(new Set(content.problems.map((page) => page.heroImage)).size, 9);
-assert.equal(pages.length, 49);
+assert.equal(content.problems.length, 10);
+assert.equal(new Set(content.problems.map((page) => page.heroImage)).size, 10);
+assert.equal(pages.length, 50);
 for (const field of ["slug", "title", "description", "h1"]) {
   assert.equal(
     new Set(pages.map((page) => page[field])).size,
@@ -362,16 +362,12 @@ for (const page of pages) {
   const schema = JSON.parse(json);
   assert.equal(schema["@context"], "https://schema.org");
   const service = schema["@graph"].find((item) => item["@type"] === "Service");
-  const breadcrumb = schema["@graph"].find(
-    (item) => item["@type"] === "BreadcrumbList",
-  );
   assert.equal(service.url, canonical);
   assert.equal(service.name, page.h1);
-  assert.deepEqual(
-    breadcrumb.itemListElement.map((item) => item.position),
-    [1, 2, 3],
+  assert.ok(!html.includes('class="lr-container lr-breadcrumbs"'));
+  assert.ok(
+    !schema["@graph"].some((item) => item["@type"] === "BreadcrumbList"),
   );
-  assert.equal(breadcrumb.itemListElement.at(-1).item, canonical);
   assert.ok(!json.includes('"aggregateRating"') && !json.includes('"Review"'));
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(([, id]) => id);
   assert.equal(ids.length, new Set(ids).size, `Duplicate IDs: ${page.slug}`);
@@ -465,5 +461,5 @@ assert.ok(
   !macSource.includes("BrandLanding") && !macSource.includes("ProblemLanding"),
 );
 console.log(
-  "49 pages: unique SEO fields, one H1/root, JSON-LD, links, prices, media, forms and CSS isolation passed.",
+  "50 pages: unique SEO fields, one H1/root, JSON-LD, links, prices, media, forms and CSS isolation passed.",
 );
