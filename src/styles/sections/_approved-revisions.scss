@@ -684,25 +684,6 @@
     margin: 0;
   }
 
-  .lr-modal--compact .lr-dialpad__keys {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-  }
-
-  .lr-modal--compact .lr-dialpad__keys button {
-    min-height: 44px;
-    border: 1px solid var(--lr-color-field-border);
-    border-radius: 10px;
-    background: var(--lr-color-surface-subtle);
-    color: var(--lr-color-key-text);
-    font-size: 22px;
-  }
-
-  .lr-modal--compact .lr-dialpad__keys button[data-lr-digit="clear"] {
-    font-size: 14px;
-  }
-
   .lr-modal--compact .lr-form__consent {
     margin: 0;
     font-size: 11px;

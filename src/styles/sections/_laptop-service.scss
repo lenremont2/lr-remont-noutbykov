@@ -1267,6 +1267,10 @@
     margin-top: 24px;
   }
 
+  .lr-form input[data-lr-phone] {
+    text-align: center;
+  }
+
   .lr-dialpad__keys {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1282,6 +1286,10 @@
     color: var(--lr-color-text);
     background: var(--lr-color-surface-alt);
     font-size: 22px;
+  }
+
+  .lr-dialpad__keys button[data-lr-digit="clear"] {
+    font-size: 14px;
   }
 
   .lr-quick-contacts {

@@ -1230,9 +1230,7 @@ export function initializeLanding() {
     const compact = form.hasAttribute("data-lr-compact-form");
     phone.readOnly = compact ? dialpadDevice.matches : mobile.matches;
     phone.inputMode = phone.readOnly ? "none" : "tel";
-    if (!mobile.matches) form.querySelector("[data-lr-dialpad]").hidden = true;
-    if (compact || phone.id === "lr-contact-form-phone")
-      form.querySelector("[data-lr-dialpad]").hidden = !phone.readOnly;
+    form.querySelector("[data-lr-dialpad]").hidden = !phone.readOnly || phone.disabled;
   };
   root.querySelectorAll("[data-lr-form]").forEach((form) => {
     updatePhoneMode(form);
