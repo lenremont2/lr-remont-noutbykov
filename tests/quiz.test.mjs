@@ -24,7 +24,9 @@ assert.ok(
     section.indexOf("data-lr-quiz-questions"),
 );
 assert.match(section, /aria-describedby="lr-quiz-hint"/);
-assert.equal((section.match(/data-lr-quiz-answer=/g) || []).length, 3);
+assert.doesNotMatch(section, /lr-quiz__answers|data-lr-quiz-answer=/);
+for (const method of ["Телефон", "ВКонтакте", "WhatsApp", "Telegram", "MAX"])
+  assert.ok(section.includes(`name="contact_method" value="${method}"`), method);
 assert.match(section, /type="button"[^>]*data-lr-quiz-prev/);
 const quizImages =
   section.match(/<img\b[^>]*lr-quiz__option-image[^>]*>/g) || [];
@@ -60,14 +62,7 @@ assert.deepEqual(formats, [
   "consultation",
 ]);
 assert.ok(section.includes("К дому или работе"));
-assert.match(section, /label[^>]*>Когда нужна помощь\?/);
-assert.match(section, /name="request_timing"/);
-for (const timing of [
-  "Срочно сегодня (за 1–2 часа)",
-  "Сегодня вечером или завтра",
-  "Сначала просто узнать точную цену",
-])
-  assert.ok(section.includes(timing), timing);
+assert.doesNotMatch(section, /name="request_timing"/);
 assert.ok(section.includes("Заберём и привезём курьером по акту"));
 
 const originalTimers = {
@@ -382,14 +377,6 @@ try {
   assert.equal(home.busy, true);
   assert.equal(home.updates, 0);
   assert.equal([...timers.values()][0].delay, 900);
-  assert.deepEqual(
-    home.summaries.map((item) => item.textContent),
-    [
-      "MacBook или премиальный ультрабук",
-      "Программы и настройка",
-      "Передам курьеру",
-    ],
-  );
   home.back();
   assert.equal(timers.size, 0, "Back cancels loading");
   assert.equal(home.analysis.hidden, true);
@@ -406,10 +393,6 @@ try {
   assert.equal(
     home.form.elements.visit_address.value,
     "Санкт-Петербург, Невский проспект, д. 10",
-  );
-  assert.equal(
-    home.locationValue.textContent,
-    home.form.elements.visit_address.value,
   );
   assert.equal(home.meter.value, 5);
   assert.equal(home.busy, false);
@@ -442,8 +425,6 @@ try {
   home.confirmLocation();
   finishLoading();
   assert.equal(home.form.elements.workshop_id.value, "prosveshcheniya");
-  assert.equal(home.locationLabel.textContent, "Мастерская");
-  assert.match(home.locationValue.textContent, /Просвещения/);
   assert.equal(home.form.elements.service_format.value, "workshop");
   assert.equal(home.form.elements.phone.value, "+7 (921) 234-56-78");
   assert.equal(home.form.elements.consent.checked, true);
@@ -594,7 +575,6 @@ try {
   assert.equal(brand.progress.textContent, "Шаг 4 из 4");
   assert.equal(brand.form.elements.device_category.value, "");
   assert.equal(brand.form.elements.quiz_service.value, "Ремонт ноутбуков ASUS");
-  assert.equal(brand.summaries[0].textContent, "ASUS");
   brand.back();
   let enterPrevented = false;
   brand.handlers["location:keydown"]({
@@ -642,7 +622,6 @@ try {
       true,
       "Consultation skips the location step",
     );
-    assert.equal(visit.locationSummary.hidden, true);
   }
   const reduced = createQuiz({ reducedMotion: true });
   reduced.select(0, "standard");

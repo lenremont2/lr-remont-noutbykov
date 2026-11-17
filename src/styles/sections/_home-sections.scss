@@ -40,7 +40,7 @@
   }
 }
 
-// The article follows reviews directly; keep the first four sections distinct.
+// Problem pages share a background between the hero and article.
 #hop-landing .lr-problem-page {
   > .lr-section.lr-child-hero,
   > .lr-section.lr-child-guide {
@@ -50,6 +50,14 @@
   > .lr-section.lr-reviews--wide-photos,
   > .lr-section.lr-formats {
     background: var(--lr-color-surface);
+  }
+
+  > .lr-section.lr-child-hero {
+    padding-bottom: 32px;
+  }
+
+  > .lr-section.lr-child-guide {
+    padding-top: 0;
   }
 }
 

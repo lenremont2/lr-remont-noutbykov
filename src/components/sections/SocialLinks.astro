@@ -17,11 +17,13 @@ interface Props {
   channels?: SocialChannel[];
   text?: string;
   title?: string;
+  quizChoice?: boolean;
 }
 
 const {
   title = "Удобнее написать?",
   text = "Пришлите модель ноутбука и описание проблемы.",
+  quizChoice = false,
   channels = [
     {
       id: "vk",
@@ -70,7 +72,25 @@ const {
 } = Astro.props;
 ---
 
-<div class="lr-social-links">
+{quizChoice ? (
+  <fieldset class="lr-quiz__contact-options" aria-describedby="lr-quiz-contact-method-error">
+    <legend class="lr-visually-hidden">Способ связи</legend>
+    <label class="lr-quiz__contact-option">
+      <input type="radio" name="contact_method" value="Телефон" required />
+      <span class="lr-social-links__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.35 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.58 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg>
+      </span><span>Телефон</span>
+    </label>
+    {["vk", "whatsapp", "telegram", "max"].map((id) => channels.find((channel) => channel.id === id)!).map((channel) => (
+      <label class={`lr-quiz__contact-option lr-quiz__contact-option--${channel.id}`}>
+        <input type="radio" name="contact_method" value={channel.label} required />
+        <span class="lr-social-links__icon" aria-hidden="true">
+          <svg viewBox={channel.viewBox}><path d={channel.iconPath} stroke={channel.strokeWidth ? "currentColor" : undefined} stroke-width={channel.strokeWidth} fill-rule={channel.fillRule} clip-rule={channel.clipRule} /></svg>
+        </span><span>{channel.label === "ВКонтакте" ? "ВК" : channel.label}</span>
+      </label>
+    ))}
+  </fieldset>
+) : <div class="lr-social-links">
   <h3>{title}</h3>
   {text && <p class="lr-caption">{text}</p>}
   <ul class="lr-social-links__list">
@@ -118,4 +138,4 @@ const {
       ))
     }
   </ul>
-</div>
+</div>}

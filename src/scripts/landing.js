@@ -500,26 +500,6 @@ export function initializeRepairQuiz(quiz, updateContext) {
       if (input) form.elements[name].value = input.value;
     }
     if (current === activeSteps.length - 2) {
-      const locationSummary = quiz.querySelector(
-        "[data-lr-quiz-location-summary]",
-      );
-      locationSummary.hidden = selectedFormat() === "consultation";
-      quiz.querySelector("[data-lr-quiz-location-label]").textContent =
-        selectedFormat() === "workshop" ? "Мастерская" : "Адрес";
-      quiz.querySelector("[data-lr-quiz-location-value]").textContent =
-        selectedFormat() === "workshop"
-          ? workshop.selectedOptions[0].textContent.trim()
-          : form.elements.visit_address.value;
-      quiz.querySelectorAll("[data-lr-quiz-answer]").forEach((answer) => {
-        const input = questions.querySelector(
-          `input[name="${answer.dataset.lrQuizAnswer}"]:checked`,
-        );
-        if (input)
-          answer.textContent = input
-            .closest("label")
-            .querySelector("strong")
-            .textContent.trim();
-      });
       steps.forEach((step) => {
         step.hidden = true;
       });
@@ -814,7 +794,11 @@ export function updateVisitFields(form) {
 }
 
 export function updateFormReadiness(form) {
-  const phoneReady = !validatePhone(form.elements.phone.value).error;
+  const choosing = form.hasAttribute?.("data-lr-contact-choice");
+  const method = choosing ? form.elements.contact_method.value : "Телефон";
+  const phoneReady = Boolean(method) && (method === "Телефон" || method === "WhatsApp"
+    ? !validatePhone(form.elements.phone.value).error
+    : Boolean(form.elements.contact_profile.value.trim()));
   const consentReady = form.elements.consent.checked;
   const address = form.elements.visit_address;
   const place = form.elements.requested_repair_place;
@@ -1217,6 +1201,31 @@ export function initializeLanding() {
     updateVisitFields(form);
     updateFormReadiness(form);
     const recheckVisitField = (event) => {
+      if (form.hasAttribute("data-lr-contact-choice") && event.target.name === "contact_method") {
+        const method = form.elements.contact_method.value;
+        const usePhone = method === "Телефон" || method === "WhatsApp";
+        form.querySelector("[data-lr-contact-method-error]").textContent = "";
+        form.querySelector("[data-lr-phone-field]").hidden = !usePhone;
+        form.querySelector("[data-lr-profile-field]").hidden = usePhone;
+        form.elements.phone.disabled = !usePhone;
+        form.elements.contact_profile.disabled = usePhone;
+        form.querySelector("[data-lr-dialpad]").hidden = true;
+        form.querySelector("[data-lr-phone-error]").textContent = "";
+        form.querySelector("[data-lr-profile-error]").textContent = "";
+        form.querySelector("[data-lr-consent-error]").textContent = "";
+        form.elements.phone.removeAttribute("aria-invalid");
+        form.elements.contact_profile.removeAttribute("aria-invalid");
+        form.elements.consent.removeAttribute("aria-invalid");
+        const label = form.querySelector("[data-lr-profile-label]");
+        form.querySelector("[data-lr-phone-field] label").textContent = method === "WhatsApp" ? "Номер WhatsApp" : "Ваш телефон";
+        form.querySelector("[data-lr-phone-field] .lr-caption").textContent = method === "WhatsApp" ? "Напишем и уточним вашу задачу" : "Перезвоним и уточним вашу задачу";
+        label.textContent = method === "ВКонтакте" ? "Ссылка на профиль ВК" : method === "Telegram" ? "Имя пользователя или ссылка в Telegram" : "Ссылка на профиль или номер в MAX";
+        form.elements.contact_profile.placeholder = method === "ВКонтакте" ? "vk.com/имя" : method === "Telegram" ? "@имя или ссылка" : "Ссылка или номер";
+      }
+      if (form.hasAttribute("data-lr-contact-choice") && event.target === form.elements.contact_profile) {
+        form.querySelector("[data-lr-profile-error]").textContent = "";
+        form.elements.contact_profile.removeAttribute("aria-invalid");
+      }
       if (event.target === form.elements.phone && validatePhone(event.target.value).error) {
         form.querySelector("[data-lr-consent-error]").textContent = "";
         form.elements.consent.removeAttribute("aria-invalid");
@@ -1252,11 +1261,22 @@ export function initializeLanding() {
       (event) => {
         const phone = form.elements.phone;
         const consent = form.elements.consent;
-        const { value, error: phoneError } = validatePhone(phone.value);
-        const consentError = phoneError || consent.checked
+        const choosing = form.hasAttribute("data-lr-contact-choice");
+        const method = choosing ? form.elements.contact_method.value : "Телефон";
+        const profile = choosing && method && method !== "Телефон" && method !== "WhatsApp" ? form.elements.contact_profile : null;
+        const { value, error: phoneError } = method && !profile ? validatePhone(phone.value) : { value: "", error: "" };
+        const methodError = choosing && !method ? "Выберите способ связи." : "";
+        const profileError = profile && !profile.value.trim() ? "Укажите контакт для связи." : "";
+        const contactError = methodError || phoneError || profileError;
+        const consentError = contactError || consent.checked
           ? ""
           : "Подтвердите согласие на обработку персональных данных.";
-        const visitInvalid = phoneError || consentError ? null : validateVisitFields(form);
+        const visitInvalid = contactError || consentError ? null : validateVisitFields(form);
+        if (choosing) {
+          form.querySelector("[data-lr-contact-method-error]").textContent = methodError;
+          form.querySelector("[data-lr-profile-error]").textContent = profileError;
+          if (profile) profile.setAttribute("aria-invalid", String(Boolean(profileError)));
+        }
         form.querySelector("[data-lr-phone-error]").textContent = phoneError;
         form.querySelector("[data-lr-consent-error]").textContent =
           consentError;
@@ -1264,13 +1284,13 @@ export function initializeLanding() {
         consent.setAttribute("aria-invalid", String(Boolean(consentError)));
         const message = form.querySelector("[data-lr-form-message]");
         message.textContent = "";
-        if (phoneError || visitInvalid || consentError) {
+        if (contactError || visitInvalid || consentError) {
           event.preventDefault();
           event.stopImmediatePropagation();
-          (phoneError ? phone : consentError ? consent : visitInvalid).focus();
+          (methodError ? form.querySelector('[name="contact_method"]') : phoneError ? phone : profileError ? profile : consentError ? consent : visitInvalid).focus();
           return;
         }
-        phone.value = formatPhone(value);
+        if (!profile) phone.value = formatPhone(value);
         if (!form.elements.visit_address.disabled)
           form.elements.visit_address.value =
             form.elements.visit_address.value.trim();

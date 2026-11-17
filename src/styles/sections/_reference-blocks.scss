@@ -403,6 +403,12 @@
     position: relative;
     display: block;
   }
+  #hop-landing .lr-home-pricing--reference .lr-home-pricing__diagnostic,
+  #hop-landing .lr-home-pricing--reference .lr-home-pricing__diagnostic > th {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
   #hop-landing .lr-home-pricing--reference .lr-price-table tbody:last-child th {
     display: block;
   }

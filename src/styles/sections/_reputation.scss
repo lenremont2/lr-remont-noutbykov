@@ -47,6 +47,27 @@
   color: var(--lr-color-muted);
 }
 
+@media (max-width: 767px) {
+  #hop-landing .lr-reviews__rating-card > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  #hop-landing .lr-reviews .lr-reviews__rating-stars {
+    gap: 1px;
+  }
+
+  #hop-landing .lr-reviews__rating-stars svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  #hop-landing .lr-reviews .lr-reviews__rating-source {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+
 #hop-landing .lr-reviews--wide-photos .lr-review {
   padding: 28px;
   border-radius: 22px;

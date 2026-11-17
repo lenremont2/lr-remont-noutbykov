@@ -1,6 +1,7 @@
 ---
 import copy from "../../data/laptop-service.json";
 import workshops from "../../data/workshops.json";
+import SocialLinks from "../sections/SocialLinks.astro";
 interface Props {
   id: string;
   source: string;
@@ -8,6 +9,7 @@ interface Props {
   serviceName?: string;
   requestTiming?: boolean;
   compact?: boolean;
+  contactChoice?: boolean;
 }
 const {
   id,
@@ -16,6 +18,7 @@ const {
   serviceName = "Ремонт ноутбуков",
   requestTiming = false,
   compact = false,
+  contactChoice = false,
 } = Astro.props;
 ---
 
@@ -26,9 +29,10 @@ const {
     data-hop-lead-form
     data-lr-form
     data-lr-compact-form={compact || undefined}
+    data-lr-contact-choice={contactChoice || undefined}
     novalidate
   >
-    <input type="hidden" name="contact_method" value="Телефон" />
+    {!contactChoice && <input type="hidden" name="contact_method" value="Телефон" />}
     <input type="hidden" name="quiz_service" value={serviceName} />
     <input type="hidden" name="service_name" value={serviceName} />
     <input type="hidden" name="cta_source" value={source} />
@@ -74,7 +78,8 @@ const {
         >
       </div>
     </div>
-    <div class="lr-form__field">
+    {contactChoice && <><SocialLinks quizChoice /><p class="lr-field-error" id="lr-quiz-contact-method-error" data-lr-contact-method-error></p></>}
+    <div class={contactChoice ? "lr-quiz__contact-field" : "lr-form__field"} data-lr-phone-field={contactChoice || undefined} hidden={contactChoice || undefined}>
       <label for={`${id}-phone`}>Ваш телефон</label>
       <input
         id={`${id}-phone`}
@@ -84,6 +89,7 @@ const {
         inputmode="tel"
         placeholder="+7 (___) ___-__-__"
         required
+        disabled={contactChoice || undefined}
         aria-describedby={`${id}-phone-hint ${id}-phone-error`}
         data-lr-phone
       />
@@ -93,6 +99,11 @@ const {
       <p class="lr-field-error" id={`${id}-phone-error`} data-lr-phone-error>
       </p>
     </div>
+    {contactChoice && <div class="lr-quiz__contact-field" data-lr-profile-field hidden>
+      <label for={`${id}-profile`} data-lr-profile-label>Контакт</label>
+      <input id={`${id}-profile`} name="contact_profile" type="text" maxlength="200" autocomplete="off" aria-describedby={`${id}-profile-error`} disabled />
+      <p class="lr-field-error" id={`${id}-profile-error`} data-lr-profile-error></p>
+    </div>}
     <div class="lr-dialpad" data-lr-dialpad hidden>
       <div class="lr-dialpad__keys">
         {

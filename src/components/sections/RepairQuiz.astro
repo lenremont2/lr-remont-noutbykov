@@ -335,54 +335,13 @@ const pageQuestions = brand
           <p class="lr-quiz__analysis-note">Следующий шаг — номер для связи</p>
         </div>
         <div class="lr-quiz__step lr-quiz__result" data-lr-quiz-step>
-          <div class="lr-quiz__result-offer">
-            <p class="lr-quiz__result-label">
-              Остался один шаг · скидка до 15%
-            </p>
-            <h3 class="lr-quiz__question" tabindex="-1">
-              Узнайте стоимость ремонта
-            </h3>
-            <p>
-              Оставьте телефон — обсудим стоимость ремонта и условия скидки.
-            </p>
-            <div class="lr-quiz__result-facts">
-              <p>
-                <strong>0 ₽</strong> диагностика, даже при отказе
-              </p>
-              <p>
-                Полную стоимость согласуем <strong>до ремонта</strong>
-              </p>
-            </div>
-          </div>
-          <details class="lr-quiz__answers">
-            <summary>Ваши ответы сохранены <span>Проверить</span></summary>
-            <dl class="lr-quiz__summary">
-              <div>
-                <dt>Ноутбук</dt>
-                <dd data-lr-quiz-answer="device_category">
-                  {brand?.label || "—"}
-                </dd>
-              </div>
-              <div>
-                <dt>Неисправность</dt>
-                <dd data-lr-quiz-answer="symptom">—</dd>
-              </div>
-              <div>
-                <dt>Способ ремонта</dt>
-                <dd data-lr-quiz-answer="service_format">—</dd>
-              </div>
-              <div data-lr-quiz-location-summary hidden>
-                <dt data-lr-quiz-location-label>Адрес</dt>
-                <dd data-lr-quiz-location-value></dd>
-              </div>
-            </dl>
-          </details>
+          <h3 class="lr-quiz__question" tabindex="-1">Как с вами удобнее связаться?</h3>
           <LeadForm
             id="lr-quiz-form"
             source="quiz"
             serviceName={brand ? `Ремонт ноутбуков ${brand.label}` : undefined}
             submitLabel="Получить расчёт стоимости"
-            requestTiming
+            contactChoice
           />
         </div>
         <p
