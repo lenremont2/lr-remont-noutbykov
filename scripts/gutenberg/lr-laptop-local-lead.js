@@ -26,6 +26,7 @@
         .join("");
     data.set("request_id", form.dataset.localRequestId);
     data.set("action", "lr_laptop_local_lead");
+    data.set("lr_compact", form.hasAttribute("data-lr-compact-form") ? "1" : "0");
     data.set("_ajax_nonce", config.nonce);
     data.set("page_path", location.pathname);
     data.set(
@@ -58,7 +59,7 @@
       success.hidden = false;
       const message = success.querySelector("p") || success;
       message.textContent =
-        "Локальная тестовая заявка принята сервером. Сообщения в CRM и почту не отправлялись.";
+        "Свяжемся с вами, уточним детали и согласуем следующий шаг. Тестовый режим: заявка не отправлена.";
     } catch (error) {
       if (status) {
         status.hidden = false;

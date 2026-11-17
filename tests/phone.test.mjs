@@ -27,8 +27,16 @@ const setPhone = (value, start = value.length, end = start) => {
   phone.setSelectionRange(start, end);
 };
 const edit = (inputType, data = "") => {
-  const event = { target: phone, inputType };
+  const event = {
+    target: phone,
+    inputType,
+    data,
+    preventDefault() {
+      this.defaultPrevented = true;
+    },
+  };
   handlers.beforeinput(event);
+  if (event.defaultPrevented) return;
   let { selectionStart: start, selectionEnd: end } = phone;
   if (start === end) {
     if (inputType === "deleteContentBackward") start = Math.max(0, start - 1);
@@ -50,6 +58,8 @@ for (const expected of ["+7 (1", "+7", ""]) {
 for (const digit of "9212345678") edit("insertText", digit);
 assert.equal(phone.value, "+7 (921) 234-56-78");
 assert.equal(validatePhone(phone.value).error, "");
+edit("insertText", "5");
+assert.equal(phone.value, "+7 (921) 234-56-78");
 for (let remaining = 10; remaining >= 0; remaining--) {
   edit("deleteContentBackward");
   assert.equal(phone.value.replace(/\D/g, "").length, remaining);

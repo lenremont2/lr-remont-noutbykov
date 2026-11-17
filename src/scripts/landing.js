@@ -34,6 +34,10 @@ export function initializePhoneMask(root) {
     const phone = event.target;
     if (!phone.matches("[data-lr-phone]") || phone.readOnly) return;
     const { selectionStart: start, selectionEnd: end } = phone;
+    if (event.inputType === "insertText" && /\d/.test(event.data || "") && start === end && phone.value.replace(/\D/g, "").length >= 11) {
+      event.preventDefault();
+      return;
+    }
     if (start === null || start !== end) return;
     // Delete the adjacent digit together with mask separators.
     if (event.inputType === "deleteContentBackward") {
@@ -819,19 +823,9 @@ export function updateFormReadiness(form) {
     (place.disabled ||
       ["home", "work", "mobile-lab", "consultation"].includes(place.value));
   const submit = form.querySelector("[data-hop-lead-submit]");
-  submit.disabled =
-    form.getAttribute?.("aria-busy") === "true" ||
-    !(phoneReady && consentReady && visitReady);
-  form.querySelector("[data-lr-form-ready]").textContent = !phoneReady
-    ? form.elements.phone.value.trim()
-      ? "Введите номер телефона полностью."
-      : ""
-    : !visitReady
-      ? "Укажите адрес и место ремонта."
-      : !consentReady
-        ? "Подтвердите согласие, чтобы отправить заявку."
-        : "Всё готово — можно отправить заявку.";
-  return !submit.disabled;
+  submit.disabled = form.getAttribute?.("aria-busy") === "true";
+  form.querySelector("[data-lr-form-ready]").textContent = "";
+  return !submit.disabled && phoneReady && consentReady && visitReady;
 }
 
 export function validateVisitFields(form, editedField = null) {
@@ -1223,13 +1217,16 @@ export function initializeLanding() {
     updateVisitFields(form);
     updateFormReadiness(form);
     const recheckVisitField = (event) => {
+      if (event.target === form.elements.phone && validatePhone(event.target.value).error) {
+        form.querySelector("[data-lr-consent-error]").textContent = "";
+        form.elements.consent.removeAttribute("aria-invalid");
+      }
       if (
         event.target === form.elements.phone &&
         event.target.getAttribute("aria-invalid") === "true"
       ) {
-        const error = validatePhone(event.target.value).error;
-        form.querySelector("[data-lr-phone-error]").textContent = error;
-        event.target.setAttribute("aria-invalid", String(Boolean(error)));
+        form.querySelector("[data-lr-phone-error]").textContent = "";
+        event.target.removeAttribute("aria-invalid");
       }
       if (event.target === form.elements.consent && event.target.checked) {
         form.querySelector("[data-lr-consent-error]").textContent = "";
@@ -1241,16 +1238,25 @@ export function initializeLanding() {
     };
     form.addEventListener("input", recheckVisitField);
     form.addEventListener("change", recheckVisitField);
+    form.addEventListener("focusout", (event) => {
+      const phone = form.elements.phone;
+      if (event.target !== phone && !event.target.closest?.("[data-lr-dialpad]")) return;
+      if (event.relatedTarget === phone || event.relatedTarget?.closest?.("[data-lr-dialpad]")) return;
+      if (!phone.value.trim()) return;
+      const error = validatePhone(phone.value).error;
+      form.querySelector("[data-lr-phone-error]").textContent = error;
+      phone.setAttribute("aria-invalid", String(Boolean(error)));
+    });
     form.addEventListener(
       "submit",
       (event) => {
         const phone = form.elements.phone;
         const consent = form.elements.consent;
         const { value, error: phoneError } = validatePhone(phone.value);
-        const visitInvalid = validateVisitFields(form);
-        const consentError = consent.checked
+        const consentError = phoneError || consent.checked
           ? ""
           : "Подтвердите согласие на обработку персональных данных.";
+        const visitInvalid = phoneError || consentError ? null : validateVisitFields(form);
         form.querySelector("[data-lr-phone-error]").textContent = phoneError;
         form.querySelector("[data-lr-consent-error]").textContent =
           consentError;
@@ -1261,7 +1267,7 @@ export function initializeLanding() {
         if (phoneError || visitInvalid || consentError) {
           event.preventDefault();
           event.stopImmediatePropagation();
-          (phoneError ? phone : visitInvalid || consent).focus();
+          (phoneError ? phone : consentError ? consent : visitInvalid).focus();
           return;
         }
         phone.value = formatPhone(value);
@@ -1293,6 +1299,12 @@ export function initializeLanding() {
     if (!form.matches("#hop-landing [data-lr-form]") || event.defaultPrevented)
       return;
     event.preventDefault();
+    if (root.hasAttribute("data-lr-local-preview")) {
+      const success = form.closest("[data-lead-root]").querySelector("[data-lead-success]");
+      success.querySelector("p").textContent = "Свяжемся с вами, уточним детали и согласуем следующий шаг. Тестовый режим: заявка не отправлена.";
+      form.hidden = true;
+      success.hidden = false;
+    }
   });
   mobile.addEventListener("change", () => {
     root.querySelectorAll("[data-lr-form]").forEach(updatePhoneMode);
@@ -1358,6 +1370,7 @@ export function initializeLanding() {
         phone.removeAttribute("aria-invalid");
       } else if (phone.value.replace(/\D/g, "").length < 11)
         phone.value += digit;
+      else return;
       phone.dispatchEvent(new Event("input", { bubbles: true }));
     } else if (target.matches("[data-lr-question]")) {
       const form = root.querySelector("#lr-contact [data-lr-form]");

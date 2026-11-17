@@ -1,0 +1,163 @@
+{
+  "flows": [
+    {
+      "width": 1440,
+      "format": "consultation",
+      "serverReceipt": true
+    },
+    {
+      "width": 1440,
+      "format": "workshop",
+      "serverReceipt": true
+    },
+    {
+      "width": 1440,
+      "format": "courier",
+      "serverReceipt": true
+    },
+    {
+      "width": 1440,
+      "format": "at-home",
+      "serverReceipt": true
+    },
+    {
+      "width": 1440,
+      "format": "mobile-lab",
+      "serverReceipt": true
+    },
+    {
+      "width": 375,
+      "format": "consultation",
+      "serverReceipt": true
+    },
+    {
+      "width": 375,
+      "format": "workshop",
+      "serverReceipt": true
+    },
+    {
+      "width": 375,
+      "format": "courier",
+      "serverReceipt": true
+    },
+    {
+      "width": 375,
+      "format": "at-home",
+      "serverReceipt": true
+    },
+    {
+      "width": 375,
+      "format": "mobile-lab",
+      "serverReceipt": true
+    },
+    {
+      "type": "map-to-form",
+      "doubleSubmitPrevented": true
+    },
+    {
+      "id": 6220,
+      "type": "contact-form",
+      "serverReceipt": true
+    },
+    {
+      "id": 6229,
+      "type": "contact-form",
+      "serverReceipt": true
+    },
+    {
+      "id": 6259,
+      "type": "contact-form",
+      "serverReceipt": true
+    },
+    {
+      "id": 6268,
+      "type": "contact-form",
+      "serverReceipt": true
+    }
+  ],
+  "candidate": false,
+  "mapStatus": "Карта недоступна. Укажите адрес в поле ниже или повторите загрузку.",
+  "mapNetwork": [
+    {
+      "path": "/embed.html",
+      "status": 200
+    },
+    {
+      "path": "/embed.html",
+      "error": "net::ERR_BLOCKED_BY_RESPONSE"
+    },
+    {
+      "path": "/embed.html",
+      "status": 200
+    },
+    {
+      "path": "/embed.html",
+      "error": "net::ERR_BLOCKED_BY_RESPONSE"
+    },
+    {
+      "path": "/embed.html",
+      "status": 200
+    },
+    {
+      "path": "/embed.html",
+      "error": "net::ERR_BLOCKED_BY_RESPONSE"
+    },
+    {
+      "path": "/embed.html",
+      "status": 200
+    },
+    {
+      "path": "/embed.html",
+      "error": "net::ERR_BLOCKED_BY_RESPONSE"
+    },
+    {
+      "path": "/embed.html",
+      "status": 200
+    },
+    {
+      "path": "/embed.html",
+      "error": "net::ERR_BLOCKED_BY_RESPONSE"
+    },
+    {
+      "path": "/embed.html",
+      "status": 200
+    },
+    {
+      "path": "/embed.html",
+      "error": "net::ERR_BLOCKED_BY_RESPONSE"
+    },
+    {
+      "path": "/embed.html",
+      "status": 200
+    },
+    {
+      "path": "/embed.html",
+      "error": "net::ERR_BLOCKED_BY_RESPONSE"
+    }
+  ],
+  "mapHeights": [
+    358,
+    358,
+    358
+  ],
+  "robotReference": {
+    "map": true,
+    "unexpandedQuiz": true,
+    "forms": [
+      [
+        "name",
+        "phone",
+        "service",
+        "service_name",
+        "cta_source",
+        "page_path",
+        "contact_method",
+        "privacy_consent"
+      ]
+    ]
+  },
+  "receiverValidation": true,
+  "serverDuplicatePrevented": true,
+  "errors": [],
+  "localPosts": 16
+}

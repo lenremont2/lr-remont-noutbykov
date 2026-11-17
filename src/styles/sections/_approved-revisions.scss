@@ -184,6 +184,18 @@
     text-align: center;
   }
 
+  .lr-marquee__list .lr-manufacturers__link--other {
+    border-color: var(--lr-color-accent);
+    background: var(--lr-color-accent);
+    color: var(--lr-color-accent-contrast);
+    font-weight: 700;
+  }
+
+  .lr-marquee__list .lr-manufacturers__link--other:hover {
+    border-color: var(--lr-color-accent-hover);
+    background: var(--lr-color-accent-hover);
+  }
+
   .lr-marquee__list img {
     height: 42px;
     width: 112px;
@@ -607,6 +619,31 @@
     color: var(--lr-color-info);
     font-size: 11px;
     line-height: 1.5;
+  }
+
+  .lr-modal--compact:has([data-lead-success]:not([hidden])) .lr-modal__title,
+  .lr-modal--compact:has([data-lead-success]:not([hidden])) .lr-modal__intro,
+  .lr-modal--compact [data-lead-success] [data-lr-modal-close] {
+    display: none;
+  }
+
+  .lr-modal--compact [data-lead-success] {
+    padding: 36px 4px 12px;
+    text-align: center;
+  }
+
+  .lr-modal--compact [data-lead-success]::before {
+    content: "✓";
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: var(--lr-color-success-soft);
+    color: var(--lr-color-success);
+    font-size: 30px;
+    line-height: 1;
   }
 
   .lr-modal--compact [data-lead-root] {

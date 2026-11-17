@@ -72,6 +72,7 @@ const content = typographHtml(await Astro.slots.render("default"));
       id="hop-landing"
       class={className}
       data-lr-themeable={themeable || undefined}
+      data-lr-local-preview={import.meta.env.DEV || undefined}
     >
       <Fragment set:html={content} />
       {

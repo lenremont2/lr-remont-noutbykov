@@ -17,7 +17,7 @@ assert.equal(updateFormReadiness(form), false);
 assert.equal(hint.textContent, "");
 form.elements.phone.value = "+7 (921)";
 assert.equal(updateFormReadiness(form), false);
-assert.equal(hint.textContent, "Введите номер телефона полностью.");
+assert.equal(hint.textContent, "");
 form.elements.phone.value = "+7 (921) 234-56-78";
 assert.equal(updateFormReadiness(form), false, "Consent is mandatory");
 form.elements.consent.checked = true;

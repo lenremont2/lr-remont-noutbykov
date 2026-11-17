@@ -5,7 +5,7 @@ if (!defined('ABSPATH') || home_url('/') !== 'http://testing-gutenberg.local/') 
 add_action('wp_footer', static function () {
     if (!current_user_can('manage_options') || !is_page()) return;
     $key = get_post_meta(get_queried_object_id(), '_lr_package_key', true);
-    if (!$key || !in_array((int)get_queried_object_id(), array_merge(range(6219, 6268), array(2370)), true)) return;
+    if (!$key || !in_array((int)get_queried_object_id(), array_merge(range(6219, 6268), array(2370, 8019)), true)) return;
     $config = array('url' => admin_url('admin-ajax.php'), 'nonce' => wp_create_nonce('lr-laptop-local-lead'));
     echo '<script id="lr-laptop-local-receiver" type="application/json">' . wp_json_encode($config, JSON_HEX_TAG | JSON_HEX_AMP) . '</script>';
     echo '<script>' . file_get_contents(__DIR__ . '/lr-laptop-local-lead.js') . '</script>';
@@ -21,7 +21,7 @@ add_action('wp_ajax_lr_laptop_local_lead', static function () {
         !($read('consent') === 'yes' || $read('privacy_consent') === '1')) wp_send_json_error(array('message' => 'Проверьте телефон и согласие.'), 400);
     $format = $read('service_format') ?: 'consultation';
     if (!in_array($format, array('consultation','workshop','courier','mobile-lab','at-home'), true)) wp_send_json_error(null, 400);
-    if (in_array($format, array('courier','mobile-lab','at-home'), true) && !$read('visit_address')) wp_send_json_error(array('message'=>'Укажите адрес.'), 400);
+    if (in_array($format, array('courier','mobile-lab','at-home'), true) && $read('lr_compact') !== '1' && !$read('visit_address')) wp_send_json_error(array('message'=>'Укажите адрес.'), 400);
     $receipt_key = 'lr_local_lead_' . get_current_user_id() . '_' . $id;
     if (get_transient($receipt_key)) wp_send_json_success(array('received'=>true, 'id'=>$id, 'duplicate'=>true));
     if (get_transient('lr_local_lead_fail_next')) {
