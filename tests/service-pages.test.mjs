@@ -268,15 +268,16 @@ for (const page of pages) {
         ]
       : [
           "lr-hero",
-          "lr-reviews",
           guideId,
-          "lr-formats",
+          "lr-reviews",
           "lr-prices",
           "lr-guarantee",
           "lr-director",
           "lr-faq",
         ];
   const positions = sections.map((id) => html.indexOf('id="' + id + '"'));
+  if (content.problems.includes(page))
+    assert.ok(!html.includes('id="lr-formats"'), page.slug);
   assert.ok(
     positions.every(
       (position, i) => position >= 0 && (!i || position > positions[i - 1]),
@@ -316,13 +317,14 @@ for (const page of pages) {
     );
     assert.ok(!quiz.includes("MacBook") && !quiz.includes("macOS"), page.slug);
   }
-  for (const format of ["mobile-lab", "workshop", "courier"])
-    assert.ok(
-      html.includes(
-        'data-format="' + format + '" data-source="formats:' + format + '"',
-      ),
-      page.slug,
-    );
+  if (!content.problems.includes(page))
+    for (const format of ["mobile-lab", "workshop", "courier"])
+      assert.ok(
+        html.includes(
+          'data-format="' + format + '" data-source="formats:' + format + '"',
+        ),
+        page.slug,
+      );
   for (const item of page.faq)
     assert.ok(
       html.includes(item.question) && html.includes(item.answer),

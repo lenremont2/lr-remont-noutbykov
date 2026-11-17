@@ -1,6 +1,5 @@
 ---
 import LandingLayout from "../../layouts/LandingLayout.astro";
-import RepairFormats from "../sections/RepairFormats.astro";
 import HomeRepairJourney from "../sections/HomeRepairJourney.astro";
 import SecurityRules from "../sections/SecurityRules.astro";
 import HomeProtection from "../sections/HomeProtection.astro";
@@ -59,7 +58,6 @@ const powerRepairSteps = [
       symptom={symptom.title}
       warning={page.warning}
     />
-    <Reviews scrollScene title="Отзывы наших клиентов" homeVariant />
     <section
       id="lr-problem-guide"
       class="lr-section lr-child-guide"
@@ -145,7 +143,7 @@ const powerRepairSteps = [
         </article>
       </div>
     </section>
-    <RepairFormats journey />
+    <Reviews scrollScene title="Отзывы наших клиентов" homeVariant />
     <ServicePriceTable
       title="Диагностика и стоимость ремонта"
       lead={rows.length

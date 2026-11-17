@@ -1,0 +1,2 @@
+<?php
+if(home_url()!=='http://testing-gutenberg.local'||get_current_user_id()!==1)throw new RuntimeException('Wrong site');$p=get_page_by_path('noutbuk-ne-vklyuchaetsya',OBJECT,'page');$b=parse_blocks($p->post_content);$parent=$b[0]['innerBlocks'][0]['innerBlocks'][0];echo wp_json_encode(['children'=>count($parent['innerBlocks']),'parts'=>array_map(static function($x){return $x===null?null:substr($x,0,80);},$parent['innerContent'])]);

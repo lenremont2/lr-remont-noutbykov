@@ -1,0 +1,350 @@
+{
+  "site": "http://testing-gutenberg.local",
+  "checkedAt": "2026-11-17T16:11:49.299Z",
+  "existingPagesUnchanged": null,
+  "pages": [
+    {
+      "id": 6259,
+      "key": "noutbuk-ne-vklyuchaetsya",
+      "url": "http://testing-gutenberg.local/noutbuk-ne-vklyuchaetsya.htm",
+      "preview": "http://testing-gutenberg.local/?page_id=6259&preview=true",
+      "editor": "http://testing-gutenberg.local/wp-admin/post.php?post=6259&action=edit",
+      "seo": true,
+      "parentId": "6219",
+      "views": [
+        {
+          "width": 1440,
+          "overflow": false,
+          "brokenImages": [],
+          "rootCount": 1,
+          "themeSwitch": false,
+          "forms": [
+            {
+              "lead": true,
+              "fields": [
+                "contact_method",
+                "quiz_service",
+                "service_name",
+                "cta_source",
+                "page_path",
+                "source",
+                "service_format",
+                "device_category",
+                "symptom",
+                "phone",
+                "workshop_id",
+                "district",
+                "visit_address",
+                "requested_repair_place",
+                "consent"
+              ]
+            },
+            {
+              "lead": true,
+              "fields": [
+                "contact_method",
+                "quiz_service",
+                "service_name",
+                "cta_source",
+                "page_path",
+                "source",
+                "service_format",
+                "device_category",
+                "symptom",
+                "phone",
+                "workshop_id",
+                "district",
+                "visit_address",
+                "requested_repair_place",
+                "consent"
+              ]
+            }
+          ]
+        },
+        {
+          "width": 1024,
+          "overflow": false,
+          "brokenImages": [],
+          "rootCount": 1,
+          "themeSwitch": false,
+          "forms": [
+            {
+              "lead": true,
+              "fields": [
+                "contact_method",
+                "quiz_service",
+                "service_name",
+                "cta_source",
+                "page_path",
+                "source",
+                "service_format",
+                "device_category",
+                "symptom",
+                "phone",
+                "workshop_id",
+                "district",
+                "visit_address",
+                "requested_repair_place",
+                "consent"
+              ]
+            },
+            {
+              "lead": true,
+              "fields": [
+                "contact_method",
+                "quiz_service",
+                "service_name",
+                "cta_source",
+                "page_path",
+                "source",
+                "service_format",
+                "device_category",
+                "symptom",
+                "phone",
+                "workshop_id",
+                "district",
+                "visit_address",
+                "requested_repair_place",
+                "consent"
+              ]
+            }
+          ]
+        },
+        {
+          "width": 375,
+          "overflow": false,
+          "brokenImages": [],
+          "rootCount": 1,
+          "themeSwitch": false,
+          "forms": [
+            {
+              "lead": true,
+              "fields": [
+                "contact_method",
+                "quiz_service",
+                "service_name",
+                "cta_source",
+                "page_path",
+                "source",
+                "service_format",
+                "device_category",
+                "symptom",
+                "phone",
+                "workshop_id",
+                "district",
+                "visit_address",
+                "requested_repair_place",
+                "consent"
+              ]
+            },
+            {
+              "lead": true,
+              "fields": [
+                "contact_method",
+                "quiz_service",
+                "service_name",
+                "cta_source",
+                "page_path",
+                "source",
+                "service_format",
+                "device_category",
+                "symptom",
+                "phone",
+                "workshop_id",
+                "district",
+                "visit_address",
+                "requested_repair_place",
+                "consent"
+              ]
+            }
+          ]
+        }
+      ],
+      "blocks": 1539,
+      "editorSaveReopen": true,
+      "editorFont": "\"LR Golos Text\", Arial, sans-serif",
+      "editorLayout": {
+        "display": "block",
+        "heroDisplay": "block"
+      },
+      "editorHeroIcons": [],
+      "heroIconCheck": true,
+      "staticLineBreaks": 0,
+      "video": [],
+      "faqKeyboard": true,
+      "mobileDialpad": true,
+      "phoneMask": true,
+      "errors": []
+    },
+    {
+      "id": 8019,
+      "key": "ne-rabotaet-tachpad-noutbuka",
+      "url": "http://testing-gutenberg.local/ne-rabotaet-tachpad-noutbuka.htm",
+      "preview": "http://testing-gutenberg.local/?page_id=8019&preview=true",
+      "editor": "http://testing-gutenberg.local/wp-admin/post.php?post=8019&action=edit",
+      "seo": true,
+      "parentId": "6219",
+      "views": [
+        {
+          "width": 1440,
+          "overflow": false,
+          "brokenImages": [],
+          "rootCount": 1,
+          "themeSwitch": false,
+          "forms": [
+            {
+              "lead": true,
+              "fields": [
+                "contact_method",
+                "quiz_service",
+                "service_name",
+                "cta_source",
+                "page_path",
+                "source",
+                "service_format",
+                "device_category",
+                "symptom",
+                "phone",
+                "workshop_id",
+                "district",
+                "visit_address",
+                "requested_repair_place",
+                "consent"
+              ]
+            },
+            {
+              "lead": true,
+              "fields": [
+                "contact_method",
+                "quiz_service",
+                "service_name",
+                "cta_source",
+                "page_path",
+                "source",
+                "service_format",
+                "device_category",
+                "symptom",
+                "phone",
+                "workshop_id",
+                "district",
+                "visit_address",
+                "requested_repair_place",
+                "consent"
+              ]
+            }
+          ]
+        },
+        {
+          "width": 1024,
+          "overflow": false,
+          "brokenImages": [],
+          "rootCount": 1,
+          "themeSwitch": false,
+          "forms": [
+            {
+              "lead": true,
+              "fields": [
+                "contact_method",
+                "quiz_service",
+                "service_name",
+                "cta_source",
+                "page_path",
+                "source",
+                "service_format",
+                "device_category",
+                "symptom",
+                "phone",
+                "workshop_id",
+                "district",
+                "visit_address",
+                "requested_repair_place",
+                "consent"
+              ]
+            },
+            {
+              "lead": true,
+              "fields": [
+                "contact_method",
+                "quiz_service",
+                "service_name",
+                "cta_source",
+                "page_path",
+                "source",
+                "service_format",
+                "device_category",
+                "symptom",
+                "phone",
+                "workshop_id",
+                "district",
+                "visit_address",
+                "requested_repair_place",
+                "consent"
+              ]
+            }
+          ]
+        },
+        {
+          "width": 375,
+          "overflow": false,
+          "brokenImages": [],
+          "rootCount": 1,
+          "themeSwitch": false,
+          "forms": [
+            {
+              "lead": true,
+              "fields": [
+                "contact_method",
+                "quiz_service",
+                "service_name",
+                "cta_source",
+                "page_path",
+                "source",
+                "service_format",
+                "device_category",
+                "symptom",
+                "phone",
+                "workshop_id",
+                "district",
+                "visit_address",
+                "requested_repair_place",
+                "consent"
+              ]
+            },
+            {
+              "lead": true,
+              "fields": [
+                "contact_method",
+                "quiz_service",
+                "service_name",
+                "cta_source",
+                "page_path",
+                "source",
+                "service_format",
+                "device_category",
+                "symptom",
+                "phone",
+                "workshop_id",
+                "district",
+                "visit_address",
+                "requested_repair_place",
+                "consent"
+              ]
+            }
+          ]
+        }
+      ],
+      "blocks": 1518,
+      "editorSaveReopen": true,
+      "editorFont": "\"LR Golos Text\", Arial, sans-serif",
+      "editorLayout": {
+        "display": "block",
+        "heroDisplay": "block"
+      },
+      "editorHeroIcons": [],
+      "heroIconCheck": true,
+      "staticLineBreaks": 0,
+      "faqKeyboard": true,
+      "errors": []
+    }
+  ]
+}

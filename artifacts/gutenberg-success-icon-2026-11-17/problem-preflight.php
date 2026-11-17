@@ -1,0 +1,4 @@
+<?php
+if(home_url()!=='http://testing-gutenberg.local'||get_current_user_id()!==1)throw new RuntimeException('Wrong site');
+$data=json_decode(file_get_contents('D:/works/projects/lr-remont-noutbykov/src/data/service-pages.json'),true);$result=[];
+foreach($data['problems'] as $item){$p=get_page_by_path($item['slug'],OBJECT,'page');if(!$p)throw new RuntimeException('Missing '.$item['slug']);$s=Lenremont\PageImporter\PageSpec::snapshot($p->ID);$b=parse_blocks($s['content']);$children=$b[0]['innerBlocks'][0]['innerBlocks'][0]['innerBlocks'];$ids=array_map(static function($b){return $b['attrs']['attributes']['id']??'';},$children);$result[]=['id'=>$p->ID,'slug'=>$p->post_name,'status'=>$p->post_status,'author'=>$p->post_author,'revision'=>$s['revision'],'same'=>$s['content']===serialize_blocks($b),'first'=>array_slice($ids,0,4)];} echo wp_json_encode($result);
