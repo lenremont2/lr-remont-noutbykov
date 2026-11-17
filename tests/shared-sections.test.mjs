@@ -90,25 +90,25 @@ test("All child pages use the homepage service components", () => {
       );
     }
     if (!isProblem) {
-    assert.ok(formats?.includes("lr-formats--compact"), page.slug);
-    assert.equal((formats.match(/<article /g) || []).length, 4, page.slug);
-    assert.ok(!formats.includes("lr-formats__trust"), page.slug);
-    assert.equal(
-      (formats.match(/data-lr-map-open=/g) || []).length,
-      4,
-      page.slug,
-    );
-    if (usesHomeVisuals) {
-      assert.ok(formats.includes("lr-formats--journey"), page.slug);
+      assert.ok(formats?.includes("lr-formats--compact"), page.slug);
+      assert.equal((formats.match(/<article /g) || []).length, 4, page.slug);
+      assert.ok(!formats.includes("lr-formats__trust"), page.slug);
       assert.equal(
-        (formats.match(/data-format-schema=/g) || []).length,
-        0,
+        (formats.match(/data-lr-map-open=/g) || []).length,
+        4,
         page.slug,
       );
-    } else {
-      for (const name of ["home", "mobile", "workshop", "courier"])
-        assert.ok(formats.includes(`format-${name}-v4-1280.webp`), page.slug);
-    }
+      if (usesHomeVisuals) {
+        assert.ok(formats.includes("lr-formats--journey"), page.slug);
+        assert.equal(
+          (formats.match(/data-format-schema=/g) || []).length,
+          0,
+          page.slug,
+        );
+      } else {
+        for (const name of ["home", "mobile", "workshop", "courier"])
+          assert.ok(formats.includes(`format-${name}-v4-1280.webp`), page.slug);
+      }
     } else assert.equal(formats, undefined, page.slug);
     assert.ok(html.includes('data-lr-modal="map"'), page.slug);
     assert.ok(html.includes('id="lr-map-workshops-modal"'), page.slug);
