@@ -1,7 +1,6 @@
 ---
 import copy from "../../data/laptop-service.json";
 import workshops from "../../data/workshops.json";
-import SocialLinks from "../sections/SocialLinks.astro";
 interface Props {
   id: string;
   source: string;
@@ -32,7 +31,7 @@ const {
     data-lr-contact-choice={contactChoice || undefined}
     novalidate
   >
-    {!contactChoice && <input type="hidden" name="contact_method" value="Телефон" />}
+    <input type="hidden" name="contact_method" value={contactChoice ? "" : "Телефон"} />
     <input type="hidden" name="quiz_service" value={serviceName} />
     <input type="hidden" name="service_name" value={serviceName} />
     <input type="hidden" name="cta_source" value={source} />
@@ -78,7 +77,6 @@ const {
         >
       </div>
     </div>
-    {contactChoice && <><SocialLinks quizChoice /><p class="lr-field-error" id="lr-quiz-contact-method-error" data-lr-contact-method-error></p></>}
     <div class={contactChoice ? "lr-quiz__contact-field" : "lr-form__field"} data-lr-phone-field={contactChoice || undefined} hidden={contactChoice || undefined}>
       <label for={`${id}-phone`}>Ваш телефон</label>
       <input

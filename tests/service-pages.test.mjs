@@ -306,7 +306,7 @@ for (const page of pages) {
       page.slug,
     );
     const quiz = html.match(/<section id="lr-quiz"[\s\S]*?<\/section>/)?.[0];
-    assert.equal((quiz.match(/data-lr-quiz-step/g) || []).length, 4, page.slug);
+    assert.equal((quiz.match(/data-lr-quiz-step/g) || []).length, 5, page.slug);
     assert.ok(
       !quiz.includes('name="device_category" value="standard"'),
       page.slug,

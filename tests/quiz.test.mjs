@@ -12,7 +12,7 @@ const html = readFileSync(
 );
 const section = html.match(/<section id="lr-quiz"[\s\S]*?<\/section>/)?.[0];
 assert.ok(section);
-assert.equal((section.match(/data-lr-quiz-step/g) || []).length, 5);
+assert.equal((section.match(/data-lr-quiz-step/g) || []).length, 6);
 assert.equal((section.match(/data-hop-lead-submit/g) || []).length, 1);
 assert.match(section, /data-hop-lead-ignore/);
 assert.doesNotMatch(
@@ -104,7 +104,7 @@ function createQuiz({ brand = false, reducedMotion = false } = {}) {
       handlers[`${name}:${type}`] = handler;
     },
   });
-  const steps = Array.from({ length: names.length + 2 }, (_, index) => ({
+  const steps = Array.from({ length: names.length + 3 }, (_, index) => ({
     hidden: false,
     querySelector: (selector) =>
       selector === "input:checked"
@@ -116,6 +116,10 @@ function createQuiz({ brand = false, reducedMotion = false } = {}) {
           },
   }));
   const location = steps[names.length];
+  const contact = steps[names.length + 1];
+  let selectedContact = null;
+  contact.addEventListener = (type, handler) => { handlers[`contact:${type}`] = handler; };
+  contact.querySelector = (selector) => selector.includes(":checked") ? selectedContact : { focus() {} };
   const workshop = control("workshop");
   Object.defineProperty(workshop, "selectedOptions", {
     get: () => [
@@ -161,6 +165,7 @@ function createQuiz({ brand = false, reducedMotion = false } = {}) {
         "workshop_id",
         "visit_address",
         "requested_repair_place",
+        "contact_method",
       ].map((name) => [name, { value: "" }]),
       ["phone", { value: "" }],
       ["consent", { checked: false }],
@@ -201,6 +206,7 @@ function createQuiz({ brand = false, reducedMotion = false } = {}) {
   const selectors = new Map([
     ["[data-lr-quiz-questions]", questions],
     ["[data-lr-quiz-location]", location],
+    ["[data-lr-quiz-contact-step]", contact],
     ["[data-lr-quiz-workshop]", workshop],
     ["[data-lr-quiz-address]", address],
     ["[data-lr-quiz-place]", place],
@@ -280,6 +286,10 @@ function createQuiz({ brand = false, reducedMotion = false } = {}) {
     locationValue,
     locationViews,
     confirmLocation: () => handlers["location-confirm:click"](),
+    selectContact: (value = "Телефон") => {
+      selectedContact = { value, checked: true, matches: () => true };
+      handlers["contact:change"]({ target: selectedContact });
+    },
     select,
     back: () => handlers["previous:click"](),
     repeat: (index) => handlers["questions:click"]({ target: answers[index] }),
@@ -302,7 +312,7 @@ try {
   const home = createQuiz();
   assert.deepEqual(
     home.steps.map((step) => step.hidden),
-    [false, true, true, true, true],
+    [false, true, true, true, true, true],
   );
   assert.equal(home.previous.hidden, true);
   assert.equal(home.toolbar.hidden, false);
@@ -325,7 +335,7 @@ try {
   );
   assert.equal(
     home.progress.textContent,
-    "Шаг 2 из 5",
+    "Шаг 2 из 6",
     "Keyboard selection advances automatically",
   );
   assert.equal(home.meter.value, 2);
@@ -338,7 +348,7 @@ try {
   home.handlers["questions:click"]({ target: first });
   assert.equal(
     home.progress.textContent,
-    "Шаг 2 из 5",
+    "Шаг 2 из 6",
     "The following click cannot skip a question",
   );
   home.select(1, "Программы и настройка");
@@ -347,11 +357,11 @@ try {
   home.repeat(1);
   assert.equal(
     home.progress.textContent,
-    "Шаг 3 из 5",
+    "Шаг 3 из 6",
     "Saved choices remain actionable after Back",
   );
   const last = home.select(2, "courier", "Передам курьеру");
-  assert.equal(home.progress.textContent, "Шаг 4 из 5");
+  assert.equal(home.progress.textContent, "Шаг 4 из 6");
   assert.equal(
     home.analysis.hidden,
     true,
@@ -371,6 +381,8 @@ try {
   assert.equal(home.focused, "address");
   home.address.value = "  Санкт-Петербург, Невский проспект, д. 10  ";
   home.confirmLocation();
+  assert.equal(home.progress.textContent, "Шаг 5 из 6");
+  home.selectContact("Telegram");
   assert.equal(home.analysis.hidden, false);
   assert.equal(home.questions.hidden, true);
   assert.equal(home.hint.hidden, true);
@@ -380,8 +392,8 @@ try {
   home.back();
   assert.equal(timers.size, 0, "Back cancels loading");
   assert.equal(home.analysis.hidden, true);
-  assert.equal(home.progress.textContent, "Шаг 4 из 5");
-  home.confirmLocation();
+  assert.equal(home.progress.textContent, "Шаг 5 из 6");
+  home.selectContact("Telegram");
   home.handlers["questions:change"]({ target: last });
   assert.equal(
     timers.size,
@@ -389,15 +401,16 @@ try {
     "Repeated events cannot schedule two transitions",
   );
   finishLoading();
-  assert.equal(home.progress.textContent, "Шаг 5 из 5");
+  assert.equal(home.progress.textContent, "Шаг 6 из 6");
+  assert.equal(home.form.elements.contact_method.value, "Telegram");
   assert.equal(
     home.form.elements.visit_address.value,
     "Санкт-Петербург, Невский проспект, д. 10",
   );
-  assert.equal(home.meter.value, 5);
+  assert.equal(home.meter.value, 6);
   assert.equal(home.busy, false);
   assert.equal(home.questions.hidden, true);
-  assert.equal(home.steps[4].hidden, false);
+  assert.equal(home.steps[5].hidden, false);
   assert.equal(home.updates, 1);
   assert.deepEqual(
     ["device_category", "symptom", "service_format"].map(
@@ -407,6 +420,7 @@ try {
   );
   home.form.elements.phone.value = "+7 (921) 234-56-78";
   home.form.elements.consent.checked = true;
+  home.back();
   home.back();
   assert.equal(
     home.address.value.trim(),
@@ -423,6 +437,7 @@ try {
   assert.ok(home.error.textContent);
   home.workshop.value = "prosveshcheniya";
   home.confirmLocation();
+  home.selectContact();
   finishLoading();
   assert.equal(home.form.elements.workshop_id.value, "prosveshcheniya");
   assert.equal(home.form.elements.service_format.value, "workshop");
@@ -508,8 +523,8 @@ try {
   home.back();
   modalHandlers["close:click"]();
   restored();
-  assert.equal(home.progress.textContent, "Шаг 4 из 5");
-  home.confirmLocation();
+  assert.equal(home.progress.textContent, "Шаг 5 из 6");
+  home.selectContact();
   open();
   assert.equal(
     home.analysis.hidden,
@@ -559,22 +574,24 @@ try {
   assert.deepEqual(fallbackHandlers, {});
 
   const brand = createQuiz({ brand: true });
-  assert.equal(brand.progress.textContent, "Шаг 1 из 4");
+  assert.equal(brand.progress.textContent, "Шаг 1 из 5");
   brand.select(0, "Чистка и перегрев", "Греется, шумит или гаснет", true);
-  assert.equal(brand.progress.textContent, "Шаг 2 из 4");
+  assert.equal(brand.progress.textContent, "Шаг 2 из 5");
   brand.select(1, "courier", "Передам курьеру", true);
-  assert.equal(brand.progress.textContent, "Шаг 3 из 4");
+  assert.equal(brand.progress.textContent, "Шаг 3 из 5");
   brand.address.value = "Выборг, проспект Ленина, д. 1";
   brand.confirmLocation();
+  brand.selectContact();
   assert.equal(
     [...timers.values()][0].delay,
     0,
     "Keyboard flow skips the loading delay",
   );
   finishLoading();
-  assert.equal(brand.progress.textContent, "Шаг 4 из 4");
+  assert.equal(brand.progress.textContent, "Шаг 5 из 5");
   assert.equal(brand.form.elements.device_category.value, "");
   assert.equal(brand.form.elements.quiz_service.value, "Ремонт ноутбуков ASUS");
+  brand.back();
   brand.back();
   let enterPrevented = false;
   brand.handlers["location:keydown"]({
@@ -584,16 +601,17 @@ try {
       enterPrevented = true;
     },
   });
+  brand.selectContact();
   finishLoading();
   assert.equal(enterPrevented, true);
-  assert.equal(brand.progress.textContent, "Шаг 4 из 4");
+  assert.equal(brand.progress.textContent, "Шаг 5 из 5");
 
   for (const format of ["at-home", "mobile-lab"]) {
     const visit = createQuiz();
     visit.select(0, "standard");
     visit.select(1, "Чистка и перегрев");
     visit.select(2, format);
-    assert.equal(visit.progress.textContent, "Шаг 4 из 5");
+    assert.equal(visit.progress.textContent, "Шаг 4 из 6");
     assert.equal(visit.placeField.hidden, false);
     assert.equal(
       visit.place.value,
@@ -609,14 +627,17 @@ try {
       "Draft address survives Back",
     );
     visit.confirmLocation();
+    visit.selectContact();
     finishLoading();
     assert.equal(visit.form.elements.requested_repair_place.value, "work");
     assert.equal(visit.form.elements.visit_address.value, visit.address.value);
     visit.back();
     visit.back();
+    visit.back();
     visit.select(2, "consultation");
+    visit.selectContact();
     finishLoading();
-    assert.equal(visit.progress.textContent, "Шаг 4 из 4");
+    assert.equal(visit.progress.textContent, "Шаг 5 из 5");
     assert.equal(
       visit.location.hidden,
       true,
@@ -627,13 +648,14 @@ try {
   reduced.select(0, "standard");
   reduced.select(1, "Другая неисправность");
   reduced.select(2, "consultation");
+  reduced.selectContact();
   assert.equal(
     [...timers.values()][0].delay,
     0,
     "Reduced motion skips the loading delay",
   );
   finishLoading();
-  assert.equal(reduced.progress.textContent, "Шаг 4 из 4");
+  assert.equal(reduced.progress.textContent, "Шаг 5 из 5");
   assert.equal(timers.size, 0);
   console.log(
     "Quiz: automatic pointer/keyboard choices, saved-answer clicks, Back/loading cancellation, summary/payload, preserved phone/consent, brand and reduced-motion flows passed.",

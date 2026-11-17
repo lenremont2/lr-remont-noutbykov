@@ -2,6 +2,7 @@
 import copy from "../../data/laptop-service.json";
 import LeadForm from "../ui/LeadForm.astro";
 import MapSlot from "../ui/MapSlot.astro";
+import SocialLinks from "./SocialLinks.astro";
 import workshops from "../../data/workshops.json";
 import type { BrandPage } from "../../data/service-pages";
 interface Props {
@@ -166,7 +167,7 @@ const pageQuestions = brand
           class="lr-quiz__meter"
           data-lr-quiz-meter
           value="1"
-          max={pageQuestions.length + 2}
+          max={pageQuestions.length + 3}
           aria-hidden="true"
           hidden></progress>
         <p id="lr-quiz-hint" class="lr-quiz__hint" data-lr-quiz-hint hidden>
@@ -310,6 +311,10 @@ const pageQuestions = brand
             >Подтвердить адрес</button
           >
         </div>
+        <div class="lr-quiz__step" data-lr-quiz-step data-lr-quiz-contact-step>
+          <h3 class="lr-quiz__question" tabindex="-1">Как с вами удобнее связаться?</h3>
+          <SocialLinks quizChoice />
+        </div>
         <div class="lr-quiz__analysis" data-lr-quiz-analysis hidden>
           <div class="lr-quiz__analysis-visual" aria-hidden="true">
             <span class="lr-quiz__spinner"></span>
@@ -332,10 +337,10 @@ const pageQuestions = brand
           <p role="status">
             Неисправность и способ ремонта выбраны. Переносим ответы в заявку.
           </p>
-          <p class="lr-quiz__analysis-note">Следующий шаг — номер для связи</p>
+          <p class="lr-quiz__analysis-note">Следующий шаг — контакт для связи</p>
         </div>
         <div class="lr-quiz__step lr-quiz__result" data-lr-quiz-step>
-          <h3 class="lr-quiz__question" tabindex="-1">Как с вами удобнее связаться?</h3>
+          <h3 class="lr-quiz__question" tabindex="-1">Оставьте контакт для связи</h3>
           <LeadForm
             id="lr-quiz-form"
             source="quiz"
