@@ -45,3 +45,14 @@ assert.equal(
   false,
   "Editing a complete number revalidates readiness",
 );
+
+form.hasAttribute = (name) => name === "data-lr-contact-choice";
+form.elements.contact_method = { value: "Telegram" };
+form.elements.contact_profile = { value: "" };
+assert.equal(updateFormReadiness(form), false, "A profile is required");
+form.elements.contact_profile.value = "@username";
+assert.equal(updateFormReadiness(form), true, "A profile replaces the phone for Telegram");
+form.elements.contact_method.value = "MAX";
+assert.equal(updateFormReadiness(form), false, "MAX requires a complete phone");
+form.elements.phone.value = "+7 (921) 234-56-78";
+assert.equal(updateFormReadiness(form), true);
