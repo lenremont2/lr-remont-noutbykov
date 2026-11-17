@@ -19,9 +19,9 @@ add_action('wp_ajax_lr_laptop_local_lead', static function () {
     $method = $read('contact_method') ?: 'Телефон';
     $profile = $read('contact_profile');
     $id = $read('request_id');
-    $valid_contact = in_array($method, array('Телефон', 'WhatsApp'), true)
+    $valid_contact = in_array($method, array('Телефон', 'WhatsApp', 'MAX'), true)
         ? (bool) preg_match('/^7[0-9]{10}$/D', $phone)
-        : in_array($method, array('ВКонтакте', 'Telegram', 'MAX'), true) && $profile !== '' && mb_strlen($profile) <= 200;
+        : in_array($method, array('ВКонтакте', 'Telegram'), true) && $profile !== '' && mb_strlen($profile) <= 200;
     if (!$valid_contact || !preg_match('/^[a-f0-9]{32}$/D', $id) ||
         !($read('consent') === 'yes' || $read('privacy_consent') === '1')) wp_send_json_error(array('message' => 'Проверьте телефон и согласие.'), 400);
     $format = $read('service_format') ?: 'consultation';

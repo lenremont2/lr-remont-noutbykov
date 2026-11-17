@@ -386,22 +386,22 @@ export function initializeAutoSwipe(slider, advance, stop, reducedMotion) {
 }
 
 function configureQuizContact(form, method) {
-  const usePhone = method === "Телефон" || method === "WhatsApp";
+  const usePhone = ["Телефон", "WhatsApp", "MAX"].includes(method);
   form.querySelector("[data-lr-phone-field]").hidden = !usePhone;
   form.querySelector("[data-lr-profile-field]").hidden = usePhone;
   form.elements.phone.disabled = !usePhone;
   form.elements.contact_profile.disabled = usePhone;
-  form.querySelector("[data-lr-dialpad]").hidden = true;
+  form.querySelector("[data-lr-dialpad]").hidden = !usePhone || !form.elements.phone.readOnly;
   form.querySelector("[data-lr-phone-error]").textContent = "";
   form.querySelector("[data-lr-profile-error]").textContent = "";
   form.querySelector("[data-lr-consent-error]").textContent = "";
   form.elements.phone.removeAttribute("aria-invalid");
   form.elements.contact_profile.removeAttribute("aria-invalid");
   form.elements.consent.removeAttribute("aria-invalid");
-  form.querySelector("[data-lr-phone-field] label").textContent = method === "WhatsApp" ? "Номер WhatsApp" : "Ваш телефон";
-  form.querySelector("[data-lr-phone-field] .lr-caption").textContent = method === "WhatsApp" ? "Напишем и уточним вашу задачу" : "Перезвоним и уточним вашу задачу";
-  form.querySelector("[data-lr-profile-label]").textContent = method === "ВКонтакте" ? "Ссылка на профиль ВК" : method === "Telegram" ? "Имя пользователя или ссылка в Telegram" : "Ссылка на профиль или номер в MAX";
-  form.elements.contact_profile.placeholder = method === "ВКонтакте" ? "vk.com/имя" : method === "Telegram" ? "@имя или ссылка" : "Ссылка или номер";
+  form.querySelector("[data-lr-phone-field] label").textContent = method === "Телефон" ? "Ваш телефон" : `Номер ${method}`;
+  form.querySelector("[data-lr-phone-field] .lr-caption").textContent = method === "Телефон" ? "Перезвоним и уточним вашу задачу" : "Напишем и уточним вашу задачу";
+  form.querySelector("[data-lr-profile-label]").textContent = method === "ВКонтакте" ? "Ссылка на профиль ВК" : "Имя пользователя или ссылка в Telegram";
+  form.elements.contact_profile.placeholder = method === "ВКонтакте" ? "vk.com/имя" : "@имя или ссылка";
 }
 
 export function initializeRepairQuiz(quiz, updateContext) {
@@ -834,7 +834,7 @@ export function updateVisitFields(form) {
 export function updateFormReadiness(form) {
   const choosing = form.hasAttribute?.("data-lr-contact-choice");
   const method = choosing ? form.elements.contact_method.value : "Телефон";
-  const phoneReady = Boolean(method) && (method === "Телефон" || method === "WhatsApp"
+  const phoneReady = Boolean(method) && (["Телефон", "WhatsApp", "MAX"].includes(method)
     ? !validatePhone(form.elements.phone.value).error
     : Boolean(form.elements.contact_profile.value.trim()));
   const consentReady = form.elements.consent.checked;
@@ -1280,7 +1280,7 @@ export function initializeLanding() {
         const consent = form.elements.consent;
         const choosing = form.hasAttribute("data-lr-contact-choice");
         const method = choosing ? form.elements.contact_method.value : "Телефон";
-        const profile = choosing && method && method !== "Телефон" && method !== "WhatsApp" ? form.elements.contact_profile : null;
+        const profile = choosing && method && !["Телефон", "WhatsApp", "MAX"].includes(method) ? form.elements.contact_profile : null;
         const { value, error: phoneError } = method && !profile ? validatePhone(phone.value) : { value: "", error: "" };
         const methodError = choosing && !method ? "Выберите способ связи." : "";
         const profileError = profile && !profile.value.trim() ? "Укажите контакт для связи." : "";
