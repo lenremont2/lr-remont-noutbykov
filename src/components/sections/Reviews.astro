@@ -82,16 +82,14 @@ const { aggregators = [] } = reviews as typeof reviews & {
       <div class="lr-container lr-reviews__awards">
         <h3>Признание компании</h3>
         <div class="lr-reviews__award">
-          <>
-            <strong>2026</strong>
-            <p>
-              Рейтинг брендов
-              <>
-                <br />
-                <span>Деловой Петербург</span>
-              </>
-            </p>
-          </>
+          <strong>2026</strong>
+          <p>
+            Второе место в категории «Услуги»
+            <br />
+            <a href="https://www.dp.ru/a/2026/08/28/delovoj-peterburg-predstavil">
+              Рейтинг брендов «Делового Петербурга»
+            </a>
+          </p>
         </div>
       </div>
     )
@@ -150,26 +148,28 @@ const { aggregators = [] } = reviews as typeof reviews & {
               class="lr-documents lr-swipe-track"
               data-lr-swipe-track
               tabindex="0"
-              aria-label="Награды и благодарности компании"
+              aria-label="Награды и признание «Ленремонта»"
             >
               {repData.awards.map((award) => (
                 <li class="lr-document">
                   <div class="lr-document__preview">
-                    <span class="lr-document__emblem" aria-hidden="true">
-                      <img
-                        src={award.preview}
-                        alt=""
-                        width="400"
-                        height="340"
-                        loading="lazy"
-                        decoding="async"
-                        class="lr-document__emblem-img"
-                      />
-                    </span>
+                    <img
+                      src={award.preview}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                   <div class="lr-document__copy">
                     <h4>{award.title}</h4>
-                    {award.description && <p>{award.description}</p>}
+                    <p>{award.description}</p>
+                    <a
+                      class="lr-document__link"
+                      href={award.url}
+                      aria-label={`${award.linkLabel} — ${award.title}`}
+                    >
+                      {award.linkLabel}
+                    </a>
                   </div>
                 </li>
               ))}

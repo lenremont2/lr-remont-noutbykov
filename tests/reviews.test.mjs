@@ -128,43 +128,50 @@ assert.ok(
   award,
   "The document gallery is separate from aggregator scores and client reviews",
 );
-for (const title of [
-  "Премия газеты «Деловой Петербург»",
-  "Премия газеты «Аргументы и Факты»",
-  "Премия «Знак качества»",
-  "Быстрорастущая креативная компания",
-  "Фонтанка.ру — признание и влияние",
-  "Диплом Gazelle Бизнеса",
-  "Благодарственное письмо",
-  "Личный бренд — 2025",
-]) {
-  assert.ok(award.includes(title), title);
+const reputation = JSON.parse(
+  readFileSync(
+    new URL("../src/data/reputation-awards.json", import.meta.url),
+    "utf8",
+  ),
+);
+const awardCards = [
+  ...award.matchAll(/<li class="lr-document">([\s\S]*?)<\/li>/g),
+];
+assert.equal(awardCards.length, 6);
+assert.equal(reputation.awards.length, awardCards.length);
+for (const [index, item] of reputation.awards.entries()) {
+  const card = awardCards[index][1];
+  assert.ok(card.includes(`<h4>${item.title}</h4>`), item.title);
+  assert.ok(card.includes(item.description), item.id);
+  assert.ok(card.includes(`src="${item.preview}"`), item.id);
+  assert.match(
+    item.preview,
+    /^\/media\/lenremont-award-[a-z0-9-]+-gold-v2\.webp$/,
+  );
+  assert.ok(existsSync(new URL(`../public${item.preview}`, import.meta.url)));
+  assert.equal((card.match(/<a\b/g) || []).length, 1, item.id);
+  assert.ok(card.includes(`href="${item.url}"`), item.id);
+  assert.ok(card.includes(item.linkLabel), item.id);
+  assert.equal(new URL(item.url).protocol, "https:", item.id);
 }
-assert.doesNotMatch(award, /data-lr-photo-open|<a\b/);
+assert.doesNotMatch(award, /Благодарность школы-интерната|Gazelle Бизнеса/);
+assert.match(award, /«Рейтинг брендов Петербурга» — 2026/);
+assert.match(award, /2-е место по качеству бренда и 2-е по медийности/);
+assert.match(award, /Денис Сорокин — лауреат в номинации «Меценатство»/);
+assert.match(award, /2024 · Второе место в номинации «Онлайн-сервис\/услуги»/);
+assert.match(award, /2023 · Финалист в номинации «Сделано в СПб и ЛО»/);
+assert.doesNotMatch(award, /data-lr-photo-open|победа в открытом голосовании/i);
 assert.ok(
   section.indexOf("lr-reviews__documents") > section.lastIndexOf("</article>"),
 );
-assert.equal((award.match(/class="lr-document"/g) || []).length, 8);
 assert.doesNotMatch(
   section,
   /МАКЕТ|Ожидаем оригинал|оригиналы документов пока/,
 );
-assert.equal((award.match(/class="lr-document__emblem"/g) || []).length, 8);
-assert.equal((award.match(/<img\b/g) || []).length, 8);
-assert.match(award, /lenremont-award-.*\.png/);
-for (const preview of [
-  "lenremont-award-gazelle-emblem.png",
-  "lenremont-award-gratitude-emblem.png",
-  "lenremont-award-personal-brand-emblem.png",
-]) {
-  assert.ok(award.includes(preview));
-  assert.ok(existsSync(new URL(`../public/media/${preview}`, import.meta.url)));
-}
+assert.equal((award.match(/<img\b/g) || []).length, awardCards.length);
 assert.match(award, /data-lr-swipe-track/);
-assert.ok(section.includes("— А можно ли доверять Вашей фирме?"));
-assert.ok(
-  section.includes("— ВЗГЛЯНИТЕ, КАКУЮ РЕПУТАЦИЮ МЫ ЗАСЛУЖИЛИ В ГОРОДЕ:"),
-);
+assert.ok(section.includes(reputation.heading.question));
+assert.ok(section.includes(reputation.heading.answer));
 assert.ok(section.includes("lr-reviews__ratings"));
 assert.ok(!section.includes("lr-reputation-ratings"));
 assert.ok(!section.includes("lr-reputation-stats"));

@@ -161,6 +161,29 @@ const brandHero = brandHtml.match(
   /<section id="lr-hero"[\s\S]*?<\/section>/,
 )?.[0];
 assert.ok(brandHero);
+const macbookHtml = readFileSync(
+  new URL("../dist/remont-macbook-spb.htm/index.html", import.meta.url),
+  "utf8",
+);
+const macbookHero = macbookHtml.match(
+  /<section id="lr-hero"[\s\S]*?<\/section>/,
+)?.[0];
+assert.ok(macbookHero);
+for (const [hero, page, addressTarget] of [
+  [homeHero, html, "lr-locations"],
+  [brandHero, brandHtml, "lr-locations"],
+  [macbookHero, macbookHtml, "lr-formats"],
+]) {
+  const addresses = hero.match(
+    /<a\b[^>]*data-lr-map-open="workshops"[^>]*data-format="workshop"[^>]*>\s*Смотреть адреса\s*<\/a>/,
+  )?.[0];
+  assert.ok(addresses?.includes(`href="#${addressTarget}"`));
+  assert.match(
+    hero,
+    /<a\b[^>]*href="#lr-contact"[^>]*data-lr-map-open="address"[^>]*data-format="at-home"[^>]*>\s*Вызвать мастера на\s+дом\s*<\/a>/,
+  );
+  assert.ok(page.includes(`id="${addressTarget}"`));
+}
 assert.equal(
   (brandHero.match(/class="lr-hero__benefit(?: |")/g) || []).length,
   6,
@@ -262,30 +285,25 @@ const processSection = html.match(
   /<section id="lr-process"[\s\S]*?<\/section>/,
 )?.[0];
 assert.ok(processSection?.includes("lr-repair-journey"));
-assert.equal(
-  (processSection.match(/data-lr-journey-step/g) || []).length,
-  data.process.items.length,
+assert.deepEqual(
+  [...processSection.matchAll(/<h3>(.*?)<\/h3>/g)].map((match) => match[1]),
+  ["Обращение", "Диагностика", "Вы согласуете цену", "Проверка и оплата"],
 );
-assert.doesNotMatch(processSection, /<details\b|data-source="process"/);
-for (const title of [
-  "От Вашего звонка до исправного ноутбука",
-  "Поступила заявка",
-  "Бесплатная диагностика",
-  "Согласование сметы",
-  "Финальная проверка",
-])
-  assert.ok(processSection.includes(title), title);
-assert.ok(processSection.includes("оплачиваете ремонт после проверки"));
-assert.ok(processSection.includes("Без Вашего согласия ремонт не начинается"));
-assert.ok(processSection.includes("полную диагностику Вашего ноутбука"));
-assert.doesNotMatch(processSection, /Расскажите|Передайте|Согласуйте|Опишите/);
+assert.ok(processSection.includes("Как проходит ремонт ноутбука"));
+assert.ok(processSection.includes("начинает ремонт только с Вашего согласия"));
 assert.equal(
-  (processSection.match(/class="lr-repair-journey__inline-photo"/g) || [])
-    .length,
-  4,
+  (processSection.match(/lr-repair-journey__number--approval/g) || []).length,
+  1,
 );
-assert.ok(!processSection.includes("lr-repair-journey__visual"));
-assert.ok(!processSection.includes("data-lr-route-name"));
+for (const icon of ["contact", "diagnosis", "approval", "handover"]) {
+  const path = `/media/journey-icon-${icon}.svg`;
+  assert.ok(processSection.includes(path) && existsSync("dist" + path), path);
+  const svg = readFileSync("dist" + path, "utf8");
+  assert.match(svg, /<path\b/);
+  assert.doesNotMatch(svg, /<image\b/);
+  assert.match(svg, /prefers-color-scheme:\s*dark/);
+}
+assert.doesNotMatch(processSection, /<details\b|<button\b|journey-process-/);
 assert.ok(!formatsSection.includes("data-lr-route-choice"));
 assert.equal((formatsSection.match(/<a\b/g) || []).length, 4);
 assert.deepEqual(

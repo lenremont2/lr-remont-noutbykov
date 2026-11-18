@@ -1,0 +1,28 @@
+---
+interface Props {
+  workshopsHref?: string;
+}
+
+const { workshopsHref = "#lr-locations" } = Astro.props;
+---
+
+<a
+  class="lr-button lr-hero__workshops"
+  href={workshopsHref}
+  data-lr-map-open="workshops"
+  data-format="workshop"
+  data-source="hero-workshops"
+  aria-haspopup="dialog"
+>
+  Смотреть адреса
+</a>
+<a
+  class="lr-button lr-hero__at-home"
+  href="#lr-contact"
+  data-lr-map-open="address"
+  data-format="at-home"
+  data-source="hero-at-home"
+  aria-haspopup="dialog"
+>
+  Вызвать мастера на дом
+</a>

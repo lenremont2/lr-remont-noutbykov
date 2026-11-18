@@ -123,7 +123,9 @@ test("All child pages use the homepage service components", () => {
     assert.equal(
       (
         process.match(
-          usesHomeVisuals ? /data-lr-journey-step/g : /lr-process__number/g,
+          usesHomeVisuals
+            ? /class="lr-repair-journey__step"/g
+            : /lr-process__number/g,
         ) || []
       ).length,
       4,

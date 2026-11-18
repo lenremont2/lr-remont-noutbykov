@@ -412,6 +412,9 @@ export function initializeRepairQuiz(quiz, updateContext) {
   const address = quiz.querySelector("[data-lr-quiz-address]");
   const place = quiz.querySelector("[data-lr-quiz-place]");
   const questions = quiz.querySelector("[data-lr-quiz-questions]");
+  const formatStep = quiz.querySelector("[data-lr-quiz-format-step]");
+  const plan = quiz.querySelector("[data-lr-quiz-plan]");
+  const planTitle = plan.querySelector("[data-lr-plan-title]");
   const form = quiz.querySelector("[data-lr-form]");
   const previous = quiz.querySelector("[data-lr-quiz-prev]");
   const progress = quiz.querySelector("[data-lr-quiz-progress]");
@@ -430,6 +433,26 @@ export function initializeRepairQuiz(quiz, updateContext) {
     steps.filter(
       (step) => step !== location || selectedFormat() !== "consultation",
     );
+  const applySymptom = (symptom) => {
+    planTitle.textContent = symptom.dataset.planTitle;
+    plan.querySelector("[data-lr-plan-action]").textContent =
+      symptom.dataset.planAction;
+    plan.querySelector("[data-lr-plan-check]").textContent =
+      symptom.dataset.planCheck;
+    plan.querySelector("[data-lr-plan-route]").textContent =
+      symptom.dataset.planRoute;
+    const workshopOnly = symptom.hasAttribute("data-workshop-only");
+    for (const input of formatStep.querySelectorAll('input[name="service_format"]')) {
+      const unavailable = workshopOnly &&
+        (input.value === "at-home" || input.value === "mobile-lab");
+      input.disabled = unavailable;
+      input.closest("label").hidden = unavailable;
+      if (unavailable && input.checked) {
+        input.checked = false;
+        form.elements.service_format.value = "consultation";
+      }
+    }
+  };
   const showLocation = () => {
     const format = selectedFormat();
     const inWorkshop = format === "workshop";
@@ -467,6 +490,7 @@ export function initializeRepairQuiz(quiz, updateContext) {
     const activeSteps = route();
     const step = activeSteps[current];
     analysis.hidden = true;
+    plan.hidden = step !== formatStep && step !== steps.at(-1);
     questions.hidden = step === location || step === contact || step === steps.at(-1);
     hint.hidden = questions.hidden;
     quiz.removeAttribute("aria-busy");
@@ -479,7 +503,7 @@ export function initializeRepairQuiz(quiz, updateContext) {
     meter.max = activeSteps.length;
     error.textContent = "";
     if (step === location) showLocation();
-    if (focus) focusStep(step.querySelector("legend, h3"));
+    if (focus) focusStep(plan.hidden ? step.querySelector("legend, h3") : planTitle);
   };
   const finish = () => {
     if (pending === null) return;
@@ -520,10 +544,14 @@ export function initializeRepairQuiz(quiz, updateContext) {
       form.elements.workshop_id.value = workshop.value;
       form.elements.visit_address.value = address.value.trim();
       form.elements.requested_repair_place.value = place.value;
-    } else if (!step.querySelector("input:checked")) {
-      error.textContent = "Выберите один из вариантов, чтобы продолжить.";
-      step.querySelector("input").focus();
-      return;
+    } else {
+      const answer = step.querySelector("input:checked");
+      if (!answer || answer.disabled) {
+        error.textContent = "Выберите один из вариантов, чтобы продолжить.";
+        step.querySelector("input:not(:disabled)").focus();
+        return;
+      }
+      if (answer.name === "symptom") applySymptom(answer);
     }
     for (const name of ["device_category", "symptom", "service_format"]) {
       const input = questions.querySelector(`input[name="${name}"]:checked`);
@@ -670,15 +698,18 @@ export function initializeMapModal(root, selectLocation) {
       }
       error.textContent = "";
       dialog.close();
-      selectLocation({
-        service_format: dialog.dataset.format,
-        ...(slot.dataset.lrMapSlot === "workshops"
-          ? { workshop_id: input.value }
-          : { visit_address: input.value.trim() }),
-        requested_repair_place:
-          dialog.dataset.format === "mobile-lab" ? "mobile-lab" : "home",
-        source: dialog.dataset.source || "map",
-      });
+      selectLocation(
+        {
+          service_format: dialog.dataset.format,
+          ...(slot.dataset.lrMapSlot === "workshops"
+            ? { workshop_id: input.value }
+            : { visit_address: input.value.trim() }),
+          requested_repair_place:
+            dialog.dataset.format === "mobile-lab" ? "mobile-lab" : "home",
+          source: dialog.dataset.source || "map",
+        },
+        opener,
+      );
     });
   });
   root.addEventListener(
@@ -726,7 +757,7 @@ export function initializeQuizModal(root) {
     dialog.scrollTop = 0;
     quiz
       .querySelector(
-        "[data-lr-quiz-step]:not([hidden]) legend, [data-lr-quiz-step]:not([hidden]) h3, [data-lr-quiz-analysis]:not([hidden]) h3",
+        "[data-lr-quiz-plan]:not([hidden]) h3, [data-lr-quiz-step]:not([hidden]) legend, [data-lr-quiz-step]:not([hidden]) h3, [data-lr-quiz-analysis]:not([hidden]) h3",
       )
       ?.focus({ preventScroll: true });
   });
@@ -800,21 +831,20 @@ export function leadDeviceCategory(element) {
   return ["standard", "premium"].includes(category) ? category : undefined;
 }
 
-export function updateVisitFields(form) {
-  const active =
-    !form.hasAttribute?.("data-lr-compact-form") &&
-    ["mobile-lab", "at-home", "courier"].includes(
-      form.elements.service_format.value,
-    );
+export function updateVisitFields(form, hasSelectedAddress = false) {
+  const format = form.elements.service_format.value;
+  const visit = ["mobile-lab", "at-home", "courier"].includes(format);
+  const active = visit && !form.hasAttribute?.("data-lr-compact-form");
   form.querySelector("[data-lr-visit-fields]").hidden = !active;
   for (const name of ["visit_address", "requested_repair_place"]) {
     const field = form.elements[name];
     const enabled =
-      active &&
-      (name === "visit_address" ||
-        form.elements.service_format.value !== "courier");
+      name === "visit_address"
+        ? visit &&
+          (active || (hasSelectedAddress && Boolean(field.value.trim())))
+        : active && format !== "courier";
     field.disabled = !enabled;
-    field.required = enabled;
+    field.required = active && enabled;
     if (!enabled) field.removeAttribute("aria-invalid");
   }
   if (!active) {
@@ -827,7 +857,7 @@ export function updateVisitFields(form) {
     !form.elements.requested_repair_place.value
   ) {
     form.elements.requested_repair_place.value =
-      form.elements.service_format.value === "at-home" ? "home" : "mobile-lab";
+      format === "at-home" ? "home" : "mobile-lab";
   }
 }
 
@@ -1033,27 +1063,6 @@ export function initializePriceTabs(pricing) {
   tablist.hidden = false;
 }
 
-export function initializeThemePreview(root) {
-  const button = root.querySelector("[data-lr-theme-switch]");
-  if (!button || button.dataset.lrInitialized === "true") return;
-  button.dataset.lrInitialized = "true";
-  const html = root.ownerDocument.documentElement;
-  const attribute = "data-wp-dark-mode-active";
-  const synchronize = () => {
-    button.setAttribute("aria-checked", String(html.hasAttribute(attribute)));
-  };
-  synchronize();
-  button.hidden = false;
-  button.addEventListener("click", () => {
-    html.toggleAttribute(attribute);
-    synchronize();
-  });
-  new MutationObserver(synchronize).observe(html, {
-    attributes: true,
-    attributeFilter: [attribute],
-  });
-}
-
 export function initializePhotoLightbox(root) {
   if (!root.querySelector("[data-lr-photo-open]")) return;
   if (root.dataset.lrPhotoInitialized === "true") return;
@@ -1099,7 +1108,22 @@ export function initializeLanding() {
   const root = document.querySelector("#hop-landing");
   if (!root || root.dataset.lrInitialized === "true") return;
   root.dataset.lrInitialized = "true";
-  initializeThemePreview(root);
+  if (import.meta.env?.DEV) {
+    const switchButton = root.querySelector("[data-lr-theme-switch]");
+    if (switchButton) {
+      const html = root.ownerDocument.documentElement;
+      const attribute = "data-wp-dark-mode-active";
+      const synchronize = (isDark) =>
+        switchButton.setAttribute("aria-checked", String(isDark));
+      synchronize(html.hasAttribute(attribute));
+      switchButton.addEventListener("click", () =>
+        synchronize(html.toggleAttribute(attribute)),
+      );
+      void import("../styles/ui/_theme-switch.scss").then(() => {
+        switchButton.hidden = false;
+      });
+    }
+  }
   initializeDesignConcept(root);
   initializeHomeScroll(root);
   initializePhoneMask(root);
@@ -1127,6 +1151,7 @@ export function initializeLanding() {
     "(max-width: 1023px), (hover: none) and (pointer: coarse)",
   );
   let opener;
+  let selectedAddressFormat;
   let leadContext = {
     service_format: "consultation",
     symptom: "",
@@ -1165,7 +1190,7 @@ export function initializeLanding() {
     const symptom = form.elements.symptom.value;
     const category = form.elements.device_category.value;
     const format = form.elements.service_format.value;
-    updateVisitFields(form);
+    updateVisitFields(form, format === selectedAddressFormat);
     const labels = [];
     if (symptom) labels.push(`Неисправность: ${symptom}`);
     if (category)
@@ -1218,10 +1243,13 @@ export function initializeLanding() {
       updateContext(form);
     });
     const [title, intro, submit] = modes[leadContext.service_format];
+    const address = modalForm.elements.visit_address;
     modal.querySelector("[data-lr-modal-title]").textContent = title;
     modal.querySelector("[data-lr-modal-intro]").textContent =
       modalForm.hasAttribute("data-lr-compact-form")
-        ? "Диагностика — 0 ₽ даже при отказе. Адрес и детали уточним при звонке."
+        ? address.disabled
+          ? "Диагностика — 0 ₽ даже при отказе. Адрес и детали уточним при звонке."
+          : `Диагностика — 0 ₽ даже при отказе. Выбранный адрес: ${address.value}`
         : intro;
     modalForm.querySelector("[data-hop-lead-submit]").textContent = submit;
   };
@@ -1321,9 +1349,12 @@ export function initializeLanding() {
     .querySelectorAll("[data-lr-quiz]")
     .forEach((quiz) => initializeRepairQuiz(quiz, updateContext));
   initializeQuizModal(root);
-  initializeMapModal(root, (context) => {
+  initializeMapModal(root, (context, trigger) => {
+    selectedAddressFormat = context.visit_address
+      ? context.service_format
+      : undefined;
     shareContext(context);
-    opener = root.querySelector("[data-lr-map-open]");
+    opener = trigger;
     modal.showModal();
     modalForm.elements.phone.focus();
   });

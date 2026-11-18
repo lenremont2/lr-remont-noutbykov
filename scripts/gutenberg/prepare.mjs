@@ -21,7 +21,6 @@ const pages = [
   { slug: "remont-noutbukov-spb", label: "Ремонт ноутбуков" },
   ...data.brands,
   ...data.problems,
-  data.macbook,
 ];
 assert.equal(pages.length, 50);
 const paths = Object.fromEntries(
@@ -112,6 +111,8 @@ try {
           sectionNames = [];
         let count = 0;
         const link = (value) => {
+          if (value === "/remont-macbook-spb.htm")
+            return "https://www.lenremont.ru/remont-mac/";
           if (value.startsWith("/media/")) {
             used.add(value.slice(7));
             if (/\.webm$/i.test(value))
@@ -607,7 +608,10 @@ try {
   const css = built.find((f) => /^LandingLayout\..*\.css$/.test(f));
   const js = built.find((f) => /^LandingLayout.*\.js$/.test(f));
   assert(css && js);
-  let styles = await readFile("dist/_astro/" + css, "utf8");
+  let styles = (await readFile("dist/_astro/" + css, "utf8")).replaceAll(
+    "#hop-landing[data-lr-themeable]",
+    "#hop-landing",
+  );
   // The stock text block uses strong for the source's standalone bold price labels.
   for (const selector of [
     ".lr-symptoms__group-overlay",

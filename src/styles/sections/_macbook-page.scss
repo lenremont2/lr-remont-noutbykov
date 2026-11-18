@@ -137,12 +137,15 @@
     align-items: center;
     justify-content: center;
     min-height: 44px;
-    padding-block: 8px;
-    color: var(--lr-color-text);
-    font-weight: 500;
+    padding: 8px 20px;
+    border: 1px solid var(--lr-color-control-border);
+    border-radius: var(--lr-radius-pill);
+    background: var(--lr-neutral-600);
+    color: var(--lr-color-on-dark);
+    font-weight: 600;
     font-size: 16px;
     letter-spacing: -0.01em;
-    text-decoration: underline;
+    text-decoration: none;
     transition:
       border-color var(--lr-duration-fast),
       background-color var(--lr-duration-fast);
@@ -150,7 +153,7 @@
 
   .lr-mac-hero__secondary:hover {
     border-color: var(--lr-color-text);
-    background: var(--lr-color-bg);
+    background: color-mix(in srgb, var(--lr-white) 8%, var(--lr-neutral-600));
   }
 
   .lr-mac-hero__metrics {

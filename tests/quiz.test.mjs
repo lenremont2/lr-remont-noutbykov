@@ -26,11 +26,14 @@ assert.ok(
 assert.match(section, /aria-describedby="lr-quiz-hint"/);
 assert.doesNotMatch(section, /lr-quiz__answers|data-lr-quiz-answer=/);
 for (const method of ["Телефон", "ВКонтакте", "WhatsApp", "Telegram", "MAX"])
-  assert.ok(section.includes(`name="contact_method" value="${method}"`), method);
+  assert.ok(
+    section.includes(`name="contact_method" value="${method}"`),
+    method,
+  );
 assert.match(section, /type="button"[^>]*data-lr-quiz-prev/);
 const quizImages =
   section.match(/<img\b[^>]*lr-quiz__option-image[^>]*>/g) || [];
-assert.equal(quizImages.length, 14);
+assert.equal(quizImages.length, 16);
 for (const image of quizImages) {
   const src = image.match(/src="([^"]+)"/)?.[1];
   assert.ok(src?.startsWith("/media/"), "Quiz illustrations must be local");
@@ -38,8 +41,11 @@ for (const image of quizImages) {
   assert.match(image, /alt=""/);
   assert.match(image, /width="72" height="72"/);
 }
+const symptomPlans = new Map();
 for (const task of [
   "Физическая поломка",
+  "Нет изображения",
+  "Не включается",
   "Залит водой, чаем или кофе",
   "Восстановление данных",
   "Программы и настройка",
@@ -47,7 +53,22 @@ for (const task of [
   "Ускорение и апгрейд",
   "Другая неисправность",
 ]) {
-  assert.ok(section.includes(`name="symptom" value="${task}"`), task);
+  const input = section.match(
+    new RegExp(`<input[^>]*name="symptom" value="${task}"[^>]*>`),
+  )?.[0];
+  assert.ok(input, task);
+  const dataset = {};
+  for (const field of ["Title", "Action", "Check", "Route"]) {
+    const value = input.match(
+      new RegExp(`data-plan-${field.toLowerCase()}="([^"]+)"`),
+    )?.[1];
+    assert.ok(value, `${task}: ${field}`);
+    dataset[`plan${field}`] = value;
+  }
+  symptomPlans.set(task, {
+    dataset,
+    workshopOnly: input.includes("data-workshop-only"),
+  });
 }
 const formats = [
   ...section.matchAll(
@@ -116,10 +137,29 @@ function createQuiz({ brand = false, reducedMotion = false } = {}) {
           },
   }));
   const location = steps[names.length];
+  const formatStep = steps[names.indexOf("service_format")];
+  const formatInputs = formats.map((value) => {
+    const label = {};
+    return {
+      value,
+      closest: (selector) => (selector === "label" ? label : formatStep),
+    };
+  });
+  formatStep.querySelectorAll = () => formatInputs;
+  const planFields = new Map(
+    ["title", "action", "check", "route"].map((key) => [
+      `[data-lr-plan-${key}]`,
+      control(key),
+    ]),
+  );
+  const plan = { hidden: true, querySelector: (key) => planFields.get(key) };
   const contact = steps[names.length + 1];
   let selectedContact = null;
-  contact.addEventListener = (type, handler) => { handlers[`contact:${type}`] = handler; };
-  contact.querySelector = (selector) => selector.includes(":checked") ? selectedContact : { focus() {} };
+  contact.addEventListener = (type, handler) => {
+    handlers[`contact:${type}`] = handler;
+  };
+  contact.querySelector = (selector) =>
+    selector.includes(":checked") ? selectedContact : { focus() {} };
   const workshop = control("workshop");
   Object.defineProperty(workshop, "selectedOptions", {
     get: () => [
@@ -180,8 +220,11 @@ function createQuiz({ brand = false, reducedMotion = false } = {}) {
     addEventListener: (type, handler) => {
       handlers[`questions:${type}`] = handler;
     },
-    querySelector: (selector) =>
-      answers[names.indexOf(selector.match(/name="([^"]+)"/)[1])],
+    querySelector: (selector) => {
+      const answer =
+        answers[names.indexOf(selector.match(/name="([^"]+)"/)[1])];
+      return answer?.checked ? answer : null;
+    },
   };
   const previous = control("previous");
   const progress = control("progress");
@@ -205,6 +248,8 @@ function createQuiz({ brand = false, reducedMotion = false } = {}) {
   );
   const selectors = new Map([
     ["[data-lr-quiz-questions]", questions],
+    ["[data-lr-quiz-format-step]", formatStep],
+    ["[data-lr-quiz-plan]", plan],
     ["[data-lr-quiz-location]", location],
     ["[data-lr-quiz-contact-step]", contact],
     ["[data-lr-quiz-workshop]", workshop],
@@ -246,22 +291,32 @@ function createQuiz({ brand = false, reducedMotion = false } = {}) {
   const select = (index, value, label = value, keyboard = false) => {
     if (keyboard) handlers["questions:keydown"]({ key: "ArrowDown" });
     else handlers["questions:pointerdown"]();
-    const input = {
+    const format =
+      names[index] === "service_format" &&
+      formatInputs.find((item) => item.value === value);
+    if (format) {
+      assert.equal(format.disabled, false);
+      for (const item of formatInputs) item.checked = item === format;
+    }
+    const input = Object.assign(format || {}, {
       name: names[index],
       value,
       checked: true,
+      dataset: symptomPlans.get(value)?.dataset,
+      hasAttribute: (attr) =>
+        attr === "data-workshop-only" && symptomPlans.get(value)?.workshopOnly,
       matches: () => true,
-      closest: (selector) =>
-        selector === "label"
-          ? { querySelector: () => ({ textContent: label }) }
-          : steps[index],
-    };
+      closest: format ? format.closest : () => steps[index],
+    });
     answers[index] = input;
     handlers["questions:change"]({ target: input });
     return input;
   };
   return {
     quiz,
+    plan,
+    planFields,
+    formatInputs,
     steps,
     form,
     answers,
@@ -309,6 +364,48 @@ function createQuiz({ brand = false, reducedMotion = false } = {}) {
 }
 
 try {
+  const revised = createQuiz({ brand: true });
+  revised.select(0, "Чистка и перегрев");
+  revised.select(1, "at-home");
+  revised.back();
+  revised.back();
+  revised.select(0, "Залит водой, чаем или кофе");
+  assert.equal(
+    revised.plan.hidden,
+    false,
+    "Guidance precedes personal details",
+  );
+  assert.equal(revised.focused, "title");
+  assert.deepEqual(
+    revised.formatInputs
+      .filter((item) => !item.disabled)
+      .map((item) => item.value),
+    ["workshop", "courier", "consultation"],
+  );
+  assert.ok(revised.formatInputs.every((item) => !item.checked));
+  revised.select(1, "consultation");
+  revised.selectContact();
+  finishLoading();
+  assert.equal(revised.plan.hidden, false);
+  assert.match(
+    revised.planFields.get("[data-lr-plan-route]").textContent,
+    /только в мастерской/,
+  );
+  assert.match(
+    revised.planFields.get("[data-lr-plan-action]").textContent,
+    /не включайте/i,
+  );
+  assert.equal(revised.form.elements.service_format.value, "consultation");
+  revised.back();
+  revised.back();
+  revised.back();
+  revised.select(0, "Программы и настройка");
+  assert.ok(
+    revised.formatInputs.every(
+      (item) => !item.disabled && !item.closest("label").hidden,
+    ),
+  );
+
   const home = createQuiz();
   assert.deepEqual(
     home.steps.map((step) => step.hidden),

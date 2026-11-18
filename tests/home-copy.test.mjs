@@ -64,7 +64,7 @@ const quizIntro = plain(
 assert.ok(quizIntro.includes("Пройдите онлайн-диагностику"));
 assert.ok(quizIntro.includes("Ответьте на несколько вопросов"));
 assert.ok(quizIntro.includes("предварительную стоимость"));
-assert.ok(quizIntro.includes("после бесплатной диагностики ноутбука"));
+assert.ok(quizIntro.includes("Рекомендации доступны без телефона и адреса"));
 assert.doesNotMatch(quizIntro, /Начнём с вашей ситуации|скидку до 15%/);
 assert.equal((hero.match(/class="lr-hero__benefit(?: |")/g) || []).length, 6);
 assert.doesNotMatch(html, /БСО|бланк[а-я ]*строгой отчётности/iu);

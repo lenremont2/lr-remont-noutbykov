@@ -3,32 +3,27 @@ interface Props {
   title?: string;
   items?: { title: string; text: string }[];
 }
-const { title = "От Вашего звонка до исправного ноутбука", items } =
-  Astro.props;
+const { title = "Как проходит ремонт ноутбука", items } = Astro.props;
 const steps = [
   {
-    title: "Поступила заявка",
-    text: "Вы звоните или пишете в мессенджер и рассказываете о поломке. Мы согласуем удобное время: мастер приезжает к Вам, а если нужен ремонт в сервисе — забирает ноутбук. Вы также можете привезти его в мастерскую сами.",
-    image: "/media/journey-process-reception-1280.webp",
-    caption: "Мастер принимает ноутбук и обсуждает неисправность с клиентом",
+    title: "Обращение",
+    text: "Вы описываете поломку. Вместе решаем, удобнее вызвать мастера или привезти ноутбук в мастерскую",
+    icon: "contact",
   },
   {
-    title: "Бесплатная диагностика",
-    text: "Мастер проводит полную диагностику Вашего ноутбука, объясняет причину поломки и называет точную цену работы и запчастей. Диагностика — 0 ₽, даже если Вы отказываетесь от ремонта.",
-    image: "/media/journey-process-diagnostics-1280.webp",
-    caption: "Мастер проверяет плату ноутбука мультиметром",
+    title: "Диагностика",
+    text: "Мастер проводит бесплатную диагностику ноутбука, объясняет причину поломки и называет полную стоимость работ и деталей",
+    icon: "diagnosis",
   },
   {
-    title: "Согласование сметы",
-    text: "Если Вы соглашаетесь со сметой, мастер ремонтирует ноутбук и устанавливает нужные запчасти. Без Вашего согласия ремонт не начинается.",
-    image: "/media/journey-process-estimate-1280.webp",
-    caption: "Мастер и клиент согласуют смету до начала ремонта",
+    title: "Вы согласуете цену",
+    text: "Мастер начинает ремонт только с Вашего согласия. Если цена не подходит, Вы можете отказаться. Диагностика останется бесплатной",
+    icon: "approval",
   },
   {
-    title: "Финальная проверка",
-    text: "Вы вместе с мастером проверяете ноутбук под нагрузкой и оплачиваете ремонт после проверки. Вы получаете чек, договор, гарантийный талон на 1 год и заменённые детали.",
-    image: "/media/journey-process-handover-1280.webp",
-    caption: "Клиент проверяет отремонтированный ноутбук вместе с мастером",
+    title: "Проверка и оплата",
+    text: "Вы проверяете ноутбук вместе с мастером, затем оплачиваете ремонт и получаете чек и гарантийный талон на 1 год",
+    icon: "handover",
   },
 ].map((step, index) => ({ ...step, ...items?.[index] }));
 ---
@@ -37,37 +32,43 @@ const steps = [
   id="lr-process"
   class="lr-section lr-repair-journey"
   aria-labelledby="lr-journey-title"
-  data-lr-repair-journey
-  data-sc-act="flow"
 >
   <div class="lr-container">
     <div class="lr-repair-journey__heading">
       <h2 id="lr-journey-title">{title}</h2>
     </div>
-    <div class="lr-repair-journey__layout">
-      <ol class="lr-repair-journey__steps" role="list">
-        {
-          steps.map((step) => (
-            <li class="lr-repair-journey__step" data-lr-journey-step>
-              <div class="lr-repair-journey__copy">
-                <h3>{step.title}</h3>
-                <p>{step.text}</p>
-              </div>
-              <img
-                class="lr-repair-journey__inline-photo"
-                src={step.image.replace("1280", "640")}
-                srcset={`${step.image.replace("1280", "640")} 640w, ${step.image} 1280w`}
-                sizes="(min-width: 768px) 40vw, 80vw"
-                width="640"
-                height="360"
-                alt={`Иллюстрация: ${step.caption.toLocaleLowerCase("ru-RU")}`}
-                loading="lazy"
-                decoding="async"
-              />
-            </li>
-          ))
-        }
-      </ol>
-    </div>
+    <ol class="lr-repair-journey__steps" role="list">
+      {
+        steps.map((step, index) => (
+          <li class="lr-repair-journey__step">
+            <span
+              class:list={[
+                "lr-repair-journey__number",
+                {
+                  "lr-repair-journey__number--approval":
+                    step.icon === "approval",
+                },
+              ]}
+              aria-hidden="true"
+            >
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <div class="lr-repair-journey__copy">
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </div>
+            <img
+              class="lr-repair-journey__icon"
+              src={`/media/journey-icon-${step.icon}.svg`}
+              alt=""
+              width="72"
+              height="72"
+              loading="lazy"
+              decoding="async"
+            />
+          </li>
+        ))
+      }
+    </ol>
   </div>
 </section>

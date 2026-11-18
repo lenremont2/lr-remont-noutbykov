@@ -21,8 +21,6 @@ const {
   themeable = true,
   class: className,
 } = Astro.props;
-// Temporary preview control; disable before handing the fragment to WordPress.
-const SHOW_THEME_PREVIEW = true;
 const content = typographHtml(await Astro.slots.render("default"));
 ---
 
@@ -76,12 +74,12 @@ const content = typographHtml(await Astro.slots.render("default"));
     >
       <Fragment set:html={content} />
       {
-        themeable && SHOW_THEME_PREVIEW && (
+        import.meta.env.DEV && themeable && (
           <button
             class="lr-theme-switch"
             type="button"
-            aria-label="Тёмная тема"
             role="switch"
+            aria-label="Тёмная тема"
             aria-checked="false"
             data-lr-theme-switch
             hidden

@@ -178,6 +178,7 @@
 }
 
 #hop-landing .lr-hero__cta {
+  --lr-hero-workshops-border: var(--lr-brand-blue-light);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
@@ -204,7 +205,6 @@
   border: 0;
   background: var(--lr-color-highlight);
   color: var(--lr-color-hero);
-  box-shadow: 0 8px 20px -4px rgb(255 210 0 / 35%);
 }
 
 #hop-landing .lr-hero__cta .lr-hero__secondary {
@@ -218,6 +218,71 @@
 #hop-landing .lr-hero__cta .lr-button:hover {
   filter: brightness(1.08);
   transform: none;
+}
+
+#hop-landing .lr-hero__cta :focus-visible {
+  outline-color: var(--lr-color-focus-on-dark);
+}
+
+#hop-landing :is(.lr-hero__cta, .lr-mac-hero__actions) {
+  .lr-hero__primary {
+    box-shadow: 0 0 18px -3px
+      color-mix(in srgb, var(--lr-color-accent) 44%, transparent);
+  }
+
+  .lr-hero__workshops {
+    --lr-button-bg: var(--lr-brand-blue);
+    --lr-button-text: var(--lr-color-on-dark);
+    --lr-button-hover: var(--lr-brand-blue-hover);
+    border-color: var(--lr-hero-workshops-border, var(--lr-color-link));
+  }
+
+  .lr-hero__at-home {
+    --lr-button-bg: #12804e;
+    --lr-button-text: var(--lr-color-on-dark);
+    --lr-button-hover: #0f7044;
+    border-color: var(--lr-button-bg);
+  }
+
+  :is(.lr-hero__workshops, .lr-hero__at-home):active {
+    background: var(--lr-button-hover);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #hop-landing :is(.lr-hero__cta, .lr-mac-hero__actions) .lr-hero__primary {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    &:not(:is(:hover, :focus-visible))::after {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      border-radius: inherit;
+      background: linear-gradient(
+        110deg,
+        transparent 40%,
+        rgb(255 255 255 / 68%) 50%,
+        transparent 60%
+      );
+      pointer-events: none;
+      content: "";
+      transform: translateX(-100%);
+      animation: lr-hero-flash 3.6s linear 0.5s infinite;
+    }
+  }
+}
+
+@keyframes lr-hero-flash {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  22%,
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 #hop-landing .lr-hero--reference .lr-social-links {
@@ -457,25 +522,29 @@
     font-family: inherit;
     font-size: 16px;
     font-weight: 700;
-    box-shadow: none;
   }
 
-  .lr-hero__primary,
   .lr-hero__video-play {
     background: var(--lr-hero-gold);
     color: #122e4a;
   }
 
+  .lr-hero__cta .lr-hero__primary {
+    background: var(--lr-color-accent);
+    color: #122e4a;
+    font-weight: 800;
+  }
+
   .lr-hero__cta .lr-hero__secondary {
-    border: 1px solid rgb(255 255 255 / 55%);
-    background: rgb(255 255 255 / 12%);
-    color: var(--lr-color-on-dark);
+    border: 1px solid var(--lr-white);
+    background: var(--lr-white);
+    color: var(--lr-color-hero);
     text-decoration: none;
   }
 
   .lr-hero__cta .lr-hero__secondary:hover {
-    border-color: var(--lr-color-on-dark);
-    background: rgb(255 255 255 / 20%);
+    background: var(--lr-blue-50);
+    filter: none;
   }
 
   .lr-hero__benefits {

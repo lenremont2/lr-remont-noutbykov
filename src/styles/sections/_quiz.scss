@@ -359,6 +359,7 @@
 }
 
 #hop-landing .lr-quiz__result-offer {
+  margin-bottom: 24px;
   padding: 20px;
   border-radius: var(--lr-radius);
   background: var(--lr-color-dark);
@@ -386,23 +387,16 @@
   line-height: 1.5;
 }
 
-#hop-landing .lr-quiz__result-facts {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+#hop-landing .lr-quiz__plan-details dt {
   margin-top: 16px;
-  padding-top: 12px;
-  border-top: 1px solid var(--lr-color-muted);
-}
-
-#hop-landing .lr-quiz__result-facts strong {
   color: var(--lr-color-on-dark);
-  font-weight: 500;
+  font-weight: 600;
 }
 
-#hop-landing .lr-quiz__result-facts p {
+#hop-landing .lr-quiz__plan-details dd {
+  margin: 4px 0 0;
   color: var(--lr-color-muted-on-dark);
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.5;
 }
 

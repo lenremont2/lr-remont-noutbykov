@@ -1,6 +1,7 @@
 ---
 import copy from "../../data/laptop-service.json";
 import home from "../../data/home-copy.json";
+import HeroServiceActions from "../ui/HeroServiceActions.astro";
 import LeadButton from "../ui/LeadButton.astro";
 import QuickContacts from "./QuickContacts.astro";
 import type { BrandPage } from "../../data/service-pages";
@@ -167,6 +168,7 @@ const [homeLead, homeProtection] = home.hero.lead.split(/(?=Называем)/);
               source={brand ? `brand:${brand.label}` : "hero-request"}
               class="lr-hero__secondary"
             />
+            <HeroServiceActions />
           </div>
         </div>
         <div class="lr-hero__contacts">

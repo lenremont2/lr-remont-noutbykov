@@ -3,6 +3,7 @@ import LandingLayout from "../layouts/LandingLayout.astro";
 import Reviews from "../components/sections/Reviews.astro";
 import QuickContacts from "../components/sections/QuickContacts.astro";
 import LeadCapture from "../components/sections/LeadCapture.astro";
+import HeroServiceActions from "../components/ui/HeroServiceActions.astro";
 import LeadButton from "../components/ui/LeadButton.astro";
 import HomeProtection from "../components/sections/HomeProtection.astro";
 import RepairFormats from "../components/sections/RepairFormats.astro";
@@ -217,10 +218,12 @@ const macModels = [
                 label="Рассчитать стоимость ремонта"
                 source="brand:MacBook"
                 deviceCategory="premium"
+                class="lr-hero__primary"
               />
               <a class="lr-mac-hero__secondary" href="#lr-prices">
                 Посмотреть прайс-лист
               </a>
+              <HeroServiceActions workshopsHref="#lr-formats" />
             </div>
 
             <dl

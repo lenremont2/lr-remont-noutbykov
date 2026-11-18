@@ -6,7 +6,7 @@ import {
   updateFormReadiness,
 } from "../src/scripts/landing.js";
 
-test("Compact form keeps visit context without requiring or submitting address fields", () => {
+test("Compact form sends a selected address without requiring one", () => {
   const field = (value = "") => ({
     value,
     disabled: false,
@@ -47,6 +47,18 @@ test("Compact form keeps visit context without requiring or submitting address f
     assert.equal(validateVisitFields(form), null);
     assert.equal(updateFormReadiness(form), true);
   }
+  elements.service_format.value = "at-home";
+  address.value = "Санкт-Петербург, Невский проспект, 1";
+  updateVisitFields(form, true);
+  assert.equal(form.querySelector("[data-lr-visit-fields]").hidden, true);
+  assert.equal(address.disabled, false);
+  assert.equal(address.required, false);
+  assert.equal(place.disabled, true);
+  assert.equal(updateFormReadiness(form), true);
+  elements.service_format.value = "mobile-lab";
+  updateVisitFields(form);
+  assert.equal(address.disabled, true);
+
   elements.consent.checked = false;
   assert.equal(updateFormReadiness(form), false);
   elements.consent.checked = true;
